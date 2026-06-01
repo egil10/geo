@@ -25,7 +25,7 @@ export default function TopBar({
   onOpenSettings: () => void;
 }) {
   return (
-    <header className="flex min-w-0 items-center gap-2">
+    <header className="flex min-w-0 items-center gap-1.5 sm:gap-2">
       <Wordmark />
       {exploreActive ? (
         <button onClick={onExplore} className="pill-solid shrink-0 focus-ring" aria-label="Tilbake til quizen">
@@ -35,7 +35,7 @@ export default function TopBar({
       ) : (
         summary &&
         onCustomize && (
-          <button onClick={onCustomize} className="pill-glass shrink-0 focus-ring" aria-label={`Tilpass quizen — ${summary}`}>
+          <button onClick={onCustomize} className="pill-glass shrink-0 px-3 focus-ring sm:px-4" aria-label={`Tilpass quizen — ${summary}`}>
             <SlidersHorizontal size={14} className="shrink-0" />
             {/* Phones show just the icon (the category is already on the card);
                 the full summary appears once there's room. */}
@@ -47,7 +47,7 @@ export default function TopBar({
       {/* ml-auto right-aligns the controls and yields space so the pill truncates. */}
       <div className="ml-auto flex shrink-0 items-center gap-1.5">
         {!exploreActive && (
-          <button onClick={onExplore} aria-label="Utforsk datasettet" title="Utforsk" className="pill pill-glass shrink-0 focus-ring">
+          <button onClick={onExplore} aria-label="Utforsk datasettet" title="Utforsk" className="pill pill-glass shrink-0 px-3 focus-ring sm:px-4">
             <Compass size={15} />
             <span className="hidden sm:inline">Utforsk</span>
           </button>
