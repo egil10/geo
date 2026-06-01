@@ -17,7 +17,7 @@ export default function EloBadge({ elo, onOpen }: { elo: EloState; onOpen: () =>
   return (
     <button
       onClick={onOpen}
-      className="pill-glass shrink-0 focus-ring"
+      className="pill-glass shrink-0 px-3 focus-ring sm:px-4"
       aria-label={`Elo ${elo.rating}, ${tier.name}. Åpne statistikk`}
       title={`${tier.name} · ${elo.rating} Elo`}
     >
