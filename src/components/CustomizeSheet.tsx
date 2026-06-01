@@ -24,7 +24,7 @@ import {
   Check,
 } from "lucide-react";
 import Modal from "./Modal";
-import { CATEGORIES, Category, QUIZ_TYPES, QuizType } from "@/lib/questions";
+import { CATEGORIES, Category, QUIZ_TYPES, QuizType, availableTypesFor, availableCatsFor } from "@/lib/questions";
 import { Mode, MODES } from "./ModePicker";
 
 const ICONS: Record<string, React.ComponentType<{ size?: number; strokeWidth?: number }>> = {
@@ -61,11 +61,13 @@ function multiToggle<T>(set: Set<T>, key: T, all: T[]): Set<T> {
 
 function Chip({
   active,
+  disabled,
   label,
   Icon,
   onClick,
 }: {
   active: boolean;
+  disabled?: boolean;
   label: string;
   Icon: React.ComponentType<{ size?: number; strokeWidth?: number }>;
   onClick: () => void;
@@ -73,10 +75,14 @@ function Chip({
   return (
     <button
       onClick={onClick}
+      disabled={disabled}
+      title={disabled ? "Ikke tilgjengelig med dette utvalget" : undefined}
       className={`flex items-center gap-1.5 rounded-full border px-3.5 py-2 text-sm font-medium transition focus-ring ${
         active
           ? "border-transparent bg-ink text-canvas"
-          : "border-[var(--field-stroke)] bg-[var(--field)] text-ink hover:bg-black/[0.03] dark:hover:bg-white/[0.05]"
+          : disabled
+            ? "cursor-not-allowed border-[var(--field-stroke)] bg-transparent text-ink-muted opacity-40"
+            : "border-[var(--field-stroke)] bg-[var(--field)] text-ink hover:bg-black/[0.03] dark:hover:bg-white/[0.05]"
       }`}
     >
       <Icon size={15} strokeWidth={2} />
@@ -120,6 +126,10 @@ export default function CustomizeSheet({
   const catsAll = selected.size === 0 || selected.size === catKeys.length;
   const typesAll = types.size === 0 || types.size === typeKeys.length;
   const showTypes = mode === "velg" || mode === "skriv";
+  // Cross-filter availability: each dimension's options depend on the other's
+  // current pick, so impossible combinations are greyed out.
+  const availTypes = availableTypesFor(selected);
+  const availCats = availableCatsFor(showTypes ? types : new Set());
 
   return (
     <Modal onClose={onClose} title="Tilpass quizen" size="lg">
@@ -131,29 +141,37 @@ export default function CustomizeSheet({
 
       <Section title="Kategori" sub="hva spørsmålene handler om">
         <Chip active={catsAll} Icon={LayoutGrid} label="Alt" onClick={() => onCats(new Set())} />
-        {CATEGORIES.map((c) => (
-          <Chip
-            key={c.key}
-            active={!catsAll && selected.has(c.key)}
-            Icon={ICONS[c.icon] ?? Map}
-            label={c.label}
-            onClick={() => onCats(multiToggle(selected, c.key, catKeys))}
-          />
-        ))}
+        {CATEGORIES.map((c) => {
+          const active = !catsAll && selected.has(c.key);
+          return (
+            <Chip
+              key={c.key}
+              active={active}
+              disabled={!active && !availCats.has(c.key)}
+              Icon={ICONS[c.icon] ?? Map}
+              label={c.label}
+              onClick={() => onCats(multiToggle(selected, c.key, catKeys))}
+            />
+          );
+        })}
       </Section>
 
       {showTypes && (
         <Section title="Spørsmålstype" sub="hvordan de stilles">
           <Chip active={typesAll} Icon={Shapes} label="Alle typer" onClick={() => onTypes(new Set())} />
-          {QUIZ_TYPES.map((t) => (
-            <Chip
-              key={t.key}
-              active={!typesAll && types.has(t.key)}
-              Icon={ICONS[t.icon] ?? Shapes}
-              label={t.label}
-              onClick={() => onTypes(multiToggle(types, t.key, typeKeys))}
-            />
-          ))}
+          {QUIZ_TYPES.map((t) => {
+            const active = !typesAll && types.has(t.key);
+            return (
+              <Chip
+                key={t.key}
+                active={active}
+                disabled={!active && !availTypes.has(t.key)}
+                Icon={ICONS[t.icon] ?? Shapes}
+                label={t.label}
+                onClick={() => onTypes(multiToggle(types, t.key, typeKeys))}
+              />
+            );
+          })}
         </Section>
       )}
 

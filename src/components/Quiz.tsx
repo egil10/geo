@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "react";
-import { Check, X, ArrowRight, Flame, ChevronUp, ChevronDown, GripVertical, SkipForward, MinusCircle, SearchX } from "lucide-react";
+import { Check, X, ArrowRight, Flame, ChevronUp, ChevronDown, GripVertical, SkipForward, MinusCircle, SearchX, ExternalLink } from "lucide-react";
 import {
   Round,
   OrderRound,
@@ -16,10 +16,27 @@ import {
 import { EloState } from "@/lib/elo";
 import { imgAt, heroProps, preloadImage, Quality } from "@/lib/images";
 import { matchesAnswer } from "@/lib/match";
+import { fylkePathByNumber, kommunePathByNumber, projectPin } from "@/lib/geo";
 import QImage from "./QImage";
 import NorwayMap from "./NorwayMap";
 import TopBar from "./TopBar";
 import { Mode } from "./ModePicker";
+
+// A Wikipedia link for the answer. Wikidata Q-ids resolve straight to the
+// Norwegian article via GoToLinkedPage; anything else falls back to title.
+function wikiHref(id: string, name: string): string {
+  if (/^Q\d+$/.test(id)) return `https://www.wikidata.org/wiki/Special:GoToLinkedPage/nowiki/${id}`;
+  return `https://no.wikipedia.org/wiki/${encodeURIComponent(name.replace(/ /g, "_"))}`;
+}
+
+// Locate a place on the Norway map: highlight a fylke/kommune by its number,
+// otherwise drop a pin at its coordinates. Returns nothing if not locatable.
+function locate(subject: { number?: string; lat?: number; lon?: number }): { region?: string; pin?: { x: number; y: number } } | null {
+  if (subject.number && fylkePathByNumber.has(subject.number)) return { region: fylkePathByNumber.get(subject.number) };
+  if (subject.number && kommunePathByNumber.has(subject.number)) return { region: kommunePathByNumber.get(subject.number) };
+  if (subject.lat != null && subject.lon != null) return { pin: projectPin(subject.lat, subject.lon) };
+  return null;
+}
 
 type AnyRound = Round | OrderRound;
 const isOrder = (r: AnyRound): r is OrderRound => "items" in r;
@@ -333,7 +350,8 @@ export default function Quiz({
             <div
               key={i}
               className="h-1.5 flex-1 rounded-full transition-colors duration-300"
-              style={{ background: i < state.streak ? "var(--nordic)" : "var(--hairline)" }}
+              // Filled segments ramp from light to dark green as the streak grows.
+              style={{ background: i < state.streak ? `hsl(146 68% ${62 - i * 3.4}%)` : "var(--hairline)" }}
             />
           ))}
         </div>
@@ -722,62 +740,88 @@ function RevealBar({
   onNext: () => void;
 }) {
   const order = isOrder(round);
+  const subject = order ? null : round.subject;
   // Show the subject's photo on reveal unless the prompt already was that photo.
   const promptIsPhoto = !order && round.prompt.kind === "image" && round.prompt.variant === "photo";
   const thumb = !order && !promptIsPhoto ? round.subject.photo : undefined;
+  const loc = subject ? locate(subject) : null;
 
   let detail: React.ReactNode;
   if (order) {
     const names = round.correctIds.map((id) => round.items.find((it) => it.id === id)?.name).join(" › ");
     detail = (
-      <p className="mt-0.5 line-clamp-2 text-sm text-ink-soft">
-        <span className="font-semibold">Riktig:</span> {names}
+      <p className="text-sm leading-snug text-ink-soft">
+        <span className="font-semibold">Riktig rekkefølge:</span> {names}
       </p>
     );
   } else if (skipped || (typed != null && !won)) {
     detail = (
-      <p className="mt-0.5 line-clamp-2 text-sm text-ink-soft">
-        Riktig svar: <span className="font-semibold">{round.answerKey}</span>. {round.explanation}
+      <p className="text-sm leading-snug text-ink-soft">
+        Riktig svar: <span className="font-semibold text-ink">{round.answerKey}</span>. {round.explanation}
       </p>
     );
   } else {
-    detail = <p className="mt-0.5 line-clamp-2 text-sm text-ink-soft">{round.explanation}</p>;
+    detail = <p className="text-sm leading-snug text-ink-soft">{round.explanation}</p>;
   }
 
+  const hasMedia = !!(loc || thumb);
+
   return (
-    <div className="animate-fade-up glass flex h-full items-center gap-3 rounded-[24px] p-3">
-      {thumb && (
-        <div className="hidden h-[76px] w-[76px] shrink-0 overflow-hidden rounded-2xl bg-black/[0.04] sm:block dark:bg-white/[0.05]">
-          <img src={imgAt(thumb, 200)} alt="" className="h-full w-full object-contain" />
-        </div>
-      )}
-      <div className="flex min-w-0 flex-1 flex-col justify-center">
-        <div className="flex items-center gap-2">
+    <div className="animate-fade-up glass rounded-[24px] p-3">
+      {/* Header: verdict + Elo on the left, Neste on the right. */}
+      <div className="flex items-center gap-2">
+        <span
+          className="flex items-center gap-1.5 text-sm font-bold"
+          style={{ color: skipped ? "var(--amber)" : won ? "var(--good)" : "var(--bad)" }}
+        >
+          {skipped ? <MinusCircle size={16} /> : won ? <Check size={16} /> : <X size={16} />}
+          {skipped ? "Hoppet over" : won ? "Riktig" : "Feil"}
+        </span>
+        {delta != null && (
           <span
-            className="flex items-center gap-1.5 text-sm font-bold"
-            style={{ color: skipped ? "var(--amber)" : won ? "var(--good)" : "var(--bad)" }}
+            className="rounded-full px-2 py-0.5 text-xs font-semibold tabular-nums"
+            style={{
+              color: delta >= 0 ? "var(--good)" : "var(--bad)",
+              background: delta >= 0 ? "color-mix(in srgb, var(--good) 12%, transparent)" : "color-mix(in srgb, var(--bad) 12%, transparent)",
+            }}
           >
-            {skipped ? <MinusCircle size={16} /> : won ? <Check size={16} /> : <X size={16} />}
-            {skipped ? "Hoppet over" : won ? "Riktig" : "Feil"}
+            {delta >= 0 ? `+${delta}` : delta} Elo
           </span>
-          {delta != null && (
-            <span
-              className="rounded-full px-2 py-0.5 text-xs font-semibold tabular-nums"
-              style={{
-                color: delta >= 0 ? "var(--good)" : "var(--bad)",
-                background: delta >= 0 ? "color-mix(in srgb, var(--good) 12%, transparent)" : "color-mix(in srgb, var(--bad) 12%, transparent)",
-              }}
+        )}
+        <div className="flex-1" />
+        <button onClick={onNext} className="flex shrink-0 items-center gap-1.5 rounded-full bg-ink px-4 py-2.5 text-sm font-semibold text-canvas transition hover:opacity-90 focus-ring">
+          Neste
+          <ArrowRight size={16} />
+        </button>
+      </div>
+
+      {/* Body: a locator map and/or photo, the explanation, and a wiki link. */}
+      <div className={`flex gap-3 ${hasMedia ? "mt-3" : "mt-2"}`}>
+        {loc && (
+          <div className="relative h-[124px] w-[100px] shrink-0 overflow-hidden rounded-2xl bg-black/[0.03] dark:bg-white/[0.04]">
+            <NorwayMap region={loc.region} pin={loc.pin} />
+          </div>
+        )}
+        {thumb && (
+          <div className="hidden h-[124px] w-[100px] shrink-0 overflow-hidden rounded-2xl bg-black/[0.04] sm:block dark:bg-white/[0.05]">
+            <img src={imgAt(thumb, 240)} alt="" className="h-full w-full object-contain" />
+          </div>
+        )}
+        <div className="flex min-w-0 flex-1 flex-col">
+          {detail}
+          {subject && (
+            <a
+              href={wikiHref(subject.id, subject.name)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex w-fit items-center gap-1.5 rounded-full border border-[var(--field-stroke)] bg-[var(--field)] px-3 py-1.5 text-xs font-semibold text-ink/90 transition hover:text-ink hover:bg-black/[0.03] focus-ring dark:hover:bg-white/[0.05]"
             >
-              {delta >= 0 ? `+${delta}` : delta} Elo
-            </span>
+              <ExternalLink size={13} />
+              Les mer på Wikipedia
+            </a>
           )}
         </div>
-        {detail}
       </div>
-      <button onClick={onNext} className="flex shrink-0 items-center gap-1.5 self-center rounded-full bg-ink px-4 py-2.5 text-sm font-semibold text-canvas transition hover:opacity-90 focus-ring">
-        Neste
-        <ArrowRight size={16} />
-      </button>
     </div>
   );
 }

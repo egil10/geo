@@ -810,6 +810,29 @@ const WRITABLE = new Set([
   "fossefall-kart",
 ]);
 
+// Which question types actually have questions for the chosen categories
+// (empty selection = all). Used to grey out impossible picks in the UI.
+export function availableTypesFor(cats: Set<Category>): Set<QuizType> {
+  const out = new Set<QuizType>();
+  for (const g of GENERATORS) {
+    if (!g.pool.length) continue;
+    if (cats.size && !g.cats.some((c) => cats.has(c))) continue;
+    out.add(quizTypeOf(g.key));
+  }
+  return out;
+}
+
+// Which categories have questions of the chosen types (empty = all types).
+export function availableCatsFor(types: Set<QuizType>): Set<Category> {
+  const out = new Set<Category>();
+  for (const g of GENERATORS) {
+    if (!g.pool.length) continue;
+    if (types.size && !types.has(quizTypeOf(g.key))) continue;
+    for (const c of g.cats) out.add(c);
+  }
+  return out;
+}
+
 export function activeGenerators(selected: Set<Category>, types: Set<QuizType>, writableOnly = false): Generator[] {
   let gens = GENERATORS.filter((g) => g.cats.some((c) => selected.has(c)) && g.pool.length > 0);
   if (!gens.length) gens = GENERATORS.filter((g) => g.pool.length > 0); // empty selection = "Alt"
