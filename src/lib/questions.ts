@@ -751,6 +751,7 @@ export interface PickCtx {
   recentSubjects: Set<string>;
   recentAnswers: string[];
   lastGen: string | null;
+  forceGen?: string | null; // dev: pin a single generator key (via ?gen=)
 }
 
 // Generators whose answer is determinate without seeing the options, so they
@@ -794,6 +795,17 @@ export function activeGenerators(selected: Set<Category>, writableOnly = false):
 }
 
 export function nextRound(gens: Generator[], ctx: PickCtx): Round {
+  // Dev hook: pin one generator so a specific question type can be inspected.
+  if (ctx.forceGen) {
+    const only = gens.filter((g) => g.key === ctx.forceGen && g.pool.length);
+    if (only.length) {
+      for (let i = 0; i < 80; i++) {
+        const g = pick(only);
+        const r = g.build(pick(g.pool));
+        if (r) return r;
+      }
+    }
+  }
   let best: Round | null = null;
   let bestScore = -Infinity;
   for (let i = 0; i < 12; i++) {

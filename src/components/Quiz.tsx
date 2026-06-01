@@ -134,7 +134,8 @@ function makeRound(
   selected: Set<Category>,
   ctx: { recentSubjects: Set<string>; recentAnswers: string[]; lastGen: string | null },
 ): AnyRound {
-  return mode === "sorter" ? nextOrderRound(selected) : nextRound(gens, ctx);
+  const forceGen = typeof window !== "undefined" ? new URLSearchParams(window.location.search).get("gen") : null;
+  return mode === "sorter" ? nextOrderRound(selected) : nextRound(gens, { ...ctx, forceGen });
 }
 
 function buildInitial(mode: Mode, gens: ReturnType<typeof activeGenerators>, selected: Set<Category>): AnyRound[] {
