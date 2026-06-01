@@ -35,10 +35,12 @@ export default function TopBar({
       ) : (
         summary &&
         onCustomize && (
-          <button onClick={onCustomize} className="pill-glass min-w-0 shrink focus-ring" aria-label="Tilpass quizen">
+          <button onClick={onCustomize} className="pill-glass shrink-0 focus-ring" aria-label={`Tilpass quizen — ${summary}`}>
             <SlidersHorizontal size={14} className="shrink-0" />
-            <span className="min-w-0 truncate">{summary}</span>
-            <ChevronRight size={13} className="shrink-0 text-ink-muted" />
+            {/* Phones show just the icon (the category is already on the card);
+                the full summary appears once there's room. */}
+            <span className="hidden max-w-[16rem] truncate sm:inline">{summary}</span>
+            <ChevronRight size={13} className="hidden shrink-0 text-ink-muted sm:block" />
           </button>
         )
       )}
