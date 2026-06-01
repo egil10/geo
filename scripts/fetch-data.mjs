@@ -183,39 +183,6 @@ async function features({ type, attr, attrName, min, max, limit = 250 }) {
   return [...map.values()];
 }
 
-// Like features(), but normalizes a possibly mixed-unit attribute (some
-// Wikidata items store m vs km, m² vs km²) via `toUnit`, then filters + takes
-// the top `take` by the normalized value. Used for glaciers/tunnels/bridges.
-async function normFeatures({ type, attr, attrName, toUnit, min, max, take = 60 }) {
-  const rows = await sparql(`
-    SELECT ?x ?xLabel ?attr ?photo ?countyLabel WHERE {
-      ?x wdt:P31 wd:${type} ; wdt:P17 wd:Q20 .
-      ?x wdt:${attr} ?attr .
-      OPTIONAL { ?x wdt:P18 ?photo }
-      OPTIONAL { ?x wdt:P131* ?county . ?county wdt:P31 wd:Q192299 . FILTER NOT EXISTS { ?county wdt:P576 ?cd } }
-      ${LABEL}
-    }
-    ORDER BY DESC(?attr)
-    LIMIT 3000`);
-  const map = new Map();
-  for (const b of rows) {
-    const id = qid(b, "x");
-    const name = val(b, "xLabel");
-    if (!name || /^Q\d+$/.test(name)) continue;
-    let v = num(b, "attr");
-    if (v == null) continue;
-    v = toUnit(v);
-    if (v < min || v > max) continue;
-    if (!map.has(id))
-      map.set(id, { id, name, [attrName]: v, photo: imgUrl(val(b, "photo"), 1024), county: normCounty(val(b, "countyLabel")) });
-    else {
-      const e = map.get(id);
-      if (!e.photo && val(b, "photo")) e.photo = imgUrl(val(b, "photo"), 1024);
-    }
-  }
-  return [...map.values()].sort((a, b) => b[attrName] - a[attrName]).slice(0, take);
-}
-
 async function main() {
   await mkdir(OUT_DIR, { recursive: true });
   const tasks = [
@@ -227,9 +194,9 @@ async function main() {
     ["fjorder", () => features({ type: "Q45776", attr: "P2043", attrName: "length", min: 5, max: 220, limit: 200 })],
     ["oyer", () => features({ type: "Q23442", attr: "P2046", attrName: "area", min: 5, max: 40000, limit: 200 })],
     ["fossefall", () => features({ type: "Q34038", attr: "P2048", attrName: "height", min: 40, max: 900, limit: 150 })],
-    ["isbreer", () => normFeatures({ type: "Q35666", attr: "P2046", attrName: "area", toUnit: (v) => (v > 9000 ? v / 1e6 : v), min: 2, max: 8000, take: 40 })],
-    ["tunneler", () => normFeatures({ type: "Q44377", attr: "P2043", attrName: "length", toUnit: (v) => (v > 50 ? v / 1000 : v), min: 3, max: 30, take: 50 })],
-    ["broer", () => normFeatures({ type: "Q12280", attr: "P2043", attrName: "length", toUnit: (v) => (v > 50 ? v / 1000 : v), min: 0.3, max: 8, take: 50 })],
+    // Glaciers + tunnels are NOT fetched here — Wikidata covers them badly
+    // (Svalbard-only glaciers; wrong tunnel entity type). They are curated from
+    // Wikipedia in scripts/curate-extra.mjs, which also patches in Sognefjorden.
   ];
   const only = process.argv.slice(2);
   const selected = only.length ? tasks.filter(([name]) => only.includes(name)) : tasks;
