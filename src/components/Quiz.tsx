@@ -336,9 +336,29 @@ export default function Quiz({
   }, [types]);
 
   const round = state.round;
+  const answered = state.phase === "answered";
+
+  // Verdict-or-status block: the side column in Velg/Skriv, stacked below in Sortér.
+  const statusSlot = (
+    <div className="min-h-[104px]">
+      {answered && round ? (
+        <RevealBar round={round} won={!!state.won} skipped={state.skipped} delta={state.delta} typed={state.typed} onNext={handleNext} />
+      ) : (
+        <div className="animate-fade-in flex min-h-[104px] flex-col items-center justify-center gap-2 text-sm text-ink-muted">
+          <span>Spørsmål {state.total + 1}</span>
+          <button
+            onClick={handleSkip}
+            className="flex items-center gap-1.5 rounded-full border border-[var(--field-stroke)] px-3.5 py-1.5 text-xs font-medium text-ink-muted transition hover:text-ink focus-ring"
+          >
+            <SkipForward size={13} /> Hopp over
+          </button>
+        </div>
+      )}
+    </div>
+  );
 
   return (
-    <div className="mx-auto flex w-full max-w-3xl flex-col gap-3 px-3 pb-10 pt-3 sm:px-5">
+    <div className="mx-auto flex w-full max-w-3xl flex-col gap-3 px-3 pb-10 pt-3 sm:px-5 lg:max-w-5xl">
       <TopBar
         mode={mode}
         onOpenMode={onOpenMode}
@@ -371,40 +391,24 @@ export default function Quiz({
 
       {noGens ? (
         <EmptyFilters onAdjust={onOpenType} />
-      ) : (
-        round &&
-        (isOrder(round) ? (
+      ) : round && isOrder(round) ? (
+        // Sortér: the order board with its verdict stacked below.
+        <div className="flex flex-col gap-3">
           <OrderBoard key={round.uid} round={round} phase={state.phase} submitted={state.submittedOrder} onCheck={answerOrder} />
-        ) : (
-          <QuestionCard
-            key={round.uid}
-            round={round}
-            mode={mode}
-            phase={state.phase}
-            picked={state.picked}
-            quality={quality}
-            onChoose={answerChoose}
-            onWrite={answerWrite}
-          />
-        ))
-      )}
-
-      {/* Reveal / status strip — fixed height so layout never jumps. */}
-      <div className={`min-h-[104px] ${noGens ? "hidden" : ""}`}>
-        {state.phase === "answered" && round ? (
-          <RevealBar round={round} won={!!state.won} skipped={state.skipped} delta={state.delta} typed={state.typed} onNext={handleNext} />
-        ) : (
-          <div className="animate-fade-in flex h-[104px] flex-col items-center justify-center gap-2 text-sm text-ink-muted">
-            <span>Spørsmål {state.total + 1}</span>
-            <button
-              onClick={handleSkip}
-              className="flex items-center gap-1.5 rounded-full border border-[var(--field-stroke)] px-3.5 py-1.5 text-xs font-medium text-ink-muted transition hover:text-ink focus-ring"
-            >
-              <SkipForward size={13} /> Hopp over
-            </button>
+          {statusSlot}
+        </div>
+      ) : round ? (
+        // Velg / Skriv: prompt and feedback share the top row; choices sit below.
+        <div className="grid items-start gap-3 lg:grid-cols-[minmax(0,1fr)_minmax(300px,340px)]">
+          <div className="lg:col-start-1 lg:row-start-1">
+            <PromptCard key={round.uid} round={round} quality={quality} />
           </div>
-        )}
-      </div>
+          <div className="lg:col-start-1 lg:row-start-2">
+            <AnswerArea round={round} mode={mode} answered={answered} picked={state.picked} onChoose={answerChoose} onWrite={answerWrite} />
+          </div>
+          <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2">{statusSlot}</div>
+        </div>
+      ) : null}
     </div>
   );
 }
@@ -425,33 +429,15 @@ function EmptyFilters({ onAdjust }: { onAdjust: () => void }) {
   );
 }
 
-// ---- Velg / Skriv card ----------------------------------------------------
-function QuestionCard({
-  round,
-  mode,
-  phase,
-  picked,
-  quality,
-  onChoose,
-  onWrite,
-}: {
-  round: Round;
-  mode: Mode;
-  phase: "idle" | "answered";
-  picked: number | null;
-  quality: Quality;
-  onChoose: (i: number) => void;
-  onWrite: (s: string) => void;
-}) {
-  const answered = phase === "answered";
+// ---- Prompt card (the question itself) ------------------------------------
+function PromptCard({ round, quality }: { round: Round; quality: Quality }) {
   const level = diffLevel(round.difficulty);
   const catLabel = CATEGORIES.find((c) => c.key === round.cat)?.label ?? "";
   // Map questions need a tall canvas so the whole country (and its pin) fits.
   const cardH = round.prompt.kind === "map" ? "h-[440px] sm:h-[500px]" : "h-[320px] sm:h-[360px]";
 
   return (
-    <div className="animate-pop flex flex-col gap-3">
-      <div className={`glass-strong flex ${cardH} flex-col overflow-hidden rounded-[28px]`}>
+    <div className={`animate-pop glass-strong flex ${cardH} flex-col overflow-hidden rounded-[28px]`}>
         <div className="flex shrink-0 items-center justify-between px-5 pt-4">
           <span className="text-[11px] font-semibold uppercase tracking-wider text-ink-muted">{catLabel}</span>
           <span className="flex items-center gap-1" aria-label={`Vanskelighet ${level} av 3`}>
@@ -492,13 +478,30 @@ function QuestionCard({
             </h1>
           </div>
         )}
-      </div>
+    </div>
+  );
+}
 
-      {mode === "skriv" ? (
-        <WriteAnswer round={round} answered={answered} onWrite={onWrite} />
-      ) : (
-        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-          {round.choices.map((choice, i) => {
+// ---- Answer area (four options for Velg, a text field for Skriv) -----------
+function AnswerArea({
+  round,
+  mode,
+  answered,
+  picked,
+  onChoose,
+  onWrite,
+}: {
+  round: Round;
+  mode: Mode;
+  answered: boolean;
+  picked: number | null;
+  onChoose: (i: number) => void;
+  onWrite: (s: string) => void;
+}) {
+  if (mode === "skriv") return <WriteAnswer round={round} answered={answered} onWrite={onWrite} />;
+  return (
+    <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+      {round.choices.map((choice, i) => {
             const isAnswer = i === round.answerIndex;
             const isPicked = i === picked;
             let cls = "border-[var(--field-stroke)] bg-[var(--field)] hover:bg-black/[0.03] dark:hover:bg-white/[0.04]";
@@ -528,8 +531,6 @@ function QuestionCard({
               </button>
             );
           })}
-        </div>
-      )}
     </div>
   );
 }
