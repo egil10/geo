@@ -26,25 +26,25 @@ export default function TopBar({
 }) {
   return (
     <header className="flex items-center gap-2">
-      <div className="-my-1 flex min-w-0 flex-1 items-center gap-2 overflow-x-auto py-1 no-scrollbar">
-        <Wordmark />
-        {exploreActive ? (
-          <button onClick={onExplore} className="pill-solid shrink-0 focus-ring" aria-label="Tilbake til quizen">
-            <Play size={14} />
-            <span>Spill</span>
+      <Wordmark />
+      {exploreActive ? (
+        <button onClick={onExplore} className="pill-solid shrink-0 focus-ring" aria-label="Tilbake til quizen">
+          <Play size={14} />
+          <span>Spill</span>
+        </button>
+      ) : (
+        summary &&
+        onCustomize && (
+          <button onClick={onCustomize} className="pill-glass min-w-0 shrink focus-ring" aria-label="Tilpass quizen">
+            <SlidersHorizontal size={14} className="shrink-0" />
+            <span className="truncate">{summary}</span>
+            <ChevronRight size={13} className="shrink-0 text-ink-muted" />
           </button>
-        ) : (
-          summary &&
-          onCustomize && (
-            <button onClick={onCustomize} className="pill-glass min-w-0 shrink focus-ring" aria-label="Tilpass quizen">
-              <SlidersHorizontal size={14} className="shrink-0" />
-              <span className="truncate">{summary}</span>
-              <ChevronRight size={13} className="shrink-0 text-ink-muted" />
-            </button>
-          )
-        )}
-      </div>
-      <div className="flex shrink-0 items-center gap-2">
+        )
+      )}
+      {/* Spacer pushes the controls to the right; collapses first when tight. */}
+      <div className="flex-1" />
+      <div className="flex shrink-0 items-center gap-1.5">
         {!exploreActive && (
           <button onClick={onExplore} aria-label="Utforsk datasettet" title="Utforsk" className="pill pill-glass shrink-0 focus-ring">
             <Compass size={15} />

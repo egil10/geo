@@ -21,7 +21,7 @@ export default function Wordmark() {
     <a
       href="/"
       onClick={reset}
-      className="font-display text-[19px] font-bold tracking-tight leading-none focus-ring rounded-lg"
+      className="shrink-0 font-display text-[19px] font-bold tracking-tight leading-none focus-ring rounded-lg"
       aria-label="NorgesQuiz — til forsiden"
     >
       <span className="text-ink">norges</span>
