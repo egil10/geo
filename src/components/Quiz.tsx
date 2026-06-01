@@ -240,11 +240,11 @@ export default function Quiz({
       {round && <QuestionCard key={round.uid} round={round} state={state} onAnswer={handleAnswer} />}
 
       {/* Reveal / status strip — fixed height so layout never jumps. */}
-      <div className="min-h-[96px]">
+      <div className="h-[104px]">
         {state.phase === "answered" && round ? (
           <Reveal round={round} won={state.picked === round.answerIndex} delta={state.delta} onNext={handleNext} />
         ) : (
-          <div className="animate-fade-in flex h-[96px] items-center justify-center gap-2 text-sm text-ink-muted">
+          <div className="animate-fade-in flex h-full items-center justify-center gap-2 text-sm text-ink-muted">
             <span>
               Spørsmål {state.total + 1} · velg et svar
             </span>
@@ -271,9 +271,9 @@ function QuestionCard({
 
   return (
     <div className="animate-pop flex flex-col gap-3">
-      {/* Prompt card */}
-      <div className="glass-strong flex min-h-[300px] flex-col overflow-hidden rounded-[28px] sm:min-h-[340px]">
-        <div className="flex items-center justify-between px-5 pt-4">
+      {/* Prompt card — fixed height so every question has the same footprint. */}
+      <div className="glass-strong flex h-[320px] flex-col overflow-hidden rounded-[28px] sm:h-[360px]">
+        <div className="flex shrink-0 items-center justify-between px-5 pt-4">
           <span className="text-[11px] font-semibold uppercase tracking-wider text-ink-muted">{catLabel}</span>
           <span className="flex items-center gap-1" aria-label={`Vanskelighet ${level} av 3`}>
             {[1, 2, 3].map((i) => (
@@ -288,7 +288,9 @@ function QuestionCard({
 
         {round.prompt.kind === "image" ? (
           <>
-            <p className="px-5 pb-3 pt-2 text-center text-base font-semibold sm:text-lg">{round.prompt.text}</p>
+            <div className="flex h-[3.5rem] shrink-0 items-center justify-center px-5 pb-2 pt-1">
+              <p className="line-clamp-2 text-center text-base font-semibold leading-snug sm:text-lg">{round.prompt.text}</p>
+            </div>
             <div className="relative flex-1">
               {round.prompt.variant === "coa" ? (
                 <div className="absolute inset-3 overflow-hidden rounded-2xl bg-white">
@@ -314,8 +316,8 @@ function QuestionCard({
             </div>
           </>
         ) : (
-          <div className="grid flex-1 place-items-center px-6 py-8">
-            <h1 className="text-balance text-center font-display text-2xl font-bold leading-tight tracking-tight sm:text-[32px]">
+          <div className="grid flex-1 place-items-center px-6 py-6">
+            <h1 className="line-clamp-5 text-balance text-center font-display text-2xl font-bold leading-tight tracking-tight sm:text-[30px]">
               {round.prompt.text}
             </h1>
           </div>
@@ -339,7 +341,7 @@ function QuestionCard({
               key={i}
               disabled={answered}
               onClick={() => onAnswer(i)}
-              className={`group flex items-center gap-3 rounded-2xl border px-4 py-3.5 text-left transition focus-ring ${cls}`}
+              className={`group flex min-h-[3.5rem] items-center gap-3 rounded-2xl border px-4 py-2.5 text-left transition duration-150 focus-ring ${cls}`}
             >
               <span
                 className={`grid h-6 w-6 shrink-0 place-items-center rounded-md text-[11px] font-semibold tabular-nums ${
@@ -352,7 +354,7 @@ function QuestionCard({
               >
                 {answered && isAnswer ? <Check size={14} /> : answered && isPicked ? <X size={14} /> : i + 1}
               </span>
-              <span className="flex-1 font-medium leading-tight">{choice}</span>
+              <span className="line-clamp-2 flex-1 font-medium leading-snug">{choice}</span>
             </button>
           );
         })}
@@ -375,9 +377,9 @@ function Reveal({
   const subject = round.subject;
   const showPhoto = round.prompt.kind === "text" || round.prompt.variant === "coa";
   return (
-    <div className="animate-fade-up glass flex items-stretch gap-3 rounded-[24px] p-3">
+    <div className="animate-fade-up glass flex h-full items-center gap-3 rounded-[24px] p-3">
       {showPhoto && subject.photo && (
-        <div className="hidden h-[72px] w-[72px] shrink-0 overflow-hidden rounded-2xl sm:block">
+        <div className="hidden h-[76px] w-[76px] shrink-0 overflow-hidden rounded-2xl sm:block">
           <img src={imgAt(subject.photo, 200)} alt={subject.name} className="h-full w-full object-cover" />
         </div>
       )}
