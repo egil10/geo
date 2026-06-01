@@ -480,9 +480,32 @@ export interface PickCtx {
   lastGen: string | null;
 }
 
-export function activeGenerators(selected: Set<Category>): Generator[] {
-  const gens = GENERATORS.filter((g) => g.cats.some((c) => selected.has(c)) && g.pool.length > 0);
-  return gens.length ? gens : GENERATORS;
+// Generators whose answer is determinate without seeing the options, so they
+// work in "Skriv" (type-the-answer) mode. Ranking / "which of these" do not.
+const WRITABLE = new Set([
+  "kommune-fylke",
+  "kommune-vapen",
+  "fylke-vapen",
+  "fylke-admin",
+  "kommune-admin",
+  "nummer-kommune",
+  "kommune-nummer",
+  "fjell-foto",
+  "elver-foto",
+  "innsjoer-foto",
+  "fjorder-foto",
+  "oyer-foto",
+  "fossefall-foto",
+]);
+
+export function activeGenerators(selected: Set<Category>, writableOnly = false): Generator[] {
+  let gens = GENERATORS.filter((g) => g.cats.some((c) => selected.has(c)) && g.pool.length > 0);
+  if (!gens.length) gens = GENERATORS.filter((g) => g.pool.length > 0);
+  if (writableOnly) {
+    const w = gens.filter((g) => WRITABLE.has(g.key));
+    gens = w.length ? w : GENERATORS.filter((g) => WRITABLE.has(g.key) && g.pool.length > 0);
+  }
+  return gens;
 }
 
 export function nextRound(gens: Generator[], ctx: PickCtx): Round {
@@ -523,5 +546,65 @@ export function nextRound(gens: Generator[], ctx: PickCtx): Round {
     answerKey: k.county!,
     explanation: `${k.name} ligger i ${k.county}.`,
     difficulty: 800,
+  };
+}
+
+// ---- "Sortér" mode: order four items by a metric ---------------------------
+export interface OrderItem {
+  id: string;
+  name: string;
+  value: number;
+  county?: string;
+}
+export interface OrderRound {
+  uid: string;
+  cat: Category;
+  prompt: string;
+  unit: string;
+  items: OrderItem[]; // shown scrambled
+  correctIds: string[]; // high → low
+  difficulty: number;
+}
+
+const ORDER_SOURCES: { cat: Category; list: Place[]; prompt: string; unit: string }[] = [
+  { cat: "fjell", list: fjell, prompt: "Sorter fjellene fra høyest til lavest", unit: "moh." },
+  { cat: "elver", list: elver, prompt: "Sorter elvene fra lengst til kortest", unit: "km" },
+  { cat: "innsjoer", list: innsjoer, prompt: "Sorter innsjøene fra størst til minst", unit: "km²" },
+  { cat: "fjorder", list: fjorder, prompt: "Sorter fjordene fra lengst til kortest", unit: "km" },
+  { cat: "oyer", list: oyer, prompt: "Sorter øyene fra størst til minst", unit: "km²" },
+  { cat: "fossefall", list: fossefall, prompt: "Sorter fossene fra høyest til lavest", unit: "m" },
+  { cat: "befolkning", list: kommuner, prompt: "Sorter kommunene fra flest til færrest innbyggere", unit: "innb." },
+];
+
+export function nextOrderRound(selected: Set<Category>): OrderRound {
+  const sources = ORDER_SOURCES.filter((s) => selected.size === 0 || selected.has(s.cat));
+  const pool = sources.length ? sources : ORDER_SOURCES;
+  for (let i = 0; i < 14; i++) {
+    const src = pick(pool);
+    const four = rankingFour(src.list);
+    if (!four) continue;
+    if (new Set(four.map((p) => p.metric)).size !== 4) continue; // need a unique order
+    const ordered = [...four].sort((a, b) => b.metric! - a.metric!);
+    const avg = four.reduce((s, p) => s + p.prominence, 0) / 4;
+    return {
+      uid: uid("order"),
+      cat: src.cat,
+      prompt: src.prompt,
+      unit: src.unit,
+      items: shuffle([...four]).map((p) => ({ id: p.id, name: p.name, value: p.metric!, county: p.county })),
+      correctIds: ordered.map((p) => p.id),
+      difficulty: difficultyToRating(avg) + 150,
+    };
+  }
+  // Fallback: the highest mountains.
+  const top = [...fjell].sort((a, b) => b.metric! - a.metric!).slice(0, 4);
+  return {
+    uid: uid("order"),
+    cat: "fjell",
+    prompt: ORDER_SOURCES[0].prompt,
+    unit: "moh.",
+    items: shuffle([...top]).map((p) => ({ id: p.id, name: p.name, value: p.metric!, county: p.county })),
+    correctIds: top.map((p) => p.id),
+    difficulty: 1100,
   };
 }

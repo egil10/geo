@@ -2,7 +2,9 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Quiz from "@/components/Quiz";
+import Lists from "@/components/Lists";
 import CategoryPicker from "@/components/CategoryPicker";
+import ModePicker, { Mode } from "@/components/ModePicker";
 import EloPanel from "@/components/EloPanel";
 import SettingsSheet from "@/components/SettingsSheet";
 import Celebration from "@/components/Celebration";
@@ -15,7 +17,9 @@ const CATS_KEY = "norgequiz.cats.v1";
 const AUTO_KEY = "norgequiz.autoadvance.v1";
 const THEME_KEY = "norgequiz.theme";
 const QUALITY_KEY = "norgequiz.quality.v1";
+const MODE_KEY = "norgequiz.mode.v1";
 const VALID = new Set(CATEGORIES.map((c) => c.key));
+const MODES = new Set<Mode>(["velg", "sorter", "skriv", "lister"]);
 
 export default function Home() {
   const [elo, setElo] = useState<EloState>(() => ({
@@ -29,11 +33,13 @@ export default function Home() {
     updatedAt: 0,
   }));
   const [selected, setSelected] = useState<Set<Category>>(new Set());
+  const [mode, setMode] = useState<Mode>("velg");
   const [autoAdvance, setAutoAdvance] = useState(0);
   const [quality, setQuality] = useState<Quality>("hd");
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
   const [pickerOpen, setPickerOpen] = useState(false);
+  const [modeOpen, setModeOpen] = useState(false);
   const [eloOpen, setEloOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [celebrate, setCelebrate] = useState<{ title: string; sub: string } | null>(null);
@@ -48,6 +54,9 @@ export default function Home() {
       if (Array.isArray(cats)) setSelected(new Set(cats.filter((c: string) => VALID.has(c as Category))));
       const auto = Number(localStorage.getItem(AUTO_KEY));
       if ([0, 1000, 3000, 5000].includes(auto)) setAutoAdvance(auto);
+      const urlMode = new URLSearchParams(window.location.search).get("mode") as Mode | null;
+      const m = urlMode && MODES.has(urlMode) ? urlMode : (localStorage.getItem(MODE_KEY) as Mode | null);
+      if (m && MODES.has(m)) setMode(m);
       const q = localStorage.getItem(QUALITY_KEY);
       if (q === "hd" || q === "lett") setQuality(q);
       else {
@@ -83,6 +92,15 @@ export default function Home() {
     setSelected(next);
     try {
       localStorage.setItem(CATS_KEY, JSON.stringify([...next]));
+    } catch {
+      /* ignore */
+    }
+  };
+
+  const changeMode = (m: Mode) => {
+    setMode(m);
+    try {
+      localStorage.setItem(MODE_KEY, m);
     } catch {
       /* ignore */
     }
@@ -136,22 +154,35 @@ export default function Home() {
 
   return (
     <main className="relative min-h-dvh">
-      <Quiz
-        selected={selected}
-        elo={elo}
-        onResult={handleResult}
-        onPerfectStreak={handlePerfect}
-        onOpenPicker={() => setPickerOpen(true)}
-        onOpenElo={() => setEloOpen(true)}
-        onOpenSettings={() => setSettingsOpen(true)}
-        autoAdvance={autoAdvance}
-        quality={quality}
-      />
+      {mode === "lister" ? (
+        <Lists
+          mode={mode}
+          onOpenMode={() => setModeOpen(true)}
+          elo={elo}
+          onOpenElo={() => setEloOpen(true)}
+          onOpenSettings={() => setSettingsOpen(true)}
+        />
+      ) : (
+        <Quiz
+          mode={mode}
+          selected={selected}
+          elo={elo}
+          onResult={handleResult}
+          onPerfectStreak={handlePerfect}
+          onOpenPicker={() => setPickerOpen(true)}
+          onOpenMode={() => setModeOpen(true)}
+          onOpenElo={() => setEloOpen(true)}
+          onOpenSettings={() => setSettingsOpen(true)}
+          autoAdvance={autoAdvance}
+          quality={quality}
+        />
+      )}
 
       <footer className="px-5 pb-8 text-center text-[11px] text-ink-muted">
-        Data fra Wikidata & SSB · {CATEGORIES.length} kategorier · bygd for å bli best i norsk geografi
+        Data fra Wikidata & SSB · 4 spillemoduser · bygd for å bli best i norsk geografi
       </footer>
 
+      {modeOpen && <ModePicker mode={mode} onChange={changeMode} onClose={() => setModeOpen(false)} />}
       {pickerOpen && <CategoryPicker selected={selected} onChange={changeCats} onClose={() => setPickerOpen(false)} />}
       {eloOpen && <EloPanel elo={elo} onClose={() => setEloOpen(false)} />}
       {settingsOpen && (

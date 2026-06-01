@@ -1,20 +1,39 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useReducer } from "react";
-import { Check, X, ArrowRight, Flame, Settings, Layers, ChevronRight } from "lucide-react";
-import { Round, nextRound, activeGenerators, Category, CATEGORIES } from "@/lib/questions";
-import { fmtMetric, fmtInt } from "@/lib/data";
+import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "react";
+import { Check, X, ArrowRight, Flame, ChevronUp, ChevronDown } from "lucide-react";
+import {
+  Round,
+  OrderRound,
+  nextRound,
+  nextOrderRound,
+  activeGenerators,
+  Category,
+  CATEGORIES,
+} from "@/lib/questions";
 import { EloState } from "@/lib/elo";
 import { imgAt, heroProps, preloadImage, Quality } from "@/lib/images";
+import { matchesAnswer } from "@/lib/match";
 import QImage from "./QImage";
-import EloBadge from "./EloBadge";
-import Wordmark from "./Wordmark";
+import TopBar from "./TopBar";
+import { Mode } from "./ModePicker";
+
+type AnyRound = Round | OrderRound;
+const isOrder = (r: AnyRound): r is OrderRound => "items" in r;
+const subjectId = (r: AnyRound) => (isOrder(r) ? r.correctIds[0] : r.subject.id);
+const answerKeyOf = (r: AnyRound) => (isOrder(r) ? r.cat : r.answerKey);
+
+const nf = new Intl.NumberFormat("nb-NO");
+const fmtVal = (v: number, unit: string) => `${nf.format(Math.round(v))} ${unit}`.trim();
 
 interface State {
-  round: Round | null;
-  queue: Round[];
-  picked: number | null;
+  round: AnyRound | null;
+  queue: AnyRound[];
   phase: "idle" | "answered";
+  picked: number | null;
+  typed: string | null;
+  submittedOrder: string[] | null;
+  won: boolean | null;
   delta: number | null;
   total: number;
   correct: number;
@@ -26,15 +45,18 @@ interface State {
 }
 
 type Action =
-  | { type: "init"; rounds: Round[] }
-  | { type: "answer"; index: number; won: boolean; delta: number }
-  | { type: "next"; newRound: Round };
+  | { type: "init"; rounds: AnyRound[] }
+  | { type: "answer"; won: boolean; delta: number; picked?: number; typed?: string; order?: string[] }
+  | { type: "next"; newRound: AnyRound };
 
 const initial: State = {
   round: null,
   queue: [],
-  picked: null,
   phase: "idle",
+  picked: null,
+  typed: null,
+  submittedOrder: null,
+  won: null,
   delta: null,
   total: 0,
   correct: 0,
@@ -54,18 +76,24 @@ function reducer(state: State, action: Action): State {
         queue: action.rounds.slice(1),
         phase: "idle",
         picked: null,
+        typed: null,
+        submittedOrder: null,
+        won: null,
         delta: null,
-        recentSubjects: action.rounds.map((r) => r.subject.id),
-        recentAnswers: action.rounds.map((r) => r.answerKey),
-        lastGen: action.rounds.at(-1)?.genKey ?? null,
+        recentSubjects: action.rounds.map(subjectId),
+        recentAnswers: action.rounds.map(answerKeyOf),
+        lastGen: action.rounds.at(-1) && !isOrder(action.rounds.at(-1)!) ? (action.rounds.at(-1) as Round).genKey : null,
       };
     case "answer": {
       const streak = action.won ? state.streak + 1 : 0;
       return {
         ...state,
         phase: "answered",
-        picked: action.index,
+        won: action.won,
         delta: action.delta,
+        picked: action.picked ?? null,
+        typed: action.typed ?? null,
+        submittedOrder: action.order ?? null,
         total: state.total + 1,
         correct: state.correct + (action.won ? 1 : 0),
         streak,
@@ -81,28 +109,39 @@ function reducer(state: State, action: Action): State {
         queue,
         phase: "idle",
         picked: null,
+        typed: null,
+        submittedOrder: null,
+        won: null,
         delta: null,
-        // A completed perfect-10 resets on advance to start the next loop.
         streak: state.streak >= 10 ? 0 : state.streak,
-        recentSubjects: [...state.recentSubjects, round.subject.id].slice(-30),
-        recentAnswers: [...state.recentAnswers, round.answerKey].slice(-14),
-        lastGen: round.genKey,
+        recentSubjects: [...state.recentSubjects, subjectId(round)].slice(-30),
+        recentAnswers: [...state.recentAnswers, answerKeyOf(round)].slice(-14),
+        lastGen: isOrder(round) ? state.lastGen : round.genKey,
       };
     }
   }
 }
 
-function buildInitial(gens: ReturnType<typeof activeGenerators>): Round[] {
+function makeRound(
+  mode: Mode,
+  gens: ReturnType<typeof activeGenerators>,
+  selected: Set<Category>,
+  ctx: { recentSubjects: Set<string>; recentAnswers: string[]; lastGen: string | null },
+): AnyRound {
+  return mode === "sorter" ? nextOrderRound(selected) : nextRound(gens, ctx);
+}
+
+function buildInitial(mode: Mode, gens: ReturnType<typeof activeGenerators>, selected: Set<Category>): AnyRound[] {
   const recentSubjects: string[] = [];
   const recentAnswers: string[] = [];
   let lastGen: string | null = null;
-  const rounds: Round[] = [];
+  const rounds: AnyRound[] = [];
   for (let i = 0; i < 3; i++) {
-    const r = nextRound(gens, { recentSubjects: new Set(recentSubjects), recentAnswers, lastGen });
+    const r = makeRound(mode, gens, selected, { recentSubjects: new Set(recentSubjects), recentAnswers, lastGen });
     rounds.push(r);
-    recentSubjects.push(r.subject.id);
-    recentAnswers.push(r.answerKey);
-    lastGen = r.genKey;
+    recentSubjects.push(subjectId(r));
+    recentAnswers.push(answerKeyOf(r));
+    if (!isOrder(r)) lastGen = r.genKey;
   }
   return rounds;
 }
@@ -110,70 +149,100 @@ function buildInitial(gens: ReturnType<typeof activeGenerators>): Round[] {
 const diffLevel = (d: number) => (d < 950 ? 1 : d < 1320 ? 2 : 3);
 
 export default function Quiz({
+  mode,
   selected,
   elo,
   onResult,
   onPerfectStreak,
   onOpenPicker,
+  onOpenMode,
   onOpenElo,
   onOpenSettings,
   autoAdvance,
   quality,
 }: {
+  mode: Mode;
   selected: Set<Category>;
   elo: EloState;
   onResult: (won: boolean, difficulty: number, cat: Category) => number;
   onPerfectStreak: () => void;
   onOpenPicker: () => void;
+  onOpenMode: () => void;
   onOpenElo: () => void;
   onOpenSettings: () => void;
   autoAdvance: number;
   quality: Quality;
 }) {
-  const gens = useMemo(() => activeGenerators(selected), [selected]);
+  const gens = useMemo(() => activeGenerators(selected, mode === "skriv"), [selected, mode]);
   const [state, dispatch] = useReducer(reducer, initial);
 
-  // (Re)build the round stream when the selected categories change.
   useEffect(() => {
-    dispatch({ type: "init", rounds: buildInitial(gens) });
-  }, [gens]);
+    dispatch({ type: "init", rounds: buildInitial(mode, gens, selected) });
+  }, [mode, gens, selected]);
 
   const handleNext = useCallback(() => {
-    const r = nextRound(gens, {
+    const r = makeRound(mode, gens, selected, {
       recentSubjects: new Set(state.recentSubjects),
       recentAnswers: state.recentAnswers,
       lastGen: state.lastGen,
     });
     dispatch({ type: "next", newRound: r });
-  }, [gens, state.recentSubjects, state.recentAnswers, state.lastGen]);
+  }, [mode, gens, selected, state.recentSubjects, state.recentAnswers, state.lastGen]);
 
-  const handleAnswer = useCallback(
-    (i: number) => {
-      if (state.phase !== "idle" || !state.round) return;
-      const won = i === state.round.answerIndex;
-      const delta = onResult(won, state.round.difficulty, state.round.cat);
+  const score = useCallback(
+    (won: boolean, extra: { picked?: number; typed?: string; order?: string[] }) => {
+      const r = state.round!;
+      const delta = onResult(won, r.difficulty, r.cat);
       if (won && state.streak + 1 === 10) onPerfectStreak();
-      dispatch({ type: "answer", index: i, won, delta });
+      dispatch({ type: "answer", won, delta, ...extra });
     },
-    [state.phase, state.round, state.streak, onResult, onPerfectStreak],
+    [state.round, state.streak, onResult, onPerfectStreak],
   );
 
-  // Keyboard: 1–4 to answer, Enter/Space/→ to advance.
+  const answerChoose = useCallback(
+    (i: number) => {
+      if (state.phase !== "idle" || !state.round || isOrder(state.round)) return;
+      score(i === state.round.answerIndex, { picked: i });
+    },
+    [state.phase, state.round, score],
+  );
+
+  const answerWrite = useCallback(
+    (text: string) => {
+      if (state.phase !== "idle" || !state.round || isOrder(state.round)) return;
+      score(matchesAnswer(text, state.round.answerKey), { typed: text });
+    },
+    [state.phase, state.round, score],
+  );
+
+  const answerOrder = useCallback(
+    (orderIds: string[]) => {
+      if (state.phase !== "idle" || !state.round || !isOrder(state.round)) return;
+      const correctIds = state.round.correctIds;
+      const allRight = orderIds.every((id, i) => id === correctIds[i]);
+      score(allRight, { order: orderIds });
+    },
+    [state.phase, state.round, score],
+  );
+
+  // Keyboard: digits answer (Velg), Enter advances after answering.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const tag = (e.target as HTMLElement)?.tagName ?? "";
       if (/INPUT|TEXTAREA/.test(tag)) return;
-      if (state.phase === "idle") {
+      if (state.phase === "answered") {
+        if (e.key === "Enter" || e.key === " " || e.key === "ArrowRight") {
+          e.preventDefault();
+          handleNext();
+        }
+      } else if (mode === "velg") {
         const n = parseInt(e.key, 10);
-        if (n >= 1 && n <= 4) handleAnswer(n - 1);
-      } else if (e.key === "Enter" || e.key === " " || e.key === "ArrowRight") {
-        e.preventDefault();
-        handleNext();
+        if (n >= 1 && n <= 4) answerChoose(n - 1);
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [state.phase, handleAnswer, handleNext]);
+  }, [state.phase, mode, answerChoose, handleNext]);
 
   // Optional auto-advance.
   useEffect(() => {
@@ -183,9 +252,10 @@ export default function Quiz({
     }
   }, [state.phase, autoAdvance, handleNext]);
 
-  // Preload upcoming images (prompt + reveal photo), matching displayed quality.
+  // Preload upcoming prompt/reveal images (Velg/Skriv only).
   useEffect(() => {
     for (const r of state.queue) {
+      if (isOrder(r)) continue;
       if (r.prompt.kind === "image") {
         const p = heroProps(r.prompt.src, r.prompt.variant, quality);
         preloadImage(p.src, p.srcSet, p.sizes);
@@ -207,29 +277,17 @@ export default function Quiz({
 
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-col gap-3 px-3 pb-10 pt-3 sm:px-5">
-      {/* Header */}
-      <header className="flex items-center gap-2">
-        <div className="flex min-w-0 flex-1 items-center gap-2 overflow-x-auto no-scrollbar -my-1 py-1">
-          <Wordmark />
-          <button onClick={onOpenPicker} className="pill-glass shrink-0 focus-ring" aria-label="Velg kategorier">
-            <Layers size={14} />
-            <span className="max-w-[9rem] truncate">{catLabel}</span>
-            <ChevronRight size={13} className="text-ink-muted" />
-          </button>
-        </div>
-        <div className="flex shrink-0 items-center gap-2">
-          <EloBadge elo={elo} onOpen={onOpenElo} />
-          <button
-            onClick={onOpenSettings}
-            className="grid h-9 w-9 shrink-0 place-items-center rounded-full glass text-ink-muted transition hover:text-ink focus-ring"
-            aria-label="Innstillinger"
-          >
-            <Settings size={16} />
-          </button>
-        </div>
-      </header>
+      <TopBar
+        mode={mode}
+        onOpenMode={onOpenMode}
+        catLabel={catLabel}
+        onOpenPicker={onOpenPicker}
+        elo={elo}
+        onOpenElo={onOpenElo}
+        onOpenSettings={onOpenSettings}
+      />
 
-      {/* Streak — 10 correct in a row triggers a celebration, then resets. Elo keeps climbing. */}
+      {/* Streak — 10 in a row triggers a celebration, then resets. */}
       <div className="flex items-center gap-2 px-1">
         <Flame size={14} className={state.streak > 0 ? "text-amber-500" : "text-ink-muted"} />
         <div className="flex flex-1 items-center gap-1" aria-label={`Rekke ${state.streak} av 10`}>
@@ -244,18 +302,29 @@ export default function Quiz({
         <span className="shrink-0 text-[11px] font-medium tabular-nums text-ink-muted">{state.streak}/10</span>
       </div>
 
-      {round && <QuestionCard key={round.uid} round={round} state={state} quality={quality} onAnswer={handleAnswer} />}
+      {round &&
+        (isOrder(round) ? (
+          <OrderBoard key={round.uid} round={round} phase={state.phase} submitted={state.submittedOrder} onCheck={answerOrder} />
+        ) : (
+          <QuestionCard
+            key={round.uid}
+            round={round}
+            mode={mode}
+            phase={state.phase}
+            picked={state.picked}
+            quality={quality}
+            onChoose={answerChoose}
+            onWrite={answerWrite}
+          />
+        ))}
 
       {/* Reveal / status strip — fixed height so layout never jumps. */}
-      <div className="h-[104px]">
+      <div className="min-h-[104px]">
         {state.phase === "answered" && round ? (
-          <Reveal round={round} won={state.picked === round.answerIndex} delta={state.delta} onNext={handleNext} />
+          <RevealBar round={round} won={!!state.won} delta={state.delta} typed={state.typed} onNext={handleNext} />
         ) : (
-          <div className="animate-fade-in flex h-full items-center justify-center gap-2 text-sm text-ink-muted">
-            <span>
-              Spørsmål {state.total + 1} · velg et svar
-            </span>
-            <kbd className="rounded-md border border-[var(--field-stroke)] px-1.5 py-0.5 text-[11px]">1–4</kbd>
+          <div className="animate-fade-in flex h-[104px] items-center justify-center gap-2 text-sm text-ink-muted">
+            <span>Spørsmål {state.total + 1}</span>
           </div>
         )}
       </div>
@@ -263,34 +332,36 @@ export default function Quiz({
   );
 }
 
+// ---- Velg / Skriv card ----------------------------------------------------
 function QuestionCard({
   round,
-  state,
+  mode,
+  phase,
+  picked,
   quality,
-  onAnswer,
+  onChoose,
+  onWrite,
 }: {
   round: Round;
-  state: State;
+  mode: Mode;
+  phase: "idle" | "answered";
+  picked: number | null;
   quality: Quality;
-  onAnswer: (i: number) => void;
+  onChoose: (i: number) => void;
+  onWrite: (s: string) => void;
 }) {
-  const answered = state.phase === "answered";
+  const answered = phase === "answered";
   const level = diffLevel(round.difficulty);
   const catLabel = CATEGORIES.find((c) => c.key === round.cat)?.label ?? "";
 
   return (
     <div className="animate-pop flex flex-col gap-3">
-      {/* Prompt card — fixed height so every question has the same footprint. */}
       <div className="glass-strong flex h-[320px] flex-col overflow-hidden rounded-[28px] sm:h-[360px]">
         <div className="flex shrink-0 items-center justify-between px-5 pt-4">
           <span className="text-[11px] font-semibold uppercase tracking-wider text-ink-muted">{catLabel}</span>
           <span className="flex items-center gap-1" aria-label={`Vanskelighet ${level} av 3`}>
             {[1, 2, 3].map((i) => (
-              <span
-                key={i}
-                className="h-1.5 w-1.5 rounded-full"
-                style={{ background: i <= level ? "var(--nordic)" : "var(--hairline)" }}
-              />
+              <span key={i} className="h-1.5 w-1.5 rounded-full" style={{ background: i <= level ? "var(--nordic)" : "var(--hairline)" }} />
             ))}
           </span>
         </div>
@@ -319,71 +390,212 @@ function QuestionCard({
         )}
       </div>
 
-      {/* Answers */}
-      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-        {round.choices.map((choice, i) => {
-          const isAnswer = i === round.answerIndex;
-          const isPicked = i === state.picked;
-          let cls =
-            "border-[var(--field-stroke)] bg-[var(--field)] hover:bg-black/[0.03] dark:hover:bg-white/[0.04]";
-          if (answered) {
-            if (isAnswer) cls = "border-transparent bg-[var(--good)]/12 text-[var(--good)] ring-1 ring-[var(--good)]/40";
-            else if (isPicked) cls = "border-transparent bg-[var(--bad)]/10 text-[var(--bad)] ring-1 ring-[var(--bad)]/40";
-            else cls = "border-[var(--field-stroke)] opacity-50";
-          }
-          return (
-            <button
-              key={i}
-              disabled={answered}
-              onClick={() => onAnswer(i)}
-              className={`group flex min-h-[3.5rem] items-center gap-3 rounded-2xl border px-4 py-2.5 text-left transition duration-150 focus-ring ${cls}`}
-            >
-              <span
-                className={`grid h-6 w-6 shrink-0 place-items-center rounded-md text-[11px] font-semibold tabular-nums ${
-                  answered && isAnswer
-                    ? "bg-[var(--good)] text-white"
-                    : answered && isPicked
-                      ? "bg-[var(--bad)] text-white"
-                      : "bg-black/[0.06] text-ink-muted dark:bg-white/10"
-                }`}
+      {mode === "skriv" ? (
+        <WriteAnswer round={round} answered={answered} onWrite={onWrite} />
+      ) : (
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+          {round.choices.map((choice, i) => {
+            const isAnswer = i === round.answerIndex;
+            const isPicked = i === picked;
+            let cls = "border-[var(--field-stroke)] bg-[var(--field)] hover:bg-black/[0.03] dark:hover:bg-white/[0.04]";
+            if (answered) {
+              if (isAnswer) cls = "border-transparent bg-[var(--good)]/12 text-[var(--good)] ring-1 ring-[var(--good)]/40";
+              else if (isPicked) cls = "border-transparent bg-[var(--bad)]/10 text-[var(--bad)] ring-1 ring-[var(--bad)]/40";
+              else cls = "border-[var(--field-stroke)] opacity-50";
+            }
+            return (
+              <button
+                key={i}
+                disabled={answered}
+                onClick={() => onChoose(i)}
+                className={`group flex min-h-[3.5rem] items-center gap-3 rounded-2xl border px-4 py-2.5 text-left transition duration-150 focus-ring ${cls}`}
               >
-                {answered && isAnswer ? <Check size={14} /> : answered && isPicked ? <X size={14} /> : i + 1}
-              </span>
-              <span className="line-clamp-2 flex-1 font-medium leading-snug">{choice}</span>
-            </button>
-          );
-        })}
-      </div>
+                <span
+                  className={`grid h-6 w-6 shrink-0 place-items-center rounded-md text-[11px] font-semibold tabular-nums ${
+                    answered && isAnswer ? "bg-[var(--good)] text-white" : answered && isPicked ? "bg-[var(--bad)] text-white" : "bg-black/[0.06] text-ink-muted dark:bg-white/10"
+                  }`}
+                >
+                  {answered && isAnswer ? <Check size={14} /> : answered && isPicked ? <X size={14} /> : i + 1}
+                </span>
+                <span className="line-clamp-2 flex-1 font-medium leading-snug">{choice}</span>
+              </button>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
 
-function Reveal({
+function WriteAnswer({ round, answered, onWrite }: { round: Round; answered: boolean; onWrite: (s: string) => void }) {
+  const [value, setValue] = useState("");
+  const ref = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    setValue("");
+    ref.current?.focus();
+  }, [round.uid]);
+
+  const submit = () => {
+    if (!answered && value.trim()) onWrite(value.trim());
+  };
+
+  return (
+    <div className="flex gap-2">
+      <input
+        ref={ref}
+        value={value}
+        disabled={answered}
+        onChange={(e) => setValue(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            e.preventDefault();
+            submit();
+          }
+        }}
+        placeholder="Skriv svaret…"
+        autoComplete="off"
+        autoCapitalize="words"
+        spellCheck={false}
+        className="min-h-[3.5rem] flex-1 rounded-2xl border border-[var(--field-stroke)] bg-[var(--field)] px-4 text-base font-medium outline-none placeholder:text-ink-muted focus:border-[var(--nordic)]"
+      />
+      <button
+        onClick={submit}
+        disabled={answered || !value.trim()}
+        className="min-h-[3.5rem] shrink-0 rounded-2xl bg-ink px-5 text-sm font-semibold text-canvas transition hover:opacity-90 focus-ring disabled:opacity-40"
+      >
+        Svar
+      </button>
+    </div>
+  );
+}
+
+// ---- Sortér board ---------------------------------------------------------
+function OrderBoard({
+  round,
+  phase,
+  submitted,
+  onCheck,
+}: {
+  round: OrderRound;
+  phase: "idle" | "answered";
+  submitted: string[] | null;
+  onCheck: (ids: string[]) => void;
+}) {
+  const [order, setOrder] = useState<string[]>(round.items.map((i) => i.id));
+  useEffect(() => setOrder(round.items.map((i) => i.id)), [round.uid]);
+  const answered = phase === "answered";
+  const byId = useMemo(() => Object.fromEntries(round.items.map((i) => [i.id, i])), [round]);
+  const display = answered && submitted ? submitted : order;
+  const level = diffLevel(round.difficulty);
+
+  const move = (idx: number, dir: -1 | 1) => {
+    if (answered) return;
+    const ni = idx + dir;
+    if (ni < 0 || ni >= order.length) return;
+    const a = [...order];
+    [a[idx], a[ni]] = [a[ni], a[idx]];
+    setOrder(a);
+  };
+
+  return (
+    <div className="animate-pop flex flex-col gap-3">
+      <div className="glass-strong flex min-h-[88px] flex-col justify-center rounded-[28px] px-6 py-4">
+        <div className="flex items-center justify-between">
+          <span className="text-[11px] font-semibold uppercase tracking-wider text-ink-muted">Sortér</span>
+          <span className="flex items-center gap-1">
+            {[1, 2, 3].map((i) => (
+              <span key={i} className="h-1.5 w-1.5 rounded-full" style={{ background: i <= level ? "var(--nordic)" : "var(--hairline)" }} />
+            ))}
+          </span>
+        </div>
+        <h1 className="mt-1 text-balance font-display text-xl font-bold leading-tight tracking-tight sm:text-2xl">{round.prompt}</h1>
+      </div>
+
+      <div className="flex flex-col gap-2">
+        {display.map((id, pos) => {
+          const item = byId[id];
+          const rightHere = round.correctIds[pos] === id;
+          let cls = "border-[var(--field-stroke)] bg-[var(--field)]";
+          if (answered) cls = rightHere ? "border-transparent bg-[var(--good)]/12 ring-1 ring-[var(--good)]/40" : "border-transparent bg-[var(--bad)]/10 ring-1 ring-[var(--bad)]/40";
+          return (
+            <div key={id} className={`flex min-h-[3.5rem] items-center gap-3 rounded-2xl border px-3 py-2 transition ${cls}`}>
+              <span className="grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-black/[0.06] text-xs font-bold tabular-nums text-ink-muted dark:bg-white/10">
+                {pos + 1}
+              </span>
+              <span className="flex-1 truncate font-medium">{item?.name}</span>
+              {answered ? (
+                <span className="shrink-0 text-xs tabular-nums text-ink-muted">{fmtVal(item.value, round.unit)}</span>
+              ) : (
+                <span className="flex shrink-0 flex-col">
+                  <button onClick={() => move(pos, -1)} disabled={pos === 0} className="grid h-5 w-7 place-items-center rounded text-ink-muted transition hover:text-ink disabled:opacity-25 focus-ring" aria-label="Flytt opp">
+                    <ChevronUp size={16} />
+                  </button>
+                  <button onClick={() => move(pos, 1)} disabled={pos === display.length - 1} className="grid h-5 w-7 place-items-center rounded text-ink-muted transition hover:text-ink disabled:opacity-25 focus-ring" aria-label="Flytt ned">
+                    <ChevronDown size={16} />
+                  </button>
+                </span>
+              )}
+            </div>
+          );
+        })}
+      </div>
+
+      {!answered && (
+        <button onClick={() => onCheck(order)} className="rounded-2xl bg-ink py-3 text-sm font-semibold text-canvas transition hover:opacity-90 focus-ring">
+          Sjekk rekkefølgen
+        </button>
+      )}
+    </div>
+  );
+}
+
+// ---- Reveal bar -----------------------------------------------------------
+function RevealBar({
   round,
   won,
   delta,
+  typed,
   onNext,
 }: {
-  round: Round;
+  round: AnyRound;
   won: boolean;
   delta: number | null;
+  typed: string | null;
   onNext: () => void;
 }) {
-  const subject = round.subject;
-  const showPhoto = round.prompt.kind === "text" || round.prompt.variant === "coa";
+  const order = isOrder(round);
+  const thumb = !order && (round.prompt.kind === "text" || round.prompt.variant === "coa") ? round.subject.photo : undefined;
+
+  let detail: React.ReactNode;
+  if (order) {
+    const correctCount = round.correctIds.length; // for display we show the fasit
+    const names = round.correctIds.map((id) => round.items.find((it) => it.id === id)?.name).join(" › ");
+    void correctCount;
+    detail = (
+      <p className="mt-0.5 line-clamp-2 text-sm text-ink-soft">
+        <span className="font-semibold">Riktig:</span> {names}
+      </p>
+    );
+  } else if (typed != null && !won) {
+    detail = (
+      <p className="mt-0.5 line-clamp-2 text-sm text-ink-soft">
+        Riktig svar: <span className="font-semibold">{round.answerKey}</span>. {round.explanation}
+      </p>
+    );
+  } else {
+    detail = <p className="mt-0.5 line-clamp-2 text-sm text-ink-soft">{round.explanation}</p>;
+  }
+
   return (
     <div className="animate-fade-up glass flex h-full items-center gap-3 rounded-[24px] p-3">
-      {showPhoto && subject.photo && (
+      {thumb && (
         <div className="hidden h-[76px] w-[76px] shrink-0 overflow-hidden rounded-2xl sm:block">
-          <img src={imgAt(subject.photo, 200)} alt={subject.name} className="h-full w-full object-cover" />
+          <img src={imgAt(thumb, 200)} alt="" className="h-full w-full object-cover" />
         </div>
       )}
       <div className="flex min-w-0 flex-1 flex-col justify-center">
         <div className="flex items-center gap-2">
-          <span
-            className="flex items-center gap-1.5 text-sm font-bold"
-            style={{ color: won ? "var(--good)" : "var(--bad)" }}
-          >
+          <span className="flex items-center gap-1.5 text-sm font-bold" style={{ color: won ? "var(--good)" : "var(--bad)" }}>
             {won ? <Check size={16} /> : <X size={16} />}
             {won ? "Riktig" : "Feil"}
           </span>
@@ -399,12 +611,9 @@ function Reveal({
             </span>
           )}
         </div>
-        <p className="mt-0.5 line-clamp-2 text-sm text-ink-soft">{round.explanation}</p>
+        {detail}
       </div>
-      <button
-        onClick={onNext}
-        className="flex shrink-0 items-center gap-1.5 self-center rounded-full bg-ink px-4 py-2.5 text-sm font-semibold text-canvas transition hover:opacity-90 focus-ring"
-      >
+      <button onClick={onNext} className="flex shrink-0 items-center gap-1.5 self-center rounded-full bg-ink px-4 py-2.5 text-sm font-semibold text-canvas transition hover:opacity-90 focus-ring">
         Neste
         <ArrowRight size={16} />
       </button>
