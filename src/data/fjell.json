@@ -3,7 +3,7 @@
     "id": "Q203942",
     "name": "Galdhøpiggen",
     "elevation": 2468.854,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Galdhopiggen%202004.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/433%20Paa%20Galdh%C3%B8piggen%2C%20Jotunheimen%20-%20no-nb%20digifoto%2020160524%2000112%20blds%2006540.jpg?width=1024",
     "lat": 61.633333333333,
     "lon": 8.3,
     "county": "Innlandet"
@@ -12,7 +12,7 @@
     "id": "Q397876",
     "name": "Glittertinden",
     "elevation": 2464,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Glittertind.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama%20galdhoppigen%20west%20bis%20ost%20mit%20juvashytta%20und%20glittertinden.jpg?width=1024",
     "lat": 61.651944444444,
     "lon": 8.5544444444444,
     "county": "Innlandet"
@@ -21,7 +21,7 @@
     "id": "Q1078075",
     "name": "Storen",
     "elevation": 2405.6,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storen%201986.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Midtmaradalen%20with%20Storen%20mountian%20in%20the%20right%20of%20the%20image.jpg?width=1024",
     "lat": 61.461388888889,
     "lon": 7.8713888888889,
     "county": "Vestland"
@@ -39,7 +39,7 @@
     "id": "Q2739918",
     "name": "Skardstinden",
     "elevation": 2373,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skarstind.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skarstind-2.JPG?width=1024",
     "lat": 61.633888888889,
     "lon": 8.2652777777778,
     "county": "Innlandet"
@@ -48,7 +48,7 @@
     "id": "Q3044956",
     "name": "Veslpiggen",
     "elevation": 2369,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Veslepiggen.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Galdh%C3%B8piggen%20og%20Vesle%20Galdh%C3%B8piggen.jpg?width=1024",
     "lat": 61.640833333333,
     "lon": 8.3063888888889,
     "county": "Innlandet"
@@ -57,7 +57,7 @@
     "id": "Q3044947",
     "name": "Surtningssue",
     "elevation": 2368,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Surtningssue%2C%202005.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Surtningssuen%20vestenfor%20Bessh%C3%B8%20-%20no-nb%20digifoto%2020151209%2000080%20bldsa%20HRH09%2000034.jpg?width=1024",
     "lat": 61.53408,
     "lon": 8.57266,
     "county": "Innlandet"
@@ -75,7 +75,7 @@
     "id": "Q1769971",
     "name": "Keilhaus topp",
     "elevation": 2355,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Keilhaus%20topp.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Keilhaus%20topp%20%282023%29.jpg?width=1024",
     "lat": 61.634883333333,
     "lon": 8.3261833333333,
     "county": "Innlandet"
@@ -102,7 +102,7 @@
     "id": "Q3354818",
     "name": "Store Hellstugutinden",
     "elevation": 2345.7,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Store%20Hellstugutinden%201983.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Store%20Hellstugutinden.jpg?width=1024",
     "lat": 61.54438,
     "lon": 8.42806,
     "county": "Innlandet"
@@ -212,7 +212,7 @@
     "id": "Q979569",
     "name": "Snøhetta",
     "elevation": 2286,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Snohetta.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norge.%20Sn%C3%B8hetta%20fra%20Nystuguh%C3%B8.%20Dovre%20-%20no-nb%20digifoto%2020150227%2000180%20NB%20MIT%20FNR%2000381.jpg?width=1024",
     "lat": 62.32,
     "lon": 9.2683333333333,
     "county": "Innlandet"
@@ -221,7 +221,7 @@
     "id": "Q2100974",
     "name": "Dovrefjell",
     "elevation": 2286,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Snohetta.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dovrefjell%20brunkollen%20IMG%209638.JPG?width=1024",
     "lat": 62.1,
     "lon": 9.41666667,
     "county": "Møre og Romsdal"
@@ -239,6 +239,7 @@
     "id": "Q4563894",
     "name": "Galdhøe",
     "elevation": 2283,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Galdh%C3%B8e%20og%20Vesle%20Galdh%C3%B8piggen.jpg?width=1024",
     "lat": 61.64972222,
     "lon": 8.31861111,
     "county": "Innlandet"
@@ -247,6 +248,7 @@
     "id": "Q120496240",
     "name": "Svellnose",
     "elevation": 2272,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Galdh%C3%B8piggen%2C%20Keilhaus%20topp%20og%20Svellnose.jpg?width=1024",
     "county": "Innlandet"
   },
   {
@@ -278,7 +280,7 @@
     "id": "Q4573297",
     "name": "Besshøe",
     "elevation": 2257.5,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bessh%C3%B8FromVeslfjellet.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bessh%C3%B8e%20pond.jpg?width=1024",
     "lat": 61.517777777778,
     "lon": 8.6869444444444,
     "county": "Innlandet"
@@ -320,7 +322,7 @@
     "id": "Q3443115",
     "name": "Semeltinden",
     "elevation": 2236.3,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Semeltinden%20sett%20fra%20S%C3%B8re%20Hellestugutinden.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20view%20from%20Geith%C3%B8e%20up%20to%20Store%20Rauddalseggje%20and%20Semeltinden%20in%20Jotunheimen.jpg?width=1024",
     "lat": 61.51333333,
     "lon": 8.40666667,
     "county": "Innlandet"
@@ -379,7 +381,7 @@
     "id": "Q4584546",
     "name": "Storebjørn",
     "elevation": 2221.9,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storebj%C3%B8rn%201992.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Off-piste%20skiers%20ready%20for%20takeoff%20from%20Storebj%C3%B8rn%20peak%20in%20Jotunheimen.jpg?width=1024",
     "lat": 61.548232777778,
     "lon": 8.1372863888889,
     "county": "Innlandet"
@@ -404,7 +406,7 @@
     "id": "Q4579480",
     "name": "Bukkeholstindan",
     "elevation": 2212.3,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bukkeholstind%202005.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Store%20Bukkeholstinden%20sett%20fra%20Midtre%20Tverrbottentindan.JPG?width=1024",
     "lat": 61.5875,
     "lon": 8.3127777777778,
     "county": "Innlandet"
@@ -551,7 +553,7 @@
     "id": "Q4131042",
     "name": "Rondslottet",
     "elevation": 2178.45,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/RondslottetFromVeslesmeden.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rondslottet%2001.JPG?width=1024",
     "lat": 61.914886111111,
     "lon": 9.8511888888889,
     "county": "Innlandet"
@@ -568,7 +570,7 @@
     "id": "Q1805851",
     "name": "Hestbrepiggene",
     "elevation": 2171.8,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Midtre%20Hestbreapiggen%20seen%20from%20N%C3%B8rdre%20Hestbreapiggen.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/View%20to%20Breids%C3%A6terdalen%20towards%20north%2C%202013%20June.jpg?width=1024",
     "lat": 61.750278,
     "lon": 8.086667,
     "county": "Innlandet"
@@ -635,6 +637,7 @@
     "id": "Q3443690",
     "name": "Tverrbottindene",
     "elevation": 2159.6,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hellstugutindane%20Urdadalen%20og%20Store%20Urdadalstinden%20sett%20fra%20Store%20Tverrbottentinden.JPG?width=1024",
     "lat": 61.57553,
     "lon": 8.25538,
     "county": "Innlandet"
@@ -643,7 +646,7 @@
     "id": "Q3443331",
     "name": "Uranostinden",
     "elevation": 2157.4,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tyin%201.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kvitevatnet%20en%20Uranostinden.jpg?width=1024",
     "lat": 61.426822222222,
     "lon": 8.1503,
     "county": "Innlandet"
@@ -742,7 +745,7 @@
     "id": "Q3443309",
     "name": "Snøholstinden",
     "elevation": 2141.3,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%BCtte%20Olavsbu%20Richtung%20Snoholstinden.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sn%C3%B8holstinden%20seen%20from%20Olavsbu%20in%20Jotunheimen.jpg?width=1024",
     "lat": 61.442113055556,
     "lon": 8.3097063888889,
     "county": "Innlandet"
@@ -777,7 +780,7 @@
     "id": "Q11236239",
     "name": "Mjølkedalstinden",
     "elevation": 2128.7,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mj%C3%B8lkedalstind%20sett%20fra%20Skardalstind.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Olavsbunuten%20and%20Mj%C3%B8lkedalstinden%20in%20Jotunheimen.jpg?width=1024",
     "lat": 61.4593,
     "lon": 8.2505,
     "county": "Vestland"
@@ -795,7 +798,7 @@
     "id": "Q24289755",
     "name": "Store Ringstind",
     "elevation": 2123.7,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Store%20Ringstind%20%284957259307%29.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Store%20Ringstind.JPG?width=1024",
     "lat": 61.441805555556,
     "lon": 7.8004361111111,
     "county": "Vestland"
@@ -820,7 +823,7 @@
     "id": "Q3443440",
     "name": "Torfinnstindene",
     "elevation": 2116.5,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Torfinnstind.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Torfinnstind-2.jpg?width=1024",
     "lat": 61.372222222222,
     "lon": 8.5805555555556,
     "county": "Innlandet"
@@ -829,7 +832,7 @@
     "id": "Q3443324",
     "name": "Urdadalstindan",
     "elevation": 2115.8,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20red%20T%20marks%20the%20path%20in%20Visdalen%20in%20Jotunheimen.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jotunheimen%20national%20park%2002.jpg?width=1024",
     "lat": 61.55,
     "lon": 8.3833333333333,
     "county": "Innlandet"
@@ -838,7 +841,7 @@
     "id": "Q1807649",
     "name": "Høgronden",
     "elevation": 2115.2,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B8gronden%2001.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B8gronden%20en%20vintermorgen%202.jpg?width=1024",
     "lat": 61.945833333333,
     "lon": 9.9002777777778,
     "county": "Innlandet"
@@ -855,7 +858,7 @@
     "id": "Q3445911",
     "name": "Hinnotefjellet",
     "elevation": 2113,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hinn%C3%A5tefjellet%20sett%20fra%20Semeltinden.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hinn%C3%A5tefjellet%20sett%20fra%20et%20sted%20vest%20for%20Hinnotetj%C3%B8nne.JPG?width=1024",
     "lat": 61.51886,
     "lon": 8.45114,
     "county": "Innlandet"
@@ -872,7 +875,7 @@
     "id": "Q4590439",
     "name": "Rasletinden",
     "elevation": 2104.1,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rasletind-2.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Leirungsdalen%20med%20Rasletind%20og%20Kalv%C3%A5h%C3%B8gda%2C%20Steinflyen%20og%20Knutsh%C3%B8%2C%20sett%20fra%20Maurvangen%20n%C3%A6r%20den%20gamle%20broen%20over%20Sjoa%20-%20no-nb%20digifoto%2020151209%2000052%20bldsa%20HRH09%2000006.jpg?width=1024",
     "lat": 61.395277777778,
     "lon": 8.6977777777778,
     "county": "Innlandet"
@@ -881,7 +884,7 @@
     "id": "Q3442972",
     "name": "Tverrbytthornet",
     "elevation": 2102.4,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tverrbytthornet%20i%20Jotunheimen.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tverrbytthornet%20og%20Midtre%20Tverrbottindan%20III.jpg?width=1024",
     "lat": 61.55774,
     "lon": 8.30703,
     "county": "Innlandet"
@@ -932,7 +935,7 @@
     "id": "Q1770130",
     "name": "Tverrådalskyrkja",
     "elevation": 2088,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tverr%C3%A5dalskyrkja%2002.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skiers%20on%20their%20way%20into%20Tverr%C3%A5alen%20with%20a%20view%20to%20Tverr%C3%A5dalskyrkja%20peak.jpg?width=1024",
     "lat": 61.742675,
     "lon": 7.6866694444444,
     "county": "Innlandet"
@@ -949,7 +952,7 @@
     "id": "Q1026479",
     "name": "Lodalskåpa",
     "elevation": 2082.9,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lodalskopa1.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lodalsk%C3%A5pa%20brenibba.jpg?width=1024",
     "lat": 61.791861111111,
     "lon": 7.2035833333333,
     "county": "Vestland"
@@ -991,7 +994,7 @@
     "id": "Q3443427",
     "name": "Lomseggje",
     "elevation": 2068.4,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lomseggen%20%282023%29.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lomeggen%20-%20no-nb%20digifoto%2020160408%2000151%20NB%20NS%20NM%2007655.jpg?width=1024",
     "lat": 61.81666667,
     "lon": 8.36666667,
     "county": "Innlandet"
@@ -1000,7 +1003,7 @@
     "id": "Q2525968",
     "name": "Fannaråki",
     "elevation": 2067,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fannar%C3%A5ki.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fannar%C3%A5ki%20sommer.jpg?width=1024",
     "lat": 61.516388888889,
     "lon": 7.9080555555556,
     "county": "Vestland"
@@ -1039,6 +1042,7 @@
     "id": "Q11989374",
     "name": "Midtmaradalstindene",
     "elevation": 2061.5,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordre-%2C%20Midtre-%20og%20Store%20Skagast%C3%B8lstind%2C%20Dyrhaugstindane%20og%20Midtmaradalstindane%20%2812809342784%29.jpg?width=1024",
     "lat": 61.43334961,
     "lon": 7.86655378,
     "county": "Vestland"
@@ -1047,7 +1051,7 @@
     "id": "Q851983",
     "name": "Falketind",
     "elevation": 2061.2,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Falketind%201985.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hjelledalstind%20og%20Falketind.%20Foto-%20Jon%20Olav%20Volden%20.jpg?width=1024",
     "lat": 61.384686944444,
     "lon": 8.0968891666667,
     "county": "Vestland"
@@ -1126,7 +1130,7 @@
     "id": "Q847916",
     "name": "Kyrkja",
     "elevation": 2031.8,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyrkja.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyrkja%20i%20Jotunheimen.jpg?width=1024",
     "lat": 61.542777777778,
     "lon": 8.29,
     "county": "Innlandet"
@@ -1402,7 +1406,7 @@
     "id": "Q1332389",
     "name": "Hjelledalstinden",
     "elevation": 1987.8,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Koldedalen.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hjelledalstind%20og%20Falketind.%20Foto-%20Jon%20Olav%20Volden%20.jpg?width=1024",
     "lat": 61.368933611111,
     "lon": 8.0983744444444,
     "county": "Vestland"
@@ -1411,7 +1415,7 @@
     "id": "Q6516386",
     "name": "Storskrymten",
     "elevation": 1984.8,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Morgenlys%20over%20Storskrumten.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storskrymten%20Litlskrymten%20and%20Grytkollen.jpg?width=1024",
     "lat": 62.372522222222,
     "lon": 9.0618333333333,
     "county": "Innlandet"

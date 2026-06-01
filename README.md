@@ -1,4 +1,4 @@
-# norgequiz
+# norgesquiz
 
 **Norges ultimate geografiquiz** — an endless, four-option quiz built to make you _beast_ at
 Norwegian geography. Fylker, kommuner, fjell, elver, innsjøer, fjorder, øyer, fossefall,

@@ -102,16 +102,26 @@ export interface Tier {
   floor: number;
   name: string;
 }
+// Funny, every ~100 Elo, so both struggling and strong players keep ranking up.
 export const TIERS: Tier[] = [
-  { floor: 0, name: "Turist" },
-  { floor: 700, name: "Bygdefarer" },
-  { floor: 850, name: "Lokalkjent" },
-  { floor: 1000, name: "Kartleser" },
-  { floor: 1150, name: "Stedsnavnkjenner" },
+  { floor: 0, name: "Bortkommen turist" },
+  { floor: 500, name: "Bobilturist" },
+  { floor: 600, name: "Søndagsturgåer" },
+  { floor: 700, name: "Bygdeoriginal" },
+  { floor: 800, name: "Lokalkjent" },
+  { floor: 900, name: "Kartleser" },
+  { floor: 1000, name: "Turleder" },
+  { floor: 1100, name: "Stedsnavnsamler" },
+  { floor: 1200, name: "Fjellgeit" },
   { floor: 1300, name: "Geografinerd" },
-  { floor: 1450, name: "Fjellvettmester" },
+  { floor: 1400, name: "Kommunekjenner" },
+  { floor: 1500, name: "Fylkesmester" },
   { floor: 1600, name: "Atlasmester" },
-  { floor: 1750, name: "Norgesmester" },
+  { floor: 1700, name: "Kartograf" },
+  { floor: 1800, name: "Geografiprofessor" },
+  { floor: 1900, name: "Norgesmester" },
+  { floor: 2000, name: "Levende kart" },
+  { floor: 2100, name: "Geografigud" },
 ];
 
 export interface TierInfo {

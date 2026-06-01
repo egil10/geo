@@ -9,14 +9,14 @@ const display = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "NorgeQuiz — Norges ultimate geografiquiz",
+  title: "NorgesQuiz — Norges ultimate geografiquiz",
   description:
     "Bli best i norsk geografi. Endeløs quiz om fylker, kommuner, fjell, elver, innsjøer, fjorder, øyer, kommunevåpen og kommunenummer — med Elo-rangering.",
-  applicationName: "NorgeQuiz",
-  authors: [{ name: "NorgeQuizBC" }],
+  applicationName: "NorgesQuiz",
+  authors: [{ name: "NorgesQuiz" }],
   keywords: ["Norge", "geografi", "quiz", "fylker", "kommuner", "fjell", "kart"],
   openGraph: {
-    title: "NorgeQuiz — Norges ultimate geografiquiz",
+    title: "NorgesQuiz — Norges ultimate geografiquiz",
     description: "Endeløs quiz om norsk geografi med Elo-rangering.",
     type: "website",
     locale: "nb_NO",

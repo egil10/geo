@@ -3,7 +3,7 @@
     "id": "Q214535",
     "name": "Glomma",
     "length": 604,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fetssund%20Lenser.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Utsiktspunkt%20over%20Borregaard%20med%20Glomma.jpg?width=1024",
     "lat": 59.176515,
     "lon": 10.956667,
     "county": "Østfold"
@@ -12,7 +12,7 @@
     "id": "Q1338024",
     "name": "Klarälven",
     "length": 460,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Klar%C3%A4lven%20vid%20Stackerud%20-%20KMB%20-%2016000300030413.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Klar%C3%A4lven%20-%20panoramio.jpg?width=1024",
     "lat": 59.388611111111,
     "lon": 13.498333333333
   },
@@ -20,7 +20,7 @@
     "id": "Q524612",
     "name": "Pasvikelva",
     "length": 385.3,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Harefossen2.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Pasvikelvas%20utl%C3%B8p%20-%20panoramio.jpg?width=1024",
     "lat": 69.68135,
     "lon": 30.11035,
     "county": "Finnmark"
@@ -29,7 +29,7 @@
     "id": "Q829866",
     "name": "Tana",
     "length": 369.6,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tenojokiriver3.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kong%20Haakon%20i%20elveb%C3%A5t%20p%C3%A5%20Tanaelva%20-%20no-nb%20digifoto%2020160118%2000012%20bldsa%20pk%20kgl0071.jpg?width=1024",
     "lat": 70.5,
     "lon": 28.3959,
     "county": "Finnmark"
@@ -38,7 +38,7 @@
     "id": "Q1420630",
     "name": "Numedalslågen",
     "length": 358.3,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A5genfoss%20bei%20Kongsberg%202.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Elektro%20kraftverk%20Numedalsl%C3%A5gen.JPG?width=1024",
     "lat": 59.0375,
     "lon": 10.0556,
     "county": "Buskerud"
@@ -55,7 +55,7 @@
     "id": "Q642694",
     "name": "Otra",
     "length": 245,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Otra.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Otra%20-%20Kristiansand%2C%20Norway%202021-08-12%20%2801%29.jpg?width=1024",
     "lat": 59.619961,
     "lon": 7.427355,
     "county": "Agder"
@@ -64,7 +64,7 @@
     "id": "Q433744",
     "name": "Altaelva",
     "length": 229,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Altaelva%20canyon.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Residential%20of%20Stenfossholmen%2C%20%C3%98vre%20Alta%20by%20Altaelva%20river%2C%20Alta%2C%20Troms%20og%20Finnmark%2C%20Norway%2C%202023%20September.jpg?width=1024",
     "lat": 69.900944444444,
     "lon": 23.284,
     "county": "Finnmark"
@@ -73,7 +73,7 @@
     "id": "Q1518561",
     "name": "Namsen",
     "length": 229,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Namsen%20kvatningen.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norwegen%201998%20%28506%29%20Namsen%20%2849473399916%29.jpg?width=1024",
     "lat": 64.9992,
     "lon": 13.7422,
     "county": "Trøndelag"
@@ -82,7 +82,7 @@
     "id": "Q1538332",
     "name": "Hallingdalselve",
     "length": 220,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hallingdalselva%2C%20Nesbyen%2001.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hallingdalselven%20med%20Ramfoss%20dammen.jpg?width=1024",
     "lat": 60.383333333333,
     "lon": 9.5833333333333,
     "county": "Buskerud"
@@ -91,7 +91,7 @@
     "id": "Q792016",
     "name": "Begna",
     "length": 213,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Smedlund%2C%20S%C3%B8r-Aurdal.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bergsundveien%2041%20ved%20Begna%2C%20Ringerike.jpg?width=1024",
     "lat": 60.166666666667,
     "lon": 10.266666666667,
     "county": "Buskerud"
@@ -109,7 +109,7 @@
     "id": "Q927499",
     "name": "Lågen",
     "length": 204,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A5gendeltaet.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norwegen%201998%20%28778%29%20Gudbrandsdalsl%C3%A5gen%20%2850596661812%29.jpg?width=1024",
     "lat": 61.133333333333,
     "lon": 10.416666666667,
     "county": "Innlandet"
@@ -118,7 +118,7 @@
     "id": "Q497783",
     "name": "Orkla",
     "length": 179,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Orkanger%2003.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kl%C3%B8ftbrua%20Kl%C3%B8ft%20bru%20road%20bridge%20Trondheimsveien%20E6%20Byna%20and%20Orkla%20rivers%20spring%20floods%20Ulsberg%20Rennebu%20kommune%20Tr%C3%B8ndelag%20Norway%20Distorted%20panorama%202019-04-25%207762.jpg?width=1024",
     "lat": 63.306111111111,
     "lon": 9.8466944444444,
     "county": "Innlandet"
@@ -127,7 +127,7 @@
     "id": "Q1728986",
     "name": "Karasjohka",
     "length": 166,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/SUC50562.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/K%C3%A1r%C3%A1%C5%A1johka%20river%20from%20Karasjok%20bru%202022-09-13%2001.jpg?width=1024",
     "lat": 69.43555556,
     "lon": 25.80444444,
     "county": "Finnmark"
@@ -145,7 +145,7 @@
     "id": "Q180550",
     "name": "Vefsna",
     "length": 163,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Laksforsen.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norwegen%201998%20%28513%29%20Vefsna%20%2849525033982%29.jpg?width=1024",
     "lat": 65.84527778,
     "lon": 13.1825,
     "county": "Nordland"
@@ -154,7 +154,7 @@
     "id": "Q486437",
     "name": "Anárjohka",
     "length": 155.7,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Anarjohka%20river%2C%20Norway-Finland%20border.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Anarjohka.jpg?width=1024",
     "lat": 68.7251,
     "lon": 24.35275,
     "county": "Finnmark"
@@ -172,7 +172,7 @@
     "id": "Q82824",
     "name": "Kvina",
     "length": 151,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Utsikten.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/062614%20Liknes%20%289199984191%29.jpg?width=1024",
     "lat": 58.2722,
     "lon": 6.8884,
     "county": "Agder"
@@ -181,7 +181,7 @@
     "id": "Q1259332",
     "name": "Driva",
     "length": 150,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gikling.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Driva%2C%20camping%20Vollan%20-%20panoramio%20%281%29.jpg?width=1024",
     "lat": 62.6674,
     "lon": 8.5794,
     "county": "Møre og Romsdal"
@@ -190,7 +190,7 @@
     "id": "Q1226044",
     "name": "Neidenelva",
     "length": 149.2,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Neiden%20panorama.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Chutes%20d%27eau%20sur%20la%20Neidenelva.jpg?width=1024",
     "lat": 69.70222,
     "lon": 29.53889,
     "county": "Finnmark"
@@ -199,7 +199,7 @@
     "id": "Q1496041",
     "name": "Gaula",
     "length": 145,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gaula%20River%20at%20Kots%C3%B8y.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sv%C3%B8lgja%20Eggafossen%20Gaula%202014.JPG?width=1024",
     "lat": 62.879074,
     "lon": 11.703601,
     "county": "Trøndelag"
@@ -208,7 +208,7 @@
     "id": "Q1581016",
     "name": "Tovdalselva",
     "length": 143,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tovdalselva%20Kristiansand%20foss%20Birkenes%20drangsholtmyra%20IMG%202518.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rjukanfossen%20Tovdalselva%20%C3%85mli%20100714.jpg?width=1024",
     "lat": 58.8086,
     "lon": 8.1589,
     "county": "Agder"
@@ -217,7 +217,7 @@
     "id": "Q1957603",
     "name": "Målselva",
     "length": 140,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%A5lselva%20river%282%29.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Malselva%20valley.jpg?width=1024",
     "lat": 69.233333333333,
     "lon": 18.5,
     "county": "Troms"
@@ -226,7 +226,7 @@
     "id": "Q1808066",
     "name": "Otta",
     "length": 135,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ottariver.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Otta%20-%20no-nb%20digifoto%2020150219%2000233%20NB%20MIT%20FNR%2016508%20A.jpg?width=1024",
     "lat": 62.0243,
     "lon": 7.3228,
     "county": "Innlandet"
@@ -243,7 +243,7 @@
     "id": "Q1861845",
     "name": "Ranelva",
     "length": 130,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/RanelvaSelfors01.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bru%20over%20Ranelva%2020070906%20DSCN4381.jpg?width=1024",
     "lat": 66.33415,
     "lon": 14.130135,
     "county": "Nordland"
@@ -252,7 +252,7 @@
     "id": "Q2527201",
     "name": "Vinstra",
     "length": 128,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Olstappen%20dam%2C%20Norway.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vinstra%2C%20Oppland%2C%20Norway%20%286851773521%29.jpg?width=1024",
     "lat": 61.590481,
     "lon": 9.752162,
     "county": "Innlandet"
@@ -261,7 +261,7 @@
     "id": "Q1603703",
     "name": "Reisaelva",
     "length": 127,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Reisaelva%20fra%20Jiert%C3%A1%2020170727%20152807.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Reisadalen%20looking%20downstream.JPG?width=1024",
     "lat": 69.786111,
     "lon": 21.008056,
     "county": "Troms"
@@ -279,7 +279,7 @@
     "id": "Q138631",
     "name": "Mandalselva",
     "length": 115,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mandalselva%20sett%20fra%20piren.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mandal%20sentrum%20og%20Mandalselva.jpg?width=1024",
     "lat": 58.019494,
     "lon": 7.455761,
     "county": "Agder"
@@ -288,7 +288,7 @@
     "id": "Q661191",
     "name": "Folla",
     "length": 106,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Grimsmoen%202010-11-16.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Folla-2010-11-11.jpg?width=1024",
     "lat": 62.1806,
     "lon": 9.4849,
     "county": "Innlandet"
@@ -297,7 +297,7 @@
     "id": "Q1801202",
     "name": "Lakselva",
     "length": 103.1,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lakselva%20near%20Lakselv.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fishing%20in%20lakselv.JPG?width=1024",
     "lat": 69.79616,
     "lon": 25.31609,
     "county": "Finnmark"
@@ -306,7 +306,7 @@
     "id": "Q1748443",
     "name": "Sjoa",
     "length": 98,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ridderspranget.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/CN%20185%20Kvam%20-%20Sjoa.jpg?width=1024",
     "lat": 61.683333333333,
     "lon": 9.55,
     "county": "Innlandet"
@@ -323,7 +323,7 @@
     "id": "Q829748",
     "name": "Simoa",
     "length": 88,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Haugfossen.JPEG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Frits%20Thaulow%20-%20Winter%20at%20the%20River%20Simoa%20-%20Google%20Art%20Project.jpg?width=1024",
     "lat": 59.99633,
     "lon": 9.72894,
     "county": "Buskerud"
@@ -332,7 +332,7 @@
     "id": "Q555450",
     "name": "Akerselva",
     "length": 82,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Akerselva%20M%C3%B8llerfossene%2018jun2005.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Akerselva%20from%20Anne%20Holsens%20bru%20Oslo%202022-08-17%2001.jpg?width=1024",
     "lat": 59.907514,
     "lon": 10.755474,
     "county": "Oslo"
@@ -349,7 +349,7 @@
     "id": "Q1860746",
     "name": "Nea",
     "length": 80,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nea%20I.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nea%20III.jpg?width=1024",
     "lat": 63.230117,
     "lon": 11.01408,
     "county": "Trøndelag"
@@ -374,7 +374,7 @@
     "id": "Q1020247",
     "name": "Børselva",
     "length": 74.5,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Borselv9.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/B%C3%B8rselva-20140718-RM-105739.jpg?width=1024",
     "lat": 70.31703,
     "lon": 25.56975,
     "county": "Finnmark"
@@ -383,7 +383,7 @@
     "id": "Q1773519",
     "name": "Skibotnelva",
     "length": 73.7,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storfjord%20Skibotndalen%20lub%202025-07-18%20img02.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skibotnelva.jpg?width=1024",
     "lat": 69.384623,
     "lon": 20.256357,
     "county": "Troms"
@@ -392,7 +392,7 @@
     "id": "Q11961254",
     "name": "Bjoreio",
     "length": 72,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/V%C3%B8ringfossen.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bjoreio%20-%20Eidfjord%2C%20Norway%202021-07-24%20%2801%29.jpg?width=1024",
     "lat": 60.2865568,
     "lon": 7.5624561,
     "county": "Vestland"
@@ -417,7 +417,7 @@
     "id": "Q185819",
     "name": "Barduelva",
     "length": 70,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bardu.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Barduelva-Panorama-2011.jpg?width=1024",
     "lat": 69.045277777778,
     "lon": 18.619722222222,
     "county": "Troms"
@@ -426,7 +426,7 @@
     "id": "Q1785090",
     "name": "Gaula",
     "length": 70,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gaula-Gaular-Norway.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Viksdalen%2C%20Gaular%20-%20no-nb%20digifoto%2020150121%2000069%20NB%20MIT%20FNR%2019631.jpg?width=1024",
     "lat": 61.3664,
     "lon": 5.6968,
     "county": "Vestland"
@@ -443,7 +443,7 @@
     "id": "Q494838",
     "name": "Rauma",
     "length": 68,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Slettafossen.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rauma%2C%20Norway%20-%20panoramio%20%2899%29.jpg?width=1024",
     "lat": 62.2293,
     "lon": 8.3602,
     "county": "Møre og Romsdal"
@@ -459,7 +459,7 @@
     "id": "Q12008730",
     "name": "Uvdalselvi",
     "length": 64.9171642,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Uvdalselva%20ved%20St%C3%B6lo%20IMG%201527.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jernbanebrua%20over%20Uvdalselvi.jpg?width=1024",
     "lat": 60.27144,
     "lon": 8.68384,
     "county": "Buskerud"
@@ -468,7 +468,7 @@
     "id": "Q12379378",
     "name": "Adamsfjordelva",
     "length": 64.1,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norwegen-Adamsfjordelva%20-P1290549.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norwegen-Adamsfjordelva-P1290550.jpg?width=1024",
     "lat": 70.38172,
     "lon": 26.6303,
     "county": "Finnmark"
@@ -477,7 +477,7 @@
     "id": "Q2145142",
     "name": "Repparfjordelva",
     "length": 61.8,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hammerfest%20Repparfjordelva%20lub%202025-07-16%20img03.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hammerfest%20Repparfjordelva%20lub%202025-07-16%20img01.jpg?width=1024",
     "lat": 70.448846,
     "lon": 24.32303,
     "county": "Finnmark"
@@ -535,7 +535,7 @@
     "id": "Q814631",
     "name": "Beiarelva",
     "length": 56,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Beiarelva%20ved%20Segelfjell.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Beiarelva%20lower%20part%20at%20Arstadberget.jpg?width=1024",
     "lat": 67.034543,
     "lon": 14.585323,
     "county": "Nordland"
@@ -544,7 +544,7 @@
     "id": "Q11250398",
     "name": "Songdalselva",
     "length": 55.4,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Songdalselva1.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Songdalselva%20ved%20Kirka%20-%20panoramio.jpg?width=1024",
     "lat": 58.0762,
     "lon": 7.8155,
     "county": "Agder"
@@ -553,7 +553,7 @@
     "id": "Q502866",
     "name": "Audna",
     "length": 55,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Melhusfossen010916.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lindesnes%20Audna%20outlet%20IMG%201341%20nature%20reserve.JPG?width=1024",
     "lat": 58.0578,
     "lon": 7.2791,
     "county": "Agder"
@@ -595,6 +595,7 @@
     "id": "Q2203089",
     "name": "Røssåga",
     "length": 50,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8ss%C3%A5ga%2020090624%20DSCN5417.jpg?width=1024",
     "lat": 66.160948,
     "lon": 13.802576,
     "county": "Nordland"
@@ -603,7 +604,7 @@
     "id": "Q1515239",
     "name": "Stjørdalselva",
     "length": 50,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stj%C3%B8rdalen.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stj%C3%B6rdal%20IMG%206158%20stj%C3%B6rdalselva%20river%20outlet.JPG?width=1024",
     "lat": 63.45059,
     "lon": 10.92985,
     "county": "Trøndelag"
@@ -612,7 +613,7 @@
     "id": "Q430480",
     "name": "Jakobselva",
     "length": 49.6,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/N886-Jakobselv-2012-07-06-13-02-032.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Man%20and%20two%20boats%20at%20Jakobselva.jpg?width=1024",
     "lat": 69.70831,
     "lon": 30.86909,
     "county": "Finnmark"
@@ -646,7 +647,7 @@
     "id": "Q537889",
     "name": "Drammenselva",
     "length": 48,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Drammen%20aerial.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Drammenselva%20-%20Drammen%2C%20Norway%20-%20August%201989.jpg?width=1024",
     "lat": 60.010833333333,
     "lon": 10.042777777778,
     "county": "Buskerud"

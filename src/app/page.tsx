@@ -6,6 +6,7 @@ import CategoryPicker from "@/components/CategoryPicker";
 import EloPanel from "@/components/EloPanel";
 import SettingsSheet from "@/components/SettingsSheet";
 import Celebration from "@/components/Celebration";
+import RankToast from "@/components/RankToast";
 import { Category, CATEGORIES } from "@/lib/questions";
 import { EloState, loadElo, saveElo, applyResult, tierFor } from "@/lib/elo";
 import { Quality } from "@/lib/images";
@@ -36,6 +37,7 @@ export default function Home() {
   const [eloOpen, setEloOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [celebrate, setCelebrate] = useState<{ title: string; sub: string } | null>(null);
+  const [rankToast, setRankToast] = useState<string | null>(null);
 
   // Hydrate device-local state after mount (SSR-safe).
   useEffect(() => {
@@ -60,10 +62,11 @@ export default function Home() {
 
   const handleResult = useCallback(
     (won: boolean, difficulty: number, cat: Category): number => {
-      const prevTier = tierFor(elo.rating).index;
+      // Reaching a new all-time-best rank shows a small, non-blocking toast.
+      const prevPeakTier = tierFor(elo.peak).index;
       const { state, delta } = applyResult(elo, won, difficulty, cat);
       const newTier = tierFor(state.rating);
-      if (newTier.index > prevTier) setCelebrate({ title: newTier.name, sub: "Ny rang" });
+      if (newTier.index > prevPeakTier) setRankToast(newTier.name);
       setElo(state);
       saveElo(state);
       return delta;
@@ -71,8 +74,7 @@ export default function Home() {
     [elo],
   );
 
-  // Fired by the quiz when the streak hits a perfect 10 (takes celebration
-  // precedence over a tier-up on the same answer).
+  // The big celebration is reserved for completing a perfect 10-in-a-row streak.
   const handlePerfect = useCallback(() => {
     setCelebrate({ title: "10 på rad!", sub: "Perfekt rekke" });
   }, []);
@@ -165,6 +167,7 @@ export default function Home() {
         />
       )}
       {celebrate && <Celebration title={celebrate.title} sub={celebrate.sub} onDone={() => setCelebrate(null)} />}
+      {rankToast && <RankToast name={rankToast} onDone={() => setRankToast(null)} />}
     </main>
   );
 }
