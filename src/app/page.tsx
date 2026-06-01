@@ -190,8 +190,6 @@ export default function Home() {
     <main className="relative min-h-dvh">
       {explore ? (
         <Explore
-          mode={mode}
-          onOpenMode={() => setCustomizeOpen(true)}
           exploreActive
           onExplore={toggleExplore}
           elo={elo}
@@ -216,9 +214,7 @@ export default function Home() {
           elo={elo}
           onResult={handleResult}
           onPerfectStreak={handlePerfect}
-          onOpenPicker={() => setCustomizeOpen(true)}
-          onOpenMode={() => setCustomizeOpen(true)}
-          onOpenType={() => setCustomizeOpen(true)}
+          onCustomize={() => setCustomizeOpen(true)}
           exploreActive={false}
           onExplore={toggleExplore}
           onOpenElo={() => setEloOpen(true)}

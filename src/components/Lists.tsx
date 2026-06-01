@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Trophy, RotateCcw, Eye, Check, Shuffle, ArrowRight } from "lucide-react";
 import TopBar from "./TopBar";
-import { Mode } from "./ModePicker";
+import { Mode, modeLabel } from "./ModePicker";
 import { LISTS } from "@/lib/lists";
 import { normalize, stripParen } from "@/lib/match";
 import { EloState } from "@/lib/elo";
@@ -125,7 +125,7 @@ export default function Lists({
 
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-col gap-3 px-3 pb-10 pt-3 sm:px-5">
-      <TopBar mode={mode} onOpenMode={onOpenMode} exploreActive={exploreActive} onExplore={onExplore} elo={elo} onOpenElo={onOpenElo} onOpenSettings={onOpenSettings} />
+      <TopBar summary={modeLabel(mode)} onCustomize={onOpenMode} exploreActive={exploreActive} onExplore={onExplore} elo={elo} onOpenElo={onOpenElo} onOpenSettings={onOpenSettings} />
 
       {/* List picker strip */}
       <div className="flex gap-2 overflow-x-auto no-scrollbar -mx-1 px-1 pb-1">

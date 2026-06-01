@@ -1,30 +1,23 @@
 "use client";
 
-import { Layers, Settings, ChevronRight, Gamepad2, Compass, Play, Shapes } from "lucide-react";
+import { Settings, ChevronRight, Compass, Play, SlidersHorizontal } from "lucide-react";
 import Wordmark from "./Wordmark";
 import EloBadge from "./EloBadge";
 import { EloState } from "@/lib/elo";
-import { Mode, modeLabel } from "./ModePicker";
 
+// A single "Tilpass" pill summarises mode · category · type and opens the full
+// customization sheet — one control instead of three that did the same thing.
 export default function TopBar({
-  mode,
-  onOpenMode,
-  catLabel,
-  onOpenPicker,
-  typeLabel,
-  onOpenType,
+  summary,
+  onCustomize,
   exploreActive,
   onExplore,
   elo,
   onOpenElo,
   onOpenSettings,
 }: {
-  mode: Mode;
-  onOpenMode: () => void;
-  catLabel?: string;
-  onOpenPicker?: () => void;
-  typeLabel?: string;
-  onOpenType?: () => void;
+  summary?: string;
+  onCustomize?: () => void;
   exploreActive: boolean;
   onExplore: () => void;
   elo: EloState;
@@ -33,7 +26,7 @@ export default function TopBar({
 }) {
   return (
     <header className="flex items-center gap-2">
-      <div className="flex min-w-0 flex-1 items-center gap-2 overflow-x-auto no-scrollbar -my-1 py-1">
+      <div className="-my-1 flex min-w-0 flex-1 items-center gap-2 overflow-x-auto py-1 no-scrollbar">
         <Wordmark />
         {exploreActive ? (
           <button onClick={onExplore} className="pill-solid shrink-0 focus-ring" aria-label="Tilbake til quizen">
@@ -41,27 +34,14 @@ export default function TopBar({
             <span>Spill</span>
           </button>
         ) : (
-          <>
-            <button onClick={onOpenMode} className="pill-glass shrink-0 focus-ring" aria-label="Velg spillemodus">
-              <Gamepad2 size={14} />
-              <span>{modeLabel(mode)}</span>
-              <ChevronRight size={13} className="text-ink-muted" />
+          summary &&
+          onCustomize && (
+            <button onClick={onCustomize} className="pill-glass min-w-0 shrink focus-ring" aria-label="Tilpass quizen">
+              <SlidersHorizontal size={14} className="shrink-0" />
+              <span className="truncate">{summary}</span>
+              <ChevronRight size={13} className="shrink-0 text-ink-muted" />
             </button>
-            {catLabel && onOpenPicker && (
-              <button onClick={onOpenPicker} className="pill-glass shrink-0 focus-ring" aria-label="Velg kategorier">
-                <Layers size={14} />
-                <span className="max-w-[8rem] truncate">{catLabel}</span>
-                <ChevronRight size={13} className="text-ink-muted" />
-              </button>
-            )}
-            {typeLabel && onOpenType && (
-              <button onClick={onOpenType} className="pill-glass shrink-0 focus-ring" aria-label="Velg spørsmålstype">
-                <Shapes size={14} />
-                <span className="max-w-[8rem] truncate">{typeLabel}</span>
-                <ChevronRight size={13} className="text-ink-muted" />
-              </button>
-            )}
-          </>
+          )
         )}
       </div>
       <div className="flex shrink-0 items-center gap-2">

@@ -3,7 +3,6 @@
 import { useMemo, useState } from "react";
 import { Search, LayoutGrid, Table2, ArrowUp, ArrowDown, MapPin } from "lucide-react";
 import TopBar from "./TopBar";
-import { Mode } from "./ModePicker";
 import { EloState } from "@/lib/elo";
 import { kommuner, fylker, fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, klubber, aviser, byer, stasjoner, lufthavner, baner, Place, fmtInt, fmtMetric } from "@/lib/data";
 import { imgAt } from "@/lib/images";
@@ -70,16 +69,12 @@ function Thumb({ p, img, big }: { p: Place; img: "coa" | "photo"; big?: boolean 
 }
 
 export default function Explore({
-  mode,
-  onOpenMode,
   exploreActive,
   onExplore,
   elo,
   onOpenElo,
   onOpenSettings,
 }: {
-  mode: Mode;
-  onOpenMode: () => void;
   exploreActive: boolean;
   onExplore: () => void;
   elo: EloState;
@@ -126,7 +121,7 @@ export default function Explore({
 
   return (
     <div className="mx-auto flex w-full max-w-4xl flex-col gap-3 px-3 pb-12 pt-3 sm:px-5">
-      <TopBar mode={mode} onOpenMode={onOpenMode} exploreActive={exploreActive} onExplore={onExplore} elo={elo} onOpenElo={onOpenElo} onOpenSettings={onOpenSettings} />
+      <TopBar exploreActive={exploreActive} onExplore={onExplore} elo={elo} onOpenElo={onOpenElo} onOpenSettings={onOpenSettings} />
 
       <div>
         <h1 className="font-display text-2xl font-bold tracking-tight">Datasett</h1>

@@ -20,7 +20,7 @@ import { fylkePathByNumber, kommunePathByNumber, projectPin } from "@/lib/geo";
 import QImage from "./QImage";
 import NorwayMap from "./NorwayMap";
 import TopBar from "./TopBar";
-import { Mode } from "./ModePicker";
+import { Mode, modeLabel } from "./ModePicker";
 
 // A Wikipedia link for the answer. Wikidata Q-ids resolve straight to the
 // Norwegian article via GoToLinkedPage; anything else falls back to title.
@@ -182,9 +182,7 @@ export default function Quiz({
   elo,
   onResult,
   onPerfectStreak,
-  onOpenPicker,
-  onOpenMode,
-  onOpenType,
+  onCustomize,
   exploreActive,
   onExplore,
   onOpenElo,
@@ -198,9 +196,7 @@ export default function Quiz({
   elo: EloState;
   onResult: (won: boolean, difficulty: number, cat: Category) => number;
   onPerfectStreak: () => void;
-  onOpenPicker: () => void;
-  onOpenMode: () => void;
-  onOpenType: () => void;
+  onCustomize: () => void;
   exploreActive: boolean;
   onExplore: () => void;
   onOpenElo: () => void;
@@ -335,6 +331,15 @@ export default function Quiz({
     return `${types.size} typer`;
   }, [types]);
 
+  // One pill summarises the whole setup: mode, then category/type if narrowed.
+  const summary = useMemo(
+    () =>
+      [modeLabel(mode), catLabel !== "Alt" ? catLabel : null, genMode && typeLabel !== "Alle typer" ? typeLabel : null]
+        .filter(Boolean)
+        .join(" · "),
+    [mode, catLabel, typeLabel, genMode],
+  );
+
   const round = state.round;
   const answered = state.phase === "answered";
 
@@ -360,12 +365,8 @@ export default function Quiz({
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-col gap-3 px-3 pb-10 pt-3 sm:px-5 lg:max-w-5xl">
       <TopBar
-        mode={mode}
-        onOpenMode={onOpenMode}
-        catLabel={catLabel}
-        onOpenPicker={onOpenPicker}
-        typeLabel={genMode ? typeLabel : undefined}
-        onOpenType={onOpenType}
+        summary={summary}
+        onCustomize={onCustomize}
         exploreActive={exploreActive}
         onExplore={onExplore}
         elo={elo}
@@ -390,7 +391,7 @@ export default function Quiz({
       </div>
 
       {noGens ? (
-        <EmptyFilters onAdjust={onOpenType} />
+        <EmptyFilters onAdjust={onCustomize} />
       ) : round && isOrder(round) ? (
         // Sortér: the order board with its verdict stacked below.
         <div className="flex flex-col gap-3">
