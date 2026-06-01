@@ -15,12 +15,16 @@ const fmtTime = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(
 export default function Lists({
   mode,
   onOpenMode,
+  exploreActive,
+  onExplore,
   elo,
   onOpenElo,
   onOpenSettings,
 }: {
   mode: Mode;
   onOpenMode: () => void;
+  exploreActive: boolean;
+  onExplore: () => void;
   elo: EloState;
   onOpenElo: () => void;
   onOpenSettings: () => void;
@@ -121,7 +125,7 @@ export default function Lists({
 
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-col gap-3 px-3 pb-10 pt-3 sm:px-5">
-      <TopBar mode={mode} onOpenMode={onOpenMode} elo={elo} onOpenElo={onOpenElo} onOpenSettings={onOpenSettings} />
+      <TopBar mode={mode} onOpenMode={onOpenMode} exploreActive={exploreActive} onExplore={onExplore} elo={elo} onOpenElo={onOpenElo} onOpenSettings={onOpenSettings} />
 
       {/* List picker strip */}
       <div className="flex gap-2 overflow-x-auto no-scrollbar -mx-1 px-1 pb-1">

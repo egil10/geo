@@ -480,8 +480,11 @@ const GENERATORS: Generator[] = [
     pool: klubber,
     build: (c) => {
       if (!c.tag) return null;
+      // Keep all options within the same gender's league system.
+      const women = /kvinner/i.test(c.tag);
+      const sameGender = (x: Place) => /kvinner/i.test(x.tag ?? "") === women;
       const inside = klubber.filter((x) => x.tag === c.tag);
-      const outside = klubber.filter((x) => x.tag !== c.tag);
+      const outside = klubber.filter((x) => x.tag !== c.tag && sameGender(x));
       if (inside.length < 1 || outside.length < 3) return null;
       const correct = pick(inside);
       const distract = nameDistractors(outside, correct, 3);

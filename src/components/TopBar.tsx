@@ -1,6 +1,6 @@
 "use client";
 
-import { Layers, Settings, ChevronRight, Gamepad2 } from "lucide-react";
+import { Layers, Settings, ChevronRight, Gamepad2, Compass } from "lucide-react";
 import Wordmark from "./Wordmark";
 import EloBadge from "./EloBadge";
 import { EloState } from "@/lib/elo";
@@ -11,6 +11,8 @@ export default function TopBar({
   onOpenMode,
   catLabel,
   onOpenPicker,
+  exploreActive,
+  onExplore,
   elo,
   onOpenElo,
   onOpenSettings,
@@ -19,6 +21,8 @@ export default function TopBar({
   onOpenMode: () => void;
   catLabel?: string;
   onOpenPicker?: () => void;
+  exploreActive: boolean;
+  onExplore: () => void;
   elo: EloState;
   onOpenElo: () => void;
   onOpenSettings: () => void;
@@ -41,6 +45,15 @@ export default function TopBar({
         )}
       </div>
       <div className="flex shrink-0 items-center gap-2">
+        <button
+          onClick={onExplore}
+          aria-label="Utforsk datasettet"
+          title="Utforsk"
+          className={`pill shrink-0 focus-ring ${exploreActive ? "bg-ink text-canvas" : "pill-glass"}`}
+        >
+          <Compass size={15} />
+          <span className="hidden sm:inline">Utforsk</span>
+        </button>
         <EloBadge elo={elo} onOpen={onOpenElo} />
         <button
           onClick={onOpenSettings}

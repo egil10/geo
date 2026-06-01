@@ -203,24 +203,26 @@ export const tunneler = buildFeatures(tunnelerJson, "tunnel", "length", "km");
 
 // ---- Football clubs + newspapers (non-geographic, location = home town) ----
 const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-const DIV_PROM: Record<string, number> = {
-  Eliteserien: 1,
-  Toppserien: 0.85,
-  "OBOS-ligaen": 0.7,
-  "1. divisjon kvinner": 0.5,
-  "2. divisjon menn": 0.35,
+// `tag` carries a gender-explicit division label so a "Brann" in the men's
+// Eliteserien is never confused with a "Brann" in the women's Toppserien.
+const DIV_INFO: Record<string, { label: string; prom: number }> = {
+  Eliteserien: { label: "Eliteserien (herrer)", prom: 1 },
+  "OBOS-ligaen": { label: "OBOS-ligaen (herrer)", prom: 0.7 },
+  "2. divisjon menn": { label: "2. divisjon (herrer)", prom: 0.35 },
+  Toppserien: { label: "Toppserien (kvinner)", prom: 0.85 },
+  "1. divisjon kvinner": { label: "1. divisjon (kvinner)", prom: 0.5 },
 };
-export const klubber: Place[] = Object.entries(fotballJson as Record<string, { name: string; sted: string }[]>).flatMap(
-  ([div, clubs]) =>
-    clubs.map((c) => ({
-      id: `klubb-${slugify(c.name)}-${slugify(div)}`,
-      name: c.name,
-      kind: "klubb" as const,
-      county: c.sted,
-      tag: div,
-      prominence: DIV_PROM[div] ?? 0.4,
-    })),
-);
+export const klubber: Place[] = Object.entries(fotballJson as Record<string, { name: string; sted: string }[]>).flatMap(([div, clubs]) => {
+  const info = DIV_INFO[div] ?? { label: div, prom: 0.4 };
+  return clubs.map((c) => ({
+    id: `klubb-${slugify(c.name)}-${slugify(div)}`,
+    name: c.name,
+    kind: "klubb" as const,
+    county: c.sted,
+    tag: info.label,
+    prominence: info.prom,
+  }));
+});
 export const aviser: Place[] = (aviserJson as { name: string; sted: string }[]).map((p) => {
   const riks = /riks/i.test(p.sted);
   return {

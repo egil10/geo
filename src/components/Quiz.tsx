@@ -161,6 +161,8 @@ export default function Quiz({
   onPerfectStreak,
   onOpenPicker,
   onOpenMode,
+  exploreActive,
+  onExplore,
   onOpenElo,
   onOpenSettings,
   autoAdvance,
@@ -173,6 +175,8 @@ export default function Quiz({
   onPerfectStreak: () => void;
   onOpenPicker: () => void;
   onOpenMode: () => void;
+  exploreActive: boolean;
+  onExplore: () => void;
   onOpenElo: () => void;
   onOpenSettings: () => void;
   autoAdvance: number;
@@ -293,6 +297,8 @@ export default function Quiz({
         onOpenMode={onOpenMode}
         catLabel={catLabel}
         onOpenPicker={onOpenPicker}
+        exploreActive={exploreActive}
+        onExplore={onExplore}
         elo={elo}
         onOpenElo={onOpenElo}
         onOpenSettings={onOpenSettings}

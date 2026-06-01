@@ -44,27 +44,23 @@ const cell = (p: Place, k: keyof Place): string => {
 
 function Thumb({ p, img, big }: { p: Place; img: "coa" | "photo"; big?: boolean }) {
   const url = img === "coa" ? p.coa : p.photo;
-  const w = big ? 320 : 96;
+  const w = big ? 320 : 120;
+  const box = big ? "h-full w-full" : "h-12 w-12 shrink-0 rounded-lg";
   if (!url) {
     return (
-      <div className={`grid shrink-0 place-items-center bg-black/[0.04] text-ink-muted dark:bg-white/[0.05] ${big ? "h-full w-full" : "h-10 w-10 rounded-lg"}`}>
-        <MapPin size={big ? 22 : 15} />
+      <div className={`grid place-items-center bg-black/[0.04] text-ink-muted dark:bg-white/[0.05] ${box}`}>
+        <MapPin size={big ? 22 : 16} />
       </div>
     );
   }
-  if (img === "coa") {
-    return (
-      <div className={`grid shrink-0 place-items-center overflow-hidden bg-white ${big ? "h-full w-full p-3" : "h-10 w-10 rounded-lg p-1"}`}>
-        <img src={imgAt(url, w)} alt="" loading="lazy" className="max-h-full max-w-full object-contain" />
-      </div>
-    );
-  }
+  // Image is its own box; object-contain scales the whole image inside the
+  // padding so nothing (esp. shield-shaped coats of arms) is ever cropped.
   return (
     <img
       src={imgAt(url, w)}
       alt=""
       loading="lazy"
-      className={`shrink-0 object-contain ${big ? "h-full w-full" : "h-10 w-10 rounded-lg bg-black/[0.04] dark:bg-white/[0.05]"}`}
+      className={`object-contain ${box} ${img === "coa" ? `bg-white ${big ? "p-4" : "p-1.5"}` : big ? "" : "bg-black/[0.04] p-0.5 dark:bg-white/[0.05]"}`}
     />
   );
 }
@@ -72,12 +68,16 @@ function Thumb({ p, img, big }: { p: Place; img: "coa" | "photo"; big?: boolean 
 export default function Explore({
   mode,
   onOpenMode,
+  exploreActive,
+  onExplore,
   elo,
   onOpenElo,
   onOpenSettings,
 }: {
   mode: Mode;
   onOpenMode: () => void;
+  exploreActive: boolean;
+  onExplore: () => void;
   elo: EloState;
   onOpenElo: () => void;
   onOpenSettings: () => void;
@@ -122,7 +122,7 @@ export default function Explore({
 
   return (
     <div className="mx-auto flex w-full max-w-4xl flex-col gap-3 px-3 pb-12 pt-3 sm:px-5">
-      <TopBar mode={mode} onOpenMode={onOpenMode} elo={elo} onOpenElo={onOpenElo} onOpenSettings={onOpenSettings} />
+      <TopBar mode={mode} onOpenMode={onOpenMode} exploreActive={exploreActive} onExplore={onExplore} elo={elo} onOpenElo={onOpenElo} onOpenSettings={onOpenSettings} />
 
       <div>
         <h1 className="font-display text-2xl font-bold tracking-tight">Datasett</h1>

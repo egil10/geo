@@ -19,8 +19,9 @@ const AUTO_KEY = "norgequiz.autoadvance.v1";
 const THEME_KEY = "norgequiz.theme";
 const QUALITY_KEY = "norgequiz.quality.v1";
 const MODE_KEY = "norgequiz.mode.v1";
+const EXPLORE_KEY = "norgequiz.explore.v1";
 const VALID = new Set(CATEGORIES.map((c) => c.key));
-const MODES = new Set<Mode>(["velg", "sorter", "skriv", "lister", "utforsk"]);
+const MODES = new Set<Mode>(["velg", "sorter", "skriv", "lister"]);
 
 export default function Home() {
   const [elo, setElo] = useState<EloState>(() => ({
@@ -35,6 +36,7 @@ export default function Home() {
   }));
   const [selected, setSelected] = useState<Set<Category>>(new Set());
   const [mode, setMode] = useState<Mode>("velg");
+  const [explore, setExplore] = useState(false);
   const [autoAdvance, setAutoAdvance] = useState(0);
   const [quality, setQuality] = useState<Quality>("hd");
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -56,9 +58,14 @@ export default function Home() {
       if (Array.isArray(cats)) setSelected(new Set(cats.filter((c: string) => VALID.has(c as Category))));
       const auto = Number(localStorage.getItem(AUTO_KEY));
       if ([0, 1000, 3000, 5000].includes(auto)) setAutoAdvance(auto);
-      const urlMode = new URLSearchParams(window.location.search).get("mode") as Mode | null;
+      const params = new URLSearchParams(window.location.search);
+      const urlMode = params.get("mode") as Mode | null;
       const m = urlMode && MODES.has(urlMode) ? urlMode : (localStorage.getItem(MODE_KEY) as Mode | null);
       if (m && MODES.has(m)) setMode(m);
+      // Utforsk is a separate view, toggled from the header (not a game mode).
+      const wantExplore =
+        params.get("view") === "utforsk" || params.get("mode") === "utforsk" || localStorage.getItem(EXPLORE_KEY) === "1";
+      if (wantExplore) setExplore(true);
       const q = localStorage.getItem(QUALITY_KEY);
       if (q === "hd" || q === "lett") setQuality(q);
       else {
@@ -99,14 +106,24 @@ export default function Home() {
     }
   };
 
+  const setExploreP = (v: boolean) => {
+    setExplore(v);
+    try {
+      localStorage.setItem(EXPLORE_KEY, v ? "1" : "0");
+    } catch {
+      /* ignore */
+    }
+  };
   const changeMode = (m: Mode) => {
     setMode(m);
+    setExploreP(false); // picking a game mode leaves Utforsk
     try {
       localStorage.setItem(MODE_KEY, m);
     } catch {
       /* ignore */
     }
   };
+  const toggleExplore = () => setExploreP(!explore);
 
   const changeAuto = (ms: number) => {
     setAutoAdvance(ms);
@@ -156,18 +173,22 @@ export default function Home() {
 
   return (
     <main className="relative min-h-dvh">
-      {mode === "lister" ? (
-        <Lists
+      {explore ? (
+        <Explore
           mode={mode}
           onOpenMode={() => setModeOpen(true)}
+          exploreActive
+          onExplore={toggleExplore}
           elo={elo}
           onOpenElo={() => setEloOpen(true)}
           onOpenSettings={() => setSettingsOpen(true)}
         />
-      ) : mode === "utforsk" ? (
-        <Explore
+      ) : mode === "lister" ? (
+        <Lists
           mode={mode}
           onOpenMode={() => setModeOpen(true)}
+          exploreActive={false}
+          onExplore={toggleExplore}
           elo={elo}
           onOpenElo={() => setEloOpen(true)}
           onOpenSettings={() => setSettingsOpen(true)}
@@ -181,6 +202,8 @@ export default function Home() {
           onPerfectStreak={handlePerfect}
           onOpenPicker={() => setPickerOpen(true)}
           onOpenMode={() => setModeOpen(true)}
+          exploreActive={false}
+          onExplore={toggleExplore}
           onOpenElo={() => setEloOpen(true)}
           onOpenSettings={() => setSettingsOpen(true)}
           autoAdvance={autoAdvance}
@@ -189,7 +212,7 @@ export default function Home() {
       )}
 
       <footer className="px-5 pb-8 text-center text-[11px] text-ink-muted">
-        Data fra Wikidata & SSB · 5 moduser · bygd for å bli best i norsk geografi
+        Data fra Wikidata & SSB · 4 spillemoduser + Utforsk · bygd for å bli best i norsk geografi
       </footer>
 
       {modeOpen && <ModePicker mode={mode} onChange={changeMode} onClose={() => setModeOpen(false)} />}
