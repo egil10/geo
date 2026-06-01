@@ -12,6 +12,8 @@ import {
   ArrowDownWideNarrow,
   Snowflake,
   Route,
+  Trophy,
+  Newspaper,
   Users,
   Hash,
   Check,
@@ -32,6 +34,8 @@ const ICONS: Record<string, React.ComponentType<{ size?: number; strokeWidth?: n
   ArrowDownWideNarrow,
   Snowflake,
   Route,
+  Trophy,
+  Newspaper,
   Users,
   Hash,
 };

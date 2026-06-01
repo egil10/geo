@@ -23,7 +23,9 @@ export default function QImage({
 }) {
   const [loadedId, setLoadedId] = useState<string | null>(null);
   const ready = loadedId === idKey;
-  const fit = variant === "photo" ? "object-cover" : "object-contain";
+  // Always contain so nothing is cropped/cut off; the image scales to fit.
+  void variant;
+  const fit = "object-contain";
 
   return (
     <div className="relative h-full w-full overflow-hidden">

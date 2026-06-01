@@ -5,7 +5,7 @@ import { Search, LayoutGrid, Table2, ArrowUp, ArrowDown, MapPin } from "lucide-r
 import TopBar from "./TopBar";
 import { Mode } from "./ModePicker";
 import { EloState } from "@/lib/elo";
-import { kommuner, fylker, fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, Place, fmtInt, fmtMetric } from "@/lib/data";
+import { kommuner, fylker, fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, klubber, aviser, Place, fmtInt, fmtMetric } from "@/lib/data";
 import { imgAt } from "@/lib/images";
 import { normalize } from "@/lib/match";
 
@@ -30,6 +30,8 @@ const GROUPS: Group[] = [
   { key: "fossefall", label: "Fossefall", list: fossefall, img: "photo", sort: "height", cols: [{ k: "name", h: "Foss" }, { k: "county", h: "Fylke" }, { k: "height", h: "Høyde (m)", num: true }] },
   { key: "isbreer", label: "Isbreer", list: isbreer, img: "photo", sort: "area", cols: [{ k: "name", h: "Isbre" }, { k: "county", h: "Fylke" }, { k: "area", h: "Areal (km²)", num: true }] },
   { key: "tunneler", label: "Tunneler", list: tunneler, img: "photo", sort: "length", cols: [{ k: "name", h: "Tunnel" }, { k: "county", h: "Fylke" }, { k: "length", h: "Lengde (km)", num: true }] },
+  { key: "klubber", label: "Fotball", list: klubber, img: "photo", sort: "name", cols: [{ k: "name", h: "Klubb" }, { k: "county", h: "Sted" }, { k: "tag", h: "Divisjon" }] },
+  { key: "aviser", label: "Aviser", list: aviser, img: "photo", sort: "name", cols: [{ k: "name", h: "Avis" }, { k: "county", h: "Sted" }, { k: "tag", h: "Type" }] },
 ];
 
 const cell = (p: Place, k: keyof Place): string => {
@@ -57,7 +59,14 @@ function Thumb({ p, img, big }: { p: Place; img: "coa" | "photo"; big?: boolean 
       </div>
     );
   }
-  return <img src={imgAt(url, w)} alt="" loading="lazy" className={`shrink-0 object-cover ${big ? "h-full w-full" : "h-10 w-10 rounded-lg"}`} />;
+  return (
+    <img
+      src={imgAt(url, w)}
+      alt=""
+      loading="lazy"
+      className={`shrink-0 object-contain ${big ? "h-full w-full" : "h-10 w-10 rounded-lg bg-black/[0.04] dark:bg-white/[0.05]"}`}
+    />
+  );
 }
 
 export default function Explore({
@@ -84,7 +93,7 @@ export default function Explore({
   const selectGroup = (g: Group) => {
     setGroupKey(g.key);
     setSortKey(g.sort);
-    setSortDir("desc");
+    setSortDir(g.cols.find((c) => c.k === g.sort)?.num ? "desc" : "asc");
     setQuery("");
   };
 
@@ -206,10 +215,7 @@ export default function Explore({
               </div>
               <div className="px-2.5 py-2">
                 <div className="truncate text-sm font-semibold">{p.name}</div>
-                <div className="truncate text-[11px] text-ink-muted">
-                  {p.county ? `${p.county} · ` : ""}
-                  {fmtMetric(p)}
-                </div>
+                <div className="truncate text-[11px] text-ink-muted">{[p.county, fmtMetric(p) || p.tag].filter(Boolean).join(" · ")}</div>
               </div>
             </div>
           ))}

@@ -16,6 +16,8 @@ import {
   fossefall,
   isbreer,
   tunneler,
+  klubber,
+  aviser,
   countyNames,
   fmtMetric,
   fmtInt,
@@ -33,6 +35,8 @@ export type Category =
   | "fossefall"
   | "isbreer"
   | "tunneler"
+  | "fotball"
+  | "aviser"
   | "vapen"
   | "befolkning"
   | "nummer";
@@ -56,6 +60,8 @@ export const CATEGORIES: CategoryMeta[] = [
   { key: "fossefall", label: "Fossefall", icon: "ArrowDownWideNarrow", hint: "Høyeste fosser" },
   { key: "isbreer", label: "Isbreer", icon: "Snowflake", hint: "Største isbreer" },
   { key: "tunneler", label: "Tunneler", icon: "Route", hint: "Lengste tunneler" },
+  { key: "fotball", label: "Fotballklubber", icon: "Trophy", hint: "Klubber, byer & divisjoner" },
+  { key: "aviser", label: "Aviser", icon: "Newspaper", hint: "Norske aviser & byene" },
   { key: "befolkning", label: "Befolkning", icon: "Users", hint: "Innbyggertall" },
   { key: "nummer", label: "Kommunenr.", icon: "Hash", hint: "Kommunenummer" },
 ];
@@ -103,6 +109,8 @@ const KMETA: Record<Kind, { art: string; noun: string; sup?: string }> = {
   foss: { art: "Hvilken", noun: "foss", sup: "høyest" },
   isbre: { art: "Hvilken", noun: "isbre", sup: "størst" },
   tunnel: { art: "Hvilken", noun: "tunnel", sup: "lengst" },
+  klubb: { art: "Hvilken", noun: "klubb" },
+  avis: { art: "Hvilken", noun: "avis" },
 };
 
 // Plausible distractors of the same kind, biased to similar prominence.
@@ -441,6 +449,83 @@ const GENERATORS: Generator[] = [
       };
     },
   },
+  // 11. Football club → home town
+  {
+    key: "klubb-sted",
+    cats: ["fotball"],
+    pool: klubber,
+    build: (c) => {
+      if (!c.county) return null;
+      const steder = [...new Set(klubber.filter((x) => x.county && x.county !== c.county).map((x) => x.county!))];
+      if (steder.length < 3) return null;
+      const { choices, answerIndex } = assemble(c.county, sampleN(steder, 3));
+      return {
+        uid: uid("klubb-sted"),
+        genKey: "klubb-sted",
+        cat: "fotball",
+        subject: c,
+        prompt: { kind: "text", text: `Hvor kommer ${c.name} fra?` },
+        choices,
+        answerIndex,
+        answerKey: c.county,
+        explanation: `${c.name} kommer fra ${c.county} og spiller i ${c.tag}.`,
+        difficulty: difficultyToRating(c.prominence),
+      };
+    },
+  },
+  // 12. Which club plays in this division?
+  {
+    key: "divisjon-klubb",
+    cats: ["fotball"],
+    pool: klubber,
+    build: (c) => {
+      if (!c.tag) return null;
+      const inside = klubber.filter((x) => x.tag === c.tag);
+      const outside = klubber.filter((x) => x.tag !== c.tag);
+      if (inside.length < 1 || outside.length < 3) return null;
+      const correct = pick(inside);
+      const distract = nameDistractors(outside, correct, 3);
+      if (distract.length < 3) return null;
+      const { choices, answerIndex } = assemble(correct.name, distract.map((x) => x.name));
+      return {
+        uid: uid("divisjon-klubb"),
+        genKey: "divisjon-klubb",
+        cat: "fotball",
+        subject: correct,
+        prompt: { kind: "text", text: `Hvilken av disse klubbene spiller i ${c.tag}?` },
+        choices,
+        choiceInfo: infoFor([correct, ...distract], (p) => p.tag, choices),
+        answerIndex,
+        answerKey: correct.name,
+        explanation: `${correct.name} (${correct.county}) spiller i ${c.tag}.`,
+        difficulty: difficultyToRating(correct.prominence) + 80,
+      };
+    },
+  },
+  // 13. Newspaper → where it is published
+  {
+    key: "avis-sted",
+    cats: ["aviser"],
+    pool: aviser.filter((p) => p.county && !/riks/i.test(p.county)),
+    build: (p) => {
+      if (!p.county || /riks/i.test(p.county)) return null;
+      const steder = [...new Set(aviser.filter((x) => x.county && !/riks/i.test(x.county) && x.county !== p.county).map((x) => x.county!))];
+      if (steder.length < 3) return null;
+      const { choices, answerIndex } = assemble(p.county, sampleN(steder, 3));
+      return {
+        uid: uid("avis-sted"),
+        genKey: "avis-sted",
+        cat: "aviser",
+        subject: p,
+        prompt: { kind: "text", text: `Hvor gis avisa ${p.name} ut?` },
+        choices,
+        answerIndex,
+        answerKey: p.county,
+        explanation: `${p.name} gis ut i ${p.county}.`,
+        difficulty: difficultyToRating(p.prominence) + 40,
+      };
+    },
+  },
 ];
 
 // Photo-identification + ranking generators for each natural-feature kind.
@@ -535,6 +620,8 @@ const WRITABLE = new Set([
   "fossefall-foto",
   "isbreer-foto",
   "tunneler-foto",
+  "klubb-sted",
+  "avis-sted",
 ]);
 
 export function activeGenerators(selected: Set<Category>, writableOnly = false): Generator[] {

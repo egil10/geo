@@ -15,8 +15,10 @@ import oyerJson from "@/data/oyer.json";
 import fossefallJson from "@/data/fossefall.json";
 import isbreerJson from "@/data/isbreer.json";
 import tunnelerJson from "@/data/tunneler.json";
+import fotballJson from "@/data/fotballklubber.json";
+import aviserJson from "@/data/aviser.json";
 
-export type Kind = "kommune" | "fylke" | "fjell" | "elv" | "innsjo" | "fjord" | "oy" | "foss" | "isbre" | "tunnel";
+export type Kind = "kommune" | "fylke" | "fjell" | "elv" | "innsjo" | "fjord" | "oy" | "foss" | "isbre" | "tunnel" | "klubb" | "avis";
 
 export interface Place {
   id: string;
@@ -26,6 +28,7 @@ export interface Place {
   countyNumber?: string;
   number?: string; // kommune-/fylkesnummer
   admin?: string; // administrasjonssenter
+  tag?: string; // free label (football division, newspaper type, …)
   population?: number;
   area?: number;
   elevation?: number;
@@ -198,6 +201,38 @@ export const fossefall = buildFeatures(fossefallJson, "foss", "height", "m");
 export const isbreer = buildFeatures(isbreerJson, "isbre", "area", "km²");
 export const tunneler = buildFeatures(tunnelerJson, "tunnel", "length", "km");
 
+// ---- Football clubs + newspapers (non-geographic, location = home town) ----
+const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+const DIV_PROM: Record<string, number> = {
+  Eliteserien: 1,
+  Toppserien: 0.85,
+  "OBOS-ligaen": 0.7,
+  "1. divisjon kvinner": 0.5,
+  "2. divisjon menn": 0.35,
+};
+export const klubber: Place[] = Object.entries(fotballJson as Record<string, { name: string; sted: string }[]>).flatMap(
+  ([div, clubs]) =>
+    clubs.map((c) => ({
+      id: `klubb-${slugify(c.name)}-${slugify(div)}`,
+      name: c.name,
+      kind: "klubb" as const,
+      county: c.sted,
+      tag: div,
+      prominence: DIV_PROM[div] ?? 0.4,
+    })),
+);
+export const aviser: Place[] = (aviserJson as { name: string; sted: string }[]).map((p) => {
+  const riks = /riks/i.test(p.sted);
+  return {
+    id: `avis-${slugify(p.name)}`,
+    name: p.name,
+    kind: "avis" as const,
+    county: p.sted,
+    tag: riks ? "Riksdekkende" : "Lokalavis",
+    prominence: riks ? 1 : 0.5,
+  };
+});
+
 export const byKind: Record<Kind, Place[]> = {
   kommune: kommuner,
   fylke: fylker,
@@ -209,6 +244,8 @@ export const byKind: Record<Kind, Place[]> = {
   foss: fossefall,
   isbre: isbreer,
   tunnel: tunneler,
+  klubb: klubber,
+  avis: aviser,
 };
 
 export const countyNames: string[] = fylker.map((f) => f.name);
@@ -237,4 +274,6 @@ export const KIND_LABEL: Record<Kind, { one: string; many: string }> = {
   foss: { one: "foss", many: "fossefall" },
   isbre: { one: "isbre", many: "isbreer" },
   tunnel: { one: "tunnel", many: "tunneler" },
+  klubb: { one: "klubb", many: "klubber" },
+  avis: { one: "avis", many: "aviser" },
 };

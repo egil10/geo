@@ -687,8 +687,8 @@ function RevealBar({
   return (
     <div className="animate-fade-up glass flex h-full items-center gap-3 rounded-[24px] p-3">
       {thumb && (
-        <div className="hidden h-[76px] w-[76px] shrink-0 overflow-hidden rounded-2xl sm:block">
-          <img src={imgAt(thumb, 200)} alt="" className="h-full w-full object-cover" />
+        <div className="hidden h-[76px] w-[76px] shrink-0 overflow-hidden rounded-2xl bg-black/[0.04] sm:block dark:bg-white/[0.05]">
+          <img src={imgAt(thumb, 200)} alt="" className="h-full w-full object-contain" />
         </div>
       )}
       <div className="flex min-w-0 flex-1 flex-col justify-center">
