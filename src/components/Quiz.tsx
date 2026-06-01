@@ -378,10 +378,12 @@ function QuestionCard({
   const answered = phase === "answered";
   const level = diffLevel(round.difficulty);
   const catLabel = CATEGORIES.find((c) => c.key === round.cat)?.label ?? "";
+  // Map questions need a tall canvas so the whole country (and its pin) fits.
+  const cardH = round.prompt.kind === "map" ? "h-[440px] sm:h-[500px]" : "h-[320px] sm:h-[360px]";
 
   return (
     <div className="animate-pop flex flex-col gap-3">
-      <div className="glass-strong flex h-[320px] flex-col overflow-hidden rounded-[28px] sm:h-[360px]">
+      <div className={`glass-strong flex ${cardH} flex-col overflow-hidden rounded-[28px]`}>
         <div className="flex shrink-0 items-center justify-between px-5 pt-4">
           <span className="text-[11px] font-semibold uppercase tracking-wider text-ink-muted">{catLabel}</span>
           <span className="flex items-center gap-1" aria-label={`Vanskelighet ${level} av 3`}>
