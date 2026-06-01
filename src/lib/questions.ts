@@ -71,6 +71,7 @@ export interface Round {
   subject: Place; // focal place (for reveal media/stats)
   prompt: Prompt;
   choices: string[];
+  choiceInfo?: (string | undefined)[]; // per-option fact shown on reveal (e.g. innbyggertall)
   answerIndex: number;
   answerKey: string;
   explanation: string;
@@ -110,7 +111,9 @@ function nameDistractors(pool: Place[], subject: Place, n: number): Place[] {
   cands.sort(
     (a, b) => Math.abs(a.prominence - subject.prominence) - Math.abs(b.prominence - subject.prominence),
   );
-  const near = cands.slice(0, Math.max(n * 6, 18));
+  // Draw from a wide band (not just the 18 nearest) so the same subject does
+  // not keep producing the same bundle of distractors.
+  const near = cands.slice(0, Math.max(n * 14, 48));
   // dedupe by name
   const seen = new Set<string>([subject.name]);
   const out: Place[] = [];
@@ -127,6 +130,18 @@ function assemble(correct: string, distractors: string[]): { choices: string[]; 
   const choices = shuffle([correct, ...distractors]);
   return { choices, answerIndex: choices.indexOf(correct) };
 }
+
+// Build the per-option fact array aligned to the (already shuffled) choices, so
+// the reveal can show every option's real value — the player learns the wrong
+// ones too.
+const fylkePopByName = new Map<string, number | undefined>(fylker.map((f) => [f.name, f.population]));
+function infoFor(places: Place[], fmt: (p: Place) => string | undefined, choices: string[]): (string | undefined)[] {
+  const m = new Map<string, string | undefined>(places.map((p) => [p.name, fmt(p)]));
+  return choices.map((c) => m.get(c));
+}
+const popInfo = (p: Place) => (p.population != null ? `${fmtInt(p.population)} innb.` : undefined);
+const countyInfo = (p: Place) => p.county;
+const metricInfo = (p: Place) => (p.metric != null ? fmtMetric(p) : undefined);
 
 // Pick up to n items with distinct names (two real features can share a name).
 function distinctByName(items: Place[], n: number): Place[] {
@@ -192,6 +207,10 @@ const GENERATORS: Generator[] = [
         subject: k,
         prompt: { kind: "text", text: `Hvilket fylke ligger ${k.name} i?` },
         choices,
+        choiceInfo: choices.map((c) => {
+          const p = fylkePopByName.get(c);
+          return p != null ? `${fmtInt(p)} innb.` : undefined;
+        }),
         answerIndex,
         answerKey: k.county,
         explanation: `${k.name} ligger i ${k.county}${k.population ? ` og har ${fmtInt(k.population)} innbyggere` : ""}.`,
@@ -216,6 +235,7 @@ const GENERATORS: Generator[] = [
         subject: k,
         prompt: { kind: "image", text: "Hvilken kommune har dette våpenet?", src: k.coa, alt: "Kommunevåpen", variant: "coa" },
         choices,
+        choiceInfo: infoFor([k, ...d], countyInfo, choices),
         answerIndex,
         answerKey: k.name,
         explanation: `Dette er kommunevåpenet til ${k.name} (${k.county}).`,
@@ -239,6 +259,7 @@ const GENERATORS: Generator[] = [
         subject: f,
         prompt: { kind: "image", text: "Hvilket fylke har dette våpenet?", src: f.coa, alt: "Fylkesvåpen", variant: "coa" },
         choices,
+        choiceInfo: infoFor([f, ...d], popInfo, choices),
         answerIndex,
         answerKey: f.name,
         explanation: `Dette er fylkesvåpenet til ${f.name}. Administrasjonssenter: ${f.admin ?? "–"}.`,
@@ -314,6 +335,7 @@ const GENERATORS: Generator[] = [
         subject: correct,
         prompt: { kind: "text", text: `Hvilken av disse kommunene ligger i ${f.name}?` },
         choices,
+        choiceInfo: infoFor([correct, ...distract], countyInfo, choices),
         answerIndex,
         answerKey: correct.name,
         explanation: `${correct.name} ligger i ${f.name}.`,
@@ -337,6 +359,7 @@ const GENERATORS: Generator[] = [
         subject: k,
         prompt: { kind: "text", text: `Hvilken kommune har kommunenummer ${k.number}?` },
         choices,
+        choiceInfo: infoFor([k, ...d], countyInfo, choices),
         answerIndex,
         answerKey: k.name,
         explanation: `Kommunenummer ${k.number} tilhører ${k.name} (${k.county}).`,
@@ -385,6 +408,7 @@ const GENERATORS: Generator[] = [
         subject: winner,
         prompt: { kind: "text", text: "Hvilken kommune har flest innbyggere?" },
         choices,
+        choiceInfo: infoFor(four, popInfo, choices),
         answerIndex,
         answerKey: winner.name,
         explanation: `${winner.name} har flest med ${fmtInt(winner.population)} innbyggere.`,
@@ -409,6 +433,7 @@ const GENERATORS: Generator[] = [
         subject: winner,
         prompt: { kind: "text", text: "Hvilket fylke har flest innbyggere?" },
         choices,
+        choiceInfo: infoFor(four, popInfo, choices),
         answerIndex,
         answerKey: winner.name,
         explanation: `${winner.name} har flest med ${fmtInt(winner.population)} innbyggere.`,
@@ -449,6 +474,7 @@ for (const { kind, list, cat } of FEATURE_KINDS) {
         subject: p,
         prompt: { kind: "image", text: `${meta.art} ${meta.noun} er dette?`, src: p.photo, alt: meta.noun, variant: "photo" },
         choices,
+        choiceInfo: infoFor([p, ...d], metricInfo, choices),
         answerIndex,
         answerKey: p.name,
         explanation: `Dette er ${p.name}${p.county ? ` i ${p.county}` : ""} – ${fmtMetric(p)}.`,
@@ -474,6 +500,7 @@ for (const { kind, list, cat } of FEATURE_KINDS) {
         subject: winner,
         prompt: { kind: "text", text: `${meta.art} ${meta.noun} er ${meta.sup}?` },
         choices,
+        choiceInfo: infoFor(four, metricInfo, choices),
         answerIndex,
         answerKey: winner.name,
         explanation: `${winner.name} er ${meta.sup} med ${fmtMetric(winner)}.`,

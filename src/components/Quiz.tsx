@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "react";
-import { Check, X, ArrowRight, Flame, ChevronUp, ChevronDown, GripVertical } from "lucide-react";
+import { Check, X, ArrowRight, Flame, ChevronUp, ChevronDown, GripVertical, SkipForward, MinusCircle } from "lucide-react";
 import {
   Round,
   OrderRound,
@@ -33,6 +33,7 @@ interface State {
   picked: number | null;
   typed: string | null;
   submittedOrder: string[] | null;
+  skipped: boolean;
   won: boolean | null;
   delta: number | null;
   total: number;
@@ -46,7 +47,7 @@ interface State {
 
 type Action =
   | { type: "init"; rounds: AnyRound[] }
-  | { type: "answer"; won: boolean; delta: number; picked?: number; typed?: string; order?: string[] }
+  | { type: "answer"; won: boolean; delta: number; picked?: number; typed?: string; order?: string[]; skipped?: boolean }
   | { type: "next"; newRound: AnyRound };
 
 const initial: State = {
@@ -56,6 +57,7 @@ const initial: State = {
   picked: null,
   typed: null,
   submittedOrder: null,
+  skipped: false,
   won: null,
   delta: null,
   total: 0,
@@ -78,6 +80,7 @@ function reducer(state: State, action: Action): State {
         picked: null,
         typed: null,
         submittedOrder: null,
+        skipped: false,
         won: null,
         delta: null,
         recentSubjects: action.rounds.map(subjectId),
@@ -94,6 +97,7 @@ function reducer(state: State, action: Action): State {
         picked: action.picked ?? null,
         typed: action.typed ?? null,
         submittedOrder: action.order ?? null,
+        skipped: action.skipped ?? false,
         total: state.total + 1,
         correct: state.correct + (action.won ? 1 : 0),
         streak,
@@ -111,6 +115,7 @@ function reducer(state: State, action: Action): State {
         picked: null,
         typed: null,
         submittedOrder: null,
+        skipped: false,
         won: null,
         delta: null,
         streak: state.streak >= 10 ? 0 : state.streak,
@@ -190,7 +195,7 @@ export default function Quiz({
   }, [mode, gens, selected, state.recentSubjects, state.recentAnswers, state.lastGen]);
 
   const score = useCallback(
-    (won: boolean, extra: { picked?: number; typed?: string; order?: string[] }) => {
+    (won: boolean, extra: { picked?: number; typed?: string; order?: string[]; skipped?: boolean }) => {
       const r = state.round!;
       const delta = onResult(won, r.difficulty, r.cat);
       if (won && state.streak + 1 === 10) onPerfectStreak();
@@ -198,6 +203,12 @@ export default function Quiz({
     },
     [state.round, state.streak, onResult, onPerfectStreak],
   );
+
+  // Skip the current question: counts as wrong, reveals the answer.
+  const handleSkip = useCallback(() => {
+    if (state.phase !== "idle" || !state.round) return;
+    score(false, { skipped: true });
+  }, [state.phase, state.round, score]);
 
   const answerChoose = useCallback(
     (i: number) => {
@@ -321,10 +332,16 @@ export default function Quiz({
       {/* Reveal / status strip — fixed height so layout never jumps. */}
       <div className="min-h-[104px]">
         {state.phase === "answered" && round ? (
-          <RevealBar round={round} won={!!state.won} delta={state.delta} typed={state.typed} onNext={handleNext} />
+          <RevealBar round={round} won={!!state.won} skipped={state.skipped} delta={state.delta} typed={state.typed} onNext={handleNext} />
         ) : (
-          <div className="animate-fade-in flex h-[104px] items-center justify-center gap-2 text-sm text-ink-muted">
+          <div className="animate-fade-in flex h-[104px] flex-col items-center justify-center gap-2 text-sm text-ink-muted">
             <span>Spørsmål {state.total + 1}</span>
+            <button
+              onClick={handleSkip}
+              className="flex items-center gap-1.5 rounded-full border border-[var(--field-stroke)] px-3.5 py-1.5 text-xs font-medium text-ink-muted transition hover:text-ink focus-ring"
+            >
+              <SkipForward size={13} /> Hopp over
+            </button>
           </div>
         )}
       </div>
@@ -417,7 +434,10 @@ function QuestionCard({
                 >
                   {answered && isAnswer ? <Check size={14} /> : answered && isPicked ? <X size={14} /> : i + 1}
                 </span>
-                <span className="line-clamp-2 flex-1 font-medium leading-snug">{choice}</span>
+                <span className="line-clamp-2 min-w-0 flex-1 font-medium leading-snug">{choice}</span>
+                {answered && round.choiceInfo?.[i] && (
+                  <span className="shrink-0 text-[11px] tabular-nums text-ink-muted">{round.choiceInfo[i]}</span>
+                )}
               </button>
             );
           })}
@@ -631,12 +651,14 @@ function OrderBoard({
 function RevealBar({
   round,
   won,
+  skipped,
   delta,
   typed,
   onNext,
 }: {
   round: AnyRound;
   won: boolean;
+  skipped: boolean;
   delta: number | null;
   typed: string | null;
   onNext: () => void;
@@ -646,15 +668,13 @@ function RevealBar({
 
   let detail: React.ReactNode;
   if (order) {
-    const correctCount = round.correctIds.length; // for display we show the fasit
     const names = round.correctIds.map((id) => round.items.find((it) => it.id === id)?.name).join(" › ");
-    void correctCount;
     detail = (
       <p className="mt-0.5 line-clamp-2 text-sm text-ink-soft">
         <span className="font-semibold">Riktig:</span> {names}
       </p>
     );
-  } else if (typed != null && !won) {
+  } else if (skipped || (typed != null && !won)) {
     detail = (
       <p className="mt-0.5 line-clamp-2 text-sm text-ink-soft">
         Riktig svar: <span className="font-semibold">{round.answerKey}</span>. {round.explanation}
@@ -673,9 +693,12 @@ function RevealBar({
       )}
       <div className="flex min-w-0 flex-1 flex-col justify-center">
         <div className="flex items-center gap-2">
-          <span className="flex items-center gap-1.5 text-sm font-bold" style={{ color: won ? "var(--good)" : "var(--bad)" }}>
-            {won ? <Check size={16} /> : <X size={16} />}
-            {won ? "Riktig" : "Feil"}
+          <span
+            className="flex items-center gap-1.5 text-sm font-bold"
+            style={{ color: skipped ? "var(--amber)" : won ? "var(--good)" : "var(--bad)" }}
+          >
+            {skipped ? <MinusCircle size={16} /> : won ? <Check size={16} /> : <X size={16} />}
+            {skipped ? "Hoppet over" : won ? "Riktig" : "Feil"}
           </span>
           {delta != null && (
             <span

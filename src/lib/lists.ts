@@ -3,6 +3,8 @@
 // input fills whichever row your guess matches.
 
 import { fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, kommuner, fylker, Place, fmtMetric, fmtInt } from "./data";
+import fotball from "@/data/fotballklubber.json";
+import aviser from "@/data/aviser.json";
 
 export interface ListRow {
   answers: string[]; // accepted names for this slot
@@ -87,6 +89,53 @@ const fylkeRows: ListRow[] = [...fylker]
   .sort((a, b) => (b.population ?? 0) - (a.population ?? 0))
   .map((f) => ({ answers: [f.name], hint: f.admin ? `Sentrum: ${f.admin}` : "Fylke", reveal: `${f.name} · ${fmtInt(f.population)} innb.` }));
 
+const byPop = (a: Place, b: Place) => (b.population ?? 0) - (a.population ?? 0);
+
+// County capitals (administrative centres).
+const fylkesentreRows: ListRow[] = [...fylker]
+  .sort(byPop)
+  .filter((f) => f.admin)
+  .map((f) => ({ answers: [f.admin!], hint: f.name, reveal: `${f.admin} (${f.name})` }));
+
+const bigKommunerRows: ListRow[] = [...kommuner]
+  .filter((k) => (k.population ?? 0) >= 50000)
+  .sort(byPop)
+  .map((k) => ({ answers: [k.name], hint: k.county ?? "", reveal: `${k.name} · ${fmtInt(k.population)} innb.` }));
+
+// The endurance challenge: every municipality, grouped by number (i.e. by fylke).
+const allKommunerRows: ListRow[] = [...kommuner]
+  .sort((a, b) => (a.number ?? "").localeCompare(b.number ?? ""))
+  .map((k) => ({ answers: [k.name], hint: k.county ?? "Norge", reveal: k.number ? `${k.name} · ${k.number}` : k.name }));
+
+// One "name the municipalities in <county>" list per fylke.
+const perFylkeLists: ListDef[] = [...fylker].sort(byPop).map((f) => ({
+  key: "kom-" + f.number,
+  title: `Kommuner: ${f.name}`,
+  blurb: `Alle kommunene i ${f.name}`,
+  rows: kommuner
+    .filter((k) => k.county === f.name)
+    .sort(byPop)
+    .map((k) => ({ answers: [k.name], hint: `${fmtInt(k.population)} innb.`, reveal: k.number ? `${k.name} · ${k.number}` : k.name })),
+}));
+
+// ---- Football clubs + newspapers ------------------------------------------
+type Club = { name: string; sted: string };
+const clubRows = (clubs: Club[]): ListRow[] => clubs.map((c) => ({ answers: [c.name], hint: c.sted, reveal: `${c.name} (${c.sted})` }));
+const fotballLists: ListDef[] = Object.entries(fotball as Record<string, Club[]>).map(([div, clubs]) => ({
+  key: "fk-" + div.replace(/[^a-z0-9]+/gi, ""),
+  title: `Fotball: ${div}`,
+  blurb: `Klubbene i ${div}`,
+  rows: clubRows(clubs),
+}));
+
+type Paper = { name: string; sted: string };
+const papers = aviser as Paper[];
+const paperRows = (ps: Paper[]): ListRow[] => ps.map((p) => ({ answers: [p.name], hint: p.sted, reveal: `${p.name} · ${p.sted}` }));
+const aviserLists: ListDef[] = [
+  { key: "aviser-riks", title: "Riksdekkende aviser", blurb: "De nasjonale avisene", rows: paperRows(papers.filter((p) => /riks/i.test(p.sted))) },
+  { key: "aviser-lokal", title: "Lokale & regionale aviser", blurb: "Avisene rundt om i landet", rows: paperRows(papers.filter((p) => !/riks/i.test(p.sted))) },
+];
+
 export const LISTS: ListDef[] = [
   { key: "ekstremer", title: "Geografiske ekstremer", blurb: "Norges aller største, lengste og høyeste", rows: EXTREMES },
   { key: "ytterpunkter", title: "Norges ytterpunkter", blurb: "Nord, sør, øst, vest – fastland & kongerike", rows: YTTERPUNKTER },
@@ -101,6 +150,12 @@ export const LISTS: ListDef[] = [
   { key: "tunneler10", title: "Topp 10 lengste tunneler", blurb: "Verdens lengste vegtunnel ligger her", rows: topRows(tunneler, 10) },
   { key: "bruer", title: "Norges lengste bruer", blurb: "Hengebruer og kystbruer", rows: BRUER },
   { key: "eveier", title: "Europaveier i Norge", blurb: "Kjenner du E-veiene?", rows: EVEIER },
+  ...fotballLists,
+  ...aviserLists,
   { key: "fylker", title: "Alle 15 fylker", blurb: "Kan du nevne dem alle?", rows: fylkeRows },
+  { key: "fylkesentre", title: "Fylkenes administrasjonssentre", blurb: "Hovedstedene i hvert fylke", rows: fylkesentreRows },
   { key: "kommuner10", title: "Topp 10 mest folkerike kommuner", blurb: "De største byene", rows: topRows(kommuner, 10) },
+  { key: "kommuner50k", title: "Kommuner over 50 000 innbyggere", blurb: "De største bykommunene", rows: bigKommunerRows },
+  { key: "kommuner-alle", title: "Alle 357 kommuner", blurb: "Den ultimate utfordringen", rows: allKommunerRows },
+  ...perFylkeLists,
 ];

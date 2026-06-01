@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { Trophy, RotateCcw, Eye, Check } from "lucide-react";
+import { Trophy, RotateCcw, Eye, Check, Shuffle, ArrowRight } from "lucide-react";
 import TopBar from "./TopBar";
 import { Mode } from "./ModePicker";
 import { LISTS } from "@/lib/lists";
-import { normalize } from "@/lib/match";
+import { normalize, stripParen } from "@/lib/match";
 import { EloState } from "@/lib/elo";
 
 const DONE_KEY = "norgequiz.lists.v1";
@@ -34,9 +34,23 @@ export default function Lists({
   const [completed, setCompleted] = useState<Set<string>>(new Set());
 
   const list = useMemo(() => LISTS.find((l) => l.key === listKey)!, [listKey]);
+  // Map every normalized form (and its paren-stripped form) to the row indices
+  // that accept it, so duplicate/disambiguated names (e.g. two "Herøy") and
+  // bare names both match.
   const lookup = useMemo(() => {
-    const m = new Map<string, number>();
-    list.rows.forEach((row, i) => row.answers.forEach((a) => m.set(normalize(a), i)));
+    const m = new Map<string, number[]>();
+    const add = (key: string, i: number) => {
+      if (!key) return;
+      const arr = m.get(key) ?? [];
+      if (!arr.includes(i)) arr.push(i);
+      m.set(key, arr);
+    };
+    list.rows.forEach((row, i) =>
+      row.answers.forEach((a) => {
+        add(normalize(a), i);
+        add(normalize(stripParen(a)), i);
+      }),
+    );
     return m;
   }, [list]);
 
@@ -81,13 +95,25 @@ export default function Lists({
   }, [found, list, completed]);
 
   const tryMatch = (text: string) => {
-    const i = lookup.get(normalize(text));
-    if (i != null && !found.has(i)) {
-      setFound((f) => new Set(f).add(i));
-      setValue("");
-      return true;
-    }
-    return false;
+    const idxs = lookup.get(normalize(text));
+    if (!idxs) return false;
+    const i = idxs.find((j) => !found.has(j));
+    if (i == null) return false;
+    setFound((f) => new Set(f).add(i));
+    setValue("");
+    return true;
+  };
+
+  const restart = () => {
+    setFound(new Set());
+    setGaveUp(false);
+    setValue("");
+    setStartedAt(Date.now());
+    setNow(Date.now());
+  };
+  const nextList = () => {
+    const others = LISTS.filter((l) => l.key !== listKey);
+    setListKey(others[Math.floor(Math.random() * others.length)].key);
   };
 
   const elapsed = Math.floor((now - startedAt) / 1000);
@@ -99,6 +125,12 @@ export default function Lists({
 
       {/* List picker strip */}
       <div className="flex gap-2 overflow-x-auto no-scrollbar -mx-1 px-1 pb-1">
+        <button
+          onClick={nextList}
+          className="pill shrink-0 border border-transparent bg-[var(--nordic)] text-white hover:opacity-90"
+        >
+          <Shuffle size={13} /> Tilfeldig
+        </button>
         {LISTS.map((l) => (
           <button
             key={l.key}
@@ -167,19 +199,21 @@ export default function Lists({
             </button>
           </div>
         )}
-        {(done) && (
-          <button
-            onClick={() => {
-              setFound(new Set());
-              setGaveUp(false);
-              setValue("");
-              setStartedAt(Date.now());
-              setNow(Date.now());
-            }}
-            className="flex items-center justify-center gap-1.5 rounded-2xl bg-ink py-2.5 text-sm font-semibold text-canvas transition hover:opacity-90 focus-ring"
-          >
-            <RotateCcw size={15} /> Prøv igjen
-          </button>
+        {done && (
+          <div className="flex gap-2">
+            <button
+              onClick={restart}
+              className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl border border-[var(--field-stroke)] py-2.5 text-sm font-semibold text-ink-muted transition hover:text-ink focus-ring"
+            >
+              <RotateCcw size={15} /> Prøv igjen
+            </button>
+            <button
+              onClick={nextList}
+              className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-ink py-2.5 text-sm font-semibold text-canvas transition hover:opacity-90 focus-ring"
+            >
+              Neste liste <ArrowRight size={15} />
+            </button>
+          </div>
         )}
       </div>
 
