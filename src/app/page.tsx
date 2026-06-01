@@ -51,7 +51,8 @@ export default function Home() {
     setElo(loadElo());
     setTheme(document.documentElement.classList.contains("dark") ? "dark" : "light");
     try {
-      const cats = JSON.parse(localStorage.getItem(CATS_KEY) || "[]");
+      const urlCats = new URLSearchParams(window.location.search).get("cat");
+      const cats = urlCats ? urlCats.split(",") : JSON.parse(localStorage.getItem(CATS_KEY) || "[]");
       if (Array.isArray(cats)) setSelected(new Set(cats.filter((c: string) => VALID.has(c as Category))));
       const auto = Number(localStorage.getItem(AUTO_KEY));
       if ([0, 1000, 3000, 5000].includes(auto)) setAutoAdvance(auto);
