@@ -64,9 +64,27 @@ const ringArea = (pts) => {
   return Math.abs(a / 2);
 };
 
+// Fetch the source GeoJSON once (cached locally, gitignored) so the script is
+// self-contained. Source: github.com/robhop/fylker-og-kommuner (CC BY 4.0).
+const SRC = {
+  _fylker: "https://raw.githubusercontent.com/robhop/fylker-og-kommuner/main/Fylker-S.geojson",
+  _kommuner: "https://raw.githubusercontent.com/robhop/fylker-og-kommuner/main/Kommuner-S.geojson",
+};
+async function load(name) {
+  const file = `${name}.geojson`;
+  try {
+    return JSON.parse(await readFile(file, "utf8"));
+  } catch {
+    console.log(`fetching ${file} …`);
+    const text = await (await fetch(SRC[name])).text();
+    await writeFile(file, text);
+    return JSON.parse(text);
+  }
+}
+
 async function main() {
-  const fylker = JSON.parse(await readFile("_fylker.geojson", "utf8"));
-  const kommuner = JSON.parse(await readFile("_kommuner.geojson", "utf8"));
+  const fylker = await load("_fylker");
+  const kommuner = await load("_kommuner");
 
   // Projection from the fylker (mainland) bounds.
   let minX = Infinity,
