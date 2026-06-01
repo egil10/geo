@@ -1,15 +1,16 @@
 "use client";
 
-import { ListChecks, ArrowDownUp, PenLine, ListOrdered, Check } from "lucide-react";
+import { ListChecks, ArrowDownUp, PenLine, ListOrdered, Compass, Check } from "lucide-react";
 import Modal from "./Modal";
 
-export type Mode = "velg" | "sorter" | "skriv" | "lister";
+export type Mode = "velg" | "sorter" | "skriv" | "lister" | "utforsk";
 
 export const MODES: { key: Mode; label: string; icon: React.ComponentType<{ size?: number }>; hint: string }[] = [
   { key: "velg", label: "Velg", icon: ListChecks, hint: "Fire svaralternativer" },
   { key: "sorter", label: "Sortér", icon: ArrowDownUp, hint: "Ranger fire fra størst til minst" },
   { key: "skriv", label: "Skriv", icon: PenLine, hint: "Skriv inn svaret selv" },
   { key: "lister", label: "Lister", icon: ListOrdered, hint: "Fyll inn topp-lister & ekstremer" },
+  { key: "utforsk", label: "Utforsk", icon: Compass, hint: "Bla gjennom alle data & fasiter" },
 ];
 
 export const modeLabel = (m: Mode) => MODES.find((x) => x.key === m)?.label ?? "Velg";

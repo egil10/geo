@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "react";
-import { Check, X, ArrowRight, Flame, ChevronUp, ChevronDown } from "lucide-react";
+import { Check, X, ArrowRight, Flame, ChevronUp, ChevronDown, GripVertical } from "lucide-react";
 import {
   Round,
   OrderRound,
@@ -470,6 +470,13 @@ function WriteAnswer({ round, answered, onWrite }: { round: Round; answered: boo
 }
 
 // ---- Sortér board ---------------------------------------------------------
+function reorder(arr: string[], from: number, to: number): string[] {
+  const a = [...arr];
+  const [x] = a.splice(from, 1);
+  a.splice(to, 0, x);
+  return a;
+}
+
 function OrderBoard({
   round,
   phase,
@@ -482,20 +489,67 @@ function OrderBoard({
   onCheck: (ids: string[]) => void;
 }) {
   const [order, setOrder] = useState<string[]>(round.items.map((i) => i.id));
-  useEffect(() => setOrder(round.items.map((i) => i.id)), [round.uid]);
+  const [dragId, setDragId] = useState<string | null>(null);
+  const [dy, setDy] = useState(0);
+  const [overIndex, setOverIndex] = useState(0);
+  const [rowH, setRowH] = useState(64);
+  const rowRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    setOrder(round.items.map((i) => i.id));
+    setDragId(null);
+    setDy(0);
+  }, [round.uid]);
+
   const answered = phase === "answered";
   const byId = useMemo(() => Object.fromEntries(round.items.map((i) => [i.id, i])), [round]);
-  const display = answered && submitted ? submitted : order;
   const level = diffLevel(round.difficulty);
 
   const move = (idx: number, dir: -1 | 1) => {
     if (answered) return;
     const ni = idx + dir;
     if (ni < 0 || ni >= order.length) return;
-    const a = [...order];
-    [a[idx], a[ni]] = [a[ni], a[idx]];
-    setOrder(a);
+    setOrder(reorder(order, idx, ni));
   };
+
+  // Pointer drag-and-drop (mouse + touch). Window listeners + a movement
+  // threshold avoid setPointerCapture eating the chevron clicks (BLUEPRINT §11).
+  const startDrag = (e: React.PointerEvent, index: number) => {
+    if (answered) return;
+    const r0 = rowRefs.current[0]?.getBoundingClientRect();
+    const r1 = rowRefs.current[1]?.getBoundingClientRect();
+    const h = r0 && r1 ? Math.abs(r1.top - r0.top) : 64;
+    const from = index;
+    const startY = e.clientY;
+    const cur = order;
+    let active = false;
+    let over = from;
+    const onMove = (ev: PointerEvent) => {
+      const delta = ev.clientY - startY;
+      if (!active) {
+        if (Math.abs(delta) < 5) return;
+        active = true;
+        setRowH(h);
+        setDragId(cur[from]);
+      }
+      over = Math.max(0, Math.min(cur.length - 1, from + Math.round(delta / h)));
+      setDy(delta);
+      setOverIndex(over);
+    };
+    const onUp = () => {
+      window.removeEventListener("pointermove", onMove);
+      window.removeEventListener("pointerup", onUp);
+      if (active) setOrder(reorder(cur, from, over));
+      setDragId(null);
+      setDy(0);
+    };
+    window.addEventListener("pointermove", onMove);
+    window.addEventListener("pointerup", onUp);
+  };
+
+  const fromIdx = dragId ? order.indexOf(dragId) : -1;
+  const visualOrder = dragId ? reorder(order, fromIdx, overIndex) : order;
+  const rows = answered && submitted ? submitted : order;
 
   return (
     <div className="animate-pop flex flex-col gap-3">
@@ -512,25 +566,49 @@ function OrderBoard({
       </div>
 
       <div className="flex flex-col gap-2">
-        {display.map((id, pos) => {
+        {rows.map((id, pos) => {
           const item = byId[id];
-          const rightHere = round.correctIds[pos] === id;
+          const dragging = id === dragId;
+          // Live position number + transform while dragging.
+          const number = answered ? pos + 1 : visualOrder.indexOf(id) + 1;
+          let translate = 0;
+          if (!answered && dragId) {
+            if (dragging) translate = dy;
+            else if (overIndex > fromIdx && pos > fromIdx && pos <= overIndex) translate = -rowH;
+            else if (overIndex < fromIdx && pos >= overIndex && pos < fromIdx) translate = rowH;
+          }
           let cls = "border-[var(--field-stroke)] bg-[var(--field)]";
-          if (answered) cls = rightHere ? "border-transparent bg-[var(--good)]/12 ring-1 ring-[var(--good)]/40" : "border-transparent bg-[var(--bad)]/10 ring-1 ring-[var(--bad)]/40";
+          if (answered) cls = round.correctIds[pos] === id ? "border-transparent bg-[var(--good)]/12 ring-1 ring-[var(--good)]/40" : "border-transparent bg-[var(--bad)]/10 ring-1 ring-[var(--bad)]/40";
+          else if (dragging) cls = "border-transparent bg-[var(--glass-bg-strong)] shadow-lg ring-1 ring-[var(--nordic)]/40";
           return (
-            <div key={id} className={`flex min-h-[3.5rem] items-center gap-3 rounded-2xl border px-3 py-2 transition ${cls}`}>
+            <div
+              key={id}
+              ref={(el) => {
+                if (!answered) rowRefs.current[pos] = el;
+              }}
+              onPointerDown={(e) => startDrag(e, pos)}
+              className={`relative flex h-14 items-center gap-2 rounded-2xl border px-2.5 ${cls}`}
+              style={{
+                transform: translate ? `translateY(${translate}px)` : undefined,
+                transition: dragging ? "none" : "transform .18s ease",
+                zIndex: dragging ? 20 : undefined,
+                touchAction: answered ? undefined : "none",
+                cursor: answered ? undefined : dragging ? "grabbing" : "grab",
+              }}
+            >
+              {!answered && <GripVertical size={16} className="shrink-0 text-ink-muted/60" />}
               <span className="grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-black/[0.06] text-xs font-bold tabular-nums text-ink-muted dark:bg-white/10">
-                {pos + 1}
+                {number}
               </span>
               <span className="flex-1 truncate font-medium">{item?.name}</span>
               {answered ? (
-                <span className="shrink-0 text-xs tabular-nums text-ink-muted">{fmtVal(item.value, round.unit)}</span>
+                <span className="shrink-0 pr-1 text-xs tabular-nums text-ink-muted">{fmtVal(item.value, round.unit)}</span>
               ) : (
-                <span className="flex shrink-0 flex-col">
+                <span className="flex shrink-0 flex-col" onPointerDown={(e) => e.stopPropagation()}>
                   <button onClick={() => move(pos, -1)} disabled={pos === 0} className="grid h-5 w-7 place-items-center rounded text-ink-muted transition hover:text-ink disabled:opacity-25 focus-ring" aria-label="Flytt opp">
                     <ChevronUp size={16} />
                   </button>
-                  <button onClick={() => move(pos, 1)} disabled={pos === display.length - 1} className="grid h-5 w-7 place-items-center rounded text-ink-muted transition hover:text-ink disabled:opacity-25 focus-ring" aria-label="Flytt ned">
+                  <button onClick={() => move(pos, 1)} disabled={pos === rows.length - 1} className="grid h-5 w-7 place-items-center rounded text-ink-muted transition hover:text-ink disabled:opacity-25 focus-ring" aria-label="Flytt ned">
                     <ChevronDown size={16} />
                   </button>
                 </span>

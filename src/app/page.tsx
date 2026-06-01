@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Quiz from "@/components/Quiz";
 import Lists from "@/components/Lists";
+import Explore from "@/components/Explore";
 import CategoryPicker from "@/components/CategoryPicker";
 import ModePicker, { Mode } from "@/components/ModePicker";
 import EloPanel from "@/components/EloPanel";
@@ -19,7 +20,7 @@ const THEME_KEY = "norgequiz.theme";
 const QUALITY_KEY = "norgequiz.quality.v1";
 const MODE_KEY = "norgequiz.mode.v1";
 const VALID = new Set(CATEGORIES.map((c) => c.key));
-const MODES = new Set<Mode>(["velg", "sorter", "skriv", "lister"]);
+const MODES = new Set<Mode>(["velg", "sorter", "skriv", "lister", "utforsk"]);
 
 export default function Home() {
   const [elo, setElo] = useState<EloState>(() => ({
@@ -162,6 +163,14 @@ export default function Home() {
           onOpenElo={() => setEloOpen(true)}
           onOpenSettings={() => setSettingsOpen(true)}
         />
+      ) : mode === "utforsk" ? (
+        <Explore
+          mode={mode}
+          onOpenMode={() => setModeOpen(true)}
+          elo={elo}
+          onOpenElo={() => setEloOpen(true)}
+          onOpenSettings={() => setSettingsOpen(true)}
+        />
       ) : (
         <Quiz
           mode={mode}
@@ -179,7 +188,7 @@ export default function Home() {
       )}
 
       <footer className="px-5 pb-8 text-center text-[11px] text-ink-muted">
-        Data fra Wikidata & SSB · 4 spillemoduser · bygd for å bli best i norsk geografi
+        Data fra Wikidata & SSB · 5 moduser · bygd for å bli best i norsk geografi
       </footer>
 
       {modeOpen && <ModePicker mode={mode} onChange={changeMode} onClose={() => setModeOpen(false)} />}
