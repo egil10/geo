@@ -18,6 +18,10 @@ import {
   tunneler,
   klubber,
   aviser,
+  byer,
+  stasjoner,
+  lufthavner,
+  baner,
   countyNames,
   fmtMetric,
   fmtInt,
@@ -51,6 +55,10 @@ export type Category =
   | "tunneler"
   | "fotball"
   | "aviser"
+  | "byer"
+  | "stasjoner"
+  | "lufthavner"
+  | "baner"
   | "vapen"
   | "befolkning"
   | "nummer";
@@ -76,6 +84,10 @@ export const CATEGORIES: CategoryMeta[] = [
   { key: "tunneler", label: "Tunneler", icon: "Route", hint: "Lengste tunneler" },
   { key: "fotball", label: "Fotballklubber", icon: "Trophy", hint: "Klubber, byer & divisjoner" },
   { key: "aviser", label: "Aviser", icon: "Newspaper", hint: "Norske aviser & byene" },
+  { key: "byer", label: "Byer", icon: "Building", hint: "Norske byer & innbyggere" },
+  { key: "stasjoner", label: "Jernbanestasjoner", icon: "TrainFront", hint: "Stasjoner & baner" },
+  { key: "lufthavner", label: "Lufthavner", icon: "Plane", hint: "Flyplasser & IATA-koder" },
+  { key: "baner", label: "Jernbanelinjer", icon: "TrainTrack", hint: "Banene & lengder" },
   { key: "befolkning", label: "Befolkning", icon: "Users", hint: "Innbyggertall" },
   { key: "nummer", label: "Kommunenr.", icon: "Hash", hint: "Kommunenummer" },
 ];
@@ -152,6 +164,10 @@ const KMETA: Record<Kind, { art: string; noun: string; sup?: string }> = {
   tunnel: { art: "Hvilken", noun: "tunnel", sup: "lengst" },
   klubb: { art: "Hvilken", noun: "klubb" },
   avis: { art: "Hvilken", noun: "avis" },
+  by: { art: "Hvilken", noun: "by", sup: "størst" },
+  stasjon: { art: "Hvilken", noun: "jernbanestasjon" },
+  lufthavn: { art: "Hvilken", noun: "lufthavn" },
+  bane: { art: "Hvilken", noun: "jernbanelinje", sup: "lengst" },
 };
 
 // Plausible distractors of the same kind, biased to similar prominence.
@@ -675,6 +691,77 @@ const GENERATORS: Generator[] = [
       };
     },
   },
+  // 18. Which county is this city in?
+  {
+    key: "by-fylke",
+    cats: ["byer"],
+    pool: byer.filter((b) => b.county),
+    build: (b) => {
+      if (!b.county) return null;
+      const distract = sampleN(countyNames.filter((c) => c !== b.county), 3);
+      const { choices, answerIndex } = assemble(b.county, distract);
+      return {
+        uid: uid("by-fylke"),
+        genKey: "by-fylke",
+        cat: "byer",
+        subject: b,
+        prompt: { kind: "text", text: `Hvilket fylke ligger byen ${b.name} i?` },
+        answerIndex,
+        choices,
+        answerKey: b.county,
+        explanation: `${b.name} ligger i ${b.county}${b.population ? ` og har ${fmtInt(b.population)} innbyggere` : ""}.`,
+        difficulty: difficultyToRating(b.prominence),
+      };
+    },
+  },
+  // 19. Which railway line is this station on?
+  {
+    key: "stasjon-bane",
+    cats: ["stasjoner"],
+    pool: stasjoner.filter((s) => s.tag),
+    build: (s) => {
+      if (!s.tag) return null;
+      const lines = [...new Set(stasjoner.map((x) => x.tag).filter(Boolean))] as string[];
+      const distract = sampleN(lines.filter((l) => l !== s.tag), 3);
+      if (distract.length < 3) return null;
+      const { choices, answerIndex } = assemble(s.tag, distract);
+      return {
+        uid: uid("stasjon-bane"),
+        genKey: "stasjon-bane",
+        cat: "stasjoner",
+        subject: s,
+        prompt: { kind: "text", text: `Hvilken jernbanelinje ligger ${s.name} stasjon på?` },
+        answerIndex,
+        choices,
+        answerKey: s.tag,
+        explanation: `${s.name} stasjon ligger på ${s.tag}${s.county ? ` i ${s.county}` : ""}.`,
+        difficulty: difficultyToRating(s.prominence) + 30,
+      };
+    },
+  },
+  // 20. Which county is this airport in?
+  {
+    key: "lufthavn-fylke",
+    cats: ["lufthavner"],
+    pool: lufthavner.filter((a) => a.county),
+    build: (a) => {
+      if (!a.county) return null;
+      const distract = sampleN(countyNames.filter((c) => c !== a.county), 3);
+      const { choices, answerIndex } = assemble(a.county, distract);
+      return {
+        uid: uid("lufthavn-fylke"),
+        genKey: "lufthavn-fylke",
+        cat: "lufthavner",
+        subject: a,
+        prompt: { kind: "text", text: `Hvilket fylke ligger ${a.name} i?` },
+        answerIndex,
+        choices,
+        answerKey: a.county,
+        explanation: `${a.name}${a.tag ? ` (${a.tag})` : ""} ligger i ${a.county}.`,
+        difficulty: difficultyToRating(a.prominence),
+      };
+    },
+  },
 ];
 
 // Photo-identification + ranking generators for each natural-feature kind.
@@ -685,6 +772,10 @@ const FEATURE_KINDS: { kind: Kind; list: Place[]; cat: Category }[] = [
   { kind: "fjord", list: fjorder, cat: "fjorder" },
   { kind: "oy", list: oyer, cat: "oyer" },
   { kind: "foss", list: fossefall, cat: "fossefall" },
+  { kind: "by", list: byer, cat: "byer" },
+  { kind: "stasjon", list: stasjoner, cat: "stasjoner" },
+  { kind: "lufthavn", list: lufthavner, cat: "lufthavner" },
+  { kind: "bane", list: baner, cat: "baner" },
   { kind: "isbre", list: isbreer, cat: "isbreer" },
   { kind: "tunnel", list: tunneler, cat: "tunneler" },
 ];
@@ -716,32 +807,34 @@ for (const { kind, list, cat } of FEATURE_KINDS) {
       };
     },
   });
-  // Ranking (highest / longest / largest)
-  GENERATORS.push({
-    key: `${cat}-rank`,
-    cats: [cat],
-    pool: list,
-    build: () => {
-      const four = rankingFour(list);
-      if (!four) return null;
-      const winner = four.reduce((a, b) => (a.metric! >= b.metric! ? a : b));
-      const { choices, answerIndex } = assemble(winner.name, four.filter((x) => x !== winner).map((x) => x.name));
-      const avg = four.reduce((s, p) => s + p.prominence, 0) / four.length;
-      return {
-        uid: uid(`${cat}-rank`),
-        genKey: `${cat}-rank`,
-        cat,
-        subject: winner,
-        prompt: { kind: "text", text: `${meta.art} ${meta.noun} er ${meta.sup}?` },
-        choices,
-        choiceInfo: infoFor(four, metricInfo, choices),
-        answerIndex,
-        answerKey: winner.name,
-        explanation: `${winner.name} er ${meta.sup} med ${fmtMetric(winner)}.`,
-        difficulty: difficultyToRating(avg),
-      };
-    },
-  });
+  // Ranking (highest / longest / largest) — only kinds with a ranking metric.
+  if (meta.sup) {
+    GENERATORS.push({
+      key: `${cat}-rank`,
+      cats: [cat],
+      pool: list,
+      build: () => {
+        const four = rankingFour(list);
+        if (!four) return null;
+        const winner = four.reduce((a, b) => (a.metric! >= b.metric! ? a : b));
+        const { choices, answerIndex } = assemble(winner.name, four.filter((x) => x !== winner).map((x) => x.name));
+        const avg = four.reduce((s, p) => s + p.prominence, 0) / four.length;
+        return {
+          uid: uid(`${cat}-rank`),
+          genKey: `${cat}-rank`,
+          cat,
+          subject: winner,
+          prompt: { kind: "text", text: `${meta.art} ${meta.noun} er ${meta.sup}?` },
+          choices,
+          choiceInfo: infoFor(four, metricInfo, choices),
+          answerIndex,
+          answerKey: winner.name,
+          explanation: `${winner.name} er ${meta.sup} med ${fmtMetric(winner)}.`,
+          difficulty: difficultyToRating(avg),
+        };
+      },
+    });
+  }
   // Map pin → name (only kinds that carry coordinates).
   const pinPool = list.filter((p) => p.lat != null && p.lon != null);
   if (pinPool.length >= 6) {
@@ -808,6 +901,15 @@ const WRITABLE = new Set([
   "fjorder-kart",
   "oyer-kart",
   "fossefall-kart",
+  "byer-foto",
+  "stasjoner-foto",
+  "lufthavner-foto",
+  "baner-foto",
+  "byer-kart",
+  "stasjoner-kart",
+  "lufthavner-kart",
+  "by-fylke",
+  "lufthavn-fylke",
 ]);
 
 // Which question types actually have questions for the chosen categories
@@ -925,6 +1027,8 @@ const ORDER_SOURCES: { cat: Category; list: Place[]; prompt: string; unit: strin
   { cat: "isbreer", list: isbreer, prompt: "Sorter isbreene fra størst til minst", unit: "km²" },
   { cat: "tunneler", list: tunneler, prompt: "Sorter tunnelene fra lengst til kortest", unit: "km" },
   { cat: "befolkning", list: kommuner, prompt: "Sorter kommunene fra flest til færrest innbyggere", unit: "innb." },
+  { cat: "byer", list: byer, prompt: "Sorter byene fra flest til færrest innbyggere", unit: "innb." },
+  { cat: "baner", list: baner, prompt: "Sorter banene fra lengst til kortest", unit: "km" },
 ];
 
 export function nextOrderRound(selected: Set<Category>): OrderRound {

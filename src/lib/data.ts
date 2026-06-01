@@ -17,8 +17,14 @@ import isbreerJson from "@/data/isbreer.json";
 import tunnelerJson from "@/data/tunneler.json";
 import fotballJson from "@/data/fotballklubber.json";
 import aviserJson from "@/data/aviser.json";
+import byerJson from "@/data/byer.json";
+import stasjonerJson from "@/data/jernbanestasjoner.json";
+import lufthavnerJson from "@/data/lufthavner.json";
+import banerJson from "@/data/jernbanelinjer.json";
 
-export type Kind = "kommune" | "fylke" | "fjell" | "elv" | "innsjo" | "fjord" | "oy" | "foss" | "isbre" | "tunnel" | "klubb" | "avis";
+export type Kind =
+  | "kommune" | "fylke" | "fjell" | "elv" | "innsjo" | "fjord" | "oy" | "foss" | "isbre" | "tunnel" | "klubb" | "avis"
+  | "by" | "stasjon" | "lufthavn" | "bane";
 
 export interface Place {
   id: string;
@@ -235,6 +241,48 @@ export const aviser: Place[] = (aviserJson as { name: string; sted: string }[]).
   };
 });
 
+// ---- Cities, train stations, airports, railway lines (Wikidata) -----------
+interface RawByer { id: string; name: string; population?: number; lat?: number; lon?: number; county?: string; photo?: string }
+interface RawStasjon { id: string; name: string; lat?: number; lon?: number; county?: string; line?: string; photo?: string }
+interface RawLuft { id: string; name: string; lat?: number; lon?: number; county?: string; iata?: string; photo?: string }
+interface RawBane { id: string; name: string; length?: number; photo?: string }
+
+export const byer: Place[] = (byerJson as RawByer[])
+  .filter((b) => b.name)
+  .map((b) => ({
+    id: b.id, name: b.name, kind: "by" as const,
+    county: b.county, photo: b.photo, lat: b.lat, lon: b.lon,
+    population: b.population, metric: b.population, metricUnit: "innb.",
+    prominence: 0,
+  }));
+assignProminence(byer);
+
+const stripStation = (n: string) => n.replace(/\s+(stasjon|stoppested|holdeplass)$/i, "").trim();
+export const stasjoner: Place[] = (stasjonerJson as RawStasjon[])
+  .filter((s) => s.name && s.lat != null)
+  .map((s) => ({
+    id: s.id, name: stripStation(s.name), kind: "stasjon" as const,
+    county: s.county, photo: s.photo, lat: s.lat, lon: s.lon,
+    tag: s.line, prominence: 0.4,
+  }));
+
+export const lufthavner: Place[] = (lufthavnerJson as RawLuft[])
+  .filter((a) => a.name && a.lat != null)
+  .map((a) => ({
+    id: a.id, name: a.name, kind: "lufthavn" as const,
+    county: a.county, photo: a.photo, lat: a.lat, lon: a.lon,
+    tag: a.iata, prominence: a.iata ? 0.7 : 0.45,
+  }));
+
+export const baner: Place[] = (banerJson as RawBane[])
+  .filter((l) => l.name && l.length != null)
+  .map((l) => ({
+    id: l.id, name: l.name, kind: "bane" as const,
+    photo: l.photo, length: l.length, metric: l.length, metricUnit: "km",
+    prominence: 0,
+  }));
+assignProminence(baner);
+
 export const byKind: Record<Kind, Place[]> = {
   kommune: kommuner,
   fylke: fylker,
@@ -248,6 +296,10 @@ export const byKind: Record<Kind, Place[]> = {
   tunnel: tunneler,
   klubb: klubber,
   avis: aviser,
+  by: byer,
+  stasjon: stasjoner,
+  lufthavn: lufthavner,
+  bane: baner,
 };
 
 export const countyNames: string[] = fylker.map((f) => f.name);
@@ -278,4 +330,8 @@ export const KIND_LABEL: Record<Kind, { one: string; many: string }> = {
   tunnel: { one: "tunnel", many: "tunneler" },
   klubb: { one: "klubb", many: "klubber" },
   avis: { one: "avis", many: "aviser" },
+  by: { one: "by", many: "byer" },
+  stasjon: { one: "stasjon", many: "stasjoner" },
+  lufthavn: { one: "lufthavn", many: "lufthavner" },
+  bane: { one: "bane", many: "baner" },
 };

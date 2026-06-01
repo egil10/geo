@@ -5,7 +5,7 @@ import { Search, LayoutGrid, Table2, ArrowUp, ArrowDown, MapPin } from "lucide-r
 import TopBar from "./TopBar";
 import { Mode } from "./ModePicker";
 import { EloState } from "@/lib/elo";
-import { kommuner, fylker, fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, klubber, aviser, Place, fmtInt, fmtMetric } from "@/lib/data";
+import { kommuner, fylker, fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, klubber, aviser, byer, stasjoner, lufthavner, baner, Place, fmtInt, fmtMetric } from "@/lib/data";
 import { imgAt } from "@/lib/images";
 import { normalize } from "@/lib/match";
 
@@ -32,6 +32,10 @@ const GROUPS: Group[] = [
   { key: "tunneler", label: "Tunneler", list: tunneler, img: "photo", sort: "length", cols: [{ k: "name", h: "Tunnel" }, { k: "county", h: "Fylke" }, { k: "length", h: "Lengde (km)", num: true }] },
   { key: "klubber", label: "Fotball", list: klubber, img: "photo", sort: "name", cols: [{ k: "name", h: "Klubb" }, { k: "county", h: "Sted" }, { k: "tag", h: "Divisjon" }] },
   { key: "aviser", label: "Aviser", list: aviser, img: "photo", sort: "name", cols: [{ k: "name", h: "Avis" }, { k: "county", h: "Sted" }, { k: "tag", h: "Type" }] },
+  { key: "byer", label: "Byer", list: byer, img: "photo", sort: "population", cols: [{ k: "name", h: "By" }, { k: "county", h: "Fylke" }, { k: "population", h: "Innb.", num: true }] },
+  { key: "stasjoner", label: "Stasjoner", list: stasjoner, img: "photo", sort: "name", cols: [{ k: "name", h: "Stasjon" }, { k: "tag", h: "Bane" }, { k: "county", h: "Fylke" }] },
+  { key: "lufthavner", label: "Lufthavner", list: lufthavner, img: "photo", sort: "name", cols: [{ k: "name", h: "Lufthavn" }, { k: "tag", h: "IATA" }, { k: "county", h: "Fylke" }] },
+  { key: "baner", label: "Baner", list: baner, img: "photo", sort: "length", cols: [{ k: "name", h: "Bane" }, { k: "length", h: "Lengde (km)", num: true }] },
 ];
 
 const cell = (p: Place, k: keyof Place): string => {
