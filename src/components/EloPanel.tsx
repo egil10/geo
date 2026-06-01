@@ -4,35 +4,67 @@ import Modal from "./Modal";
 import { EloState, tierFor, accuracy, TIERS } from "@/lib/elo";
 import { CATEGORIES } from "@/lib/questions";
 
-function HistoryChart({ history }: { history: number[] }) {
+// A "nice" axis step (1 / 2 / 5 × 10ⁿ) so ticks land on round numbers.
+function niceStep(range: number, target: number): number {
+  const raw = Math.max(1, range) / target;
+  const mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const n = raw / mag;
+  const s = n <= 1.5 ? 1 : n <= 3 ? 2 : n <= 7 ? 5 : 10;
+  return s * mag;
+}
+
+function HistoryChart({ history, games }: { history: number[]; games: number }) {
   const data = history.length > 1 ? history : [history[0] ?? 800, history[0] ?? 800];
+  const n = data.length;
   const w = 520;
-  const h = 150;
-  const pad = { t: 12, r: 10, b: 18, l: 34 };
+  const h = 162;
+  const pad = { t: 12, r: 10, b: 24, l: 40 };
   const min = Math.min(...data);
   const max = Math.max(...data);
-  const span = Math.max(40, max - min);
-  const lo = min - span * 0.12;
-  const hi = max + span * 0.12;
-  const x = (i: number) => pad.l + (i / (data.length - 1)) * (w - pad.l - pad.r);
+
+  // Y axis: snap the visible range to round gridlines.
+  const yStep = niceStep(Math.max(30, max - min), 4);
+  const lo = Math.floor(min / yStep) * yStep;
+  const hi = Math.max(lo + yStep, Math.ceil(max / yStep) * yStep);
+  const yTicks: number[] = [];
+  for (let v = lo; v <= hi + 0.5; v += yStep) yTicks.push(v);
+
+  // X axis: absolute question numbers at round intervals.
+  const firstGame = Math.max(0, games - (n - 1));
+  const lastGame = firstGame + (n - 1);
+  const xStep = niceStep(Math.max(1, lastGame - firstGame), 5);
+  const xTicks: number[] = [];
+  for (let g = Math.ceil(firstGame / xStep) * xStep; g <= lastGame; g += xStep) xTicks.push(g);
+
+  const x = (i: number) => pad.l + (n <= 1 ? 0 : (i / (n - 1)) * (w - pad.l - pad.r));
   const y = (v: number) => pad.t + (1 - (v - lo) / (hi - lo)) * (h - pad.t - pad.b);
   const pts = data.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ");
-  const net = data[data.length - 1] - data[0];
+  const net = data[n - 1] - data[0];
   const stroke = net >= 0 ? "var(--good)" : "var(--bad)";
-  const gridVals = [lo, (lo + hi) / 2, hi].map((v) => Math.round(v));
 
   return (
     <svg viewBox={`0 0 ${w} ${h}`} className="w-full" role="img" aria-label="Elo-historikk">
-      {gridVals.map((v, i) => (
-        <g key={i}>
+      {yTicks.map((v) => (
+        <g key={"y" + v}>
           <line x1={pad.l} x2={w - pad.r} y1={y(v)} y2={y(v)} stroke="var(--hairline)" strokeWidth="1" />
-          <text x={4} y={y(v) + 3} fontSize="9" fill="var(--ink-muted)" className="tabular-nums">
+          <text x={pad.l - 5} y={y(v) + 3} fontSize="9" textAnchor="end" fill="var(--ink-muted)" className="tabular-nums">
             {v}
           </text>
         </g>
       ))}
+      {xTicks.map((g) => {
+        const px = x(g - firstGame);
+        return (
+          <g key={"x" + g}>
+            <line x1={px} x2={px} y1={h - pad.b} y2={h - pad.b + 3} stroke="var(--hairline)" strokeWidth="1" />
+            <text x={px} y={h - pad.b + 14} fontSize="9" textAnchor="middle" fill="var(--ink-muted)" className="tabular-nums">
+              {g}
+            </text>
+          </g>
+        );
+      })}
       <polyline points={pts} fill="none" stroke={stroke} strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
-      <circle cx={x(data.length - 1)} cy={y(data[data.length - 1])} r="3" fill={stroke} />
+      <circle cx={x(n - 1)} cy={y(data[n - 1])} r="3" fill={stroke} />
     </svg>
   );
 }
@@ -85,7 +117,7 @@ export default function EloPanel({ elo, onClose }: { elo: EloState; onClose: () 
         <div className="mt-4">
           <div className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-ink-muted">Utvikling</div>
           <div className="glass rounded-2xl p-2">
-            <HistoryChart history={elo.history} />
+            <HistoryChart history={elo.history} games={elo.games} />
           </div>
         </div>
       )}
