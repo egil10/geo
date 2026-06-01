@@ -5,7 +5,7 @@ import { Search, LayoutGrid, Table2, ArrowUp, ArrowDown, MapPin } from "lucide-r
 import TopBar from "./TopBar";
 import { Mode } from "./ModePicker";
 import { EloState } from "@/lib/elo";
-import { kommuner, fylker, fjell, elver, innsjoer, fjorder, oyer, fossefall, Place, fmtInt, fmtMetric } from "@/lib/data";
+import { kommuner, fylker, fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, Place, fmtInt, fmtMetric } from "@/lib/data";
 import { imgAt } from "@/lib/images";
 import { normalize } from "@/lib/match";
 
@@ -28,6 +28,8 @@ const GROUPS: Group[] = [
   { key: "fjorder", label: "Fjorder", list: fjorder, img: "photo", sort: "length", cols: [{ k: "name", h: "Fjord" }, { k: "county", h: "Fylke" }, { k: "length", h: "Lengde (km)", num: true }] },
   { key: "oyer", label: "Øyer", list: oyer, img: "photo", sort: "area", cols: [{ k: "name", h: "Øy" }, { k: "county", h: "Fylke" }, { k: "area", h: "Areal (km²)", num: true }] },
   { key: "fossefall", label: "Fossefall", list: fossefall, img: "photo", sort: "height", cols: [{ k: "name", h: "Foss" }, { k: "county", h: "Fylke" }, { k: "height", h: "Høyde (m)", num: true }] },
+  { key: "isbreer", label: "Isbreer", list: isbreer, img: "photo", sort: "area", cols: [{ k: "name", h: "Isbre" }, { k: "county", h: "Fylke" }, { k: "area", h: "Areal (km²)", num: true }] },
+  { key: "tunneler", label: "Tunneler", list: tunneler, img: "photo", sort: "length", cols: [{ k: "name", h: "Tunnel" }, { k: "county", h: "Fylke" }, { k: "length", h: "Lengde (km)", num: true }] },
 ];
 
 const cell = (p: Place, k: keyof Place): string => {

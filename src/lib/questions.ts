@@ -14,6 +14,8 @@ import {
   fjorder,
   oyer,
   fossefall,
+  isbreer,
+  tunneler,
   countyNames,
   fmtMetric,
   fmtInt,
@@ -29,6 +31,8 @@ export type Category =
   | "fjorder"
   | "oyer"
   | "fossefall"
+  | "isbreer"
+  | "tunneler"
   | "vapen"
   | "befolkning"
   | "nummer";
@@ -50,6 +54,8 @@ export const CATEGORIES: CategoryMeta[] = [
   { key: "fjorder", label: "Fjorder", icon: "Ship", hint: "Kjente fjorder" },
   { key: "oyer", label: "Øyer", icon: "Sailboat", hint: "Største øyer" },
   { key: "fossefall", label: "Fossefall", icon: "ArrowDownWideNarrow", hint: "Høyeste fosser" },
+  { key: "isbreer", label: "Isbreer", icon: "Snowflake", hint: "Største isbreer" },
+  { key: "tunneler", label: "Tunneler", icon: "Route", hint: "Lengste tunneler" },
   { key: "befolkning", label: "Befolkning", icon: "Users", hint: "Innbyggertall" },
   { key: "nummer", label: "Kommunenr.", icon: "Hash", hint: "Kommunenummer" },
 ];
@@ -94,6 +100,8 @@ const KMETA: Record<Kind, { art: string; noun: string; sup?: string }> = {
   fjord: { art: "Hvilken", noun: "fjord", sup: "lengst" },
   oy: { art: "Hvilken", noun: "øy", sup: "størst" },
   foss: { art: "Hvilken", noun: "foss", sup: "høyest" },
+  isbre: { art: "Hvilken", noun: "isbre", sup: "størst" },
+  tunnel: { art: "Hvilken", noun: "tunnel", sup: "lengst" },
 };
 
 // Plausible distractors of the same kind, biased to similar prominence.
@@ -418,6 +426,8 @@ const FEATURE_KINDS: { kind: Kind; list: Place[]; cat: Category }[] = [
   { kind: "fjord", list: fjorder, cat: "fjorder" },
   { kind: "oy", list: oyer, cat: "oyer" },
   { kind: "foss", list: fossefall, cat: "fossefall" },
+  { kind: "isbre", list: isbreer, cat: "isbreer" },
+  { kind: "tunnel", list: tunneler, cat: "tunneler" },
 ];
 
 for (const { kind, list, cat } of FEATURE_KINDS) {
@@ -496,6 +506,8 @@ const WRITABLE = new Set([
   "fjorder-foto",
   "oyer-foto",
   "fossefall-foto",
+  "isbreer-foto",
+  "tunneler-foto",
 ]);
 
 export function activeGenerators(selected: Set<Category>, writableOnly = false): Generator[] {
@@ -573,6 +585,8 @@ const ORDER_SOURCES: { cat: Category; list: Place[]; prompt: string; unit: strin
   { cat: "fjorder", list: fjorder, prompt: "Sorter fjordene fra lengst til kortest", unit: "km" },
   { cat: "oyer", list: oyer, prompt: "Sorter øyene fra størst til minst", unit: "km²" },
   { cat: "fossefall", list: fossefall, prompt: "Sorter fossene fra høyest til lavest", unit: "m" },
+  { cat: "isbreer", list: isbreer, prompt: "Sorter isbreene fra størst til minst", unit: "km²" },
+  { cat: "tunneler", list: tunneler, prompt: "Sorter tunnelene fra lengst til kortest", unit: "km" },
   { cat: "befolkning", list: kommuner, prompt: "Sorter kommunene fra flest til færrest innbyggere", unit: "innb." },
 ];
 

@@ -13,8 +13,10 @@ import innsjoerJson from "@/data/innsjoer.json";
 import fjorderJson from "@/data/fjorder.json";
 import oyerJson from "@/data/oyer.json";
 import fossefallJson from "@/data/fossefall.json";
+import isbreerJson from "@/data/isbreer.json";
+import tunnelerJson from "@/data/tunneler.json";
 
-export type Kind = "kommune" | "fylke" | "fjell" | "elv" | "innsjo" | "fjord" | "oy" | "foss";
+export type Kind = "kommune" | "fylke" | "fjell" | "elv" | "innsjo" | "fjord" | "oy" | "foss" | "isbre" | "tunnel";
 
 export interface Place {
   id: string;
@@ -139,8 +141,10 @@ for (const k of kommuner) if ((nameCounts.get(k.name) ?? 0) > 1) k.name = `${k.n
 assignProminence(kommuner);
 
 // ---- Counties: SSB number joined to Wikidata ------------------------------
+// cleanName strips " kommune" so the Oslo county (labelled "Oslo kommune" in
+// Wikidata, since Oslo is both city and county) joins to SSB's "Oslo".
 const fylkeWdByName = new Map<string, RawFylke>();
-for (const f of fylkerWd as unknown as RawFylke[]) fylkeWdByName.set(norm(f.name), f);
+for (const f of fylkerWd as unknown as RawFylke[]) fylkeWdByName.set(norm(cleanName(f.name)), f);
 
 export const fylker: Place[] = (ssbFylkerJson as { number: string; name: string }[]).map((s) => {
   const wd = fylkeWdByName.get(norm(s.name));
@@ -191,6 +195,8 @@ export const innsjoer = buildFeatures(innsjoerJson, "innsjo", "area", "km²");
 export const fjorder = buildFeatures(fjorderJson, "fjord", "length", "km");
 export const oyer = buildFeatures(oyerJson, "oy", "area", "km²");
 export const fossefall = buildFeatures(fossefallJson, "foss", "height", "m");
+export const isbreer = buildFeatures(isbreerJson, "isbre", "area", "km²");
+export const tunneler = buildFeatures(tunnelerJson, "tunnel", "length", "km");
 
 export const byKind: Record<Kind, Place[]> = {
   kommune: kommuner,
@@ -201,6 +207,8 @@ export const byKind: Record<Kind, Place[]> = {
   fjord: fjorder,
   oy: oyer,
   foss: fossefall,
+  isbre: isbreer,
+  tunnel: tunneler,
 };
 
 export const countyNames: string[] = fylker.map((f) => f.name);
@@ -227,4 +235,6 @@ export const KIND_LABEL: Record<Kind, { one: string; many: string }> = {
   fjord: { one: "fjord", many: "fjorder" },
   oy: { one: "øy", many: "øyer" },
   foss: { one: "foss", many: "fossefall" },
+  isbre: { one: "isbre", many: "isbreer" },
+  tunnel: { one: "tunnel", many: "tunneler" },
 };

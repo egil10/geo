@@ -10,6 +10,8 @@ import {
   Ship,
   Sailboat,
   ArrowDownWideNarrow,
+  Snowflake,
+  Route,
   Users,
   Hash,
   Check,
@@ -28,6 +30,8 @@ const ICONS: Record<string, React.ComponentType<{ size?: number; strokeWidth?: n
   Ship,
   Sailboat,
   ArrowDownWideNarrow,
+  Snowflake,
+  Route,
   Users,
   Hash,
 };

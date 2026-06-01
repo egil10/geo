@@ -1,0 +1,21 @@
+[
+  {
+    "id": "Q136500204",
+    "name": "Nerlandsøybrua",
+    "length": 0.574,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q4585563",
+    "name": "Tromøybrua",
+    "length": 0.4,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Trom%C3%B8ybro1.jpg?width=1024",
+    "county": "Agder"
+  },
+  {
+    "id": "Q120671356",
+    "name": "Stemmenbrua",
+    "length": 0.31827999999999995,
+    "county": "Telemark"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "x-austfonna",
+    "name": "Austfonna",
+    "area": 7800,
+    "county": "Svalbard",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordaustlandet.jpg?width=1024"
+  },
+  {
+    "id": "x-vestfonna",
+    "name": "Vestfonna",
+    "area": 2510,
+    "county": "Svalbard",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordaustlandet.jpg?width=1024"
+  },
+  {
+    "id": "x-jostedalsbreen",
+    "name": "Jostedalsbreen",
+    "area": 487,
+    "county": "Vestland",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/P1000290Jostedalsbreen.JPG?width=1024"
+  },
+  {
+    "id": "x-vestre-svartisen",
+    "name": "Vestre Svartisen",
+    "area": 221,
+    "county": "Nordland",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Glacier%20svartisen%20engabreen.JPG?width=1024"
+  },
+  {
+    "id": "x-s-ndre-folgefonna",
+    "name": "Søndre Folgefonna",
+    "area": 168,
+    "county": "Vestland",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Folgefonna%20south.JPG?width=1024"
+  },
+  {
+    "id": "x--stre-svartisen",
+    "name": "Østre Svartisen",
+    "area": 148,
+    "county": "Nordland"
+  },
+  {
+    "id": "x-bl-mannsisen",
+    "name": "Blåmannsisen",
+    "area": 87,
+    "county": "Nordland",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Padjelanta%20National%20Park%20hybrid%20map-fr.jpg?width=1024"
+  },
+  {
+    "id": "x-hardangerj-kulen",
+    "name": "Hardangerjøkulen",
+    "area": 73,
+    "county": "Vestland",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hardangerj%C3%B8kulenFromH%C3%A5rteigen.jpg?width=1024"
+  },
+  {
+    "id": "x-myklebustbreen",
+    "name": "Myklebustbreen",
+    "area": 57,
+    "county": "Vestland",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sn%C3%B8nipa.jpg?width=1024"
+  },
+  {
+    "id": "x-okstindbreen",
+    "name": "Okstindbreen",
+    "area": 46,
+    "county": "Nordland",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Image7-19918810.jpg?width=1024"
+  },
+  {
+    "id": "x--ksfjordj-kelen",
+    "name": "Øksfjordjøkelen",
+    "area": 41,
+    "county": "Troms",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Isfjordj%C3%B8kelen%20in%20Kv%C3%A6nangen%2C%20Troms%2C%20Norway%2C%202014%20August.jpg?width=1024"
+  },
+  {
+    "id": "x-harbardsbreen",
+    "name": "Harbardsbreen",
+    "area": 36,
+    "county": "Innlandet"
+  },
+  {
+    "id": "x-salajekna",
+    "name": "Salajekna",
+    "area": 33,
+    "county": "Nordland"
+  },
+  {
+    "id": "x-frostisen",
+    "name": "Frostisen",
+    "area": 25,
+    "county": "Nordland",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Frostisen%20summits%20above%20Skjomen.JPG?width=1024"
+  },
+  {
+    "id": "x-sekkebreen",
+    "name": "Sekkebreen",
+    "area": 24,
+    "county": "Innlandet"
+  },
+  {
+    "id": "x-tindefjellbreen",
+    "name": "Tindefjellbreen",
+    "area": 22,
+    "county": "Vestland",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tindefjellbreen%202017.jpg?width=1024"
+  }
+]

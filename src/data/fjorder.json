@@ -262,5 +262,14 @@
     "lat": 62.5768611,
     "lon": 7.7281777,
     "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q208495",
+    "name": "Sognefjorden",
+    "length": 205,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sognefjord%2C%20Norway.jpg?width=1024",
+    "lat": 61.1,
+    "lon": 6.5,
+    "county": "Vestland"
   }
 ]
