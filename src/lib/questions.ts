@@ -23,6 +23,20 @@ import {
   fmtInt,
 } from "./data";
 import { difficultyToRating } from "./elo";
+import { fylkePathByNumber, kommunePathByNumber, projectPin } from "./geo";
+import { normalize } from "./match";
+
+// Geocode a town name to a lat/lon via the matching municipality (its centre or
+// administrative seat) — used to pin football clubs / newspapers on the map.
+const stedLatLon = new Map<string, { lat: number; lon: number }>();
+for (const k of kommuner) {
+  if (k.lat != null && k.lon != null) {
+    const ll = { lat: k.lat, lon: k.lon };
+    stedLatLon.set(normalize(k.name), ll);
+    if (k.admin) stedLatLon.set(normalize(k.admin), ll);
+  }
+}
+const geocodeSted = (sted?: string) => (sted ? stedLatLon.get(normalize(sted)) : undefined);
 
 export type Category =
   | "fylker"
@@ -68,7 +82,8 @@ export const CATEGORIES: CategoryMeta[] = [
 
 export type Prompt =
   | { kind: "text"; text: string }
-  | { kind: "image"; text: string; src: string; alt: string; variant: "coa" | "photo" };
+  | { kind: "image"; text: string; src: string; alt: string; variant: "coa" | "photo" }
+  | { kind: "map"; text: string; region?: string; pin?: { x: number; y: number } };
 
 export interface Round {
   uid: string;
@@ -529,6 +544,111 @@ const GENERATORS: Generator[] = [
       };
     },
   },
+  // 14. Map: which fylke is highlighted?
+  {
+    key: "fylke-kart",
+    cats: ["fylker"],
+    pool: fylker.filter((f) => f.number && fylkePathByNumber.has(f.number)),
+    build: (f) => {
+      const region = f.number ? fylkePathByNumber.get(f.number) : undefined;
+      if (!region) return null;
+      const d = sampleN(fylker.filter((x) => x.id !== f.id), 3);
+      const { choices, answerIndex } = assemble(f.name, d.map((x) => x.name));
+      return {
+        uid: uid("fylke-kart"),
+        genKey: "fylke-kart",
+        cat: "fylker",
+        subject: f,
+        prompt: { kind: "map", text: "Hvilket fylke er markert på kartet?", region },
+        choices,
+        choiceInfo: infoFor([f, ...d], popInfo, choices),
+        answerIndex,
+        answerKey: f.name,
+        explanation: `Det markerte fylket er ${f.name}.`,
+        difficulty: difficultyToRating(f.prominence),
+      };
+    },
+  },
+  // 15. Map: which kommune is highlighted?
+  {
+    key: "kommune-kart",
+    cats: ["kommuner"],
+    pool: kommuner.filter((k) => k.number && kommunePathByNumber.has(k.number)),
+    build: (k) => {
+      const region = k.number ? kommunePathByNumber.get(k.number) : undefined;
+      if (!region) return null;
+      const d = nameDistractors(kommuner, k, 3);
+      if (d.length < 3) return null;
+      const { choices, answerIndex } = assemble(k.name, d.map((x) => x.name));
+      return {
+        uid: uid("kommune-kart"),
+        genKey: "kommune-kart",
+        cat: "kommuner",
+        subject: k,
+        prompt: { kind: "map", text: "Hvilken kommune er markert på kartet?", region },
+        choices,
+        choiceInfo: infoFor([k, ...d], countyInfo, choices),
+        answerIndex,
+        answerKey: k.name,
+        explanation: `Den markerte kommunen er ${k.name} (${k.county}).`,
+        difficulty: difficultyToRating(k.prominence) + 70,
+      };
+    },
+  },
+  // 16. Map pin: which club is based here?
+  {
+    key: "klubb-kart",
+    cats: ["fotball"],
+    pool: klubber.filter((c) => geocodeSted(c.county)),
+    build: (c) => {
+      const ll = geocodeSted(c.county);
+      if (!ll) return null;
+      const others = klubber.filter((x) => geocodeSted(x.county) && normalize(x.county ?? "") !== normalize(c.county ?? ""));
+      const d = nameDistractors(others, c, 3);
+      if (d.length < 3) return null;
+      const { choices, answerIndex } = assemble(c.name, d.map((x) => x.name));
+      return {
+        uid: uid("klubb-kart"),
+        genKey: "klubb-kart",
+        cat: "fotball",
+        subject: c,
+        prompt: { kind: "map", text: "Hvilken av disse klubbene holder til der pinnen står?", pin: projectPin(ll.lat, ll.lon) },
+        choices,
+        choiceInfo: infoFor([c, ...d], (p) => p.county, choices),
+        answerIndex,
+        answerKey: c.name,
+        explanation: `${c.name} kommer fra ${c.county} (${c.tag}).`,
+        difficulty: difficultyToRating(c.prominence) + 50,
+      };
+    },
+  },
+  // 17. Map pin: which newspaper is published here?
+  {
+    key: "avis-kart",
+    cats: ["aviser"],
+    pool: aviser.filter((p) => !/riks/i.test(p.county ?? "") && geocodeSted(p.county)),
+    build: (p) => {
+      const ll = geocodeSted(p.county);
+      if (!ll) return null;
+      const others = aviser.filter((x) => !/riks/i.test(x.county ?? "") && geocodeSted(x.county) && normalize(x.county ?? "") !== normalize(p.county ?? ""));
+      const d = nameDistractors(others, p, 3);
+      if (d.length < 3) return null;
+      const { choices, answerIndex } = assemble(p.name, d.map((x) => x.name));
+      return {
+        uid: uid("avis-kart"),
+        genKey: "avis-kart",
+        cat: "aviser",
+        subject: p,
+        prompt: { kind: "map", text: "Hvilken av disse avisene gis ut der pinnen står?", pin: projectPin(ll.lat, ll.lon) },
+        choices,
+        choiceInfo: infoFor([p, ...d], (x) => x.county, choices),
+        answerIndex,
+        answerKey: p.name,
+        explanation: `${p.name} gis ut i ${p.county}.`,
+        difficulty: difficultyToRating(p.prominence) + 50,
+      };
+    },
+  },
 ];
 
 // Photo-identification + ranking generators for each natural-feature kind.
@@ -596,6 +716,34 @@ for (const { kind, list, cat } of FEATURE_KINDS) {
       };
     },
   });
+  // Map pin → name (only kinds that carry coordinates).
+  const pinPool = list.filter((p) => p.lat != null && p.lon != null);
+  if (pinPool.length >= 6) {
+    GENERATORS.push({
+      key: `${cat}-kart`,
+      cats: [cat],
+      pool: pinPool,
+      build: (p) => {
+        if (p.lat == null || p.lon == null) return null;
+        const dd = nameDistractors(list, p, 3);
+        if (dd.length < 3) return null;
+        const { choices, answerIndex } = assemble(p.name, dd.map((x) => x.name));
+        return {
+          uid: uid(`${cat}-kart`),
+          genKey: `${cat}-kart`,
+          cat,
+          subject: p,
+          prompt: { kind: "map", text: `${meta.art} ${meta.noun} er markert på kartet?`, pin: projectPin(p.lat, p.lon) },
+          choices,
+          choiceInfo: infoFor([p, ...dd], metricInfo, choices),
+          answerIndex,
+          answerKey: p.name,
+          explanation: `Det markerte punktet er ${p.name}${p.county ? ` i ${p.county}` : ""} – ${fmtMetric(p)}.`,
+          difficulty: difficultyToRating(p.prominence) + 30,
+        };
+      },
+    });
+  }
 }
 
 // ---- Picker ---------------------------------------------------------------
@@ -625,6 +773,14 @@ const WRITABLE = new Set([
   "tunneler-foto",
   "klubb-sted",
   "avis-sted",
+  "fylke-kart",
+  "kommune-kart",
+  "fjell-kart",
+  "elver-kart",
+  "innsjoer-kart",
+  "fjorder-kart",
+  "oyer-kart",
+  "fossefall-kart",
 ]);
 
 export function activeGenerators(selected: Set<Category>, writableOnly = false): Generator[] {

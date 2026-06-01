@@ -15,6 +15,7 @@ import { EloState } from "@/lib/elo";
 import { imgAt, heroProps, preloadImage, Quality } from "@/lib/images";
 import { matchesAnswer } from "@/lib/match";
 import QImage from "./QImage";
+import NorwayMap from "./NorwayMap";
 import TopBar from "./TopBar";
 import { Mode } from "./ModePicker";
 
@@ -404,6 +405,15 @@ function QuestionCard({
               )}
             </div>
           </>
+        ) : round.prompt.kind === "map" ? (
+          <>
+            <div className="flex h-[3.5rem] shrink-0 items-center justify-center px-5 pb-2 pt-1">
+              <p className="line-clamp-2 text-center text-base font-semibold leading-snug sm:text-lg">{round.prompt.text}</p>
+            </div>
+            <div className="relative flex-1 pb-2">
+              <NorwayMap region={round.prompt.region} pin={round.prompt.pin} />
+            </div>
+          </>
         ) : (
           <div className="grid flex-1 place-items-center px-6 py-6">
             <h1 className="line-clamp-5 text-balance text-center font-display text-2xl font-bold leading-tight tracking-tight sm:text-[30px]">
@@ -670,7 +680,9 @@ function RevealBar({
   onNext: () => void;
 }) {
   const order = isOrder(round);
-  const thumb = !order && (round.prompt.kind === "text" || round.prompt.variant === "coa") ? round.subject.photo : undefined;
+  // Show the subject's photo on reveal unless the prompt already was that photo.
+  const promptIsPhoto = !order && round.prompt.kind === "image" && round.prompt.variant === "photo";
+  const thumb = !order && !promptIsPhoto ? round.subject.photo : undefined;
 
   let detail: React.ReactNode;
   if (order) {
