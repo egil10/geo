@@ -1,0 +1,266 @@
+[
+  {
+    "id": "Q841491",
+    "name": "Hardangerfjorden",
+    "length": 179,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hardangerfjorden%2C%20Ullensvang%20herad%2C%20Hordaland%2C%20Norway%20-%20panoramio.jpg?width=1024",
+    "lat": 60.166666666667,
+    "lon": 6,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q2097444",
+    "name": "Storfjorden",
+    "length": 132,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storfjorden1%20%28js%29.jpg?width=1024",
+    "lat": 77.82405,
+    "lon": 19.680569
+  },
+  {
+    "id": "Q279579",
+    "name": "Trondheimsfjorden",
+    "length": 130,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aasenfiord.JPG?width=1024",
+    "lat": 63.5,
+    "lon": 10.466666666667,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q1782839",
+    "name": "Wijdefjorden",
+    "length": 108,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ny-Friesland%20D%20IMG%205760%20Jutulhogget%20Surtfjellet%20Natth%C3%B6gda.JPG?width=1024",
+    "lat": 79.62916667,
+    "lon": 15.45
+  },
+  {
+    "id": "Q1627557",
+    "name": "Isfjorden",
+    "length": 107,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Isfjorden1%20%28js%29.jpg?width=1024",
+    "lat": 78.16666667,
+    "lon": 14
+  },
+  {
+    "id": "Q1518524",
+    "name": "Nordfjord",
+    "length": 106,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2012-07%20Randabygd.jpg?width=1024",
+    "lat": 61.8963,
+    "lon": 5.7092333333333,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q384858",
+    "name": "Varangerfjorden",
+    "length": 100,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Varang1.jpg?width=1024",
+    "lat": 70.0911,
+    "lon": 29.0087,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q225004",
+    "name": "Boknafjorden",
+    "length": 96,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ytre%20Boknafjorden.JPG?width=1024",
+    "lat": 59.16666667,
+    "lon": 5.53333333,
+    "county": "Rogaland"
+  },
+  {
+    "id": "Q2106298",
+    "name": "Romsdalsfjorden",
+    "length": 88,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Romsdalfjord%20-%20Romsdal%2C%20Norway%20-%20panoramio.jpg?width=1024",
+    "lat": 62.6523,
+    "lon": 7.2615,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q1586804",
+    "name": "Van Mijenfjorden",
+    "length": 83,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nathorst%20Land%20IMG%204027%20Van%20Mijenfjorden.JPG?width=1024",
+    "lat": 77.7909069,
+    "lon": 15.5452224
+  },
+  {
+    "id": "Q1195492",
+    "name": "Lyngen",
+    "length": 82,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Shed%20with%20green%20roof%20at%20Lyngen%20fjord%2C%202012%20June.jpg?width=1024",
+    "lat": 69.867055555556,
+    "lon": 20.437316666667,
+    "county": "Troms"
+  },
+  {
+    "id": "Q779074",
+    "name": "Ullsfjorden",
+    "length": 75,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ullsfjorden.JPG?width=1024",
+    "lat": 69.7047,
+    "lon": 19.7206,
+    "county": "Troms"
+  },
+  {
+    "id": "Q1593019",
+    "name": "Kvænangen",
+    "length": 72,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skorpa%20from%20Gildetun-Kv%C3%A6nangenfjorden.jpg?width=1024",
+    "lat": 69.96972,
+    "lon": 21.67472,
+    "county": "Troms"
+  },
+  {
+    "id": "Q1970780",
+    "name": "Tanafjorden",
+    "length": 65,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tana%20Smalfjorden.JPG?width=1024",
+    "lat": 70.78002,
+    "lon": 28.45049,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q2541605",
+    "name": "Woodfjorden",
+    "length": 64,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Albert%20I%20Land%20Reinsdyrflya%20Worseleyhamna%20IMG%205636%20woodfj.JPG?width=1024",
+    "lat": 79.5833,
+    "lon": 13.5
+  },
+  {
+    "id": "Q3441023",
+    "name": "Folda",
+    "length": 60,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8rfolda.jpg?width=1024",
+    "lat": 67.614,
+    "lon": 14.883,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q4583085",
+    "name": "Andfjorden",
+    "length": 60,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/And%C3%B8ya%20fra%20Nupen.jpg?width=1024",
+    "lat": 69.056,
+    "lon": 16.0519,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q15244108",
+    "name": "Malangen",
+    "length": 60,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Malangen%20%282%29.jpg?width=1024",
+    "lat": 69.4171,
+    "lon": 18.4273,
+    "county": "Troms"
+  },
+  {
+    "id": "Q3734493",
+    "name": "Balsfjorden",
+    "length": 57,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Balsfjorden.jpg?width=1024",
+    "lat": 69.474895,
+    "lon": 18.934937,
+    "county": "Troms"
+  },
+  {
+    "id": "Q4581115",
+    "name": "Vågsfjorden",
+    "length": 46,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Harstad%20at%20night%20seen%20from%20Gangs%C3%A5stoppen.jpg?width=1024",
+    "lat": 68.8662,
+    "lon": 16.903,
+    "county": "Troms"
+  },
+  {
+    "id": "Q549376",
+    "name": "Lysefjorden",
+    "length": 42,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lysefjorden%20fjord.jpg?width=1024",
+    "lat": 59.01,
+    "lon": 6.359,
+    "county": "Rogaland"
+  },
+  {
+    "id": "Q433737",
+    "name": "Altafjorden",
+    "length": 38,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Altafjorden.jpg?width=1024",
+    "lat": 69.99,
+    "lon": 23.3242,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q909657",
+    "name": "Drammensfjorden",
+    "length": 30,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hyggen.png?width=1024",
+    "lat": 59.666666666667,
+    "lon": 10.41,
+    "county": "Akershus"
+  },
+  {
+    "id": "Q776482",
+    "name": "Aurlandsfjorden",
+    "length": 29,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/View%20of%20the%20Aurlandsfjord%2C%20Aurlandsvangen%20and%20Flam%20from%20below%20the%20Prest%20Summit.jpg?width=1024",
+    "lat": 61.011055555556,
+    "lon": 7.0477222222222,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q1808893",
+    "name": "Eidfjorden",
+    "length": 28,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/P1000532Eidfjord.JPG?width=1024",
+    "lat": 60.48833,
+    "lon": 6.97611,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q130202",
+    "name": "Jøsenfjorden",
+    "length": 24,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/J%C3%B8senfjorden.JPG?width=1024",
+    "lat": 59.28741,
+    "lon": 6.29679,
+    "county": "Rogaland"
+  },
+  {
+    "id": "Q11204733",
+    "name": "Salangen",
+    "length": 18,
+    "lat": 68.895,
+    "lon": 17.5794,
+    "county": "Troms"
+  },
+  {
+    "id": "Q1810462",
+    "name": "Tresfjorden",
+    "length": 12,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tresfjorden.JPG?width=1024",
+    "lat": 62.5858,
+    "lon": 7.1257,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q11961834",
+    "name": "Bolstadfjorden",
+    "length": 12,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bolstadfjorden-norge.jpg?width=1024",
+    "lat": 60.633333333333,
+    "lon": 5.8744444444444,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q1808780",
+    "name": "Isfjorden",
+    "length": 6.5,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Isfjorden%20Rauma.jpg?width=1024",
+    "lat": 62.5768611,
+    "lon": 7.7281777,
+    "county": "Møre og Romsdal"
+  }
+]

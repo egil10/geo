@@ -1,0 +1,151 @@
+[
+  {
+    "id": "Q2254",
+    "name": "Telemark",
+    "population": 173318,
+    "area": 16157.785412111314,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Telemark%20v%C3%A5pen%202024.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rjukan%20Gaustatoppen.jpg?width=1024",
+    "admin": "Skien",
+    "iso": "NO-40"
+  },
+  {
+    "id": "Q50614",
+    "name": "Østfold",
+    "population": 297520,
+    "area": 5077.256069849866,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98stfold%20v%C3%A5pen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8denes%202006.jpg?width=1024",
+    "admin": "Sarpsborg",
+    "iso": "NO-31"
+  },
+  {
+    "id": "Q50615",
+    "name": "Akershus",
+    "population": 716020,
+    "area": 5891.73,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Akershus%20v%C3%A5pen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Baerum%20panorama%20IMG%208405.JPG?width=1024",
+    "admin": "Oslo",
+    "iso": "NO-32"
+  },
+  {
+    "id": "Q50618",
+    "name": "Buskerud",
+    "population": 270543,
+    "area": 15053.831165887814,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Buskerud%20fylkesv%C3%A5pen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa%20Fridheim%2C%20Kr%C3%B8deren%2C%202.jpg?width=1024",
+    "admin": "Drammen",
+    "iso": "NO-33"
+  },
+  {
+    "id": "Q50619",
+    "name": "Vestfold",
+    "population": 251078,
+    "area": 2225.3787640733967,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vestfold%20v%C3%A5pen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oseberghaugen%2C%20Norge%20Viking%20burial%20mound%2C%20T%C3%B8nsberg%2C%20Norway%20hoarfrost%20November%202011.jpg?width=1024",
+    "admin": "Tønsberg",
+    "iso": "NO-39"
+  },
+  {
+    "id": "Q50624",
+    "name": "Rogaland",
+    "population": 499417,
+    "area": 9377.1,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Rogaland%20v%C3%A5pen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Obrestad%20fyr%20utsiktspunkt%20%28light%20house%29.jpg?width=1024",
+    "admin": "Stavanger",
+    "iso": "NO-11"
+  },
+  {
+    "id": "Q50627",
+    "name": "Møre og Romsdal",
+    "population": 265392,
+    "area": 14355.62,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%B8re%20og%20Romsdal%20v%C3%A5pen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Blick%20von%20der%20Dalsnibba%20in%20den%20Geirangerfjord.JPG?width=1024",
+    "admin": "Molde",
+    "iso": "NO-15"
+  },
+  {
+    "id": "Q50630",
+    "name": "Nordland",
+    "population": 243385,
+    "area": 38154.6,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordland%20v%C3%A5pen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Berge%20Sieben%20Schwestern%20Norwegen.jpg?width=1024",
+    "admin": "Bodø",
+    "iso": "NO-18"
+  },
+  {
+    "id": "Q50631",
+    "name": "Troms",
+    "population": 167207,
+    "area": 41132.811135285185,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Troms%20v%C3%A5pen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Arn%C3%B8yh%C3%B8gda%2C%20Laukslettinden%2C%20Tjuvtinden%20%26%20R%C3%B8dhetta%2C%202012%20March.jpg?width=1024",
+    "admin": "Tromsø",
+    "iso": "NO-55"
+  },
+  {
+    "id": "Q50632",
+    "name": "Finnmark",
+    "population": 75758,
+    "area": 74293.69492205983,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Finnmark%20v%C3%A5pen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Finnmark%20Finnmarksvidda%2001.JPG?width=1024",
+    "admin": "Vadsø",
+    "iso": "NO-56"
+  },
+  {
+    "id": "Q127676",
+    "name": "Trøndelag",
+    "population": 464060,
+    "area": 42201.6,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Tr%C3%B8ndelag%20v%C3%A5pen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Seierstad%20J%C3%B8a.jpg?width=1024",
+    "admin": "Trondheim",
+    "iso": "NO-50"
+  },
+  {
+    "id": "Q2729021",
+    "name": "Agder",
+    "population": 305244,
+    "area": 16434.12,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Agder%20v%C3%A5pen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Agder%20photomontage.jpg?width=1024",
+    "admin": "Arendal",
+    "iso": "NO-42"
+  },
+  {
+    "id": "Q5245991",
+    "name": "Oslo kommune",
+    "population": 728714,
+    "area": 454.12,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Oslo%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oslo%20R%C3%A5dhus%201.jpg?width=1024",
+    "admin": "Oslo"
+  },
+  {
+    "id": "Q56404886",
+    "name": "Innlandet",
+    "population": 371054,
+    "area": 52072.4,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Innlandet%20v%C3%A5pen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8r-Fron.JPG?width=1024",
+    "admin": "Hamar",
+    "iso": "NO-34"
+  },
+  {
+    "id": "Q56407177",
+    "name": "Vestland",
+    "population": 633117,
+    "area": 33870.98,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vestland%20v%C3%A5pen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sognefjord%20-%202013.08%20-%20panoramio.jpg?width=1024",
+    "admin": "Bergen",
+    "iso": "NO-46"
+  }
+]

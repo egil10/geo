@@ -1,0 +1,5511 @@
+[
+  {
+    "id": "Q2415",
+    "name": "Kristiansand",
+    "numbers": [
+      "4204"
+    ],
+    "population": 119287,
+    "area": 644.16,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Kristiansand%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vista%20a%C3%A9rea%20de%20Kristiansand.jpg?width=1024",
+    "lat": 58.14672222,
+    "lon": 7.99561111,
+    "county": "Agder",
+    "admin": "Kristiansand"
+  },
+  {
+    "id": "Q48276",
+    "name": "Flatanger",
+    "numbers": [
+      "5049"
+    ],
+    "population": 1110,
+    "area": 458.71,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Flatanger%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rorbu%20in%20Lauvsnes.jpg?width=1024",
+    "lat": 64.419722222222,
+    "lon": 10.907777777778,
+    "county": "Trøndelag",
+    "admin": "Lauvsnes"
+  },
+  {
+    "id": "Q48732",
+    "name": "Meråker",
+    "numbers": [
+      "5034"
+    ],
+    "population": 2460,
+    "area": 1273.94,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Mer%C3%A5ker%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mer%C3%A5kerdalen%20jan%202010.JPG?width=1024",
+    "lat": 63.438055555556,
+    "lon": 11.849444444444,
+    "county": "Trøndelag",
+    "admin": "Midtbygda"
+  },
+  {
+    "id": "Q57919",
+    "name": "Arendal",
+    "numbers": [
+      "4203"
+    ],
+    "population": 46603,
+    "area": 270.21,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Arendal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/ArendalPollen2.jpg?width=1024",
+    "lat": 58.466666666667,
+    "lon": 8.7666666666667,
+    "county": "Agder",
+    "admin": "Arendal"
+  },
+  {
+    "id": "Q88802",
+    "name": "Birkenes",
+    "numbers": [
+      "4216"
+    ],
+    "population": 5447,
+    "area": 637.36,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Birkenes%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Birkenes%20Torvstr%C3%B8museet.JPG?width=1024",
+    "lat": 58.449444444444,
+    "lon": 8.2333333333333,
+    "county": "Agder",
+    "admin": "Birkeland"
+  },
+  {
+    "id": "Q88804",
+    "name": "Bygland",
+    "numbers": [
+      "4220"
+    ],
+    "population": 1167,
+    "area": 1311.75,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Bygland%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bygland%20and%20Jordalsboe.JPG?width=1024",
+    "lat": 58.824444,
+    "lon": 7.801944,
+    "county": "Agder",
+    "admin": "Bygland"
+  },
+  {
+    "id": "Q88806",
+    "name": "Bykle kommune",
+    "numbers": [
+      "4222"
+    ],
+    "population": 1057,
+    "area": 1467.1,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Bykle%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Otra%20i%20Bykle%20Lindahl.jpeg?width=1024",
+    "lat": 59.443061111111,
+    "lon": 7.255,
+    "county": "Agder",
+    "admin": "Bykle"
+  },
+  {
+    "id": "Q88808",
+    "name": "Evje og Hornnes kommune",
+    "numbers": [
+      "4219"
+    ],
+    "population": 3842,
+    "area": 587.08,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Evje%20og%20Hornnes%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fennefoss.jpg?width=1024",
+    "lat": 58.5925,
+    "lon": 7.8122194444444,
+    "county": "Agder",
+    "admin": "Evje"
+  },
+  {
+    "id": "Q88810",
+    "name": "Froland kommune",
+    "numbers": [
+      "4214"
+    ],
+    "population": 6299,
+    "area": 644.54,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Froland%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nidelva%20ved%20Blakstad%20-%20post%20processed.jpg?width=1024",
+    "lat": 58.583055555556,
+    "lon": 8.5722222222222,
+    "county": "Agder",
+    "admin": "Blakstad"
+  },
+  {
+    "id": "Q88813",
+    "name": "Gjerstad",
+    "numbers": [
+      "4211"
+    ],
+    "population": 2502,
+    "area": 322.14,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Gjerstad%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gjerstadvatnet%202.jpg?width=1024",
+    "lat": 58.8925,
+    "lon": 8.9566666666667,
+    "county": "Agder",
+    "admin": "Gjerstad"
+  },
+  {
+    "id": "Q90590",
+    "name": "Grimstad",
+    "numbers": [
+      "4202"
+    ],
+    "population": 25569,
+    "area": 303.59,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Grimstad%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Grimstad%20078.jpg?width=1024",
+    "lat": 58.351944444444,
+    "lon": 8.5444444444444,
+    "county": "Agder",
+    "admin": "Grimstad"
+  },
+  {
+    "id": "Q90592",
+    "name": "Iveland kommune",
+    "numbers": [
+      "4218"
+    ],
+    "population": 1386,
+    "area": 261.63,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Iveland%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Iveland%2C%20Iveland%20kyrkje%2C%20skule%20og%20Birketvetitstj%C3%B8nna%2002.JPG?width=1024",
+    "lat": 58.441111111111,
+    "lon": 7.9558333333333,
+    "county": "Agder",
+    "admin": "Birketveit"
+  },
+  {
+    "id": "Q90593",
+    "name": "Lillesand",
+    "numbers": [
+      "4215"
+    ],
+    "population": 11822,
+    "area": 190.43,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Lillesand%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lillesandskyline12.jpg?width=1024",
+    "lat": 58.246944444444,
+    "lon": 8.3169444444444,
+    "county": "Agder",
+    "admin": "Lillesand"
+  },
+  {
+    "id": "Q90595",
+    "name": "Risør",
+    "numbers": [
+      "4201"
+    ],
+    "population": 6683,
+    "area": 192.97,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Ris%C3%B8r%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ris%C3%B8r%20Krantoppen%20august%202017%20%281%29.jpg?width=1024",
+    "lat": 58.724722,
+    "lon": 9.23,
+    "county": "Agder",
+    "admin": "Risør"
+  },
+  {
+    "id": "Q90597",
+    "name": "Tvedestrand",
+    "numbers": [
+      "4213"
+    ],
+    "population": 6430,
+    "area": 215.05,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Tvedestrand%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tvedestrand%20med%20kirken%20og%20middelskolen.jpg?width=1024",
+    "lat": 58.636666666667,
+    "lon": 8.9427777777778,
+    "county": "Agder",
+    "admin": "Tvedestrand"
+  },
+  {
+    "id": "Q90598",
+    "name": "Valle",
+    "numbers": [
+      "4221"
+    ],
+    "population": 1209,
+    "area": 1265.26,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Valle%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Landscape%20Setesdal%20-%202%20%282705360655%29.jpg?width=1024",
+    "lat": 59.164167,
+    "lon": 7.4725,
+    "county": "Agder",
+    "admin": "Valle"
+  },
+  {
+    "id": "Q90600",
+    "name": "Vegårshei",
+    "numbers": [
+      "4212"
+    ],
+    "population": 2253,
+    "area": 355.65,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Veg%C3%A5rshei%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vegaar2.jpg?width=1024",
+    "lat": 58.775555555556,
+    "lon": 8.8322222222222,
+    "county": "Agder",
+    "admin": "Myra"
+  },
+  {
+    "id": "Q90601",
+    "name": "Åmli",
+    "numbers": [
+      "4217"
+    ],
+    "population": 1805,
+    "area": 1130.61,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85mli%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85mli%20Nidelva%20bro.JPG?width=1024",
+    "lat": 58.766111111111,
+    "lon": 8.4852777777778,
+    "county": "Agder",
+    "admin": "Åmli"
+  },
+  {
+    "id": "Q101341",
+    "name": "Lillehammer",
+    "numbers": [
+      "3405"
+    ],
+    "population": 29669,
+    "area": 478.16,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Lillehammer%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lillehammer%20City.jpg?width=1024",
+    "lat": 61.11464,
+    "lon": 10.46743,
+    "county": "Innlandet",
+    "admin": "Lillehammer"
+  },
+  {
+    "id": "Q104400",
+    "name": "Hamar",
+    "numbers": [
+      "3403"
+    ],
+    "population": 33817,
+    "area": 350.94,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hamar%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hamar%20from%20air.jpg?width=1024",
+    "lat": 60.79451,
+    "lon": 11.0783,
+    "county": "Innlandet",
+    "admin": "Hamar"
+  },
+  {
+    "id": "Q108031",
+    "name": "Gjøvik",
+    "numbers": [
+      "3407"
+    ],
+    "population": 31350,
+    "area": 672.25,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Gj%C3%B8vik%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gj%C3%B8vik%20sett%20fra%20Nordlia.jpg?width=1024",
+    "lat": 60.7925,
+    "lon": 10.695,
+    "county": "Innlandet",
+    "admin": "Gjøvik"
+  },
+  {
+    "id": "Q109140",
+    "name": "Elverum",
+    "numbers": [
+      "3420"
+    ],
+    "population": 21937,
+    "area": 1229.28,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Elverum%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Leiret%20Elverum.jpg?width=1024",
+    "lat": 60.883333,
+    "lon": 11.566667,
+    "county": "Innlandet",
+    "admin": "Elverum"
+  },
+  {
+    "id": "Q109499",
+    "name": "Kongsvinger",
+    "numbers": [
+      "3401"
+    ],
+    "population": 18191,
+    "area": 1036.45,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Kongsvinger%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tr%C3%A5stadberget%20from%20south.jpg?width=1024",
+    "lat": 60.19117,
+    "lon": 11.99916,
+    "county": "Innlandet",
+    "admin": "Kongsvinger"
+  },
+  {
+    "id": "Q110431",
+    "name": "Steinkjer",
+    "numbers": [
+      "5006"
+    ],
+    "population": 24007,
+    "area": 2122.06,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Verran%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Steinkjer.jpg?width=1024",
+    "lat": 64.013055555556,
+    "lon": 11.496944444444,
+    "county": "Trøndelag",
+    "admin": "Steinkjer"
+  },
+  {
+    "id": "Q111039",
+    "name": "Namsos",
+    "numbers": [
+      "5007"
+    ],
+    "population": 15112,
+    "area": 2132.63,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Namsos%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Namsos%20waterfront.jpg?width=1024",
+    "lat": 64.493889,
+    "lon": 11.511667,
+    "county": "Trøndelag",
+    "admin": "Namsos"
+  },
+  {
+    "id": "Q113438",
+    "name": "Vågå",
+    "numbers": [
+      "3435"
+    ],
+    "population": 3553,
+    "area": 1330,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A5g%C3%A5%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jotunheimen%20mountains%20near%20Memurubu.jpg?width=1024",
+    "lat": 61.875,
+    "lon": 9.0958333333333,
+    "county": "Innlandet",
+    "admin": "Vågåmo"
+  },
+  {
+    "id": "Q113466",
+    "name": "Ringsaker",
+    "numbers": [
+      "3411"
+    ],
+    "population": 36199,
+    "area": 1280.09,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Ringsaker%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Brumunddal%202022.jpg?width=1024",
+    "lat": 61.024166666667,
+    "lon": 10.801944444444,
+    "county": "Innlandet",
+    "admin": "Brumunddal"
+  },
+  {
+    "id": "Q113595",
+    "name": "Oppdal",
+    "numbers": [
+      "5021"
+    ],
+    "population": 7421,
+    "area": 2274.12,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Oppdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/OppdalFromAlmannberget.jpg?width=1024",
+    "lat": 62.566667,
+    "lon": 9.6,
+    "county": "Trøndelag",
+    "admin": "Oppdal"
+  },
+  {
+    "id": "Q162144",
+    "name": "Høylandet",
+    "numbers": [
+      "5046"
+    ],
+    "population": 1230,
+    "area": 754.68,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B8ylandet%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoeylandet%20fraa%20lufta.jpg?width=1024",
+    "lat": 64.724166666667,
+    "lon": 12.333888888889,
+    "county": "Trøndelag",
+    "admin": "Høylandet"
+  },
+  {
+    "id": "Q216430",
+    "name": "Levanger",
+    "numbers": [
+      "5037"
+    ],
+    "population": 20807,
+    "area": 645.81,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Levanger%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kirkegata%20i%20Levanger.jpg?width=1024",
+    "lat": 63.74585,
+    "lon": 11.29991,
+    "county": "Trøndelag",
+    "admin": "Levanger"
+  },
+  {
+    "id": "Q217802",
+    "name": "Stjørdal",
+    "numbers": [
+      "5035"
+    ],
+    "population": 25108,
+    "area": 938.27,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Stj%C3%B8rdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stj%C3%B8rdal%2C%20flyfoto%20fra%20%C3%B8st%20%282019%29.jpg?width=1024",
+    "lat": 63.475,
+    "lon": 11.170833333333,
+    "county": "Trøndelag",
+    "admin": "Stjørdalshalsen"
+  },
+  {
+    "id": "Q258084",
+    "name": "Grong",
+    "numbers": [
+      "5045"
+    ],
+    "population": 2292,
+    "area": 1136.17,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Grong%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Utsikt%20fra%20storhusfjellet.jpg?width=1024",
+    "lat": 64.531388888889,
+    "lon": 12.62,
+    "county": "Trøndelag",
+    "admin": "Grong"
+  },
+  {
+    "id": "Q270835",
+    "name": "Åfjord",
+    "numbers": [
+      "5058"
+    ],
+    "population": 4340,
+    "area": 1329.42,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Roan%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aafjorden%20i%20Fosen.jpg?width=1024",
+    "lat": 63.977777777778,
+    "lon": 10.385555555556,
+    "county": "Trøndelag",
+    "admin": "Årnes"
+  },
+  {
+    "id": "Q271063",
+    "name": "Åmot",
+    "numbers": [
+      "3422"
+    ],
+    "population": 4191,
+    "area": 1339.92,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85mot%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85mot%20r%C3%A5dhus.jpg?width=1024",
+    "lat": 61.146388888889,
+    "lon": 11.415833333333,
+    "county": "Innlandet",
+    "admin": "Rena"
+  },
+  {
+    "id": "Q271275",
+    "name": "Åseral",
+    "numbers": [
+      "4224"
+    ],
+    "population": 904,
+    "area": 887.52,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85seral%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bortelidhytter%201050%202017.jpg?width=1024",
+    "lat": 58.701944444444,
+    "lon": 7.3936111111111,
+    "county": "Agder",
+    "admin": "Kyrkjebygda"
+  },
+  {
+    "id": "Q281835",
+    "name": "Sirdal",
+    "numbers": [
+      "4228"
+    ],
+    "population": 1911,
+    "area": 1554.29,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sirdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/ValevatnValevatn.jpg?width=1024",
+    "lat": 58.861944444444,
+    "lon": 6.8133333333333,
+    "county": "Agder",
+    "admin": "Tonstad"
+  },
+  {
+    "id": "Q308245",
+    "name": "Ørland",
+    "numbers": [
+      "5057"
+    ],
+    "population": 10706,
+    "area": 457.07,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98rland%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Orland6.jpg?width=1024",
+    "lat": 63.708888888889,
+    "lon": 9.6105555555556,
+    "county": "Trøndelag",
+    "admin": "Bjugn"
+  },
+  {
+    "id": "Q308420",
+    "name": "Østre Toten",
+    "numbers": [
+      "3442"
+    ],
+    "population": 14925,
+    "area": 562.57,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98stre%20Toten%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98stre%20Toten.jpg?width=1024",
+    "lat": 60.613333333333,
+    "lon": 10.916111111111,
+    "county": "Innlandet",
+    "admin": "Lena"
+  },
+  {
+    "id": "Q316779",
+    "name": "Øyer",
+    "numbers": [
+      "3440"
+    ],
+    "population": 5130,
+    "area": 639.92,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98yer%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98yer%20r%C3%A5dhus.JPG?width=1024",
+    "lat": 61.265277777778,
+    "lon": 10.413333333333,
+    "county": "Innlandet",
+    "admin": "Tingberg"
+  },
+  {
+    "id": "Q329894",
+    "name": "Øystre Slidre",
+    "numbers": [
+      "3453"
+    ],
+    "population": 3347,
+    "area": 963.1,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98ystre%20Slidre%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Valdresflya%20veg.jpg?width=1024",
+    "lat": 61.236388888889,
+    "lon": 9.1436111111111,
+    "county": "Innlandet",
+    "admin": "Heggenes"
+  },
+  {
+    "id": "Q484064",
+    "name": "Folldal",
+    "numbers": [
+      "3429"
+    ],
+    "population": 1525,
+    "area": 1276.88,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Folldal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Veslsvulten%2001.JPG?width=1024",
+    "lat": 62.199167,
+    "lon": 10.035278,
+    "county": "Innlandet",
+    "admin": "Folldal"
+  },
+  {
+    "id": "Q484074",
+    "name": "Nord-Aurdal kommune",
+    "numbers": [
+      "3451"
+    ],
+    "population": 6424,
+    "area": 906.48,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nord-Aurdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fagernes%2C%20Nord-Aurdal.JPG?width=1024",
+    "lat": 60.959722222222,
+    "lon": 9.2641666666667,
+    "county": "Innlandet",
+    "admin": "Fagernes"
+  },
+  {
+    "id": "Q484084",
+    "name": "Holtålen",
+    "numbers": [
+      "5026"
+    ],
+    "population": 2037,
+    "area": 1209.49,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Holt%C3%A5len%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Holt%C3%A5len%20r%C3%A5dhus%20%2801%29.JPG?width=1024",
+    "lat": 62.868611111111,
+    "lon": 11.277222222222,
+    "county": "Trøndelag",
+    "admin": "Ålen"
+  },
+  {
+    "id": "Q484088",
+    "name": "Røyrvik kommune",
+    "numbers": [
+      "5043"
+    ],
+    "population": 439,
+    "area": 1584.75,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8yrvik%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Royrvik.jpg?width=1024",
+    "lat": 64.8838,
+    "lon": 13.56311,
+    "county": "Trøndelag",
+    "admin": "Røyrvik"
+  },
+  {
+    "id": "Q484093",
+    "name": "Søndre Land",
+    "numbers": [
+      "3447"
+    ],
+    "population": 5603,
+    "area": 728.36,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8ndre%20Land%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hov%20i%20Land%2C%20S%C3%B8ndre%20Land.jpg?width=1024",
+    "lat": 60.676944444444,
+    "lon": 10.278888888889,
+    "county": "Innlandet",
+    "admin": "Hov"
+  },
+  {
+    "id": "Q484116",
+    "name": "Skjåk",
+    "numbers": [
+      "3433"
+    ],
+    "population": 2185,
+    "area": 2075.52,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Skj%C3%A5k%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skjaak.jpg?width=1024",
+    "lat": 61.936111111111,
+    "lon": 7.9602777777778,
+    "county": "Innlandet",
+    "admin": "Bismo"
+  },
+  {
+    "id": "Q484119",
+    "name": "Frøya",
+    "numbers": [
+      "5014"
+    ],
+    "population": 5794,
+    "area": 241.31,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Fr%C3%B8ya%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sula%20in%20Fr%C3%B8ya1.jpg?width=1024",
+    "lat": 63.725555555556,
+    "lon": 8.7441666666667,
+    "county": "Trøndelag",
+    "admin": "Sistranda"
+  },
+  {
+    "id": "Q484218",
+    "name": "Nord-Odal",
+    "numbers": [
+      "3414"
+    ],
+    "population": 4978,
+    "area": 508.14,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nord-Odal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storsjoen%20-%20panoramio.jpg?width=1024",
+    "lat": 60.442222222222,
+    "lon": 11.568055555556,
+    "county": "Innlandet",
+    "admin": "Sand"
+  },
+  {
+    "id": "Q484257",
+    "name": "Osen",
+    "numbers": [
+      "5020"
+    ],
+    "population": 911,
+    "area": 387.1,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Osen%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Osen%20river.jpg?width=1024",
+    "lat": 64.274444444444,
+    "lon": 10.619166666667,
+    "county": "Trøndelag",
+    "admin": "Steinsdalen"
+  },
+  {
+    "id": "Q486677",
+    "name": "Dovre",
+    "numbers": [
+      "3431"
+    ],
+    "population": 2523,
+    "area": 1364.39,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Dovre%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dovre%20panorama.jpg?width=1024",
+    "lat": 62.035,
+    "lon": 9.4675,
+    "county": "Innlandet",
+    "admin": "Dovre"
+  },
+  {
+    "id": "Q486713",
+    "name": "Gausdal",
+    "numbers": [
+      "3441"
+    ],
+    "population": 6147,
+    "area": 1191.16,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Gausdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Liomseter.jpg?width=1024",
+    "lat": 61.276667,
+    "lon": 9.9225,
+    "county": "Innlandet",
+    "admin": "Segalstad bru"
+  },
+  {
+    "id": "Q486741",
+    "name": "Nordre Land",
+    "numbers": [
+      "3448"
+    ],
+    "population": 6510,
+    "area": 955.32,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordre%20Land%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dokka%20with%20Dokka%20River.jpg?width=1024",
+    "lat": 60.834722,
+    "lon": 10.075278,
+    "county": "Innlandet",
+    "admin": "Dokka"
+  },
+  {
+    "id": "Q488049",
+    "name": "Etnedal kommune",
+    "numbers": [
+      "3450"
+    ],
+    "population": 1593,
+    "area": 459.15,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Etnedal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lunde%20Bru%2C%20Norway.JPG?width=1024",
+    "lat": 60.967222222222,
+    "lon": 9.6536111111111,
+    "county": "Innlandet",
+    "admin": "Bruflat"
+  },
+  {
+    "id": "Q488054",
+    "name": "Sør-Fron",
+    "numbers": [
+      "3438"
+    ],
+    "population": 3108,
+    "area": 742.21,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8r-Fron%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8r-Fron%20r%C3%A5dhus.JPG?width=1024",
+    "lat": 61.568888888889,
+    "lon": 9.9233333333333,
+    "county": "Innlandet",
+    "admin": "Hundorp"
+  },
+  {
+    "id": "Q488124",
+    "name": "Rennebu",
+    "numbers": [
+      "5022"
+    ],
+    "population": 2514,
+    "area": 947.96,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Rennebu%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rennebu%20r%C3%A5dhus%20%2801%29.JPG?width=1024",
+    "lat": 62.830833333333,
+    "lon": 9.8744444444444,
+    "county": "Trøndelag",
+    "admin": "Berkåk"
+  },
+  {
+    "id": "Q488229",
+    "name": "Rendalen",
+    "numbers": [
+      "3424"
+    ],
+    "population": 1836,
+    "area": 3179.52,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Rendalen%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rendalen%20Kommunehus.jpg?width=1024",
+    "lat": 61.859444444444,
+    "lon": 11.176111111111,
+    "county": "Innlandet",
+    "admin": "Bergset"
+  },
+  {
+    "id": "Q488242",
+    "name": "Rindal",
+    "numbers": [
+      "5061"
+    ],
+    "population": 1935,
+    "area": 631.95,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Rindal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rindal%20presteg%C3%A5rd.jpg?width=1024",
+    "lat": 63.042222222222,
+    "lon": 9.2894444444444,
+    "county": "Trøndelag",
+    "admin": "Rindal"
+  },
+  {
+    "id": "Q488395",
+    "name": "Lom",
+    "numbers": [
+      "0514",
+      "3434"
+    ],
+    "population": 2239,
+    "area": 1968.56,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Lom%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lomseggen%2002.jpg?width=1024",
+    "lat": 61.8386,
+    "lon": 8.5674,
+    "county": "Innlandet",
+    "admin": "Fossbergom"
+  },
+  {
+    "id": "Q488401",
+    "name": "Nord-Fron",
+    "numbers": [
+      "3436"
+    ],
+    "population": 5493,
+    "area": 1141.33,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nord-Fron%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gudbrandsdal%20valley.jpg?width=1024",
+    "lat": 61.595555555556,
+    "lon": 9.7480555555556,
+    "county": "Innlandet",
+    "admin": "Vinstra"
+  },
+  {
+    "id": "Q488405",
+    "name": "Lesja",
+    "numbers": [
+      "3432"
+    ],
+    "population": 1966,
+    "area": 2259.5,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Lesja%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/63a-2770%20Stugufl%C3%A5tbrua%202004%20SRS.jpg?width=1024",
+    "lat": 62.210555555556,
+    "lon": 8.6447222222222,
+    "county": "Innlandet",
+    "admin": "Lesja"
+  },
+  {
+    "id": "Q488439",
+    "name": "Vestre Slidre",
+    "numbers": [
+      "3452"
+    ],
+    "population": 2190,
+    "area": 463.3,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vestre%20Slidre%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vestre%20Slidre.JPG?width=1024",
+    "lat": 61.060555555556,
+    "lon": 8.9172222222222,
+    "county": "Innlandet",
+    "admin": "Slidre"
+  },
+  {
+    "id": "Q488747",
+    "name": "Kvinesdal",
+    "numbers": [
+      "4227"
+    ],
+    "population": 6242,
+    "area": 963.22,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Kvinesdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/117542%20Kvinesdal%20kommune%20%289216874642%29%20%28cropped%29.jpg?width=1024",
+    "lat": 58.338055555556,
+    "lon": 7.0230555555556,
+    "county": "Agder",
+    "admin": "Liknes"
+  },
+  {
+    "id": "Q488762",
+    "name": "Melhus",
+    "numbers": [
+      "5028"
+    ],
+    "population": 17828,
+    "area": 694.41,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Melhus%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Melhus%20sentrum.JPG?width=1024",
+    "lat": 63.166666666667,
+    "lon": 10.3,
+    "county": "Trøndelag",
+    "admin": "Melhus"
+  },
+  {
+    "id": "Q488779",
+    "name": "Tynset",
+    "numbers": [
+      "3427"
+    ],
+    "population": 5762,
+    "area": 1880.5,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Tynset%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tynset%20r%C3%A5dhus.jpg?width=1024",
+    "lat": 62.27594,
+    "lon": 10.78241,
+    "county": "Innlandet",
+    "admin": "Tynset"
+  },
+  {
+    "id": "Q488783",
+    "name": "Grue",
+    "numbers": [
+      "3417"
+    ],
+    "population": 4463,
+    "area": 837.18,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Grue%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Grue%20kirke.jpg?width=1024",
+    "lat": 60.456388888889,
+    "lon": 12.058333333333,
+    "county": "Innlandet",
+    "admin": "Kirkenær"
+  },
+  {
+    "id": "Q488951",
+    "name": "Løten",
+    "numbers": [
+      "3412"
+    ],
+    "population": 7951,
+    "area": 369.44,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%B8ten%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Loeten%20sentrum.jpg?width=1024",
+    "lat": 60.825277777778,
+    "lon": 11.390833333333,
+    "county": "Innlandet",
+    "admin": "Løten"
+  },
+  {
+    "id": "Q488962",
+    "name": "Hægebostad",
+    "numbers": [
+      "4226"
+    ],
+    "population": 1794,
+    "area": 461.33,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%A6gebostad%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%A6gebostad%20krirke.jpg?width=1024",
+    "lat": 58.456666666667,
+    "lon": 7.2197222222222,
+    "county": "Agder",
+    "admin": "Tingvatn"
+  },
+  {
+    "id": "Q488970",
+    "name": "Inderøy",
+    "numbers": [
+      "5053"
+    ],
+    "population": 7066,
+    "area": 365.67,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Inder%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Inder%C3%B8y-Sund-Straumen.jpg?width=1024",
+    "lat": 63.899444444444,
+    "lon": 11.22,
+    "county": "Trøndelag",
+    "admin": "Straumen"
+  },
+  {
+    "id": "Q489374",
+    "name": "Frosta",
+    "numbers": [
+      "5036"
+    ],
+    "population": 2667,
+    "area": 76.32,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Frosta%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Frosta%20sett%20fra%20Hellan.jpg?width=1024",
+    "lat": 63.603888888889,
+    "lon": 10.774444444444,
+    "county": "Trøndelag",
+    "admin": "Frosta"
+  },
+  {
+    "id": "Q490462",
+    "name": "Farsund",
+    "numbers": [
+      "4206"
+    ],
+    "population": 9949,
+    "area": 262.56,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Farsund%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Farsund%20-%20daybreak.jpg?width=1024",
+    "lat": 58.082777777778,
+    "lon": 6.7527777777778,
+    "county": "Agder",
+    "admin": "Farsund"
+  },
+  {
+    "id": "Q492209",
+    "name": "Selbu",
+    "numbers": [
+      "5032"
+    ],
+    "population": 4258,
+    "area": 1234.85,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Selbu%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98verbygda%202.jpg?width=1024",
+    "lat": 63.198333333333,
+    "lon": 11.140277777778,
+    "county": "Trøndelag",
+    "admin": "Mebonden"
+  },
+  {
+    "id": "Q492244",
+    "name": "Midtre Gauldal",
+    "numbers": [
+      "5027"
+    ],
+    "population": 6088,
+    "area": 1860.51,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Midtre%20Gauldal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%A5dhuset%20i%20Midtre%20Gauldal%20%282%29.JPG?width=1024",
+    "lat": 62.921111111111,
+    "lon": 10.500555555556,
+    "county": "Trøndelag",
+    "admin": "Støren"
+  },
+  {
+    "id": "Q493481",
+    "name": "Flekkefjord",
+    "numbers": [
+      "4207"
+    ],
+    "population": 9373,
+    "area": 544.07,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Flekkefjord%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Flekkefjord-Nirwana.jpg?width=1024",
+    "lat": 58.327222222222,
+    "lon": 6.6666666666667,
+    "county": "Agder",
+    "admin": "Flekkefjord"
+  },
+  {
+    "id": "Q493846",
+    "name": "Snåsa",
+    "numbers": [
+      "5041"
+    ],
+    "population": 2141,
+    "area": 2342.66,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sn%C3%A5sa%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sn%C3%A5savatnet%20mot%20bygda.JPG?width=1024",
+    "lat": 64.24606,
+    "lon": 12.38298,
+    "county": "Trøndelag",
+    "admin": "Snåsa"
+  },
+  {
+    "id": "Q493988",
+    "name": "Malvik",
+    "numbers": [
+      "5031"
+    ],
+    "population": 14961,
+    "area": 168.44,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Malvik%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Malvik%20IMG%206169%20stav%20midtsanden.JPG?width=1024",
+    "lat": 63.372777777778,
+    "lon": 10.750833333333,
+    "county": "Trøndelag",
+    "admin": "Hommelvik"
+  },
+  {
+    "id": "Q493996",
+    "name": "Namsskogan kommune",
+    "numbers": [
+      "5044"
+    ],
+    "population": 803,
+    "area": 1417.16,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Namsskogan%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nams-Inn.jpg?width=1024",
+    "lat": 64.871944444444,
+    "lon": 12.976388888889,
+    "county": "Trøndelag",
+    "admin": "Namsskogan"
+  },
+  {
+    "id": "Q493999",
+    "name": "Lierne",
+    "numbers": [
+      "5042"
+    ],
+    "population": 1302,
+    "area": 2961.71,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Lierne%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lierne%20nasjonalpark%206.jpg?width=1024",
+    "lat": 64.358889,
+    "lon": 13.642222,
+    "county": "Trøndelag",
+    "admin": "Sandvika"
+  },
+  {
+    "id": "Q494037",
+    "name": "Hyllestad kommune",
+    "numbers": [
+      "4637"
+    ],
+    "population": 1275,
+    "area": 258.9,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hyllestad%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hyllestad%20sentrum.jpg?width=1024",
+    "lat": 61.170833333333,
+    "lon": 5.2930555555556,
+    "county": "Vestland",
+    "admin": "Hyllestad"
+  },
+  {
+    "id": "Q494053",
+    "name": "Tydal",
+    "numbers": [
+      "5033"
+    ],
+    "population": 773,
+    "area": 1328.59,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Tydal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/View%20over%20the%20Sylan.jpg?width=1024",
+    "lat": 63.018333333333,
+    "lon": 11.815,
+    "county": "Trøndelag",
+    "admin": "Ås"
+  },
+  {
+    "id": "Q499397",
+    "name": "Fjaler",
+    "numbers": [
+      "4646"
+    ],
+    "population": 2948,
+    "area": 416.59,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Fjaler%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dalsfjorden%20Rivedal.jpg?width=1024",
+    "lat": 61.306111111111,
+    "lon": 5.4633333333333,
+    "county": "Vestland",
+    "admin": "Dale i Fjaler"
+  },
+  {
+    "id": "Q499455",
+    "name": "Bremanger",
+    "numbers": [
+      "4648"
+    ],
+    "population": 3381,
+    "area": 833.1,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Bremanger%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85lfoten.jpg?width=1024",
+    "lat": 61.808611,
+    "lon": 5.420833,
+    "county": "Vestland",
+    "admin": "Svelgen"
+  },
+  {
+    "id": "Q499761",
+    "name": "Overhalla",
+    "numbers": [
+      "5047"
+    ],
+    "population": 3944,
+    "area": 729.79,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Overhalla%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Namsen%20kvatningen.JPG?width=1024",
+    "lat": 64.507777777778,
+    "lon": 11.893888888889,
+    "county": "Trøndelag",
+    "admin": "Ranemsletta"
+  },
+  {
+    "id": "Q500186",
+    "name": "Skaun",
+    "numbers": [
+      "5029"
+    ],
+    "population": 8574,
+    "area": 224.21,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Skaun%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skaun%20r%C3%A5dhus%20%2801%29.JPG?width=1024",
+    "lat": 63.281388888889,
+    "lon": 10.055277777778,
+    "county": "Trøndelag",
+    "admin": "Børsa"
+  },
+  {
+    "id": "Q500227",
+    "name": "Vennesla",
+    "numbers": [
+      "4223"
+    ],
+    "population": 15772,
+    "area": 384.48,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vennesla%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vennesla.jpg?width=1024",
+    "lat": 58.310555555556,
+    "lon": 7.8569444444444,
+    "county": "Agder",
+    "admin": "Vennesla"
+  },
+  {
+    "id": "Q501413",
+    "name": "Våler",
+    "numbers": [
+      "3419"
+    ],
+    "population": 3614,
+    "area": 705.29,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A5ler%20Innlandet%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gravberget%20kirke.jpg?width=1024",
+    "lat": 60.67845,
+    "lon": 11.83314,
+    "county": "Innlandet",
+    "admin": "Våler"
+  },
+  {
+    "id": "Q501518",
+    "name": "Gran kommune",
+    "numbers": [
+      "3446"
+    ],
+    "population": 13689,
+    "area": 756.65,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Gran%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gran%20town%20hall%2C%20Jaren%2C%20Gran%2C%20Norway%2C%202008-06-06.jpg?width=1024",
+    "lat": 60.441111111111,
+    "lon": 10.495555555556,
+    "county": "Innlandet",
+    "admin": "Jaren"
+  },
+  {
+    "id": "Q503591",
+    "name": "Leka",
+    "numbers": [
+      "5052"
+    ],
+    "population": 596,
+    "area": 110.13,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Leka%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Steinstid%20sommer.JPG?width=1024",
+    "lat": 65.083333,
+    "lon": 11.633611,
+    "county": "Trøndelag",
+    "admin": "Leknes"
+  },
+  {
+    "id": "Q503612",
+    "name": "Luster",
+    "numbers": [
+      "4644"
+    ],
+    "population": 5478,
+    "area": 2706.35,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Luster%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Sognefjord.jpg?width=1024",
+    "lat": 61.493889,
+    "lon": 7.329444,
+    "county": "Vestland",
+    "admin": "Gaupne"
+  },
+  {
+    "id": "Q503660",
+    "name": "Verdal",
+    "numbers": [
+      "5038"
+    ],
+    "population": 15435,
+    "area": 1547.77,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Verdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stiklestad%20kirke.jpg?width=1024",
+    "lat": 63.792222222222,
+    "lon": 11.481666666667,
+    "county": "Trøndelag",
+    "admin": "Verdalsøra"
+  },
+  {
+    "id": "Q505952",
+    "name": "Lyngdal",
+    "numbers": [
+      "4225"
+    ],
+    "population": 10922,
+    "area": 642.8,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyngdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyngdal%20raadhus.JPG?width=1024",
+    "lat": 58.133333,
+    "lon": 7.083333,
+    "county": "Agder",
+    "admin": "Lyngdal"
+  },
+  {
+    "id": "Q1324436",
+    "name": "Trondheim",
+    "numbers": [
+      "5001"
+    ],
+    "population": 218460,
+    "area": 528.6,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Trondheim%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Trondheim%20-%20panoramio%20%282%29.jpg?width=1024",
+    "lat": 63.42811,
+    "lon": 10.39687,
+    "county": "Trøndelag",
+    "admin": "Trondheim"
+  },
+  {
+    "id": "Q25428806",
+    "name": "Indre Fosen",
+    "numbers": [
+      "5054"
+    ],
+    "population": 10006,
+    "area": 1095.98,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Leksvik%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Leksvik-village-Norway.jpg?width=1024",
+    "lat": 63.676667,
+    "lon": 10.61,
+    "county": "Trøndelag",
+    "admin": "Rissa"
+  },
+  {
+    "id": "Q41030999",
+    "name": "Orkland",
+    "numbers": [
+      "5059"
+    ],
+    "population": 18840,
+    "area": 1906.26,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Orkland%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Orkanger%2002.jpg?width=1024",
+    "lat": 63.3067,
+    "lon": 9.8502,
+    "county": "Trøndelag",
+    "admin": "Orkanger"
+  },
+  {
+    "id": "Q48475310",
+    "name": "Heim",
+    "numbers": [
+      "5055"
+    ],
+    "population": 6075,
+    "area": 1024.58,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Heim%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyrks%C3%A6ter%C3%B8ra%20%28001%29.jpg?width=1024",
+    "lat": 63.2906,
+    "lon": 9.0891,
+    "county": "Trøndelag",
+    "admin": "Kyrksæterøra"
+  },
+  {
+    "id": "Q52368284",
+    "name": "Nærøysund",
+    "numbers": [
+      "5060"
+    ],
+    "population": 9920,
+    "area": 1346.16,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/N%C3%A6r%C3%B8ysund%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Collage%20N%C3%A6r%C3%B8ysund%20kommune.jpg?width=1024",
+    "lat": 64.8393,
+    "lon": 11.4608,
+    "county": "Trøndelag",
+    "admin": "Rørvik"
+  },
+  {
+    "id": "Q1881",
+    "name": "Fyresdal",
+    "numbers": [
+      "0831",
+      "3823",
+      "4032"
+    ],
+    "population": 1274,
+    "area": 1280.13,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Fyresdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98ys%C3%A6vatn.JPG?width=1024",
+    "lat": 59.165833333333,
+    "lon": 8.0197222222222,
+    "county": "Telemark",
+    "admin": "Moland"
+  },
+  {
+    "id": "Q2229",
+    "name": "Nissedal",
+    "numbers": [
+      "4030"
+    ],
+    "population": 1509,
+    "area": 905.17,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nissedal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norway%20Telemarksvegen%202.jpg?width=1024",
+    "lat": 59.076388888889,
+    "lon": 8.5183333333333,
+    "county": "Telemark",
+    "admin": "Treungen"
+  },
+  {
+    "id": "Q2232",
+    "name": "Kviteseid",
+    "numbers": [
+      "4028"
+    ],
+    "population": 2463,
+    "area": 708.47,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Kviteseid%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kviteseidvatnet%202.jpg?width=1024",
+    "lat": 59.348611,
+    "lon": 8.492778,
+    "county": "Telemark",
+    "admin": "Kviteseid"
+  },
+  {
+    "id": "Q2236",
+    "name": "Seljord",
+    "numbers": [
+      "0828",
+      "3820",
+      "4022"
+    ],
+    "population": 2959,
+    "area": 715.09,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Seljord%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Seljordsvatn%20%281%29%202024.jpg?width=1024",
+    "lat": 59.513333,
+    "lon": 8.648889,
+    "county": "Telemark",
+    "admin": "Seljord"
+  },
+  {
+    "id": "Q2241",
+    "name": "Tokke",
+    "numbers": [
+      "0833",
+      "3824",
+      "4034"
+    ],
+    "population": 2242,
+    "area": 984.48,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Tokke%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dalen%20i%20Telemark.jpg?width=1024",
+    "lat": 59.417222,
+    "lon": 7.978611,
+    "county": "Telemark",
+    "admin": "Dalen"
+  },
+  {
+    "id": "Q2245",
+    "name": "Vinje",
+    "numbers": [
+      "0834",
+      "3825",
+      "4036"
+    ],
+    "population": 3829,
+    "area": 3105.85,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vinje%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mirror%20-%20panoramio%20%282%29.jpg?width=1024",
+    "lat": 59.801389,
+    "lon": 7.779167,
+    "county": "Telemark",
+    "admin": "Åmot"
+  },
+  {
+    "id": "Q2272",
+    "name": "Skien",
+    "numbers": [
+      "0806",
+      "3807",
+      "4003"
+    ],
+    "population": 56906,
+    "area": 779.2,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Skien%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bryggevannet%20og%20Hjellevannet%20-%20Skien.jpg?width=1024",
+    "lat": 59.208061111111,
+    "lon": 9.5527805555556,
+    "county": "Telemark",
+    "admin": "Skien"
+  },
+  {
+    "id": "Q2290",
+    "name": "Porsgrunn",
+    "numbers": [
+      "0805",
+      "3806",
+      "4001"
+    ],
+    "population": 37435,
+    "area": 164.45,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Porsgrunn%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Porsgrunn%20lars%20iver.jpg?width=1024",
+    "lat": 59.1419,
+    "lon": 9.6568,
+    "county": "Telemark",
+    "admin": "Porsgrunn"
+  },
+  {
+    "id": "Q2308",
+    "name": "Siljan",
+    "numbers": [
+      "0811",
+      "3812",
+      "4010"
+    ],
+    "population": 2377,
+    "area": 213.96,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Siljan%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fv702%20H%C3%B8isetbakkane.jpg?width=1024",
+    "lat": 59.2975,
+    "lon": 9.706389,
+    "county": "Telemark",
+    "admin": "Siljan"
+  },
+  {
+    "id": "Q2326",
+    "name": "Notodden",
+    "numbers": [
+      "0807",
+      "3808",
+      "4005"
+    ],
+    "population": 13389,
+    "area": 983.89,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Notodden%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Notodden%202024.jpg?width=1024",
+    "lat": 59.559328305556,
+    "lon": 9.2592923055556,
+    "county": "Telemark",
+    "admin": "Notodden"
+  },
+  {
+    "id": "Q2354",
+    "name": "Hjartdal",
+    "numbers": [
+      "0827",
+      "3819",
+      "4024"
+    ],
+    "population": 1638,
+    "area": 791.61,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hjartdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/SaulandSentrum1.JPG?width=1024",
+    "lat": 59.665,
+    "lon": 8.726111,
+    "county": "Telemark",
+    "admin": "Sauland"
+  },
+  {
+    "id": "Q2365",
+    "name": "Tinn",
+    "numbers": [
+      "0826",
+      "3818",
+      "4026"
+    ],
+    "population": 5515,
+    "area": 2045.13,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Tinn%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/P1000747Rjukan.JPG?width=1024",
+    "lat": 60.009167,
+    "lon": 8.559444,
+    "county": "Telemark",
+    "admin": "Rjukan"
+  },
+  {
+    "id": "Q2367",
+    "name": "Drangedal",
+    "numbers": [
+      "0817",
+      "3815",
+      "4016"
+    ],
+    "population": 4056,
+    "area": 1062.78,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Drangedal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Drangedal%20Prestestranda%201.JPG?width=1024",
+    "lat": 59.123333333333,
+    "lon": 8.9819444444444,
+    "county": "Telemark",
+    "admin": "Prestestranda"
+  },
+  {
+    "id": "Q2375",
+    "name": "Nome",
+    "numbers": [
+      "0819",
+      "3816",
+      "4018"
+    ],
+    "population": 6529,
+    "area": 429.68,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nome%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ulefoss%20panorama.JPG?width=1024",
+    "lat": 59.284722222222,
+    "lon": 9.1238888888889,
+    "county": "Telemark",
+    "admin": "Ulefoss"
+  },
+  {
+    "id": "Q5223",
+    "name": "Stryn",
+    "numbers": [
+      "4651"
+    ],
+    "population": 7319,
+    "area": 1382.06,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Stryn%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stryn.jpg?width=1024",
+    "lat": 61.838611,
+    "lon": 6.862778,
+    "county": "Vestland",
+    "admin": "Stryn"
+  },
+  {
+    "id": "Q48299",
+    "name": "Masfjorden kommune",
+    "numbers": [
+      "4634"
+    ],
+    "population": 1672,
+    "area": 556.09,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Masfjorden%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2023-07-01-Solheim-6751.jpg?width=1024",
+    "lat": 60.838333333333,
+    "lon": 5.4486111111111,
+    "county": "Vestland",
+    "admin": "Masfjordnes"
+  },
+  {
+    "id": "Q48316",
+    "name": "Tysnes",
+    "numbers": [
+      "4616"
+    ],
+    "population": 3053,
+    "area": 255.12,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Tysnes%20komm%20%282020%29.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Utsyn%20mot%20nord%20fr%C3%A5%20Gj%C3%B8v%C3%A5gsvarden.JPG?width=1024",
+    "lat": 59.998333333333,
+    "lon": 5.5772222222222,
+    "county": "Vestland",
+    "admin": "Uggdal"
+  },
+  {
+    "id": "Q48414",
+    "name": "Sør-Aurdal",
+    "numbers": [
+      "3449"
+    ],
+    "population": 2841,
+    "area": 1109.05,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8r-Aurdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Smedlund%2C%20S%C3%B8r-Aurdal.JPG?width=1024",
+    "lat": 60.696388888889,
+    "lon": 9.6588888888889,
+    "county": "Innlandet",
+    "admin": "Bagn"
+  },
+  {
+    "id": "Q48526",
+    "name": "Stor-Elvdal",
+    "numbers": [
+      "3423"
+    ],
+    "population": 2239,
+    "area": 2165.78,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Stor-Elvdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Glomma%20Stor-Elvdal.jpg?width=1024",
+    "lat": 61.635,
+    "lon": 10.874166666667,
+    "county": "Innlandet",
+    "admin": "Koppang"
+  },
+  {
+    "id": "Q48529",
+    "name": "Trysil",
+    "numbers": [
+      "3421"
+    ],
+    "population": 6474,
+    "area": 3014.41,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Trysil%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/NybergsundBru.jpg?width=1024",
+    "lat": 61.31,
+    "lon": 12.315,
+    "county": "Innlandet",
+    "admin": "Innbygda"
+  },
+  {
+    "id": "Q48542",
+    "name": "Stange",
+    "numbers": [
+      "3413"
+    ],
+    "population": 21839,
+    "area": 724.27,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Stange%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stangebyen%20%282023%29.jpg?width=1024",
+    "lat": 60.649444444444,
+    "lon": 11.366388888889,
+    "county": "Innlandet",
+    "admin": "Stange"
+  },
+  {
+    "id": "Q48615",
+    "name": "Sør-Odal",
+    "numbers": [
+      "3415"
+    ],
+    "population": 8165,
+    "area": 516.74,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8r-Odal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skarnes%20bru.jpg?width=1024",
+    "lat": 60.236666666667,
+    "lon": 11.745555555556,
+    "county": "Innlandet",
+    "admin": "Skarnes"
+  },
+  {
+    "id": "Q48637",
+    "name": "Ringebu",
+    "numbers": [
+      "3439"
+    ],
+    "population": 4497,
+    "area": 1247.58,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Ringebu%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ringebue%20stavkirke%202.jpg?width=1024",
+    "lat": 61.535555555556,
+    "lon": 10.308055555556,
+    "county": "Innlandet",
+    "admin": "Ringebu"
+  },
+  {
+    "id": "Q48647",
+    "name": "Solund",
+    "numbers": [
+      "4636"
+    ],
+    "population": 742,
+    "area": 228.21,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Solund%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Solund%20-%20panoramio.jpg?width=1024",
+    "lat": 61.130833333333,
+    "lon": 4.9477777777778,
+    "county": "Vestland",
+    "admin": "Hardbakke"
+  },
+  {
+    "id": "Q48717",
+    "name": "Vestre Toten",
+    "numbers": [
+      "3443"
+    ],
+    "population": 13612,
+    "area": 249.52,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vestre%20Toten%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Raufoss%20nord.jpg?width=1024",
+    "lat": 60.679167,
+    "lon": 10.615833,
+    "county": "Innlandet",
+    "admin": "Raufoss"
+  },
+  {
+    "id": "Q48723",
+    "name": "Alvdal",
+    "numbers": [
+      "3428"
+    ],
+    "population": 2492,
+    "area": 942.15,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Alvdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alvdal1.jpg?width=1024",
+    "lat": 62.109377777778,
+    "lon": 10.634422222222,
+    "county": "Innlandet",
+    "admin": "Alvdal"
+  },
+  {
+    "id": "Q48769",
+    "name": "Åsnes",
+    "numbers": [
+      "3418"
+    ],
+    "population": 7216,
+    "area": 1040.93,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85snes%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gjes%C3%A5ssj%C3%B8en.jpg?width=1024",
+    "lat": 60.653611111111,
+    "lon": 12.153055555556,
+    "county": "Innlandet",
+    "admin": "Flisa"
+  },
+  {
+    "id": "Q48782",
+    "name": "Etne",
+    "numbers": [
+      "4611"
+    ],
+    "population": 4115,
+    "area": 735.28,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Etne%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Etne%2C%20Norway%20-%20panoramio.jpg?width=1024",
+    "lat": 59.683889,
+    "lon": 6.0475,
+    "county": "Vestland",
+    "admin": "Etne"
+  },
+  {
+    "id": "Q48909",
+    "name": "Engerdal kommune",
+    "numbers": [
+      "3425"
+    ],
+    "population": 1287,
+    "area": 2196.55,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Engerdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Engerdal%20Femunden.jpg?width=1024",
+    "lat": 61.883333333333,
+    "lon": 12.033333333333,
+    "county": "Innlandet",
+    "admin": "Engerdal"
+  },
+  {
+    "id": "Q48913",
+    "name": "Eidskog",
+    "numbers": [
+      "3416"
+    ],
+    "population": 6103,
+    "area": 640.39,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Eidskog%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Magnor%20view.jpg?width=1024",
+    "lat": 59.998055555556,
+    "lon": 12.060555555556,
+    "county": "Innlandet",
+    "admin": "Skotterud"
+  },
+  {
+    "id": "Q48928",
+    "name": "Vaksdal",
+    "numbers": [
+      "4628"
+    ],
+    "population": 3899,
+    "area": 715.38,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vaksdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vaksdal%20r%C3%A5dhus.jpg?width=1024",
+    "lat": 60.606944444444,
+    "lon": 5.8161111111111,
+    "county": "Vestland",
+    "admin": "Dale"
+  },
+  {
+    "id": "Q109031",
+    "name": "Voss",
+    "numbers": [
+      "4621"
+    ],
+    "population": 16438,
+    "area": 2041.97,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Voss%20herad.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vossavangen.jpg?width=1024",
+    "lat": 60.7025,
+    "lon": 6.423056,
+    "county": "Vestland",
+    "admin": "Vossevangen"
+  },
+  {
+    "id": "Q113491",
+    "name": "Fitjar",
+    "numbers": [
+      "4615"
+    ],
+    "population": 3237,
+    "area": 142.46,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Fitjar%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fitjar.JPG?width=1024",
+    "lat": 59.918888888889,
+    "lon": 5.3713888888889,
+    "county": "Vestland",
+    "admin": "Fitjar"
+  },
+  {
+    "id": "Q113552",
+    "name": "Bømlo",
+    "numbers": [
+      "4613"
+    ],
+    "population": 12531,
+    "area": 246.57,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/B%C3%B8mlo%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skjeret%2C%20Brandasund%20og%20S%C3%A5t%C3%A5%20bak.jpg?width=1024",
+    "lat": 59.779444444444,
+    "lon": 5.2183333333333,
+    "county": "Vestland",
+    "admin": "Svortland"
+  },
+  {
+    "id": "Q113720",
+    "name": "Høyanger",
+    "numbers": [
+      "4638"
+    ],
+    "population": 3883,
+    "area": 1003.04,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B8yanger%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoeyanger-Skyline-2020.jpg?width=1024",
+    "lat": 61.188055555556,
+    "lon": 5.8955555555556,
+    "county": "Vestland",
+    "admin": "Høyanger"
+  },
+  {
+    "id": "Q202605",
+    "name": "Modalen",
+    "numbers": [
+      "4629"
+    ],
+    "population": 397,
+    "area": 411.99,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Modalen%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mo%202.jpg?width=1024",
+    "lat": 60.880555555556,
+    "lon": 5.9252777777778,
+    "county": "Vestland",
+    "admin": "Mo"
+  },
+  {
+    "id": "Q215374",
+    "name": "Askøy",
+    "numbers": [
+      "4627"
+    ],
+    "population": 30600,
+    "area": 101.12,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Ask%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kleppest%C3%B8AndBridge.jpg?width=1024",
+    "lat": 60.466666666667,
+    "lon": 5.15,
+    "county": "Vestland",
+    "admin": "Kleppestø"
+  },
+  {
+    "id": "Q217793",
+    "name": "Gulen",
+    "numbers": [
+      "4635"
+    ],
+    "population": 2301,
+    "area": 597.22,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Gulen%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gulenbilder%20420.jpg?width=1024",
+    "lat": 61.024166666667,
+    "lon": 5.1194444444444,
+    "county": "Vestland",
+    "admin": "Eivindvik"
+  },
+  {
+    "id": "Q271140",
+    "name": "Årdal",
+    "numbers": [
+      "4643"
+    ],
+    "population": 5178,
+    "area": 976.59,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85rdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98vre%20%C3%85rdal.jpg?width=1024",
+    "lat": 61.291389,
+    "lon": 7.798056,
+    "county": "Vestland",
+    "admin": "Årdalstangen"
+  },
+  {
+    "id": "Q303521",
+    "name": "Vik kommune",
+    "numbers": [
+      "4639"
+    ],
+    "population": 2532,
+    "area": 833.23,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vik%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vik%20Sogn%20og%20Fjordane%202009.JPG?width=1024",
+    "lat": 61.056944,
+    "lon": 6.578056,
+    "county": "Vestland",
+    "admin": "Vikøyri"
+  },
+  {
+    "id": "Q383492",
+    "name": "Gloppen",
+    "numbers": [
+      "4650"
+    ],
+    "population": 5976,
+    "area": 1030.57,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Gloppen%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gloppen-collage.jpg?width=1024",
+    "lat": 61.77728,
+    "lon": 6.21561,
+    "county": "Vestland",
+    "admin": "Sandane"
+  },
+  {
+    "id": "Q483977",
+    "name": "Eidfjord kommune",
+    "numbers": [
+      "4619"
+    ],
+    "population": 985,
+    "area": 1491.5,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Eidfjord%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/P1000532Eidfjord.JPG?width=1024",
+    "lat": 60.496637,
+    "lon": 7.141113,
+    "county": "Vestland",
+    "admin": "Eidfjord"
+  },
+  {
+    "id": "Q484008",
+    "name": "Austevoll",
+    "numbers": [
+      "4625"
+    ],
+    "population": 5515,
+    "area": 117.19,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Austevoll%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Marstein%20lighthouse2.JPG?width=1024",
+    "lat": 60.037777777778,
+    "lon": 5.2683333333333,
+    "county": "Vestland",
+    "admin": "Storebø"
+  },
+  {
+    "id": "Q484052",
+    "name": "Bamble",
+    "numbers": [
+      "0814",
+      "3813",
+      "4012"
+    ],
+    "population": 14267,
+    "area": 304.37,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Bamble%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lang%C3%B8ytangen.jpg?width=1024",
+    "lat": 59.019722222222,
+    "lon": 9.5608333333333,
+    "county": "Telemark",
+    "admin": "Langesund"
+  },
+  {
+    "id": "Q484070",
+    "name": "Kvinnherad",
+    "numbers": [
+      "4617"
+    ],
+    "population": 13236,
+    "area": 1090.75,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Kvinnherad%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rosendal.jpg?width=1024",
+    "lat": 59.928056,
+    "lon": 6.036944,
+    "county": "Vestland",
+    "admin": "Rosendal"
+  },
+  {
+    "id": "Q484080",
+    "name": "Austrheim",
+    "numbers": [
+      "4632"
+    ],
+    "population": 2947,
+    "area": 57.56,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Austrheim%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Austrheim%20-%20naustmilj%C3%B8%20ved%20Kross%C3%B8ysundet.jpg?width=1024",
+    "lat": 60.771111111111,
+    "lon": 4.9261111111111,
+    "county": "Vestland",
+    "admin": "Årås"
+  },
+  {
+    "id": "Q484213",
+    "name": "Fedje",
+    "numbers": [
+      "4633"
+    ],
+    "population": 529,
+    "area": 9.27,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Fedje%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fedje%20Hordaland%20Norway%20tunliweb%2003.jpg?width=1024",
+    "lat": 60.768888888889,
+    "lon": 4.7305555555556,
+    "county": "Vestland",
+    "admin": "Fedje"
+  },
+  {
+    "id": "Q485253",
+    "name": "Stord",
+    "numbers": [
+      "4614"
+    ],
+    "population": 19276,
+    "area": 143.73,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Stord%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Main%20entrance%20of%20Stord%20town%20hall%20%28r%C3%A5dhus%29%20in%20Leirvik%2C%20Norway.%20%22Kommunebenken%22%2C%20radio%20mast%20tower%20%28antennet%C3%A5rn%20radiolinjet%C3%A5rn%29.jpg?width=1024",
+    "lat": 59.808055555556,
+    "lon": 5.4663888888889,
+    "county": "Vestland",
+    "admin": "Leirvik"
+  },
+  {
+    "id": "Q486700",
+    "name": "Aurland",
+    "numbers": [
+      "4641"
+    ],
+    "population": 1866,
+    "area": 1467.7,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Aurland%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aurlandsfjord%20%2826674071245%29.jpg?width=1024",
+    "lat": 60.9,
+    "lon": 7.166667,
+    "county": "Vestland",
+    "admin": "Aurlandsvangen"
+  },
+  {
+    "id": "Q487529",
+    "name": "Kvam",
+    "numbers": [
+      "4622"
+    ],
+    "population": 8490,
+    "area": 616.93,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Kvam%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norheimsund%20i%20Kvam.JPG?width=1024",
+    "lat": 60.37,
+    "lon": 6.1438888888889,
+    "county": "Vestland",
+    "admin": "Norheimsund"
+  },
+  {
+    "id": "Q487711",
+    "name": "Ulvik kommune",
+    "numbers": [
+      "4620"
+    ],
+    "population": 1114,
+    "area": 722.01,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Ulvik%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ulvik%20med%20tilliggande%20herligheiter%20II.jpg?width=1024",
+    "lat": 60.621111111111,
+    "lon": 7.0802777777778,
+    "county": "Vestland",
+    "admin": "Ulvik"
+  },
+  {
+    "id": "Q488067",
+    "name": "Osterøy",
+    "numbers": [
+      "4630"
+    ],
+    "population": 8231,
+    "area": 255.12,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Oster%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oster%C3%B6y%20S%C3%B6rfjorden%20Trengereid%20IMG%203726.JPG?width=1024",
+    "lat": 60.518055555556,
+    "lon": 5.5413888888889,
+    "county": "Vestland",
+    "admin": "Lonevåg"
+  },
+  {
+    "id": "Q488234",
+    "name": "Samnanger",
+    "numbers": [
+      "4623"
+    ],
+    "population": 2489,
+    "area": 269.07,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Samnanger%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kvittingen1.jpg?width=1024",
+    "lat": 60.402777777778,
+    "lon": 5.8055555555556,
+    "county": "Vestland",
+    "admin": "Tysse"
+  },
+  {
+    "id": "Q488975",
+    "name": "Lærdal",
+    "numbers": [
+      "4642"
+    ],
+    "population": 2223,
+    "area": 1342.53,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A6rdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Laerdalsoyri01.jpg?width=1024",
+    "lat": 61.051111,
+    "lon": 7.597778,
+    "county": "Vestland",
+    "admin": "Lærdalsøyri"
+  },
+  {
+    "id": "Q490923",
+    "name": "Sogndal",
+    "numbers": [
+      "4640"
+    ],
+    "population": 12552,
+    "area": 1257.89,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sogndal%20komm%202020.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/SogndalSentrum.jpg?width=1024",
+    "lat": 61.229722,
+    "lon": 7.100556,
+    "county": "Vestland",
+    "admin": "Hermansverk"
+  },
+  {
+    "id": "Q503637",
+    "name": "Vang",
+    "numbers": [
+      "3454"
+    ],
+    "population": 1666,
+    "area": 1505.45,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vang%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oye%20stave%20church.jpg?width=1024",
+    "lat": 61.214444444444,
+    "lon": 8.5041666666667,
+    "county": "Innlandet",
+    "admin": "Vang"
+  },
+  {
+    "id": "Q504817",
+    "name": "Askvoll",
+    "numbers": [
+      "4645"
+    ],
+    "population": 2924,
+    "area": 326.23,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Askvoll%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Askvoll%20gjelsvik.jpg?width=1024",
+    "lat": 61.405833333333,
+    "lon": 5.2422222222222,
+    "county": "Vestland",
+    "admin": "Askvoll"
+  },
+  {
+    "id": "Q507499",
+    "name": "Sel",
+    "numbers": [
+      "3437"
+    ],
+    "population": 5469,
+    "area": 905.05,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sel%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Otta%20%28cropped%29.jpg?width=1024",
+    "lat": 61.816944444444,
+    "lon": 9.5733333333333,
+    "county": "Innlandet",
+    "admin": "Otta"
+  },
+  {
+    "id": "Q507549",
+    "name": "Tolga",
+    "numbers": [
+      "3426"
+    ],
+    "population": 1609,
+    "area": 1122.6,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Tolga%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gata%20Tolga.jpg?width=1024",
+    "lat": 62.401388888889,
+    "lon": 11.022222222222,
+    "county": "Innlandet",
+    "admin": "Tolga"
+  },
+  {
+    "id": "Q507562",
+    "name": "Os",
+    "numbers": [
+      "3430"
+    ],
+    "population": 1871,
+    "area": 1040.41,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Os%20Innlandet%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Os%20i%20%C3%98sterdalen%20%282010.09.25%29.jpg?width=1024",
+    "lat": 62.476111111111,
+    "lon": 11.243055555556,
+    "county": "Innlandet",
+    "admin": "Os"
+  },
+  {
+    "id": "Q5245991",
+    "name": "Oslo kommune",
+    "numbers": [
+      "0301"
+    ],
+    "population": 728714,
+    "area": 454.12,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Oslo%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oslo%20R%C3%A5dhus%201.jpg?width=1024",
+    "lat": 59.91183,
+    "lon": 10.73367,
+    "county": "Oslo",
+    "admin": "Oslo"
+  },
+  {
+    "id": "Q10428388",
+    "name": "Bergen kommune",
+    "numbers": [
+      "4601"
+    ],
+    "population": 294860,
+    "area": 464.71,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Bergen%20v%C3%A5pen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/BergenCityHallMay17.jpg?width=1024",
+    "lat": 60.3925,
+    "lon": 5.323333,
+    "county": "Vestland",
+    "admin": "Bergen"
+  },
+  {
+    "id": "Q56404228",
+    "name": "Alver",
+    "numbers": [
+      "4631"
+    ],
+    "population": 30285,
+    "area": 679.05,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Alver%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alver%20R%C3%A5dhus%20%28cropped%29.jpg?width=1024",
+    "lat": 60.666666666667,
+    "lon": 5.3333333333333,
+    "county": "Vestland",
+    "admin": "Knarvik"
+  },
+  {
+    "id": "Q56405258",
+    "name": "Midt-Telemark",
+    "numbers": [
+      "3817",
+      "4020"
+    ],
+    "population": 11157,
+    "area": 518.51,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Midt-Telemark%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nes%20kirke%20mot%20Norsj%C3%B8.jpg?width=1024",
+    "lat": 59.45,
+    "lon": 9.1,
+    "county": "Telemark",
+    "admin": "Bø"
+  },
+  {
+    "id": "Q56405940",
+    "name": "Kinn",
+    "numbers": [
+      "4602"
+    ],
+    "population": 17356,
+    "area": 812.3,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Kinn%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Maloy%20tunliweb%202.jpg?width=1024",
+    "lat": 61.5996,
+    "lon": 5.0328,
+    "county": "Vestland",
+    "admin": "Måløy"
+  },
+  {
+    "id": "Q56406057",
+    "name": "Sunnfjord",
+    "numbers": [
+      "4647"
+    ],
+    "population": 22804,
+    "area": 2208.13,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sunnfjord%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nausta%20small.jpg?width=1024",
+    "lat": 61.4522,
+    "lon": 5.8572,
+    "county": "Vestland",
+    "admin": "Førde"
+  },
+  {
+    "id": "Q60742846",
+    "name": "Bjørnafjorden",
+    "numbers": [
+      "4624"
+    ],
+    "population": 26753,
+    "area": 517.41,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Bj%C3%B8rnafjorden%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lysehornet%20utsikt%20mot%20%C3%B8st.JPG?width=1024",
+    "lat": 60.2,
+    "lon": 5.7,
+    "county": "Vestland",
+    "admin": "Osøyro"
+  },
+  {
+    "id": "Q61015259",
+    "name": "Stad",
+    "numbers": [
+      "4649"
+    ],
+    "population": 9616,
+    "area": 752.78,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Stad%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stadt%20Hoddevik.jpg?width=1024",
+    "lat": 61.91139,
+    "lon": 6.03722,
+    "county": "Vestland",
+    "admin": "Nordfjordeid"
+  },
+  {
+    "id": "Q63644915",
+    "name": "Øygarden",
+    "numbers": [
+      "4626"
+    ],
+    "population": 40641,
+    "area": 314.51,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98ygarden%20komm%202020.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Straume%20p%C3%A5%20Sotra.jpg?width=1024",
+    "lat": 60.35,
+    "lon": 5,
+    "county": "Vestland",
+    "admin": "Straume"
+  },
+  {
+    "id": "Q1825",
+    "name": "Karasjok",
+    "numbers": [
+      "2021",
+      "5437",
+      "5610"
+    ],
+    "population": 2524,
+    "area": 5452.95,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Karasjok%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kaarasjoki.jpg?width=1024",
+    "lat": 69.47223,
+    "lon": 25.51885,
+    "county": "Finnmark",
+    "admin": "Karasjok"
+  },
+  {
+    "id": "Q6459",
+    "name": "Kautokeino",
+    "numbers": [
+      "2011",
+      "5430",
+      "5612"
+    ],
+    "population": 2886,
+    "area": 9707.35,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Kautokeino%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Beaivv%C3%A1%C5%A1%20S%C3%A1mi%20Theatre%20Kautokeino%202014.jpg?width=1024",
+    "lat": 69.01151,
+    "lon": 23.04148,
+    "county": "Finnmark",
+    "admin": "Kautokeino"
+  },
+  {
+    "id": "Q6535",
+    "name": "Alta",
+    "numbers": [
+      "2012",
+      "5403",
+      "5601"
+    ],
+    "population": 22074,
+    "area": 3849.6,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Alta%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bilde-Alta%20boligomraade.jpg?width=1024",
+    "lat": 69.976666666667,
+    "lon": 23.295833333333,
+    "county": "Finnmark",
+    "admin": "Alta"
+  },
+  {
+    "id": "Q26087",
+    "name": "Tromsø",
+    "numbers": [
+      "5501"
+    ],
+    "population": 79943,
+    "area": 2521.27,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Troms%C3%B8%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tromso%20Troms%C3%B8%20Norway%20tunliweb%2002.jpg?width=1024",
+    "lat": 69.64961,
+    "lon": 18.95701,
+    "county": "Troms",
+    "admin": "Tromsø"
+  },
+  {
+    "id": "Q48325",
+    "name": "Sørreisa",
+    "numbers": [
+      "1925",
+      "5419",
+      "5526"
+    ],
+    "population": 3528,
+    "area": 362.95,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8rreisa%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8rreisa.jpg?width=1024",
+    "lat": 69.091944444444,
+    "lon": 18.193611111111,
+    "county": "Troms",
+    "admin": "Sørreisa"
+  },
+  {
+    "id": "Q48610",
+    "name": "Sømna",
+    "numbers": [
+      "1812"
+    ],
+    "population": 2006,
+    "area": 195.2,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8mna%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Berg%20i%20Helgeland.jpg?width=1024",
+    "lat": 65.323611111111,
+    "lon": 12.177222222222,
+    "county": "Nordland",
+    "admin": "Vik"
+  },
+  {
+    "id": "Q48620",
+    "name": "Træna",
+    "numbers": [
+      "1835"
+    ],
+    "population": 443,
+    "area": 16.51,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Tr%C3%A6na%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tr%C3%A6na%20form%20Selv%C3%A6r.jpg?width=1024",
+    "lat": 66.5075,
+    "lon": 12.030833333333,
+    "county": "Nordland",
+    "admin": "Husøy"
+  },
+  {
+    "id": "Q48629",
+    "name": "Værøy",
+    "numbers": [
+      "1857"
+    ],
+    "population": 656,
+    "area": 18.64,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A6r%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8rland%20i%20V%C3%A6r%C3%B8y%20kommune.jpg?width=1024",
+    "lat": 67.673055555556,
+    "lon": 12.669166666667,
+    "county": "Nordland",
+    "admin": "Sørland"
+  },
+  {
+    "id": "Q48657",
+    "name": "Storfjord",
+    "numbers": [
+      "1939",
+      "5425",
+      "5538"
+    ],
+    "population": 1848,
+    "area": 1542.78,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Storfjord%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skibotn%20harbor%20and%20camping%20area.jpg?width=1024",
+    "lat": 69.278611111111,
+    "lon": 20.286666666667,
+    "county": "Troms",
+    "admin": "Hatteng"
+  },
+  {
+    "id": "Q48696",
+    "name": "Fauske",
+    "numbers": [
+      "1841"
+    ],
+    "population": 9707,
+    "area": 1196.98,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Fauske%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jakobsbakken.jpg?width=1024",
+    "lat": 67.25963,
+    "lon": 15.39409,
+    "county": "Nordland",
+    "admin": "Fauske"
+  },
+  {
+    "id": "Q48728",
+    "name": "Karlsøy",
+    "numbers": [
+      "1936",
+      "5423",
+      "5534"
+    ],
+    "population": 2235,
+    "area": 1091.59,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Karls%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Torsvaag%20kaaja.jpg?width=1024",
+    "lat": 70.13,
+    "lon": 19.430833333333,
+    "county": "Troms",
+    "admin": "Hansnes"
+  },
+  {
+    "id": "Q48760",
+    "name": "Lebesby",
+    "numbers": [
+      "2022",
+      "5438",
+      "5624"
+    ],
+    "population": 1249,
+    "area": 3459.42,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Lebesby%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lebesby%20Ifjordfjellet.JPG?width=1024",
+    "lat": 70.945277777778,
+    "lon": 27.351111111111,
+    "county": "Finnmark",
+    "admin": "Kjøllefjord"
+  },
+  {
+    "id": "Q48801",
+    "name": "Tjeldsund",
+    "numbers": [
+      "5512"
+    ],
+    "population": 4144,
+    "area": 814.33,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Tjeldsund%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tjeldsundet.jpg?width=1024",
+    "lat": 68.484444444444,
+    "lon": 16.2925,
+    "county": "Troms",
+    "admin": "Evenskjer"
+  },
+  {
+    "id": "Q48813",
+    "name": "Båtsfjord",
+    "numbers": [
+      "2028",
+      "5443",
+      "5632"
+    ],
+    "population": 2104,
+    "area": 1434.78,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A5tsfjord%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Batsfjord-1.jpg?width=1024",
+    "lat": 70.483330555556,
+    "lon": 29.933330555556,
+    "county": "Finnmark",
+    "admin": "Båtsfjord"
+  },
+  {
+    "id": "Q48827",
+    "name": "Sør-Varanger",
+    "numbers": [
+      "2030",
+      "5444",
+      "5605"
+    ],
+    "population": 9947,
+    "area": 21.57,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8r-Varanger%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/N886-Jarfjord-2012-07-06-12-00-23.jpg?width=1024",
+    "lat": 69.72861,
+    "lon": 30.04196,
+    "county": "Finnmark",
+    "admin": "Kirkenes"
+  },
+  {
+    "id": "Q48848",
+    "name": "Loppa",
+    "numbers": [
+      "2014",
+      "5432",
+      "5614"
+    ],
+    "population": 846,
+    "area": 688.88,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Loppa%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oeksfjord.jpg?width=1024",
+    "lat": 70.239444444444,
+    "lon": 22.348611111111,
+    "county": "Finnmark",
+    "admin": "Øksfjord"
+  },
+  {
+    "id": "Q62140",
+    "name": "Harstad",
+    "numbers": [
+      "1901",
+      "1903",
+      "5402",
+      "5503"
+    ],
+    "population": 25204,
+    "area": 445.21,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Harstad%20kommunevapen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Harstad%20Wikipedia%20CreativeCommons%20v2%20SteveNilsen%2001.jpg?width=1024",
+    "lat": 68.79878,
+    "lon": 16.53927,
+    "county": "Troms",
+    "admin": "Harstad"
+  },
+  {
+    "id": "Q62641",
+    "name": "Nordkapp",
+    "numbers": [
+      "2019",
+      "5435",
+      "5620"
+    ],
+    "population": 2945,
+    "area": 925.69,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordkapp%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Honningsv%C3%A5g%20harbour%2002.jpg?width=1024",
+    "lat": 70.978080555556,
+    "lon": 25.974730555556,
+    "county": "Finnmark",
+    "admin": "Honningsvåg"
+  },
+  {
+    "id": "Q502217",
+    "name": "Lavangen",
+    "numbers": [
+      "1920",
+      "5415",
+      "5518"
+    ],
+    "population": 1002,
+    "area": 301.63,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Lavangen%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lavangen%20from%20Skavneskollen.jpg?width=1024",
+    "lat": 68.657777777778,
+    "lon": 17.583611111111,
+    "county": "Troms",
+    "admin": "Tennevoll"
+  },
+  {
+    "id": "Q649541",
+    "name": "Kvæfjord",
+    "numbers": [
+      "1911",
+      "5411",
+      "5510"
+    ],
+    "population": 2901,
+    "area": 512.61,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Kv%C3%A6fjord%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kv%C3%A6fjord%20fra%20Raudmoldheia.jpg?width=1024",
+    "lat": 68.701944444444,
+    "lon": 16.146944444444,
+    "county": "Troms",
+    "admin": "Borkenes"
+  },
+  {
+    "id": "Q56249968",
+    "name": "Senja",
+    "numbers": [
+      "5530"
+    ],
+    "population": 14946,
+    "area": 1953.81,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Senja%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hus%C3%B8y%2C%20Senja.jpg?width=1024",
+    "lat": 69.0806,
+    "lon": 16.8031,
+    "county": "Troms",
+    "admin": "Finnsnes"
+  },
+  {
+    "id": "Q104379",
+    "name": "Vadsø",
+    "numbers": [
+      "2003",
+      "5405",
+      "5607"
+    ],
+    "population": 5808,
+    "area": 1257.85,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vads%C3%B8%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aerial%20view%20of%20Vads%C3%B8%2020080718.jpg?width=1024",
+    "lat": 70.073333333333,
+    "lon": 29.749722222222,
+    "county": "Finnmark",
+    "admin": "Vadsø"
+  },
+  {
+    "id": "Q107351",
+    "name": "Hammerfest",
+    "numbers": [
+      "2001",
+      "2004",
+      "5406",
+      "5603"
+    ],
+    "population": 11391,
+    "area": 2692.57,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hammerfest%20official%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hammerfest%20Juni%202005.jpg?width=1024",
+    "lat": 70.663330555556,
+    "lon": 23.677780555556,
+    "county": "Finnmark",
+    "admin": "Hammerfest"
+  },
+  {
+    "id": "Q108983",
+    "name": "Vardø",
+    "numbers": [
+      "2002",
+      "5404",
+      "5634"
+    ],
+    "population": 1969,
+    "area": 600.61,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vard%C3%B8%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vard%C3%B8%20by.jpg?width=1024",
+    "lat": 70.366669444444,
+    "lon": 31.1,
+    "county": "Finnmark",
+    "admin": "Vardø"
+  },
+  {
+    "id": "Q109489",
+    "name": "Berlevåg",
+    "numbers": [
+      "2024",
+      "5440",
+      "5630"
+    ],
+    "population": 864,
+    "area": 1121.78,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Berlev%C3%A5g%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Berlev%C3%A5g%20sentrum.jpg?width=1024",
+    "lat": 70.857,
+    "lon": 29.093,
+    "county": "Finnmark",
+    "admin": "Berlevåg"
+  },
+  {
+    "id": "Q109841",
+    "name": "Hasvik",
+    "numbers": [
+      "2015",
+      "5433",
+      "5616"
+    ],
+    "population": 987,
+    "area": 555.57,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hasvik%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8rv%C3%A6r%2C%20S%C3%B8r%C3%B8ya%2C%20N%C3%B3rsko%2C%202013%20-%20panoramio%20%282%29.jpg?width=1024",
+    "lat": 70.591666666667,
+    "lon": 22.302777777778,
+    "county": "Finnmark",
+    "admin": "Breivikbotn"
+  },
+  {
+    "id": "Q112855",
+    "name": "Brønnøy",
+    "numbers": [
+      "1813"
+    ],
+    "population": 7841,
+    "area": 1046.01,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Br%C3%B8nn%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Br%C3%B8nn%C3%B8ysund%20Juni%202005.jpg?width=1024",
+    "lat": 65.475833333333,
+    "lon": 12.400277777778,
+    "county": "Nordland",
+    "admin": "Brønnøysund"
+  },
+  {
+    "id": "Q113662",
+    "name": "Nesseby",
+    "numbers": [
+      "2027",
+      "5442",
+      "5636"
+    ],
+    "population": 874,
+    "area": 1436.94,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nesseby%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nesseby%20church.jpg?width=1024",
+    "lat": 70.133333333333,
+    "lon": 28.6,
+    "county": "Finnmark",
+    "admin": "Varangerbotn"
+  },
+  {
+    "id": "Q113697",
+    "name": "Måsøy",
+    "numbers": [
+      "2018",
+      "5434",
+      "5618"
+    ],
+    "population": 1089,
+    "area": 1135.83,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%A5s%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hav%C3%B8ysund%20winter.jpg?width=1024",
+    "lat": 70.750719444444,
+    "lon": 24.785161111111,
+    "county": "Finnmark",
+    "admin": "Havøysund"
+  },
+  {
+    "id": "Q113710",
+    "name": "Andøy",
+    "numbers": [
+      "1871"
+    ],
+    "population": 4525,
+    "area": 656.15,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/And%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andenes%2C%20Norway%202006.jpg?width=1024",
+    "lat": 69.320556,
+    "lon": 16.120278,
+    "county": "Nordland",
+    "admin": "Andenes"
+  },
+  {
+    "id": "Q113729",
+    "name": "Gamvik",
+    "numbers": [
+      "5626"
+    ],
+    "population": 1019,
+    "area": 1416.34,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Gamvik%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mehamn.jpg?width=1024",
+    "lat": 70.916667,
+    "lon": 28.05,
+    "county": "Finnmark",
+    "admin": "Mehamn"
+  },
+  {
+    "id": "Q128762",
+    "name": "Skjervøy",
+    "numbers": [
+      "1941",
+      "5427",
+      "5542"
+    ],
+    "population": 2802,
+    "area": 473.7,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Skjerv%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skjerv%C3%B8y%20R%C3%A5dhus.jpg?width=1024",
+    "lat": 70.085277777778,
+    "lon": 20.659444444444,
+    "county": "Troms",
+    "admin": "Skjervøy"
+  },
+  {
+    "id": "Q130048",
+    "name": "Røst",
+    "numbers": [
+      "1856"
+    ],
+    "population": 471,
+    "area": 10.12,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8st%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8st%20Islands%2C%20Hernyken%2C%20Trenyken%2C%20Storfjellet.jpg?width=1024",
+    "lat": 67.52,
+    "lon": 12.098888888889,
+    "county": "Nordland",
+    "admin": "Røstlandet"
+  },
+  {
+    "id": "Q175704",
+    "name": "Gratangen",
+    "numbers": [
+      "1919",
+      "5414",
+      "5516"
+    ],
+    "population": 1062,
+    "area": 312.75,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Gratangen%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85rsteinbrua%20bridge%20over%20Gratangen%20fjord%2C%20Gratangen%2C%20Troms%20og%20Finnmark%2C%20Norway%2C%202022%20June.jpg?width=1024",
+    "lat": 68.690036111111,
+    "lon": 17.541747222222,
+    "county": "Troms",
+    "admin": "Årstein"
+  },
+  {
+    "id": "Q217808",
+    "name": "Alstahaug",
+    "numbers": [
+      "1820"
+    ],
+    "population": 7489,
+    "area": 188.12,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Alstahaug%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sandnessj%C3%B8en%20og%20Botnfjorden%20fra%20fly.jpg?width=1024",
+    "lat": 65.956666666667,
+    "lon": 12.572777777778,
+    "county": "Nordland",
+    "admin": "Sandnessjøen"
+  },
+  {
+    "id": "Q221119",
+    "name": "Bodø",
+    "numbers": [
+      "1804"
+    ],
+    "population": 53638,
+    "area": 1395.27,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Bod%C3%B8%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bod%C3%B8%202006.jpg?width=1024",
+    "lat": 67.283055555556,
+    "lon": 14.383055555556,
+    "county": "Nordland",
+    "admin": "Bodø"
+  },
+  {
+    "id": "Q252381",
+    "name": "Dyrøy",
+    "numbers": [
+      "1926",
+      "5420",
+      "5528"
+    ],
+    "population": 1077,
+    "area": 288.54,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Dyr%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dyroya.jpg?width=1024",
+    "lat": 69.066944444444,
+    "lon": 17.741388888889,
+    "county": "Troms",
+    "admin": "Brøstadbotn"
+  },
+  {
+    "id": "Q308134",
+    "name": "Øksnes",
+    "numbers": [
+      "1868"
+    ],
+    "population": 4613,
+    "area": 319.57,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98ksnes%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Night%20in%20%C3%98ksnes.jpg?width=1024",
+    "lat": 68.888333333333,
+    "lon": 15.183333333333,
+    "county": "Nordland",
+    "admin": "Myre"
+  },
+  {
+    "id": "Q483885",
+    "name": "Porsanger",
+    "numbers": [
+      "2020",
+      "5436",
+      "5622"
+    ],
+    "population": 3906,
+    "area": 4872.58,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Porsanger%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lakselv.JPG?width=1024",
+    "lat": 70.05214,
+    "lon": 24.95594,
+    "county": "Finnmark",
+    "admin": "Lakselv"
+  },
+  {
+    "id": "Q483964",
+    "name": "Tana",
+    "numbers": [
+      "2025",
+      "5441",
+      "5628"
+    ],
+    "population": 2806,
+    "area": 4051.35,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Tana%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tanaelva%20River%20Bridge%20Tana.jpg?width=1024",
+    "lat": 70.196388888889,
+    "lon": 28.186669444444,
+    "county": "Finnmark",
+    "admin": "Tana bru"
+  },
+  {
+    "id": "Q484012",
+    "name": "Bø",
+    "numbers": [
+      "1867"
+    ],
+    "population": 2609,
+    "area": 246.7,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/B%C3%B8%20Nordland%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/B%C3%B8%20kommunehus%202005-07-19.jpeg?width=1024",
+    "lat": 68.695277777778,
+    "lon": 14.579444444444,
+    "county": "Nordland",
+    "admin": "Straume"
+  },
+  {
+    "id": "Q484043",
+    "name": "Hadsel",
+    "numbers": [
+      "1866"
+    ],
+    "population": 8374,
+    "area": 566.55,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hadsel%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stokmarknes%20winter.jpg?width=1024",
+    "lat": 68.535,
+    "lon": 14.825,
+    "county": "Nordland",
+    "admin": "Stokmarknes"
+  },
+  {
+    "id": "Q484097",
+    "name": "Sørfold",
+    "numbers": [
+      "1845"
+    ],
+    "population": 1819,
+    "area": 1637.42,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8rfold%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Zwischen%20Narvik%20%26%20Mo%20i%20Rana%20Norwegen.JPG?width=1024",
+    "lat": 67.220556,
+    "lon": 15.808611,
+    "county": "Nordland",
+    "admin": "Straumen"
+  },
+  {
+    "id": "Q484208",
+    "name": "Gildeskål",
+    "numbers": [
+      "1838"
+    ],
+    "population": 2024,
+    "area": 664.7,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Gildesk%C3%A5l%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8rfugl%C3%B8y.jpg?width=1024",
+    "lat": 67.033,
+    "lon": 14.033,
+    "county": "Nordland",
+    "admin": "Inndyr"
+  },
+  {
+    "id": "Q484252",
+    "name": "Lødingen",
+    "numbers": [
+      "1851"
+    ],
+    "population": 1964,
+    "area": 527.41,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%B8dingen%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Loedingen-2020.jpg?width=1024",
+    "lat": 68.404166666667,
+    "lon": 15.571388888889,
+    "county": "Nordland",
+    "admin": "Lødingen"
+  },
+  {
+    "id": "Q484322",
+    "name": "Rana",
+    "numbers": [
+      "1833"
+    ],
+    "population": 25844,
+    "area": 4460.19,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Rana%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mo%20i%20Rana%20Norwegen.JPG?width=1024",
+    "lat": 66.366667,
+    "lon": 14.333333,
+    "county": "Nordland",
+    "admin": "Mo i Rana"
+  },
+  {
+    "id": "Q486717",
+    "name": "Balsfjord",
+    "numbers": [
+      "1933",
+      "5422",
+      "5532"
+    ],
+    "population": 5625,
+    "area": 1496.96,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Balsfjord%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordkjosbotn.JPG?width=1024",
+    "lat": 69.304722222222,
+    "lon": 19.203611111111,
+    "county": "Troms",
+    "admin": "Storsteinnes"
+  },
+  {
+    "id": "Q487524",
+    "name": "Beiarn",
+    "numbers": [
+      "1839"
+    ],
+    "population": 1032,
+    "area": 1222.32,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Beiarn%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Beiarn%20Church.jpg?width=1024",
+    "lat": 66.917222222222,
+    "lon": 14.674722222222,
+    "county": "Nordland",
+    "admin": "Moldjord"
+  },
+  {
+    "id": "Q487538",
+    "name": "Hamarøy",
+    "numbers": [
+      "1875"
+    ],
+    "population": 2808,
+    "area": 2020.45,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hamar%C3%B8y%20komm%202020.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/T%C3%B8mmernes.jpg?width=1024",
+    "lat": 68.066667,
+    "lon": 15.766667,
+    "county": "Nordland",
+    "admin": "Oppeid"
+  },
+  {
+    "id": "Q487636",
+    "name": "Moskenes",
+    "numbers": [
+      "1874"
+    ],
+    "population": 976,
+    "area": 118.79,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Moskenes%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Reine%20Lofoten.jpg?width=1024",
+    "lat": 67.925277777778,
+    "lon": 12.958888888889,
+    "county": "Nordland",
+    "admin": "Reine"
+  },
+  {
+    "id": "Q488046",
+    "name": "Rødøy",
+    "numbers": [
+      "1836"
+    ],
+    "population": 1140,
+    "area": 711.29,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8d%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Arctic%20Circle%202015%2022114%20b.jpg?width=1024",
+    "lat": 66.583333333333,
+    "lon": 13.35,
+    "county": "Nordland",
+    "admin": "Vågaholmen"
+  },
+  {
+    "id": "Q488258",
+    "name": "Ibestad",
+    "numbers": [
+      "1917",
+      "5413",
+      "5514"
+    ],
+    "population": 1287,
+    "area": 241.07,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Ibestad%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hamnvik.JPG?width=1024",
+    "lat": 68.829444444444,
+    "lon": 17.245833333333,
+    "county": "Troms",
+    "admin": "Hamnvik"
+  },
+  {
+    "id": "Q488375",
+    "name": "Vega",
+    "numbers": [
+      "1815"
+    ],
+    "population": 1202,
+    "area": 164.79,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vega%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Neshrbr.jpg?width=1024",
+    "lat": 65.675277777778,
+    "lon": 11.957777777778,
+    "county": "Nordland",
+    "admin": "Gladstad"
+  },
+  {
+    "id": "Q488384",
+    "name": "Hattfjelldal",
+    "numbers": [
+      "1826"
+    ],
+    "population": 1255,
+    "area": 2684.32,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hattfjelldal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Hatten.JPG?width=1024",
+    "lat": 65.5475,
+    "lon": 14.134444444444,
+    "county": "Nordland",
+    "admin": "Hattfjelldal"
+  },
+  {
+    "id": "Q488776",
+    "name": "Hemnes",
+    "numbers": [
+      "1832"
+    ],
+    "population": 4486,
+    "area": 1589.51,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hemnes%20Kommunevapen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hemnesberget.JPG?width=1024",
+    "lat": 66.054166666667,
+    "lon": 14.030555555556,
+    "county": "Nordland",
+    "admin": "Korgen"
+  },
+  {
+    "id": "Q488955",
+    "name": "Målselv",
+    "numbers": [
+      "1924",
+      "5418",
+      "5524"
+    ],
+    "population": 6819,
+    "area": 3326.34,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%A5lselv%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%A5lselva%20mouth%20%282%29.jpg?width=1024",
+    "lat": 68.975,
+    "lon": 19.064444444444,
+    "county": "Troms",
+    "admin": "Moen"
+  },
+  {
+    "id": "Q488959",
+    "name": "Kvænangen",
+    "numbers": [
+      "1943",
+      "5429",
+      "5546"
+    ],
+    "population": 1125,
+    "area": 2109.37,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Kv%C3%A6nangen%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Zwischen%20Alta%20%26%20Narvik%20Norwegen.jpg?width=1024",
+    "lat": 69.894166666667,
+    "lon": 21.980277777778,
+    "county": "Troms",
+    "admin": "Burfjord"
+  },
+  {
+    "id": "Q489347",
+    "name": "Dønna",
+    "numbers": [
+      "1827"
+    ],
+    "population": 1445,
+    "area": 192.55,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/D%C3%B8nna%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Doennmannen-2018.jpg?width=1024",
+    "lat": 66.083333,
+    "lon": 12.516667,
+    "county": "Nordland",
+    "admin": "Solfjellsjøen"
+  },
+  {
+    "id": "Q489362",
+    "name": "Bindal",
+    "numbers": [
+      "1811"
+    ],
+    "population": 1361,
+    "area": 1266.07,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Bindal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Photography%20of%20Terr%C3%A5k.jpg?width=1024",
+    "lat": 65.096666666667,
+    "lon": 12.588611111111,
+    "county": "Nordland",
+    "admin": "Terråk"
+  },
+  {
+    "id": "Q490246",
+    "name": "Vågan",
+    "numbers": [
+      "1865"
+    ],
+    "population": 9905,
+    "area": 479.17,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A5gan%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Henningsv%C3%A6r%20om%20sommeren.jpg?width=1024",
+    "lat": 68.278056,
+    "lon": 14.520833,
+    "county": "Nordland",
+    "admin": "Svolvær"
+  },
+  {
+    "id": "Q493315",
+    "name": "Bardu kommune",
+    "numbers": [
+      "1922",
+      "5416",
+      "5520"
+    ],
+    "population": 4004,
+    "area": 2703.89,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Bardu%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Setermoen%20panorama.jpg?width=1024",
+    "lat": 68.86058,
+    "lon": 18.35053,
+    "county": "Troms",
+    "admin": "Setermoen"
+  },
+  {
+    "id": "Q493758",
+    "name": "Grane",
+    "numbers": [
+      "1825"
+    ],
+    "population": 1415,
+    "area": 2004.16,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Grane%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Trofors%20jernbanestasjon.jpg?width=1024",
+    "lat": 65.400555555556,
+    "lon": 13.510555555556,
+    "county": "Nordland",
+    "admin": "Trofors"
+  },
+  {
+    "id": "Q493932",
+    "name": "Herøy",
+    "numbers": [
+      "1818"
+    ],
+    "population": 1874,
+    "area": 64.46,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Her%C3%B8y%20Nordland%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Her%C3%B8y%2C%20Helgeland%2C%20Nordland%2C%20Norway%20-%20panoramio.jpg?width=1024",
+    "lat": 65.98427,
+    "lon": 12.28916,
+    "county": "Nordland",
+    "admin": "Silvalen"
+  },
+  {
+    "id": "Q493942",
+    "name": "Kåfjord kommune",
+    "numbers": [
+      "1940",
+      "5426",
+      "5540"
+    ],
+    "population": 1939,
+    "area": 991.24,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/K%C3%A5fjord%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/K%C3%A5fjord%20Olderdalen.JPG?width=1024",
+    "lat": 69.604,
+    "lon": 20.53456,
+    "county": "Troms",
+    "admin": "Olderdalen"
+  },
+  {
+    "id": "Q494005",
+    "name": "Steigen",
+    "numbers": [
+      "1848"
+    ],
+    "population": 2679,
+    "area": 1009.25,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Steigen%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Brennviksanden.jpg?width=1024",
+    "lat": 67.798333333333,
+    "lon": 15.171944444444,
+    "county": "Nordland",
+    "admin": "Leinesfjord"
+  },
+  {
+    "id": "Q494018",
+    "name": "Lyngen",
+    "numbers": [
+      "1938",
+      "5424",
+      "5536"
+    ],
+    "population": 2732,
+    "area": 812.56,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyngen%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyngseidet-kjosen-lyngen-alps.jpg?width=1024",
+    "lat": 69.690277777778,
+    "lon": 20.081666666667,
+    "county": "Troms",
+    "admin": "Lyngseidet"
+  },
+  {
+    "id": "Q494059",
+    "name": "Nordreisa",
+    "numbers": [
+      "1942",
+      "5428",
+      "5544"
+    ],
+    "population": 4863,
+    "area": 3437.57,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordreisa%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordreisa%20Zentrum.jpg?width=1024",
+    "lat": 69.76826,
+    "lon": 21.0257,
+    "county": "Troms",
+    "admin": "Storslett"
+  },
+  {
+    "id": "Q500194",
+    "name": "Salangen",
+    "numbers": [
+      "1921",
+      "1923",
+      "5417",
+      "5522"
+    ],
+    "population": 2132,
+    "area": 458,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Salangen%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sjovegan%20from%20Hogfjell.jpg?width=1024",
+    "lat": 68.900555555556,
+    "lon": 17.893055555556,
+    "county": "Troms",
+    "admin": "Sjøvegan"
+  },
+  {
+    "id": "Q48393",
+    "name": "Aremark",
+    "numbers": [
+      "3124"
+    ],
+    "population": 1354,
+    "area": 319.27,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Aremark%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Great%20sunset%20on%20lake%20foxen%20%28july%202005%2C%2025%29.jpg?width=1024",
+    "lat": 59.223055555556,
+    "lon": 11.695555555556,
+    "county": "Østfold",
+    "admin": "Fosby"
+  },
+  {
+    "id": "Q57858",
+    "name": "Hurdal",
+    "numbers": [
+      "3242"
+    ],
+    "population": 3078,
+    "area": 284.95,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hurdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hurdal%20og%20Hurdalss%C3%B8en%20sett%20fra%20Rognstadkollen%2011.jpg?width=1024",
+    "lat": 60.415833333333,
+    "lon": 11.008611111111,
+    "county": "Akershus",
+    "admin": "Torget"
+  },
+  {
+    "id": "Q57860",
+    "name": "Lørenskog",
+    "numbers": [
+      "3222"
+    ],
+    "population": 51511,
+    "area": 70.55,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%B8renskog%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%B8renskog%20kirke%2020080614-2.jpg?width=1024",
+    "lat": 59.898888888889,
+    "lon": 10.964166666667,
+    "county": "Akershus",
+    "admin": "Kjenn"
+  },
+  {
+    "id": "Q57862",
+    "name": "Nannestad",
+    "numbers": [
+      "3238"
+    ],
+    "population": 16662,
+    "area": 340.98,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nannestad%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nannestad%20kommune.jpg?width=1024",
+    "lat": 60.245555555556,
+    "lon": 10.952777777778,
+    "county": "Akershus",
+    "admin": "Teigebyen"
+  },
+  {
+    "id": "Q57864",
+    "name": "Nesodden",
+    "numbers": [
+      "3212"
+    ],
+    "population": 21005,
+    "area": 61.46,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nesodden%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oksval.JPG?width=1024",
+    "lat": 59.808611111111,
+    "lon": 10.655555555556,
+    "county": "Akershus",
+    "admin": "Nesoddtangen"
+  },
+  {
+    "id": "Q57865",
+    "name": "Nittedal",
+    "numbers": [
+      "3232"
+    ],
+    "population": 26032,
+    "area": 186.23,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nittedal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rundkollen%20view%20over%20Hakadal%20Norway.jpg?width=1024",
+    "lat": 60.073055555556,
+    "lon": 10.872222222222,
+    "county": "Akershus",
+    "admin": "Rotnes"
+  },
+  {
+    "id": "Q57870",
+    "name": "Rælingen",
+    "numbers": [
+      "3224"
+    ],
+    "population": 20904,
+    "area": 71.68,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%A6lingen%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%A6lingen1.JPG?width=1024",
+    "lat": 59.889166666667,
+    "lon": 11.075277777778,
+    "county": "Akershus",
+    "admin": "Fjerdingby"
+  },
+  {
+    "id": "Q57917",
+    "name": "Ullensaker",
+    "numbers": [
+      "3209"
+    ],
+    "population": 45982,
+    "area": 252.45,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Ullensaker%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/JESSHEIM%20Ullensaker%2C%20Norway.%20Gotaasallen%20Herredshuset%20%28Holger%20Sinding-Larsen%201901%29%20red%20wooden%20municipal%20building%20former%20town%20hall%20Selskapslokale%202023-06-10%20IMG%205514.jpg?width=1024",
+    "lat": 60.143611111111,
+    "lon": 11.175,
+    "county": "Akershus",
+    "admin": "Jessheim"
+  },
+  {
+    "id": "Q57918",
+    "name": "Vestby",
+    "numbers": [
+      "3216"
+    ],
+    "population": 20167,
+    "area": 133.97,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vestby%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vestby%20stasjon%20TRS%20070403%20002.jpg?width=1024",
+    "lat": 59.575,
+    "lon": 10.731944444444,
+    "county": "Akershus",
+    "admin": "Vestby"
+  },
+  {
+    "id": "Q93633",
+    "name": "Flesberg",
+    "numbers": [
+      "0631",
+      "3050",
+      "3334"
+    ],
+    "population": 2790,
+    "area": 561.92,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Flesberg%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Flesberg%20kommunehus.jpg?width=1024",
+    "lat": 59.847777777778,
+    "lon": 9.4822222222222,
+    "county": "Buskerud",
+    "admin": "Lampeland"
+  },
+  {
+    "id": "Q93703",
+    "name": "Flå",
+    "numbers": [
+      "0615",
+      "3039",
+      "3320"
+    ],
+    "population": 1122,
+    "area": 704.41,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Fl%C3%A5%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Flaa%20Kommune%20Verwaltung.jpg?width=1024",
+    "lat": 60.408611111111,
+    "lon": 9.4841666666667,
+    "county": "Buskerud",
+    "admin": "Flå"
+  },
+  {
+    "id": "Q104095",
+    "name": "Molde",
+    "numbers": [
+      "1506"
+    ],
+    "population": 33291,
+    "area": 1503.36,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Molde%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Molde%20seilet%20cruise.JPG?width=1024",
+    "lat": 62.733333,
+    "lon": 7.183333,
+    "county": "Møre og Romsdal",
+    "admin": "Molde"
+  },
+  {
+    "id": "Q107135",
+    "name": "Fredrikstad",
+    "numbers": [
+      "3107"
+    ],
+    "population": 86243,
+    "area": 292.56,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Fredrikstad%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fredrikstad%20bryggepromenade%20fra%20Kr%C3%A5ker%C3%B8ybroa.JPG?width=1024",
+    "lat": 59.216667,
+    "lon": 10.95,
+    "county": "Østfold",
+    "admin": "Fredrikstad"
+  },
+  {
+    "id": "Q107392",
+    "name": "Tønsberg",
+    "numbers": [
+      "3905"
+    ],
+    "population": 60246,
+    "area": 329.26,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/T%C3%B8nsberg%20komm%202020.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Brygga%20i%20T%C3%B8nsberg.JPG?width=1024",
+    "lat": 59.298055555556,
+    "lon": 10.423611111111,
+    "county": "Vestfold",
+    "admin": "Tønsberg"
+  },
+  {
+    "id": "Q108025",
+    "name": "Sarpsborg",
+    "numbers": [
+      "3105"
+    ],
+    "population": 60614,
+    "area": 405.6,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarpsborg%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarpsborg%20station%20and%20town%20centre%20from%20north%20%283%29.jpg?width=1024",
+    "lat": 59.290561111111,
+    "lon": 11.202780555556,
+    "county": "Østfold",
+    "admin": "Sarpsborg"
+  },
+  {
+    "id": "Q108988",
+    "name": "Kongsberg",
+    "numbers": [
+      "0604",
+      "3006",
+      "3303"
+    ],
+    "population": 29169,
+    "area": 793.09,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Kongsberg%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kongsberg%20Vestsida.jpg?width=1024",
+    "lat": 59.665,
+    "lon": 9.6463888888889,
+    "county": "Buskerud",
+    "admin": "Kongsberg"
+  },
+  {
+    "id": "Q109005",
+    "name": "Sandefjord",
+    "numbers": [
+      "3907"
+    ],
+    "population": 67062,
+    "area": 422.26,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sandefjord%20komm%202017.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sandefjord%20N%C3%A6ringsforening.jpg?width=1024",
+    "lat": 59.128811111111,
+    "lon": 10.219711111111,
+    "county": "Vestfold",
+    "admin": "Sandefjord"
+  },
+  {
+    "id": "Q109021",
+    "name": "Moss",
+    "numbers": [
+      "3103"
+    ],
+    "population": 53207,
+    "area": 137.77,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Rygge%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Moss%2C%20Norway.jpg?width=1024",
+    "lat": 59.43403,
+    "lon": 10.65771,
+    "county": "Østfold",
+    "admin": "Moss"
+  },
+  {
+    "id": "Q109036",
+    "name": "Haugesund",
+    "numbers": [
+      "1106"
+    ],
+    "population": 38663,
+    "area": 72.68,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Haugesund%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Haugesund%20r%C3%A5dhus%20R%C3%A5dhuset%20City%20Hall%20Munthe-Kaas%20Blakstad%201931%20Fontene%20Nils%20Flakstad%20Sk%C3%A5regata%20Norway%202020-06-08%2009560.jpg?width=1024",
+    "lat": 59.41015,
+    "lon": 5.27551,
+    "county": "Rogaland",
+    "admin": "Haugesund"
+  },
+  {
+    "id": "Q109042",
+    "name": "Halden",
+    "numbers": [
+      "3101"
+    ],
+    "population": 32082,
+    "area": 642.31,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Halden%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Halden%20Fra%20Festningen.jpg?width=1024",
+    "lat": 59.126389,
+    "lon": 11.482778,
+    "county": "Østfold",
+    "admin": "Halden"
+  },
+  {
+    "id": "Q109048",
+    "name": "Horten",
+    "numbers": [
+      "3901"
+    ],
+    "population": 28173,
+    "area": 70.96,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Horten%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norwegian%20Naval%20Museum%20Horten.jpg?width=1024",
+    "lat": 59.420830555556,
+    "lon": 10.432780555556,
+    "county": "Vestfold",
+    "admin": "Horten"
+  },
+  {
+    "id": "Q109483",
+    "name": "Kristiansund",
+    "numbers": [
+      "1505"
+    ],
+    "population": 24479,
+    "area": 87.44,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Kristiansund%20vapen.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storkaia%20Kristiansund.JPG?width=1024",
+    "lat": 63.11152,
+    "lon": 7.73198,
+    "county": "Møre og Romsdal",
+    "admin": "Kristiansund"
+  },
+  {
+    "id": "Q110311",
+    "name": "Øvre Eiker",
+    "numbers": [
+      "0624",
+      "3048",
+      "3314"
+    ],
+    "population": 20965,
+    "area": 456.69,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98vre%20Eiker%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ovre%20Eiker%20council%20offices.jpg?width=1024",
+    "lat": 59.771944444444,
+    "lon": 9.8361111111111,
+    "county": "Buskerud",
+    "admin": "Hokksund"
+  },
+  {
+    "id": "Q110848",
+    "name": "Ringerike",
+    "numbers": [
+      "0605",
+      "3007",
+      "3305"
+    ],
+    "population": 31942,
+    "area": 1555.11,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Ringerike%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Honefoss%20flyfoto3.jpg?width=1024",
+    "lat": 60.205280555556,
+    "lon": 10.1525,
+    "county": "Buskerud"
+  },
+  {
+    "id": "Q113538",
+    "name": "Ål",
+    "numbers": [
+      "0619",
+      "3043",
+      "3328"
+    ],
+    "population": 5106,
+    "area": 1174.98,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85l%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85l.JPG?width=1024",
+    "lat": 60.675555555556,
+    "lon": 8.5769444444444,
+    "county": "Buskerud",
+    "admin": "Ål"
+  },
+  {
+    "id": "Q156125",
+    "name": "Larvik",
+    "numbers": [
+      "3909"
+    ],
+    "population": 49022,
+    "area": 812.89,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Larvik%20komm%202018.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Larvik%20%2814387497427%29.jpg?width=1024",
+    "lat": 59.05328,
+    "lon": 10.03517,
+    "county": "Vestfold",
+    "admin": "Larvik"
+  },
+  {
+    "id": "Q156420",
+    "name": "Skiptvet kommune",
+    "numbers": [
+      "3116"
+    ],
+    "population": 3940,
+    "area": 101.2,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Skiptvet%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skiptvet%20bygdetun.jpg?width=1024",
+    "lat": 59.480555555556,
+    "lon": 11.144444444444,
+    "county": "Østfold",
+    "admin": "Meieribyen"
+  },
+  {
+    "id": "Q156453",
+    "name": "Ørsta",
+    "numbers": [
+      "1520"
+    ],
+    "population": 11068,
+    "area": 661.58,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98rsta%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98rstafjorden.jpg?width=1024",
+    "lat": 62.200277777778,
+    "lon": 6.1322222222222,
+    "county": "Møre og Romsdal",
+    "admin": "Ørsta"
+  },
+  {
+    "id": "Q250055",
+    "name": "Hjelmeland",
+    "numbers": [
+      "1133"
+    ],
+    "population": 2612,
+    "area": 1067.78,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hjelmeland%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aardal.JPG?width=1024",
+    "lat": 59.217222,
+    "lon": 6.461111,
+    "county": "Rogaland",
+    "admin": "Hjelmelandsvågen"
+  },
+  {
+    "id": "Q255148",
+    "name": "Gjesdal",
+    "numbers": [
+      "1122"
+    ],
+    "population": 12715,
+    "area": 617.98,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Gjesdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gjesdal%20Norwegen.jpg?width=1024",
+    "lat": 58.781944,
+    "lon": 6.008611,
+    "county": "Rogaland",
+    "admin": "Ålgård"
+  },
+  {
+    "id": "Q483871",
+    "name": "Holmestrand",
+    "numbers": [
+      "3903"
+    ],
+    "population": 27086,
+    "area": 432.36,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Holmestrand%20komm%202020.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Holmestrand.jpg?width=1024",
+    "lat": 59.495280555556,
+    "lon": 10.248611111111,
+    "county": "Vestfold",
+    "admin": "Holmestrand"
+  },
+  {
+    "id": "Q483877",
+    "name": "Eigersund",
+    "numbers": [
+      "1101"
+    ],
+    "population": 15546,
+    "area": 432.48,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Eigersund%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bilde%20av%20Egersund.jpg?width=1024",
+    "lat": 58.478333333333,
+    "lon": 6.0630555555556,
+    "county": "Rogaland",
+    "admin": "Egersund"
+  },
+  {
+    "id": "Q483899",
+    "name": "Smøla",
+    "numbers": [
+      "1573"
+    ],
+    "population": 2141,
+    "area": 271.91,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sm%C3%B8la%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tyrhaug%20Fyr.jpg?width=1024",
+    "lat": 63.401944444444,
+    "lon": 8.0291666666667,
+    "county": "Møre og Romsdal",
+    "admin": "Hopen"
+  },
+  {
+    "id": "Q483902",
+    "name": "Karmøy",
+    "numbers": [
+      "1149"
+    ],
+    "population": 43990,
+    "area": 229.96,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Karm%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Karm%C3%B8y%20r%C3%A5dhus.jpg?width=1024",
+    "lat": 59.25,
+    "lon": 5.25,
+    "county": "Rogaland",
+    "admin": "Kopervik"
+  },
+  {
+    "id": "Q483906",
+    "name": "Råde",
+    "numbers": [
+      "3112"
+    ],
+    "population": 7892,
+    "area": 118.77,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%A5de%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fornminner%20p%C3%A5%20Lundeby%2001%20480px.JPG?width=1024",
+    "lat": 59.348888888889,
+    "lon": 10.855,
+    "county": "Østfold",
+    "admin": "Karlshus"
+  },
+  {
+    "id": "Q483911",
+    "name": "Rollag",
+    "numbers": [
+      "0632",
+      "3051",
+      "3336"
+    ],
+    "population": 1452,
+    "area": 449.29,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Rollag%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mykstufoss%20Numedalslaagen.jpg?width=1024",
+    "lat": 59.983888888889,
+    "lon": 9.2952805555556,
+    "county": "Buskerud",
+    "admin": "Rollag"
+  },
+  {
+    "id": "Q483969",
+    "name": "Rakkestad",
+    "numbers": [
+      "3120"
+    ],
+    "population": 8583,
+    "area": 434.71,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Rakkestad%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rakkestadelva.JPG?width=1024",
+    "lat": 59.373055555556,
+    "lon": 11.420277777778,
+    "county": "Østfold",
+    "admin": "Rakkestad"
+  },
+  {
+    "id": "Q483986",
+    "name": "Nesbyen",
+    "numbers": [
+      "0616",
+      "3040",
+      "3322"
+    ],
+    "population": 3234,
+    "area": 809.63,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nesbyen%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nesbyen%2C%20Nes.jpg?width=1024",
+    "lat": 60.558333333333,
+    "lon": 9.1011111111111,
+    "county": "Buskerud",
+    "admin": "Nesbyen"
+  },
+  {
+    "id": "Q484001",
+    "name": "Modum",
+    "numbers": [
+      "0623",
+      "3047",
+      "3316"
+    ],
+    "population": 14776,
+    "area": 517.24,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Modum%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Modum%20r%C3%A5dhus.jpg?width=1024",
+    "lat": 59.9575,
+    "lon": 9.9827777777778,
+    "county": "Buskerud",
+    "admin": "Vikersund"
+  },
+  {
+    "id": "Q484057",
+    "name": "Hol",
+    "numbers": [
+      "0620",
+      "3044",
+      "3330"
+    ],
+    "population": 4552,
+    "area": 1854.54,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hol%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Geilo%20Berg%20und%20See.jpg?width=1024",
+    "lat": 60.615,
+    "lon": 8.302222,
+    "county": "Buskerud",
+    "admin": "Hol"
+  },
+  {
+    "id": "Q484111",
+    "name": "Averøy",
+    "numbers": [
+      "1554"
+    ],
+    "population": 6007,
+    "area": 175.68,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Aver%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%A5holmen.jpg?width=1024",
+    "lat": 62.997222222222,
+    "lon": 7.5552777777778,
+    "county": "Møre og Romsdal",
+    "admin": "Bruhagen"
+  },
+  {
+    "id": "Q485297",
+    "name": "Sauda",
+    "numbers": [
+      "1135"
+    ],
+    "population": 4603,
+    "area": 546.56,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sauda%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Saudafjorden.png?width=1024",
+    "lat": 59.6875,
+    "lon": 6.437222,
+    "county": "Rogaland",
+    "admin": "Sauda"
+  },
+  {
+    "id": "Q485608",
+    "name": "Hå kommune",
+    "numbers": [
+      "1119"
+    ],
+    "population": 20087,
+    "area": 257.99,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%A5%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/J%C3%A6rstrendene%20Landskapsvernomr%C3%A5de%20-%20H%C3%A5%2C%20Norway%202021-08-09%20%2807%29.jpg?width=1024",
+    "lat": 58.606388888889,
+    "lon": 5.7247222222222,
+    "county": "Rogaland",
+    "admin": "Varhaug"
+  },
+  {
+    "id": "Q486704",
+    "name": "Jevnaker",
+    "numbers": [
+      "3236"
+    ],
+    "population": 7040,
+    "area": 225.71,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Jevnaker%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nesbakken%20at%20Jevnaker%2C%20Norway%20II.jpg?width=1024",
+    "lat": 60.238889,
+    "lon": 10.393056,
+    "county": "Akershus",
+    "admin": "Jevnaker"
+  },
+  {
+    "id": "Q486726",
+    "name": "Sigdal",
+    "numbers": [
+      "0621",
+      "3045",
+      "3332"
+    ],
+    "population": 3514,
+    "area": 842.36,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sigdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sigdal%2C%20Norway%20-%20panoramio%20%282%29.jpg?width=1024",
+    "lat": 60.0525,
+    "lon": 9.6011111111111,
+    "county": "Buskerud",
+    "admin": "Prestfoss"
+  },
+  {
+    "id": "Q486736",
+    "name": "Marker",
+    "numbers": [
+      "3122"
+    ],
+    "population": 3647,
+    "area": 412.9,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Marker%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oerje03052006.jpg?width=1024",
+    "lat": 59.511111111111,
+    "lon": 11.628333333333,
+    "county": "Østfold",
+    "admin": "Ørje"
+  },
+  {
+    "id": "Q488026",
+    "name": "Nes",
+    "numbers": [
+      "3228"
+    ],
+    "population": 24948,
+    "area": 640.77,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nes%20Akershus%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Svanfossen.JPG?width=1024",
+    "lat": 60.130833,
+    "lon": 11.489167,
+    "county": "Akershus",
+    "admin": "Årnes"
+  },
+  {
+    "id": "Q488060",
+    "name": "Vestnes",
+    "numbers": [
+      "1535"
+    ],
+    "population": 7315,
+    "area": 351.7,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vestnes%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vestnes%20Church%2C%20Vestnes%20-%20panoramio%20%28269%29.jpg?width=1024",
+    "lat": 62.6213,
+    "lon": 7.08966,
+    "county": "Møre og Romsdal",
+    "admin": "Vestnes"
+  },
+  {
+    "id": "Q488252",
+    "name": "Tingvoll",
+    "numbers": [
+      "1560"
+    ],
+    "population": 3066,
+    "area": 336.81,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Tingvoll%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tingvollfjorden2-Norway.jpg?width=1024",
+    "lat": 62.9,
+    "lon": 8.2,
+    "county": "Møre og Romsdal",
+    "admin": "Tingvollvågen"
+  },
+  {
+    "id": "Q488398",
+    "name": "Lunner",
+    "numbers": [
+      "3234"
+    ],
+    "population": 9463,
+    "area": 291.84,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Lunner%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lunner%20r%C3%A5dhus%20og%20FV2280%20Sandsvegen.jpg?width=1024",
+    "lat": 60.252777777778,
+    "lon": 10.667222222222,
+    "county": "Akershus",
+    "admin": "Roa"
+  },
+  {
+    "id": "Q488435",
+    "name": "Hvaler",
+    "numbers": [
+      "3110"
+    ],
+    "population": 4714,
+    "area": 90.12,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hvaler%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aker%C3%B8ya.jpg?width=1024",
+    "lat": 59.05,
+    "lon": 11,
+    "county": "Østfold",
+    "admin": "Skjærhalden"
+  },
+  {
+    "id": "Q488445",
+    "name": "Volda",
+    "numbers": [
+      "1577"
+    ],
+    "population": 11009,
+    "area": 876.87,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Volda%20komm%202020.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Volda%20-%20panoramio.jpg?width=1024",
+    "lat": 62.14678,
+    "lon": 6.068,
+    "county": "Møre og Romsdal",
+    "admin": "Volda"
+  },
+  {
+    "id": "Q488607",
+    "name": "Lier",
+    "numbers": [
+      "0626",
+      "3049",
+      "3312"
+    ],
+    "population": 28797,
+    "area": 301.65,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Lier%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tyrifjorden%20holsfj-tb.jpg?width=1024",
+    "lat": 59.8675,
+    "lon": 10.214166666667,
+    "county": "Buskerud",
+    "admin": "Lierbyen"
+  },
+  {
+    "id": "Q488622",
+    "name": "Hole",
+    "numbers": [
+      "0612",
+      "3038",
+      "3310"
+    ],
+    "population": 7205,
+    "area": 192.68,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hole%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hole%20in%20Norway.JPG?width=1024",
+    "lat": 60.047777777778,
+    "lon": 10.291111111111,
+    "county": "Buskerud",
+    "admin": "Vik"
+  },
+  {
+    "id": "Q488948",
+    "name": "Sola",
+    "numbers": [
+      "1124"
+    ],
+    "population": 29541,
+    "area": 69.05,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sola%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Solastranden.jpg?width=1024",
+    "lat": 58.88,
+    "lon": 5.628611,
+    "county": "Rogaland",
+    "admin": "Solakrossen"
+  },
+  {
+    "id": "Q489342",
+    "name": "Aukra",
+    "numbers": [
+      "1547"
+    ],
+    "population": 3780,
+    "area": 60.64,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Aukra%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ormen%20Lange%20Nyhamna.jpg?width=1024",
+    "lat": 62.805,
+    "lon": 6.88722,
+    "county": "Møre og Romsdal",
+    "admin": "Aukra"
+  },
+  {
+    "id": "Q489351",
+    "name": "Bokn",
+    "numbers": [
+      "1145"
+    ],
+    "population": 907,
+    "area": 47.17,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Bokn%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alvestadkroken.jpg?width=1024",
+    "lat": 59.200277777778,
+    "lon": 5.4230555555556,
+    "county": "Rogaland",
+    "admin": "Føresvik"
+  },
+  {
+    "id": "Q492115",
+    "name": "Randaberg",
+    "numbers": [
+      "1127"
+    ],
+    "population": 11841,
+    "area": 24.71,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Randaberg%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Randaberg%20kommune%20sentrum.jpg?width=1024",
+    "lat": 59.001666666667,
+    "lon": 5.6152777777778,
+    "county": "Rogaland",
+    "admin": "Randaberg"
+  },
+  {
+    "id": "Q493283",
+    "name": "Gjemnes",
+    "numbers": [
+      "1557"
+    ],
+    "population": 2740,
+    "area": 381.63,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Gjemnes%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Batnfjorden-Gjemnes-Batnfjords%C3%B8ra.jpg?width=1024",
+    "lat": 62.916388888889,
+    "lon": 7.9191666666667,
+    "county": "Møre og Romsdal",
+    "admin": "Batnfjordsøra"
+  },
+  {
+    "id": "Q493301",
+    "name": "Gol",
+    "numbers": [
+      "0617",
+      "3041",
+      "3324"
+    ],
+    "population": 4902,
+    "area": 532.5,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Gol%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gol%20kommunehus%20IMG%201579.JPG?width=1024",
+    "lat": 60.750280555556,
+    "lon": 8.9847194444444,
+    "county": "Buskerud",
+    "admin": "Gol"
+  },
+  {
+    "id": "Q493308",
+    "name": "Bjerkreim",
+    "numbers": [
+      "1114"
+    ],
+    "population": 2894,
+    "area": 650.56,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Bjerkreim%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Indra%20Vinjavatnet%2001.jpg?width=1024",
+    "lat": 58.656944,
+    "lon": 6.146667,
+    "county": "Rogaland",
+    "admin": "Vikeså"
+  },
+  {
+    "id": "Q493762",
+    "name": "Herøy",
+    "numbers": [
+      "1515"
+    ],
+    "population": 9003,
+    "area": 119.52,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Her%C3%B8y%20M%C3%B8re%20og%20Romsdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bergsoy%20Heroy.jpg?width=1024",
+    "lat": 62.355555555556,
+    "lon": 5.5444444444444,
+    "county": "Møre og Romsdal",
+    "admin": "Fosnavåg"
+  },
+  {
+    "id": "Q499446",
+    "name": "Våler",
+    "numbers": [
+      "3114"
+    ],
+    "population": 6229,
+    "area": 256.96,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A5ler%20%C3%98stfold%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vaaler%20kirke%20%28Oestfold%29%20nordost.jpg?width=1024",
+    "lat": 59.4725,
+    "lon": 10.916944444444,
+    "county": "Østfold",
+    "admin": "Kirkebygden"
+  },
+  {
+    "id": "Q42293305",
+    "name": "Indre Østfold",
+    "numbers": [
+      "3118"
+    ],
+    "population": 47943,
+    "area": 791.93,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Indre%20%C3%98stfold%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Askim%2C%20Norway%20-%20panoramio.jpg?width=1024",
+    "lat": 59.58222222,
+    "lon": 11.17027778,
+    "county": "Østfold",
+    "admin": "Askim"
+  },
+  {
+    "id": "Q108999",
+    "name": "Røros",
+    "numbers": [
+      "5025"
+    ],
+    "population": 5638,
+    "area": 1956.46,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8ros%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/RorosViewFromSlagHeaps.jpg?width=1024",
+    "lat": 62.574166666667,
+    "lon": 11.383055555556,
+    "county": "Trøndelag",
+    "admin": "Røros"
+  },
+  {
+    "id": "Q109025",
+    "name": "Hitra",
+    "numbers": [
+      "5056"
+    ],
+    "population": 5568,
+    "area": 755.89,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hitra%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hopsoe.jpg?width=1024",
+    "lat": 63.547222222222,
+    "lon": 8.8547222222222,
+    "county": "Trøndelag",
+    "admin": "Fillan"
+  },
+  {
+    "id": "Q80571266",
+    "name": "Lindesnes",
+    "numbers": [
+      "4205"
+    ],
+    "population": 23702,
+    "area": 934.32,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Lindesnes%20komm%20%282020%29.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lindesnes%20fyr%2C%202020%20%282%29.jpg?width=1024",
+    "lat": 58.104166666667,
+    "lon": 7.2888888888889,
+    "county": "Agder",
+    "admin": "Mandal"
+  },
+  {
+    "id": "Q2372",
+    "name": "Kragerø",
+    "numbers": [
+      "0801",
+      "0815",
+      "3814",
+      "4014"
+    ],
+    "population": 10378,
+    "area": 305.47,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Krager%C3%B8%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Krager%C3%B81.jpg?width=1024",
+    "lat": 58.886944444444,
+    "lon": 9.3469444444444,
+    "county": "Telemark",
+    "admin": "Kragerø"
+  },
+  {
+    "id": "Q48518",
+    "name": "Sveio",
+    "numbers": [
+      "4612"
+    ],
+    "population": 5766,
+    "area": 246.15,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sveio%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ryvarden%20from%20the%20air.JPG?width=1024",
+    "lat": 59.573611111111,
+    "lon": 5.3633333333333,
+    "county": "Vestland",
+    "admin": "Sveio"
+  },
+  {
+    "id": "Q80678654",
+    "name": "Ullensvang",
+    "numbers": [
+      "4618"
+    ],
+    "population": 10929,
+    "area": 3236.63,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Ullensvang%20komm%202020.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lofthus1.jpg?width=1024",
+    "lat": 60.066666666667,
+    "lon": 6.55,
+    "county": "Vestland",
+    "admin": "Odda"
+  },
+  {
+    "id": "Q25416",
+    "name": "Stavanger",
+    "numbers": [
+      "1103"
+    ],
+    "population": 151669,
+    "area": 262.52,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Stavanger%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vaagen-modf.jpg?width=1024",
+    "lat": 58.97,
+    "lon": 5.7313888888889,
+    "county": "Rogaland",
+    "admin": "Stavanger"
+  },
+  {
+    "id": "Q26525",
+    "name": "Drammen",
+    "numbers": [
+      "0602",
+      "3005",
+      "3301"
+    ],
+    "population": 106013,
+    "area": 317.68,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Drammen%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ypsilon%20i%20Drammen.jpg?width=1024",
+    "lat": 59.745361111111,
+    "lon": 10.205969444444,
+    "county": "Buskerud",
+    "admin": "Drammen"
+  },
+  {
+    "id": "Q27587",
+    "name": "Sandnes",
+    "numbers": [
+      "1108"
+    ],
+    "population": 85785,
+    "area": 1040.56,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sandnes%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aerial%20view%20of%20Sandnes%2C%20Norway%20in%202015.jpg?width=1024",
+    "lat": 58.845,
+    "lon": 5.829444,
+    "county": "Rogaland",
+    "admin": "Sandnes"
+  },
+  {
+    "id": "Q48323",
+    "name": "Meløy",
+    "numbers": [
+      "1837"
+    ],
+    "population": 6074,
+    "area": 873.83,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Mel%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98rnes%20winter.jpg?width=1024",
+    "lat": 66.788056,
+    "lon": 13.675833,
+    "county": "Nordland",
+    "admin": "Ørnes"
+  },
+  {
+    "id": "Q48341",
+    "name": "Lurøy",
+    "numbers": [
+      "1834"
+    ],
+    "population": 1953,
+    "area": 265.19,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Lur%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Luroey-Winter-from-Northeast.jpg?width=1024",
+    "lat": 66.431944444444,
+    "lon": 12.855,
+    "county": "Nordland",
+    "admin": "Onøya"
+  },
+  {
+    "id": "Q48501",
+    "name": "Stranda",
+    "numbers": [
+      "1525"
+    ],
+    "population": 4333,
+    "area": 865.87,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Stranda%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storfjorden%20from%20Riksvei%20650.JPG?width=1024",
+    "lat": 62.166667,
+    "lon": 6.966667,
+    "county": "Møre og Romsdal",
+    "admin": "Stranda"
+  },
+  {
+    "id": "Q48508",
+    "name": "Sykkylven",
+    "numbers": [
+      "1528"
+    ],
+    "population": 7626,
+    "area": 337.8,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sykkylven%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sykkylven.jpg?width=1024",
+    "lat": 62.375555555556,
+    "lon": 6.6441666666667,
+    "county": "Møre og Romsdal",
+    "admin": "Aure"
+  },
+  {
+    "id": "Q48521",
+    "name": "Sunndal",
+    "numbers": [
+      "1563"
+    ],
+    "population": 7094,
+    "area": 1713.37,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sunndal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98ksendal.jpg?width=1024",
+    "lat": 62.612777777778,
+    "lon": 8.6341666666667,
+    "county": "Møre og Romsdal",
+    "admin": "Sunndalsøra"
+  },
+  {
+    "id": "Q48545",
+    "name": "Surnadal",
+    "numbers": [
+      "1566"
+    ],
+    "population": 5982,
+    "area": 1366.05,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Surnadal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Surnadalsfjorden.jpg?width=1024",
+    "lat": 62.9475,
+    "lon": 8.77,
+    "county": "Møre og Romsdal",
+    "admin": "Skei"
+  },
+  {
+    "id": "Q48577",
+    "name": "Suldal",
+    "numbers": [
+      "1134"
+    ],
+    "population": 3891,
+    "area": 1736.65,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Suldal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Suldal%20ved%20Herabakka.JPG?width=1024",
+    "lat": 59.468333,
+    "lon": 6.499722,
+    "county": "Rogaland",
+    "admin": "Sand"
+  },
+  {
+    "id": "Q48591",
+    "name": "Strand",
+    "numbers": [
+      "1130"
+    ],
+    "population": 13959,
+    "area": 261.69,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Strand%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jorpeland.jpg?width=1024",
+    "lat": 59.063333,
+    "lon": 6.027778,
+    "county": "Rogaland",
+    "admin": "Jørpeland"
+  },
+  {
+    "id": "Q48844",
+    "name": "Sortland",
+    "numbers": [
+      "1870"
+    ],
+    "population": 10748,
+    "area": 721.93,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sortland%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sortlandbluecollage.jpg?width=1024",
+    "lat": 68.69618,
+    "lon": 15.41174,
+    "county": "Nordland",
+    "admin": "Sortland"
+  },
+  {
+    "id": "Q48858",
+    "name": "Sokndal",
+    "numbers": [
+      "1111"
+    ],
+    "population": 3356,
+    "area": 294.98,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokndal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jossingfjord%2020220716%208.jpg?width=1024",
+    "lat": 58.365,
+    "lon": 6.3102777777778,
+    "county": "Rogaland",
+    "admin": "Hauge i Dalane"
+  },
+  {
+    "id": "Q48870",
+    "name": "Leirfjord",
+    "numbers": [
+      "1822"
+    ],
+    "population": 2392,
+    "area": 465.26,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Leirfjord%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ulvangen%20sett%20fr%C3%A5%20Skorpa.JPG?width=1024",
+    "lat": 66.112777777778,
+    "lon": 13.130833333333,
+    "county": "Nordland",
+    "admin": "Leland"
+  },
+  {
+    "id": "Q48880",
+    "name": "Saltdal",
+    "numbers": [
+      "1840"
+    ],
+    "population": 4865,
+    "area": 2216.19,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Saltdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Junkerdalen-nature-reserve-saltdal2-norway.jpg?width=1024",
+    "lat": 66.92,
+    "lon": 15.56,
+    "county": "Nordland",
+    "admin": "Rognan"
+  },
+  {
+    "id": "Q48886",
+    "name": "Krødsherad kommune",
+    "numbers": [
+      "0622",
+      "3046",
+      "3318"
+    ],
+    "population": 2276,
+    "area": 374.48,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Kr%C3%B8dsherad%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kr%C3%B8deren1.jpg?width=1024",
+    "lat": 60.195,
+    "lon": 9.6644444444444,
+    "county": "Buskerud",
+    "admin": "Noresund"
+  },
+  {
+    "id": "Q48897",
+    "name": "Evenes",
+    "numbers": [
+      "1853"
+    ],
+    "population": 1397,
+    "area": 252.78,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Evenes%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/P6270090%201.jpg?width=1024",
+    "lat": 68.533333,
+    "lon": 16.916667,
+    "county": "Nordland",
+    "admin": "Bogen"
+  },
+  {
+    "id": "Q48924",
+    "name": "Nore og Uvdal",
+    "numbers": [
+      "0633",
+      "3052",
+      "3338"
+    ],
+    "population": 2459,
+    "area": 2502.16,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nore%20og%20Uvdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8dberg%20Nore.jpg?width=1024",
+    "lat": 60.307222222222,
+    "lon": 8.8055555555556,
+    "county": "Buskerud",
+    "admin": "Rødberg"
+  },
+  {
+    "id": "Q54062",
+    "name": "Ås",
+    "numbers": [
+      "3218"
+    ],
+    "population": 22725,
+    "area": 102.68,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85s%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85s%20stasjon%20TRS%20070804%20006.jpg?width=1024",
+    "lat": 59.660277777778,
+    "lon": 10.783611111111,
+    "county": "Akershus",
+    "admin": "Ås"
+  },
+  {
+    "id": "Q56915",
+    "name": "Aurskog-Høland",
+    "numbers": [
+      "3226"
+    ],
+    "population": 18458,
+    "area": 1144.8,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8mskog%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skulerudsj%C3%B8en%20III.jpg?width=1024",
+    "lat": 59.84,
+    "lon": 11.568333333333,
+    "county": "Akershus",
+    "admin": "Bjørkelangen"
+  },
+  {
+    "id": "Q57076",
+    "name": "Bærum",
+    "numbers": [
+      "3201"
+    ],
+    "population": 133228,
+    "area": 192.29,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A6rum%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Utsikt%20fra%20Rams%C3%A5sen%20-%20B%C3%A6rum%20og%20Oslo%20%281478249727%29.jpg?width=1024",
+    "lat": 59.8904,
+    "lon": 10.526,
+    "county": "Akershus",
+    "admin": "Sandvika"
+  },
+  {
+    "id": "Q57080",
+    "name": "Eidsvoll",
+    "numbers": [
+      "3240"
+    ],
+    "population": 28739,
+    "area": 456.5,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Eidsvoll%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eidsvoll%20sentrum.jpg?width=1024",
+    "lat": 60.3475,
+    "lon": 11.250833,
+    "county": "Akershus",
+    "admin": "Eidsvoll"
+  },
+  {
+    "id": "Q57081",
+    "name": "Enebakk",
+    "numbers": [
+      "3220"
+    ],
+    "population": 11697,
+    "area": 232.58,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Enebakk%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Enebakk%20r%C3%A5dhus.jpg?width=1024",
+    "lat": 59.763888888889,
+    "lon": 11.144444444444,
+    "county": "Akershus",
+    "admin": "Kirkebygda"
+  },
+  {
+    "id": "Q57083",
+    "name": "Frogn",
+    "numbers": [
+      "3214"
+    ],
+    "population": 16429,
+    "area": 85.7,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Frogn%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dr%C3%B8bak%20Nordstranda.JPG?width=1024",
+    "lat": 59.698888888889,
+    "lon": 10.655277777778,
+    "county": "Akershus",
+    "admin": "Drøbak"
+  },
+  {
+    "id": "Q57084",
+    "name": "Gjerdrum kommune",
+    "numbers": [
+      "3230"
+    ],
+    "population": 7478,
+    "area": 83.19,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Gjerdrum%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gjerdrum%20i%20Akershus.jpg?width=1024",
+    "lat": 60.0825,
+    "lon": 11.014444444444,
+    "county": "Akershus",
+    "admin": "Ask"
+  },
+  {
+    "id": "Q62266",
+    "name": "Ålesund",
+    "numbers": [
+      "1501",
+      "1504",
+      "1507",
+      "1508"
+    ],
+    "population": 59663,
+    "area": 632.42,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85lesund%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vista%20de%20%C3%85lesund%20desde%20Aksla%2C%20Noruega%2C%202019-09-01%2C%20DD%2016.jpg?width=1024",
+    "lat": 62.477777777778,
+    "lon": 6.1902777777778,
+    "county": "Møre og Romsdal",
+    "admin": "Ålesund"
+  },
+  {
+    "id": "Q493961",
+    "name": "Ulstein",
+    "numbers": [
+      "1516"
+    ],
+    "population": 8958,
+    "area": 97.2,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Ulstein%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ulstein%20r%C3%A5dhus.jpg?width=1024",
+    "lat": 62.356388888889,
+    "lon": 5.8538888888889,
+    "county": "Møre og Romsdal",
+    "admin": "Ulsteinvik"
+  },
+  {
+    "id": "Q493977",
+    "name": "Tysvær",
+    "numbers": [
+      "1146"
+    ],
+    "population": 11750,
+    "area": 425.48,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Tysv%C3%A6r%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tysv%C3%A6r%20r%C3%A5dhus.JPG?width=1024",
+    "lat": 59.361667,
+    "lon": 5.542778,
+    "county": "Rogaland",
+    "admin": "Aksdal"
+  },
+  {
+    "id": "Q493981",
+    "name": "Time",
+    "numbers": [
+      "1121"
+    ],
+    "population": 20461,
+    "area": 183.19,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Time%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyefjell2.jpg?width=1024",
+    "lat": 58.722778,
+    "lon": 5.765278,
+    "county": "Rogaland",
+    "admin": "Bryne"
+  },
+  {
+    "id": "Q493992",
+    "name": "Vanylven",
+    "numbers": [
+      "1511"
+    ],
+    "population": 3029,
+    "area": 385.22,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vanylven%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vanylvsfjord%20from%20eidsaa.jpg?width=1024",
+    "lat": 62.10069,
+    "lon": 5.557867,
+    "county": "Møre og Romsdal",
+    "admin": "Fiskåbygd"
+  },
+  {
+    "id": "Q494024",
+    "name": "Kvitsøy",
+    "numbers": [
+      "1144"
+    ],
+    "population": 579,
+    "area": 6.29,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Kvits%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stavanger-kvitsoy%20106.jpg?width=1024",
+    "lat": 59.062222,
+    "lon": 5.411667,
+    "county": "Rogaland",
+    "admin": "Ydstebøhavn"
+  },
+  {
+    "id": "Q494029",
+    "name": "Hareid",
+    "numbers": [
+      "1517"
+    ],
+    "population": 5411,
+    "area": 82.27,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hareid%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hareid.JPG?width=1024",
+    "lat": 62.364166666667,
+    "lon": 6.0013888888889,
+    "county": "Møre og Romsdal",
+    "admin": "Hareid"
+  },
+  {
+    "id": "Q494062",
+    "name": "Nesna",
+    "numbers": [
+      "1828"
+    ],
+    "population": 1796,
+    "area": 183.19,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nesna%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nesna1.jpg?width=1024",
+    "lat": 66.257777777778,
+    "lon": 13.035,
+    "county": "Nordland",
+    "admin": "Nesna"
+  },
+  {
+    "id": "Q494068",
+    "name": "Vevelstad",
+    "numbers": [
+      "1816"
+    ],
+    "population": 477,
+    "area": 539.05,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vevelstad%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/500px%20photo%20%28218848373%29.jpeg?width=1024",
+    "lat": 65.668333333333,
+    "lon": 12.518611111111,
+    "county": "Nordland",
+    "admin": "Forvika"
+  },
+  {
+    "id": "Q494670",
+    "name": "Giske",
+    "numbers": [
+      "1532"
+    ],
+    "population": 8828,
+    "area": 40.54,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Giske%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Utsyn%20over%20Giske.jpg?width=1024",
+    "lat": 62.5625,
+    "lon": 6.1019444444444,
+    "county": "Møre og Romsdal",
+    "admin": "Valderhaugstrand"
+  },
+  {
+    "id": "Q494680",
+    "name": "Flakstad",
+    "numbers": [
+      "1859"
+    ],
+    "population": 1235,
+    "area": 178.39,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Flakstad%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fredvang%20on%20Moskenes%C3%B8ya%20island%20in%20Flakstad%2C%20Nordland%2C%20Norway%2C%202022%20June.jpg?width=1024",
+    "lat": 68.079166666667,
+    "lon": 13.275,
+    "county": "Nordland",
+    "admin": "Ramberg"
+  },
+  {
+    "id": "Q497248",
+    "name": "Hemsedal",
+    "numbers": [
+      "0618",
+      "3042",
+      "3326"
+    ],
+    "population": 2707,
+    "area": 753.52,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hemsedal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/SkogshornBuskerudSummer.jpg?width=1024",
+    "lat": 60.905830555556,
+    "lon": 8.5147194444444,
+    "county": "Buskerud",
+    "admin": "Trøym"
+  },
+  {
+    "id": "Q499429",
+    "name": "Aure",
+    "numbers": [
+      "1576"
+    ],
+    "population": 3371,
+    "area": 641.39,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Aure%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aure-Aure-Norway.JPG?width=1024",
+    "lat": 63.268611111111,
+    "lon": 8.6077777777778,
+    "county": "Møre og Romsdal",
+    "admin": "Aure"
+  },
+  {
+    "id": "Q499485",
+    "name": "Utsira",
+    "numbers": [
+      "1151"
+    ],
+    "population": 219,
+    "area": 6.32,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Utsira%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Utsira%20hamn.jpg?width=1024",
+    "lat": 59.307222,
+    "lon": 4.886111,
+    "county": "Rogaland",
+    "admin": "Utsira"
+  },
+  {
+    "id": "Q499575",
+    "name": "Haram",
+    "numbers": [
+      "1534",
+      "1580"
+    ],
+    "population": 9460,
+    "area": 261.13339278485654,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Haram%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%98VIK.JPG?width=1024",
+    "lat": 62.5675,
+    "lon": 6.3722222222222,
+    "county": "Møre og Romsdal",
+    "admin": "Brattvåg"
+  },
+  {
+    "id": "Q500205",
+    "name": "Rauma",
+    "numbers": [
+      "1539"
+    ],
+    "population": 7195,
+    "area": 1449.27,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Rauma%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aandalsnes2-Rauma-Norway.jpg?width=1024",
+    "lat": 62.504719444444,
+    "lon": 7.7819388888889,
+    "county": "Møre og Romsdal",
+    "admin": "Åndalsnes"
+  },
+  {
+    "id": "Q500223",
+    "name": "Klepp",
+    "numbers": [
+      "1120"
+    ],
+    "population": 21444,
+    "area": 113.49,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Klepp%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bore%20Beach%20-%20panoramio.jpg?width=1024",
+    "lat": 58.777222,
+    "lon": 5.596667,
+    "county": "Rogaland",
+    "admin": "Kleppe"
+  },
+  {
+    "id": "Q501510",
+    "name": "Sande",
+    "numbers": [
+      "1514"
+    ],
+    "population": 2437,
+    "area": 93.21,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sande%20M%C3%B8re%20og%20Romsdal%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rovdefjorden.JPG?width=1024",
+    "lat": 62.258333333333,
+    "lon": 5.4313888888889,
+    "county": "Møre og Romsdal",
+    "admin": "Larsnes"
+  },
+  {
+    "id": "Q502197",
+    "name": "Vindafjord",
+    "numbers": [
+      "1160"
+    ],
+    "population": 9181,
+    "area": 620.59,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vindafjord%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Photo%20of%20%C3%98len%20-%20Vindafjord%20municipality.jpg?width=1024",
+    "lat": 59.545556,
+    "lon": 5.818056,
+    "county": "Rogaland",
+    "admin": "Ølen"
+  },
+  {
+    "id": "Q503654",
+    "name": "Vefsn",
+    "numbers": [
+      "1824"
+    ],
+    "population": 13481,
+    "area": 1929.41,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vefsn%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Drevjedalen-2006-07-15.JPG?width=1024",
+    "lat": 65.799166666667,
+    "lon": 13.250555555556,
+    "county": "Nordland",
+    "admin": "Mosjøen"
+  },
+  {
+    "id": "Q507201",
+    "name": "Vestvågøy",
+    "numbers": [
+      "1860"
+    ],
+    "population": 11606,
+    "area": 424.56,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Vestv%C3%A5g%C3%B8y%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2010-08-03%20-%20Leknes%20-%20Vestv%C3%A5g%C3%B8y%20-%20Lofoten%20-%20panoramio.jpg?width=1024",
+    "lat": 68.221389,
+    "lon": 13.784444,
+    "county": "Nordland",
+    "admin": "Leknes"
+  },
+  {
+    "id": "Q507524",
+    "name": "Sula",
+    "numbers": [
+      "1531"
+    ],
+    "population": 9798,
+    "area": 58.51,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Sula%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2006%2008%2027%20Langev%C3%A5g.JPG?width=1024",
+    "lat": 62.424722222222,
+    "lon": 6.2061111111111,
+    "county": "Møre og Romsdal",
+    "admin": "Langevåg"
+  },
+  {
+    "id": "Q515536",
+    "name": "Lund",
+    "numbers": [
+      "1112"
+    ],
+    "population": 3229,
+    "area": 408.42,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Lund%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Haukland.JPG?width=1024",
+    "lat": 58.519722,
+    "lon": 6.461389,
+    "county": "Rogaland",
+    "admin": "Moi"
+  },
+  {
+    "id": "Q1215658",
+    "name": "Narvik",
+    "numbers": [
+      "1806"
+    ],
+    "population": 21647,
+    "area": 3432.17,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Narvik%20komm%202020.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Narvi%2002.jpg?width=1024",
+    "lat": 68.434,
+    "lon": 17.406,
+    "county": "Nordland",
+    "admin": "Narvik"
+  },
+  {
+    "id": "Q42320251",
+    "name": "Færder",
+    "numbers": [
+      "3911"
+    ],
+    "population": 27743,
+    "area": 99.95,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/F%C3%A6rder%20komm%202018.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/F%C3%A6rder%20fyr%204.jpg?width=1024",
+    "lat": 59.22,
+    "lon": 10.41,
+    "county": "Vestfold",
+    "admin": "Borgheim"
+  },
+  {
+    "id": "Q45303406",
+    "name": "Nordre Follo",
+    "numbers": [
+      "3207"
+    ],
+    "population": 65381,
+    "area": 203,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordre%20Follo%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ski%202022.08.29%20Jacob%20Bolin%20Lund.jpg?width=1024",
+    "lat": 59.75,
+    "lon": 10.866666666667,
+    "county": "Akershus",
+    "admin": "Ski"
+  },
+  {
+    "id": "Q60777023",
+    "name": "Hustadvika",
+    "numbers": [
+      "1579"
+    ],
+    "population": 13538,
+    "area": 521.9,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Hustadvika%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aureosen%201.jpg?width=1024",
+    "lat": 62.916796,
+    "lon": 7.22763,
+    "county": "Møre og Romsdal",
+    "admin": "Elnesvågen"
+  },
+  {
+    "id": "Q60806432",
+    "name": "Lillestrøm",
+    "numbers": [
+      "3205"
+    ],
+    "population": 96771,
+    "area": 456.61,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Lillestr%C3%B8m%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/NOVA%20Spektrum%20Bygg%2004%201920.jpg?width=1024",
+    "lat": 59.95,
+    "lon": 11.2,
+    "county": "Akershus",
+    "admin": "Lillestrøm"
+  },
+  {
+    "id": "Q65230514",
+    "name": "Fjord",
+    "numbers": [
+      "1578"
+    ],
+    "population": 2547,
+    "area": 1190.58,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Fjord%20komm.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20view%20towards%20Norddalsfjorden%20near%20Kilsti%2C%20M%C3%B8re%20og%20Romsdal%2C%20Norway%2C%202013%20June%20%28cropped%29.jpg?width=1024",
+    "lat": 62.30369,
+    "lon": 7.2578,
+    "county": "Møre og Romsdal",
+    "admin": "Sylte"
+  },
+  {
+    "id": "Q80593157",
+    "name": "Asker",
+    "numbers": [
+      "3203"
+    ],
+    "population": 101509,
+    "area": 376.62,
+    "coa": "https://commons.wikimedia.org/wiki/Special:FilePath/Asker%20komm%202020.svg?width=320",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Asker%20raadhus%20west%20side%2020100531.JPG?width=1024",
+    "lat": 59.7,
+    "lon": 10.5,
+    "county": "Akershus",
+    "admin": "Asker sentrum"
+  },
+  {
+    "id": "Q136456276",
+    "name": "Vest-Lofoten kommune",
+    "numbers": [
+      "1876"
+    ],
+    "population": 12000,
+    "area": 543,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Reine%20Lofoten.jpg?width=1024",
+    "county": "Nordland"
+  }
+]

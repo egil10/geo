@@ -1,0 +1,27 @@
+Official mapping & geospatial APIs (the gold standard)
+
+Geonorge – developer APIs hub (REST, WFS, WMS, CSW, download services for all national geodata): https://www.geonorge.no/en/for-developers/apis/
+Geonorge map catalogue (Kartkatalogen – search/view/download every official Norwegian dataset): https://www.geonorge.no/en/
+Kartverket (Norwegian Mapping Authority) APIs & data overview (N50–N5000 topographic data, elevation models, boundaries, addresses): https://www.kartverket.no/en/api-and-data
+Kartverket place-name data – SSR / Sentralt stedsnavnregister REST + WFS/WMS API (mountains, rivers, lakes, glaciers, every named feature with coordinates): https://www.kartverket.no/en/api-and-data/stedsnavndata
+SSR complete place-name dataset on data.norge.no (with free no-auth search API): https://data.norge.no/en/datasets/08e96235-0166-4161-97bb-cb64c09f50eb/stedsnavn-komplett-ssr
+Kartverket marine/bathymetric data & terrain models of the seabed (free download + APIs): https://www.kartverket.no/en/api-and-data/order-geospatial-data
+Norgeskart – Kartverket's interactive web map of all of Norway (1:50 000 series, terrain): https://norgeskart.no
+
+Hydrology, rivers, watercourses & elevation
+
+NVE Hydrological API (HydAPI) – RESTful API for discharge, water levels, river/lake time series: https://hydapi.nve.no/
+NVE HydAPI user documentation: https://hydapi.nve.no/UserDocumentation/
+NVE hydrology portal (watercourses, glaciers, snow, the HYDRA II database): https://www.nve.no/hydrology/
+Geonorge bundled open-data download service (place names via WFS, watercourse protection plans, bedrock, groundwater, flood zones, etc.): https://api.store/norway-api/kartverket-api
+
+Administrative units (counties, municipalities) & statistics
+
+Statistics Norway (SSB) – administrative divisions, counties & municipalities: https://www.ssb.no/en/befolkning/regioner/statistikk/regionale-inndelingar
+SSB KLASS – Classifications and Codelists API (official county/municipality codes, historical changes): https://www.ssb.no/en/klass/
+
+General reference (good for narrative/overview, not raw data)
+
+GIS Geography – Norway map, counties, terrain overview: https://gisgeography.com/norway-map/
+Topographic-map.com – Norway elevation/terrain with an Elevation API (JSON, GeoTIFF, KML): https://en-us.topographic-map.com/map-hwmcz/Norway/
+World Atlas – Norway maps & facts (rivers, highest point, counties summary): https://www.worldatlas.com/maps/norway

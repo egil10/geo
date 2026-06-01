@@ -1,0 +1,1457 @@
+[
+  {
+    "id": "Q21162",
+    "name": "Spitsbergen",
+    "area": 39044,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/DeGeerdalen.JPG?width=1024",
+    "lat": 78.75,
+    "lon": 16
+  },
+  {
+    "id": "Q207374",
+    "name": "Nordaustlandet",
+    "area": 14467,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordaustlandet1%20%28js%29.jpg?width=1024",
+    "lat": 79.8,
+    "lon": 22.4
+  },
+  {
+    "id": "Q16467321",
+    "name": "Kvamsøy",
+    "area": 8300,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kvams%C3%B8y%20kyrkje%20sett%20fr%C3%A5%20land.JPG?width=1024",
+    "lat": 61.1276,
+    "lon": 6.4832,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q695120",
+    "name": "Edgeøya",
+    "area": 5073,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Freeman%20strait%201.jpg?width=1024",
+    "lat": 77.666666666667,
+    "lon": 22.5
+  },
+  {
+    "id": "Q6980145",
+    "name": "Ostøya",
+    "area": 2388,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ost%C3%B8ya%2C%20B%C3%A6rum%2017.jpg?width=1024",
+    "lat": 59.86722222,
+    "lon": 10.57055556,
+    "county": "Akershus"
+  },
+  {
+    "id": "Q165635",
+    "name": "Hinnøya",
+    "area": 2198,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Autumn%20landscape%20near%20Gullesfjordbotn%2C%20Hinn%C3%B8ya%2C%202010%20September.jpg?width=1024",
+    "lat": 68.533333333333,
+    "lon": 15.833333333333,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q935821",
+    "name": "Senja",
+    "area": 1590,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Senjahusoy.jpg?width=1024",
+    "lat": 69.333333333333,
+    "lon": 17.5,
+    "county": "Troms"
+  },
+  {
+    "id": "Q373190",
+    "name": "Barentsøya",
+    "area": 1288,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dorst%20bay.jpg?width=1024",
+    "lat": 78.416666666667,
+    "lon": 21.45
+  },
+  {
+    "id": "Q1418551",
+    "name": "Langøya",
+    "area": 860,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Utskor.jpg?width=1024",
+    "lat": 68.783056,
+    "lon": 15.037222,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q3286995",
+    "name": "Sørøya",
+    "area": 816,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8rv%C3%A6r%2C%20S%C3%B8r%C3%B8ya%2C%20N%C3%B3rsko%2C%202013.jpg?width=1024",
+    "lat": 70.583333333333,
+    "lon": 22.733333333333,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q6513906",
+    "name": "Karlsøya",
+    "area": 792,
+    "lat": 70.0065,
+    "lon": 19.9067,
+    "county": "Troms"
+  },
+  {
+    "id": "Q74652",
+    "name": "Kvaløya",
+    "area": 737,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kvaloysletta%20kvaloya%20tromso.JPG?width=1024",
+    "lat": 69.616666666667,
+    "lon": 18.55,
+    "county": "Troms"
+  },
+  {
+    "id": "Q851568",
+    "name": "Kvitøya",
+    "area": 682,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kvitoya.jpg?width=1024",
+    "lat": 80.151388888889,
+    "lon": 32.593611111111
+  },
+  {
+    "id": "Q2466869",
+    "name": "Ringvassøya",
+    "area": 656,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skogsfjordvatn.jpg?width=1024",
+    "lat": 69.9781,
+    "lon": 18.99769,
+    "county": "Troms"
+  },
+  {
+    "id": "Q177392",
+    "name": "Prins Karls Forland",
+    "area": 615,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Prins-karls-forrland%20pho.jpg?width=1024",
+    "lat": 78.55,
+    "lon": 11.016666666667
+  },
+  {
+    "id": "Q18535315",
+    "name": "Hitra",
+    "area": 571.5,
+    "lat": 63.5333,
+    "lon": 8.85,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q3245106",
+    "name": "Seiland",
+    "area": 559,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Seiland2.JPG?width=1024",
+    "lat": 70.4149,
+    "lon": 22.9762,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q784020",
+    "name": "Austvågøya",
+    "area": 527,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vagakallen%20wiki.jpg?width=1024",
+    "lat": 68.333333333333,
+    "lon": 14.6,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q528409",
+    "name": "Andøya",
+    "area": 489,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andoya2.jpg?width=1024",
+    "lat": 69.1,
+    "lon": 15.716666666667,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q829500",
+    "name": "Magerøy",
+    "area": 436.4,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nortdkapp%26Knivskjellodden.JPG?width=1024",
+    "lat": 71.05,
+    "lon": 25.698333333333,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q14192448",
+    "name": "Vestvågøya",
+    "area": 411,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Steinsfjorden%20in%20Lofoten.jpg?width=1024",
+    "lat": 68.2167,
+    "lon": 13.8,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q14056",
+    "name": "Jan Mayen",
+    "area": 377,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Beerenberg%20JanMayen.JPG?width=1024",
+    "lat": 70.983,
+    "lon": -8.5336
+  },
+  {
+    "id": "Q49639783",
+    "name": "Grimsøya",
+    "area": 371,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Grims%C3%B8ya%2C%20B%C3%A6rum%2006.jpg?width=1024",
+    "lat": 59.87378,
+    "lon": 10.59251,
+    "county": "Akershus"
+  },
+  {
+    "id": "Q1725867",
+    "name": "Kvaløya",
+    "area": 336,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norway%20-%20Kval%C3%B8ya%2C%20Finnmark.png?width=1024",
+    "lat": 70.6,
+    "lon": 23.85,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q1140340",
+    "name": "Kong Karls Land",
+    "area": 332,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kong%20Karls%20Land%202021-08-09%20Sentinel-2%20L2A%20Highlight%20Optimized%20Natural%20Color.jpg?width=1024",
+    "lat": 78.75,
+    "lon": 28.5
+  },
+  {
+    "id": "Q7107673",
+    "name": "Osterøy",
+    "area": 330.16,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bruviknipa.JPG?width=1024",
+    "lat": 60.55,
+    "lon": 5.58333333,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q17749456",
+    "name": "Aspond",
+    "area": 300,
+    "lat": 59.72722244,
+    "lon": 10.57388878,
+    "county": "Akershus"
+  },
+  {
+    "id": "Q1593581",
+    "name": "Arnøya",
+    "area": 276,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kjedalsfjellet-Arn%C3%B8yhamn-K%C3%A5gsundet-1.JPG?width=1024",
+    "lat": 70.13103,
+    "lon": 20.58468,
+    "county": "Troms"
+  },
+  {
+    "id": "Q3084323",
+    "name": "Stjernøya",
+    "area": 248.1,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stjern%C3%B8ya-fra-fly.jpg?width=1024",
+    "lat": 70.31064,
+    "lon": 22.63847,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q1636366",
+    "name": "Sotra",
+    "area": 246,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/BildoeySotra.jpg?width=1024",
+    "lat": 60.3,
+    "lon": 5.0833333333333,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q3357665",
+    "name": "Stord",
+    "area": 241,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fitjar.JPG?width=1024",
+    "lat": 59.8833,
+    "lon": 5.41667,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q123697",
+    "name": "Vannøya",
+    "area": 232,
+    "lat": 70.15,
+    "lon": 19.85,
+    "county": "Troms"
+  },
+  {
+    "id": "Q9338824",
+    "name": "Smøla",
+    "area": 214,
+    "lat": 63.3566,
+    "lon": 8.0342,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q2021714",
+    "name": "Tysnesøy",
+    "area": 198,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tysness%C3%A5to%20fr%C3%A5%20Svartavassfjellet.JPG?width=1024",
+    "lat": 60,
+    "lon": 5.5833333333333,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q1137503",
+    "name": "Kongsøya",
+    "area": 191,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kongs%C3%B8ya%202021-08-09%20Sentinel-2%20L2A%20Highlight%20Optimized%20Natural%20Color.jpg?width=1024",
+    "lat": 78.933333333333,
+    "lon": 28.583333333333
+  },
+  {
+    "id": "Q1857655",
+    "name": "Tjeldøya",
+    "area": 187,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tjeldsundet%20and%20mountains.jpg?width=1024",
+    "lat": 68.483333333333,
+    "lon": 16.333333333333,
+    "county": "Troms"
+  },
+  {
+    "id": "Q1420953",
+    "name": "Moskenesøya",
+    "area": 186,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Reine%20i%20Lofoten.jpg?width=1024",
+    "lat": 67.983333333333,
+    "lon": 13,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q194364",
+    "name": "Bjørnøya",
+    "area": 178,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bjoern9.jpg?width=1024",
+    "lat": 74.44,
+    "lon": 19.0475
+  },
+  {
+    "id": "Q3736226",
+    "name": "Karmøy",
+    "area": 176.8,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norway%20-%20Karm%C3%B8y.png?width=1024",
+    "lat": 59.25,
+    "lon": 5.25,
+    "county": "Rogaland"
+  },
+  {
+    "id": "Q3352677",
+    "name": "Bømlo",
+    "area": 171,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bremnes%2C%20B%C3%B8mlo.JPG?width=1024",
+    "lat": 59.77055556,
+    "lon": 5.27694444,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q1585276",
+    "name": "Hareidlandet",
+    "area": 165,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hareidlandet.jpg?width=1024",
+    "lat": 62.4076,
+    "lon": 5.9389,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q4828422",
+    "name": "Averøya",
+    "area": 165,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Averoy-Mekknoken-Norway.jpg?width=1024",
+    "lat": 62.9873,
+    "lon": 7.4901,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q15242352",
+    "name": "Lille Kamøya, Nordkapp",
+    "area": 160,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mager%C3%B8ya%20Kam%C3%B8yv%C3%A6r%20lub%202025-07-17%20img01%20Hafen.jpg?width=1024",
+    "lat": 71.05554,
+    "lon": 25.90989,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q3236750",
+    "name": "Bremangerlandet",
+    "area": 153,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bremanger%20Bremangerlandet%20Fr%C3%B6ya%20from%20southwest%20IMG%200150.JPG?width=1024",
+    "lat": 61.85,
+    "lon": 5.0333333333333,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q2840250",
+    "name": "Alsta",
+    "area": 153,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alsten.jpg?width=1024",
+    "lat": 65.966666666667,
+    "lon": 12.614722222222,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q3320019",
+    "name": "Frøya",
+    "area": 151.9,
+    "lat": 63.70184,
+    "lon": 8.63953,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q6515057",
+    "name": "Reinøya",
+    "area": 147,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rein%C3%B8ya%20depuis%20Hansnes.jpg?width=1024",
+    "lat": 69.916666666667,
+    "lon": 19.633333333333,
+    "county": "Troms"
+  },
+  {
+    "id": "Q1789798",
+    "name": "Otterøya",
+    "area": 143,
+    "lat": 64.583333333333,
+    "lon": 11.25,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q3353860",
+    "name": "Ertvågsøya",
+    "area": 139.7,
+    "lat": 63.2,
+    "lon": 8.4166666666667,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q4993574",
+    "name": "Dønna",
+    "area": 138,
+    "lat": 66.1222,
+    "lon": 12.5444,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q458869",
+    "name": "Gurskøya",
+    "area": 137,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Leikong%20norway.jpg?width=1024",
+    "lat": 62.233333333333,
+    "lon": 5.7333333333333,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q1142903",
+    "name": "Svenskøya",
+    "area": 137,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Svensk%C3%B8ya%202021-08-09%20Sentinel-2%20L2A%20Highlight%20Optimized%20Natural%20Color.jpg?width=1024",
+    "lat": 78.716666666667,
+    "lon": 26.633333333333
+  },
+  {
+    "id": "Q271087",
+    "name": "Ånderdalen nasjonalpark",
+    "area": 135,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85nderdalen%20nasjonalpark%203.jpg?width=1024",
+    "lat": 69.2,
+    "lon": 17.266666666667,
+    "county": "Troms"
+  },
+  {
+    "id": "Q15181115",
+    "name": "Andørja",
+    "area": 135,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/And%C3%B8rja%20sett%20fra%20Harstad.jpg?width=1024",
+    "lat": 68.80487,
+    "lon": 17.22886,
+    "county": "Troms"
+  },
+  {
+    "id": "Q3358539",
+    "name": "Skogerøya",
+    "area": 129,
+    "lat": 69.83966,
+    "lon": 29.87847,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q1341837",
+    "name": "Wilhelmøya",
+    "area": 120,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Wilhelm%C3%B8ya%202021-07-11%20Sentinel-2%20L2A%20Highlight%20Optimized%20Natural%20Color.jpg?width=1024",
+    "lat": 79.06,
+    "lon": 20.44
+  },
+  {
+    "id": "Q1792436",
+    "name": "Sula",
+    "area": 116,
+    "lat": 61.133333333333,
+    "lon": 4.9166666666667,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q61847194",
+    "name": "Vega",
+    "area": 111,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vega-Eidem-Beach-Norway.jpg?width=1024",
+    "lat": 65.669,
+    "lon": 11.8569,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q12717862",
+    "name": "Radøy",
+    "area": 110.7,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alversund%20bru1.jpg?width=1024",
+    "lat": 60.6906,
+    "lon": 4.99722,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q1426899",
+    "name": "Flakstadøya",
+    "area": 110,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ramberg-Strand-02-2019-gje.jpg?width=1024",
+    "lat": 68.066666666667,
+    "lon": 13.3,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q3370979",
+    "name": "Uksenøya",
+    "area": 108,
+    "lat": 62.4632,
+    "lon": 6.5042,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q2561389",
+    "name": "Grytøya",
+    "area": 107.74,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Grytoy.jpg?width=1024",
+    "lat": 68.92217,
+    "lon": 16.46286,
+    "county": "Troms"
+  },
+  {
+    "id": "Q1772849",
+    "name": "Rolla",
+    "area": 106.4,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rolla2010.jpg?width=1024",
+    "lat": 68.78333333,
+    "lon": 17.01666667,
+    "county": "Troms"
+  },
+  {
+    "id": "Q1771503",
+    "name": "Sandhornøya",
+    "area": 103,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sandhornet%20Sandhorn%C3%B8ya.jpg?width=1024",
+    "lat": 67.1035,
+    "lon": 14.076,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q1567614",
+    "name": "Hadseløy",
+    "area": 102,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hadsel%C3%B8ya%20-%20Taen.jpg?width=1024",
+    "lat": 68.533333333333,
+    "lon": 14.783333333333,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q4573073",
+    "name": "Inner-Vikna",
+    "area": 99.2,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8rvik.jpg?width=1024",
+    "lat": 64.8887,
+    "lon": 11.2403,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q4807252",
+    "name": "Askøy",
+    "area": 90,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kleppest%C3%B8.jpg?width=1024",
+    "lat": 60.49443889,
+    "lon": 5.11001667,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q1641842",
+    "name": "Tustna",
+    "area": 89,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tustna%20mountains%20from%20Smola%20ferry.JPG?width=1024",
+    "lat": 63.1617,
+    "lon": 8.1092,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q3358546",
+    "name": "Rolvsøya",
+    "area": 89,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rolvs%C3%B8y.jpg?width=1024",
+    "lat": 70.95667,
+    "lon": 24.01086,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q1790043",
+    "name": "Holsnøy",
+    "area": 88.8,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storavatnet.JPG?width=1024",
+    "lat": 60.55,
+    "lon": 5.1166666666667,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q3321658",
+    "name": "Austra",
+    "area": 88,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bindal%20IMG%204725%20austra%20island%20heilhornet%20mt%201063%20m%20hildringsfjellet%20mt%20790%20m.JPG?width=1024",
+    "lat": 65.0837,
+    "lon": 11.8769,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q64851",
+    "name": "Lågøya",
+    "area": 86,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norway%20on%20the%20globe%20%28Svalbard%20special%29%20%28Europe%20centered%29.svg?width=1024",
+    "lat": 80.283333333333,
+    "lon": 18.383333333333
+  },
+  {
+    "id": "Q4580677",
+    "name": "Kågen",
+    "area": 85.7,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bl%C3%A5tinden%20in%20K%C3%A5gen%2C%202012%20March.jpg?width=1024",
+    "lat": 69.983333333333,
+    "lon": 20.833333333333,
+    "county": "Troms"
+  },
+  {
+    "id": "Q725085",
+    "name": "Nordkvaløya",
+    "area": 84.4,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordkval%C3%B8ya%20depuis%20Mikkelvik.jpg?width=1024",
+    "lat": 70.183333333333,
+    "lon": 19.166666666667,
+    "county": "Troms"
+  },
+  {
+    "id": "Q4573074",
+    "name": "Ytter-Vikna",
+    "area": 82,
+    "lat": 64.9113,
+    "lon": 10.8821,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q1781550",
+    "name": "Rebbenesøya",
+    "area": 81.93,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rebbenes%C3%B8y%20ferry%20transporting%20between%20Mikkelvik%20and%20Bromnes%2C%20Troms%2C%20Norway%2C%202014%20July.jpg?width=1024",
+    "lat": 70.05,
+    "lon": 18.783333333333,
+    "county": "Troms"
+  },
+  {
+    "id": "Q4581070",
+    "name": "Uløya",
+    "area": 78,
+    "lat": 69.8619,
+    "lon": 20.6164,
+    "county": "Troms"
+  },
+  {
+    "id": "Q6979800",
+    "name": "Otrøya",
+    "area": 75.5,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Midsund.JPG?width=1024",
+    "lat": 62.72722222,
+    "lon": 6.80166667,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q10953165",
+    "name": "Innlandet",
+    "area": 73,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Innlandet.JPG?width=1024",
+    "lat": 63.1044,
+    "lon": 7.7348,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q1292405",
+    "name": "Engeløya",
+    "area": 69,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%B8v%C3%B8y%20gamle%20handelssted%20med%20Engel%C3%B8ya.JPG?width=1024",
+    "lat": 67.95,
+    "lon": 15.083333333333,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q1779505",
+    "name": "Finnøya",
+    "area": 68,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Finnoya-coast-hamaroy.jpg?width=1024",
+    "lat": 68.01191,
+    "lon": 15.78519,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q12714795",
+    "name": "Frei",
+    "area": 62.5,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bolgav%C3%A5gen%20i%20vinter.JPG?width=1024",
+    "lat": 63.06711647,
+    "lon": 7.815055,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q12719483",
+    "name": "Vågsøy",
+    "area": 59.1,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%A5l%C3%B8y3.JPG?width=1024",
+    "lat": 61.9693,
+    "lon": 5.0832,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q16897308",
+    "name": "Sula",
+    "area": 59,
+    "lat": 62.4153,
+    "lon": 6.1337,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q449351",
+    "name": "Ombo",
+    "area": 58,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ombo%20from%20J%C3%B8sneset.JPG?width=1024",
+    "lat": 59.266666666667,
+    "lon": 6.0166666666667,
+    "county": "Rogaland"
+  },
+  {
+    "id": "Q11983679",
+    "name": "Leka",
+    "area": 57,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Steinstid%20sommer.JPG?width=1024",
+    "lat": 65.0969,
+    "lon": 11.6496,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q1789866",
+    "name": "Jøa",
+    "area": 55.3,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Seierstad%20J%C3%B8a.jpg?width=1024",
+    "lat": 64.6481,
+    "lon": 11.2096,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q4580709",
+    "name": "Dyrøya",
+    "area": 53,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dyroya.jpg?width=1024",
+    "lat": 68.9937,
+    "lon": 17.3703,
+    "county": "Troms"
+  },
+  {
+    "id": "Q4574919",
+    "name": "Skardsøya",
+    "area": 52.3,
+    "lat": 63.364,
+    "lon": 8.5658,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q1773626",
+    "name": "Huftarøy",
+    "area": 50.4,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norway%20-%20Huftar%C3%B8y.png?width=1024",
+    "lat": 60.05,
+    "lon": 5.2666666666667,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q1771560",
+    "name": "Storøya",
+    "area": 50,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stor%C3%B8ya%202018-07-28%20Sentinel-2%20L2A%20Highlight%20Optimized%20Natural%20Color.jpg?width=1024",
+    "lat": 80.1167,
+    "lon": 28
+  },
+  {
+    "id": "Q23408",
+    "name": "Bouvetøya",
+    "area": 49,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bouvet%20island%200.jpg?width=1024",
+    "lat": -54.42,
+    "lon": 3.36
+  },
+  {
+    "id": "Q2382893",
+    "name": "Silda",
+    "area": 48,
+    "lat": 70.3216,
+    "lon": 21.73984,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q1789856",
+    "name": "Wahlbergøya",
+    "area": 48,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Wahlberg%C3%B8ya%202021-07-11%20Sentinel-2%20L2A%20Highlight%20Optimized%20Natural%20Color.jpg?width=1024",
+    "lat": 79.3675,
+    "lon": 19.81583
+  },
+  {
+    "id": "Q1142617",
+    "name": "Tomma",
+    "area": 47.3,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomma001.JPG?width=1024",
+    "lat": 66.2465,
+    "lon": 12.7157,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q845873",
+    "name": "Hopen",
+    "area": 47,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hopen%20Svalbard%20May2013.jpg?width=1024",
+    "lat": 76.55,
+    "lon": 25.116666666667
+  },
+  {
+    "id": "Q5587469",
+    "name": "Gossa",
+    "area": 46.5,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ormen%20Lange%20Nyhamna.jpg?width=1024",
+    "lat": 62.81666667,
+    "lon": 6.88333333,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q1524834",
+    "name": "Gimsøya",
+    "area": 46.4,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoven%20Lofoten.jpg?width=1024",
+    "lat": 68.300555555556,
+    "lon": 14.2075,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q6514225",
+    "name": "Varaldsøy",
+    "area": 45.4,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Varalds%C3%B8y.JPG?width=1024",
+    "lat": 60.133333333333,
+    "lon": 6,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q15223520",
+    "name": "Helgøya",
+    "area": 42.92,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Helg%C3%B8y%20kirkested%20between%20mountain%20and%20shore.jpg?width=1024",
+    "lat": 70.1287,
+    "lon": 19.426,
+    "county": "Troms"
+  },
+  {
+    "id": "Q23042542",
+    "name": "Rennesøy",
+    "area": 40.7,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rennes%C3%B8y%20og%20Moster%C3%B8y%2C%20Rogaland.JPG?width=1024",
+    "lat": 59.1,
+    "lon": 5.7,
+    "county": "Rogaland"
+  },
+  {
+    "id": "Q1164932",
+    "name": "Danskøya",
+    "area": 40.6,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrees%20Station3.jpg?width=1024",
+    "lat": 79.666666666667,
+    "lon": 10.9
+  },
+  {
+    "id": "Q33083355",
+    "name": "Tjøme",
+    "area": 39.4,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vippefyret-verdensende-tjome.JPG?width=1024",
+    "lat": 59.113,
+    "lon": 10.401,
+    "county": "Vestfold"
+  },
+  {
+    "id": "Q47503037",
+    "name": "Laksholmen",
+    "area": 39,
+    "lat": 60.441388888889,
+    "lon": 5.1413888888889,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q4267418",
+    "name": "Hjelmsøya",
+    "area": 39,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hjelms%C3%B8ya%20M%C3%A5s%C3%B8y%202022-09-09%2001.jpg?width=1024",
+    "lat": 71.0608,
+    "lon": 24.6862,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q1797943",
+    "name": "Atløyna",
+    "area": 38.26,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Atl%C3%B8y.jpg?width=1024",
+    "lat": 61.34388889,
+    "lon": 4.94277778,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q11218496",
+    "name": "Elvalandet",
+    "area": 38.184,
+    "lat": 64.5814,
+    "lon": 11.393,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q834034",
+    "name": "Halsnøya",
+    "area": 38,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Halsnoey-19-k6.jpg?width=1024",
+    "lat": 59.766666666667,
+    "lon": 5.7833333333333,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q3357677",
+    "name": "Anden",
+    "area": 38,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Anda%20fyr%2001.jpg?width=1024",
+    "lat": 69.0658,
+    "lon": 15.1688,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q4573769",
+    "name": "Reksteren",
+    "area": 37.2,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Utsyn%20mot%20nord%20fr%C3%A5%20Gj%C3%B8v%C3%A5gsvarden.JPG?width=1024",
+    "lat": 60.05,
+    "lon": 5.38333333,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q11218163",
+    "name": "Vestre Bokn",
+    "area": 36,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Austre-%20og%20Vestre%20Bokn.JPG?width=1024",
+    "lat": 59.194,
+    "lon": 5.422,
+    "county": "Rogaland"
+  },
+  {
+    "id": "Q1592666",
+    "name": "Laukøya",
+    "area": 35.8,
+    "lat": 70.1061,
+    "lon": 20.8417,
+    "county": "Troms"
+  },
+  {
+    "id": "Q11217648",
+    "name": "Ytre Sula",
+    "area": 34.7,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Solund%2001.jpg?width=1024",
+    "lat": 61.03317,
+    "lon": 4.68865,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q1524677",
+    "name": "Handnesøya",
+    "area": 34.4,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Handnes%C3%B8ya%20s%C3%B8r.JPG?width=1024",
+    "lat": 66.261111111111,
+    "lon": 13.034166666667,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q1540784",
+    "name": "Stormolla",
+    "area": 34.4,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20red%20sunbath%20of%20Stormolla%2C%202009%2009.JPG?width=1024",
+    "lat": 68.2623,
+    "lon": 14.8784,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q917496",
+    "name": "Skogsøya",
+    "area": 32.5,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oksnes%20kirke%20med%20omgivelser.jpg?width=1024",
+    "lat": 68.87638889,
+    "lon": 14.915,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q4572597",
+    "name": "Mellom-Vikna",
+    "area": 32,
+    "lat": 64.896,
+    "lon": 10.9763,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q10951446",
+    "name": "Sandøyna",
+    "area": 31.6,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2010%2010%2020%20Gulen%20Skjerjehamn%20098.jpg?width=1024",
+    "lat": 60.8903,
+    "lon": 4.9988,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q4582547",
+    "name": "Landegode",
+    "area": 30.3,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Landegode%20midnattsol.jpg?width=1024",
+    "lat": 67.4367,
+    "lon": 14.3714,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q1792333",
+    "name": "Straumøya",
+    "area": 29.7,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Straum%C3%B8y%20just%20south%20of%20Bod%C3%B8%20seen%20from%20the%20air.jpg?width=1024",
+    "lat": 67.2146,
+    "lon": 14.505,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q1719336",
+    "name": "Tromøya",
+    "area": 28.6,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Arendal%20Galtesund%2002.JPG?width=1024",
+    "lat": 58.466666666667,
+    "lon": 8.85,
+    "county": "Agder"
+  },
+  {
+    "id": "Q1445969",
+    "name": "Ytterøya",
+    "area": 28,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/YtteroyChurch.jpg?width=1024",
+    "lat": 63.781944444444,
+    "lon": 11.054166666667,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q5365403",
+    "name": "Ellingsøya",
+    "area": 28,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ellings%C3%B8y.jpg?width=1024",
+    "lat": 62.493611111111,
+    "lon": 6.1772222222222,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q11229626",
+    "name": "Lundøya",
+    "area": 26.7,
+    "lat": 67.9864,
+    "lon": 15.2023,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q5456495",
+    "name": "Fjellværsøya",
+    "area": 26.7,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hitra%20med%20Norbotn%20kyrkje.jpg?width=1024",
+    "lat": 63.639,
+    "lon": 9.0789,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q11969752",
+    "name": "Fosnøyna",
+    "area": 26.3,
+    "lat": 60.771666666667,
+    "lon": 4.9202777777778,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q1784761",
+    "name": "Selbjørn",
+    "area": 25,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Selbj%C3%B8rn.JPG?width=1024",
+    "lat": 59.983333333333,
+    "lon": 5.1666666666667,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q1769648",
+    "name": "Stabblandet",
+    "area": 25,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordheimsundet.jpg?width=1024",
+    "lat": 63.1959,
+    "lon": 8.2074,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q23042350",
+    "name": "Finnøy",
+    "area": 25,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Finn%C3%B8y%20fields.jpg?width=1024",
+    "lat": 59.1705,
+    "lon": 5.8278,
+    "county": "Rogaland"
+  },
+  {
+    "id": "Q1458194",
+    "name": "Aldra",
+    "area": 24,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aldra%20A.jpg?width=1024",
+    "lat": 66.4262,
+    "lon": 13.066,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q4577939",
+    "name": "Åmøya",
+    "area": 23.4,
+    "lat": 66.77,
+    "lon": 13.341,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q4582606",
+    "name": "Hulløya",
+    "area": 22.1,
+    "lat": 68.065868,
+    "lon": 16.272125,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q2612579",
+    "name": "Phippsøya",
+    "area": 22,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/NOR-2016-Svalbard-Sju%C3%B8yane-Phipps%C3%B8ya-View%20from%20the%20water%2004.jpg?width=1024",
+    "lat": 80.70943,
+    "lon": 20.79305
+  },
+  {
+    "id": "Q4577539",
+    "name": "Meløya",
+    "area": 21.8,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mel%C3%B8ya.JPG?width=1024",
+    "lat": 66.8327,
+    "lon": 13.4563,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q1190341",
+    "name": "Tromsøya",
+    "area": 21.7,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Troms%C3%B6%20IMG%204973.JPG?width=1024",
+    "lat": 69.666666666667,
+    "lon": 18.95,
+    "county": "Troms"
+  },
+  {
+    "id": "Q3493485",
+    "name": "Spildra",
+    "area": 21.4,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dunvika%20p%C3%A5%20Spildra.JPG?width=1024",
+    "lat": 70.02059,
+    "lon": 21.63114,
+    "county": "Troms"
+  },
+  {
+    "id": "Q11218538",
+    "name": "Nordfugløya",
+    "area": 21.3,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordfugloeya-2022.jpg?width=1024",
+    "lat": 70.26666667,
+    "lon": 20.25,
+    "county": "Troms"
+  },
+  {
+    "id": "Q20553128",
+    "name": "Hidra",
+    "area": 20.4,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hidra%20Rasvaagen%20bay%20IMG%200918%20from%20east.JPG?width=1024",
+    "lat": 58.23,
+    "lon": 6.5477,
+    "county": "Agder"
+  },
+  {
+    "id": "Q375983",
+    "name": "Vigra",
+    "area": 20,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowclad%20Vigra.jpg?width=1024",
+    "lat": 62.557777777778,
+    "lon": 6.0783333333333,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q1786134",
+    "name": "Aspøya",
+    "area": 20,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspoy-Tingvoll.Norway.jpg?width=1024",
+    "lat": 63.0113,
+    "lon": 7.9253,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q1862029",
+    "name": "Von Otterøya",
+    "area": 20,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Von%20Otter%C3%B8ya%202021-07-11%20Sentinel-2%20L2A%20Highlight%20Optimized%20Natural%20Color.jpg?width=1024",
+    "lat": 79.265,
+    "lon": 20.0082
+  },
+  {
+    "id": "Q5092028",
+    "name": "Chermsideøya",
+    "area": 20,
+    "lat": 80.50544,
+    "lon": 19.92142
+  },
+  {
+    "id": "Q4580672",
+    "name": "Eigerøya",
+    "area": 19.9,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eiger%C3%B8y%20bru.JPG?width=1024",
+    "lat": 58.44388889,
+    "lon": 5.95333333,
+    "county": "Rogaland"
+  },
+  {
+    "id": "Q478785",
+    "name": "Amsterdamøya",
+    "area": 18.8,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Smeerenburg-blubberovens.JPG?width=1024",
+    "lat": 79.75,
+    "lon": 10.83333
+  },
+  {
+    "id": "Q11227715",
+    "name": "Steinsundøyna",
+    "area": 18.7,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Steinsund%202015-05.jpg?width=1024",
+    "lat": 61.0781,
+    "lon": 4.7744,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q11975428",
+    "name": "Hisarøyna",
+    "area": 18.7,
+    "lat": 60.9862,
+    "lon": 4.9732,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q1769689",
+    "name": "Sekken",
+    "area": 18.7,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sekken%20and%20Veoy.jpg?width=1024",
+    "lat": 62.6598,
+    "lon": 7.2897,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q4581915",
+    "name": "Vengsøya",
+    "area": 18.5,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vengs%C3%B8ya%20og%20Gj%C3%B8ss%C3%B8ya%20%28til%20venstre%29.jpg?width=1024",
+    "lat": 69.839,
+    "lon": 18.513,
+    "county": "Troms"
+  },
+  {
+    "id": "Q1771282",
+    "name": "Helgøya",
+    "area": 18.34,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Helgoya.JPG?width=1024",
+    "lat": 60.7363,
+    "lon": 10.9798,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q10954572",
+    "name": "Byrknesøyna",
+    "area": 18.3,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Byrknesoy-FraNappholmen.JPG?width=1024",
+    "lat": 60.8939,
+    "lon": 4.8888,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q15228689",
+    "name": "Ingøya",
+    "area": 18,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ingoy%2001.jpg?width=1024",
+    "lat": 71.05342,
+    "lon": 24.04727,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q1141158",
+    "name": "Hugla",
+    "area": 17.9,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hugla000.jpg?width=1024",
+    "lat": 66.186666666667,
+    "lon": 12.919444444444,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q1141176",
+    "name": "Løkta",
+    "area": 17.3,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%B8kta%20fra%20%C3%B8st.JPG?width=1024",
+    "lat": 66.158888888889,
+    "lon": 12.739166666667,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q4580262",
+    "name": "Litlesotra",
+    "area": 16.7,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Boathouses%20on%20the%20Arefjordpollen%20strait%2C%20Straume%2C%20Norway%20julesvernex2.jpg?width=1024",
+    "lat": 60.35722222,
+    "lon": 5.12444444,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q6979467",
+    "name": "Stokkøya",
+    "area": 16.7,
+    "lat": 64.0586,
+    "lon": 9.9845,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q11997112",
+    "name": "Randøy",
+    "area": 16.7,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rand%C3%B8y%20bru.JPG?width=1024",
+    "lat": 59.21,
+    "lon": 6.05,
+    "county": "Rogaland"
+  },
+  {
+    "id": "Q6515428",
+    "name": "Linesøya",
+    "area": 16.6,
+    "lat": 64.0212,
+    "lon": 9.9131,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q3641017",
+    "name": "Blomstrandøya",
+    "area": 16,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Blomstrandhalvoya.JPG?width=1024",
+    "lat": 78.9778,
+    "lon": 12.0773
+  },
+  {
+    "id": "Q11226283",
+    "name": "Losna",
+    "area": 15.3,
+    "lat": 61.1332,
+    "lon": 5.0663,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q3356210",
+    "name": "Frøya",
+    "area": 15,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bremanger%20Fr%C3%B6ya%20from%20southwest%20IMG%200151.JPG?width=1024",
+    "lat": 61.783333333333,
+    "lon": 5.85,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q1257340",
+    "name": "Hovden",
+    "area": 14.6,
+    "lat": 61.6789,
+    "lon": 4.8602,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q458886",
+    "name": "Nerlandsøya",
+    "area": 14.6,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nerlandsoya01.jpg?width=1024",
+    "lat": 62.350833333333,
+    "lon": 5.5527777777778,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q4919494",
+    "name": "Bjarkøya",
+    "area": 14.6,
+    "lat": 68.9909,
+    "lon": 16.5585,
+    "county": "Troms"
+  },
+  {
+    "id": "Q3437110",
+    "name": "Nesøya",
+    "area": 14.5,
+    "lat": 66.5862,
+    "lon": 12.6764,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q4586723",
+    "name": "Dolmøya",
+    "area": 14.5,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norway%20-%20Dolm%C3%B8ya.png?width=1024",
+    "lat": 63.643,
+    "lon": 8.7544,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q458983",
+    "name": "Leinøya",
+    "area": 14.4,
+    "lat": 62.346111111111,
+    "lon": 5.7091666666667,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q4573061",
+    "name": "Flemsøya",
+    "area": 14.3,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Flems%C3%B8ya.jpg?width=1024",
+    "lat": 62.675,
+    "lon": 6.2906,
+    "county": "Møre og Romsdal"
+  },
+  {
+    "id": "Q4579982",
+    "name": "Nordlandet",
+    "area": 14.3,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordlandet%20Kristiansund.JPG?width=1024",
+    "lat": 63.1233,
+    "lon": 7.8212,
+    "county": "Møre og Romsdal"
+  }
+]

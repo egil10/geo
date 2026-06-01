@@ -1,0 +1,62 @@
+[
+  {
+    "number": "03",
+    "name": "Oslo"
+  },
+  {
+    "number": "11",
+    "name": "Rogaland"
+  },
+  {
+    "number": "15",
+    "name": "Møre og Romsdal"
+  },
+  {
+    "number": "18",
+    "name": "Nordland"
+  },
+  {
+    "number": "31",
+    "name": "Østfold"
+  },
+  {
+    "number": "32",
+    "name": "Akershus"
+  },
+  {
+    "number": "33",
+    "name": "Buskerud"
+  },
+  {
+    "number": "34",
+    "name": "Innlandet"
+  },
+  {
+    "number": "39",
+    "name": "Vestfold"
+  },
+  {
+    "number": "40",
+    "name": "Telemark"
+  },
+  {
+    "number": "42",
+    "name": "Agder"
+  },
+  {
+    "number": "46",
+    "name": "Vestland"
+  },
+  {
+    "number": "50",
+    "name": "Trøndelag"
+  },
+  {
+    "number": "55",
+    "name": "Troms"
+  },
+  {
+    "number": "56",
+    "name": "Finnmark"
+  }
+]

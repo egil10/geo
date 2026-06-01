@@ -1,0 +1,2144 @@
+[
+  {
+    "number": "0301",
+    "name": "Oslo",
+    "countyNumber": "03",
+    "county": "Oslo"
+  },
+  {
+    "number": "1101",
+    "name": "Eigersund",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1103",
+    "name": "Stavanger",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1106",
+    "name": "Haugesund",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1108",
+    "name": "Sandnes",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1111",
+    "name": "Sokndal",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1112",
+    "name": "Lund",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1114",
+    "name": "Bjerkreim",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1119",
+    "name": "Hå",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1120",
+    "name": "Klepp",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1121",
+    "name": "Time",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1122",
+    "name": "Gjesdal",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1124",
+    "name": "Sola",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1127",
+    "name": "Randaberg",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1130",
+    "name": "Strand",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1133",
+    "name": "Hjelmeland",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1134",
+    "name": "Suldal",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1135",
+    "name": "Sauda",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1144",
+    "name": "Kvitsøy",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1145",
+    "name": "Bokn",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1146",
+    "name": "Tysvær",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1149",
+    "name": "Karmøy",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1151",
+    "name": "Utsira",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1160",
+    "name": "Vindafjord",
+    "countyNumber": "11",
+    "county": "Rogaland"
+  },
+  {
+    "number": "1505",
+    "name": "Kristiansund",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1506",
+    "name": "Molde",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1508",
+    "name": "Ålesund",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1511",
+    "name": "Vanylven",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1514",
+    "name": "Sande",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1515",
+    "name": "Herøy (Møre og Romsdal)",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1516",
+    "name": "Ulstein",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1517",
+    "name": "Hareid",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1520",
+    "name": "Ørsta",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1525",
+    "name": "Stranda",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1528",
+    "name": "Sykkylven",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1531",
+    "name": "Sula",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1532",
+    "name": "Giske",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1535",
+    "name": "Vestnes",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1539",
+    "name": "Rauma",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1547",
+    "name": "Aukra",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1554",
+    "name": "Averøy",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1557",
+    "name": "Gjemnes",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1560",
+    "name": "Tingvoll",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1563",
+    "name": "Sunndal",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1566",
+    "name": "Surnadal",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1573",
+    "name": "Smøla",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1576",
+    "name": "Aure",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1577",
+    "name": "Volda",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1578",
+    "name": "Fjord",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1579",
+    "name": "Hustadvika",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1580",
+    "name": "Haram",
+    "countyNumber": "15",
+    "county": "Møre og Romsdal"
+  },
+  {
+    "number": "1804",
+    "name": "Bodø",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1806",
+    "name": "Narvik",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1811",
+    "name": "Bindal",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1812",
+    "name": "Sømna",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1813",
+    "name": "Brønnøy",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1815",
+    "name": "Vega",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1816",
+    "name": "Vevelstad",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1818",
+    "name": "Herøy (Nordland)",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1820",
+    "name": "Alstahaug",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1822",
+    "name": "Leirfjord",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1824",
+    "name": "Vefsn",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1825",
+    "name": "Grane",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1826",
+    "name": "Aarborte",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1827",
+    "name": "Dønna",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1828",
+    "name": "Nesna",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1832",
+    "name": "Hemnes",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1833",
+    "name": "Rana",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1834",
+    "name": "Lurøy",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1835",
+    "name": "Træna",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1836",
+    "name": "Rødøy",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1837",
+    "name": "Meløy",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1838",
+    "name": "Gildeskål",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1839",
+    "name": "Beiarn",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1840",
+    "name": "Saltdal",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1841",
+    "name": "Fauske",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1845",
+    "name": "Sørfold",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1848",
+    "name": "Steigen",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1851",
+    "name": "Lødingen",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1853",
+    "name": "Evenes",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1856",
+    "name": "Røst",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1857",
+    "name": "Værøy",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1859",
+    "name": "Flakstad",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1860",
+    "name": "Vestvågøy",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1865",
+    "name": "Vågan",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1866",
+    "name": "Hadsel",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1867",
+    "name": "Bø",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1868",
+    "name": "Øksnes",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1870",
+    "name": "Sortland",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1871",
+    "name": "Andøy",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1874",
+    "name": "Moskenes",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "1875",
+    "name": "Hábmer",
+    "countyNumber": "18",
+    "county": "Nordland"
+  },
+  {
+    "number": "3101",
+    "name": "Halden",
+    "countyNumber": "31",
+    "county": "Østfold"
+  },
+  {
+    "number": "3103",
+    "name": "Moss",
+    "countyNumber": "31",
+    "county": "Østfold"
+  },
+  {
+    "number": "3105",
+    "name": "Sarpsborg",
+    "countyNumber": "31",
+    "county": "Østfold"
+  },
+  {
+    "number": "3107",
+    "name": "Fredrikstad",
+    "countyNumber": "31",
+    "county": "Østfold"
+  },
+  {
+    "number": "3110",
+    "name": "Hvaler",
+    "countyNumber": "31",
+    "county": "Østfold"
+  },
+  {
+    "number": "3112",
+    "name": "Råde",
+    "countyNumber": "31",
+    "county": "Østfold"
+  },
+  {
+    "number": "3114",
+    "name": "Våler (Østfold)",
+    "countyNumber": "31",
+    "county": "Østfold"
+  },
+  {
+    "number": "3116",
+    "name": "Skiptvet",
+    "countyNumber": "31",
+    "county": "Østfold"
+  },
+  {
+    "number": "3118",
+    "name": "Indre Østfold",
+    "countyNumber": "31",
+    "county": "Østfold"
+  },
+  {
+    "number": "3120",
+    "name": "Rakkestad",
+    "countyNumber": "31",
+    "county": "Østfold"
+  },
+  {
+    "number": "3122",
+    "name": "Marker",
+    "countyNumber": "31",
+    "county": "Østfold"
+  },
+  {
+    "number": "3124",
+    "name": "Aremark",
+    "countyNumber": "31",
+    "county": "Østfold"
+  },
+  {
+    "number": "3201",
+    "name": "Bærum",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3203",
+    "name": "Asker",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3205",
+    "name": "Lillestrøm",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3207",
+    "name": "Nordre Follo",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3209",
+    "name": "Ullensaker",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3212",
+    "name": "Nesodden",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3214",
+    "name": "Frogn",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3216",
+    "name": "Vestby",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3218",
+    "name": "Ås",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3220",
+    "name": "Enebakk",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3222",
+    "name": "Lørenskog",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3224",
+    "name": "Rælingen",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3226",
+    "name": "Aurskog-Høland",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3228",
+    "name": "Nes",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3230",
+    "name": "Gjerdrum",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3232",
+    "name": "Nittedal",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3234",
+    "name": "Lunner",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3236",
+    "name": "Jevnaker",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3238",
+    "name": "Nannestad",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3240",
+    "name": "Eidsvoll",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3242",
+    "name": "Hurdal",
+    "countyNumber": "32",
+    "county": "Akershus"
+  },
+  {
+    "number": "3301",
+    "name": "Drammen",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3303",
+    "name": "Kongsberg",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3305",
+    "name": "Ringerike",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3310",
+    "name": "Hole",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3312",
+    "name": "Lier",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3314",
+    "name": "Øvre Eiker",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3316",
+    "name": "Modum",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3318",
+    "name": "Krødsherad",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3320",
+    "name": "Flå",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3322",
+    "name": "Nesbyen",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3324",
+    "name": "Gol",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3326",
+    "name": "Hemsedal",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3328",
+    "name": "Ål",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3330",
+    "name": "Hol",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3332",
+    "name": "Sigdal",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3334",
+    "name": "Flesberg",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3336",
+    "name": "Rollag",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3338",
+    "name": "Nore og Uvdal",
+    "countyNumber": "33",
+    "county": "Buskerud"
+  },
+  {
+    "number": "3401",
+    "name": "Kongsvinger",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3403",
+    "name": "Hamar",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3405",
+    "name": "Lillehammer",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3407",
+    "name": "Gjøvik",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3411",
+    "name": "Ringsaker",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3412",
+    "name": "Løten",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3413",
+    "name": "Stange",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3414",
+    "name": "Nord-Odal",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3415",
+    "name": "Sør-Odal",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3416",
+    "name": "Eidskog",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3417",
+    "name": "Grue",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3418",
+    "name": "Åsnes",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3419",
+    "name": "Våler (Innlandet)",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3420",
+    "name": "Elverum",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3421",
+    "name": "Trysil",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3422",
+    "name": "Åmot",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3423",
+    "name": "Stor-Elvdal",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3424",
+    "name": "Rendalen",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3425",
+    "name": "Engerdal",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3426",
+    "name": "Tolga",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3427",
+    "name": "Tynset",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3428",
+    "name": "Alvdal",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3429",
+    "name": "Folldal",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3430",
+    "name": "Os",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3431",
+    "name": "Dovre",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3432",
+    "name": "Lesja",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3433",
+    "name": "Skjåk",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3434",
+    "name": "Lom",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3435",
+    "name": "Vågå",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3436",
+    "name": "Nord-Fron",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3437",
+    "name": "Sel",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3438",
+    "name": "Sør-Fron",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3439",
+    "name": "Ringebu",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3440",
+    "name": "Øyer",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3441",
+    "name": "Gausdal",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3442",
+    "name": "Østre Toten",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3443",
+    "name": "Vestre Toten",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3446",
+    "name": "Gran",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3447",
+    "name": "Søndre Land",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3448",
+    "name": "Nordre Land",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3449",
+    "name": "Sør-Aurdal",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3450",
+    "name": "Etnedal",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3451",
+    "name": "Nord-Aurdal",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3452",
+    "name": "Vestre Slidre",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3453",
+    "name": "Øystre Slidre",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3454",
+    "name": "Vang",
+    "countyNumber": "34",
+    "county": "Innlandet"
+  },
+  {
+    "number": "3901",
+    "name": "Horten",
+    "countyNumber": "39",
+    "county": "Vestfold"
+  },
+  {
+    "number": "3903",
+    "name": "Holmestrand",
+    "countyNumber": "39",
+    "county": "Vestfold"
+  },
+  {
+    "number": "3905",
+    "name": "Tønsberg",
+    "countyNumber": "39",
+    "county": "Vestfold"
+  },
+  {
+    "number": "3907",
+    "name": "Sandefjord",
+    "countyNumber": "39",
+    "county": "Vestfold"
+  },
+  {
+    "number": "3909",
+    "name": "Larvik",
+    "countyNumber": "39",
+    "county": "Vestfold"
+  },
+  {
+    "number": "3911",
+    "name": "Færder",
+    "countyNumber": "39",
+    "county": "Vestfold"
+  },
+  {
+    "number": "4001",
+    "name": "Porsgrunn",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4003",
+    "name": "Skien",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4005",
+    "name": "Notodden",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4010",
+    "name": "Siljan",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4012",
+    "name": "Bamble",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4014",
+    "name": "Kragerø",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4016",
+    "name": "Drangedal",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4018",
+    "name": "Nome",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4020",
+    "name": "Midt-Telemark",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4022",
+    "name": "Seljord",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4024",
+    "name": "Hjartdal",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4026",
+    "name": "Tinn",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4028",
+    "name": "Kviteseid",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4030",
+    "name": "Nissedal",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4032",
+    "name": "Fyresdal",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4034",
+    "name": "Tokke",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4036",
+    "name": "Vinje",
+    "countyNumber": "40",
+    "county": "Telemark"
+  },
+  {
+    "number": "4201",
+    "name": "Risør",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4202",
+    "name": "Grimstad",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4203",
+    "name": "Arendal",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4204",
+    "name": "Kristiansand",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4205",
+    "name": "Lindesnes",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4206",
+    "name": "Farsund",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4207",
+    "name": "Flekkefjord",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4211",
+    "name": "Gjerstad",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4212",
+    "name": "Vegårshei",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4213",
+    "name": "Tvedestrand",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4214",
+    "name": "Froland",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4215",
+    "name": "Lillesand",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4216",
+    "name": "Birkenes",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4217",
+    "name": "Åmli",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4218",
+    "name": "Iveland",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4219",
+    "name": "Evje og Hornnes",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4220",
+    "name": "Bygland",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4221",
+    "name": "Valle",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4222",
+    "name": "Bykle",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4223",
+    "name": "Vennesla",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4224",
+    "name": "Åseral",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4225",
+    "name": "Lyngdal",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4226",
+    "name": "Hægebostad",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4227",
+    "name": "Kvinesdal",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4228",
+    "name": "Sirdal",
+    "countyNumber": "42",
+    "county": "Agder"
+  },
+  {
+    "number": "4601",
+    "name": "Bergen",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4602",
+    "name": "Kinn",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4611",
+    "name": "Etne",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4612",
+    "name": "Sveio",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4613",
+    "name": "Bømlo",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4614",
+    "name": "Stord",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4615",
+    "name": "Fitjar",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4616",
+    "name": "Tysnes",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4617",
+    "name": "Kvinnherad",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4618",
+    "name": "Ullensvang",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4619",
+    "name": "Eidfjord",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4620",
+    "name": "Ulvik",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4621",
+    "name": "Voss",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4622",
+    "name": "Kvam",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4623",
+    "name": "Samnanger",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4624",
+    "name": "Bjørnafjorden",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4625",
+    "name": "Austevoll",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4626",
+    "name": "Øygarden",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4627",
+    "name": "Askøy",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4628",
+    "name": "Vaksdal",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4629",
+    "name": "Modalen",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4630",
+    "name": "Osterøy",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4631",
+    "name": "Alver",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4632",
+    "name": "Austrheim",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4633",
+    "name": "Fedje",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4634",
+    "name": "Masfjorden",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4635",
+    "name": "Gulen",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4636",
+    "name": "Solund",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4637",
+    "name": "Hyllestad",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4638",
+    "name": "Høyanger",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4639",
+    "name": "Vik",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4640",
+    "name": "Sogndal",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4641",
+    "name": "Aurland",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4642",
+    "name": "Lærdal",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4643",
+    "name": "Årdal",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4644",
+    "name": "Luster",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4645",
+    "name": "Askvoll",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4646",
+    "name": "Fjaler",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4647",
+    "name": "Sunnfjord",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4648",
+    "name": "Bremanger",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4649",
+    "name": "Stad",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4650",
+    "name": "Gloppen",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "4651",
+    "name": "Stryn",
+    "countyNumber": "46",
+    "county": "Vestland"
+  },
+  {
+    "number": "5001",
+    "name": "Trondheim",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5006",
+    "name": "Steinkjer",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5007",
+    "name": "Namsos",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5014",
+    "name": "Frøya",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5020",
+    "name": "Osen",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5021",
+    "name": "Oppdal",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5022",
+    "name": "Rennebu",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5025",
+    "name": "Røros",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5026",
+    "name": "Holtålen",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5027",
+    "name": "Midtre Gauldal",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5028",
+    "name": "Melhus",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5029",
+    "name": "Skaun",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5031",
+    "name": "Malvik",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5032",
+    "name": "Selbu",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5033",
+    "name": "Tydal",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5034",
+    "name": "Meråker",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5035",
+    "name": "Stjørdal",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5036",
+    "name": "Frosta",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5037",
+    "name": "Levanger",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5038",
+    "name": "Verdal",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5041",
+    "name": "Snåase",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5042",
+    "name": "Lierne",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5043",
+    "name": "Raarvihke",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5044",
+    "name": "Namsskogan",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5045",
+    "name": "Grong",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5046",
+    "name": "Høylandet",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5047",
+    "name": "Overhalla",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5049",
+    "name": "Flatanger",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5052",
+    "name": "Leka",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5053",
+    "name": "Inderøy",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5054",
+    "name": "Indre Fosen",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5055",
+    "name": "Heim",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5056",
+    "name": "Hitra",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5057",
+    "name": "Ørland",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5058",
+    "name": "Åfjord",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5059",
+    "name": "Orkland",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5060",
+    "name": "Nærøysund",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5061",
+    "name": "Rindal",
+    "countyNumber": "50",
+    "county": "Trøndelag"
+  },
+  {
+    "number": "5501",
+    "name": "Tromsø",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5503",
+    "name": "Harstad",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5510",
+    "name": "Kvæfjord",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5512",
+    "name": "Dielddanuorri",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5514",
+    "name": "Ibestad",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5516",
+    "name": "Gratangen",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5518",
+    "name": "Loabák",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5520",
+    "name": "Bardu",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5522",
+    "name": "Salangen",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5524",
+    "name": "Målselv",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5526",
+    "name": "Sørreisa",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5528",
+    "name": "Dyrøy",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5530",
+    "name": "Senja",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5532",
+    "name": "Balsfjord",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5534",
+    "name": "Karlsøy",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5536",
+    "name": "Lyngen",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5538",
+    "name": "Storfjord",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5540",
+    "name": "Gáivuotna",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5542",
+    "name": "Skjervøy",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5544",
+    "name": "Nordreisa",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5546",
+    "name": "Kvænangen",
+    "countyNumber": "55",
+    "county": "Troms"
+  },
+  {
+    "number": "5601",
+    "name": "Alta",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5603",
+    "name": "Hammerfest",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5605",
+    "name": "Sør-Varanger",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5607",
+    "name": "Vadsø",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5610",
+    "name": "Kárášjohka",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5612",
+    "name": "Guovdageaidnu",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5614",
+    "name": "Loppa",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5616",
+    "name": "Hasvik",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5618",
+    "name": "Måsøy",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5620",
+    "name": "Nordkapp",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5622",
+    "name": "Porsanger",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5624",
+    "name": "Lebesby",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5626",
+    "name": "Gamvik",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5628",
+    "name": "Deatnu",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5630",
+    "name": "Berlevåg",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5632",
+    "name": "Båtsfjord",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5634",
+    "name": "Vardø",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  },
+  {
+    "number": "5636",
+    "name": "Unjárga",
+    "countyNumber": "56",
+    "county": "Finnmark"
+  }
+]
