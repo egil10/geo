@@ -25,7 +25,7 @@ export default function TopBar({
   onOpenSettings: () => void;
 }) {
   return (
-    <header className="flex items-center gap-2">
+    <header className="flex min-w-0 items-center gap-2">
       <Wordmark />
       {exploreActive ? (
         <button onClick={onExplore} className="pill-solid shrink-0 focus-ring" aria-label="Tilbake til quizen">
@@ -42,9 +42,8 @@ export default function TopBar({
           </button>
         )
       )}
-      {/* Spacer pushes the controls to the right; collapses first when tight. */}
-      <div className="flex-1" />
-      <div className="flex shrink-0 items-center gap-1.5">
+      {/* ml-auto right-aligns the controls and yields space so the pill truncates. */}
+      <div className="ml-auto flex shrink-0 items-center gap-1.5">
         {!exploreActive && (
           <button onClick={onExplore} aria-label="Utforsk datasettet" title="Utforsk" className="pill pill-glass shrink-0 focus-ring">
             <Compass size={15} />
