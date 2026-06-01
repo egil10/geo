@@ -37,7 +37,7 @@ export default function TopBar({
         onCustomize && (
           <button onClick={onCustomize} className="pill-glass min-w-0 shrink focus-ring" aria-label="Tilpass quizen">
             <SlidersHorizontal size={14} className="shrink-0" />
-            <span className="truncate">{summary}</span>
+            <span className="min-w-0 truncate">{summary}</span>
             <ChevronRight size={13} className="shrink-0 text-ink-muted" />
           </button>
         )
