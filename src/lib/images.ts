@@ -26,11 +26,29 @@ export function tiny(url: string): string {
 export const PHOTO_SIZES = "(min-width: 768px) 620px, 92vw";
 export const COA_SIZES = "(min-width: 768px) 300px, 62vw";
 
+export type Quality = "hd" | "lett";
+
+// Resolve the <img> props for a prompt image given the user's quality choice.
+// "lett" serves a single downsampled file (lighter + faster); "hd" serves a
+// responsive srcset. Display and preload go through this so they always match.
+export function heroProps(
+  url: string,
+  variant: "coa" | "photo",
+  quality: Quality,
+): { src: string; srcSet?: string; sizes?: string } {
+  if (variant === "coa") {
+    if (quality === "lett") return { src: imgAt(url, 220) };
+    return { src: imgAt(url, 320), srcSet: coaSrcSet(url), sizes: COA_SIZES };
+  }
+  if (quality === "lett") return { src: imgAt(url, 480) };
+  return { src: imgAt(url, 720), srcSet: photoSrcSet(url), sizes: PHOTO_SIZES };
+}
+
 // Warm the browser cache for an upcoming image, matching the displayed variant.
-export function preloadImage(url: string, srcSet: string, sizes: string) {
+export function preloadImage(url: string, srcSet?: string, sizes?: string) {
   if (typeof window === "undefined") return;
   const img = new window.Image();
-  img.sizes = sizes;
-  img.srcset = srcSet;
+  if (sizes) img.sizes = sizes;
+  if (srcSet) img.srcset = srcSet;
   img.src = url;
 }

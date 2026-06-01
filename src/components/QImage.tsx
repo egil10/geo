@@ -16,8 +16,8 @@ export default function QImage({
 }: {
   idKey: string;
   src: string;
-  srcSet: string;
-  sizes: string;
+  srcSet?: string;
+  sizes?: string;
   alt: string;
   variant: "coa" | "photo";
 }) {

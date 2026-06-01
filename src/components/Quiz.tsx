@@ -3,9 +3,9 @@
 import { useCallback, useEffect, useMemo, useReducer } from "react";
 import { Check, X, ArrowRight, Flame, Settings, Layers, ChevronRight } from "lucide-react";
 import { Round, nextRound, activeGenerators, Category, CATEGORIES } from "@/lib/questions";
-import { Place, fmtMetric, fmtInt } from "@/lib/data";
-import { EloState, tierFor } from "@/lib/elo";
-import { imgAt, photoSrcSet, coaSrcSet, PHOTO_SIZES, COA_SIZES, preloadImage } from "@/lib/images";
+import { fmtMetric, fmtInt } from "@/lib/data";
+import { EloState } from "@/lib/elo";
+import { imgAt, heroProps, preloadImage, Quality } from "@/lib/images";
 import QImage from "./QImage";
 import EloBadge from "./EloBadge";
 import Wordmark from "./Wordmark";
@@ -82,6 +82,8 @@ function reducer(state: State, action: Action): State {
         phase: "idle",
         picked: null,
         delta: null,
+        // A completed perfect-10 resets on advance to start the next loop.
+        streak: state.streak >= 10 ? 0 : state.streak,
         recentSubjects: [...state.recentSubjects, round.subject.id].slice(-30),
         recentAnswers: [...state.recentAnswers, round.answerKey].slice(-14),
         lastGen: round.genKey,
@@ -111,18 +113,22 @@ export default function Quiz({
   selected,
   elo,
   onResult,
+  onPerfectStreak,
   onOpenPicker,
   onOpenElo,
   onOpenSettings,
   autoAdvance,
+  quality,
 }: {
   selected: Set<Category>;
   elo: EloState;
   onResult: (won: boolean, difficulty: number, cat: Category) => number;
+  onPerfectStreak: () => void;
   onOpenPicker: () => void;
   onOpenElo: () => void;
   onOpenSettings: () => void;
   autoAdvance: number;
+  quality: Quality;
 }) {
   const gens = useMemo(() => activeGenerators(selected), [selected]);
   const [state, dispatch] = useReducer(reducer, initial);
@@ -146,9 +152,10 @@ export default function Quiz({
       if (state.phase !== "idle" || !state.round) return;
       const won = i === state.round.answerIndex;
       const delta = onResult(won, state.round.difficulty, state.round.cat);
+      if (won && state.streak + 1 === 10) onPerfectStreak();
       dispatch({ type: "answer", index: i, won, delta });
     },
-    [state.phase, state.round, onResult],
+    [state.phase, state.round, state.streak, onResult, onPerfectStreak],
   );
 
   // Keyboard: 1–4 to answer, Enter/Space/→ to advance.
@@ -176,19 +183,20 @@ export default function Quiz({
     }
   }, [state.phase, autoAdvance, handleNext]);
 
-  // Preload upcoming images (prompt + reveal photo), matching displayed variants.
+  // Preload upcoming images (prompt + reveal photo), matching displayed quality.
   useEffect(() => {
     for (const r of state.queue) {
       if (r.prompt.kind === "image") {
-        const ss = r.prompt.variant === "photo" ? photoSrcSet(r.prompt.src) : coaSrcSet(r.prompt.src);
-        const sizes = r.prompt.variant === "photo" ? PHOTO_SIZES : COA_SIZES;
-        preloadImage(imgAt(r.prompt.src, 720), ss, sizes);
+        const p = heroProps(r.prompt.src, r.prompt.variant, quality);
+        preloadImage(p.src, p.srcSet, p.sizes);
       }
-      if (r.subject.photo) preloadImage(imgAt(r.subject.photo, 540), photoSrcSet(r.subject.photo), PHOTO_SIZES);
+      if (r.subject.photo) {
+        const p = heroProps(r.subject.photo, "photo", quality);
+        preloadImage(p.src, p.srcSet, p.sizes);
+      }
     }
-  }, [state.queue]);
+  }, [state.queue, quality]);
 
-  const tier = tierFor(elo.rating);
   const catLabel = useMemo(() => {
     if (selected.size === 0 || selected.size === CATEGORIES.length) return "Alt";
     if (selected.size === 1) return CATEGORIES.find((c) => selected.has(c.key))?.label ?? "Alt";
@@ -210,10 +218,6 @@ export default function Quiz({
           </button>
         </div>
         <div className="flex shrink-0 items-center gap-2">
-          <div className="pill-glass tabular-nums" title="Rekke / beste rekke">
-            <Flame size={14} className={state.streak > 0 ? "text-amber-500" : "text-ink-muted"} />
-            <span className="font-semibold">{state.streak}</span>
-          </div>
           <EloBadge elo={elo} onOpen={onOpenElo} />
           <button
             onClick={onOpenSettings}
@@ -225,19 +229,22 @@ export default function Quiz({
         </div>
       </header>
 
-      {/* Tier progress */}
-      <div className="flex items-center gap-2 px-1 text-[11px] font-medium text-ink-muted">
-        <span className="shrink-0">{tier.name}</span>
-        <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-black/[0.06] dark:bg-white/10">
-          <div
-            className="h-full rounded-full transition-all duration-700"
-            style={{ width: `${Math.round(tier.progress * 100)}%`, background: "var(--nordic)" }}
-          />
+      {/* Streak — 10 correct in a row triggers a celebration, then resets. Elo keeps climbing. */}
+      <div className="flex items-center gap-2 px-1">
+        <Flame size={14} className={state.streak > 0 ? "text-amber-500" : "text-ink-muted"} />
+        <div className="flex flex-1 items-center gap-1" aria-label={`Rekke ${state.streak} av 10`}>
+          {Array.from({ length: 10 }).map((_, i) => (
+            <div
+              key={i}
+              className="h-1.5 flex-1 rounded-full transition-colors duration-300"
+              style={{ background: i < state.streak ? "var(--nordic)" : "var(--hairline)" }}
+            />
+          ))}
         </div>
-        <span className="shrink-0">{tier.next ?? "Maks"}</span>
+        <span className="shrink-0 text-[11px] font-medium tabular-nums text-ink-muted">{state.streak}/10</span>
       </div>
 
-      {round && <QuestionCard key={round.uid} round={round} state={state} onAnswer={handleAnswer} />}
+      {round && <QuestionCard key={round.uid} round={round} state={state} quality={quality} onAnswer={handleAnswer} />}
 
       {/* Reveal / status strip — fixed height so layout never jumps. */}
       <div className="h-[104px]">
@@ -259,10 +266,12 @@ export default function Quiz({
 function QuestionCard({
   round,
   state,
+  quality,
   onAnswer,
 }: {
   round: Round;
   state: State;
+  quality: Quality;
   onAnswer: (i: number) => void;
 }) {
   const answered = state.phase === "answered";
@@ -294,24 +303,10 @@ function QuestionCard({
             <div className="relative flex-1">
               {round.prompt.variant === "coa" ? (
                 <div className="absolute inset-3 overflow-hidden rounded-2xl bg-white">
-                  <QImage
-                    idKey={round.uid}
-                    src={round.prompt.src}
-                    srcSet={coaSrcSet(round.prompt.src)}
-                    sizes={COA_SIZES}
-                    alt={round.prompt.alt}
-                    variant="coa"
-                  />
+                  <QImage idKey={round.uid} {...heroProps(round.prompt.src, "coa", quality)} alt={round.prompt.alt} variant="coa" />
                 </div>
               ) : (
-                <QImage
-                  idKey={round.uid}
-                  src={round.prompt.src}
-                  srcSet={photoSrcSet(round.prompt.src)}
-                  sizes={PHOTO_SIZES}
-                  alt={round.prompt.alt}
-                  variant="photo"
-                />
+                <QImage idKey={round.uid} {...heroProps(round.prompt.src, "photo", quality)} alt={round.prompt.alt} variant="photo" />
               )}
             </div>
           </>

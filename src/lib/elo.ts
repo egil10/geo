@@ -77,7 +77,10 @@ export interface EloUpdate {
 export function applyResult(prev: EloState, won: boolean, opponent: number, cat: string): EloUpdate {
   const k = kFactor(prev.games);
   const exp = expectedScore(prev.rating, opponent);
-  const delta = Math.round(k * ((won ? 1 : 0) - exp));
+  // Every answer counts: a win is always at least +1, a loss at least -1, even
+  // for a near-certain outcome where the raw Elo change would round to 0.
+  const raw = k * ((won ? 1 : 0) - exp);
+  const delta = won ? Math.max(1, Math.round(raw)) : Math.min(-1, Math.round(raw));
   const rating = clamp(prev.rating + delta, 100, 4000);
   const history = [...prev.history, rating].slice(-250);
   const pc = prev.perCat[cat] ?? { games: 0, wins: 0 };

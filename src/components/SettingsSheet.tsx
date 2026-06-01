@@ -1,7 +1,8 @@
 "use client";
 
-import { Sun, Moon, RotateCcw } from "lucide-react";
+import { Sun, Moon, RotateCcw, Sparkles, Zap } from "lucide-react";
 import Modal from "./Modal";
+import { Quality } from "@/lib/images";
 
 const SPEEDS: { label: string; ms: number }[] = [
   { label: "Manuell", ms: 0 },
@@ -40,6 +41,8 @@ function Segmented<T>({
 export default function SettingsSheet({
   autoAdvance,
   onAutoAdvance,
+  quality,
+  onQuality,
   theme,
   onTheme,
   onResetElo,
@@ -47,6 +50,8 @@ export default function SettingsSheet({
 }: {
   autoAdvance: number;
   onAutoAdvance: (ms: number) => void;
+  quality: Quality;
+  onQuality: (q: Quality) => void;
   theme: "light" | "dark";
   onTheme: (t: "light" | "dark") => void;
   onResetElo: () => void;
@@ -59,6 +64,19 @@ export default function SettingsSheet({
           <div className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-ink-muted">Auto-neste</div>
           <Segmented options={SPEEDS.map((s) => ({ label: s.label, value: s.ms }))} value={autoAdvance} onChange={onAutoAdvance} />
           <p className="mt-1.5 text-[11px] text-ink-muted">Gå automatisk videre etter at du har svart.</p>
+        </div>
+
+        <div>
+          <div className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-ink-muted">Bilder</div>
+          <Segmented
+            options={[
+              { label: "Full", value: "hd" as Quality, icon: <Sparkles size={14} /> },
+              { label: "Lett", value: "lett" as Quality, icon: <Zap size={14} /> },
+            ]}
+            value={quality}
+            onChange={onQuality}
+          />
+          <p className="mt-1.5 text-[11px] text-ink-muted">«Lett» bruker nedskalerte bilder som laster raskere.</p>
         </div>
 
         <div>

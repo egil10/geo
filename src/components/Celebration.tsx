@@ -5,7 +5,15 @@ import { Award } from "lucide-react";
 
 const COLORS = ["#ba0c2f", "#1d4ed8", "#d97706", "#16a34a", "#0a0a0a"];
 
-export default function Celebration({ tierName, onDone }: { tierName: string; onDone: () => void }) {
+export default function Celebration({
+  title,
+  sub,
+  onDone,
+}: {
+  title: string;
+  sub: string;
+  onDone: () => void;
+}) {
   useEffect(() => {
     const t = setTimeout(onDone, 2600);
     return () => clearTimeout(t);
@@ -40,8 +48,8 @@ export default function Celebration({ tierName, onDone }: { tierName: string; on
       ))}
       <div className="frost animate-diploma flex flex-col items-center gap-2 rounded-[28px] px-8 py-7 text-center">
         <Award size={34} className="text-amber-500" strokeWidth={1.8} />
-        <div className="text-[11px] font-semibold uppercase tracking-wider text-ink-muted">Ny rang</div>
-        <div className="font-display text-2xl font-bold tracking-tight">{tierName}</div>
+        <div className="text-[11px] font-semibold uppercase tracking-wider text-ink-muted">{sub}</div>
+        <div className="font-display text-2xl font-bold tracking-tight">{title}</div>
       </div>
     </div>
   );

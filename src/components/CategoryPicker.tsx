@@ -45,10 +45,17 @@ export default function CategoryPicker({
   const isAll = selected.size === 0 || selected.size === allKeys.length;
 
   const toggle = (key: Category) => {
-    const next = new Set(selected.size === 0 ? allKeys : selected);
+    // From "Alt" (everything), clicking a single category narrows to just it.
+    if (isAll) {
+      onChange(new Set([key]));
+      return;
+    }
+    const next = new Set(selected);
     if (next.has(key)) next.delete(key);
     else next.add(key);
-    onChange(next);
+    // Empty (deselected the last) or full again both mean "Alt".
+    if (next.size === 0 || next.size === allKeys.length) onChange(new Set());
+    else onChange(next);
   };
 
   return (
