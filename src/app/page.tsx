@@ -71,6 +71,7 @@ export default function Home() {
       const wantExplore =
         params.get("view") === "utforsk" || params.get("mode") === "utforsk" || localStorage.getItem(EXPLORE_KEY) === "1";
       if (wantExplore) setExplore(true);
+      if (params.get("sheet") === "1") setCustomizeOpen(true); // dev: open Tilpass on load
       const q = localStorage.getItem(QUALITY_KEY);
       if (q === "hd" || q === "lett") setQuality(q);
       else {

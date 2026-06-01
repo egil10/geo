@@ -260,6 +260,17 @@ export default function Quiz({
     [state.phase, state.round, score],
   );
 
+  // Dev hook: ?reveal=1 auto-answers the first round so the feedback card is
+  // visible on a plain page load (used for screenshot verification).
+  const autoRevealed = useRef(false);
+  useEffect(() => {
+    if (autoRevealed.current || typeof window === "undefined") return;
+    if (new URLSearchParams(window.location.search).get("reveal") !== "1") return;
+    if (state.phase !== "idle" || !state.round || isOrder(state.round)) return;
+    autoRevealed.current = true;
+    answerChoose(state.round.answerIndex);
+  }, [state.phase, state.round, answerChoose]);
+
   const answerOrder = useCallback(
     (orderIds: string[]) => {
       if (state.phase !== "idle" || !state.round || !isOrder(state.round)) return;
