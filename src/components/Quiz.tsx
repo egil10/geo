@@ -256,15 +256,20 @@ export default function Quiz({
     [state.phase, state.round, score],
   );
 
-  // Dev hook: ?reveal=1 auto-answers the first round so the feedback card is
-  // visible on a plain page load (used for screenshot verification).
+  // Dev hook: ?reveal=1 auto-answers the round so the feedback card shows on a
+  // plain load (screenshot verification). Deferred so it fires on the *settled*
+  // round — async hydration re-inits the queue a couple times on mount.
   const autoRevealed = useRef(false);
   useEffect(() => {
     if (autoRevealed.current || typeof window === "undefined") return;
     if (new URLSearchParams(window.location.search).get("reveal") !== "1") return;
     if (state.phase !== "idle" || !state.round || isOrder(state.round)) return;
-    autoRevealed.current = true;
-    answerChoose(state.round.answerIndex);
+    const r = state.round;
+    const t = setTimeout(() => {
+      autoRevealed.current = true;
+      answerChoose(r.answerIndex);
+    }, 350);
+    return () => clearTimeout(t);
   }, [state.phase, state.round, answerChoose]);
 
   const answerOrder = useCallback(
