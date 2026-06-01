@@ -6,7 +6,7 @@ const ctx = { recentSubjects: new Set<string>(), recentAnswers: [] as string[], 
 const samples: Record<string, string> = {};
 
 for (const cat of ["befolkning", "fjell", "kommuner", "vapen", "fylker"] as Category[]) {
-  const gens = activeGenerators(new Set([cat]));
+  const gens = activeGenerators(new Set([cat]), new Set());
   for (let i = 0; i < 600; i++) {
     const r = nextRound(gens, ctx);
     if (r.choiceInfo) {

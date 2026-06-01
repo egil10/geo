@@ -1,6 +1,6 @@
 "use client";
 
-import { Layers, Settings, ChevronRight, Gamepad2, Compass, Play } from "lucide-react";
+import { Layers, Settings, ChevronRight, Gamepad2, Compass, Play, Shapes } from "lucide-react";
 import Wordmark from "./Wordmark";
 import EloBadge from "./EloBadge";
 import { EloState } from "@/lib/elo";
@@ -11,6 +11,8 @@ export default function TopBar({
   onOpenMode,
   catLabel,
   onOpenPicker,
+  typeLabel,
+  onOpenType,
   exploreActive,
   onExplore,
   elo,
@@ -21,6 +23,8 @@ export default function TopBar({
   onOpenMode: () => void;
   catLabel?: string;
   onOpenPicker?: () => void;
+  typeLabel?: string;
+  onOpenType?: () => void;
   exploreActive: boolean;
   onExplore: () => void;
   elo: EloState;
@@ -47,6 +51,13 @@ export default function TopBar({
               <button onClick={onOpenPicker} className="pill-glass shrink-0 focus-ring" aria-label="Velg kategorier">
                 <Layers size={14} />
                 <span className="max-w-[8rem] truncate">{catLabel}</span>
+                <ChevronRight size={13} className="text-ink-muted" />
+              </button>
+            )}
+            {typeLabel && onOpenType && (
+              <button onClick={onOpenType} className="pill-glass shrink-0 focus-ring" aria-label="Velg spørsmålstype">
+                <Shapes size={14} />
+                <span className="max-w-[8rem] truncate">{typeLabel}</span>
                 <ChevronRight size={13} className="text-ink-muted" />
               </button>
             )}

@@ -25,7 +25,7 @@ for (const c of ["isbreer", "tunneler"] as Category[]) {
   for (let i = 0; i < 200; i++) {
     const o = nextOrderRound(new Set([c]));
     if (o.items.length !== 4 || new Set(o.items.map((x) => x.value)).size !== 4) err(`${c} order bad`);
-    const gens = activeGenerators(new Set([c]));
+    const gens = activeGenerators(new Set([c]), new Set());
     const r = nextRound(gens, { recentSubjects: new Set(), recentAnswers: [], lastGen: null });
     if (r.choices[r.answerIndex] !== r.answerKey) err(`${c} choose answer mismatch`);
   }

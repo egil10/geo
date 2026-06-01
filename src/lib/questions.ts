@@ -80,6 +80,32 @@ export const CATEGORIES: CategoryMeta[] = [
   { key: "nummer", label: "Kommunenr.", icon: "Hash", hint: "Kommunenummer" },
 ];
 
+// "Quiz type" = the *style* of a question, orthogonal to its category, so the
+// player can ask for e.g. only map questions about kommuner. Derived from the
+// generator key suffix (see quizTypeOf).
+export type QuizType = "kart" | "bilde" | "vapen" | "fakta";
+
+export interface QuizTypeMeta {
+  key: QuizType;
+  label: string;
+  icon: string;
+  hint: string;
+}
+
+export const QUIZ_TYPES: QuizTypeMeta[] = [
+  { key: "kart", label: "Kart", icon: "MapPin", hint: "Markert på Norgeskartet" },
+  { key: "bilde", label: "Bilde", icon: "Image", hint: "Gjenkjenn fra foto" },
+  { key: "vapen", label: "Våpen", icon: "Shield", hint: "Kommune- & fylkesvåpen" },
+  { key: "fakta", label: "Fakta", icon: "Type", hint: "Navn, tall & rangering" },
+];
+
+export function quizTypeOf(key: string): QuizType {
+  if (key.endsWith("-kart")) return "kart";
+  if (key.endsWith("-foto")) return "bilde";
+  if (key.endsWith("-vapen")) return "vapen";
+  return "fakta";
+}
+
 export type Prompt =
   | { kind: "text"; text: string }
   | { kind: "image"; text: string; src: string; alt: string; variant: "coa" | "photo" }
@@ -784,12 +810,15 @@ const WRITABLE = new Set([
   "fossefall-kart",
 ]);
 
-export function activeGenerators(selected: Set<Category>, writableOnly = false): Generator[] {
+export function activeGenerators(selected: Set<Category>, types: Set<QuizType>, writableOnly = false): Generator[] {
   let gens = GENERATORS.filter((g) => g.cats.some((c) => selected.has(c)) && g.pool.length > 0);
-  if (!gens.length) gens = GENERATORS.filter((g) => g.pool.length > 0);
+  if (!gens.length) gens = GENERATORS.filter((g) => g.pool.length > 0); // empty selection = "Alt"
+  // Narrow to chosen question styles. An empty result is allowed (the caller
+  // shows an empty state) so the filter is never silently ignored.
+  if (types.size) gens = gens.filter((g) => types.has(quizTypeOf(g.key)));
   if (writableOnly) {
     const w = gens.filter((g) => WRITABLE.has(g.key));
-    gens = w.length ? w : GENERATORS.filter((g) => WRITABLE.has(g.key) && g.pool.length > 0);
+    gens = w.length || types.size ? w : GENERATORS.filter((g) => WRITABLE.has(g.key) && g.pool.length > 0);
   }
   return gens;
 }

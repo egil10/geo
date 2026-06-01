@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "react";
-import { Check, X, ArrowRight, Flame, ChevronUp, ChevronDown, GripVertical, SkipForward, MinusCircle } from "lucide-react";
+import { Check, X, ArrowRight, Flame, ChevronUp, ChevronDown, GripVertical, SkipForward, MinusCircle, SearchX } from "lucide-react";
 import {
   Round,
   OrderRound,
@@ -10,6 +10,8 @@ import {
   activeGenerators,
   Category,
   CATEGORIES,
+  QuizType,
+  QUIZ_TYPES,
 } from "@/lib/questions";
 import { EloState } from "@/lib/elo";
 import { imgAt, heroProps, preloadImage, Quality } from "@/lib/images";
@@ -139,6 +141,7 @@ function makeRound(
 }
 
 function buildInitial(mode: Mode, gens: ReturnType<typeof activeGenerators>, selected: Set<Category>): AnyRound[] {
+  if (mode !== "sorter" && !gens.length) return []; // filters exclude everything → empty state
   const recentSubjects: string[] = [];
   const recentAnswers: string[] = [];
   let lastGen: string | null = null;
@@ -158,11 +161,13 @@ const diffLevel = (d: number) => (d < 950 ? 1 : d < 1320 ? 2 : 3);
 export default function Quiz({
   mode,
   selected,
+  types,
   elo,
   onResult,
   onPerfectStreak,
   onOpenPicker,
   onOpenMode,
+  onOpenType,
   exploreActive,
   onExplore,
   onOpenElo,
@@ -172,11 +177,13 @@ export default function Quiz({
 }: {
   mode: Mode;
   selected: Set<Category>;
+  types: Set<QuizType>;
   elo: EloState;
   onResult: (won: boolean, difficulty: number, cat: Category) => number;
   onPerfectStreak: () => void;
   onOpenPicker: () => void;
   onOpenMode: () => void;
+  onOpenType: () => void;
   exploreActive: boolean;
   onExplore: () => void;
   onOpenElo: () => void;
@@ -184,7 +191,11 @@ export default function Quiz({
   autoAdvance: number;
   quality: Quality;
 }) {
-  const gens = useMemo(() => activeGenerators(selected, mode === "skriv"), [selected, mode]);
+  const gens = useMemo(() => activeGenerators(selected, types, mode === "skriv"), [selected, types, mode]);
+  // The quiz-type filter only applies to the option/typing modes (Sortér builds
+  // its own rounds); an empty result there means the filters exclude everything.
+  const genMode = mode === "velg" || mode === "skriv";
+  const noGens = genMode && gens.length === 0;
   const [state, dispatch] = useReducer(reducer, initial);
 
   useEffect(() => {
@@ -290,6 +301,12 @@ export default function Quiz({
     return `${selected.size} kategorier`;
   }, [selected]);
 
+  const typeLabel = useMemo(() => {
+    if (types.size === 0 || types.size === QUIZ_TYPES.length) return "Alle typer";
+    if (types.size === 1) return QUIZ_TYPES.find((t) => types.has(t.key))?.label ?? "Alle typer";
+    return `${types.size} typer`;
+  }, [types]);
+
   const round = state.round;
 
   return (
@@ -299,6 +316,8 @@ export default function Quiz({
         onOpenMode={onOpenMode}
         catLabel={catLabel}
         onOpenPicker={onOpenPicker}
+        typeLabel={genMode ? typeLabel : undefined}
+        onOpenType={onOpenType}
         exploreActive={exploreActive}
         onExplore={onExplore}
         elo={elo}
@@ -321,7 +340,10 @@ export default function Quiz({
         <span className="shrink-0 text-[11px] font-medium tabular-nums text-ink-muted">{state.streak}/10</span>
       </div>
 
-      {round &&
+      {noGens ? (
+        <EmptyFilters onAdjust={onOpenType} />
+      ) : (
+        round &&
         (isOrder(round) ? (
           <OrderBoard key={round.uid} round={round} phase={state.phase} submitted={state.submittedOrder} onCheck={answerOrder} />
         ) : (
@@ -335,10 +357,11 @@ export default function Quiz({
             onChoose={answerChoose}
             onWrite={answerWrite}
           />
-        ))}
+        ))
+      )}
 
       {/* Reveal / status strip — fixed height so layout never jumps. */}
-      <div className="min-h-[104px]">
+      <div className={`min-h-[104px] ${noGens ? "hidden" : ""}`}>
         {state.phase === "answered" && round ? (
           <RevealBar round={round} won={!!state.won} skipped={state.skipped} delta={state.delta} typed={state.typed} onNext={handleNext} />
         ) : (
@@ -353,6 +376,22 @@ export default function Quiz({
           </div>
         )}
       </div>
+    </div>
+  );
+}
+
+// Shown when the chosen category × question-type combination has no questions.
+function EmptyFilters({ onAdjust }: { onAdjust: () => void }) {
+  return (
+    <div className="animate-pop glass-strong flex h-[320px] flex-col items-center justify-center gap-3 rounded-[28px] px-8 text-center sm:h-[360px]">
+      <SearchX size={30} className="text-ink-muted" />
+      <div>
+        <p className="font-display text-lg font-bold">Ingen spørsmål her</p>
+        <p className="mt-1 text-sm text-ink-soft">Denne miksen av kategori og type gir ingen spørsmål. Prøv noe annet.</p>
+      </div>
+      <button onClick={onAdjust} className="rounded-full bg-ink px-4 py-2 text-sm font-semibold text-canvas transition hover:opacity-90 focus-ring">
+        Endre utvalg
+      </button>
     </div>
   );
 }

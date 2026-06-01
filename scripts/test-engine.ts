@@ -33,7 +33,7 @@ cases.push({ name: "ALT", sel: new Set<Category>() });
 const genCounts: Record<string, number> = {};
 let rounds = 0;
 for (const c of cases) {
-  const gens = activeGenerators(c.sel);
+  const gens = activeGenerators(c.sel, new Set());
   if (!gens.length) err(`${c.name}: no active generators`);
   const ctx = { recentSubjects: new Set<string>(), recentAnswers: [] as string[], lastGen: null as string | null };
   for (let i = 0; i < 1500; i++) {

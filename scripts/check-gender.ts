@@ -7,7 +7,7 @@ const genderOf = (tag?: string) => (/kvinner/i.test(tag ?? "") ? "K" : "H");
 const genders: Record<string, Set<string>> = {};
 for (const k of klubber) (genders[k.name] = genders[k.name] || new Set()).add(genderOf(k.tag));
 
-const gens = activeGenerators(new Set(["fotball"]));
+const gens = activeGenerators(new Set(["fotball"]), new Set());
 const ctx = { recentSubjects: new Set<string>(), recentAnswers: [] as string[], lastGen: null as string | null };
 let checked = 0,
   noGender = 0,
