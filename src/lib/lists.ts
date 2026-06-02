@@ -2,14 +2,15 @@
 // by a metric, a themed set, or the geographic extremes). Hints help; a single
 // input fills whichever row your guess matches.
 
-import { fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, kommuner, fylker, Place, fmtMetric, fmtInt } from "./data";
+import { fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, kommuner, fylker, lufthavner, Place, fmtMetric, fmtInt } from "./data";
 import fotball from "@/data/fotballklubber.json";
 import aviser from "@/data/aviser.json";
 
 export interface ListRow {
-  answers: string[]; // accepted names for this slot
+  answers: string[]; // accepted inputs for this slot
   hint: string; // clue shown on the row
   reveal: string; // shown once found
+  prompt?: string; // "fill-in" lists: the always-visible label you answer for
 }
 
 export interface ListDef {
@@ -17,6 +18,8 @@ export interface ListDef {
   title: string;
   blurb: string;
   rows: ListRow[];
+  fill?: boolean; // "fill-in" list: prompts are shown, you type each item's value
+  placeholder?: string; // input hint for fill-in lists
 }
 
 const byMetricDesc = (list: Place[]) => [...list].filter((p) => p.metric != null).sort((a, b) => b.metric! - a.metric!);
@@ -136,6 +139,26 @@ const aviserLists: ListDef[] = [
   { key: "aviser-lokal", title: "Lokale & regionale aviser", blurb: "Avisene rundt om i landet", rows: paperRows(papers.filter((p) => !/riks/i.test(p.sted))) },
 ];
 
+// ---- Dynamic "fill-in" lists: see every item (A–Å), type its unique value ---
+const nbName = (a: Place, b: Place) => a.name.localeCompare(b.name, "nb");
+// Accept a number with or without its leading zero (e.g. 0301 / 301).
+const numAnswers = (n: string) => (/^0\d/.test(n) ? [n, n.replace(/^0+/, "")] : [n]);
+
+const kommunenummerRows: ListRow[] = [...kommuner]
+  .filter((k) => k.number)
+  .sort(nbName)
+  .map((k) => ({ prompt: k.name, answers: numAnswers(k.number!), hint: k.county ?? "Norge", reveal: k.number! }));
+
+const fylkesnummerRows: ListRow[] = [...fylker]
+  .filter((f) => f.number)
+  .sort(nbName)
+  .map((f) => ({ prompt: f.name, answers: numAnswers(f.number!), hint: f.admin ? `Sentrum: ${f.admin}` : "Fylke", reveal: f.number! }));
+
+const lufthavnkodeRows: ListRow[] = [...lufthavner]
+  .filter((l) => l.tag)
+  .sort(nbName)
+  .map((l) => ({ prompt: l.name, answers: [l.tag!], hint: l.county ?? "Norge", reveal: l.tag! }));
+
 export const LISTS: ListDef[] = [
   { key: "ekstremer", title: "Geografiske ekstremer", blurb: "Norges aller største, lengste og høyeste", rows: EXTREMES },
   { key: "ytterpunkter", title: "Norges ytterpunkter", blurb: "Nord, sør, øst, vest – fastland & kongerike", rows: YTTERPUNKTER },
@@ -157,5 +180,8 @@ export const LISTS: ListDef[] = [
   { key: "kommuner10", title: "Topp 10 mest folkerike kommuner", blurb: "De største byene", rows: topRows(kommuner, 10) },
   { key: "kommuner50k", title: "Kommuner over 50 000 innbyggere", blurb: "De største bykommunene", rows: bigKommunerRows },
   { key: "kommuner-alle", title: "Alle 357 kommuner", blurb: "Den ultimate utfordringen", rows: allKommunerRows },
+  { key: "kommunenummer", title: "Kommunenummer", blurb: "Skriv nummeret til hver kommune", fill: true, placeholder: "Skriv kommunenummer…", rows: kommunenummerRows },
+  { key: "fylkesnummer", title: "Fylkesnummer", blurb: "Skriv nummeret til hvert fylke", fill: true, placeholder: "Skriv fylkesnummer…", rows: fylkesnummerRows },
+  { key: "lufthavnkoder", title: "Lufthavnkoder (IATA)", blurb: "Skriv IATA-koden til hver lufthavn", fill: true, placeholder: "Skriv IATA-kode…", rows: lufthavnkodeRows },
   ...perFylkeLists,
 ];

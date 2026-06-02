@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Trophy, RotateCcw, Eye, Check, Shuffle, ArrowRight } from "lucide-react";
 import TopBar from "./TopBar";
 import { Mode, modeLabel } from "./ModePicker";
@@ -39,6 +39,7 @@ export default function Lists({
   const [startedAt, setStartedAt] = useState(() => Date.now());
   const [now, setNow] = useState(() => Date.now());
   const [completed, setCompleted] = useState<Set<string>>(new Set());
+  const pickerRef = useRef<HTMLDivElement>(null);
 
   const list = useMemo(() => LISTS.find((l) => l.key === listKey)!, [listKey]);
   // Map every normalized form (and its paren-stripped form) to the row indices
@@ -70,7 +71,15 @@ export default function Lists({
     } catch {
       /* ignore */
     }
+    // Deep-link to a specific board, e.g. ?list=kommunenummer (post-mount to avoid SSR mismatch).
+    const q = new URLSearchParams(window.location.search).get("list");
+    if (q && LISTS.some((l) => l.key === q)) setListKey(q);
   }, []);
+
+  // Keep the selected board's pill in view (it's no longer first once sorted).
+  useEffect(() => {
+    pickerRef.current?.querySelector<HTMLElement>("[data-active='true']")?.scrollIntoView({ inline: "center", block: "nearest" });
+  }, [listKey]);
 
   // Reset board when switching lists.
   useEffect(() => {
@@ -131,7 +140,7 @@ export default function Lists({
       <TopBar summary={modeLabel(mode)} onCustomize={onOpenMode} exploreActive={exploreActive} onExplore={onExplore} elo={elo} onOpenElo={onOpenElo} onOpenSettings={onOpenSettings} />
 
       {/* List picker strip */}
-      <div className="flex gap-2 overflow-x-auto no-scrollbar -mx-1 px-1 pb-1">
+      <div ref={pickerRef} className="flex gap-2 overflow-x-auto no-scrollbar -mx-1 px-1 pb-1">
         <button
           onClick={nextList}
           className="pill shrink-0 border border-transparent bg-[var(--nordic)] text-white hover:opacity-90"
@@ -141,6 +150,7 @@ export default function Lists({
         {SORTED_LISTS.map((l) => (
           <button
             key={l.key}
+            data-active={l.key === listKey ? "true" : undefined}
             onClick={() => setListKey(l.key)}
             className={`pill shrink-0 border ${
               l.key === listKey ? "border-transparent bg-ink text-canvas" : "border-[var(--field-stroke)] bg-[var(--field)] text-ink/80 hover:text-ink"
@@ -192,7 +202,7 @@ export default function Lists({
                   tryMatch(value);
                 }
               }}
-              placeholder="Skriv et navn…"
+              placeholder={list.placeholder ?? "Skriv et navn…"}
               autoComplete="off"
               autoCapitalize="words"
               spellCheck={false}
@@ -239,17 +249,33 @@ export default function Lists({
               <span className="grid h-6 w-6 shrink-0 place-items-center rounded-md bg-black/[0.06] text-[11px] font-bold tabular-nums text-ink-muted dark:bg-white/10">
                 {i + 1}
               </span>
-              <div className="min-w-0 flex-1">
-                {reveal ? (
-                  <div className="truncate text-sm font-semibold" style={{ color: isFound ? "var(--good)" : undefined }}>
-                    {row.reveal}
+              {list.fill ? (
+                <>
+                  <div className="min-w-0 flex-1">
+                    <div className="truncate text-sm font-semibold" style={{ color: isFound ? "var(--good)" : undefined }}>{row.prompt}</div>
+                    <div className="truncate text-[11px] text-ink-muted">{row.hint}</div>
                   </div>
-                ) : (
-                  <div className="text-sm font-medium tracking-wider text-ink-muted">• • • • •</div>
-                )}
-                <div className="truncate text-[11px] text-ink-muted">{row.hint}</div>
-              </div>
-              {isFound && <Check size={15} className="shrink-0" style={{ color: "var(--good)" }} />}
+                  {reveal ? (
+                    <span className="shrink-0 text-sm font-bold tabular-nums" style={{ color: isFound ? "var(--good)" : "var(--ink)" }}>{row.reveal}</span>
+                  ) : (
+                    <span className="shrink-0 text-base text-ink-muted/40">—</span>
+                  )}
+                </>
+              ) : (
+                <>
+                  <div className="min-w-0 flex-1">
+                    {reveal ? (
+                      <div className="truncate text-sm font-semibold" style={{ color: isFound ? "var(--good)" : undefined }}>
+                        {row.reveal}
+                      </div>
+                    ) : (
+                      <div className="text-sm font-medium tracking-wider text-ink-muted">• • • • •</div>
+                    )}
+                    <div className="truncate text-[11px] text-ink-muted">{row.hint}</div>
+                  </div>
+                  {isFound && <Check size={15} className="shrink-0" style={{ color: "var(--good)" }} />}
+                </>
+              )}
             </div>
           );
         })}
