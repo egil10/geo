@@ -155,13 +155,16 @@ export default function Explore({
       {/* Category pills — scrollable, with arrow buttons for mouse users. */}
       <div className="relative -mx-1">
         {canScrollLeft && (
-          <button
-            onClick={() => scrollPills(-1)}
-            aria-label="Bla til venstre"
-            className="absolute left-1 top-1/2 z-10 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-full border border-[var(--field-stroke)] bg-[var(--glass-bg)] text-ink shadow-sm backdrop-blur transition hover:bg-black/[0.04] focus-ring dark:hover:bg-white/[0.06]"
-          >
-            <ChevronLeft size={18} />
-          </button>
+          // Opaque-edge fade so pills disappear before they reach the arrow.
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 flex w-20 items-center bg-gradient-to-r from-canvas via-canvas to-transparent pl-1 pb-1">
+            <button
+              onClick={() => scrollPills(-1)}
+              aria-label="Bla til venstre"
+              className="pointer-events-auto grid h-8 w-8 place-items-center rounded-full border border-[var(--field-stroke)] bg-[var(--glass-bg)] text-ink shadow-sm transition hover:bg-black/[0.04] focus-ring dark:hover:bg-white/[0.06]"
+            >
+              <ChevronLeft size={18} />
+            </button>
+          </div>
         )}
         <div ref={scrollerRef} onScroll={updateScrollArrows} className="flex gap-2 overflow-x-auto no-scrollbar px-1 pb-1">
           {SORTED_GROUPS.map((g) => (
@@ -176,13 +179,16 @@ export default function Explore({
           ))}
         </div>
         {canScrollRight && (
-          <button
-            onClick={() => scrollPills(1)}
-            aria-label="Bla til høyre"
-            className="absolute right-1 top-1/2 z-10 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-full border border-[var(--field-stroke)] bg-[var(--glass-bg)] text-ink shadow-sm backdrop-blur transition hover:bg-black/[0.04] focus-ring dark:hover:bg-white/[0.06]"
-          >
-            <ChevronRight size={18} />
-          </button>
+          // Opaque-edge fade so pills disappear before they reach the arrow.
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 flex w-20 items-center justify-end bg-gradient-to-l from-canvas via-canvas to-transparent pr-1 pb-1">
+            <button
+              onClick={() => scrollPills(1)}
+              aria-label="Bla til høyre"
+              className="pointer-events-auto grid h-8 w-8 place-items-center rounded-full border border-[var(--field-stroke)] bg-[var(--glass-bg)] text-ink shadow-sm transition hover:bg-black/[0.04] focus-ring dark:hover:bg-white/[0.06]"
+            >
+              <ChevronRight size={18} />
+            </button>
+          </div>
         )}
       </div>
 
