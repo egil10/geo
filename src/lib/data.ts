@@ -352,12 +352,9 @@ export const vidder = buildPlaces(vidderJson, "vidde");
 export const forsvar = buildPlaces(forsvarJson, "forsvar", { tagField: "branch" });
 export const universiteter = buildPlaces(universiteterJson, "universitet", { tagField: "type" });
 export const turistveger = buildPlaces(turistvegerJson, "turistveg", { metricField: "length", metricUnit: "km" });
-// Flags: drop the one .tif (won't render in browsers); image-recognition only.
-export const flagg = buildPlaces(
-  (flaggJson as Record<string, unknown>[]).filter((x) => !String(x.photo).toLowerCase().includes(".tif")),
-  "flagg",
-  { tagField: "period" },
-);
+// Flags (image-recognition only). .tif sources are fine — Wikimedia's
+// Special:FilePath?width thumbnails them to JPEG, which browsers render.
+export const flagg = buildPlaces(flaggJson, "flagg", { tagField: "period" });
 export const dyr = buildPlaces(dyrJson, "dyr", { tagField: "family" });
 export const distrikter = buildPlaces(distrikterJson, "distrikt", { metricField: "population", metricUnit: "innb.", tagField: "landsdel" });
 export const landsdeler = buildPlaces(landsdelerJson, "landsdel", { metricField: "population", metricUnit: "innb." });
