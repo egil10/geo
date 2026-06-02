@@ -2,7 +2,8 @@
 // by a metric, a themed set, or the geographic extremes). Hints help; a single
 // input fills whichever row your guess matches.
 
-import { fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, kommuner, fylker, lufthavner, Place, fmtMetric, fmtInt } from "./data";
+import { fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, kommuner, fylker, lufthavner, byer, baner, stasjoner, Place, fmtMetric, fmtInt } from "./data";
+import type { Category } from "./questions";
 import fotball from "@/data/fotballklubber.json";
 import aviser from "@/data/aviser.json";
 
@@ -159,6 +160,19 @@ const lufthavnkodeRows: ListRow[] = [...lufthavner]
   .sort(nbName)
   .map((l) => ({ prompt: l.name, answers: [l.tag!], hint: l.county ?? "Norge", reveal: l.tag! }));
 
+// Name-the-items boards for categories that lacked a curated list.
+const byerRows: ListRow[] = [...byer]
+  .sort((a, b) => (b.population ?? 0) - (a.population ?? 0))
+  .map((b) => ({ answers: [b.name], hint: b.county ?? "Norge", reveal: `${b.name} · ${fmtInt(b.population)} innb.` }));
+
+const banerRows: ListRow[] = [...baner]
+  .sort((a, b) => (b.length ?? 0) - (a.length ?? 0))
+  .map((b) => ({ answers: [b.name], hint: b.length ? `${b.length} km` : "Jernbane", reveal: b.length ? `${b.name} · ${b.length} km` : b.name }));
+
+const stasjonRows: ListRow[] = [...stasjoner]
+  .sort(nbName)
+  .map((s) => ({ answers: [s.name], hint: s.tag ?? s.county ?? "Stasjon", reveal: s.tag ? `${s.name} · ${s.tag}` : s.name }));
+
 export const LISTS: ListDef[] = [
   { key: "ekstremer", title: "Geografiske ekstremer", blurb: "Norges aller største, lengste og høyeste", rows: EXTREMES },
   { key: "ytterpunkter", title: "Norges ytterpunkter", blurb: "Nord, sør, øst, vest – fastland & kongerike", rows: YTTERPUNKTER },
@@ -183,5 +197,32 @@ export const LISTS: ListDef[] = [
   { key: "kommunenummer", title: "Kommunenummer", blurb: "Skriv nummeret til hver kommune", fill: true, placeholder: "Skriv kommunenummer…", rows: kommunenummerRows },
   { key: "fylkesnummer", title: "Fylkesnummer", blurb: "Skriv nummeret til hvert fylke", fill: true, placeholder: "Skriv fylkesnummer…", rows: fylkesnummerRows },
   { key: "lufthavnkoder", title: "Lufthavnkoder (IATA)", blurb: "Skriv IATA-koden til hver lufthavn", fill: true, placeholder: "Skriv IATA-kode…", rows: lufthavnkodeRows },
+  { key: "byer", title: "Norges byer", blurb: "Byene etter folketall", rows: byerRows },
+  { key: "baner", title: "Jernbanelinjer", blurb: "Banene i Norge", rows: banerRows },
+  { key: "stasjoner", title: "Jernbanestasjoner", blurb: "Stasjonene i Norge", rows: stasjonRows },
   ...perFylkeLists,
 ];
+
+// Each quiz category maps to a default Lister board, so picking a category in
+// Lister mode loads the matching board. (vapen is omitted — a coat of arms
+// can't be typed; stasjoner uses name-recall.)
+export const CATEGORY_TO_LIST: Partial<Record<Category, string>> = {
+  fylker: "fylker",
+  kommuner: "kommuner-alle",
+  nummer: "kommunenummer",
+  befolkning: "kommuner10",
+  byer: "byer",
+  fjell: "fjell10",
+  elver: "elver10",
+  innsjoer: "innsjoer10",
+  fjorder: "fjorder10",
+  oyer: "oyer10",
+  fossefall: "foss10",
+  isbreer: "isbreer10",
+  tunneler: "tunneler10",
+  lufthavner: "lufthavnkoder",
+  baner: "baner",
+  stasjoner: "stasjoner",
+  fotball: fotballLists.find((l) => /eliteserien/i.test(l.title))?.key ?? fotballLists[0]?.key,
+  aviser: aviserLists[0]?.key,
+};

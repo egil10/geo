@@ -199,6 +199,7 @@ export default function Home() {
       ) : mode === "lister" ? (
         <Lists
           mode={mode}
+          selected={selected}
           onOpenMode={() => setCustomizeOpen(true)}
           exploreActive={false}
           onExplore={toggleExplore}

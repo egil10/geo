@@ -28,6 +28,7 @@ import {
 } from "lucide-react";
 import Modal from "./Modal";
 import { CATEGORIES, Category, QUIZ_TYPES, QuizType, availableTypesFor, availableCatsFor } from "@/lib/questions";
+import { CATEGORY_TO_LIST } from "@/lib/lists";
 import { Mode, MODES } from "./ModePicker";
 
 const ICONS: Record<string, React.ComponentType<{ size?: number; strokeWidth?: number }>> = {
@@ -153,14 +154,16 @@ export default function CustomizeSheet({
         <Chip active={catsAll} Icon={LayoutGrid} label="Alt" onClick={() => onCats(new Set())} />
         {SORTED_CATEGORIES.map((c) => {
           const active = !catsAll && selected.has(c.key);
+          // In Lister mode only categories with a board are selectable, and the pick is single.
+          const noList = mode === "lister" && !CATEGORY_TO_LIST[c.key];
           return (
             <Chip
               key={c.key}
               active={active}
-              disabled={!active && !availCats.has(c.key)}
+              disabled={!active && (!availCats.has(c.key) || noList)}
               Icon={ICONS[c.icon] ?? Map}
               label={c.label}
-              onClick={() => onCats(multiToggle(selected, c.key, catKeys))}
+              onClick={() => onCats(mode === "lister" ? new Set([c.key]) : multiToggle(selected, c.key, catKeys))}
             />
           );
         })}

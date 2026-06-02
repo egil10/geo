@@ -4,9 +4,10 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Trophy, RotateCcw, Eye, Check, Shuffle, ArrowRight } from "lucide-react";
 import TopBar from "./TopBar";
 import { Mode, modeLabel } from "./ModePicker";
-import { LISTS } from "@/lib/lists";
+import { LISTS, CATEGORY_TO_LIST } from "@/lib/lists";
 import { normalize, stripParen } from "@/lib/match";
 import { EloState } from "@/lib/elo";
+import type { Category } from "@/lib/questions";
 
 const DONE_KEY = "norgequiz.lists.v1";
 
@@ -17,6 +18,7 @@ const SORTED_LISTS = [...LISTS].sort((a, b) => a.title.localeCompare(b.title, "n
 
 export default function Lists({
   mode,
+  selected,
   onOpenMode,
   exploreActive,
   onExplore,
@@ -25,6 +27,7 @@ export default function Lists({
   onOpenSettings,
 }: {
   mode: Mode;
+  selected: Set<Category>;
   onOpenMode: () => void;
   exploreActive: boolean;
   onExplore: () => void;
@@ -75,6 +78,13 @@ export default function Lists({
     const q = new URLSearchParams(window.location.search).get("list");
     if (q && LISTS.some((l) => l.key === q)) setListKey(q);
   }, []);
+
+  // Picking a single category in Lister mode loads that category's board.
+  useEffect(() => {
+    if (selected.size !== 1) return;
+    const key = CATEGORY_TO_LIST[[...selected][0]];
+    if (key && LISTS.some((l) => l.key === key)) setListKey(key);
+  }, [selected]);
 
   // Keep the selected board's pill in view (it's no longer first once sorted).
   useEffect(() => {
