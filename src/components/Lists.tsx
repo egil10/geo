@@ -252,7 +252,7 @@ export default function Lists({
           return (
             <div
               key={i}
-              className={`flex items-center gap-3 rounded-2xl border px-3.5 py-2.5 transition ${
+              className={`cv-row flex items-center gap-3 rounded-2xl border px-3.5 py-2.5 transition ${
                 isFound ? "border-transparent bg-[var(--good)]/10 ring-1 ring-[var(--good)]/30" : gaveUp ? "border-[var(--field-stroke)] opacity-70" : "border-[var(--field-stroke)] bg-[var(--field)]"
               }`}
             >

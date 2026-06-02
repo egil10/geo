@@ -57,31 +57,38 @@ html.dark {
   --field-stroke: rgba(255, 255, 255, 0.1);
 }
 
-/* The signature backdrop: warm + cool radial glows over near-white paper. */
+/* The signature backdrop: warm + cool radial glows over near-white paper.
+   The glows live on a fixed pseudo-element rather than `background-attachment:
+   fixed`, which forces an expensive full-page repaint on every scroll and,
+   combined with the frosted (backdrop-filter) cards, can exhaust GPU memory
+   and crash the tab. A fixed layer is visually identical but cheap. */
 html,
 body {
-  background:
-    radial-gradient(1200px 600px at 80% -10%, var(--grad-warm) 0%, transparent 60%),
-    radial-gradient(900px 500px at 10% 100%, var(--grad-cool) 0%, transparent 55%),
-    var(--canvas);
-  background-attachment: fixed;
+  background: var(--canvas);
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
   font-feature-settings: "ss01", "cv11";
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(1200px 600px at 80% -10%, var(--grad-warm) 0%, transparent 60%),
+    radial-gradient(900px 500px at 10% 100%, var(--grad-cool) 0%, transparent 55%);
 }
 
 /* Dark mode trades the paper for a moody, aurora-like night sky — deep indigo
    and violet up top, teal and a hint of magenta below — so the frosted cards
    glow against real colour instead of flat black. Light mode is untouched. */
-html.dark,
-html.dark body {
+html.dark body::before {
   background:
     radial-gradient(1150px 720px at 82% -12%, rgba(124, 100, 255, 0.24) 0%, transparent 60%),
     radial-gradient(820px 560px at 14% 0%, rgba(56, 120, 255, 0.16) 0%, transparent 58%),
     radial-gradient(1050px 760px at 2% 104%, rgba(16, 185, 166, 0.17) 0%, transparent 56%),
-    radial-gradient(760px 560px at 100% 108%, rgba(45, 212, 191, 0.12) 0%, transparent 55%),
-    var(--canvas);
-  background-attachment: fixed;
+    radial-gradient(760px 560px at 100% 108%, rgba(45, 212, 191, 0.12) 0%, transparent 55%);
 }
 * {
   -webkit-tap-highlight-color: transparent;
@@ -110,6 +117,17 @@ button {
       inset 0 1px 0 rgba(255, 255, 255, 0.8),
       0 1px 2px rgba(10, 10, 10, 0.05),
       0 16px 40px -16px rgba(10, 10, 10, 0.2);
+  }
+  /* Like .glass but WITHOUT backdrop-filter — for cards that repeat in long
+     lists (e.g. the Explore gallery). Hundreds of backdrop-filter layers crash
+     the GPU; a near-opaque background reads the same at small sizes. */
+  .card {
+    background: var(--glass-bg-strong);
+    border: 1px solid var(--glass-stroke);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.7),
+      0 1px 2px rgba(10, 10, 10, 0.04),
+      0 12px 32px -12px rgba(10, 10, 10, 0.18);
   }
   .frost {
     background: rgba(252, 251, 247, 0.94);
@@ -187,6 +205,19 @@ html.dark *::-webkit-scrollbar-thumb {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* Skip layout/paint for off-screen items in long lists. The browser only
+   renders what's near the viewport, so a 400-row dataset stays cheap to scroll.
+   contain-intrinsic-size reserves a placeholder height so the scrollbar is
+   stable. */
+.cv-card {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 168px;
+}
+.cv-row {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 56px;
 }
 
 /* Celebration (tier-ups / streak milestones) */

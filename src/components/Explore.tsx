@@ -253,7 +253,7 @@ export default function Explore({
       ) : (
         <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 md:grid-cols-4">
           {rows.map((p) => (
-            <div key={p.id} className="glass overflow-hidden rounded-2xl">
+            <div key={p.id} className="card cv-card overflow-hidden rounded-2xl">
               <div className="relative h-28 w-full bg-black/[0.03] dark:bg-white/[0.04]">
                 <Thumb p={p} img={group.img} big />
               </div>
