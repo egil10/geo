@@ -1,0 +1,2005 @@
+[
+  {
+    "id": "fyr-agdenes-fyrstasjon",
+    "name": "Agdenes fyrstasjon",
+    "county": "Trøndelag",
+    "municipality": "Orkland",
+    "established": 1804,
+    "lat": 63.647222,
+    "lon": 9.756111,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Agdenes%20lighthouse.jpg?width=1024"
+  },
+  {
+    "id": "fyr-akseloya-lykt",
+    "name": "Akseløya lykt",
+    "established": 1946,
+    "lat": 77.747058,
+    "lon": 14.570142
+  },
+  {
+    "id": "fyr-alnes-fyr",
+    "name": "Alnes fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Giske",
+    "established": 1853,
+    "lat": 62.483333,
+    "lon": 5.966667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alnesfyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-anda-fyr",
+    "name": "Anda fyr",
+    "county": "Nordland",
+    "municipality": "Øksnes",
+    "established": 1932,
+    "lat": 69.066433,
+    "lon": 15.170134,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Anda%20Lighthouse%20in%20%C3%98ksnes.tif?width=1024"
+  },
+  {
+    "id": "fyr-andenes-fyr",
+    "name": "Andenes fyr",
+    "county": "Nordland",
+    "municipality": "Andøy",
+    "established": 1859,
+    "lat": 69.324,
+    "lon": 16.1159,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andenes%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-asenvagsoy-fyrstasjon",
+    "name": "Asenvågsøy fyrstasjon",
+    "county": "Trøndelag",
+    "municipality": "Ørland",
+    "established": 1921,
+    "lat": 63.941944,
+    "lon": 9.771111,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Assenvaagoyfyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-austnes-fyrlykt",
+    "name": "Austnes fyrlykt",
+    "county": "Vestland",
+    "municipality": "Askvoll",
+    "established": 1917,
+    "lat": 61.286087,
+    "lon": 4.77735
+  },
+  {
+    "id": "fyr-ballstad-fyr",
+    "name": "Ballstad fyr",
+    "county": "Nordland",
+    "municipality": "Vestvågøy",
+    "established": 1857,
+    "lat": 68.049197,
+    "lon": 13.543228
+  },
+  {
+    "id": "fyr-bardvagen-fyr",
+    "name": "Bardvågen fyr",
+    "county": "Vestland",
+    "municipality": "Gulen",
+    "lat": 60.8975,
+    "lon": 4.83
+  },
+  {
+    "id": "fyr-baroya-fyr",
+    "name": "Barøya fyr",
+    "county": "Nordland",
+    "municipality": "Narvik",
+    "established": 1903,
+    "lat": 68.353611,
+    "lon": 16.08,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bar%C3%B8ya%20med%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-bastoy-fyr",
+    "name": "Bastøy fyr",
+    "county": "Vestfold",
+    "municipality": "Horten",
+    "established": 1840,
+    "lat": 59.386389,
+    "lon": 10.536667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bast%C3%B8ya%20lighthouse.jpg?width=1024"
+  },
+  {
+    "id": "fyr-beian-signalstasjon",
+    "name": "Beian signalstasjon",
+    "lat": 63.647214,
+    "lon": 9.547678
+  },
+  {
+    "id": "fyr-bellsund-fyr",
+    "name": "Bellsund fyr",
+    "established": 1946,
+    "lat": 77.7204,
+    "lon": 13.9423
+  },
+  {
+    "id": "fyr-bjornsund-fyr",
+    "name": "Bjørnsund fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Hustadvika",
+    "established": 1871,
+    "lat": 62.895556,
+    "lon": 6.815833,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bj%C3%B8rnsund%2C%20M%C3%B8re%20og%20Romsdal%20%2821453377273%29%20%282%29.jpg?width=1024"
+  },
+  {
+    "id": "fyr-bjornoy-fyr",
+    "name": "Bjørnøy fyr",
+    "county": "Nordland",
+    "municipality": "Bodø",
+    "lat": 67.419722,
+    "lon": 14.428611,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bj%C3%B8rn%C3%B8y%2C%20Bod%C3%B8%20-%20S-1602U3%20056.jpg?width=1024"
+  },
+  {
+    "id": "fyr-bjornoy-lighthouse",
+    "name": "Bjørnøy Lighthouse",
+    "county": "Nordland",
+    "municipality": "Bodø",
+    "established": 1890,
+    "lat": 67.4192,
+    "lon": 14.42787,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bj%C3%B8rn%C3%B8y%2C%20Bod%C3%B8%20-%20S-1602U3%20056.jpg?width=1024"
+  },
+  {
+    "id": "fyr-bremstein-fyr",
+    "name": "Bremstein fyr",
+    "county": "Nordland",
+    "municipality": "Vega",
+    "established": 1925,
+    "lat": 65.596389,
+    "lon": 11.286389,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bremstein%20lighthouse%20in%20Vega.tif?width=1024"
+  },
+  {
+    "id": "fyr-bronnoysund-fyr",
+    "name": "Brønnøysund fyr",
+    "county": "Nordland",
+    "established": 1862,
+    "lat": 65.486667,
+    "lon": 12.186667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Br%C3%B8nn%C3%B8ysund%20fyr.JPG?width=1024"
+  },
+  {
+    "id": "fyr-buholmrasa-fyr",
+    "name": "Buholmråsa fyr",
+    "county": "Trøndelag",
+    "municipality": "Osen",
+    "established": 1917,
+    "lat": 64.401667,
+    "lon": 10.452778,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hurtigruten%2020150320%20183137.jpg?width=1024"
+  },
+  {
+    "id": "fyr-bokfjord-fyr",
+    "name": "Bøkfjord fyr",
+    "county": "Finnmark",
+    "municipality": "Sør-Varanger",
+    "established": 1910,
+    "lat": 69.87764,
+    "lon": 30.17426,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/B%C3%B8kfjord%20lighthouse%20in%20S%C3%B8r%20Varanger.tif?width=1024"
+  },
+  {
+    "id": "fyr-boroyholmen-fyrstasjon",
+    "name": "Børøyholmen fyrstasjon",
+    "county": "Trøndelag",
+    "municipality": "Hitra",
+    "established": 1874,
+    "lat": 63.571944,
+    "lon": 9.2225,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/B%C3%B8r%C3%B8yholmen%2C%20Hitra%20-%20S-1602U2%20100.jpg?width=1024"
+  },
+  {
+    "id": "fyr-danmarksskjaeret",
+    "name": "Danmarksskjæret",
+    "county": "Østfold",
+    "municipality": "Halden",
+    "lat": 59.104,
+    "lon": 11.295667
+  },
+  {
+    "id": "fyr-digerudgrunnen-fyr",
+    "name": "Digerudgrunnen fyr",
+    "county": "Akershus",
+    "municipality": "Frogn",
+    "established": 1871,
+    "lat": 59.719444,
+    "lon": 10.586111,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Digerudgrunnen%2C%20Frogn%2C%20Akershus%20-%20S-1602U1%20013.jpg?width=1024"
+  },
+  {
+    "id": "fyr-dingenes-fyr",
+    "name": "Dingenes fyr",
+    "county": "Vestland",
+    "municipality": "Gulen",
+    "lat": 61.034444,
+    "lon": 5.021389,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gulenbilder.3%20245%20-%20Dingenes%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-dyna-fyr",
+    "name": "Dyna fyr",
+    "county": "Oslo",
+    "municipality": "Oslo kommune",
+    "established": 1874,
+    "lat": 59.894875,
+    "lon": 10.688419,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/A1%20Lighthouse%20in%20the%20Oslo%20Fjord%20Norway.JPG?width=1024"
+  },
+  {
+    "id": "fyr-eigeroy-fyr",
+    "name": "Eigerøy fyr",
+    "county": "Rogaland",
+    "municipality": "Eigersund",
+    "established": 1854,
+    "lat": 58.430833,
+    "lon": 5.8675,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eigeroy%20lighthouse.jpg?width=1024"
+  },
+  {
+    "id": "fyr-elle-takeklokke",
+    "name": "Elle tåkeklokke",
+    "county": "Akershus",
+    "municipality": "Frogn",
+    "established": 1911,
+    "lat": 59.6405,
+    "lon": 10.6371,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Elle%20t%C3%A5keklokke%203.jpg?width=1024"
+  },
+  {
+    "id": "fyr-ellingrasa-fyr",
+    "name": "Ellingråsa fyr",
+    "county": "Trøndelag",
+    "municipality": "Flatanger",
+    "established": 1888,
+    "lat": 64.574444,
+    "lon": 10.801111
+  },
+  {
+    "id": "fyr-erkna-fyr",
+    "name": "Erkna fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Giske",
+    "established": 1869,
+    "lat": 62.550278,
+    "lon": 5.941667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Erkna%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-feistein-fyr",
+    "name": "Feistein fyr",
+    "county": "Rogaland",
+    "municipality": "Klepp",
+    "established": 1859,
+    "lat": 58.826111,
+    "lon": 5.505278,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Feistein2.jpg?width=1024"
+  },
+  {
+    "id": "fyr-filtvet-fyr",
+    "name": "Filtvet fyr",
+    "county": "Buskerud",
+    "municipality": "Asker",
+    "established": 1840,
+    "lat": 59.571111,
+    "lon": 10.618056,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Filtvet%20fyr%20med%20palme.JPG?width=1024"
+  },
+  {
+    "id": "fyr-filtvet-lighthouse",
+    "name": "Filtvet Lighthouse",
+    "county": "Akershus",
+    "municipality": "Asker",
+    "established": 1985,
+    "lat": 59.571111,
+    "lon": 10.618056,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Filtvet%20Lighthouse%20%28new%29.JPG?width=1024"
+  },
+  {
+    "id": "fyr-finnvaer-fyr",
+    "name": "Finnvær fyr",
+    "county": "Trøndelag",
+    "municipality": "Frøya",
+    "established": 1912,
+    "lat": 64.068889,
+    "lon": 9.110556,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Finnv%C3%A6ret%201.jpg?width=1024"
+  },
+  {
+    "id": "fyr-fjoloy-fyr",
+    "name": "Fjøløy fyr",
+    "county": "Rogaland",
+    "municipality": "Stavanger",
+    "established": 1849,
+    "lat": 59.088889,
+    "lon": 5.568889,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fjoeloey%20fyrstasjon.jpg?width=1024"
+  },
+  {
+    "id": "fyr-flatflesa-fyr",
+    "name": "Flatflesa fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Aukra",
+    "established": 1902,
+    "lat": 62.838333,
+    "lon": 6.688889,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Flatflesa%20Fyr%20by%20Classic%20Norway%20Hotels%20%28cropped%29.jpg?width=1024"
+  },
+  {
+    "id": "fyr-flatholmen-fyr",
+    "name": "Flatholmen fyr",
+    "county": "Rogaland",
+    "municipality": "Sola",
+    "established": 1862,
+    "lat": 58.9225,
+    "lon": 5.555556,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Flatholmen%2C%20Rogaland%2C%20North%20view%2020150618%201.jpg?width=1024"
+  },
+  {
+    "id": "fyr-flatoy-fyr",
+    "name": "Flatøy fyr",
+    "county": "Nordland",
+    "municipality": "Steigen",
+    "established": 1882,
+    "lat": 67.92106,
+    "lon": 14.76614,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Flat%C3%B8y%20lighthouse.%20Steigen%2C%20Nordland%2C%20Norway.tif?width=1024"
+  },
+  {
+    "id": "fyr-fleinskallen-signalstasjon",
+    "name": "Fleinskallen signalstasjon",
+    "lat": 63.520074,
+    "lon": 9.055138
+  },
+  {
+    "id": "fyr-flavaer-fyr",
+    "name": "Flåvær fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Herøy",
+    "established": 1870,
+    "lat": 62.315602,
+    "lon": 5.582389,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fl%C3%A5v%C3%A6r%20fyr01%20%28cropped%29.jpg?width=1024"
+  },
+  {
+    "id": "fyr-fruholmen-fyr",
+    "name": "Fruholmen fyr",
+    "county": "Finnmark",
+    "municipality": "Måsøy",
+    "established": 1866,
+    "lat": 71.09374,
+    "lon": 23.98363,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fruholmen%20lighthouse%20and%20surrounding%20buildings.tif?width=1024"
+  },
+  {
+    "id": "fyr-fuglenes-fyr",
+    "name": "Fuglenes fyr",
+    "county": "Finnmark",
+    "municipality": "Hammerfest",
+    "established": 1859,
+    "lat": 70.666667,
+    "lon": 23.660278,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fuglenes%20Light%20Beacon%202013.jpg?width=1024"
+  },
+  {
+    "id": "fyr-fugloykalven-fyr",
+    "name": "Fugløykalven fyr",
+    "county": "Troms",
+    "municipality": "Karlsøy",
+    "established": 1916,
+    "lat": 70.316667,
+    "lon": 20.153333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fugl%C3%B8ykalven%20lighthouse%20in%20Karls%C3%B8y.tif?width=1024"
+  },
+  {
+    "id": "fyr-fulehuk-fyr",
+    "name": "Fulehuk fyr",
+    "county": "Vestfold",
+    "municipality": "Færder",
+    "established": 1821,
+    "lat": 59.175278,
+    "lon": 10.599167,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fulehuk.jpg?width=1024"
+  },
+  {
+    "id": "fyr-fyret-pa-verdens-ende",
+    "name": "Fyret på Verdens ende",
+    "county": "Vestfold",
+    "municipality": "Færder",
+    "lat": 59.05775,
+    "lon": 10.4074,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Wippfeuer.jpg?width=1024"
+  },
+  {
+    "id": "fyr-faerder-fyr",
+    "name": "Færder fyr",
+    "county": "Vestfold",
+    "municipality": "Færder",
+    "established": 1857,
+    "lat": 59.02678,
+    "lon": 10.52459,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/F%C3%A6rder.jpg?width=1024"
+  },
+  {
+    "id": "fyr-garpholmen-fyr",
+    "name": "Garpholmen fyr",
+    "county": "Finnmark",
+    "municipality": "Måsøy",
+    "lat": 71.00392,
+    "lon": 24.71854,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Garpholmen%20M%C3%A5s%C3%B8y%202022-09-09%2002.jpg?width=1024"
+  },
+  {
+    "id": "fyr-geita-fyr",
+    "name": "Geita fyr",
+    "county": "Vestland",
+    "municipality": "Askvoll",
+    "established": 1897,
+    "lat": 61.269167,
+    "lon": 4.811111,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/05%20Geita%20Fyr%20%285671761171%29.jpg?width=1024"
+  },
+  {
+    "id": "fyr-geitungen-fyr",
+    "name": "Geitungen fyr",
+    "county": "Rogaland",
+    "municipality": "Karmøy",
+    "established": 1924,
+    "lat": 59.131389,
+    "lon": 5.242778,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Geitungen%20lighthouse%20in%20Karm%C3%B8y.tif?width=1024"
+  },
+  {
+    "id": "fyr-gitteroy-fyr",
+    "name": "Gitterøy fyr",
+    "lat": 59.43365,
+    "lon": 5.122611
+  },
+  {
+    "id": "fyr-gjaeslingan-fyr",
+    "name": "Gjæslingan fyr",
+    "county": "Trøndelag",
+    "municipality": "Nærøysund",
+    "established": 1877,
+    "lat": 64.726944,
+    "lon": 10.854167,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gjeslingene%20lighthouse%20in%20Vikna.tif?width=1024"
+  },
+  {
+    "id": "fyr-glapen-fyr",
+    "name": "Glåpen fyr",
+    "county": "Nordland",
+    "municipality": "Moskenes",
+    "established": 1857,
+    "lat": 67.887222,
+    "lon": 13.036111,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gl%C3%A5pen%2C%20Moskenes%20-%20S-1602U6%201%2041.jpg?width=1024"
+  },
+  {
+    "id": "fyr-glapen-lighthouse",
+    "name": "Glåpen Lighthouse",
+    "county": "Nordland",
+    "municipality": "Moskenes",
+    "established": 1985,
+    "lat": 67.887222,
+    "lon": 13.036111,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gl%C3%A5pen%20Lighthouse%2C%20S%C3%B8rv%C3%A5gen%2C%20Moskenes%2C%20Northeast%20view%2020150608%201.jpg?width=1024"
+  },
+  {
+    "id": "fyr-grasoyane-fyr",
+    "name": "Grasøyane fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Ulstein",
+    "established": 1886,
+    "lat": 62.430806,
+    "lon": 5.759056,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gras%C3%B8yane%20fyr%202015%20%28cropped%29.jpg?width=1024"
+  },
+  {
+    "id": "fyr-grinna-fyr",
+    "name": "Grinna fyr",
+    "county": "Trøndelag",
+    "municipality": "Nærøysund",
+    "established": 1904,
+    "lat": 64.754,
+    "lon": 10.976,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Unidentified%20lighthouse%20on%20the%20coast%20of%20Norway%20%285664266676%29.jpg?width=1024"
+  },
+  {
+    "id": "fyr-grip-fyr",
+    "name": "Grip fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Kristiansund",
+    "established": 1885,
+    "lat": 63.233611,
+    "lon": 7.609167,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Grip%20fyr%202.jpg?width=1024"
+  },
+  {
+    "id": "fyr-grytoy-fyr",
+    "name": "Grytøy fyr",
+    "county": "Nordland",
+    "municipality": "Bodø",
+    "established": 1865,
+    "lat": 67.389722,
+    "lon": 13.845833,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gryt%C3%B8y%2C%20Bod%C3%B8%20-%20S-1602U3%20059.jpg?width=1024"
+  },
+  {
+    "id": "fyr-gronningen-fyr",
+    "name": "Grønningen fyr",
+    "county": "Agder",
+    "municipality": "Kristiansand",
+    "established": 1878,
+    "lat": 58.081389,
+    "lon": 8.088056,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gr%C3%B8nningen%20fyrstasjon%2004.jpg?width=1024"
+  },
+  {
+    "id": "fyr-gullholmen-fyr",
+    "name": "Gullholmen fyr",
+    "county": "Østfold",
+    "municipality": "Moss",
+    "established": 1894,
+    "lat": 59.435278,
+    "lon": 10.576667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gullholmen%20lighthouse%20in%20Moss%20commune%2C%20Norway.jpg?width=1024"
+  },
+  {
+    "id": "fyr-halten-fyr",
+    "name": "Halten fyr",
+    "county": "Trøndelag",
+    "municipality": "Frøya",
+    "established": 1875,
+    "lat": 64.172778,
+    "lon": 9.405278,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Halten%201.jpg?width=1024"
+  },
+  {
+    "id": "fyr-hatholmen-fyr",
+    "name": "Hatholmen fyr",
+    "county": "Agder",
+    "municipality": "Lindesnes",
+    "established": 1867,
+    "lat": 58.003333,
+    "lon": 7.448333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hatholmen%2C%20Mandal%20-%20S-1602U1%20076.jpg?width=1024"
+  },
+  {
+    "id": "fyr-haugjegla-fyr",
+    "name": "Haugjegla fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Smøla",
+    "established": 1905,
+    "lat": 63.531389,
+    "lon": 7.967222,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Haugjeglafyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-haugsholmen-fyr",
+    "name": "Haugsholmen fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Sande",
+    "established": 1876,
+    "lat": 62.178333,
+    "lon": 5.375,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Haugsholmen%2C%20Sande%2C%20M%C3%B8re%20og%20Romsdal%20-%20S-1602U2%20053.jpg?width=1024"
+  },
+  {
+    "id": "fyr-havnefyret",
+    "name": "Havnefyret",
+    "county": "Vestland",
+    "municipality": "Bergen kommune",
+    "lat": 60.401111,
+    "lon": 5.314722
+  },
+  {
+    "id": "fyr-heerodden-lykt",
+    "name": "Heerodden lykt",
+    "lat": 78.1041,
+    "lon": 14.1948,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Isfjorden%20IMG%201822%20Heerodden.jpg?width=1024"
+  },
+  {
+    "id": "fyr-heggholmen-fyr",
+    "name": "Heggholmen fyr",
+    "county": "Oslo",
+    "municipality": "Oslo kommune",
+    "established": 1827,
+    "lat": 59.885278,
+    "lon": 10.713889,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Heggholmen%20fyrstasjon%201.jpg?width=1024"
+  },
+  {
+    "id": "fyr-hekkingen-fyr",
+    "name": "Hekkingen fyr",
+    "county": "Troms",
+    "municipality": "Senja",
+    "established": 1859,
+    "lat": 69.600278,
+    "lon": 17.818889,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hekkingen%203.jpg?width=1024"
+  },
+  {
+    "id": "fyr-hellevik-fyr",
+    "name": "Hellevik fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Haram",
+    "established": 1881,
+    "lat": 62.636278,
+    "lon": 6.176167,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hellevik%2C%20Haram%20-%20S-1602U2%20068.jpg?width=1024"
+  },
+  {
+    "id": "fyr-hellevik-fyrstasjon",
+    "name": "Hellevik fyrstasjon",
+    "county": "Møre og Romsdal",
+    "municipality": "Haram",
+    "lat": 62.637278,
+    "lon": 6.171417
+  },
+  {
+    "id": "fyr-hellisoy-fyr",
+    "name": "Hellisøy fyr",
+    "county": "Vestland",
+    "municipality": "Fedje",
+    "established": 1855,
+    "lat": 60.752139,
+    "lon": 4.710722,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hellis%C3%B8y%20fyr3.JPG?width=1024"
+  },
+  {
+    "id": "fyr-helnes-fyr",
+    "name": "Helnes fyr",
+    "county": "Finnmark",
+    "municipality": "Nordkapp",
+    "established": 1908,
+    "lat": 71.061111,
+    "lon": 26.221667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Helnes%20fyr%20NFL%209460%20mellom%20husene.tif?width=1024"
+  },
+  {
+    "id": "fyr-hendanes-fyr",
+    "name": "Hendanes fyr",
+    "county": "Vestland",
+    "municipality": "Kinn",
+    "established": 1914,
+    "lat": 61.964444,
+    "lon": 5.033889,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hendanes%2C%20V%C3%A5gs%C3%B8y%20-%20S-1602U2%20040.jpg?width=1024"
+  },
+  {
+    "id": "fyr-henningsvaer-fyr",
+    "name": "Henningsvær fyr",
+    "county": "Nordland",
+    "municipality": "Vågan",
+    "lat": 68.1482,
+    "lon": 14.199,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Henningsv%C3%A6r%2C%20V%C3%A5gan%20-%20S-1602U3%20072.jpg?width=1024"
+  },
+  {
+    "id": "fyr-hestskjaeret-fyr",
+    "name": "Hestskjæret fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Averøy",
+    "lat": 63.084583,
+    "lon": 7.492278,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hestskj%C3%A6r%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-hollenderbaen-fyr",
+    "name": "Hollenderbåen fyr",
+    "county": "Vestfold",
+    "municipality": "Færder",
+    "established": 1990,
+    "lat": 59.161,
+    "lon": 10.6255
+  },
+  {
+    "id": "fyr-holmengra-fyr",
+    "name": "Holmengrå fyr",
+    "county": "Vestland",
+    "municipality": "Fedje",
+    "established": 1892,
+    "lat": 60.843,
+    "lon": 4.649417,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Holmengra-fyr-2.JPG?width=1024"
+  },
+  {
+    "id": "fyr-homborsund-fyr",
+    "name": "Homborsund fyr",
+    "county": "Agder",
+    "municipality": "Grimstad",
+    "established": 1879,
+    "lat": 58.2541,
+    "lon": 8.529,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Homborsund%20fyr%2015.JPG?width=1024"
+  },
+  {
+    "id": "fyr-homlungen-fyr",
+    "name": "Homlungen fyr",
+    "county": "Østfold",
+    "municipality": "Hvaler",
+    "established": 1867,
+    "lat": 59.016,
+    "lon": 11.024,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ytre%20Hvaler%2C%20Holmlungen%20lighthouse.jpg?width=1024"
+  },
+  {
+    "id": "fyr-hornsund-fyr",
+    "name": "Hornsund fyr",
+    "established": 2006,
+    "lat": 77,
+    "lon": 15.55,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Latarnia%20Hornsund%20UWE1-1.jpg?width=1024"
+  },
+  {
+    "id": "fyr-hogevarde-fyr",
+    "name": "Høgevarde fyr",
+    "county": "Rogaland",
+    "municipality": "Karmøy",
+    "established": 1858,
+    "lat": 59.322073,
+    "lon": 5.317183,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B8gevarde%20fyr%20%28cropped%29.jpg?width=1024"
+  },
+  {
+    "id": "fyr-hogsteinen-fyr",
+    "name": "Høgsteinen fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Giske",
+    "established": 1857,
+    "lat": 62.463167,
+    "lon": 6.031442,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2023-05-18%2001%20H%C3%B8gsteinen%20Lighthouse%20%28H%C3%B8gsteinen%20fyrstasjon%2C%20view%20from%20north%29%2C%20Norway.jpg?width=1024"
+  },
+  {
+    "id": "fyr-ildjernsflua-fyr",
+    "name": "Ildjernsflua fyr",
+    "county": "Akershus",
+    "municipality": "Nesodden",
+    "established": 1919,
+    "lat": 59.8558,
+    "lon": 10.631
+  },
+  {
+    "id": "fyr-isfjord-fyr",
+    "name": "Isfjord fyr",
+    "lat": 78.0633,
+    "lon": 13.6089
+  },
+  {
+    "id": "fyr-jomfruland-fyr",
+    "name": "Jomfruland fyr",
+    "county": "Telemark",
+    "municipality": "Kragerø",
+    "established": 1839,
+    "lat": 58.865,
+    "lon": 9.596111,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fyrvokterboligen.jpg?width=1024"
+  },
+  {
+    "id": "fyr-kalsholmen-fyr",
+    "name": "Kalsholmen fyr",
+    "county": "Nordland",
+    "municipality": "Meløy",
+    "established": 1916,
+    "lat": 66.913611,
+    "lon": 13.091389,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalsholmen-e1456147923594.jpg?width=1024"
+  },
+  {
+    "id": "fyr-kapp-linn-fyr",
+    "name": "Kapp Linné fyr",
+    "established": 1933,
+    "lat": 78.062417,
+    "lon": 13.617778,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Isfjord%20radio%20on%20Svalbard%20seen%20from%20west.jpg?width=1024"
+  },
+  {
+    "id": "fyr-kaura-fyr",
+    "name": "Kaura fyr",
+    "county": "Trøndelag",
+    "municipality": "Åfjord",
+    "established": 1931,
+    "lat": 64.23012,
+    "lon": 10.13327,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kaura%20lighthouse%20in%20Roan.tif?width=1024"
+  },
+  {
+    "id": "fyr-kavringen-fyr",
+    "name": "Kavringen fyr",
+    "county": "Oslo",
+    "municipality": "Oslo kommune",
+    "established": 1892,
+    "lat": 59.8998,
+    "lon": 10.722,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kavringen%20lighthouse.jpg?width=1024"
+  },
+  {
+    "id": "fyr-kjeungskjaer-fyr",
+    "name": "Kjeungskjær fyr",
+    "county": "Trøndelag",
+    "municipality": "Ørland",
+    "established": 1880,
+    "lat": 63.7269,
+    "lon": 9.5306,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2016-11-13%2002%20Kjeungskj%C3%A6r%20Lighthouse%2C%20S%C3%B8r-Tr%C3%B8ndelag%2C%20Norway.jpg?width=1024"
+  },
+  {
+    "id": "fyr-kjolnes-fyr",
+    "name": "Kjølnes fyr",
+    "county": "Finnmark",
+    "municipality": "Berlevåg",
+    "established": 1916,
+    "lat": 70.852778,
+    "lon": 29.236111,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kj%C3%B8lnes%20Lighthouse%202013.jpg?width=1024"
+  },
+  {
+    "id": "fyr-knivskjellodden-lighthouse",
+    "name": "Knivskjellodden lighthouse",
+    "county": "Finnmark",
+    "municipality": "Nordkapp",
+    "lat": 71.184342,
+    "lon": 25.672123,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lighthouse%20Knivskjellodden%20Mager%C3%B8ya%202022-09-10%2001.jpg?width=1024"
+  },
+  {
+    "id": "fyr-kolnesholmane-lighthouse",
+    "name": "Kolnesholmane Lighthouse",
+    "county": "Rogaland",
+    "municipality": "Eigersund",
+    "lat": 58.89028,
+    "lon": 5.54404
+  },
+  {
+    "id": "fyr-krakenes-fyr",
+    "name": "Kråkenes fyr",
+    "county": "Vestland",
+    "municipality": "Kinn",
+    "established": 1906,
+    "lat": 62.034444,
+    "lon": 4.985556,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kr%C3%A5kenes%20lighthouse%203.jpg?width=1024"
+  },
+  {
+    "id": "fyr-kvanhovden-fyr",
+    "name": "Kvanhovden fyr",
+    "county": "Vestland",
+    "municipality": "Kinn",
+    "established": 1895,
+    "lat": 61.697222,
+    "lon": 4.831389,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kvanhovden%2C%20Flora%20-%20S-1602U2%20036.jpg?width=1024"
+  },
+  {
+    "id": "fyr-kvassheim-fyr",
+    "name": "Kvassheim fyr",
+    "county": "Rogaland",
+    "municipality": "Hå kommune",
+    "established": 1912,
+    "lat": 58.544444,
+    "lon": 5.680278,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kvassheim%20fyr%201.jpg?width=1024"
+  },
+  {
+    "id": "fyr-kvitholmen-fyr",
+    "name": "Kvitholmen fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Hustadvika",
+    "lat": 63.022778,
+    "lon": 7.235,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kvitholmen%20lighthouse%20in%20M%C3%B8re%20og%20Romsdal.tif?width=1024"
+  },
+  {
+    "id": "fyr-kvitsoy-fyr",
+    "name": "Kvitsøy fyr",
+    "county": "Rogaland",
+    "municipality": "Kvitsøy",
+    "established": 1700,
+    "lat": 59.062,
+    "lon": 5.40013,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/KvitsoyLighthouse%20Norway.jpg?width=1024"
+  },
+  {
+    "id": "fyr-kya-fyr",
+    "name": "Kya fyr",
+    "county": "Trøndelag",
+    "municipality": "Osen",
+    "established": 1920,
+    "lat": 64.463889,
+    "lon": 10.211944,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kya%20lighthouse%20at%20Osen.tif?width=1024"
+  },
+  {
+    "id": "fyr-lade-molo-nordre",
+    "name": "Lade molo, nordre",
+    "county": "Trøndelag",
+    "municipality": "Trondheim",
+    "lat": 63.446456,
+    "lon": 10.4167,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lade%20molo%2C%20Nordre%20%283216775357%29.jpg?width=1024"
+  },
+  {
+    "id": "fyr-landegode-fyr",
+    "name": "Landegode fyr",
+    "county": "Nordland",
+    "municipality": "Bodø",
+    "established": 1902,
+    "lat": 67.448333,
+    "lon": 14.380833,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Landegode%20lighthouse%2C%20Norway.jpg?width=1024"
+  },
+  {
+    "id": "fyr-langoytangen-fyr",
+    "name": "Langøytangen fyr",
+    "county": "Telemark",
+    "municipality": "Bamble",
+    "established": 1839,
+    "lat": 58.990764,
+    "lon": 9.758181,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lang%C3%B8ya%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-leirvik-fyr",
+    "name": "Leirvik fyr",
+    "county": "Vestland",
+    "municipality": "Stord",
+    "established": 1878,
+    "lat": 59.779256,
+    "lon": 5.541959
+  },
+  {
+    "id": "fyr-lepsoyrevet-fyr",
+    "name": "Lepsøyrevet fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Haram",
+    "established": 1879,
+    "lat": 62.583611,
+    "lon": 6.263333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Leps%C3%B8yrev%20fyr%20i%20Haram%20kommune.jpg?width=1024"
+  },
+  {
+    "id": "fyr-lille-presteskjaer-fyr",
+    "name": "Lille Presteskjær fyr",
+    "county": "Rogaland",
+    "municipality": "Sokndal",
+    "lat": 58.323056,
+    "lon": 6.257778,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokndal.%20Lille%20Presteskj%C3%A6r%20fyr%20-%20NB%20MS%20G4%200277.jpg?width=1024"
+  },
+  {
+    "id": "fyr-lille-torungen-fyr",
+    "name": "Lille Torungen fyr",
+    "county": "Agder",
+    "municipality": "Arendal",
+    "established": 1844,
+    "lat": 58.412,
+    "lon": 8.79176,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lille%20Torungen.jpg?width=1024"
+  },
+  {
+    "id": "fyr-lindesnes-fyr",
+    "name": "Lindesnes fyr",
+    "county": "Agder",
+    "municipality": "Lindesnes",
+    "established": 1915,
+    "lat": 57.9825,
+    "lon": 7.046667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/.00%203198%20Lindesnes%20fyr%20-%20Museum%20%28Norway%29.jpg?width=1024"
+  },
+  {
+    "id": "fyr-lista-fyr",
+    "name": "Lista fyr",
+    "county": "Agder",
+    "municipality": "Farsund",
+    "established": 1836,
+    "lat": 58.109302,
+    "lon": 6.567271,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/20050807-Lista%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-litloy-fyr",
+    "name": "Litløy fyr",
+    "county": "Nordland",
+    "municipality": "Bø",
+    "established": 1912,
+    "lat": 68.593333,
+    "lon": 14.308611,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/At%20the%20edge%2C%20Litl%C3%B8y%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-lyngor-fyr",
+    "name": "Lyngør fyr",
+    "county": "Agder",
+    "municipality": "Tvedestrand",
+    "established": 1879,
+    "lat": 58.6359,
+    "lon": 9.1483,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyngoer%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-lodingen-fyr",
+    "name": "Lødingen fyr",
+    "county": "Nordland",
+    "municipality": "Lødingen",
+    "established": 1892,
+    "lat": 68.404167,
+    "lon": 15.571389,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%B8ddingen001.jpg?width=1024"
+  },
+  {
+    "id": "fyr-makkaur-fyr",
+    "name": "Makkaur fyr",
+    "county": "Finnmark",
+    "municipality": "Båtsfjord",
+    "established": 1928,
+    "lat": 70.707222,
+    "lon": 30.079444,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Makkaur%20lighthouse%20and%20the%20bridge.tif?width=1024"
+  },
+  {
+    "id": "fyr-markoy-fyr",
+    "name": "Markøy fyr",
+    "county": "Agder",
+    "municipality": "Lyngdal",
+    "established": 1725,
+    "lat": 58.001549,
+    "lon": 6.985931,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mark%C3%B8y%20lighthouse%20in%20Lyngdal.tif?width=1024"
+  },
+  {
+    "id": "fyr-marstein-fyr",
+    "name": "Marstein fyr",
+    "county": "Vestland",
+    "municipality": "Austevoll",
+    "established": 1877,
+    "lat": 60.1301,
+    "lon": 5.01045,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Marstein%20Fyr2.jpg?width=1024"
+  },
+  {
+    "id": "fyr-medfjordbaen-fyr",
+    "name": "Medfjordbåen fyr",
+    "county": "Vestfold",
+    "municipality": "Tønsberg",
+    "lat": 59.335422,
+    "lon": 10.570317,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mefjordb%C3%A5en%20light.jpg?width=1024"
+  },
+  {
+    "id": "fyr-moholmen-fyr",
+    "name": "Moholmen fyr",
+    "county": "Nordland",
+    "municipality": "Vågan",
+    "established": 1914,
+    "lat": 68.1575,
+    "lon": 14.405,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Moholmen.jpg?width=1024"
+  },
+  {
+    "id": "fyr-molja-fyr",
+    "name": "Molja fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Ålesund",
+    "lat": 62.47452,
+    "lon": 6.15016,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Molja%20Leuchtturm%20in%20%C3%85lesund%2002.jpg?width=1024"
+  },
+  {
+    "id": "fyr-myken-fyr",
+    "name": "Myken fyr",
+    "county": "Nordland",
+    "municipality": "Rødøy",
+    "established": 1918,
+    "lat": 66.764444,
+    "lon": 12.476944,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Myken%20fyr.JPG?width=1024"
+  },
+  {
+    "id": "fyr-maloy-skarholmen-fyr",
+    "name": "Måløy-Skarholmen fyr",
+    "county": "Nordland",
+    "municipality": "Steigen",
+    "established": 1922,
+    "lat": 67.767778,
+    "lon": 14.401111,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Maloy-Skarholmen%20lighthouse%20in%20Steigen.tif?width=1024"
+  },
+  {
+    "id": "fyr-nordoyan-fyr",
+    "name": "Nordøyan fyr",
+    "county": "Trøndelag",
+    "municipality": "Nærøysund",
+    "established": 1890,
+    "lat": 64.7977,
+    "lon": 10.5493,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nord%C3%B8yan%20lighthouse%20in%20Vikna.tif?width=1024"
+  },
+  {
+    "id": "fyr-nyholmen-fyr",
+    "name": "Nyholmen fyr",
+    "county": "Nordland",
+    "municipality": "Bodø",
+    "established": 1907,
+    "lat": 67.286111,
+    "lon": 14.364722,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nyholmen%20Lighthouse%202013.jpg?width=1024"
+  },
+  {
+    "id": "fyr-nyholmen-lighthouse",
+    "name": "Nyholmen Lighthouse",
+    "county": "Nordland",
+    "municipality": "Bodø",
+    "established": 1875,
+    "lat": 67.286111,
+    "lon": 14.364722,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nyholmen%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-naeroysund-fyr",
+    "name": "Nærøysund fyr",
+    "county": "Trøndelag",
+    "municipality": "Nærøysund",
+    "established": 1904,
+    "lat": 64.84234,
+    "lon": 11.19328,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/N%C3%A6r%C3%B8ysund%20fyr%2003c.jpg?width=1024"
+  },
+  {
+    "id": "fyr-obrestad-fyr",
+    "name": "Obrestad fyr",
+    "county": "Rogaland",
+    "municipality": "Hå kommune",
+    "established": 1873,
+    "lat": 58.658056,
+    "lon": 5.554444,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Obrestad%20Lighthouse%202013.JPG?width=1024"
+  },
+  {
+    "id": "fyr-odderoya-fyr",
+    "name": "Odderøya fyr",
+    "county": "Agder",
+    "municipality": "Kristiansand",
+    "established": 1874,
+    "lat": 58.131397,
+    "lon": 8.002202,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Odder%C3%B8ya%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-oksoy-fyr",
+    "name": "Oksøy fyr",
+    "county": "Agder",
+    "municipality": "Kristiansand",
+    "established": 1900,
+    "lat": 58.072222,
+    "lon": 8.053056,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oks%C3%B8y%20fyrstasjon%2004.jpg?width=1024"
+  },
+  {
+    "id": "fyr-ona-fyr",
+    "name": "Ona fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Ålesund",
+    "established": 1867,
+    "lat": 62.8625,
+    "lon": 6.545,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ona%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-pertenga",
+    "name": "Pertenga",
+    "county": "Troms",
+    "municipality": "Kåfjord kommune",
+    "lat": 69.51388,
+    "lon": 20.7851
+  },
+  {
+    "id": "fyr-prestoy-fyr",
+    "name": "Prestøy fyr",
+    "county": "Trøndelag",
+    "municipality": "Nærøysund",
+    "established": 1841,
+    "lat": 64.7906,
+    "lon": 11.1119,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Prest%C3%B8y%20fyr.PNG?width=1024"
+  },
+  {
+    "id": "fyr-reine-fyr",
+    "name": "Reine fyr",
+    "county": "Nordland",
+    "municipality": "Moskenes",
+    "lat": 67.9361,
+    "lon": 13.1113,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Reine%2C%20Moskenes%20-%20S-1602U3%20073.jpg?width=1024"
+  },
+  {
+    "id": "fyr-rivingen-fyr",
+    "name": "Rivingen fyr",
+    "county": "Agder",
+    "municipality": "Grimstad",
+    "established": 1886,
+    "lat": 58.303542,
+    "lon": 8.583177,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rivingen.jpg?width=1024"
+  },
+  {
+    "id": "fyr-rotvaer-fyr",
+    "name": "Rotvær fyr",
+    "county": "Nordland",
+    "municipality": "Lødingen",
+    "established": 1914,
+    "lat": 68.367806,
+    "lon": 15.944333
+  },
+  {
+    "id": "fyr-runde-fyr",
+    "name": "Runde fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Herøy",
+    "established": 1767,
+    "lat": 62.414722,
+    "lon": 5.583889,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2012-06-09%20Runde%20fyr02.jpg?width=1024"
+  },
+  {
+    "id": "fyr-rutletangen-fyr",
+    "name": "Rutletangen fyr",
+    "county": "Vestland",
+    "municipality": "Gulen",
+    "lat": 61.09,
+    "lon": 5.172778
+  },
+  {
+    "id": "fyr-ryvarden-fyr",
+    "name": "Ryvarden fyr",
+    "county": "Vestland",
+    "municipality": "Sveio",
+    "established": 1849,
+    "lat": 59.52693,
+    "lon": 5.22516,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ryvarden%20fyrstasjon.jpg?width=1024"
+  },
+  {
+    "id": "fyr-ryvingen-fyr",
+    "name": "Ryvingen fyr",
+    "county": "Agder",
+    "municipality": "Lindesnes",
+    "lat": 57.9681,
+    "lon": 7.4916,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ryvingen%20fyr1.jpg?width=1024"
+  },
+  {
+    "id": "fyr-rodholmen-fyr",
+    "name": "Rødholmen fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Haram",
+    "lat": 62.637222,
+    "lon": 6.385556,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8dholmen%2C%20Haram%20-%20S-1602U2%20059.jpg?width=1024"
+  },
+  {
+    "id": "fyr-rovaersholmen-fyr",
+    "name": "Røværsholmen fyr",
+    "county": "Rogaland",
+    "municipality": "Haugesund",
+    "established": 1892,
+    "lat": 59.451667,
+    "lon": 5.069444,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8v%C3%A6rsholmen%20fyrstasjon%20NFL%201329.tiff?width=1024"
+  },
+  {
+    "id": "fyr-roytingkalven-fyr",
+    "name": "Røytingkalven fyr",
+    "county": "Vestland",
+    "municipality": "Gulen",
+    "lat": 60.8725,
+    "lon": 4.779167
+  },
+  {
+    "id": "fyr-saltholmen-fyr",
+    "name": "Saltholmen fyr",
+    "county": "Agder",
+    "municipality": "Lillesand",
+    "established": 1882,
+    "lat": 58.231447,
+    "lon": 8.40503,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Salthomen%20Fyr%2C%20Norway.jpg?width=1024"
+  },
+  {
+    "id": "fyr-sandvigodden-fyr",
+    "name": "Sandvigodden fyr",
+    "county": "Agder",
+    "municipality": "Arendal",
+    "established": 1844,
+    "lat": 58.4364,
+    "lon": 8.78361,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20lighthouse%20in%20Sandvigen%20outside%20Arendal%20in%20Norway.jpg?width=1024"
+  },
+  {
+    "id": "fyr-skalmen-fyr",
+    "name": "Skalmen fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Smøla",
+    "established": 1907,
+    "lat": 63.472153,
+    "lon": 7.757175,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skalmen%2C%20Sm%C3%B8la%20-%20S-1602U2%20091.jpg?width=1024"
+  },
+  {
+    "id": "fyr-skjelva-fyr",
+    "name": "Skjelva fyr",
+    "county": "Nordland",
+    "municipality": "Alstahaug",
+    "established": 1898,
+    "lat": 65.7216,
+    "lon": 12.3067,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skjelva%2C%20Alstadhaug%20-%20S-1602U3%20039.jpg?width=1024"
+  },
+  {
+    "id": "fyr-sklinna-fyr",
+    "name": "Sklinna fyr",
+    "county": "Trøndelag",
+    "municipality": "Leka",
+    "established": 1910,
+    "lat": 65.201944,
+    "lon": 10.995833,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sklinna%20lighthouse%20in%20Nord-Trondelag.tif?width=1024"
+  },
+  {
+    "id": "fyr-skogeroypynten",
+    "name": "Skogerøypynten",
+    "county": "Finnmark",
+    "municipality": "Sør-Varanger",
+    "lat": 69.75717,
+    "lon": 29.69956
+  },
+  {
+    "id": "fyr-skoltegrunnskaien-fyr",
+    "name": "Skoltegrunnskaien fyr",
+    "county": "Vestland",
+    "municipality": "Bergen kommune",
+    "lat": 60.401653,
+    "lon": 5.309193
+  },
+  {
+    "id": "fyr-skomvaer-fyr",
+    "name": "Skomvær fyr",
+    "county": "Nordland",
+    "municipality": "Røst",
+    "established": 1887,
+    "lat": 67.410918,
+    "lon": 11.874925,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skomv%C3%A6r%20fyr%2001.jpg?width=1024"
+  },
+  {
+    "id": "fyr-skongenes-fyr",
+    "name": "Skongenes fyr",
+    "county": "Vestland",
+    "municipality": "Kinn",
+    "established": 1870,
+    "lat": 62.0325,
+    "lon": 5.123611,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2015-07%20Skongenes%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-skrova-fyr",
+    "name": "Skrova fyr",
+    "county": "Nordland",
+    "municipality": "Vågan",
+    "established": 1922,
+    "lat": 68.153056,
+    "lon": 14.648889,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lofoten%20-%2020120601%20051.JPG?width=1024"
+  },
+  {
+    "id": "fyr-skudenes-fyr",
+    "name": "Skudenes fyr",
+    "county": "Rogaland",
+    "municipality": "Karmøy",
+    "established": 1799,
+    "lat": 59.1433,
+    "lon": 5.27573,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skudenes%20lighthouse%20in%20Karm%C3%B8y.tif?width=1024"
+  },
+  {
+    "id": "fyr-sletringen-fyr",
+    "name": "Sletringen fyr",
+    "county": "Trøndelag",
+    "municipality": "Frøya",
+    "established": 1899,
+    "lat": 63.666111,
+    "lon": 8.262222,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Slettringen%201.jpg?width=1024"
+  },
+  {
+    "id": "fyr-slettnes-fyr",
+    "name": "Slettnes fyr",
+    "county": "Finnmark",
+    "municipality": "Gamvik",
+    "established": 1905,
+    "lat": 71.08956,
+    "lon": 28.21823,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gamvik%2C%20Norway%20-%20panoramio%20%282%29.jpg?width=1024"
+  },
+  {
+    "id": "fyr-slatteroy-fyr",
+    "name": "Slåtterøy fyr",
+    "county": "Vestland",
+    "municipality": "Bømlo",
+    "established": 1859,
+    "lat": 59.908056,
+    "lon": 5.067222,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/SL%C3%85TTER%C3%98Y%20FYRSTASJON.jpg?width=1024"
+  },
+  {
+    "id": "fyr-sogneoksen-fyr",
+    "name": "Sogneoksen fyr",
+    "county": "Vestland",
+    "municipality": "Gulen",
+    "lat": 60.9475,
+    "lon": 4.7625
+  },
+  {
+    "id": "fyr-songvar-fyr",
+    "name": "Songvår fyr",
+    "county": "Agder",
+    "municipality": "Kristiansand",
+    "established": 1888,
+    "lat": 58.015,
+    "lon": 7.80979,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Songv%C3%A5r%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-spakenes",
+    "name": "Spåkenes",
+    "county": "Troms",
+    "municipality": "Nordreisa",
+    "lat": 69.76236,
+    "lon": 20.45996
+  },
+  {
+    "id": "fyr-stabben-fyr",
+    "name": "Stabben fyr",
+    "county": "Vestland",
+    "municipality": "Kinn",
+    "established": 1867,
+    "lat": 61.6006,
+    "lon": 4.955,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stabben%20Fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-stamsund-fyr",
+    "name": "Stamsund fyr",
+    "county": "Nordland",
+    "municipality": "Vestvågøy",
+    "lat": 68.1183,
+    "lon": 13.8507
+  },
+  {
+    "id": "fyr-stangholmen-fyr",
+    "name": "Stangholmen fyr",
+    "county": "Agder",
+    "municipality": "Risør",
+    "established": 1855,
+    "lat": 58.7095,
+    "lon": 9.2433,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stangholmen%20Fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-stavenes-fyr",
+    "name": "Stavenes fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Averøy",
+    "established": 1842,
+    "lat": 63.114444,
+    "lon": 7.662778,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stavenes%20fyrstasjon.jpg?width=1024"
+  },
+  {
+    "id": "fyr-stavernsodden-fyr",
+    "name": "Stavernsodden fyr",
+    "county": "Vestfold",
+    "municipality": "Larvik",
+    "established": 1855,
+    "lat": 58.9875,
+    "lon": 10.0522,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stavernodden%20fyr%202.JPG?width=1024"
+  },
+  {
+    "id": "fyr-stavseng-fyr",
+    "name": "Stavseng fyr",
+    "county": "Telemark",
+    "municipality": "Kragerø",
+    "established": 1874,
+    "lat": 58.8511,
+    "lon": 9.45389,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stavseng%20lighthouse%20in%20Krager%C3%B8.tif?width=1024"
+  },
+  {
+    "id": "fyr-steilene-fyrstasjon",
+    "name": "Steilene fyrstasjon",
+    "county": "Akershus",
+    "municipality": "Nesodden",
+    "established": 1837,
+    "lat": 59.816389,
+    "lon": 10.594167,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Steilene%20fyrstasjon%202010%2008%2019%200642.jpg?width=1024"
+  },
+  {
+    "id": "fyr-stonglandseidet-fyr",
+    "name": "Stonglandseidet fyr",
+    "county": "Troms",
+    "municipality": "Senja",
+    "lat": 69.083154,
+    "lon": 17.215834,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fyr%2C%20Stonglandseidet%20-%20panoramio.jpg?width=1024"
+  },
+  {
+    "id": "fyr-store-faerder-fyr",
+    "name": "Store Færder fyr",
+    "county": "Vestfold",
+    "municipality": "Færder",
+    "established": 1696,
+    "lat": 59.067222,
+    "lon": 10.524722,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fyrstasjonen%20p%C3%A5%20Store%20F%C3%A6rder.jpg?width=1024"
+  },
+  {
+    "id": "fyr-store-torungen-fyr",
+    "name": "Store Torungen fyr",
+    "county": "Agder",
+    "municipality": "Arendal",
+    "established": 1844,
+    "lat": 58.3989,
+    "lon": 8.7902,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Store%20Torungen%20fyr%20-%20IMGP5082.jpg?width=1024"
+  },
+  {
+    "id": "fyr-storholmen-fyr",
+    "name": "Storholmen fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Giske",
+    "established": 1920,
+    "lat": 62.643056,
+    "lon": 5.923611,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storholmen%2C%20Giske%20-%20S-1602U2%20067.jpg?width=1024"
+  },
+  {
+    "id": "fyr-struten-fyr",
+    "name": "Struten fyr",
+    "county": "Østfold",
+    "municipality": "Fredrikstad",
+    "established": 1907,
+    "lat": 59.1181,
+    "lon": 10.7408,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Struten%20fyr%20Ytre%20hvaler%20nasjonalpark%20Fredrikstad.jpg?width=1024"
+  },
+  {
+    "id": "fyr-struten-lighthouse",
+    "name": "Struten Lighthouse",
+    "county": "Østfold",
+    "municipality": "Fredrikstad",
+    "established": 1985,
+    "lat": 59.118216,
+    "lon": 10.740452
+  },
+  {
+    "id": "fyr-stromtangen-fyr",
+    "name": "Strømtangen fyr",
+    "county": "Telemark",
+    "municipality": "Kragerø",
+    "established": 1874,
+    "lat": 58.8367,
+    "lon": 9.46434,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Str%C3%B8mtangen%20lighthouse%20in%20Krager%C3%B8.tif?width=1024"
+  },
+  {
+    "id": "fyr-stott-fyr",
+    "name": "Støtt fyr",
+    "county": "Nordland",
+    "municipality": "Meløy",
+    "established": 1867,
+    "lat": 66.9473,
+    "lon": 13.4583,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/St%C3%B8tt%2C%20Mel%C3%B8y%20-%20S-1602U3%20049.jpg?width=1024"
+  },
+  {
+    "id": "fyr-sula-fyr",
+    "name": "Sula fyr",
+    "county": "Trøndelag",
+    "municipality": "Frøya",
+    "established": 1909,
+    "lat": 63.8472,
+    "lon": 8.45278,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sula%20fyr.JPG?width=1024"
+  },
+  {
+    "id": "fyr-svenner-fyr",
+    "name": "Svenner fyr",
+    "county": "Vestfold",
+    "municipality": "Larvik",
+    "established": 1874,
+    "lat": 58.9722,
+    "lon": 10.1444,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Svenner.jpg?width=1024"
+  },
+  {
+    "id": "fyr-svinoy-fyr",
+    "name": "Svinøy fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Herøy",
+    "established": 1905,
+    "lat": 62.331389,
+    "lon": 5.267222,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Svin%C3%B8y%20lighthouse.jpg?width=1024"
+  },
+  {
+    "id": "fyr-syllingsvag-fyr",
+    "name": "Syllingsvåg fyr",
+    "county": "Vestland",
+    "municipality": "Gulen",
+    "lat": 60.998333,
+    "lon": 4.922222
+  },
+  {
+    "id": "fyr-sondre-katland-fyr",
+    "name": "Søndre Katland fyr",
+    "county": "Agder",
+    "municipality": "Farsund",
+    "lat": 58.058333,
+    "lon": 6.841389,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Katland%20fyr%20Farsund.JPG?width=1024"
+  },
+  {
+    "id": "fyr-sorhaugoy-fyr",
+    "name": "Sørhaugøy fyr",
+    "county": "Rogaland",
+    "municipality": "Haugesund",
+    "established": 1846,
+    "lat": 59.4238,
+    "lon": 5.24005,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8rhaug%C3%B8y%20fyr%2001.jpg?width=1024"
+  },
+  {
+    "id": "fyr-tarva-fyr",
+    "name": "Tarva fyr",
+    "county": "Trøndelag",
+    "municipality": "Ørland",
+    "established": 1894,
+    "lat": 63.81205,
+    "lon": 9.376488
+  },
+  {
+    "id": "fyr-teltnes",
+    "name": "Teltnes",
+    "county": "Finnmark",
+    "municipality": "Tana",
+    "lat": 70.50959,
+    "lon": 28.46649
+  },
+  {
+    "id": "fyr-tennholmen-fyr",
+    "name": "Tennholmen fyr",
+    "county": "Nordland",
+    "municipality": "Bodø",
+    "established": 1901,
+    "lat": 67.3019,
+    "lon": 13.4978,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tennholmen%2C%20Bod%C3%B8%20-%20S-1602U3%20052.jpg?width=1024"
+  },
+  {
+    "id": "fyr-tenvikskjaer-fyr",
+    "name": "Tenvikskjær fyr",
+    "county": "Vestfold",
+    "municipality": "Færder",
+    "lat": 59.172533,
+    "lon": 10.362878
+  },
+  {
+    "id": "fyr-terningen-fyrstasjon",
+    "name": "Terningen fyrstasjon",
+    "county": "Trøndelag",
+    "municipality": "Hitra",
+    "established": 1833,
+    "lat": 63.4939,
+    "lon": 9.03917,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hurtigruten%202017%20%2833376728745%29.jpg?width=1024"
+  },
+  {
+    "id": "fyr-torbjornskjaer-fyr",
+    "name": "Torbjørnskjær fyr",
+    "county": "Østfold",
+    "municipality": "Hvaler",
+    "established": 1872,
+    "lat": 58.996,
+    "lon": 10.7825,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ytre%20Hvaler%2C%20Torbj%C3%B8rnskj%C3%A6r%20lighthouse.jpg?width=1024"
+  },
+  {
+    "id": "fyr-torsvag-fyr",
+    "name": "Torsvåg fyr",
+    "county": "Troms",
+    "municipality": "Karlsøy",
+    "established": 1904,
+    "lat": 70.2455,
+    "lon": 19.49986,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Torsvaag%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-tranoy-fyr",
+    "name": "Tranøy fyr",
+    "county": "Nordland",
+    "municipality": "Hamarøy",
+    "established": 1864,
+    "lat": 68.1861,
+    "lon": 15.6086,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tranoy%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-traena-fyr",
+    "name": "Træna fyr",
+    "county": "Nordland",
+    "municipality": "Træna",
+    "established": 1877,
+    "lat": 66.4306,
+    "lon": 11.9681,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tr%C3%A6na%2C%20Tr%C3%A6na%20-%20S-1602U3%20046.jpg?width=1024"
+  },
+  {
+    "id": "fyr-tungenes-fyr",
+    "name": "Tungenes fyr",
+    "county": "Rogaland",
+    "municipality": "Randaberg",
+    "established": 1828,
+    "lat": 59.03571,
+    "lon": 5.58123,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tungenes%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-tvistein-fyr",
+    "name": "Tvistein fyr",
+    "county": "Vestfold",
+    "municipality": "Larvik",
+    "established": 1908,
+    "lat": 58.93815,
+    "lon": 9.93646,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tvistein%20fyr%20%282%29.JPG?width=1024"
+  },
+  {
+    "id": "fyr-tyrhaug-fyr",
+    "name": "Tyrhaug fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Smøla",
+    "established": 1833,
+    "lat": 63.310278,
+    "lon": 8.226667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tyrhaug%20Fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-ulla-fyr",
+    "name": "Ulla fyr",
+    "county": "Møre og Romsdal",
+    "municipality": "Haram",
+    "established": 1874,
+    "lat": 62.685222,
+    "lon": 6.164944,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ulla%20lighthouse%20in%20Haram.tif?width=1024"
+  },
+  {
+    "id": "fyr-ulvesund-fyr",
+    "name": "Ulvesund fyr",
+    "county": "Vestland",
+    "municipality": "Kinn",
+    "established": 1870,
+    "lat": 61.9844,
+    "lon": 5.16917,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ulvesund%2C%20V%C3%A5gs%C3%B8y%20-%20S-1602U2%20043.jpg?width=1024"
+  },
+  {
+    "id": "fyr-utsira-fyr",
+    "name": "Utsira fyr",
+    "county": "Rogaland",
+    "municipality": "Utsira",
+    "established": 1844,
+    "lat": 59.3,
+    "lon": 4.86667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Utsira%20fyr3.jpg?width=1024"
+  },
+  {
+    "id": "fyr-utvaer-fyr",
+    "name": "Utvær fyr",
+    "county": "Vestland",
+    "municipality": "Solund",
+    "established": 1900,
+    "lat": 61.0369,
+    "lon": 4.51,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Utv%C3%A6r%20fyr%207.jpg?width=1024"
+  },
+  {
+    "id": "fyr-vardeneset-fyr",
+    "name": "Vardeneset fyr",
+    "county": "Rogaland",
+    "municipality": "Stavanger",
+    "lat": 58.999756,
+    "lon": 5.679696
+  },
+  {
+    "id": "fyr-vardo-fyr",
+    "name": "Vardø fyr",
+    "county": "Finnmark",
+    "municipality": "Vardø",
+    "established": 1896,
+    "lat": 70.3889,
+    "lon": 31.1583,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vard%C3%B8Fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-varnes-fyr",
+    "name": "Varnes fyr",
+    "county": "Agder",
+    "municipality": "Farsund",
+    "established": 1836,
+    "lat": 58.177953,
+    "lon": 6.623915,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Varnes%2C%20Farsund%20-%20S-1602U1%20082.jpg?width=1024"
+  },
+  {
+    "id": "fyr-vassoyna-lykt",
+    "name": "Vassøyna lykt",
+    "county": "Vestland",
+    "municipality": "Gulen",
+    "lat": 60.950278,
+    "lon": 4.936667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lighthouse%20near%20Skjerjehamn%20-%20Norway%20-%20panoramio.jpg?width=1024"
+  },
+  {
+    "id": "fyr-vatlestraumen-fyrstasjon",
+    "name": "Vatlestraumen fyrstasjon",
+    "county": "Vestland",
+    "municipality": "Bergen kommune",
+    "established": 1882,
+    "lat": 60.339167,
+    "lon": 5.183333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vatlestraumen%20fyrstasjon%2C%20lighthouse%20Bergen.jpg?width=1024"
+  },
+  {
+    "id": "fyr-vestpynten-fyr",
+    "name": "Vestpynten fyr",
+    "established": 1933,
+    "lat": 78.252222,
+    "lon": 15.416944,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vestpynten%20fyr%20IMG%203907.JPG?width=1024"
+  },
+  {
+    "id": "fyr-vibberodden-fyr",
+    "name": "Vibberodden fyr",
+    "county": "Rogaland",
+    "municipality": "Eigersund",
+    "established": 1855,
+    "lat": 58.4197,
+    "lon": 5.99028,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vibberodden%2C%20Eigersund%20-%20S-1602U1%20088.jpg?width=1024"
+  },
+  {
+    "id": "fyr-vikeholmen-fyr",
+    "name": "Vikeholmen fyr",
+    "county": "Rogaland",
+    "municipality": "Karmøy",
+    "lat": 59.1408,
+    "lon": 5.27605,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vikaholmen%2C%20Karm%C3%B8y%20-%20S-1602U1%20114.jpg?width=1024"
+  },
+  {
+    "id": "fyr-villa-fyr",
+    "name": "Villa fyr",
+    "county": "Trøndelag",
+    "municipality": "Flatanger",
+    "established": 1839,
+    "lat": 64.545,
+    "lon": 10.6814,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa%20Lighthouse%20in%20Nord-Tr%C3%B8ndelag.tif?width=1024"
+  },
+  {
+    "id": "fyr-vingleia-fyr",
+    "name": "Vingleia fyr",
+    "county": "Trøndelag",
+    "municipality": "Frøya",
+    "lat": 63.9164,
+    "lon": 8.67417,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vingleia%201.jpg?width=1024"
+  },
+  {
+    "id": "fyr-vaeroy-fyr",
+    "name": "Værøy fyr",
+    "county": "Nordland",
+    "municipality": "Værøy",
+    "established": 1880,
+    "lat": 67.6508,
+    "lon": 12.7244,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A6r%C3%B8y%2C%20V%C3%A6r%C3%B8y%20-%20S-1602U3%20074.jpg?width=1024"
+  },
+  {
+    "id": "fyr-vagoy-fyr",
+    "name": "Vågøy fyr",
+    "county": "Nordland",
+    "municipality": "Bodø",
+    "established": 1859,
+    "lat": 67.434833,
+    "lon": 13.988767,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A5g%C3%B8y-fyrstasjon.jpg?width=1024"
+  },
+  {
+    "id": "fyr-ytre-mokkalasset-fyr",
+    "name": "Ytre Møkkalasset fyr",
+    "county": "Agder",
+    "municipality": "Arendal",
+    "established": 1888,
+    "lat": 58.540457,
+    "lon": 9.003258,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%B8kkalasset%20Lighthouse003%202006%2007%2026.JPG?width=1024"
+  },
+  {
+    "id": "fyr-ytterholmen-fyr",
+    "name": "Ytterholmen fyr",
+    "county": "Nordland",
+    "municipality": "Herøy",
+    "established": 1912,
+    "lat": 66.0131,
+    "lon": 11.6869,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ytterholmen%20fyr%20med%20standard%20lyktehus%20NFL%206545.tif?width=1024"
+  },
+  {
+    "id": "fyr-ytteroyane-fyr",
+    "name": "Ytterøyane fyr",
+    "county": "Vestland",
+    "municipality": "Kinn",
+    "established": 1881,
+    "lat": 61.5714,
+    "lon": 4.68028,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ytter%C3%B8yane%20fyr.jpg?width=1024"
+  },
+  {
+    "id": "fyr-okshamaren-fyrstasjon",
+    "name": "Økshamaren fyrstasjon",
+    "county": "Vestland",
+    "municipality": "Austevoll",
+    "established": 1849,
+    "lat": 59.9875,
+    "lon": 5.225,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98kshamaren%20lighthouse%20in%20Austevoll.tif?width=1024"
+  },
+  {
+    "id": "fyr-orsvag-fyr",
+    "name": "Ørsvåg fyr",
+    "county": "Nordland",
+    "municipality": "Vågan",
+    "lat": 68.1961,
+    "lon": 14.4161,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98rsv%C3%A5g%2C%20V%C3%A5gan%20-%20S-1602U3%20071.jpg?width=1024"
+  },
+  {
+    "id": "fyr-asvaer-fyr",
+    "name": "Åsvær fyr",
+    "county": "Nordland",
+    "municipality": "Dønna",
+    "established": 1917,
+    "lat": 66.2647,
+    "lon": 12.2961,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85sv%C3%A6r%20fyr.JPG?width=1024"
+  },
+  {
+    "id": "fyr-asvaer-lighthouse-1876",
+    "name": "Åsvær Lighthouse (1876)",
+    "county": "Nordland",
+    "municipality": "Dønna",
+    "established": 1876,
+    "lat": 66.2647,
+    "lon": 12.2961
+  }
+]

@@ -1,0 +1,534 @@
+[
+  {
+    "id": "alpin-hafjell-alpinsenter",
+    "name": "Hafjell Alpinsenter",
+    "county": "Innlandet",
+    "municipality": "Øyer",
+    "vertical": 864,
+    "lat": 61.235,
+    "lon": 10.447222,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hafjell.jpg?width=1024"
+  },
+  {
+    "id": "alpin-kvitfjell-alpinanlegg",
+    "name": "Kvitfjell Alpinanlegg",
+    "county": "Innlandet",
+    "municipality": "Ringebu",
+    "vertical": 854,
+    "lat": 61.45,
+    "lon": 10.12,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kvitfjell_over_M%C3%A6lum.jpg?width=1024"
+  },
+  {
+    "id": "alpin-hemsedal-skisenter",
+    "name": "Hemsedal skisenter",
+    "county": "Buskerud",
+    "municipality": "Hemsedal",
+    "vertical": 810,
+    "lat": 60.8623,
+    "lon": 8.5154
+  },
+  {
+    "id": "alpin-voss-resort",
+    "name": "Voss Resort",
+    "county": "Vestland",
+    "municipality": "Voss",
+    "vertical": 750,
+    "lat": 60.6536,
+    "lon": 6.4197
+  },
+  {
+    "id": "alpin-oppdal-skisenter",
+    "name": "Oppdal skisenter",
+    "county": "Trøndelag",
+    "municipality": "Oppdal",
+    "vertical": 715,
+    "lat": 62.6098,
+    "lon": 9.652,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hovden_oppdal.jpg?width=1024"
+  },
+  {
+    "id": "alpin-trysilfjellet",
+    "name": "Trysilfjellet",
+    "county": "Innlandet",
+    "municipality": "Trysil",
+    "vertical": 685,
+    "lat": 61.3175,
+    "lon": 12.2269
+  },
+  {
+    "id": "alpin-uvdal-skisenter",
+    "name": "Uvdal Skisenter",
+    "county": "Buskerud",
+    "municipality": "Nore og Uvdal",
+    "vertical": 657,
+    "lat": 60.3,
+    "lon": 8.538889
+  },
+  {
+    "id": "alpin-bjorli-alpinanlegg",
+    "name": "Bjorli alpinanlegg",
+    "county": "Møre og Romsdal",
+    "municipality": "Lesja",
+    "vertical": 646,
+    "lat": 62.2659,
+    "lon": 8.213,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bjorli_alpinanlegg.jpg?width=1024"
+  },
+  {
+    "id": "alpin-gausta-skisenter",
+    "name": "Gausta skisenter",
+    "county": "Telemark",
+    "municipality": "Tinn",
+    "vertical": 550,
+    "lat": 59.87889,
+    "lon": 8.74444
+  },
+  {
+    "id": "alpin-geilo",
+    "name": "Geilo",
+    "county": "Buskerud",
+    "municipality": "Hol",
+    "vertical": 378,
+    "lat": 60.533718,
+    "lon": 8.208973,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Slaatta.JPG?width=1024"
+  },
+  {
+    "id": "alpin-skeikampen",
+    "name": "Skeikampen",
+    "county": "Innlandet",
+    "municipality": "Gausdal",
+    "vertical": 350,
+    "lat": 61.2942,
+    "lon": 9.7967,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skeikampen_01.JPG?width=1024"
+  },
+  {
+    "id": "alpin-kongsberg-skisenter",
+    "name": "Kongsberg skisenter",
+    "county": "Buskerud",
+    "municipality": "Kongsberg",
+    "vertical": 330,
+    "lat": 59.6625,
+    "lon": 9.62
+  },
+  {
+    "id": "alpin-ljosland-skisenter",
+    "name": "Ljosland skisenter",
+    "county": "Agder",
+    "municipality": "Åseral",
+    "vertical": 293,
+    "lat": 58.7832,
+    "lon": 7.333
+  },
+  {
+    "id": "alpin-eikerapen",
+    "name": "Eikerapen",
+    "county": "Agder",
+    "municipality": "Åseral",
+    "vertical": 300,
+    "lat": 58.54,
+    "lon": 7.36
+  },
+  {
+    "id": "alpin-rauland-skisenter",
+    "name": "Rauland skisenter",
+    "county": "Telemark",
+    "municipality": "Vinje",
+    "vertical": 245,
+    "lat": 59.722,
+    "lon": 8.129
+  },
+  {
+    "id": "alpin-bortelid",
+    "name": "Bortelid",
+    "county": "Agder",
+    "municipality": "Åseral",
+    "vertical": 231,
+    "lat": 58.819605,
+    "lon": 7.471644,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bortelidhytter_1050_2017.jpg?width=1024"
+  },
+  {
+    "id": "alpin-brokke-alpinsenter",
+    "name": "Brokke alpinsenter",
+    "county": "Agder",
+    "municipality": "Valle",
+    "vertical": 230,
+    "lat": 59.10483,
+    "lon": 7.49189
+  },
+  {
+    "id": "alpin-hovden-skisenter",
+    "name": "Hovden skisenter",
+    "county": "Agder",
+    "municipality": "Bykle",
+    "vertical": 420,
+    "lat": 59.569,
+    "lon": 7.349
+  },
+  {
+    "id": "alpin-hallingskarvet-skisenter",
+    "name": "Hallingskarvet Skisenter",
+    "county": "Buskerud",
+    "municipality": "Hol",
+    "vertical": 300,
+    "lat": 60.647,
+    "lon": 8.028,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hallingskarvet_skisenter.JPG?width=1024"
+  },
+  {
+    "id": "alpin-valdres-alpinsenter",
+    "name": "Valdres alpinsenter",
+    "county": "Innlandet",
+    "municipality": "Nord-Aurdal",
+    "vertical": 325,
+    "lat": 60.936,
+    "lon": 9.42
+  },
+  {
+    "id": "alpin-solheisen-skisenter",
+    "name": "Solheisen skisenter",
+    "county": "Buskerud",
+    "municipality": "Ål",
+    "vertical": 330,
+    "lat": 60.92,
+    "lon": 8.437
+  },
+  {
+    "id": "alpin-beitostolen",
+    "name": "Beitostølen",
+    "county": "Innlandet",
+    "municipality": "Øystre Slidre",
+    "vertical": 200,
+    "lat": 61.240833,
+    "lon": 8.9225,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Beitost%C3%B8len%2C%20view%20towards%20town%20centre.JPG?width=1024"
+  },
+  {
+    "id": "alpin-varingskollen",
+    "name": "Varingskollen",
+    "county": "Akershus",
+    "municipality": "Nittedal",
+    "vertical": 400,
+    "lat": 60.10028,
+    "lon": 10.83111,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rundkollen_view_over_Hakadal_Norway.jpg?width=1024"
+  },
+  {
+    "id": "alpin-norefjell-skisenter",
+    "name": "Norefjell skisenter",
+    "county": "Buskerud",
+    "municipality": "Krødsherad",
+    "vertical": 980,
+    "lat": 60.266667,
+    "lon": 9.483333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norefjell_slopes_01.JPG?width=1024"
+  },
+  {
+    "id": "alpin-gautefall",
+    "name": "Gautefall",
+    "county": "Telemark",
+    "municipality": "Drangedal",
+    "vertical": 250,
+    "lat": 59.066667,
+    "lon": 8.75,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gautefall_turisthotell.JPG?width=1024"
+  },
+  {
+    "id": "alpin-roeldal-skisenter",
+    "name": "Røldal skisenter",
+    "county": "Vestland",
+    "municipality": "Ullensvang",
+    "vertical": 430,
+    "lat": 59.823,
+    "lon": 6.74,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8ldal_Skisenter.jpg?width=1024"
+  },
+  {
+    "id": "alpin-myrkdalen-fjellandsby",
+    "name": "Myrkdalen Fjellandsby",
+    "county": "Vestland",
+    "municipality": "Voss",
+    "vertical": 535,
+    "lat": 60.8566,
+    "lon": 6.4913
+  },
+  {
+    "id": "alpin-harpefossen-skisenter",
+    "name": "Harpefossen skisenter",
+    "county": "Vestland",
+    "municipality": "Gloppen",
+    "vertical": 350,
+    "lat": 61.958,
+    "lon": 5.936
+  },
+  {
+    "id": "alpin-strandafjellet",
+    "name": "Strandafjellet",
+    "county": "Møre og Romsdal",
+    "municipality": "Stranda",
+    "lat": 62.172,
+    "lon": 7.127,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stranda-173.jpg?width=1024"
+  },
+  {
+    "id": "alpin-breimsbygda-skisenter",
+    "name": "Breimsbygda Skisenter",
+    "county": "Vestland",
+    "municipality": "Gloppen",
+    "lat": 61.7661,
+    "lon": 6.5051
+  },
+  {
+    "id": "alpin-stordalen-skisenter",
+    "name": "Stordalen skisenter",
+    "county": "Vestland",
+    "municipality": "Aurland",
+    "lat": 60.9504,
+    "lon": 5.6818
+  },
+  {
+    "id": "alpin-surnadal-alpinsenter",
+    "name": "Surnadal alpinsenter",
+    "county": "Møre og Romsdal",
+    "municipality": "Surnadal",
+    "lat": 62.965,
+    "lon": 8.679,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Saeterlia.jpg?width=1024"
+  },
+  {
+    "id": "alpin-volda-skisenter",
+    "name": "Volda Skisenter",
+    "county": "Møre og Romsdal",
+    "municipality": "Volda",
+    "lat": 62.154,
+    "lon": 6.152,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Volda_skisenter_%28skiskytterstadion%29.jpg?width=1024"
+  },
+  {
+    "id": "alpin-orsta-skisenter",
+    "name": "Ørsta Skisenter",
+    "county": "Møre og Romsdal",
+    "municipality": "Ørsta",
+    "lat": 62.151,
+    "lon": 6.286
+  },
+  {
+    "id": "alpin-knyken-skisenter",
+    "name": "Knyken skisenter",
+    "county": "Trøndelag",
+    "municipality": "Orkland",
+    "lat": 63.262556,
+    "lon": 9.743944
+  },
+  {
+    "id": "alpin-vassfjellet-vinterpark",
+    "name": "Vassfjellet vinterpark",
+    "county": "Trøndelag",
+    "municipality": "Trondheim",
+    "lat": 63.265203,
+    "lon": 10.40113,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vassfjellet.png?width=1024"
+  },
+  {
+    "id": "alpin-glomfjord-alpinsenter",
+    "name": "Glomfjord Alpinsenter",
+    "county": "Nordland",
+    "municipality": "Meløy",
+    "lat": 66.821,
+    "lon": 13.958
+  },
+  {
+    "id": "alpin-vestvatn-alpinanlegg",
+    "name": "Vestvatn alpinanlegg",
+    "county": "Nordland",
+    "municipality": "Bodø",
+    "lat": 67.070556,
+    "lon": 14.973889
+  },
+  {
+    "id": "alpin-ankenes-alpinanlegg",
+    "name": "Ankenes alpinanlegg",
+    "county": "Nordland",
+    "municipality": "Narvik",
+    "lat": 68.414,
+    "lon": 17.39,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ankenesbakka_sommer.jpg?width=1024"
+  },
+  {
+    "id": "alpin-narvikfjellet-skisenter",
+    "name": "Narvikfjellet skisenter",
+    "county": "Nordland",
+    "municipality": "Narvik",
+    "lat": 68.431944,
+    "lon": 17.447222,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/View_from_Fagernesfjellet.jpg?width=1024"
+  },
+  {
+    "id": "alpin-anstadblaheia-skitrekk",
+    "name": "Ånstadblåheia skitrekk",
+    "county": "Nordland",
+    "municipality": "Sortland",
+    "lat": 68.713028,
+    "lon": 15.315972
+  },
+  {
+    "id": "alpin-malselv-fjellandsby",
+    "name": "Målselv fjellandsby",
+    "county": "Troms og Finnmark",
+    "municipality": "Målselv",
+    "lat": 69.073,
+    "lon": 18.706
+  },
+  {
+    "id": "alpin-tromso-alpinpark",
+    "name": "Tromsø Alpinpark",
+    "county": "Troms og Finnmark",
+    "municipality": "Tromsø",
+    "lat": 69.676,
+    "lon": 19.06795
+  },
+  {
+    "id": "alpin-sandnes-alpinsenter",
+    "name": "Sandnes alpinsenter",
+    "county": "Troms og Finnmark",
+    "municipality": "Sør-Varanger",
+    "lat": 69.6747,
+    "lon": 29.9333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ski_Slope%2C_Sandnes_Alpine_Center%2C_Kirkenes%2C_Norway.jpg?width=1024"
+  },
+  {
+    "id": "alpin-sauda-skisenter",
+    "name": "Sauda skisenter",
+    "county": "Rogaland",
+    "municipality": "Suldal",
+    "lat": 59.616639,
+    "lon": 6.242389,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/IMG_1468.JPG?width=1024"
+  },
+  {
+    "id": "alpin-folgefonna-sommerskisenter",
+    "name": "Folgefonna sommerskisenter",
+    "county": "Vestland",
+    "municipality": "Jondal",
+    "lat": 60.22647,
+    "lon": 6.43357,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Folgefonna_summer_ski_centre.jpg?width=1024"
+  },
+  {
+    "id": "alpin-galdhopiggen-sommerskisenter",
+    "name": "Galdhøpiggen sommerskisenter",
+    "county": "Innlandet",
+    "municipality": "Lom",
+    "lat": 61.665833,
+    "lon": 8.362917,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Juvass_2009.jpg?width=1024"
+  },
+  {
+    "id": "alpin-stryn-sommerski",
+    "name": "Stryn sommerski",
+    "county": "Vestland",
+    "municipality": "Stryn",
+    "lat": 61.955,
+    "lon": 7.36,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Two_seater_chairlift_01.JPG?width=1024"
+  },
+  {
+    "id": "alpin-budor",
+    "name": "Budor",
+    "county": "Innlandet",
+    "municipality": "Stange",
+    "lat": 60.950861,
+    "lon": 11.292944,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Budor_0415-02807.jpg?width=1024"
+  },
+  {
+    "id": "alpin-skimore-oslo",
+    "name": "Skimore Oslo",
+    "county": "Oslo",
+    "municipality": "Oslo",
+    "lat": 59.9894,
+    "lon": 10.6681,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Wyller4.jpg?width=1024"
+  },
+  {
+    "id": "alpin-kirkerudbakken",
+    "name": "Kirkerudbakken",
+    "county": "Akershus",
+    "municipality": "Bærum",
+    "vertical": 120,
+    "lat": 59.902761,
+    "lon": 10.47941,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kirkerudbakken_vinter.jpg?width=1024"
+  },
+  {
+    "id": "alpin-vardaasen-skisenter",
+    "name": "Vardåsen skisenter",
+    "county": "Akershus",
+    "municipality": "Asker",
+    "vertical": 130,
+    "lat": 59.811,
+    "lon": 10.429,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vard%C3%A5sen_skisenter%2C_Asker_02.jpg?width=1024"
+  },
+  {
+    "id": "alpin-drammen-skisenter",
+    "name": "Drammen Skisenter",
+    "county": "Viken",
+    "municipality": "Drammen",
+    "lat": 59.762,
+    "lon": 10.125,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Drammen_skisenter_01.jpg?width=1024"
+  },
+  {
+    "id": "alpin-ringkollen-alpinanlegg",
+    "name": "Ringkollen alpinanlegg",
+    "county": "Viken",
+    "municipality": "Ringerike",
+    "lat": 60.151028,
+    "lon": 10.382167
+  },
+  {
+    "id": "alpin-trolldalen-skisenter",
+    "name": "Trolldalen skisenter",
+    "county": "Viken",
+    "municipality": "Østfold",
+    "lat": 59.787028,
+    "lon": 10.875333
+  },
+  {
+    "id": "alpin-middagsaasen-sportssenter",
+    "name": "Middagsåsen sportssenter",
+    "county": "Innlandet",
+    "municipality": "Våler",
+    "lat": 59.490608,
+    "lon": 10.834215
+  },
+  {
+    "id": "alpin-birkebeinerbakken-skisenter",
+    "name": "Birkebeinerbakken Skisenter",
+    "county": "Innlandet",
+    "municipality": "Ringsaker",
+    "lat": 61.147456,
+    "lon": 10.64775
+  },
+  {
+    "id": "alpin-tusten-skiheiser",
+    "name": "Tusten skiheiser",
+    "county": "Møre og Romsdal",
+    "municipality": "Fjord",
+    "lat": 62.765648,
+    "lon": 7.264144
+  },
+  {
+    "id": "alpin-ustaoset",
+    "name": "Ustaoset",
+    "county": "Buskerud",
+    "municipality": "Hol",
+    "lat": 60.5,
+    "lon": 8.06667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/RV7_Ustaoset_II.jpg?width=1024"
+  }
+]

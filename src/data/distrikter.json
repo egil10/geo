@@ -1,0 +1,534 @@
+[
+  {
+    "id": "glamdalen",
+    "name": "Glåmdalen",
+    "population": 52988,
+    "area": 5285.12,
+    "kommuner": 7,
+    "largestCity": "Kongsvinger",
+    "county": "Innlandet",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "hedmarken",
+    "name": "Hedmarken",
+    "population": 91424,
+    "area": 2724.74,
+    "kommuner": 4,
+    "largestCity": "Hamar",
+    "county": "Innlandet",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "osterdalen",
+    "name": "Østerdalen",
+    "population": 50944,
+    "area": 19387.93,
+    "kommuner": 11,
+    "largestCity": "Elverum",
+    "county": "Innlandet",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "gudbrandsdalen",
+    "name": "Gudbrandsdalen",
+    "population": 71038,
+    "area": 15343.39,
+    "kommuner": 12,
+    "largestCity": "Lillehammer",
+    "county": "Innlandet",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "valdres",
+    "name": "Valdres",
+    "population": 17815,
+    "area": 5406.51,
+    "kommuner": 6,
+    "largestCity": "Fagernes",
+    "county": "Innlandet",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "vestoppland",
+    "name": "Vestoppland",
+    "population": 100100,
+    "area": 4442.21,
+    "kommuner": 7,
+    "largestCity": "Gjøvik",
+    "county": "Innlandet",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "oslo",
+    "name": "Oslo",
+    "population": 658390,
+    "area": 454.08,
+    "kommuner": 1,
+    "largestCity": "Oslo",
+    "county": "Oslo",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "indre-ostfold",
+    "name": "Indre Østfold",
+    "population": 60984,
+    "area": 2243.16,
+    "kommuner": 10,
+    "largestCity": "Askim",
+    "county": "Østfold",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "ytre-ostfold",
+    "name": "Ytre Østfold",
+    "population": 228883,
+    "area": 1937.53,
+    "kommuner": 8,
+    "largestCity": "Fredrikstad",
+    "county": "Østfold",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "follo",
+    "name": "Follo",
+    "population": 137965,
+    "area": 819.38,
+    "kommuner": 6,
+    "largestCity": "Ski",
+    "county": "Akershus",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "romerike",
+    "name": "Romerike",
+    "population": 274114,
+    "area": 3805.55,
+    "kommuner": 11,
+    "largestCity": "Lillestrøm",
+    "county": "Akershus",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "asker-og-baerum",
+    "name": "Asker og Bærum",
+    "population": 182454,
+    "area": 292.97,
+    "kommuner": 2,
+    "largestCity": "Sandvika",
+    "county": "Akershus",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "ringerike",
+    "name": "Ringerike",
+    "population": 36568,
+    "area": 1747.77,
+    "kommuner": 5,
+    "largestCity": "Hønefoss",
+    "county": "Buskerud",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "midt-buskerud",
+    "name": "Midt-Buskerud",
+    "population": 19581,
+    "area": 1733.97,
+    "kommuner": 3,
+    "largestCity": "Vikersund",
+    "county": "Buskerud",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "hallingdal",
+    "name": "Hallingdal",
+    "population": 20704,
+    "area": 5829.67,
+    "kommuner": 6,
+    "largestCity": "Gol",
+    "county": "Buskerud",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "numedal",
+    "name": "Numedal",
+    "population": 33664,
+    "area": 4306.58,
+    "kommuner": 4,
+    "largestCity": "Kongsberg",
+    "county": "Buskerud",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "drammensregionen",
+    "name": "Drammensregionen",
+    "population": 183068,
+    "area": 1528.98,
+    "kommuner": 3,
+    "largestCity": "Drammen",
+    "county": "Buskerud",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "vestfold",
+    "name": "Vestfold",
+    "population": 229066,
+    "area": 1989,
+    "kommuner": 5,
+    "largestCity": "Tønsberg",
+    "county": "Vestfold",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "grenland",
+    "name": "Grenland",
+    "population": 121073,
+    "area": 2828.31,
+    "kommuner": 6,
+    "largestCity": "Skien",
+    "county": "Telemark",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "aust-telemark",
+    "name": "Aust-Telemark",
+    "population": 37243,
+    "area": 4768.82,
+    "kommuner": 6,
+    "largestCity": "Notodden",
+    "county": "Telemark",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "vest-telemark",
+    "name": "Vest-Telemark",
+    "population": 14178,
+    "area": 7699.18,
+    "kommuner": 6,
+    "largestCity": "Seljord",
+    "county": "Telemark",
+    "landsdel": "Østlandet"
+  },
+  {
+    "id": "ostre-agder",
+    "name": "Østre Agder",
+    "population": 91771,
+    "area": 3437.18,
+    "kommuner": 8,
+    "largestCity": "Arendal",
+    "county": "Agder",
+    "landsdel": "Sørlandet"
+  },
+  {
+    "id": "setesdal",
+    "name": "Setesdal",
+    "population": 9202,
+    "area": 5743.49,
+    "kommuner": 6,
+    "largestCity": "Evje",
+    "county": "Agder",
+    "landsdel": "Sørlandet"
+  },
+  {
+    "id": "kristiansandregionen",
+    "name": "Kristiansandregionen",
+    "population": 169829,
+    "area": 3052.38,
+    "kommuner": 6,
+    "largestCity": "Kristiansand",
+    "county": "Agder",
+    "landsdel": "Sørlandet"
+  },
+  {
+    "id": "lister",
+    "name": "Lister",
+    "population": 36813,
+    "area": 4175.77,
+    "kommuner": 6,
+    "largestCity": "Flekkefjord",
+    "county": "Agder",
+    "landsdel": "Sørlandet"
+  },
+  {
+    "id": "dalane",
+    "name": "Dalane",
+    "population": 24323,
+    "area": 1786.43,
+    "kommuner": 4,
+    "largestCity": "Egersund",
+    "county": "Rogaland",
+    "landsdel": "Vestlandet"
+  },
+  {
+    "id": "jaeren",
+    "name": "Jæren",
+    "population": 312283,
+    "area": 1641.76,
+    "kommuner": 8,
+    "largestCity": "Stavanger",
+    "county": "Rogaland",
+    "landsdel": "Vestlandet"
+  },
+  {
+    "id": "ryfylke",
+    "name": "Ryfylke",
+    "population": 33653,
+    "area": 4546.39,
+    "kommuner": 4,
+    "largestCity": "Jørpeland",
+    "county": "Rogaland",
+    "landsdel": "Vestlandet"
+  },
+  {
+    "id": "haugalandet",
+    "name": "Haugalandet",
+    "population": 99916,
+    "area": 1402.08,
+    "kommuner": 6,
+    "largestCity": "Haugesund",
+    "county": "Rogaland",
+    "landsdel": "Vestlandet"
+  },
+  {
+    "id": "hardanger",
+    "name": "Hardanger",
+    "population": 22871,
+    "area": 6302.71,
+    "kommuner": 7,
+    "largestCity": "Odda",
+    "county": "Vestland",
+    "landsdel": "Vestlandet"
+  },
+  {
+    "id": "sunnhordland",
+    "name": "Sunnhordland",
+    "population": 59460,
+    "area": 2859.95,
+    "kommuner": 7,
+    "largestCity": "Stord",
+    "county": "Vestland",
+    "landsdel": "Vestlandet"
+  },
+  {
+    "id": "midthordland",
+    "name": "Midthordland",
+    "population": 101465,
+    "area": 1783.87,
+    "kommuner": 6,
+    "largestCity": "Bergen",
+    "county": "Vestland",
+    "landsdel": "Vestlandet"
+  },
+  {
+    "id": "nordhordland",
+    "name": "Nordhordland",
+    "population": 46094,
+    "area": 2684.35,
+    "kommuner": 9,
+    "county": "Vestland",
+    "landsdel": "Vestlandet"
+  },
+  {
+    "id": "voss",
+    "name": "Voss",
+    "population": 14425,
+    "area": 1805.81,
+    "kommuner": 1,
+    "largestCity": "Vossevangen",
+    "county": "Vestland",
+    "landsdel": "Vestlandet"
+  },
+  {
+    "id": "sogn",
+    "name": "Sogn",
+    "population": 37219,
+    "area": 10671.55,
+    "kommuner": 12,
+    "county": "Vestland",
+    "landsdel": "Vestlandet"
+  },
+  {
+    "id": "fjordane",
+    "name": "Fjordane",
+    "population": 72311,
+    "area": 7947.67,
+    "kommuner": 14,
+    "largestCity": "Førde",
+    "county": "Vestland",
+    "landsdel": "Vestlandet"
+  },
+  {
+    "id": "sunnmore",
+    "name": "Sunnmøre",
+    "population": 142988,
+    "area": 5234.41,
+    "kommuner": 17,
+    "largestCity": "Ålesund",
+    "county": "Møre og Romsdal",
+    "landsdel": "Vestlandet"
+  },
+  {
+    "id": "romsdal",
+    "name": "Romsdal",
+    "population": 60398,
+    "area": 3807.72,
+    "kommuner": 8,
+    "largestCity": "Molde",
+    "county": "Møre og Romsdal",
+    "landsdel": "Vestlandet"
+  },
+  {
+    "id": "nordmore",
+    "name": "Nordmøre",
+    "population": 61904,
+    "area": 6057.54,
+    "kommuner": 11,
+    "largestCity": "Kristiansund",
+    "county": "Møre og Romsdal",
+    "landsdel": "Vestlandet"
+  },
+  {
+    "id": "fosen",
+    "name": "Fosen",
+    "population": 38233,
+    "area": 5204.88,
+    "kommuner": 4,
+    "largestCity": "Brekstad",
+    "county": "Trøndelag",
+    "landsdel": "Trøndelag"
+  },
+  {
+    "id": "orkladalen",
+    "name": "Orkladalen",
+    "largestCity": "Orkanger",
+    "county": "Trøndelag",
+    "landsdel": "Trøndelag"
+  },
+  {
+    "id": "gauldalen",
+    "name": "Gauldalen",
+    "largestCity": "Melhus",
+    "county": "Trøndelag",
+    "landsdel": "Trøndelag"
+  },
+  {
+    "id": "trondheim",
+    "name": "Trondheim",
+    "population": 187353,
+    "area": 341.12,
+    "kommuner": 1,
+    "largestCity": "Trondheim",
+    "county": "Trøndelag",
+    "landsdel": "Trøndelag"
+  },
+  {
+    "id": "inntrondelag",
+    "name": "Inntrøndelag",
+    "population": 101326,
+    "area": 10554.63,
+    "kommuner": 11,
+    "largestCity": "Steinkjer",
+    "county": "Trøndelag",
+    "landsdel": "Trøndelag"
+  },
+  {
+    "id": "namdalen",
+    "name": "Namdalen",
+    "population": 35073,
+    "area": 11860.32,
+    "kommuner": 12,
+    "largestCity": "Namsos",
+    "county": "Trøndelag",
+    "landsdel": "Trøndelag"
+  },
+  {
+    "id": "helgeland",
+    "name": "Helgeland",
+    "population": 84864,
+    "area": 18834.73,
+    "kommuner": 19,
+    "largestCity": "Mo i Rana",
+    "county": "Nordland",
+    "landsdel": "Nord-Norge"
+  },
+  {
+    "id": "salten",
+    "name": "Salten",
+    "population": 74199,
+    "area": 10387.77,
+    "kommuner": 8,
+    "largestCity": "Bodø",
+    "county": "Nordland",
+    "landsdel": "Nord-Norge"
+  },
+  {
+    "id": "ofoten",
+    "name": "Ofoten",
+    "population": 28144,
+    "area": 5518.35,
+    "kommuner": 2,
+    "largestCity": "Narvik",
+    "county": "Nordland",
+    "landsdel": "Nord-Norge"
+  },
+  {
+    "id": "lofoten",
+    "name": "Lofoten",
+    "population": 24262,
+    "area": 1229.53,
+    "kommuner": 6,
+    "largestCity": "Svolvær",
+    "county": "Nordland",
+    "landsdel": "Nord-Norge"
+  },
+  {
+    "id": "vesteralen",
+    "name": "Vesterålen",
+    "population": 30437,
+    "area": 2510.75,
+    "kommuner": 5,
+    "largestCity": "Sortland",
+    "county": "Nordland",
+    "landsdel": "Nord-Norge"
+  },
+  {
+    "id": "sor-og-midt-troms",
+    "name": "Sør- og Midt-Troms",
+    "population": 66945,
+    "area": 11386.65,
+    "kommuner": 12,
+    "largestCity": "Harstad",
+    "county": "Troms",
+    "landsdel": "Nord-Norge"
+  },
+  {
+    "id": "nord-troms",
+    "name": "Nord-Troms",
+    "population": 97385,
+    "area": 14476.28,
+    "kommuner": 9,
+    "largestCity": "Tromsø",
+    "county": "Troms",
+    "landsdel": "Nord-Norge"
+  },
+  {
+    "id": "vest-finnmark",
+    "name": "Vest-Finnmark",
+    "population": 47685,
+    "area": 29880.72,
+    "kommuner": 9,
+    "largestCity": "Alta",
+    "county": "Finnmark",
+    "landsdel": "Nord-Norge"
+  },
+  {
+    "id": "ost-finnmark",
+    "name": "Øst-Finnmark",
+    "population": 28073,
+    "area": 18750.37,
+    "kommuner": 9,
+    "largestCity": "Vadsø",
+    "county": "Finnmark",
+    "landsdel": "Nord-Norge"
+  }
+]

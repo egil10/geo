@@ -1,0 +1,833 @@
+[
+  {
+    "id": "dyr-piggsvin",
+    "name": "Piggsvin",
+    "latin": "Erinaceus europaeus",
+    "family": "Piggsvinfamilien",
+    "order": "Insektetere",
+    "status": "Vanlig",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Erinaceus%20europaeus%20%28Linnaeus%2C%201758%29.jpg?width=1024"
+  },
+  {
+    "id": "dyr-knottspissmus",
+    "name": "Knöttspissmus",
+    "latin": "Sorex minutissimus",
+    "family": "Spissmus",
+    "order": "Insektetere",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sorex%20minutissimus%20Specimen.jpg?width=1024"
+  },
+  {
+    "id": "dyr-dvergspissmus",
+    "name": "Dvergspissmus",
+    "latin": "Sorex minutus",
+    "family": "Spissmus",
+    "order": "Insektetere",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sorex%20minutus.jpg?width=1024"
+  },
+  {
+    "id": "dyr-lappspissmus",
+    "name": "Lappspissmus",
+    "latin": "Sorex caecutiens",
+    "family": "Spissmus",
+    "order": "Insektetere",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lappn%C3%A4bbmus%20140621.jpg?width=1024"
+  },
+  {
+    "id": "dyr-krattspissmus",
+    "name": "Krattspissmus",
+    "latin": "Sorex araneus",
+    "family": "Spissmus",
+    "order": "Insektetere",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sorex%20araneus2.JPG?width=1024"
+  },
+  {
+    "id": "dyr-taigaspissmus",
+    "name": "Taigaspissmus",
+    "latin": "Sorex isodon",
+    "family": "Spissmus",
+    "order": "Insektetere",
+    "status": "Rødlistet: Manglende data",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sorex%20isodon.jpg?width=1024"
+  },
+  {
+    "id": "dyr-vannspissmus",
+    "name": "Vannspissmus",
+    "latin": "Neomys fodiens",
+    "family": "Spissmus",
+    "order": "Insektetere",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Neomys%20fodiens%20TF%20090829.jpg?width=1024"
+  },
+  {
+    "id": "dyr-husspissmus",
+    "name": "Husspissmus",
+    "latin": "Crocidura russula",
+    "family": "Spissmus",
+    "order": "Insektetere",
+    "status": "Sjelden",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/WLMMH%20%28DerHexer%29%20022.jpg?width=1024"
+  },
+  {
+    "id": "dyr-vannflaggermus",
+    "name": "Vannflaggermus",
+    "latin": "Myotis daubentonii",
+    "family": "Glattnesefamilien",
+    "order": "Flaggermus",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Myotis%20daubentoni01.jpg?width=1024"
+  },
+  {
+    "id": "dyr-borsteflaggermus",
+    "name": "Børsteflaggermus",
+    "latin": "Myotis nattereri",
+    "family": "Glattnesefamilien",
+    "order": "Flaggermus",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Myotis%20nattereri%20%282862347369%29.jpg?width=1024"
+  },
+  {
+    "id": "dyr-skjeggflaggermus",
+    "name": "Skjeggflaggermus",
+    "latin": "Myotis mystacinus",
+    "family": "Glattnesefamilien",
+    "order": "Flaggermus",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Myotis%20mystacinus.jpg?width=1024"
+  },
+  {
+    "id": "dyr-skogflaggermus",
+    "name": "Skogflaggermus",
+    "latin": "Myotis brandtii",
+    "family": "Glattnesefamilien",
+    "order": "Flaggermus",
+    "status": "Rødlistet: Hensynskrevende",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Myotis%20brandti.jpg?width=1024"
+  },
+  {
+    "id": "dyr-skimmelflaggermus",
+    "name": "Skimmelflaggermus",
+    "latin": "Vespertilio murinus",
+    "family": "Glattnesefamilien",
+    "order": "Flaggermus",
+    "status": "Rødlistet: Hensynskrevende",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vespertilio%20murinus%202.jpg?width=1024"
+  },
+  {
+    "id": "dyr-nordflaggermus",
+    "name": "Nordflaggermus",
+    "latin": "Eptesicus nilssonii",
+    "family": "Glattnesefamilien",
+    "order": "Flaggermus",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eptesicus%20nilssoni.jpg?width=1024"
+  },
+  {
+    "id": "dyr-sorflaggermus",
+    "name": "Sørflaggermus",
+    "latin": "Eptesicus serotinus",
+    "family": "Glattnesefamilien",
+    "order": "Flaggermus",
+    "status": "Sjelden",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eptesicus%20serotinus.jpg?width=1024"
+  },
+  {
+    "id": "dyr-storflaggermus",
+    "name": "Storflaggermus",
+    "latin": "Nyctalus noctula",
+    "family": "Glattnesefamilien",
+    "order": "Flaggermus",
+    "status": "Rødlistet: Manglende data",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nyctalus%20noctula.jpg?width=1024"
+  },
+  {
+    "id": "dyr-dvergflaggermus",
+    "name": "Dvergflaggermus",
+    "latin": "Pipistrellus pygmaeus",
+    "family": "Glattnesefamilien",
+    "order": "Flaggermus",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Pipistrellus%20pygmaeus.jpg?width=1024"
+  },
+  {
+    "id": "dyr-trollflaggermus",
+    "name": "Trollflaggermus",
+    "latin": "Pipistrellus nathusii",
+    "family": "Glattnesefamilien",
+    "order": "Flaggermus",
+    "status": "Rødlistet: Manglende data",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Pipistrellus%20nathusii.jpg?width=1024"
+  },
+  {
+    "id": "dyr-brunlangoere",
+    "name": "Brunlangøre",
+    "latin": "Plecotus auritus",
+    "family": "Glattnesefamilien",
+    "order": "Flaggermus",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Plecotus%20auritus%202013-2%20%28cropped%29.jpg?width=1024"
+  },
+  {
+    "id": "dyr-bredoere",
+    "name": "Bredøre",
+    "latin": "Barbastella barbastellus",
+    "family": "Glattnesefamilien",
+    "order": "Flaggermus",
+    "status": "Sjelden",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mopsfledermaus-drawing.jpg?width=1024"
+  },
+  {
+    "id": "dyr-villsvin",
+    "name": "Villsvin",
+    "latin": "Sus scrofa",
+    "family": "Svinefamilien",
+    "order": "Klovdyr",
+    "status": "Svartelistet",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Wildschwein%2C%20N%C3%A4he%20Pulverstampftor.jpg?width=1024"
+  },
+  {
+    "id": "dyr-moskusfe",
+    "name": "Moskusfe",
+    "latin": "Ovibos moschatus",
+    "family": "Oksefamilien",
+    "order": "Klovdyr",
+    "status": "Sjelden",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ovibos%20moschatus%20qtl3.jpg?width=1024"
+  },
+  {
+    "id": "dyr-dahjort",
+    "name": "Dåhjort",
+    "latin": "Dama dama",
+    "family": "Hjortedyr",
+    "order": "Klovdyr",
+    "status": "Sjelden",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fallow%20deer%20in%20field.jpg?width=1024"
+  },
+  {
+    "id": "dyr-hjort",
+    "name": "Hjort",
+    "latin": "Cervus elaphus",
+    "family": "Hjortedyr",
+    "order": "Klovdyr",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Cervus%20elaphus%20Luc%20Viatour%206.jpg?width=1024"
+  },
+  {
+    "id": "dyr-elg",
+    "name": "Elg",
+    "latin": "Alces alces",
+    "family": "Hjortedyr",
+    "order": "Klovdyr",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Elk-telemark.jpg?width=1024"
+  },
+  {
+    "id": "dyr-radyr",
+    "name": "Rådyr",
+    "latin": "Capreolus capreolus",
+    "family": "Hjortedyr",
+    "order": "Klovdyr",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Capreolus%20%28js%2911.jpg?width=1024"
+  },
+  {
+    "id": "dyr-rein",
+    "name": "Rein",
+    "latin": "Rangifer tarandus",
+    "family": "Hjortedyr",
+    "order": "Klovdyr",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Caribou.jpg?width=1024"
+  },
+  {
+    "id": "dyr-nordspisshval",
+    "name": "Nordspisshval",
+    "latin": "Mesoplodon bidens",
+    "family": "Nebbhvaler",
+    "order": "Hvaler",
+    "status": "Rødlistet: Manglende data",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sowerby%27s%20beaked%20whale.jpg?width=1024"
+  },
+  {
+    "id": "dyr-nebbhval",
+    "name": "Nebbhval",
+    "latin": "Hyperoodon ampullatus",
+    "family": "Nebbhvaler",
+    "order": "Hvaler",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Faroe%20stamp%20200%20Hyperoodon%20ampullatus.jpg?width=1024"
+  },
+  {
+    "id": "dyr-blekhodenebbhval",
+    "name": "Blekhodenebbhval",
+    "latin": "Ziphius cavirostris",
+    "family": "Nebbhvaler",
+    "order": "Hvaler",
+    "status": "Rødlistet: Manglende data",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ziphius%20carvirostris.jpg?width=1024"
+  },
+  {
+    "id": "dyr-hvithval",
+    "name": "Hvithval",
+    "latin": "Delphinapterus leucas",
+    "family": "Narhvaler",
+    "order": "Hvaler",
+    "status": "Rødlistet: Manglende data",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Beluga%20oceanografic.jpg?width=1024"
+  },
+  {
+    "id": "dyr-narhval",
+    "name": "Narhval",
+    "latin": "Monodon monoceros",
+    "family": "Narhvaler",
+    "order": "Hvaler",
+    "status": "Rødlistet: Manglende data",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB%20%D0%B2%20%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9%20%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg?width=1024"
+  },
+  {
+    "id": "dyr-spermhval",
+    "name": "Spermhval",
+    "latin": "Physeter macrocephalus",
+    "family": "Spermhvaler og dvergspermhvaler",
+    "order": "Hvaler",
+    "status": "Vanlig",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mother%20and%20baby%20sperm%20whale.jpg?width=1024"
+  },
+  {
+    "id": "dyr-nise",
+    "name": "Nise",
+    "latin": "Phocoena phocoena",
+    "family": "Niser",
+    "order": "Hvaler",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Marsvin%20%28Phocoena%20phocoena%29.jpg?width=1024"
+  },
+  {
+    "id": "dyr-spekkhogger",
+    "name": "Spekkhogger",
+    "latin": "Orcinus orca",
+    "family": "Delfiner",
+    "order": "Hvaler",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Killerwhales%20jumping.jpg?width=1024"
+  },
+  {
+    "id": "dyr-stripedelfin",
+    "name": "Stripedelfin",
+    "latin": "Stenella coeruleoalba",
+    "family": "Delfiner",
+    "order": "Hvaler",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stenella%20coeruleoalba.jpg?width=1024"
+  },
+  {
+    "id": "dyr-gulflankedelfin",
+    "name": "Gulflankedelfin",
+    "latin": "Delphinus delphis",
+    "family": "Delfiner",
+    "order": "Hvaler",
+    "status": "Sjelden",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Delphinus%20delphis%20326708883.jpg?width=1024"
+  },
+  {
+    "id": "dyr-tumler",
+    "name": "Tumler",
+    "latin": "Tursiops truncatus",
+    "family": "Delfiner",
+    "order": "Hvaler",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tursiops%20truncatus%2001-cropped.jpg?width=1024"
+  },
+  {
+    "id": "dyr-kvitskjeving",
+    "name": "Kvitskjeving",
+    "latin": "Lagenorhynchus acutus",
+    "family": "Delfiner",
+    "order": "Hvaler",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lagenorhynchus%20acutus.jpg?width=1024"
+  },
+  {
+    "id": "dyr-kvitnos",
+    "name": "Kvitnos",
+    "latin": "Lagenorhynchus albirostris",
+    "family": "Delfiner",
+    "order": "Hvaler",
+    "status": "Vanlig",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/White%20beaked%20dolphin.jpg?width=1024"
+  },
+  {
+    "id": "dyr-arrdelfin",
+    "name": "Arrdelfin",
+    "latin": "Grampus griseus",
+    "family": "Delfiner",
+    "order": "Hvaler",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rundkopfdelfin.jpg?width=1024"
+  },
+  {
+    "id": "dyr-grindhval",
+    "name": "Grindhval",
+    "latin": "Globicephala melas",
+    "family": "Delfiner",
+    "order": "Hvaler",
+    "status": "Vanlig",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Photo%20of%20the%20Week%20-%20Long-finned%20Pilot%20Whales%20%28RI%29%20%286892801246%29.jpg?width=1024"
+  },
+  {
+    "id": "dyr-nordkaper",
+    "name": "Nordkaper",
+    "latin": "Eubalaena glacialis",
+    "family": "Retthvaler",
+    "order": "Hvaler",
+    "status": "Utryddet i Norge",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eubalaena%20glacialis%20with%20calf.jpg?width=1024"
+  },
+  {
+    "id": "dyr-gronlandshval",
+    "name": "Grønlandshval",
+    "latin": "Balaena mysticetus",
+    "family": "Retthvaler",
+    "order": "Hvaler",
+    "status": "Rødlistet: Kritisk truet",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bowheads42.jpg?width=1024"
+  },
+  {
+    "id": "dyr-vagehval",
+    "name": "Vågehval",
+    "latin": "Balaenoptera acutorostrata",
+    "family": "Finnhvaler",
+    "order": "Hvaler",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Balaenoptera-acutorostrata.jpg?width=1024"
+  },
+  {
+    "id": "dyr-seihval",
+    "name": "Seihval",
+    "latin": "Balaenoptera borealis",
+    "family": "Finnhvaler",
+    "order": "Hvaler",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Balaenoptera%20borealis%203.jpg?width=1024"
+  },
+  {
+    "id": "dyr-finnhval",
+    "name": "Finnhval",
+    "latin": "Balaenoptera physalus",
+    "family": "Finnhvaler",
+    "order": "Hvaler",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Finhval.jpg?width=1024"
+  },
+  {
+    "id": "dyr-blahval",
+    "name": "Blåhval",
+    "latin": "Balaenoptera musculus",
+    "family": "Finnhvaler",
+    "order": "Hvaler",
+    "status": "Rødlistet: Nær truet",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Anim1755%20-%20Flickr%20-%20NOAA%20Photo%20Library.jpg?width=1024"
+  },
+  {
+    "id": "dyr-knolhval",
+    "name": "Knølhval",
+    "latin": "Megaptera novaeangliae",
+    "family": "Finnhvaler",
+    "order": "Hvaler",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Humpback%20whales%20in%20singing%20position.jpg?width=1024"
+  },
+  {
+    "id": "dyr-gaupe",
+    "name": "Gaupe",
+    "latin": "Lynx lynx",
+    "family": "Kattedyr",
+    "order": "Rovpattedyr",
+    "status": "Rødlistet: Sårbar",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lynx%20lynx%20poing.jpg?width=1024"
+  },
+  {
+    "id": "dyr-ulv",
+    "name": "Ulv",
+    "latin": "Canis lupus",
+    "family": "Hundedyr",
+    "order": "Rovpattedyr",
+    "status": "Rødlistet: Kritisk truet",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eurasian%20wolf%202.jpg?width=1024"
+  },
+  {
+    "id": "dyr-gullsjakal",
+    "name": "Gullsjakal",
+    "latin": "Canis aureus",
+    "family": "Hundedyr",
+    "order": "Rovpattedyr",
+    "status": "Sjelden",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden%20jackal%20%28Canis%20aureus%20indicus%29%20male.jpg?width=1024"
+  },
+  {
+    "id": "dyr-marhund",
+    "name": "Mårhund",
+    "latin": "Nyctereutes procyonoides",
+    "family": "Hundedyr",
+    "order": "Rovpattedyr",
+    "status": "Sjelden",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%95%D0%BD%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D0%B4%D0%BD%D0%B0%D1%8F%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0%20%D0%93%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%20%28cropped%202%29.jpg?width=1024"
+  },
+  {
+    "id": "dyr-rodrev",
+    "name": "Rødrev",
+    "latin": "Vulpes vulpes",
+    "family": "Hundedyr",
+    "order": "Rovpattedyr",
+    "status": "Vanlig",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fox%20at%20the%20British%20Wildlife%20Centre%2C%20Newchapel%2C%20Surrey%20-%20geograph.org.uk%20-%202221750.jpg?width=1024"
+  },
+  {
+    "id": "dyr-fjellrev",
+    "name": "Fjellrev",
+    "latin": "Vulpes lagopus",
+    "family": "Hundedyr",
+    "order": "Rovpattedyr",
+    "status": "Rødlistet: Kritisk truet",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vulpes%20lagopus%20in%20Iceland%20%28cropped%29.jpg?width=1024"
+  },
+  {
+    "id": "dyr-royskatt",
+    "name": "Røyskatt",
+    "latin": "Mustela erminea",
+    "family": "Målfamilien",
+    "order": "Rovpattedyr",
+    "status": "Vanlig",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8yskatt%20%28Mustela%20erminea%20erminea%29%2C%20Lista%2C%20Norway.jpg?width=1024"
+  },
+  {
+    "id": "dyr-snowmus",
+    "name": "Snømus",
+    "latin": "Mustela nivalis",
+    "family": "Målfamilien",
+    "order": "Rovpattedyr",
+    "status": "Vanlig",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mustela%20nivalis%20-British%20Wildlife%20Centre-4.jpg?width=1024"
+  },
+  {
+    "id": "dyr-mink",
+    "name": "Mink",
+    "latin": "Mustela vison",
+    "family": "Målfamilien",
+    "order": "Rovpattedyr",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Neovison%20vison%20USFWS.jpg?width=1024"
+  },
+  {
+    "id": "dyr-ilder",
+    "name": "Ilder",
+    "latin": "Mustela putorius",
+    "family": "Målfamilien",
+    "order": "Rovpattedyr",
+    "status": "Rødlistet: Manglende data",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ilder.jpg?width=1024"
+  },
+  {
+    "id": "dyr-mar",
+    "name": "Mår",
+    "latin": "Martes martes",
+    "family": "Målfamilien",
+    "order": "Rovpattedyr",
+    "status": "Vanlig",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Pine%20Marten%20%2848173751702%29.jpg?width=1024"
+  },
+  {
+    "id": "dyr-jerv",
+    "name": "Jerv",
+    "latin": "Gulo gulo",
+    "family": "Målfamilien",
+    "order": "Rovpattedyr",
+    "status": "Rødlistet: Sterkt truet",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Wolverine.jpg?width=1024"
+  },
+  {
+    "id": "dyr-grevling",
+    "name": "Grevling",
+    "latin": "Meles meles",
+    "family": "Målfamilien",
+    "order": "Rovpattedyr",
+    "status": "Vanlig",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Badger%2025-07-09%20closer.jpg?width=1024"
+  },
+  {
+    "id": "dyr-oter",
+    "name": "Oter",
+    "latin": "Lutra lutra",
+    "family": "Målfamilien",
+    "order": "Rovpattedyr",
+    "status": "Rødlistet: Sårbar",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Otter.png?width=1024"
+  },
+  {
+    "id": "dyr-brunbjorn",
+    "name": "Brunbjørn",
+    "latin": "Ursus arctos",
+    "family": "Bjørner",
+    "order": "Rovpattedyr",
+    "status": "Rødlistet: Sterkt truet",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Brown%20bear.jpg?width=1024"
+  },
+  {
+    "id": "dyr-isbjorn",
+    "name": "Isbjørn",
+    "latin": "Ursus maritimus",
+    "family": "Bjørner",
+    "order": "Rovpattedyr",
+    "status": "Rødlistet: Sårbar",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Polar%20Bear%20-%20Alaska%20%28cropped%29.jpg?width=1024"
+  },
+  {
+    "id": "dyr-hvalross",
+    "name": "Hvalross",
+    "latin": "Odobenus rosmarus",
+    "family": "Hvalross",
+    "order": "Seler",
+    "status": "Sjelden",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Walrus%20in%20the%20Russian%20Arctic%20National%20Park%2C%20Novaya%20Zemlya%202015-2.jpg?width=1024"
+  },
+  {
+    "id": "dyr-steinkobbe",
+    "name": "Steinkobbe",
+    "latin": "Phoca vitulina",
+    "family": "Selfamilien",
+    "order": "Seler",
+    "status": "Sjelden",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Common%20Seal%20Phoca%20vitulina.jpg?width=1024"
+  },
+  {
+    "id": "dyr-ringsel",
+    "name": "Ringsel",
+    "latin": "Pusa hispida",
+    "family": "Selfamilien",
+    "order": "Seler",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ringedsealportrait.jpg?width=1024"
+  },
+  {
+    "id": "dyr-gronlandssel",
+    "name": "Grønlandssel",
+    "latin": "Pagophilus groenlandicus",
+    "family": "Selfamilien",
+    "order": "Seler",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Harp%20Seal%20%28Pagophilus%20groenlandicus%29%2C%20Greenland%20Sea%20IMG%205075.jpg?width=1024"
+  },
+  {
+    "id": "dyr-storkobbe",
+    "name": "Storkobbe",
+    "latin": "Erignathus barbatus",
+    "family": "Selfamilien",
+    "order": "Seler",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bartrobbe%203-2002.jpg?width=1024"
+  },
+  {
+    "id": "dyr-havert",
+    "name": "Havert",
+    "latin": "Halichoerus grypus",
+    "family": "Selfamilien",
+    "order": "Seler",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Halichoerus%20grypus%20male.jpg?width=1024"
+  },
+  {
+    "id": "dyr-klappmyss",
+    "name": "Klappmyss",
+    "latin": "Cystophora cristata",
+    "family": "Selfamilien",
+    "order": "Seler",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Klappmuetze%20MK.jpg?width=1024"
+  },
+  {
+    "id": "dyr-kanin",
+    "name": "Kanin",
+    "latin": "Oryctolagus cuniculus",
+    "family": "Haredyr",
+    "order": "Haredyr",
+    "status": "Sjelden",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oryctolagus%20cuniculus%20Tasmania%202%20%28cropped%29.jpg?width=1024"
+  },
+  {
+    "id": "dyr-sorhare",
+    "name": "Sørhare",
+    "latin": "Lepus europaeus",
+    "family": "Haredyr",
+    "order": "Haredyr",
+    "status": "Sjelden",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/European%20Brown%20Hare%20%2850341079472%29.jpg?width=1024"
+  },
+  {
+    "id": "dyr-hare",
+    "name": "Hare",
+    "latin": "Lepus timidus",
+    "family": "Haredyr",
+    "order": "Haredyr",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lepus%20timidus%20in%20Volgograd%20Oblast.jpg?width=1024"
+  },
+  {
+    "id": "dyr-ekorn",
+    "name": "Ekorn",
+    "latin": "Sciurus vulgaris",
+    "family": "Ekornfamilien",
+    "order": "Gnagere",
+    "status": "Vanlig",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Squirrel%20posing.jpg?width=1024"
+  },
+  {
+    "id": "dyr-bever",
+    "name": "Bever",
+    "latin": "Castor fiber",
+    "family": "Beverfamilien",
+    "order": "Gnagere",
+    "status": "Vanlig",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Beaver%20pho34.jpg?width=1024"
+  },
+  {
+    "id": "dyr-bjorkemus",
+    "name": "Bjørkemus",
+    "latin": "Sicista betulina",
+    "family": "Hoppemusfamilien",
+    "order": "Gnagere",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sicista%20betulina%2003.JPG?width=1024"
+  },
+  {
+    "id": "dyr-dvergmus",
+    "name": "Dvergmus",
+    "latin": "Micromys minutus",
+    "family": "Musefamilien",
+    "order": "Gnagere",
+    "status": "Rødlistet: Hensynskrevende",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Micromys%20minutus%20-%20British%20Wildlife%20Centre.jpg?width=1024"
+  },
+  {
+    "id": "dyr-storskogmus",
+    "name": "Storskogmus",
+    "latin": "Apodemus flavicollis",
+    "family": "Musefamilien",
+    "order": "Gnagere",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Apodemus.flavicollis.jpg?width=1024"
+  },
+  {
+    "id": "dyr-smaskogmus",
+    "name": "Småskogmus",
+    "latin": "Apodemus sylvaticus",
+    "family": "Musefamilien",
+    "order": "Gnagere",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Apodemus%20sylvaticus%20%28Sardinia%29.jpg?width=1024"
+  },
+  {
+    "id": "dyr-husmus",
+    "name": "Husmus",
+    "latin": "Mus musculus",
+    "family": "Musefamilien",
+    "order": "Gnagere",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Maus%20au%C3%9Fer%20Haus.JPG?width=1024"
+  },
+  {
+    "id": "dyr-brunrotte",
+    "name": "Brunrotte",
+    "latin": "Rattus norvegicus",
+    "family": "Musefamilien",
+    "order": "Gnagere",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rattus%20norvegicus%201.jpg?width=1024"
+  },
+  {
+    "id": "dyr-svartrotte",
+    "name": "Svartrotte",
+    "latin": "Rattus rattus",
+    "family": "Musefamilien",
+    "order": "Gnagere",
+    "status": "Utryddet i Norge",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/20191212%20Szczury%20w%20%C5%9Awi%C4%85tyni.jpg?width=1024"
+  },
+  {
+    "id": "dyr-skoglemen",
+    "name": "Skoglemen",
+    "latin": "Myopus schisticolor",
+    "family": "Hamsterfamilien",
+    "order": "Gnagere",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mets%C3%A4sopuli.jpg?width=1024"
+  },
+  {
+    "id": "dyr-lemen",
+    "name": "Lemen",
+    "latin": "Lemmus lemmus",
+    "family": "Hamsterfamilien",
+    "order": "Gnagere",
+    "status": "Vanlig",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tunturisopuli%20Lemmus%20Lemmus.jpg?width=1024"
+  },
+  {
+    "id": "dyr-rodmus",
+    "name": "Rødmus",
+    "latin": "Myodes rutilus",
+    "family": "Hamsterfamilien",
+    "order": "Gnagere",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Myodes%20rutilus.jpeg?width=1024"
+  },
+  {
+    "id": "dyr-klatremus",
+    "name": "Klatremus",
+    "latin": "Myodes glareolus",
+    "family": "Hamsterfamilien",
+    "order": "Gnagere",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/BankVole.jpg?width=1024"
+  },
+  {
+    "id": "dyr-grasidemus",
+    "name": "Gråsidemus",
+    "latin": "Myodes rufocanus",
+    "family": "Hamsterfamilien",
+    "order": "Gnagere",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Myodes%20rufocanus.jpeg?width=1024"
+  },
+  {
+    "id": "dyr-vand",
+    "name": "Vånd",
+    "latin": "Arvicola amphibius",
+    "family": "Hamsterfamilien",
+    "order": "Gnagere",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Water.vole.arp.jpg?width=1024"
+  },
+  {
+    "id": "dyr-bisam",
+    "name": "Bisam",
+    "latin": "Ondatra zibethicus",
+    "family": "Hamsterfamilien",
+    "order": "Gnagere",
+    "status": "Sjelden",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ondatra%20zibethicus%20FWS.jpg?width=1024"
+  },
+  {
+    "id": "dyr-markmus",
+    "name": "Markmus",
+    "latin": "Microtus agrestis",
+    "family": "Hamsterfamilien",
+    "order": "Gnagere",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Microtus%20agrestis%2001.jpg?width=1024"
+  },
+  {
+    "id": "dyr-ostmarkmus",
+    "name": "Østmarkmus",
+    "latin": "Microtus rossiaemeridionalis",
+    "family": "Hamsterfamilien",
+    "order": "Gnagere",
+    "status": "Vanlig",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Microtus%20levis%20from%20Luhanshchyna.jpg?width=1024"
+  },
+  {
+    "id": "dyr-fjellmarkmus",
+    "name": "Fjellmarkmus",
+    "latin": "Microtus oeconomus",
+    "family": "Hamsterfamilien",
+    "order": "Gnagere",
+    "status": "Tallrik",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/VOLE%2C%20TUNDRA.jpg?width=1024"
+  }
+]

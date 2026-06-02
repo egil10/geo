@@ -1,0 +1,82 @@
+[
+  {
+    "id": "bryggen-i-bergen",
+    "name": "Bryggen i Bergen",
+    "year": 1979,
+    "county": "Vestland",
+    "lat": 60.3975,
+    "lon": 5.3233333333333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bryggen%2C%20Bergen3.JPG?width=1024",
+    "note": "Hansatiden sine trehus ved Vågen i Bergen, ein av dei eldste handelshamnene i Nord-Europa"
+  },
+  {
+    "id": "urnes-stavkirke",
+    "name": "Urnes stavkirke",
+    "year": 1979,
+    "county": "Vestland",
+    "lat": 61.298055555556,
+    "lon": 7.3225,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2023-07-04-Stabkirche%20Urnes-6781.jpg?width=1024",
+    "note": "Stavkirke frå kring 1130 ved Lustrafjorden, eitt av dei fremste døma på mellomaldersk trearkitektur i Noreg"
+  },
+  {
+    "id": "roros-bergstad-og-circumferensen",
+    "name": "Røros bergstad og Circumferensen",
+    "year": 1980,
+    "county": "Trøndelag",
+    "lat": 62.57388889,
+    "lon": 11.38555556,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/RorosViewFromSlagHeaps.jpg?width=1024",
+    "note": "Bergstad grunnlagt på 1600-talet med rundt 2000 trehus og smelteverk, og det tilhøyrande gruveområdet Circumferensen"
+  },
+  {
+    "id": "helleristningene-i-alta",
+    "name": "Helleristningene i Alta",
+    "year": 1985,
+    "county": "Finnmark",
+    "lat": 69.946944444444,
+    "lon": 23.187777777778,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alta-Carvings-2012-07-17-12-15-018.jpg?width=1024",
+    "note": "Nord-Europas største samling av helleristningar og hellemålarier, med over 5000 dokumenterte figurar frå steinalderen"
+  },
+  {
+    "id": "vegaoyan",
+    "name": "Vegaøyan",
+    "year": 2004,
+    "county": "Nordland",
+    "lat": 65.633333333333,
+    "lon": 11.9,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vegaoyan.jpg?width=1024",
+    "note": "Øygruppe like sør for polarsirkelen med kulturlandskap som vitnar om tusenårig kysttradisjon med ærfugldrift"
+  },
+  {
+    "id": "struves-meridianbue",
+    "name": "Struves meridianbue",
+    "year": 2005,
+    "county": "Finnmark",
+    "lat": 70.67,
+    "lon": 23.66333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hammerfest%2C%20fuglenes%2C%20memoriale%20per%20l%27arco%20geodetico%20di%20struve%2C%20misurato%20a%20partire%20da%20qui%2C%20colonna%2002.jpg?width=1024",
+    "note": "Kjede av geodetiske målepunkt frå Hammerfest til Svartehavet gjennom ti land, eit vitnesbyrd om tidleg verdsmåling"
+  },
+  {
+    "id": "vestnorsk-fjordlandskap",
+    "name": "Vestnorsk fjordlandskap",
+    "year": 2005,
+    "county": "Møre og Romsdal",
+    "lat": 62.094444444444,
+    "lon": 7.0805555555556,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/00%202269%20Geiranger%20-%20Norway.jpg?width=1024",
+    "note": "Noregs einaste naturoppføring på verdsarvlista, omfattar Geirangerfjorden og Nærøyfjorden"
+  },
+  {
+    "id": "rjukan-notodden-industriarv",
+    "name": "Rjukan–Notodden industriarv",
+    "year": 2015,
+    "county": "Telemark",
+    "lat": 59.878611111111,
+    "lon": 8.5936111111111,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/VemorkHydroelectricPlant.jpg?width=1024",
+    "note": "Industriell kulturarv knytt til produksjon av kunstgjødsel ved Vemork kraftverk og Notodden frå tidleg 1900-tal"
+  }
+]

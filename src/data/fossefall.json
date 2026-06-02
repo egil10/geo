@@ -52,6 +52,24 @@
     "county": "Vestland"
   },
   {
+    "id": "foss-olmaafossen",
+    "name": "Ølmåafossen",
+    "height": 720,
+    "county": "Møre og Romsdal",
+    "lat": 62.4333,
+    "lon": 7.81667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oelmaaafossen-2020.jpg?width=1024"
+  },
+  {
+    "id": "foss-kjeragfossen",
+    "name": "Kjeragfossen",
+    "height": 715,
+    "county": "Rogaland",
+    "lat": 59.0333,
+    "lon": 6.58333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kjerag_og_Kjeragsfossen.jpg?width=1024"
+  },
+  {
     "id": "Q1471951",
     "name": "Mardalsfossen",
     "height": 705,
@@ -59,6 +77,68 @@
     "lat": 62.4714,
     "lon": 8.1199,
     "county": "Møre og Romsdal"
+  },
+  {
+    "id": "foss-spirefossen",
+    "name": "Spirefossen",
+    "height": 690,
+    "county": "Vestland",
+    "lat": 61.7167,
+    "lon": 6.61667
+  },
+  {
+    "id": "foss-krunefossen",
+    "name": "Krunefossen",
+    "height": 660,
+    "county": "Vestland",
+    "lat": 61.7467,
+    "lon": 7.04389,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Krunefossen.jpg?width=1024"
+  },
+  {
+    "id": "foss-tyssestrengene",
+    "name": "Tyssestrengene",
+    "height": 646,
+    "county": "Vestland",
+    "lat": 60.1367,
+    "lon": 6.7544,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tyssestrengene_Lindahl.jpg?width=1024"
+  },
+  {
+    "id": "foss-langfoss",
+    "name": "Langfoss",
+    "height": 612,
+    "county": "Vestland",
+    "lat": 59.8444,
+    "lon": 6.3389,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/O-4-5_Norge-_Langfoss%2C_%C3%85krafjord._Ruten_Haugesund_-_Odda_(9354977731).jpg?width=1024"
+  },
+  {
+    "id": "foss-hydnefossen",
+    "name": "Hydnefossen",
+    "height": 475,
+    "county": "Viken",
+    "lat": 60.81169,
+    "lon": 8.62123,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hydnefossen5.jpg?width=1024"
+  },
+  {
+    "id": "foss-ringedalsfossen",
+    "name": "Ringedalsfossen",
+    "height": 420,
+    "county": "Vestland",
+    "lat": 60.10482,
+    "lon": 6.7635,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stor_foss_som_forgrener_seg_til_flere_sm%C3%A5_-_NB_MS_G4_0686_(cropped).jpg?width=1024"
+  },
+  {
+    "id": "foss-de-syv-sostrene",
+    "name": "De syv søstrene",
+    "height": 410,
+    "county": "Møre og Romsdal",
+    "lat": 62.107,
+    "lon": 7.0942,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/HPIM0821.JPG?width=1024"
   },
   {
     "id": "Q11298858",
@@ -70,6 +150,15 @@
     "county": "Møre og Romsdal"
   },
   {
+    "id": "foss-rjoandefossen",
+    "name": "Rjoandefossen",
+    "height": 310,
+    "county": "Vestland",
+    "lat": 60.82639,
+    "lon": 7.1075,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rjoandefossen.jpg?width=1024"
+  },
+  {
     "id": "Q38437",
     "name": "Vettisfossen",
     "height": 275,
@@ -77,6 +166,67 @@
     "lat": 61.38,
     "lon": 7.9458333333333,
     "county": "Vestland"
+  },
+  {
+    "id": "foss-rembesdalsfossen",
+    "name": "Rembesdalsfossen",
+    "height": 272,
+    "county": "Vestland",
+    "lat": 60.5185,
+    "lon": 7.25824
+  },
+  {
+    "id": "foss-valurfossen",
+    "name": "Valurfossen",
+    "height": 272,
+    "county": "Vestland",
+    "lat": 60.36004,
+    "lon": 7.14537,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/VALURSFOSSEN.jpg?width=1024"
+  },
+  {
+    "id": "foss-mollisfossen",
+    "name": "Mollisfossen",
+    "height": 269,
+    "county": "Troms",
+    "lat": 69.36155,
+    "lon": 21.83243,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mollisfossen.jpg?width=1024"
+  },
+  {
+    "id": "foss-austerkrokfossen",
+    "name": "Austerkrokfossen",
+    "height": 257,
+    "county": "Nordland",
+    "lat": 67.36249,
+    "lon": 15.80031
+  },
+  {
+    "id": "foss-sotefossen",
+    "name": "Søtefossen",
+    "height": 246,
+    "county": "Vestland",
+    "lat": 60.33113,
+    "lon": 6.80197,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8tefossen_no.jpg?width=1024"
+  },
+  {
+    "id": "foss-hjellefossen",
+    "name": "Hjellefossen",
+    "height": 240,
+    "county": "Vestland",
+    "lat": 61.34374,
+    "lon": 7.88615,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2007-06-16_Hjellefossen.jpg?width=1024"
+  },
+  {
+    "id": "foss-sivlefossen",
+    "name": "Sivlefossen",
+    "height": 240,
+    "county": "Vestland",
+    "lat": 60.84056,
+    "lon": 6.68806,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sivlefossen.JPG?width=1024"
   },
   {
     "id": "Q986495",
@@ -88,6 +238,15 @@
     "county": "Telemark"
   },
   {
+    "id": "foss-feigefossen",
+    "name": "Feigefossen",
+    "height": 229,
+    "county": "Vestland",
+    "lat": 61.3807,
+    "lon": 7.44131,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Feigefossen_Norway_2009.JPG?width=1024"
+  },
+  {
     "id": "Q203406",
     "name": "Kjosfossen",
     "height": 225,
@@ -95,6 +254,15 @@
     "lat": 60.746111111111,
     "lon": 7.1375,
     "county": "Vestland"
+  },
+  {
+    "id": "foss-reiarsfossen",
+    "name": "Reiårsfossen",
+    "height": 210,
+    "county": "Agder",
+    "lat": 58.94106,
+    "lon": 7.68537,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rei%C3%A5rsfossen_in_Ose.jpg?width=1024"
   },
   {
     "id": "Q11336551",
@@ -106,6 +274,31 @@
     "county": "Vestland"
   },
   {
+    "id": "foss-gjerdefossen",
+    "name": "Gjerdefossen",
+    "height": 200,
+    "county": "Møre og Romsdal",
+    "lat": 62.12741,
+    "lon": 7.15714,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Geirangerfjord.jpg?width=1024"
+  },
+  {
+    "id": "foss-muldalsfossen",
+    "name": "Muldalsfossen",
+    "height": 200,
+    "county": "Møre og Romsdal",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Muldalsfossen.JPG?width=1024"
+  },
+  {
+    "id": "foss-aurstaupet",
+    "name": "Aurstaupet",
+    "height": 193,
+    "county": "Møre og Romsdal",
+    "lat": 62.40646,
+    "lon": 8.38207,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/View_to_Eikesdalen_from_a_cliff_at_Aurstaupet%2C_2013_June.jpg?width=1024"
+  },
+  {
     "id": "Q38588",
     "name": "Vøringsfossen",
     "height": 184,
@@ -115,6 +308,15 @@
     "county": "Vestland"
   },
   {
+    "id": "foss-stigfossen",
+    "name": "Stigfossen",
+    "height": 180,
+    "county": "Møre og Romsdal",
+    "lat": 62.45546,
+    "lon": 7.67084,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stigfossen.JPG?width=1024"
+  },
+  {
     "id": "Q37387",
     "name": "Låtefossen",
     "height": 165,
@@ -122,6 +324,60 @@
     "lat": 59.947666666667,
     "lon": 6.5851666666667,
     "county": "Vestland"
+  },
+  {
+    "id": "foss-svoufallet",
+    "name": "Svøufallet",
+    "height": 156,
+    "county": "Møre og Romsdal",
+    "lat": 62.50999,
+    "lon": 9.05782,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jenstadjuvet_-_no-nb_digifoto_20160331_00011_bldsa_NGU0203.jpg?width=1024"
+  },
+  {
+    "id": "foss-honganvikfossen",
+    "name": "Honganvikfossen",
+    "height": 155,
+    "county": "Rogaland",
+    "lat": 59.59589,
+    "lon": 6.28515,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hongavikfossen.jpg?width=1024"
+  },
+  {
+    "id": "foss-skjervefossen",
+    "name": "Skjervefossen",
+    "height": 135,
+    "county": "Vestland",
+    "lat": 60.5879,
+    "lon": 6.6363,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skjervefossen%2C_Norway_01.jpg?width=1024"
+  },
+  {
+    "id": "foss-espelandsfossen",
+    "name": "Espelandsfossen",
+    "height": 130,
+    "county": "Vestland",
+    "lat": 60.59833,
+    "lon": 6.82278,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/ESPELAND_WATERFALLS_Between_Eidfjord_and_Voss%2C_Norway_-_June_15%2C_1989.jpg?width=1024"
+  },
+  {
+    "id": "foss-stalheimsfossen",
+    "name": "Stalheimsfossen",
+    "height": 126,
+    "county": "Vestland",
+    "lat": 60.8344,
+    "lon": 6.68556,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stalheimsfossen.JPG?width=1024"
+  },
+  {
+    "id": "foss-tvindefossen",
+    "name": "Tvindefossen",
+    "height": 110,
+    "county": "Vestland",
+    "lat": 60.7264,
+    "lon": 6.48639,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tvinnefossen.JPG?width=1024"
   },
   {
     "id": "Q1618819",

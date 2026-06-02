@@ -1,0 +1,57 @@
+[
+  {
+    "id": "ostlandet",
+    "name": "Østlandet",
+    "population": 2622244,
+    "area": 94574.87,
+    "kommuner": 121,
+    "distrikter": 21,
+    "byer": 42,
+    "largestCity": "Oslo",
+    "fylker": 4
+  },
+  {
+    "id": "vestlandet",
+    "name": "Vestlandet",
+    "population": 1361492,
+    "area": 58532.14,
+    "kommuner": 92,
+    "distrikter": 14,
+    "byer": 22,
+    "largestCity": "Bergen",
+    "fylker": 3
+  },
+  {
+    "id": "nord-norge",
+    "name": "Nord-Norge",
+    "population": 481994,
+    "area": 112975.13,
+    "kommuner": 83,
+    "distrikter": 9,
+    "byer": 20,
+    "largestCity": "Tromsø",
+    "fylker": 2
+  },
+  {
+    "id": "trondelag",
+    "name": "Trøndelag",
+    "population": 449769,
+    "area": 41254.33,
+    "kommuner": 38,
+    "distrikter": 6,
+    "byer": 8,
+    "largestCity": "Trondheim",
+    "fylker": 1
+  },
+  {
+    "id": "sorlandet",
+    "name": "Sørlandet",
+    "population": 303754,
+    "area": 16434.28,
+    "kommuner": 25,
+    "distrikter": 4,
+    "byer": 10,
+    "largestCity": "Kristiansand",
+    "fylker": 1
+  }
+]

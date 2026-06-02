@@ -1,0 +1,512 @@
+[
+  {
+    "id": "nasjonalpark-rondane-nasjonalpark",
+    "name": "Rondane nasjonalpark",
+    "county": "Innlandet",
+    "area": 963.5,
+    "established": 1962,
+    "lat": 61.833333333333,
+    "lon": 9.8333333333333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/DigerMidtH%C3%B8grondenFromVeslesmeden.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-borgefjell-nasjonalpark",
+    "name": "Børgefjell nasjonalpark",
+    "county": "Trøndelag",
+    "area": 1447,
+    "established": 1963,
+    "lat": 65.1833,
+    "lon": 13.9,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jetnamsklumpen.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-gutulia-nasjonalpark",
+    "name": "Gutulia nasjonalpark",
+    "county": "Innlandet",
+    "area": 23,
+    "established": 1968,
+    "lat": 62.016666666667,
+    "lon": 12.166666666667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gutulia%2008-0003.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-anderdalen-nasjonalpark",
+    "name": "Ånderdalen nasjonalpark",
+    "county": "Troms",
+    "area": 135,
+    "established": 1970,
+    "lat": 69.2,
+    "lon": 17.266666666667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85nderdalen%20nasjonalpark%203.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-ovre-pasvik-nasjonalpark",
+    "name": "Øvre Pasvik nasjonalpark",
+    "county": "Finnmark",
+    "area": 119,
+    "established": 1970,
+    "lat": 69.09351,
+    "lon": 28.95053,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Twisted%20trunk.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-stabbursdalen-nasjonalpark",
+    "name": "Stabbursdalen nasjonalpark",
+    "county": "Finnmark",
+    "area": 749,
+    "established": 1970,
+    "lat": 69.983333333333,
+    "lon": 24.483333333333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stabbursdalen%20National%20Park%20-%202.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-gressamoen-nasjonalpark",
+    "name": "Gressåmoen nasjonalpark",
+    "county": "Trøndelag",
+    "area": 151,
+    "established": 1970,
+    "lat": 64.25,
+    "lon": 13.16666667,
+    "photo": null
+  },
+  {
+    "id": "nasjonalpark-ovre-dividal-nasjonalpark",
+    "name": "Øvre Dividal nasjonalpark",
+    "county": "Troms",
+    "area": 770,
+    "established": 1971,
+    "lat": 68.633333333333,
+    "lon": 19.866666666667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%96vre%20dividal%20anjajohka.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-rago-nasjonalpark",
+    "name": "Rago nasjonalpark",
+    "county": "Nordland",
+    "area": 171,
+    "established": 1971,
+    "lat": 67.433333333333,
+    "lon": 15.983333333333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rago-2015-8794.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-femundsmarka-nasjonalpark",
+    "name": "Femundsmarka nasjonalpark",
+    "county": "Innlandet",
+    "area": 573,
+    "established": 1971,
+    "lat": 62.216666666667,
+    "lon": 12.116666666667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Femundsmarka01.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-forlandet-nasjonalpark",
+    "name": "Forlandet nasjonalpark",
+    "county": "Svalbard",
+    "area": 4647,
+    "established": 1973,
+    "lat": 78.55,
+    "lon": 11.116667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Prins-karls-forrland%20pho.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-sor-spitsbergen-nasjonalpark",
+    "name": "Sør-Spitsbergen nasjonalpark",
+    "county": "Svalbard",
+    "area": 13286,
+    "established": 1973,
+    "lat": 77.15,
+    "lon": 16.28333333,
+    "photo": null
+  },
+  {
+    "id": "nasjonalpark-nordvest-spitsbergen-nasjonalpark",
+    "name": "Nordvest-Spitsbergen nasjonalpark",
+    "county": "Svalbard",
+    "area": 9914,
+    "established": 1973,
+    "lat": 79.583333,
+    "lon": 11.5,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lilliehookbreen1.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-anarjohka-nasjonalpark",
+    "name": "Anárjohka nasjonalpark",
+    "county": "Finnmark",
+    "area": 1414,
+    "established": 1975,
+    "lat": 68.82916,
+    "lon": 24.64309,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Arctic%20sunset.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-jotunheimen-nasjonalpark",
+    "name": "Jotunheimen nasjonalpark",
+    "county": "Innlandet",
+    "area": 1151,
+    "established": 1980,
+    "lat": 61.5,
+    "lon": 8.3666666666667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jotunheimen%20-%20view%20from%20Galdh%C3%B8piggen1.JPG?width=1024"
+  },
+  {
+    "id": "nasjonalpark-hardangervidda-nasjonalpark",
+    "name": "Hardangervidda nasjonalpark",
+    "county": "Buskerud",
+    "area": 3422,
+    "established": 1981,
+    "lat": 60.133333333333,
+    "lon": 7.5,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hardangerviddaflora.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-reisa-nasjonalpark",
+    "name": "Reisa nasjonalpark",
+    "county": "Troms",
+    "area": 803,
+    "established": 1986,
+    "lat": 69.2,
+    "lon": 21.966666666667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mollisfossen.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-saltfjellet-svartisen-nasjonalpark",
+    "name": "Saltfjellet–Svartisen nasjonalpark",
+    "county": "Nordland",
+    "area": 2191.78,
+    "established": 1989,
+    "lat": 66.6,
+    "lon": 14.183333333333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bjell%C3%A5vasstua.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-jostedalsbreen-nasjonalpark",
+    "name": "Jostedalsbreen nasjonalpark",
+    "county": "Vestland",
+    "area": 1314,
+    "established": 1991,
+    "lat": 61.683333333333,
+    "lon": 6.9833333333333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20road%20to%20Jostedals%20Glacier.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-forollhogna-nasjonalpark",
+    "name": "Forollhogna nasjonalpark",
+    "county": "Innlandet",
+    "area": 1059,
+    "established": 2001,
+    "lat": 62.633333333333,
+    "lon": 10.666666666667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storbukk%20Gjersj%C3%B8h%C3%B8a.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-dovrefjell-sunndalsfjella-nasjonalpark",
+    "name": "Dovrefjell–Sunndalsfjella nasjonalpark",
+    "county": "Trøndelag",
+    "area": 1830,
+    "established": 2002,
+    "lat": 62.396666666667,
+    "lon": 9.1730555555556,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Snohetta.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-dovre-nasjonalpark",
+    "name": "Dovre nasjonalpark",
+    "county": "Innlandet",
+    "area": 289,
+    "established": 2003,
+    "lat": 62.083333333333,
+    "lon": 9.5333333333333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Grimsdalen%20Panorama4718.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-moysalen-nasjonalpark",
+    "name": "Møysalen nasjonalpark",
+    "county": "Nordland",
+    "area": 51.2,
+    "established": 2003,
+    "lat": 68.516666666667,
+    "lon": 15.5,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Moysalen%202.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-sassen-bunsow-land-nasjonalpark",
+    "name": "Sassen-Bünsow Land nasjonalpark",
+    "county": "Svalbard",
+    "area": 1230.57,
+    "established": 2003,
+    "lat": 78.383333,
+    "lon": 17.25,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/SV%20Eltanin%20Brucebyen.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-nordre-isfjorden-nasjonalpark",
+    "name": "Nordre Isfjorden nasjonalpark",
+    "county": "Svalbard",
+    "area": 2954,
+    "established": 2003,
+    "lat": 78.4,
+    "lon": 14.383333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/IsfjordenSouthShore.JPG?width=1024"
+  },
+  {
+    "id": "nasjonalpark-nordenskiold-land-nasjonalpark",
+    "name": "Nordenskiöld Land nasjonalpark",
+    "county": "Svalbard",
+    "area": 1362,
+    "established": 2003,
+    "lat": 77.866667,
+    "lon": 15.316667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tundra1%20%28js%29.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-junkerdal-nasjonalpark",
+    "name": "Junkerdal nasjonalpark",
+    "county": "Nordland",
+    "area": 682,
+    "established": 2004,
+    "lat": 66.883333333333,
+    "lon": 15.8,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sjurfjellet.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-skarvan-og-roltdalen-nasjonalpark",
+    "name": "Skarvan og Roltdalen nasjonalpark",
+    "county": "Trøndelag",
+    "area": 441,
+    "established": 2004,
+    "lat": 63.216666666667,
+    "lon": 11.416666666667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fonnfjellet.JPG?width=1024"
+  },
+  {
+    "id": "nasjonalpark-blafjella-skjakerfjella-nasjonalpark",
+    "name": "Blåfjella - Skjækerfjella nasjonalpark",
+    "county": "Trøndelag",
+    "area": 1932,
+    "established": 2004,
+    "lat": 64.2168,
+    "lon": 13.10929,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skj%C3%A6kerhatten.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-lierne-nasjonalpark",
+    "name": "Lierne nasjonalpark",
+    "county": "Trøndelag",
+    "area": 333,
+    "established": 2004,
+    "lat": 64.3,
+    "lon": 13.9,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lierne%20nasjonalpark%202.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-folgefonna-nasjonalpark",
+    "name": "Folgefonna nasjonalpark",
+    "county": "Vestland",
+    "area": 548.03,
+    "established": 2005,
+    "lat": 60.0,
+    "lon": 6.3330555555556,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hardanger%20Folgefonna-Gletscher%2011.JPG?width=1024"
+  },
+  {
+    "id": "nasjonalpark-indre-wijdefjorden-nasjonalpark",
+    "name": "Indre Wijdefjorden nasjonalpark",
+    "county": "Svalbard",
+    "area": 1127,
+    "established": 2005,
+    "lat": 79.083333,
+    "lon": 16.1,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Indre%20Wijdefjorden%20National%20Park%20map.svg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-varangerhalvoya-nasjonalpark",
+    "name": "Varangerhalvøya nasjonalpark",
+    "county": "Finnmark",
+    "area": 1804,
+    "established": 2006,
+    "lat": 70.333333333333,
+    "lon": 29.633333333333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/E75-Varanger-Vard%C3%B8-2012-07-07-16-30-03.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-hallingskarvet-nasjonalpark",
+    "name": "Hallingskarvet nasjonalpark",
+    "county": "Buskerud",
+    "area": 451.61,
+    "established": 2006,
+    "lat": 60.6,
+    "lon": 7.7,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Raggsteindalen%202006%20sign.JPG?width=1024"
+  },
+  {
+    "id": "nasjonalpark-reinheimen-nasjonalpark",
+    "name": "Reinheimen nasjonalpark",
+    "county": "Møre og Romsdal",
+    "area": 1969,
+    "established": 2006,
+    "lat": 62.16666667,
+    "lon": 7.9,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/03%20Reinheimen-Nationalpark%20%28Norwegen%29.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-seiland-nasjonalpark",
+    "name": "Seiland nasjonalpark",
+    "county": "Finnmark",
+    "area": 316,
+    "established": 2006,
+    "lat": 70.383333333333,
+    "lon": 23.166666666667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norway%20-%20Seiland.png?width=1024"
+  },
+  {
+    "id": "nasjonalpark-lomsdal-visten-nasjonalpark",
+    "name": "Lomsdal-Visten nasjonalpark",
+    "county": "Nordland",
+    "area": 1102,
+    "established": 2009,
+    "lat": 65.57436506,
+    "lon": 12.7935791,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lomsdalen.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-ytre-hvaler-nasjonalpark",
+    "name": "Ytre Hvaler nasjonalpark",
+    "county": "Østfold",
+    "area": 354.84,
+    "established": 2009,
+    "lat": 59.01666667,
+    "lon": 10.8,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ytre%20Hvaler%2C%20Tisler%20coast.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-breheimen-nasjonalpark",
+    "name": "Breheimen nasjonalpark",
+    "county": "Innlandet",
+    "area": 1691,
+    "established": 2009,
+    "lat": 61.8,
+    "lon": 7.8333333333333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tverr%C3%A5dalskyrkja%2002.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-sjunkhatten-nasjonalpark",
+    "name": "Sjunkhatten nasjonalpark",
+    "county": "Nordland",
+    "area": 417,
+    "established": 2010,
+    "lat": 67.42436395,
+    "lon": 15.06225586,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bl%C3%A5timen%20i%20Sjunkhatten%20nasjonalpark.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-langsua-nasjonalpark",
+    "name": "Langsua nasjonalpark",
+    "county": "Innlandet",
+    "area": 537,
+    "established": 2011,
+    "lat": 61.27833333,
+    "lon": 9.51333333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Langsua%20nasjonalpark%20Ormtjernkampen%203.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-rohkunborri-nasjonalpark",
+    "name": "Rohkunborri nasjonalpark",
+    "county": "Troms",
+    "area": 556,
+    "established": 2011,
+    "lat": 68.56666667,
+    "lon": 19.31666667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Canyon%20in%20Rohkunborri%20National%20Park.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-fulufjellet-nasjonalpark",
+    "name": "Fulufjellet nasjonalpark",
+    "county": "Innlandet",
+    "area": 82.5,
+    "established": 2012,
+    "lat": 61.4,
+    "lon": 12.78333333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fulufjellet%20nasjonalpark%20005.JPG?width=1024"
+  },
+  {
+    "id": "nasjonalpark-lahku-nasjonalpark",
+    "name": "Láhku nasjonalpark",
+    "county": "Nordland",
+    "area": 188,
+    "established": 2012,
+    "lat": 66.84166667,
+    "lon": 14.23333333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Utsikt%20mot%20Lahku%20nasjonalpark%20fra%20Skavldalen.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-faerder-nasjonalpark",
+    "name": "Færder nasjonalpark",
+    "county": "Vestfold",
+    "area": 340,
+    "established": 2013,
+    "lat": 59.15,
+    "lon": 10.51,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/F%C3%A6rder.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-jomfruland-nasjonalpark",
+    "name": "Jomfruland nasjonalpark",
+    "county": "Telemark",
+    "area": 117,
+    "established": 2016,
+    "lat": 58.865,
+    "lon": 9.5961111111111,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Str%C3%A5holmen%20ved%20Krager%C3%B8%20-%20no-nb%20digifoto%2020160209%2000433%20NB%20MIT%20FNR%2005687.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-raet-nasjonalpark",
+    "name": "Raet nasjonalpark",
+    "county": "Agder",
+    "area": 607,
+    "established": 2016,
+    "lat": 58.432231,
+    "lon": 8.800049,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Arendal%20Trom%C3%B8y%20Spornes%20b.JPG?width=1024"
+  },
+  {
+    "id": "nasjonalpark-lofotodden-nasjonalpark",
+    "name": "Lofotodden nasjonalpark",
+    "county": "Nordland",
+    "area": 99,
+    "established": 2018,
+    "lat": 68.016974444444,
+    "lon": 13.023133333333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lofotodden%20in%20Moskenes%2C%20Lofoten.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-van-mijenfjorden-nasjonalpark",
+    "name": "Van Mijenfjorden nasjonalpark",
+    "county": "Svalbard",
+    "area": 4251,
+    "established": 2021,
+    "lat": 77.86666667,
+    "lon": 15.31666667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tundra1%20%28js%29.jpg?width=1024"
+  },
+  {
+    "id": "nasjonalpark-ostmarka-nasjonalpark",
+    "name": "Østmarka nasjonalpark",
+    "county": "Akershus",
+    "area": 54,
+    "established": 2023,
+    "lat": 59.83,
+    "lon": 10.96,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tonekollen%20s%C3%B8r%201.JPG?width=1024"
+  },
+  {
+    "id": "nasjonalpark-ormtjernkampen-nasjonalpark",
+    "name": "Ormtjernkampen nasjonalpark",
+    "county": "Innlandet",
+    "area": 85,
+    "established": 1968,
+    "lat": 61.2,
+    "lon": 9.8,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Langsua%20nasjonalpark%20Ormtjernkampen%201.jpg?width=1024"
+  }
+]

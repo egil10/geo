@@ -1,0 +1,293 @@
+[
+  {
+    "id": "garmo-stavkirke",
+    "name": "Garmo stavkirke",
+    "county": "Innlandet",
+    "municipality": "Lillehammer",
+    "year": 1157,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stavkirke%20p%C3%A5%20Maihaugen%20%28cropped%29.JPG?width=1024",
+    "lat": 61.11111111,
+    "lon": 10.47611111
+  },
+  {
+    "id": "hedalen-stavkirke",
+    "name": "Hedalen stavkirke",
+    "county": "Innlandet",
+    "municipality": "Sør-Aurdal",
+    "year": 1150,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hedalen%20stavkyrkje.jpg?width=1024",
+    "lat": 60.6224705,
+    "lon": 9.6907645
+  },
+  {
+    "id": "hegge-stavkirke",
+    "name": "Hegge stavkirke",
+    "county": "Innlandet",
+    "municipality": "Øystre Slidre",
+    "year": 1216,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hegge.jpg?width=1024",
+    "lat": 61.157734,
+    "lon": 9.023833
+  },
+  {
+    "id": "hore-stavkirke",
+    "name": "Høre stavkirke",
+    "county": "Innlandet",
+    "municipality": "Vang",
+    "year": 1180,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B8re%20stave%20church%2C%20aerial%20view.jpg?width=1024",
+    "lat": 61.15315,
+    "lon": 8.80481
+  },
+  {
+    "id": "lom-stavkirke",
+    "name": "Lom stavkirke",
+    "county": "Innlandet",
+    "municipality": "Lom",
+    "year": 1150,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/00%201210%20Lom%20Stave%20Church%20-%20Norway.jpg?width=1024",
+    "lat": 61.8398,
+    "lon": 8.56607
+  },
+  {
+    "id": "lomen-stavkirke",
+    "name": "Lomen stavkirke",
+    "county": "Innlandet",
+    "municipality": "Vestre Slidre",
+    "year": 1179,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lomen%20stavkirke%20ID%2084323%20IMG%201863.jpg?width=1024",
+    "lat": 61.134850025,
+    "lon": 8.9239472222222
+  },
+  {
+    "id": "reinli-stavkirke",
+    "name": "Reinli stavkirke",
+    "county": "Innlandet",
+    "municipality": "Sør-Aurdal",
+    "year": 1326,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Reinli%20Stavkyrkje%2C%20S%C3%B8r-Aurdal.JPG?width=1024",
+    "lat": 60.831483,
+    "lon": 9.493069
+  },
+  {
+    "id": "ringebu-stavkirke",
+    "name": "Ringebu stavkirke",
+    "county": "Innlandet",
+    "municipality": "Ringebu",
+    "year": 1220,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ringebu%20Stave%20Church.jpg?width=1024",
+    "lat": 61.50934,
+    "lon": 10.17297
+  },
+  {
+    "id": "oye-stavkirke",
+    "name": "Øye stavkirke",
+    "county": "Innlandet",
+    "municipality": "Vang",
+    "year": 1200,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oye%20stave%20church.jpg?width=1024",
+    "lat": 61.16778,
+    "lon": 8.39972
+  },
+  {
+    "id": "grip-stavkirke",
+    "name": "Grip stavkirke",
+    "county": "Møre og Romsdal",
+    "municipality": "Kristiansund",
+    "year": 1460,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Grip%20stavkirke.jpg?width=1024",
+    "lat": 63.21972,
+    "lon": 7.5939
+  },
+  {
+    "id": "kvernes-stavkirke",
+    "name": "Kvernes stavkirke",
+    "county": "Møre og Romsdal",
+    "municipality": "Averøy",
+    "year": 1633,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kvernes%20Stavkyrkje%2C%20Aver%C3%B8y%2C%20South%20view%2020150604%201.jpg?width=1024",
+    "lat": 63.0053,
+    "lon": 7.72194
+  },
+  {
+    "id": "rodven-stavkirke",
+    "name": "Rødven stavkirke",
+    "county": "Møre og Romsdal",
+    "municipality": "Rauma",
+    "year": 1200,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/RodvenStavkirke-Rauma-Norway.jpg?width=1024",
+    "lat": 62.624194444444,
+    "lon": 7.4936944444444
+  },
+  {
+    "id": "eidsborg-stavkirke",
+    "name": "Eidsborg stavkirke",
+    "county": "Telemark",
+    "municipality": "Tokke",
+    "year": 1200,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eidsborg%20stavkirke%20i%20Tokke.jpg?width=1024",
+    "lat": 59.4645665,
+    "lon": 8.021988
+  },
+  {
+    "id": "heddal-stavkirke",
+    "name": "Heddal stavkirke",
+    "county": "Telemark",
+    "municipality": "Notodden",
+    "year": 1200,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stavechurch-heddal.jpg?width=1024",
+    "lat": 59.57956,
+    "lon": 9.17625
+  },
+  {
+    "id": "haltdalen-stavkirke",
+    "name": "Haltdalen stavkirke",
+    "county": "Trøndelag",
+    "municipality": "Trondheim",
+    "year": 1170,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Haltdalen%20stavkirke.jpg?width=1024",
+    "lat": 63.41790061,
+    "lon": 10.35513997
+  },
+  {
+    "id": "hoyjord-stavkirke",
+    "name": "Høyjord stavkirke",
+    "county": "Vestfold",
+    "municipality": "Sandefjord",
+    "year": 1275,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B8yjord%20stavkirke%20TRS.jpg?width=1024",
+    "lat": 59.36741667,
+    "lon": 10.12097222
+  },
+  {
+    "id": "borgund-stavkirke",
+    "name": "Borgund stavkirke",
+    "county": "Vestland",
+    "municipality": "Lærdal",
+    "year": 1150,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/00%205836%20Stabkirche%20Borgund%20-%20L%C3%A6rdal.jpg?width=1024",
+    "lat": 61.04724,
+    "lon": 7.81224
+  },
+  {
+    "id": "hopperstad-stavkirke",
+    "name": "Hopperstad stavkirke",
+    "county": "Vestland",
+    "municipality": "Vik kommune",
+    "year": 1130,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/EgliseBoisDeboutNorvege2.jpg?width=1024",
+    "lat": 61.07747,
+    "lon": 6.56902
+  },
+  {
+    "id": "kaupanger-stavkirke",
+    "name": "Kaupanger stavkirke",
+    "county": "Vestland",
+    "municipality": "Sogndal",
+    "year": 1190,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/00%203418%20Kaupanger%20stave%20church%2C%20Sogndal.jpg?width=1024",
+    "lat": 61.18416389,
+    "lon": 7.23349167
+  },
+  {
+    "id": "undredal-stavkirke",
+    "name": "Undredal stavkirke",
+    "county": "Vestland",
+    "municipality": "Aurland",
+    "year": 1147,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stave%20church%20Undredal%20south%20side.jpg?width=1024",
+    "lat": 60.950882,
+    "lon": 7.1023425
+  },
+  {
+    "id": "urnes-stavkirke",
+    "name": "Urnes stavkirke",
+    "county": "Vestland",
+    "municipality": "Luster",
+    "year": 1130,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2023-07-04-Stabkirche%20Urnes-6781.jpg?width=1024",
+    "lat": 61.298055555556,
+    "lon": 7.3225
+  },
+  {
+    "id": "roldal-stavkirke",
+    "name": "Røldal stavkirke",
+    "county": "Vestland",
+    "municipality": "Ullensvang",
+    "year": 1200,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Staafkerk%20R%C3%B8ldal.jpg?width=1024",
+    "lat": 59.83085,
+    "lon": 6.82271
+  },
+  {
+    "id": "flesberg-stavkirke",
+    "name": "Flesberg stavkirke",
+    "county": "Buskerud",
+    "municipality": "Flesberg",
+    "year": 1111,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Flesberg%20stave%20church.jpg?width=1024",
+    "lat": 59.862666,
+    "lon": 9.433049
+  },
+  {
+    "id": "gol-stavkirke",
+    "name": "Gol stavkirke",
+    "county": "Oslo",
+    "municipality": "Oslo kommune",
+    "year": 1216,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gol%20stavkirke%2C%20vinter.JPG?width=1024",
+    "lat": 59.90800671379,
+    "lon": 10.683345794678
+  },
+  {
+    "id": "nore-stavkirke",
+    "name": "Nore stavkirke",
+    "county": "Buskerud",
+    "municipality": "Nore og Uvdal",
+    "year": 1166,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nore%20Stavkirke%2001%20%2815187740950%29.jpg?width=1024",
+    "lat": 60.164535,
+    "lon": 9.010286
+  },
+  {
+    "id": "rollag-stavkirke",
+    "name": "Rollag stavkirke",
+    "county": "Buskerud",
+    "municipality": "Rollag",
+    "year": 1482,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rollag%20stave%20church%2007apr2005.jpg?width=1024",
+    "lat": 60.021025,
+    "lon": 9.273172
+  },
+  {
+    "id": "torpo-stavkirke",
+    "name": "Torpo stavkirke",
+    "county": "Buskerud",
+    "municipality": "Ål",
+    "year": 1192,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise%20en%20bois%2C%20stavkirke%20-%20panoramio.jpg?width=1024",
+    "lat": 60.66413889,
+    "lon": 8.70841667
+  },
+  {
+    "id": "uvdal-stavkirke",
+    "name": "Uvdal stavkirke",
+    "county": "Buskerud",
+    "municipality": "Nore og Uvdal",
+    "year": 1168,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Uvdal%20stavkirke%2020150723%20200136.jpg?width=1024",
+    "lat": 60.26502778,
+    "lon": 8.83477778
+  },
+  {
+    "id": "fantoft-stavkirke",
+    "name": "Fantoft stavkirke",
+    "county": "Vestland",
+    "municipality": "Bergen kommune",
+    "year": 1997,
+    "reconstructed": true,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fantoft-church.jpg?width=1024",
+    "lat": 60.339166666667,
+    "lon": 5.3533305555556
+  }
+]

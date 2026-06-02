@@ -1,0 +1,200 @@
+[
+  {
+    "id": "varanger",
+    "name": "Varanger",
+    "county": "Troms og Finnmark",
+    "length": 160,
+    "maxElevation": 125,
+    "lat": 70.38,
+    "lon": 29.0,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hamningberg.jpg?width=1024",
+    "blurb": "Arktisk kystlandskap på Varangerhalvøya med rik fuglefauna og samisk kulturhistorie."
+  },
+  {
+    "id": "havoysund",
+    "name": "Havøysund",
+    "county": "Troms og Finnmark",
+    "length": 67,
+    "maxElevation": 233,
+    "lat": 70.99,
+    "lon": 24.67,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hav%C3%B8ysund_winter.jpg?width=1024",
+    "blurb": "Dramatisk kyst i Vest-Finnmark med åpen havutsikt mot Nordishavet."
+  },
+  {
+    "id": "senja",
+    "name": "Senja",
+    "county": "Troms",
+    "length": 102,
+    "maxElevation": 284,
+    "lat": 69.3,
+    "lon": 17.5,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oksneset_and_Ersfjorden_from_Tungeneset_in_low_sunlight%2C_Senja%2C_2012_October_-_2.jpg?width=1024",
+    "blurb": "Norges nest største øy byr på spisse fjell, dype fjorder og fiskeværsidyll."
+  },
+  {
+    "id": "andoya",
+    "name": "Andøya",
+    "county": "Nordland",
+    "length": 58,
+    "maxElevation": 66,
+    "lat": 69.1,
+    "lon": 15.77,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andoya2.jpg?width=1024",
+    "blurb": "Myrlandskap og hvit sandstrand på Norges nordligste øy, med hvalstafari og nordlys."
+  },
+  {
+    "id": "lofoten",
+    "name": "Lofoten",
+    "county": "Nordland",
+    "length": 230,
+    "maxElevation": 72,
+    "lat": 68.15,
+    "lon": 14.37,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Moskenes_Reinebringen_lub_2025-07-21_img09_Aussicht.jpg?width=1024",
+    "blurb": "Spektakulære fjell stuper rett i havet langs E10 gjennom de ikoniske Lofoten-øyene."
+  },
+  {
+    "id": "helgelandskysten",
+    "name": "Helgelandskysten",
+    "county": "Nordland",
+    "length": 433,
+    "maxElevation": 346,
+    "lat": 66.0,
+    "lon": 12.8,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Helgelandskysten.jpg?width=1024",
+    "blurb": "Norges lengste turistveg langs Helgelandskysten – skjærgård, fjell og fergestrekninger."
+  },
+  {
+    "id": "atlanterhavsvegen",
+    "name": "Atlanterhavsvegen",
+    "county": "Møre og Romsdal",
+    "length": 36,
+    "maxElevation": 25,
+    "lat": 63.02,
+    "lon": 7.36,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storseisundet_bridge.jpg?width=1024",
+    "blurb": "Ikoniske bruer over skjærgården på Nordmørskysten, kåret til århundrets norske byggverk."
+  },
+  {
+    "id": "geiranger-trollstigen",
+    "name": "Geiranger–Trollstigen",
+    "county": "Møre og Romsdal",
+    "length": 104,
+    "maxElevation": 1038,
+    "lat": 62.46,
+    "lon": 7.67,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Geirangerfjord_from_Flydalsjuvet.jpg?width=1024",
+    "blurb": "UNESCO-verdensarv Geirangerfjord og den legendariske Trollstigen-serpentinen i ett."
+  },
+  {
+    "id": "gamle-strynefjellsvegen",
+    "name": "Gamle Strynefjellsvegen",
+    "county": "Vestland",
+    "length": 27,
+    "maxElevation": 1139,
+    "lat": 61.9,
+    "lon": 7.65,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Strynefjellsveien_24_BG.jpg?width=1024",
+    "blurb": "Historisk fjellveg fra 1894 over Strynefjell med panoramautsikt og sommerstengt vinter."
+  },
+  {
+    "id": "rondane",
+    "name": "Rondane",
+    "county": "Innlandet",
+    "length": 75,
+    "maxElevation": 1065,
+    "lat": 61.92,
+    "lon": 9.82,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Solhbergplassen_2016.jpg?width=1024",
+    "blurb": "Norges første nasjonalpark med vidstrakte fjellplatåer og Sohlbergplassen som ikonisk utsiktspunkt."
+  },
+  {
+    "id": "sognefjellet",
+    "name": "Sognefjellet",
+    "county": "Vestland / Innlandet",
+    "length": 108,
+    "maxElevation": 1434,
+    "lat": 61.57,
+    "lon": 8.03,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sognefjell_road.jpg?width=1024",
+    "blurb": "Europas høyeste fjellovergang over Jotunheimen, åpen kun om sommeren."
+  },
+  {
+    "id": "valdresflye",
+    "name": "Valdresflye",
+    "county": "Innlandet",
+    "length": 49,
+    "maxElevation": 1389,
+    "lat": 61.49,
+    "lon": 8.68,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Valdresflya_%28Jotunheimen%29.jpg?width=1024",
+    "blurb": "Høyfjellsrute over Valdresflye med utsikt mot Gjende og Jotunheimens tinder."
+  },
+  {
+    "id": "gaularfjellet",
+    "name": "Gaularfjellet",
+    "county": "Vestland",
+    "length": 114,
+    "maxElevation": 743,
+    "lat": 61.42,
+    "lon": 6.53,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gaularfjellet-Norway.jpg?width=1024",
+    "blurb": "Vestlandsk fjell- og fjordlandskap mellom Balestrand og Sande i Sunnfjord."
+  },
+  {
+    "id": "aurlandsfjellet",
+    "name": "Aurlandsfjellet",
+    "county": "Vestland",
+    "length": 47,
+    "maxElevation": 1308,
+    "lat": 60.9,
+    "lon": 7.25,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norway_Snovegen.jpg?width=1024",
+    "blurb": "Snøvegen over Aurlandsfjell forbinder Aurlandsvangen og Lærdal med høyfjellsutsikt."
+  },
+  {
+    "id": "hardanger",
+    "name": "Hardanger",
+    "county": "Vestland",
+    "length": 158,
+    "maxElevation": 274,
+    "lat": 60.3,
+    "lon": 6.5,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Steinsdalsfossen%2C_%C3%B8stover.jpg?width=1024",
+    "blurb": "Fruktblomstre, fossefall og Hardangerfjorden langs en av Norges vakreste fjordveier."
+  },
+  {
+    "id": "hardangervidda",
+    "name": "Hardangervidda",
+    "county": "Vestland / Numedal",
+    "length": 67,
+    "maxElevation": 1251,
+    "lat": 60.43,
+    "lon": 7.25,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Voringsfossen-viewingbridge-2020.jpg?width=1024",
+    "blurb": "Rv. 7 over Europas største høgfjellsplatå med Vøringsfossen som naturlig høydepunkt."
+  },
+  {
+    "id": "ryfylke",
+    "name": "Ryfylke",
+    "county": "Rogaland",
+    "length": 260,
+    "maxElevation": 971,
+    "lat": 59.5,
+    "lon": 6.5,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Preikestolen_Norge.jpg?width=1024",
+    "blurb": "Lysefjord, Preikestolen og innlandsfjorder i det mangfoldige Ryfylke."
+  },
+  {
+    "id": "jaeren",
+    "name": "Jæren",
+    "county": "Rogaland",
+    "length": 130,
+    "maxElevation": 274,
+    "lat": 58.72,
+    "lon": 5.75,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ogna_sandstrand.jpg?width=1024",
+    "blurb": "Åpen kystlinje med sandstrender, gårdslandskap og fossile kystklinter på Jæren."
+  }
+]

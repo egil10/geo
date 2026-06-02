@@ -1,0 +1,106 @@
+[
+  {
+    "id": "vidde-basecearru",
+    "name": "Basečearru",
+    "county": "Finnmark",
+    "lat": 70.6,
+    "lon": 29.5
+  },
+  {
+    "id": "vidde-doarescearru",
+    "name": "Doaresčearru",
+    "county": "Finnmark",
+    "lat": 70.426,
+    "lon": 29.08
+  },
+  {
+    "id": "vidde-finnmarksvidda",
+    "name": "Finnmarksvidda",
+    "county": "Finnmark",
+    "lat": 69.316667,
+    "lon": 23.816667,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/SUC50562.JPG?width=1024"
+  },
+  {
+    "id": "vidde-giksduottar",
+    "name": "Gikšduottar",
+    "county": "Finnmark",
+    "lat": 70.52027,
+    "lon": 27.19818
+  },
+  {
+    "id": "vidde-hardangervidda",
+    "name": "Hardangervidda",
+    "county": "Buskerud",
+    "area": 6500,
+    "lat": 60.051989,
+    "lon": 7.018033,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hardangervidda.jpg?width=1024"
+  },
+  {
+    "id": "vidde-ifjordfjellet",
+    "name": "Ifjordfjellet",
+    "county": "Finnmark",
+    "lat": 70.41097,
+    "lon": 27.27595,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/N98-Finnmark-construction-2012-07-09-18-32-034.jpg?width=1024"
+  },
+  {
+    "id": "vidde-jakobselvvidda",
+    "name": "Jakobselvvidda",
+    "county": "Finnmark",
+    "lat": 70.38,
+    "lon": 28.92
+  },
+  {
+    "id": "vidde-laksefjordvidda",
+    "name": "Laksefjordvidda",
+    "county": "Finnmark",
+    "lat": 70.25,
+    "lon": 27.2
+  },
+  {
+    "id": "vidde-njunnas",
+    "name": "Njunnás",
+    "county": "Finnmark",
+    "lat": 70.355,
+    "lon": 26.2
+  },
+  {
+    "id": "vidde-rakkocearru",
+    "name": "Rákkočearru",
+    "county": "Finnmark",
+    "lat": 70.74,
+    "lon": 29
+  },
+  {
+    "id": "vidde-rorosvidda",
+    "name": "Rørosvidda",
+    "county": "Trøndelag",
+    "lat": 62.833333,
+    "lon": 11.833333,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fra_R%C3%B8rosvidda_(729024995).jpg?width=1024"
+  },
+  {
+    "id": "vidde-vahcir",
+    "name": "Váhčir",
+    "county": "Finnmark",
+    "lat": 69.6676,
+    "lon": 29.7156
+  },
+  {
+    "id": "vidde-valdresflye",
+    "name": "Valdresflye",
+    "county": "Oppland",
+    "lat": 61.38603,
+    "lon": 8.81646,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Valdresflya_(Jotunheimen).jpg?width=1024"
+  },
+  {
+    "id": "vidde-viddene",
+    "name": "Viddene",
+    "county": "Finnmark",
+    "lat": 70.45,
+    "lon": 29.52
+  }
+]
