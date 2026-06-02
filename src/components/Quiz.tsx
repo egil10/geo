@@ -17,6 +17,7 @@ import { EloState } from "@/lib/elo";
 import { imgAt, heroProps, preloadImage, Quality } from "@/lib/images";
 import { matchesAnswer } from "@/lib/match";
 import { fylkePathByNumber, kommunePathByNumber, projectPin, onMainland } from "@/lib/geo";
+import { onSvalbard, projectSvalbard } from "@/lib/svalbard";
 import QImage from "./QImage";
 import NorwayMap from "./NorwayMap";
 import TopBar from "./TopBar";
@@ -31,10 +32,13 @@ function wikiHref(id: string, name: string): string {
 
 // Locate a place on the Norway map: highlight a fylke/kommune by its number,
 // otherwise drop a pin at its coordinates. Returns nothing if not locatable.
-function locate(subject: { number?: string; lat?: number; lon?: number }): { region?: string; pin?: { x: number; y: number } } | null {
+function locate(subject: { number?: string; lat?: number; lon?: number }): { region?: string; pin?: { x: number; y: number }; svalbard?: { x: number; y: number } } | null {
   if (subject.number && fylkePathByNumber.has(subject.number)) return { region: fylkePathByNumber.get(subject.number) };
   if (subject.number && kommunePathByNumber.has(subject.number)) return { region: kommunePathByNumber.get(subject.number) };
-  if (subject.lat != null && subject.lon != null && onMainland(subject.lat, subject.lon)) return { pin: projectPin(subject.lat, subject.lon) };
+  if (subject.lat != null && subject.lon != null) {
+    if (onMainland(subject.lat, subject.lon)) return { pin: projectPin(subject.lat, subject.lon) };
+    if (onSvalbard(subject.lat, subject.lon)) return { svalbard: projectSvalbard(subject.lat, subject.lon) };
+  }
   return null;
 }
 
@@ -485,7 +489,7 @@ function PromptCard({ round, quality }: { round: Round; quality: Quality }) {
               <p className="line-clamp-2 text-center text-base font-semibold leading-snug sm:text-lg">{round.prompt.text}</p>
             </div>
             <div className="relative flex-1 pb-2">
-              <NorwayMap region={round.prompt.region} pin={round.prompt.pin} line={round.prompt.line} />
+              <NorwayMap region={round.prompt.region} pin={round.prompt.pin} line={round.prompt.line} svalbard={round.prompt.svalbard} />
             </div>
           </>
         ) : (
@@ -832,7 +836,7 @@ function RevealBar({
           <div className="flex gap-3 lg:min-h-0 lg:flex-1 lg:flex-col">
             {loc && (
               <div className="relative h-[124px] w-[100px] shrink-0 overflow-hidden rounded-2xl bg-black/[0.03] dark:bg-white/[0.04] lg:h-auto lg:w-full lg:flex-1 lg:min-h-0">
-                <NorwayMap region={loc.region} pin={loc.pin} />
+                <NorwayMap region={loc.region} pin={loc.pin} svalbard={loc.svalbard} />
               </div>
             )}
             {thumb && (

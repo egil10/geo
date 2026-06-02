@@ -44,17 +44,19 @@ import {
 import { difficultyToRating } from "./elo";
 import { fylkePathByNumber, kommunePathByNumber, projectPin, onMainland } from "./geo";
 import { riverLine, lakeShape, fjordLine } from "./water";
+import { onSvalbard, projectSvalbard } from "./svalbard";
 import { normalize } from "./match";
 
 // Map payload for a feature: trace the river/fjord (line) or fill the lake
-// (region) where we have geometry; otherwise drop a pin at its coordinates.
-// Returns null for offshore subjects (Svalbard etc.) with no geometry — the map
-// only covers the mainland, so those skip the map round entirely.
-function featureMapGeom(p: Place): { region?: string; line?: string; pin?: { x: number; y: number } } | null {
+// (region) where we have geometry; pin on the mainland; or pin in the Svalbard
+// inset for Svalbard subjects. null = unplaceable (Jan Mayen, Bouvetøya) → skip.
+function featureMapGeom(p: Place): { region?: string; line?: string; pin?: { x: number; y: number }; svalbard?: { x: number; y: number } } | null {
   if (p.kind === "innsjo" && lakeShape(p.id)) return { region: lakeShape(p.id) };
   if (p.kind === "elv" && riverLine(p.id)) return { line: riverLine(p.id) };
   if (p.kind === "fjord" && fjordLine(p.id)) return { line: fjordLine(p.id) };
-  if (p.lat != null && p.lon != null && onMainland(p.lat, p.lon)) return { pin: projectPin(p.lat, p.lon) };
+  if (p.lat == null || p.lon == null) return null;
+  if (onMainland(p.lat, p.lon)) return { pin: projectPin(p.lat, p.lon) };
+  if (onSvalbard(p.lat, p.lon)) return { svalbard: projectSvalbard(p.lat, p.lon) };
   return null;
 }
 const isMappable = (p: Place) => featureMapGeom(p) != null;
@@ -180,7 +182,7 @@ export function quizTypeOf(key: string): QuizType {
 export type Prompt =
   | { kind: "text"; text: string }
   | { kind: "image"; text: string; src: string; alt: string; variant: "coa" | "photo" }
-  | { kind: "map"; text: string; region?: string; pin?: { x: number; y: number }; line?: string };
+  | { kind: "map"; text: string; region?: string; pin?: { x: number; y: number }; line?: string; svalbard?: { x: number; y: number } };
 
 export interface Round {
   uid: string;

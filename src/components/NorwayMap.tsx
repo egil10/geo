@@ -1,6 +1,7 @@
 "use client";
 
 import { GEO_VIEWBOX, fylkerBase } from "@/lib/geo";
+import { SVALBARD_VIEWBOX, svalbardOutline } from "@/lib/svalbard";
 
 // Rough centroid + extent of a path, so small regions can get a locator ring.
 function pathStats(d: string) {
@@ -18,9 +19,24 @@ function pathStats(d: string) {
 }
 
 // Renders Norway (fylke outlines) with one region highlighted, a route/river
-// traced (line), or a point pinned.
-export default function NorwayMap({ region, pin, line }: { region?: string; pin?: { x: number; y: number }; line?: string }) {
+// traced (line), or a point pinned. For Svalbard subjects, renders the Svalbard
+// archipelago inset (its own viewBox) with the point pinned there instead.
+export default function NorwayMap({ region, pin, line, svalbard }: { region?: string; pin?: { x: number; y: number }; line?: string; svalbard?: { x: number; y: number } }) {
   const rs = region ? pathStats(region) : null;
+  if (svalbard) {
+    return (
+      <svg viewBox={SVALBARD_VIEWBOX} className="absolute inset-0 h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Kart over Svalbard">
+        <text x="50%" y="22" textAnchor="middle" className="fill-ink-muted text-[15px] font-semibold">Svalbard</text>
+        <g className="fill-black/[0.09] stroke-white/70 dark:fill-white/[0.14] dark:stroke-black/30" strokeWidth="0.8">
+          {svalbardOutline.map((d, i) => (
+            <path key={i} d={d} />
+          ))}
+        </g>
+        <circle cx={svalbard.x} cy={svalbard.y} r="11" fill="#e11d48" opacity="0.22" />
+        <circle cx={svalbard.x} cy={svalbard.y} r="5" fill="#e11d48" stroke="#fff" strokeWidth="1.6" />
+      </svg>
+    );
+  }
   return (
     <svg viewBox={GEO_VIEWBOX} className="absolute inset-0 h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Kart over Norge">
       <g className="fill-black/[0.09] stroke-white/70 dark:fill-white/[0.14] dark:stroke-black/30" strokeWidth="0.6">
