@@ -42,18 +42,22 @@ import {
   fmtInt,
 } from "./data";
 import { difficultyToRating } from "./elo";
-import { fylkePathByNumber, kommunePathByNumber, projectPin } from "./geo";
+import { fylkePathByNumber, kommunePathByNumber, projectPin, onMainland } from "./geo";
 import { riverLine, lakeShape, fjordLine } from "./water";
 import { normalize } from "./match";
 
 // Map payload for a feature: trace the river/fjord (line) or fill the lake
 // (region) where we have geometry; otherwise drop a pin at its coordinates.
-function featureMapGeom(p: Place): { region?: string; line?: string; pin?: { x: number; y: number } } {
+// Returns null for offshore subjects (Svalbard etc.) with no geometry — the map
+// only covers the mainland, so those skip the map round entirely.
+function featureMapGeom(p: Place): { region?: string; line?: string; pin?: { x: number; y: number } } | null {
   if (p.kind === "innsjo" && lakeShape(p.id)) return { region: lakeShape(p.id) };
   if (p.kind === "elv" && riverLine(p.id)) return { line: riverLine(p.id) };
   if (p.kind === "fjord" && fjordLine(p.id)) return { line: fjordLine(p.id) };
-  return { pin: projectPin(p.lat!, p.lon!) };
+  if (p.lat != null && p.lon != null && onMainland(p.lat, p.lon)) return { pin: projectPin(p.lat, p.lon) };
+  return null;
 }
+const isMappable = (p: Place) => featureMapGeom(p) != null;
 
 // Geocode a town name to a lat/lon via the matching municipality (its centre or
 // administrative seat) — used to pin football clubs / newspapers on the map.
@@ -918,15 +922,17 @@ for (const { kind, list, cat } of FEATURE_KINDS) {
       },
     });
   }
-  // Map pin → name (only kinds that carry coordinates).
-  const pinPool = list.filter((p) => p.lat != null && p.lon != null);
+  // Map → name (pin, or traced line / filled region where we have geometry).
+  // Offshore subjects with no geometry are excluded (the map is mainland-only).
+  const pinPool = list.filter(isMappable);
   if (pinPool.length >= 6) {
     GENERATORS.push({
       key: `${cat}-kart`,
       cats: [cat],
       pool: pinPool,
       build: (p) => {
-        if (p.lat == null || p.lon == null) return null;
+        const geom = featureMapGeom(p);
+        if (!geom) return null;
         const dd = nameDistractors(list, p, 3);
         if (dd.length < 3) return null;
         const { choices, answerIndex } = assemble(p.name, dd.map((x) => x.name));
@@ -935,7 +941,7 @@ for (const { kind, list, cat } of FEATURE_KINDS) {
           genKey: `${cat}-kart`,
           cat,
           subject: p,
-          prompt: { kind: "map", text: `${meta.art} ${meta.noun} er markert på kartet?`, ...featureMapGeom(p) },
+          prompt: { kind: "map", text: `${meta.art} ${meta.noun} er markert på kartet?`, ...geom },
           choices,
           choiceInfo: infoFor([p, ...dd], metricInfo, choices),
           answerIndex,

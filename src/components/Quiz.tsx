@@ -16,7 +16,7 @@ import {
 import { EloState } from "@/lib/elo";
 import { imgAt, heroProps, preloadImage, Quality } from "@/lib/images";
 import { matchesAnswer } from "@/lib/match";
-import { fylkePathByNumber, kommunePathByNumber, projectPin } from "@/lib/geo";
+import { fylkePathByNumber, kommunePathByNumber, projectPin, onMainland } from "@/lib/geo";
 import QImage from "./QImage";
 import NorwayMap from "./NorwayMap";
 import TopBar from "./TopBar";
@@ -34,7 +34,7 @@ function wikiHref(id: string, name: string): string {
 function locate(subject: { number?: string; lat?: number; lon?: number }): { region?: string; pin?: { x: number; y: number } } | null {
   if (subject.number && fylkePathByNumber.has(subject.number)) return { region: fylkePathByNumber.get(subject.number) };
   if (subject.number && kommunePathByNumber.has(subject.number)) return { region: kommunePathByNumber.get(subject.number) };
-  if (subject.lat != null && subject.lon != null) return { pin: projectPin(subject.lat, subject.lon) };
+  if (subject.lat != null && subject.lon != null && onMainland(subject.lat, subject.lon)) return { pin: projectPin(subject.lat, subject.lon) };
   return null;
 }
 
