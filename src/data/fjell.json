@@ -459,7 +459,7 @@
     "county": "Innlandet"
   },
   {
-    "id": "fjell-skarvflytindene",
+    "id": "fjell-sondre-skarvflytind",
     "name": "Søndre Skarvflytind",
     "elevation": 2210,
     "county": "Innlandet"
@@ -632,7 +632,7 @@
     "county": "Innlandet"
   },
   {
-    "id": "fjell-hestbreapiggan",
+    "id": "fjell-nordre-hestbreapiggen",
     "name": "Nørdre Hestbreapiggen",
     "elevation": 2172,
     "county": "Innlandet"
@@ -711,7 +711,7 @@
     "county": "Innlandet"
   },
   {
-    "id": "fjell-tverrbottindan",
+    "id": "fjell-store-tverrbottinden",
     "name": "Store Tverrbottinden",
     "elevation": 2161,
     "county": "Innlandet"
@@ -780,7 +780,7 @@
     "county": "Innlandet"
   },
   {
-    "id": "fjell-skarvflytindene",
+    "id": "fjell-midtre-skarvflytind",
     "name": "Midtre Skarvflytind",
     "elevation": 2154,
     "county": "Innlandet"
@@ -795,7 +795,7 @@
     "county": "Innlandet"
   },
   {
-    "id": "fjell-tverrbottindan",
+    "id": "fjell-nord-midtre-tverrbottindan",
     "name": "Nord Midtre Tverrbottindan",
     "elevation": 2151,
     "county": "Innlandet"
@@ -954,7 +954,7 @@
     "county": "Innlandet"
   },
   {
-    "id": "fjell-urdadalstindene",
+    "id": "fjell-store-urdadalstinden",
     "name": "Store Urdadalstinden",
     "elevation": 2116,
     "county": "Innlandet"
@@ -995,7 +995,7 @@
     "county": "Innlandet"
   },
   {
-    "id": "fjell-tverrbottindan",
+    "id": "fjell-vestre-tverrbottinden",
     "name": "Vestre Tverrbottinden",
     "elevation": 2113,
     "county": "Innlandet"
@@ -1015,7 +1015,7 @@
     "county": "Innlandet"
   },
   {
-    "id": "fjell-tverrbottindan",
+    "id": "fjell-sor-midtre-tverrbottinden",
     "name": "Sør Midtre Tverrbottinden",
     "elevation": 2106,
     "county": "Innlandet"
@@ -1036,7 +1036,7 @@
     "county": "Innlandet"
   },
   {
-    "id": "fjell-austanbottstindane",
+    "id": "fjell-sore-austanbottstind",
     "name": "Søre Austanbottstind",
     "elevation": 2103,
     "county": "Vestland"
@@ -1264,7 +1264,7 @@
     "county": "Innlandet"
   },
   {
-    "id": "fjell-urdadalstindene",
+    "id": "fjell-midtre-urdadalstinden",
     "name": "Midtre Urdadalstinden",
     "elevation": 2060,
     "county": "Innlandet"
@@ -1275,7 +1275,7 @@
     "elevation": 2056
   },
   {
-    "id": "fjell-midtmaradalstindane",
+    "id": "fjell-store-midtmaradalstinden",
     "name": "Store Midtmaradalstinden",
     "elevation": 2056,
     "county": "Vestland"

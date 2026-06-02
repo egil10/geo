@@ -109,6 +109,16 @@ function parsePeaks(html) {
 async function main() {
   const existing = JSON.parse(await readFile(FILE, "utf8"));
   const known = new Set(existing.map((x) => norm(x.name)));
+  // Ids must be unique — several sub-tops link to the same group article, so
+  // base the id on the (unique) name and guard against any residual collision.
+  const usedIds = new Set(existing.map((x) => x.id));
+  const uniqueId = (name) => {
+    const base = `fjell-${slug(name)}`;
+    let id = base, n = 2;
+    while (usedIds.has(id)) id = `${base}-${n++}`;
+    usedIds.add(id);
+    return id;
+  };
   // Index existing peaks by rounded elevation, so a Wikipedia peak that's the
   // same mountain under a fuller name (same height + same base word) is skipped.
   const byElev = new Map();
@@ -147,7 +157,7 @@ async function main() {
     const k = Math.round(p.elevation);
     if (!byElev.has(k)) byElev.set(k, []);
     byElev.get(k).push(new Set(baseWords(name)));
-    added.push({ id: `fjell-${slug(p.title || name)}`, name, elevation: p.elevation, county: p.fylke || undefined });
+    added.push({ id: uniqueId(name), name, elevation: p.elevation, county: p.fylke || undefined });
   }
 
   const merged = [...existing, ...added].sort((a, b) => (b.elevation ?? 0) - (a.elevation ?? 0));
