@@ -27,7 +27,7 @@ export default function QImage({
     // image in a flex slot can fail to resolve its height, size to its width and
     // overflow — so a portrait gets clipped by the card even with object-contain.
     // Both layers are absolute + contained, so the whole image always shows and
-    // the leftover space is the slot's warm letterbox, never a crop or blur bleed.
+    // the leftover space stays the card colour behind it, never a crop or bleed.
     <div className="absolute inset-0 overflow-hidden">
       <img
         aria-hidden
