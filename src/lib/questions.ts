@@ -43,7 +43,17 @@ import {
 } from "./data";
 import { difficultyToRating } from "./elo";
 import { fylkePathByNumber, kommunePathByNumber, projectPin } from "./geo";
+import { riverLine, lakeShape, fjordLine } from "./water";
 import { normalize } from "./match";
+
+// Map payload for a feature: trace the river/fjord (line) or fill the lake
+// (region) where we have geometry; otherwise drop a pin at its coordinates.
+function featureMapGeom(p: Place): { region?: string; line?: string; pin?: { x: number; y: number } } {
+  if (p.kind === "innsjo" && lakeShape(p.id)) return { region: lakeShape(p.id) };
+  if (p.kind === "elv" && riverLine(p.id)) return { line: riverLine(p.id) };
+  if (p.kind === "fjord" && fjordLine(p.id)) return { line: fjordLine(p.id) };
+  return { pin: projectPin(p.lat!, p.lon!) };
+}
 
 // Geocode a town name to a lat/lon via the matching municipality (its centre or
 // administrative seat) — used to pin football clubs / newspapers on the map.
@@ -925,7 +935,7 @@ for (const { kind, list, cat } of FEATURE_KINDS) {
           genKey: `${cat}-kart`,
           cat,
           subject: p,
-          prompt: { kind: "map", text: `${meta.art} ${meta.noun} er markert på kartet?`, pin: projectPin(p.lat, p.lon) },
+          prompt: { kind: "map", text: `${meta.art} ${meta.noun} er markert på kartet?`, ...featureMapGeom(p) },
           choices,
           choiceInfo: infoFor([p, ...dd], metricInfo, choices),
           answerIndex,
