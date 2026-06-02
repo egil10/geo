@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { Search, LayoutGrid, Table2, ArrowUp, ArrowDown, MapPin } from "lucide-react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Search, LayoutGrid, Table2, ArrowUp, ArrowDown, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
 import TopBar from "./TopBar";
 import { EloState } from "@/lib/elo";
 import { kommuner, fylker, fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, klubber, aviser, byer, stasjoner, lufthavner, baner, Place, fmtInt, fmtMetric } from "@/lib/data";
@@ -87,6 +87,23 @@ export default function Explore({
   const [sortKey, setSortKey] = useState<keyof Place>("population");
   const [sortDir, setSortDir] = useState<"asc" | "desc">("desc");
 
+  // Horizontal pill scroller: arrow buttons for mouse users (no swipe/trackpad).
+  const scrollerRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+  const updateScrollArrows = useCallback(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 4);
+    setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 4);
+  }, []);
+  useEffect(() => {
+    updateScrollArrows();
+    window.addEventListener("resize", updateScrollArrows);
+    return () => window.removeEventListener("resize", updateScrollArrows);
+  }, [updateScrollArrows]);
+  const scrollPills = (dir: -1 | 1) => scrollerRef.current?.scrollBy({ left: dir * 240, behavior: "smooth" });
+
   const group = useMemo(() => GROUPS.find((g) => g.key === groupKey)!, [groupKey]);
 
   const selectGroup = (g: Group) => {
@@ -128,17 +145,37 @@ export default function Explore({
         <p className="text-sm text-ink-muted">Bla gjennom alle fasitene — lær navn, tall og våpen før du tar quizen.</p>
       </div>
 
-      {/* Category pills */}
-      <div className="flex gap-2 overflow-x-auto no-scrollbar -mx-1 px-1 pb-1">
-        {GROUPS.map((g) => (
+      {/* Category pills — scrollable, with arrow buttons for mouse users. */}
+      <div className="relative -mx-1">
+        {canScrollLeft && (
           <button
-            key={g.key}
-            onClick={() => selectGroup(g)}
-            className={`pill shrink-0 border ${g.key === groupKey ? "border-transparent bg-ink text-canvas" : "border-[var(--field-stroke)] bg-[var(--field)] text-ink/80 hover:text-ink"}`}
+            onClick={() => scrollPills(-1)}
+            aria-label="Bla til venstre"
+            className="absolute left-1 top-1/2 z-10 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-full border border-[var(--field-stroke)] bg-[var(--glass-bg)] text-ink shadow-sm backdrop-blur transition hover:bg-black/[0.04] focus-ring dark:hover:bg-white/[0.06]"
           >
-            {g.label}
+            <ChevronLeft size={18} />
           </button>
-        ))}
+        )}
+        <div ref={scrollerRef} onScroll={updateScrollArrows} className="flex gap-2 overflow-x-auto no-scrollbar px-1 pb-1">
+          {GROUPS.map((g) => (
+            <button
+              key={g.key}
+              onClick={() => selectGroup(g)}
+              className={`pill shrink-0 border ${g.key === groupKey ? "border-transparent bg-ink text-canvas" : "border-[var(--field-stroke)] bg-[var(--field)] text-ink/80 hover:text-ink"}`}
+            >
+              {g.label}
+            </button>
+          ))}
+        </div>
+        {canScrollRight && (
+          <button
+            onClick={() => scrollPills(1)}
+            aria-label="Bla til høyre"
+            className="absolute right-1 top-1/2 z-10 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-full border border-[var(--field-stroke)] bg-[var(--glass-bg)] text-ink shadow-sm backdrop-blur transition hover:bg-black/[0.04] focus-ring dark:hover:bg-white/[0.06]"
+          >
+            <ChevronRight size={18} />
+          </button>
+        )}
       </div>
 
       {/* Controls */}

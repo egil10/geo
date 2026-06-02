@@ -350,11 +350,11 @@ export default function Quiz({
 
   // Verdict-or-status block: the side column in Velg/Skriv, stacked below in Sortér.
   const statusSlot = (
-    <div className="min-h-[104px]">
+    <div className="h-full min-h-[104px]">
       {answered && round ? (
         <RevealBar round={round} won={!!state.won} skipped={state.skipped} delta={state.delta} typed={state.typed} onNext={handleNext} />
       ) : (
-        <div className="animate-fade-in flex min-h-[104px] flex-col items-center justify-center gap-2 text-sm text-ink-muted">
+        <div className="animate-fade-in flex h-full min-h-[104px] flex-col items-center justify-center gap-2 text-sm text-ink-muted">
           <span>Spørsmål {state.total + 1}</span>
           <button
             onClick={handleSkip}
@@ -412,7 +412,7 @@ export default function Quiz({
           <div className="lg:col-start-1 lg:row-start-2">
             <AnswerArea round={round} mode={mode} answered={answered} picked={state.picked} onChoose={answerChoose} onWrite={answerWrite} />
           </div>
-          <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2">{statusSlot}</div>
+          <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 lg:self-stretch">{statusSlot}</div>
         </div>
       ) : null}
     </div>
@@ -521,7 +521,7 @@ function AnswerArea({
                 key={i}
                 disabled={answered}
                 onClick={() => onChoose(i)}
-                className={`group flex min-h-[3.5rem] items-center gap-3 rounded-2xl border px-4 py-2.5 text-left transition duration-150 focus-ring ${cls}`}
+                className={`group flex h-16 items-center gap-3 rounded-2xl border px-4 text-left transition duration-150 focus-ring ${cls}`}
               >
                 <span
                   className={`grid h-6 w-6 shrink-0 place-items-center rounded-md text-[11px] font-semibold tabular-nums ${
@@ -531,8 +531,10 @@ function AnswerArea({
                   {answered && isAnswer ? <Check size={14} /> : answered && isPicked ? <X size={14} /> : i + 1}
                 </span>
                 <span className="line-clamp-2 min-w-0 flex-1 font-medium leading-snug">{choice}</span>
-                {answered && round.choiceInfo?.[i] && (
-                  <span className="shrink-0 text-[11px] tabular-nums text-ink-muted">{round.choiceInfo[i]}</span>
+                {round.choiceInfo?.[i] && (
+                  <span className={`shrink-0 text-[11px] tabular-nums text-ink-muted transition-opacity duration-150 ${answered ? "opacity-100" : "opacity-0"}`}>
+                    {round.choiceInfo[i]}
+                  </span>
                 )}
               </button>
             );
@@ -785,9 +787,9 @@ function RevealBar({
   const hasMedia = !!(loc || thumb);
 
   return (
-    <div className="animate-fade-up glass rounded-[24px] p-3">
+    <div className="animate-fade-up glass rounded-[24px] p-3 lg:flex lg:h-full lg:flex-col">
       {/* Header: verdict + Elo on the left, Neste on the right. */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 lg:shrink-0">
         <span
           className="flex items-center gap-1.5 text-sm font-bold"
           style={{ color: skipped ? "var(--amber)" : won ? "var(--good)" : "var(--bad)" }}
@@ -813,19 +815,25 @@ function RevealBar({
         </button>
       </div>
 
-      {/* Body: a locator map and/or photo, the explanation, and a wiki link. */}
-      <div className={`flex gap-3 ${hasMedia ? "mt-3" : "mt-2"}`}>
-        {loc && (
-          <div className="relative h-[124px] w-[100px] shrink-0 overflow-hidden rounded-2xl bg-black/[0.03] dark:bg-white/[0.04]">
-            <NorwayMap region={loc.region} pin={loc.pin} />
+      {/* Body: a locator map and/or photo, the explanation, and a wiki link.
+          On wide screens the card fills the column beside the choices, so the
+          media stacks above the text and the block centres in the tall card. */}
+      <div className={`flex gap-3 ${hasMedia ? "mt-3" : "mt-2"} lg:flex-1 lg:flex-col lg:justify-center`}>
+        {hasMedia && (
+          <div className="flex gap-3 lg:justify-center">
+            {loc && (
+              <div className="relative h-[124px] w-[100px] shrink-0 overflow-hidden rounded-2xl bg-black/[0.03] dark:bg-white/[0.04] lg:h-[160px] lg:w-[130px]">
+                <NorwayMap region={loc.region} pin={loc.pin} />
+              </div>
+            )}
+            {thumb && (
+              <div className="hidden h-[124px] w-[100px] shrink-0 overflow-hidden rounded-2xl bg-black/[0.04] sm:block dark:bg-white/[0.05] lg:h-[160px] lg:w-[130px]">
+                <img src={imgAt(thumb, 240)} alt="" className="h-full w-full object-contain" />
+              </div>
+            )}
           </div>
         )}
-        {thumb && (
-          <div className="hidden h-[124px] w-[100px] shrink-0 overflow-hidden rounded-2xl bg-black/[0.04] sm:block dark:bg-white/[0.05]">
-            <img src={imgAt(thumb, 240)} alt="" className="h-full w-full object-contain" />
-          </div>
-        )}
-        <div className="flex min-w-0 flex-1 flex-col">
+        <div className="flex min-w-0 flex-1 flex-col lg:flex-none">
           {detail}
           {subject && (
             <a

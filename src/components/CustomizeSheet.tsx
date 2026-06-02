@@ -25,7 +25,6 @@ import {
   Type as TypeIcon,
   LayoutGrid,
   Shapes,
-  Check,
 } from "lucide-react";
 import Modal from "./Modal";
 import { CATEGORIES, Category, QUIZ_TYPES, QuizType, availableTypesFor, availableCatsFor } from "@/lib/questions";
@@ -55,6 +54,10 @@ const ICONS: Record<string, React.ComponentType<{ size?: number; strokeWidth?: n
   Image: ImageIcon,
   Type: TypeIcon,
 };
+
+// Category chips are listed alphabetically (nb locale → æ, ø, å sort last); the
+// canonical CATEGORIES order is kept for question generation elsewhere.
+const SORTED_CATEGORIES = [...CATEGORIES].sort((a, b) => a.label.localeCompare(b.label, "nb"));
 
 // Toggle a key in a multi-select set where "empty" and "full" both mean "Alt".
 function multiToggle<T>(set: Set<T>, key: T, all: T[]): Set<T> {
@@ -95,7 +98,6 @@ function Chip({
     >
       <Icon size={15} strokeWidth={2} />
       <span>{label}</span>
-      {active && <Check size={14} className="-mr-0.5 opacity-80" />}
     </button>
   );
 }
@@ -149,7 +151,7 @@ export default function CustomizeSheet({
 
       <Section title="Kategori" sub="hva spørsmålene handler om">
         <Chip active={catsAll} Icon={LayoutGrid} label="Alt" onClick={() => onCats(new Set())} />
-        {CATEGORIES.map((c) => {
+        {SORTED_CATEGORIES.map((c) => {
           const active = !catsAll && selected.has(c.key);
           return (
             <Chip
