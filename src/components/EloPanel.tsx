@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Modal from "./Modal";
 import { EloState, tierFor, accuracy, TIERS } from "@/lib/elo";
 import { CATEGORIES } from "@/lib/questions";
@@ -71,7 +72,13 @@ function HistoryChart({ history, games }: { history: number[]; games: number }) 
 
 export default function EloPanel({ elo, onClose }: { elo: EloState; onClose: () => void }) {
   const tier = tierFor(elo.rating);
+  const [catSort, setCatSort] = useState<"acc" | "name">("acc");
   const catStats = CATEGORIES.map((c) => ({ ...c, s: elo.perCat[c.key] })).filter((c) => c.s && c.s.games > 0);
+  const sortedCats = [...catStats].sort((a, b) =>
+    catSort === "name"
+      ? a.label.localeCompare(b.label, "nb")
+      : b.s!.wins / b.s!.games - a.s!.wins / a.s!.games || b.s!.games - a.s!.games,
+  );
 
   return (
     <Modal onClose={onClose} title="Din rangering" size="lg">
@@ -124,9 +131,25 @@ export default function EloPanel({ elo, onClose }: { elo: EloState; onClose: () 
 
       {catStats.length > 0 && (
         <div className="mt-4">
-          <div className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-ink-muted">Per kategori</div>
+          <div className="mb-1.5 flex items-center justify-between gap-2">
+            <div className="text-[11px] font-semibold uppercase tracking-wider text-ink-muted">Per kategori</div>
+            <div className="flex items-center gap-0.5 rounded-full bg-black/[0.05] p-0.5 dark:bg-white/[0.06]">
+              {([["acc", "Treff"], ["name", "A–Å"]] as const).map(([key, label]) => (
+                <button
+                  key={key}
+                  onClick={() => setCatSort(key)}
+                  aria-pressed={catSort === key}
+                  className={`rounded-full px-2.5 py-1 text-[11px] font-semibold transition focus-ring ${
+                    catSort === key ? "bg-canvas text-ink shadow-sm dark:bg-white/15" : "text-ink-muted hover:text-ink"
+                  }`}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
           <div className="space-y-1.5">
-            {catStats.map((c) => {
+            {sortedCats.map((c) => {
               const acc = Math.round((c.s!.wins / c.s!.games) * 100);
               return (
                 <div key={c.key} className="flex items-center gap-3">
