@@ -9,17 +9,30 @@ const display = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://norgesquiz.no"),
   title: "NorgesQuiz — Norges ultimate geografiquiz",
   description:
     "Bli best i norsk geografi. Endeløs quiz om fylker, kommuner, fjell, elver, innsjøer, fjorder, øyer, kommunevåpen og kommunenummer — med Elo-rangering.",
   applicationName: "NorgesQuiz",
   authors: [{ name: "NorgesQuiz" }],
   keywords: ["Norge", "geografi", "quiz", "fylker", "kommuner", "fjell", "kart"],
+  alternates: { canonical: "/" },
   openGraph: {
     title: "NorgesQuiz — Norges ultimate geografiquiz",
     description: "Endeløs quiz om norsk geografi med Elo-rangering.",
+    url: "https://norgesquiz.no",
+    siteName: "NorgesQuiz",
     type: "website",
     locale: "nb_NO",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NorgesQuiz — Norges ultimate geografiquiz",
+    description: "Endeløs quiz om norsk geografi med Elo-rangering.",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
