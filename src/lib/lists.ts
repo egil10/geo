@@ -3,7 +3,7 @@
 // input fills whichever row your guess matches.
 
 import { fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, kommuner, fylker, lufthavner, byer, baner, stasjoner, Place, fmtMetric, fmtInt } from "./data";
-import type { Category } from "./questions";
+import { CATEGORIES, type Category } from "./questions";
 import fotball from "@/data/fotballklubber.json";
 import aviser from "@/data/aviser.json";
 
@@ -202,6 +202,44 @@ export const LISTS: ListDef[] = [
   { key: "stasjoner", title: "Jernbanestasjoner", blurb: "Stasjonene i Norge", rows: stasjonRows },
   ...perFylkeLists,
 ];
+
+// Which categories each board belongs to. Picking a filter in Lister narrows
+// the board pills to the relevant ones. Boards absent here are "general"
+// (cross-category, e.g. the extremes) and show only when no filter is active.
+const LIST_CATS: Record<string, Category[]> = {
+  fjell10: ["fjell"],
+  fjell2300: ["fjell"],
+  elver10: ["elver"],
+  innsjoer10: ["innsjoer"],
+  fjorder10: ["fjorder"],
+  oyer10: ["oyer"],
+  isbreer10: ["isbreer"],
+  foss10: ["fossefall"],
+  tunneler10: ["tunneler"],
+  byer: ["byer", "befolkning"],
+  baner: ["baner"],
+  stasjoner: ["stasjoner"],
+  lufthavnkoder: ["lufthavner"],
+  fylker: ["fylker"],
+  fylkesentre: ["fylker"],
+  fylkesnummer: ["fylker", "nummer"],
+  kommuner10: ["kommuner", "befolkning"],
+  kommuner50k: ["kommuner", "befolkning"],
+  "kommuner-alle": ["kommuner"],
+  kommunenummer: ["kommuner", "nummer"],
+};
+fotballLists.forEach((l) => (LIST_CATS[l.key] = ["fotball"]));
+aviserLists.forEach((l) => (LIST_CATS[l.key] = ["aviser"]));
+perFylkeLists.forEach((l) => (LIST_CATS[l.key] = ["kommuner"]));
+
+// Boards to offer for the current category filter. No filter (or everything
+// selected) offers every board, including the general/extreme ones. A filter
+// that matches no board (e.g. våpen, which can't be typed) falls back to all.
+export function listsForSelection(selected: Set<Category>): ListDef[] {
+  if (selected.size === 0 || selected.size === CATEGORIES.length) return LISTS;
+  const matched = LISTS.filter((l) => (LIST_CATS[l.key] ?? []).some((c) => selected.has(c)));
+  return matched.length ? matched : LISTS;
+}
 
 // Each quiz category maps to a default Lister board, so picking a category in
 // Lister mode loads the matching board. (vapen is omitted — a coat of arms

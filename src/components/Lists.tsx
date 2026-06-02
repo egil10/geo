@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Trophy, RotateCcw, Eye, Check, Shuffle, ArrowRight } from "lucide-react";
 import TopBar from "./TopBar";
 import { Mode, modeLabel } from "./ModePicker";
-import { LISTS, CATEGORY_TO_LIST } from "@/lib/lists";
+import { LISTS, CATEGORY_TO_LIST, listsForSelection } from "@/lib/lists";
 import { normalize, stripParen } from "@/lib/match";
 import { EloState } from "@/lib/elo";
 import type { Category } from "@/lib/questions";
@@ -12,9 +12,6 @@ import type { Category } from "@/lib/questions";
 const DONE_KEY = "norgequiz.lists.v1";
 
 const fmtTime = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
-
-// The picker lists boards alphabetically (nb locale); "Tilfeldig" stays first.
-const SORTED_LISTS = [...LISTS].sort((a, b) => a.title.localeCompare(b.title, "nb"));
 
 export default function Lists({
   mode,
@@ -43,6 +40,13 @@ export default function Lists({
   const [now, setNow] = useState(() => Date.now());
   const [completed, setCompleted] = useState<Set<string>>(new Set());
   const pickerRef = useRef<HTMLDivElement>(null);
+
+  // Boards shown depend on the active category filter; "Tilfeldig" stays first
+  // and the rest are alphabetical (nb locale).
+  const visibleLists = useMemo(
+    () => listsForSelection(selected).slice().sort((a, b) => a.title.localeCompare(b.title, "nb")),
+    [selected],
+  );
 
   const list = useMemo(() => LISTS.find((l) => l.key === listKey)!, [listKey]);
   // Map every normalized form (and its paren-stripped form) to the row indices
@@ -85,6 +89,11 @@ export default function Lists({
     const key = CATEGORY_TO_LIST[[...selected][0]];
     if (key && LISTS.some((l) => l.key === key)) setListKey(key);
   }, [selected]);
+
+  // If the filter hides the current board, jump to the first visible one.
+  useEffect(() => {
+    if (!visibleLists.some((l) => l.key === listKey)) setListKey(visibleLists[0]?.key ?? LISTS[0].key);
+  }, [visibleLists, listKey]);
 
   // Keep the selected board's pill in view (it's no longer first once sorted).
   useEffect(() => {
@@ -138,8 +147,9 @@ export default function Lists({
     setNow(Date.now());
   };
   const nextList = () => {
-    const others = LISTS.filter((l) => l.key !== listKey);
-    setListKey(others[Math.floor(Math.random() * others.length)].key);
+    const others = visibleLists.filter((l) => l.key !== listKey);
+    const pool = others.length ? others : visibleLists;
+    setListKey(pool[Math.floor(Math.random() * pool.length)].key);
   };
 
   const elapsed = Math.floor((now - startedAt) / 1000);
@@ -157,7 +167,7 @@ export default function Lists({
         >
           <Shuffle size={13} /> Tilfeldig
         </button>
-        {SORTED_LISTS.map((l) => (
+        {visibleLists.map((l) => (
           <button
             key={l.key}
             data-active={l.key === listKey ? "true" : undefined}
