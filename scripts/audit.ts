@@ -52,7 +52,7 @@ for (const g of gens) {
     if (r.answerIndex !== r.choices.indexOf(r.answerKey)) issues.push("answerIndex mismatch");
     if (!Number.isFinite(r.difficulty)) issues.push("bad difficulty");
     if (!r.prompt || !("kind" in r.prompt)) issues.push("no prompt");
-    if (r.prompt?.kind === "map" && !(r.prompt.region || r.prompt.line || r.prompt.pin)) issues.push("empty map");
+    if (r.prompt?.kind === "map" && !(r.prompt.region || r.prompt.line || r.prompt.pin || r.prompt.svalbard)) issues.push("empty map");
     if (r.prompt?.kind === "image" && !r.prompt.src) issues.push("empty image src");
     if (issues.length) { bad++; if (bad <= 1) fail(`${g.key}: ${issues.join("; ")}`); }
   }

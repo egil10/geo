@@ -956,27 +956,29 @@ for (const { kind, list, cat } of FEATURE_KINDS) {
   }
 }
 
-// ---- Roads: trace the whole route on the map (line geometry) --------------
+// ---- Roads: which road runs between two places? ---------------------------
+// (No map: traceable road geometry from OSM was unreliable, and the endpoints
+// don't geocode cleanly, so we ask the route as text instead.)
 GENERATORS.push({
-  key: "veier-kart",
+  key: "veier-fromto",
   cats: ["veier"],
-  pool: veier.filter((v) => v.line),
+  pool: veier.filter((v) => v.from && v.to),
   build: (v) => {
-    if (!v.line) return null;
+    if (!v.from || !v.to) return null;
     const d = nameDistractors(veier, v, 3);
     if (d.length < 3) return null;
     const { choices, answerIndex } = assemble(v.name, d.map((x) => x.name));
     return {
-      uid: uid("veier-kart"),
-      genKey: "veier-kart",
+      uid: uid("veier-fromto"),
+      genKey: "veier-fromto",
       cat: "veier",
       subject: v,
-      prompt: { kind: "map", text: "Hvilken veg er markert på kartet?", line: v.line },
+      prompt: { kind: "text", text: `Hvilken vei går mellom ${v.from} og ${v.to}?` },
       choices,
       choiceInfo: infoFor([v, ...d], metricInfo, choices),
       answerIndex,
       answerKey: v.name,
-      explanation: `Den markerte vegen er ${v.name}${v.from && v.to ? ` (${v.from}–${v.to})` : ""}${v.metric != null ? ` – ${fmtMetric(v)}` : ""}.`,
+      explanation: `${v.name} går mellom ${v.from} og ${v.to}${v.metric != null ? ` – ${fmtMetric(v)}` : ""}.`,
       difficulty: difficultyToRating(v.prominence) + 40,
     };
   },
@@ -1091,7 +1093,7 @@ const WRITABLE = new Set([
   "turistveger-foto", "turistveger-kart",
   "flagg-foto",
   "dyr-foto",
-  "veier-foto", "veier-kart",
+  "veier-foto", "veier-fromto",
   "distrikt-landsdel", "distrikt-by", "landsdel-by",
 ]);
 
