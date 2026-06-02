@@ -175,6 +175,20 @@ function buildInitial(mode: Mode, gens: ReturnType<typeof activeGenerators>, sel
 
 const diffLevel = (d: number) => (d < 950 ? 1 : d < 1320 ? 2 : 3);
 
+// A worded difficulty badge — clearer than the old abstract dots.
+function DifficultyTag({ level }: { level: number }) {
+  const label = level >= 3 ? "Vanskelig" : level === 2 ? "Middels" : "Lett";
+  return (
+    <span
+      className="text-[11px] font-semibold uppercase tracking-wider"
+      style={{ color: "var(--nordic)" }}
+      aria-label={`Vanskelighet: ${label}`}
+    >
+      {label}
+    </span>
+  );
+}
+
 export default function Quiz({
   mode,
   selected,
@@ -422,7 +436,7 @@ export default function Quiz({
 // Shown when the chosen category × question-type combination has no questions.
 function EmptyFilters({ onAdjust }: { onAdjust: () => void }) {
   return (
-    <div className="animate-pop glass-strong flex h-[320px] flex-col items-center justify-center gap-3 rounded-[28px] px-8 text-center sm:h-[360px]">
+    <div className="animate-pop glass-strong flex h-[380px] flex-col items-center justify-center gap-3 rounded-[28px] px-8 text-center sm:h-[440px]">
       <SearchX size={30} className="text-ink-muted" />
       <div>
         <p className="font-display text-lg font-bold">Ingen spørsmål her</p>
@@ -439,18 +453,15 @@ function EmptyFilters({ onAdjust }: { onAdjust: () => void }) {
 function PromptCard({ round, quality }: { round: Round; quality: Quality }) {
   const level = diffLevel(round.difficulty);
   const catLabel = CATEGORIES.find((c) => c.key === round.cat)?.label ?? "";
-  // Map questions need a tall canvas so the whole country (and its pin) fits.
-  const cardH = round.prompt.kind === "map" ? "h-[440px] sm:h-[500px]" : "h-[320px] sm:h-[360px]";
+  // One fixed size for every prompt card, regardless of category or media, with
+  // enough room that contained images/maps fill it instead of looking cropped.
+  const cardH = "h-[380px] sm:h-[440px]";
 
   return (
     <div className={`animate-pop glass-strong flex ${cardH} flex-col overflow-hidden rounded-[28px]`}>
         <div className="flex shrink-0 items-center justify-between px-5 pt-4">
           <span className="text-[11px] font-semibold uppercase tracking-wider text-ink-muted">{catLabel}</span>
-          <span className="flex items-center gap-1" aria-label={`Vanskelighet ${level} av 3`}>
-            {[1, 2, 3].map((i) => (
-              <span key={i} className="h-1.5 w-1.5 rounded-full" style={{ background: i <= level ? "var(--nordic)" : "var(--hairline)" }} />
-            ))}
-          </span>
+          <DifficultyTag level={level} />
         </div>
 
         {round.prompt.kind === "image" ? (
@@ -672,11 +683,7 @@ function OrderBoard({
       <div className="glass-strong flex min-h-[88px] flex-col justify-center rounded-[28px] px-6 py-4">
         <div className="flex items-center justify-between">
           <span className="text-[11px] font-semibold uppercase tracking-wider text-ink-muted">Sortér</span>
-          <span className="flex items-center gap-1">
-            {[1, 2, 3].map((i) => (
-              <span key={i} className="h-1.5 w-1.5 rounded-full" style={{ background: i <= level ? "var(--nordic)" : "var(--hairline)" }} />
-            ))}
-          </span>
+          <DifficultyTag level={level} />
         </div>
         <h1 className="mt-1 text-balance font-display text-xl font-bold leading-tight tracking-tight sm:text-2xl">{round.prompt}</h1>
       </div>
@@ -763,8 +770,10 @@ function RevealBar({
   const subject = order ? null : round.subject;
   // Show the subject's photo on reveal unless the prompt already was that photo.
   const promptIsPhoto = !order && round.prompt.kind === "image" && round.prompt.variant === "photo";
+  const promptIsMap = !order && round.prompt.kind === "map";
   const thumb = !order && !promptIsPhoto ? round.subject.photo : undefined;
-  const loc = subject ? locate(subject) : null;
+  // Skip the locator map when the question itself was a map — no point repeating it.
+  const loc = subject && !promptIsMap ? locate(subject) : null;
 
   let detail: React.ReactNode;
   if (order) {
@@ -818,22 +827,22 @@ function RevealBar({
       {/* Body: a locator map and/or photo, the explanation, and a wiki link.
           On wide screens the card fills the column beside the choices, so the
           media stacks above the text and the block centres in the tall card. */}
-      <div className={`flex gap-3 ${hasMedia ? "mt-3" : "mt-2"} lg:flex-1 lg:flex-col lg:justify-center`}>
+      <div className={`flex gap-3 ${hasMedia ? "mt-3" : "mt-2"} lg:flex-1 lg:flex-col`}>
         {hasMedia && (
-          <div className="flex gap-3 lg:justify-center">
+          <div className="flex gap-3 lg:min-h-0 lg:flex-1 lg:flex-col">
             {loc && (
-              <div className="relative h-[124px] w-[100px] shrink-0 overflow-hidden rounded-2xl bg-black/[0.03] dark:bg-white/[0.04] lg:h-[160px] lg:w-[130px]">
+              <div className="relative h-[124px] w-[100px] shrink-0 overflow-hidden rounded-2xl bg-black/[0.03] dark:bg-white/[0.04] lg:h-auto lg:w-full lg:flex-1 lg:min-h-0">
                 <NorwayMap region={loc.region} pin={loc.pin} />
               </div>
             )}
             {thumb && (
-              <div className="hidden h-[124px] w-[100px] shrink-0 overflow-hidden rounded-2xl bg-black/[0.04] sm:block dark:bg-white/[0.05] lg:h-[160px] lg:w-[130px]">
+              <div className="hidden h-[124px] w-[100px] shrink-0 overflow-hidden rounded-2xl bg-black/[0.04] sm:block dark:bg-white/[0.05] lg:h-auto lg:w-full lg:flex-1 lg:min-h-0">
                 <img src={imgAt(thumb, 240)} alt="" className="h-full w-full object-contain" />
               </div>
             )}
           </div>
         )}
-        <div className="flex min-w-0 flex-1 flex-col lg:flex-none">
+        <div className="flex min-w-0 flex-1 flex-col lg:flex-none lg:shrink-0">
           {detail}
           {subject && (
             <a

@@ -37,6 +37,9 @@ const GROUPS: Group[] = [
   { key: "baner", label: "Baner", list: baner, img: "photo", sort: "length", cols: [{ k: "name", h: "Bane" }, { k: "length", h: "Lengde (km)", num: true }] },
 ];
 
+// Pills are shown alphabetically (nb locale); the order above only drives the default.
+const SORTED_GROUPS = [...GROUPS].sort((a, b) => a.label.localeCompare(b.label, "nb"));
+
 const cell = (p: Place, k: keyof Place): string => {
   const v = p[k];
   if (v == null) return "–";
@@ -102,6 +105,10 @@ export default function Explore({
     window.addEventListener("resize", updateScrollArrows);
     return () => window.removeEventListener("resize", updateScrollArrows);
   }, [updateScrollArrows]);
+  // Pills are alphabetical, so the default selection sits mid-list — bring it into view on open.
+  useEffect(() => {
+    scrollerRef.current?.querySelector<HTMLElement>("[data-active='true']")?.scrollIntoView({ inline: "center", block: "nearest" });
+  }, []);
   const scrollPills = (dir: -1 | 1) => scrollerRef.current?.scrollBy({ left: dir * 240, behavior: "smooth" });
 
   const group = useMemo(() => GROUPS.find((g) => g.key === groupKey)!, [groupKey]);
@@ -157,9 +164,10 @@ export default function Explore({
           </button>
         )}
         <div ref={scrollerRef} onScroll={updateScrollArrows} className="flex gap-2 overflow-x-auto no-scrollbar px-1 pb-1">
-          {GROUPS.map((g) => (
+          {SORTED_GROUPS.map((g) => (
             <button
               key={g.key}
+              data-active={g.key === groupKey ? "true" : undefined}
               onClick={() => selectGroup(g)}
               className={`pill shrink-0 border ${g.key === groupKey ? "border-transparent bg-ink text-canvas" : "border-[var(--field-stroke)] bg-[var(--field)] text-ink/80 hover:text-ink"}`}
             >

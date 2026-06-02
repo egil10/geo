@@ -12,6 +12,9 @@ const DONE_KEY = "norgequiz.lists.v1";
 
 const fmtTime = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 
+// The picker lists boards alphabetically (nb locale); "Tilfeldig" stays first.
+const SORTED_LISTS = [...LISTS].sort((a, b) => a.title.localeCompare(b.title, "nb"));
+
 export default function Lists({
   mode,
   onOpenMode,
@@ -135,7 +138,7 @@ export default function Lists({
         >
           <Shuffle size={13} /> Tilfeldig
         </button>
-        {LISTS.map((l) => (
+        {SORTED_LISTS.map((l) => (
           <button
             key={l.key}
             onClick={() => setListKey(l.key)}
