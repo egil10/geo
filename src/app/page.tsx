@@ -225,9 +225,6 @@ export default function Home() {
         />
       )}
 
-      <footer className="px-5 pb-8 text-center text-[11px] text-ink-muted">
-        Data fra Wikidata & SSB · 4 spillemoduser + Utforsk · bygd for å bli best i norsk geografi
-      </footer>
 
       {customizeOpen && (
         <CustomizeSheet
