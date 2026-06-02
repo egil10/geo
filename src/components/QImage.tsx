@@ -23,15 +23,17 @@ export default function QImage({
   const ready = loadedId === idKey;
 
   return (
-    <div className="relative h-full w-full overflow-hidden">
-      {/* A tiny blurred copy fades out once the sharp image loads (blur-up). Both
-          are contained, so the whole image always shows and the leftover space
-          stays the card colour — no cropping, no blurry cover backdrop. */}
+    // Fill the slot via inset-0 (not a percentage h-full): a relative h-full
+    // image in a flex slot can fail to resolve its height, size to its width and
+    // overflow — so a portrait gets clipped by the card even with object-contain.
+    // Both layers are absolute + contained, so the whole image always shows and
+    // the leftover space is the slot's warm letterbox, never a crop or blur bleed.
+    <div className="absolute inset-0 overflow-hidden">
       <img
         aria-hidden
         src={tiny(src)}
         alt=""
-        className={`absolute inset-0 h-full w-full scale-110 object-contain blur-2xl transition-opacity duration-500 ${ready ? "opacity-0" : "opacity-100"}`}
+        className={`absolute inset-0 h-full w-full object-contain blur-2xl transition-opacity duration-500 ${ready ? "opacity-0" : "opacity-100"}`}
       />
       <img
         key={idKey}
@@ -44,7 +46,8 @@ export default function QImage({
         alt={alt}
         fetchPriority="high"
         onLoad={() => setLoadedId(idKey)}
-        className={`relative h-full w-full object-contain transition-opacity duration-500 ${
+        onError={() => setLoadedId(idKey)}
+        className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-500 ${
           ready ? "opacity-100" : "opacity-0"
         }`}
       />

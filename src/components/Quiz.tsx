@@ -473,7 +473,7 @@ function PromptCard({ round, quality }: { round: Round; quality: Quality }) {
             <div className="flex h-[3.5rem] shrink-0 items-center justify-center px-5 pb-2 pt-1">
               <p className="line-clamp-2 text-center text-base font-semibold leading-snug sm:text-lg">{round.prompt.text}</p>
             </div>
-            <div className="relative flex-1">
+            <div className="relative flex-1 bg-canvas-warm">
               {round.prompt.variant === "coa" ? (
                 <div className="absolute inset-3 overflow-hidden rounded-2xl bg-white">
                   <QImage idKey={round.uid} {...heroProps(round.prompt.src, "coa", quality)} alt={round.prompt.alt} />
