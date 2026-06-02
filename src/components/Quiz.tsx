@@ -485,7 +485,7 @@ function PromptCard({ round, quality }: { round: Round; quality: Quality }) {
               <p className="line-clamp-2 text-center text-base font-semibold leading-snug sm:text-lg">{round.prompt.text}</p>
             </div>
             <div className="relative flex-1 pb-2">
-              <NorwayMap region={round.prompt.region} pin={round.prompt.pin} />
+              <NorwayMap region={round.prompt.region} pin={round.prompt.pin} line={round.prompt.line} />
             </div>
           </>
         ) : (

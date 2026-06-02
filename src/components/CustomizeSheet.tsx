@@ -25,6 +25,21 @@ import {
   Type as TypeIcon,
   LayoutGrid,
   Shapes,
+  Church,
+  Landmark,
+  Trees,
+  MountainSnow,
+  Anchor,
+  Tent,
+  Compass,
+  Swords,
+  GraduationCap,
+  Signpost,
+  Flag,
+  PawPrint,
+  MapPinned,
+  Layers,
+  Milestone,
 } from "lucide-react";
 import Modal from "./Modal";
 import { CATEGORIES, Category, QUIZ_TYPES, QuizType, availableTypesFor, availableCatsFor } from "@/lib/questions";
@@ -54,6 +69,21 @@ const ICONS: Record<string, React.ComponentType<{ size?: number; strokeWidth?: n
   MapPin,
   Image: ImageIcon,
   Type: TypeIcon,
+  Church,
+  Landmark,
+  Trees,
+  MountainSnow,
+  Anchor,
+  Tent,
+  Compass,
+  Swords,
+  GraduationCap,
+  Signpost,
+  Flag,
+  PawPrint,
+  MapPinned,
+  Layers,
+  Milestone,
 };
 
 // Category chips are listed alphabetically (nb locale → æ, ø, å sort last); the

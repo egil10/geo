@@ -17,8 +17,9 @@ function pathStats(d: string) {
   return { cx: sx / n, cy: sy / n, span: Math.max(maxX - minX, maxY - minY) };
 }
 
-// Renders Norway (fylke outlines) with one region highlighted or a point pinned.
-export default function NorwayMap({ region, pin }: { region?: string; pin?: { x: number; y: number } }) {
+// Renders Norway (fylke outlines) with one region highlighted, a route/river
+// traced (line), or a point pinned.
+export default function NorwayMap({ region, pin, line }: { region?: string; pin?: { x: number; y: number }; line?: string }) {
   const rs = region ? pathStats(region) : null;
   return (
     <svg viewBox={GEO_VIEWBOX} className="absolute inset-0 h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Kart over Norge">
@@ -27,6 +28,9 @@ export default function NorwayMap({ region, pin }: { region?: string; pin?: { x:
           <path key={i} d={d} />
         ))}
       </g>
+      {line && (
+        <path d={line} fill="none" stroke="#e11d48" strokeWidth="3" strokeLinejoin="round" strokeLinecap="round" />
+      )}
       {region && rs && (
         <>
           {rs.span < 70 && <circle cx={rs.cx} cy={rs.cy} r={Math.max(48, rs.span * 1.6)} fill="none" stroke="#e11d48" strokeWidth="2.5" opacity="0.55" />}

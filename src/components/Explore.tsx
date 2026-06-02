@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Search, LayoutGrid, Table2, ArrowUp, ArrowDown, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
 import TopBar from "./TopBar";
 import { EloState } from "@/lib/elo";
-import { kommuner, fylker, fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, klubber, aviser, byer, stasjoner, lufthavner, baner, Place, fmtInt, fmtMetric } from "@/lib/data";
+import { kommuner, fylker, fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, klubber, aviser, byer, stasjoner, lufthavner, baner, stavkirker, verdensarv, nasjonalparker, alpinanlegg, fyr, dnthytter, vidder, forsvar, universiteter, turistveger, flagg, dyr, distrikter, landsdeler, veier, Place, fmtInt, fmtMetric } from "@/lib/data";
 import { imgAt } from "@/lib/images";
 import { normalize } from "@/lib/match";
 
@@ -35,6 +35,21 @@ const GROUPS: Group[] = [
   { key: "stasjoner", label: "Stasjoner", list: stasjoner, img: "photo", sort: "name", cols: [{ k: "name", h: "Stasjon" }, { k: "tag", h: "Bane" }, { k: "county", h: "Fylke" }] },
   { key: "lufthavner", label: "Lufthavner", list: lufthavner, img: "photo", sort: "name", cols: [{ k: "name", h: "Lufthavn" }, { k: "tag", h: "IATA" }, { k: "county", h: "Fylke" }] },
   { key: "baner", label: "Baner", list: baner, img: "photo", sort: "length", cols: [{ k: "name", h: "Bane" }, { k: "length", h: "Lengde (km)", num: true }] },
+  { key: "stavkirker", label: "Stavkirker", list: stavkirker, img: "photo", sort: "name", cols: [{ k: "name", h: "Stavkirke" }, { k: "county", h: "Fylke" }] },
+  { key: "verdensarv", label: "Verdensarv", list: verdensarv, img: "photo", sort: "name", cols: [{ k: "name", h: "Sted" }, { k: "county", h: "Fylke" }, { k: "tag", h: "Innskrevet" }] },
+  { key: "nasjonalparker", label: "Nasjonalparker", list: nasjonalparker, img: "photo", sort: "metric", cols: [{ k: "name", h: "Park" }, { k: "county", h: "Fylke" }, { k: "metric", h: "Areal (km²)", num: true }] },
+  { key: "alpinanlegg", label: "Alpinanlegg", list: alpinanlegg, img: "photo", sort: "name", cols: [{ k: "name", h: "Anlegg" }, { k: "county", h: "Fylke" }, { k: "metric", h: "Fallhøyde (m)", num: true }] },
+  { key: "fyr", label: "Fyr", list: fyr, img: "photo", sort: "name", cols: [{ k: "name", h: "Fyr" }, { k: "county", h: "Fylke" }] },
+  { key: "dnthytter", label: "DNT-hytter", list: dnthytter, img: "photo", sort: "name", cols: [{ k: "name", h: "Hytte" }, { k: "tag", h: "Region" }, { k: "county", h: "Fylke" }] },
+  { key: "vidder", label: "Vidder", list: vidder, img: "photo", sort: "name", cols: [{ k: "name", h: "Vidde" }, { k: "county", h: "Fylke" }] },
+  { key: "forsvar", label: "Forsvaret", list: forsvar, img: "photo", sort: "name", cols: [{ k: "name", h: "Base" }, { k: "tag", h: "Gren" }, { k: "county", h: "Fylke" }] },
+  { key: "universiteter", label: "Universiteter", list: universiteter, img: "photo", sort: "name", cols: [{ k: "name", h: "Lærested" }, { k: "tag", h: "Type" }, { k: "county", h: "Fylke" }] },
+  { key: "turistveger", label: "Turistveger", list: turistveger, img: "photo", sort: "metric", cols: [{ k: "name", h: "Turistveg" }, { k: "county", h: "Fylke" }, { k: "metric", h: "Lengde (km)", num: true }] },
+  { key: "flagg", label: "Flagg", list: flagg, img: "photo", sort: "name", cols: [{ k: "name", h: "Flagg" }, { k: "tag", h: "Periode" }] },
+  { key: "dyr", label: "Dyr", list: dyr, img: "photo", sort: "name", cols: [{ k: "name", h: "Dyr" }, { k: "latin", h: "Vitenskapelig" }, { k: "tag", h: "Familie" }] },
+  { key: "distrikter", label: "Distrikter", list: distrikter, img: "photo", sort: "metric", cols: [{ k: "name", h: "Distrikt" }, { k: "tag", h: "Landsdel" }, { k: "metric", h: "Innb.", num: true }, { k: "admin", h: "Største by" }] },
+  { key: "landsdeler", label: "Landsdeler", list: landsdeler, img: "photo", sort: "metric", cols: [{ k: "name", h: "Landsdel" }, { k: "metric", h: "Innb.", num: true }, { k: "admin", h: "Største by" }] },
+  { key: "veier", label: "Veier", list: veier, img: "photo", sort: "metric", cols: [{ k: "name", h: "Veg" }, { k: "tag", h: "Type" }, { k: "metric", h: "Lengde (km)", num: true }, { k: "from", h: "Fra" }, { k: "to", h: "Til" }] },
 ];
 
 // Pills are shown alphabetically (nb locale); the order above only drives the default.

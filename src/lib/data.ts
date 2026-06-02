@@ -21,10 +21,28 @@ import byerJson from "@/data/byer.json";
 import stasjonerJson from "@/data/jernbanestasjoner.json";
 import lufthavnerJson from "@/data/lufthavner.json";
 import banerJson from "@/data/jernbanelinjer.json";
+import stavkirkerJson from "@/data/stavkirker.json";
+import verdensarvJson from "@/data/verdensarv.json";
+import nasjonalparkerJson from "@/data/nasjonalparker.json";
+import alpinanleggJson from "@/data/alpinanlegg.json";
+import fyrJson from "@/data/fyr.json";
+import dnthytterJson from "@/data/dnthytter.json";
+import vidderJson from "@/data/vidder.json";
+import forsvarJson from "@/data/forsvar.json";
+import universiteterJson from "@/data/universiteter.json";
+import turistvegerJson from "@/data/turistveger.json";
+import flaggJson from "@/data/flagg.json";
+import dyrJson from "@/data/dyr.json";
+import distrikterJson from "@/data/distrikter.json";
+import landsdelerJson from "@/data/landsdeler.json";
+import veierJson from "@/data/veier.json";
 
 export type Kind =
   | "kommune" | "fylke" | "fjell" | "elv" | "innsjo" | "fjord" | "oy" | "foss" | "isbre" | "tunnel" | "klubb" | "avis"
-  | "by" | "stasjon" | "lufthavn" | "bane";
+  | "by" | "stasjon" | "lufthavn" | "bane"
+  // Added categories (Wikidata/Wikipedia/OSM-curated):
+  | "stavkirke" | "verdensarv" | "nasjonalpark" | "alpinanlegg" | "fyr" | "dnthytte" | "vidde" | "forsvar"
+  | "universitet" | "turistveg" | "flagg" | "dyr" | "distrikt" | "landsdel" | "veg";
 
 export interface Place {
   id: string;
@@ -46,6 +64,10 @@ export interface Place {
   photo?: string; // representative photo
   lat?: number;
   lon?: number;
+  latin?: string; // scientific name (dyr)
+  line?: string; // projected SVG polyline (veg) — traced on the map
+  from?: string; // route start (veg)
+  to?: string; // route end (veg)
   prominence: number; // 0 (obscure) .. 1 (famous)
 }
 
@@ -283,6 +305,64 @@ export const baner: Place[] = (banerJson as RawBane[])
   }));
 assignProminence(baner);
 
+// ---- Added categories -----------------------------------------------------
+// One generic builder. Ids are namespaced by kind (`kind:rawid`) so they are
+// globally unique across every category (no cross-kind key collisions).
+function buildPlaces(
+  json: unknown,
+  kind: Kind,
+  opts: { metricField?: string; metricUnit?: string; tagField?: string } = {},
+): Place[] {
+  const list = (json as Record<string, unknown>[])
+    .filter((x) => x.name)
+    .map((x) => {
+      const metric = opts.metricField != null ? (x[opts.metricField] as number | undefined) : undefined;
+      const tagRaw = opts.tagField != null ? x[opts.tagField] : undefined;
+      return {
+        id: `${kind}:${x.id}`,
+        name: x.name as string,
+        kind,
+        county: x.county as string | undefined,
+        admin: (x.largestCity ?? x.city) as string | undefined,
+        tag: tagRaw != null ? String(tagRaw) : undefined,
+        area: x.area as number | undefined,
+        photo: x.photo as string | undefined,
+        lat: x.lat as number | undefined,
+        lon: x.lon as number | undefined,
+        latin: x.latin as string | undefined,
+        line: x.line as string | undefined,
+        from: x.from as string | undefined,
+        to: x.to as string | undefined,
+        metric: metric ?? undefined,
+        metricUnit: metric != null ? opts.metricUnit : undefined,
+        prominence: 0,
+      } as Place;
+    });
+  assignProminence(list);
+  return list;
+}
+
+export const stavkirker = buildPlaces(stavkirkerJson, "stavkirke");
+export const verdensarv = buildPlaces(verdensarvJson, "verdensarv", { tagField: "year" });
+export const nasjonalparker = buildPlaces(nasjonalparkerJson, "nasjonalpark", { metricField: "area", metricUnit: "km²" });
+export const alpinanlegg = buildPlaces(alpinanleggJson, "alpinanlegg", { metricField: "vertical", metricUnit: "m fall" });
+export const fyr = buildPlaces(fyrJson, "fyr");
+export const dnthytter = buildPlaces(dnthytterJson, "dnthytte", { tagField: "region" });
+export const vidder = buildPlaces(vidderJson, "vidde");
+export const forsvar = buildPlaces(forsvarJson, "forsvar", { tagField: "branch" });
+export const universiteter = buildPlaces(universiteterJson, "universitet", { tagField: "type" });
+export const turistveger = buildPlaces(turistvegerJson, "turistveg", { metricField: "length", metricUnit: "km" });
+// Flags: drop the one .tif (won't render in browsers); image-recognition only.
+export const flagg = buildPlaces(
+  (flaggJson as Record<string, unknown>[]).filter((x) => !String(x.photo).toLowerCase().includes(".tif")),
+  "flagg",
+  { tagField: "period" },
+);
+export const dyr = buildPlaces(dyrJson, "dyr", { tagField: "family" });
+export const distrikter = buildPlaces(distrikterJson, "distrikt", { metricField: "population", metricUnit: "innb.", tagField: "landsdel" });
+export const landsdeler = buildPlaces(landsdelerJson, "landsdel", { metricField: "population", metricUnit: "innb." });
+export const veier = buildPlaces(veierJson, "veg", { metricField: "length", metricUnit: "km", tagField: "type" });
+
 export const byKind: Record<Kind, Place[]> = {
   kommune: kommuner,
   fylke: fylker,
@@ -300,6 +380,21 @@ export const byKind: Record<Kind, Place[]> = {
   stasjon: stasjoner,
   lufthavn: lufthavner,
   bane: baner,
+  stavkirke: stavkirker,
+  verdensarv,
+  nasjonalpark: nasjonalparker,
+  alpinanlegg,
+  fyr,
+  dnthytte: dnthytter,
+  vidde: vidder,
+  forsvar,
+  universitet: universiteter,
+  turistveg: turistveger,
+  flagg,
+  dyr,
+  distrikt: distrikter,
+  landsdel: landsdeler,
+  veg: veier,
 };
 
 export const countyNames: string[] = fylker.map((f) => f.name);
@@ -334,4 +429,19 @@ export const KIND_LABEL: Record<Kind, { one: string; many: string }> = {
   stasjon: { one: "stasjon", many: "stasjoner" },
   lufthavn: { one: "lufthavn", many: "lufthavner" },
   bane: { one: "bane", many: "baner" },
+  stavkirke: { one: "stavkirke", many: "stavkirker" },
+  verdensarv: { one: "verdensarvsted", many: "verdensarvsteder" },
+  nasjonalpark: { one: "nasjonalpark", many: "nasjonalparker" },
+  alpinanlegg: { one: "alpinanlegg", many: "alpinanlegg" },
+  fyr: { one: "fyr", many: "fyr" },
+  dnthytte: { one: "DNT-hytte", many: "DNT-hytter" },
+  vidde: { one: "vidde", many: "vidder" },
+  forsvar: { one: "base", many: "baser" },
+  universitet: { one: "lærested", many: "læresteder" },
+  turistveg: { one: "turistveg", many: "turistveger" },
+  flagg: { one: "flagg", many: "flagg" },
+  dyr: { one: "dyr", many: "dyr" },
+  distrikt: { one: "distrikt", many: "distrikter" },
+  landsdel: { one: "landsdel", many: "landsdeler" },
+  veg: { one: "veg", many: "veger" },
 };

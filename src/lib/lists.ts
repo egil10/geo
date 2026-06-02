@@ -2,7 +2,7 @@
 // by a metric, a themed set, or the geographic extremes). Hints help; a single
 // input fills whichever row your guess matches.
 
-import { fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, kommuner, fylker, lufthavner, byer, baner, stasjoner, Place, fmtMetric, fmtInt } from "./data";
+import { fjell, elver, innsjoer, fjorder, oyer, fossefall, isbreer, tunneler, kommuner, fylker, lufthavner, byer, baner, stasjoner, stavkirker, verdensarv, nasjonalparker, dnthytter, turistveger, universiteter, alpinanlegg, dyr, Place, fmtMetric, fmtInt } from "./data";
 import { CATEGORIES, type Category } from "./questions";
 import fotball from "@/data/fotballklubber.json";
 import aviser from "@/data/aviser.json";
@@ -173,6 +173,13 @@ const stasjonRows: ListRow[] = [...stasjoner]
   .sort(nbName)
   .map((s) => ({ answers: [s.name], hint: s.tag ?? s.county ?? "Stasjon", reveal: s.tag ? `${s.name} · ${s.tag}` : s.name }));
 
+// Generic "name them all" board from a Place[] (added categories).
+function placeRows(list: Place[], hint: (p: Place) => string | undefined, withMetric = false): ListRow[] {
+  return [...list]
+    .sort((a, b) => (b.metric ?? 0) - (a.metric ?? 0) || a.name.localeCompare(b.name, "nb"))
+    .map((p) => ({ answers: [p.name], hint: hint(p) ?? "Norge", reveal: withMetric && p.metric != null ? `${p.name} · ${fmtMetric(p)}` : p.name }));
+}
+
 export const LISTS: ListDef[] = [
   { key: "ekstremer", title: "Geografiske ekstremer", blurb: "Norges aller største, lengste og høyeste", rows: EXTREMES },
   { key: "ytterpunkter", title: "Norges ytterpunkter", blurb: "Nord, sør, øst, vest – fastland & kongerike", rows: YTTERPUNKTER },
@@ -201,6 +208,14 @@ export const LISTS: ListDef[] = [
   { key: "byer", title: "Norges byer", blurb: "Byene etter folketall", rows: byerRows },
   { key: "baner", title: "Jernbanelinjer", blurb: "Banene i Norge", rows: banerRows },
   { key: "stasjoner", title: "Jernbanestasjoner", blurb: "Stasjonene i Norge", rows: stasjonRows },
+  { key: "stavkirker", title: "Stavkirker", blurb: "Norges bevarte stavkirker", rows: placeRows(stavkirker, (p) => p.county) },
+  { key: "verdensarv", title: "Verdensarv i Norge", blurb: "De 8 UNESCO-stedene", rows: placeRows(verdensarv, (p) => p.county) },
+  { key: "nasjonalparker", title: "Nasjonalparker", blurb: "Norges nasjonalparker", rows: placeRows(nasjonalparker, (p) => p.county, true) },
+  { key: "dnthytter", title: "Betjente DNT-hytter", blurb: "De 46 betjente DNT-hyttene", rows: placeRows(dnthytter, (p) => p.tag ?? p.county) },
+  { key: "turistveger", title: "Nasjonale turistveger", blurb: "De 18 turistvegene", rows: placeRows(turistveger, (p) => p.county, true) },
+  { key: "universiteter", title: "Universiteter & høgskoler", blurb: "Norske læresteder", rows: placeRows(universiteter, (p) => p.tag) },
+  { key: "alpinanlegg", title: "Alpinanlegg", blurb: "Norske skisteder", rows: placeRows(alpinanlegg, (p) => p.county) },
+  { key: "dyr", title: "Pattedyr i Norge", blurb: "Ville pattedyr", rows: placeRows(dyr, (p) => p.tag) },
   ...perFylkeLists,
 ];
 
@@ -229,6 +244,14 @@ const LIST_CATS: Record<string, Category[]> = {
   kommuner50k: ["kommuner", "befolkning"],
   "kommuner-alle": ["kommuner"],
   kommunenummer: ["kommuner", "nummer"],
+  stavkirker: ["stavkirker"],
+  verdensarv: ["verdensarv"],
+  nasjonalparker: ["nasjonalparker"],
+  dnthytter: ["dnthytter"],
+  turistveger: ["turistveger"],
+  universiteter: ["universiteter"],
+  alpinanlegg: ["alpinanlegg"],
+  dyr: ["dyr"],
 };
 fotballLists.forEach((l) => (LIST_CATS[l.key] = ["fotball"]));
 aviserLists.forEach((l) => (LIST_CATS[l.key] = ["aviser"]));
@@ -265,4 +288,12 @@ export const CATEGORY_TO_LIST: Partial<Record<Category, string>> = {
   stasjoner: "stasjoner",
   fotball: fotballLists.find((l) => /eliteserien/i.test(l.title))?.key ?? fotballLists[0]?.key,
   aviser: aviserLists[0]?.key,
+  stavkirker: "stavkirker",
+  verdensarv: "verdensarv",
+  nasjonalparker: "nasjonalparker",
+  dnthytter: "dnthytter",
+  turistveger: "turistveger",
+  universiteter: "universiteter",
+  alpinanlegg: "alpinanlegg",
+  dyr: "dyr",
 };

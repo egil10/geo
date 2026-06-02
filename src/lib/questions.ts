@@ -22,6 +22,21 @@ import {
   stasjoner,
   lufthavner,
   baner,
+  stavkirker,
+  verdensarv,
+  nasjonalparker,
+  alpinanlegg,
+  fyr,
+  dnthytter,
+  vidder,
+  forsvar,
+  universiteter,
+  turistveger,
+  flagg,
+  dyr,
+  distrikter,
+  landsdeler,
+  veier,
   countyNames,
   fmtMetric,
   fmtInt,
@@ -61,7 +76,22 @@ export type Category =
   | "baner"
   | "vapen"
   | "befolkning"
-  | "nummer";
+  | "nummer"
+  | "stavkirker"
+  | "verdensarv"
+  | "nasjonalparker"
+  | "alpinanlegg"
+  | "fyr"
+  | "dnthytter"
+  | "vidder"
+  | "forsvar"
+  | "universiteter"
+  | "turistveger"
+  | "flagg"
+  | "dyr"
+  | "distrikter"
+  | "landsdeler"
+  | "veier";
 
 export interface CategoryMeta {
   key: Category;
@@ -90,6 +120,21 @@ export const CATEGORIES: CategoryMeta[] = [
   { key: "baner", label: "Jernbanelinjer", icon: "TrainTrack", hint: "Banene & lengder" },
   { key: "befolkning", label: "Befolkning", icon: "Users", hint: "Innbyggertall" },
   { key: "nummer", label: "Kommunenr.", icon: "Hash", hint: "Kommunenummer" },
+  { key: "stavkirker", label: "Stavkirker", icon: "Church", hint: "Norges stavkirker" },
+  { key: "verdensarv", label: "Verdensarv", icon: "Landmark", hint: "UNESCO-steder i Norge" },
+  { key: "nasjonalparker", label: "Nasjonalparker", icon: "Trees", hint: "Norges nasjonalparker" },
+  { key: "alpinanlegg", label: "Alpinanlegg", icon: "MountainSnow", hint: "Skisteder & alpinanlegg" },
+  { key: "fyr", label: "Fyr", icon: "Anchor", hint: "Norske fyrstasjoner" },
+  { key: "dnthytter", label: "DNT-hytter", icon: "Tent", hint: "Betjente DNT-hytter" },
+  { key: "vidder", label: "Vidder", icon: "Compass", hint: "Fjellvidder" },
+  { key: "forsvar", label: "Forsvaret", icon: "Swords", hint: "Militære baser & tjenestesteder" },
+  { key: "universiteter", label: "Universiteter", icon: "GraduationCap", hint: "Universiteter & høgskoler" },
+  { key: "turistveger", label: "Turistveger", icon: "Signpost", hint: "Nasjonale turistveger" },
+  { key: "flagg", label: "Flagg", icon: "Flag", hint: "Norske flagg gjennom historien" },
+  { key: "dyr", label: "Dyr", icon: "PawPrint", hint: "Norske pattedyr" },
+  { key: "distrikter", label: "Distrikter", icon: "MapPinned", hint: "Norges distrikter" },
+  { key: "landsdeler", label: "Landsdeler", icon: "Layers", hint: "Østlandet, Vestlandet …" },
+  { key: "veier", label: "Veier", icon: "Milestone", hint: "Europaveier & riksveier" },
 ];
 
 // "Quiz type" = the *style* of a question, orthogonal to its category, so the
@@ -121,7 +166,7 @@ export function quizTypeOf(key: string): QuizType {
 export type Prompt =
   | { kind: "text"; text: string }
   | { kind: "image"; text: string; src: string; alt: string; variant: "coa" | "photo" }
-  | { kind: "map"; text: string; region?: string; pin?: { x: number; y: number } };
+  | { kind: "map"; text: string; region?: string; pin?: { x: number; y: number }; line?: string };
 
 export interface Round {
   uid: string;
@@ -168,6 +213,21 @@ const KMETA: Record<Kind, { art: string; noun: string; sup?: string }> = {
   stasjon: { art: "Hvilken", noun: "jernbanestasjon" },
   lufthavn: { art: "Hvilken", noun: "lufthavn" },
   bane: { art: "Hvilken", noun: "jernbanelinje", sup: "lengst" },
+  stavkirke: { art: "Hvilken", noun: "stavkirke" },
+  verdensarv: { art: "Hvilket", noun: "verdensarvsted" },
+  nasjonalpark: { art: "Hvilken", noun: "nasjonalpark", sup: "størst" },
+  alpinanlegg: { art: "Hvilket", noun: "alpinanlegg" },
+  fyr: { art: "Hvilket", noun: "fyr" },
+  dnthytte: { art: "Hvilken", noun: "DNT-hytte" },
+  vidde: { art: "Hvilken", noun: "vidde" },
+  forsvar: { art: "Hvilken", noun: "base" },
+  universitet: { art: "Hvilket", noun: "lærested" },
+  turistveg: { art: "Hvilken", noun: "turistveg", sup: "lengst" },
+  flagg: { art: "Hvilket", noun: "flagg" },
+  dyr: { art: "Hvilket", noun: "dyr" },
+  distrikt: { art: "Hvilket", noun: "distrikt" },
+  landsdel: { art: "Hvilken", noun: "landsdel" },
+  veg: { art: "Hvilken", noun: "veg", sup: "lengst" },
 };
 
 // Plausible distractors of the same kind, biased to similar prominence.
@@ -778,6 +838,19 @@ const FEATURE_KINDS: { kind: Kind; list: Place[]; cat: Category }[] = [
   { kind: "bane", list: baner, cat: "baner" },
   { kind: "isbre", list: isbreer, cat: "isbreer" },
   { kind: "tunnel", list: tunneler, cat: "tunneler" },
+  { kind: "stavkirke", list: stavkirker, cat: "stavkirker" },
+  { kind: "verdensarv", list: verdensarv, cat: "verdensarv" },
+  { kind: "nasjonalpark", list: nasjonalparker, cat: "nasjonalparker" },
+  { kind: "alpinanlegg", list: alpinanlegg, cat: "alpinanlegg" },
+  { kind: "fyr", list: fyr, cat: "fyr" },
+  { kind: "dnthytte", list: dnthytter, cat: "dnthytter" },
+  { kind: "vidde", list: vidder, cat: "vidder" },
+  { kind: "forsvar", list: forsvar, cat: "forsvar" },
+  { kind: "universitet", list: universiteter, cat: "universiteter" },
+  { kind: "turistveg", list: turistveger, cat: "turistveger" },
+  { kind: "flagg", list: flagg, cat: "flagg" }, // image-only (no coords → no map)
+  { kind: "dyr", list: dyr, cat: "dyr" }, // image-only
+  { kind: "veg", list: veier, cat: "veier" }, // foto + length-rank; map is a custom line generator below
 ];
 
 for (const { kind, list, cat } of FEATURE_KINDS) {
@@ -802,7 +875,7 @@ for (const { kind, list, cat } of FEATURE_KINDS) {
         choiceInfo: infoFor([p, ...d], metricInfo, choices),
         answerIndex,
         answerKey: p.name,
-        explanation: `Dette er ${p.name}${p.county ? ` i ${p.county}` : ""} – ${fmtMetric(p)}.`,
+        explanation: `Dette er ${p.name}${p.county ? ` i ${p.county}` : ""}${p.metric != null ? ` – ${fmtMetric(p)}` : p.tag ? ` (${p.tag})` : ""}.`,
         difficulty: difficultyToRating(p.prominence) + 40,
       };
     },
@@ -857,12 +930,89 @@ for (const { kind, list, cat } of FEATURE_KINDS) {
           choiceInfo: infoFor([p, ...dd], metricInfo, choices),
           answerIndex,
           answerKey: p.name,
-          explanation: `Det markerte punktet er ${p.name}${p.county ? ` i ${p.county}` : ""} – ${fmtMetric(p)}.`,
+          explanation: `Det markerte punktet er ${p.name}${p.county ? ` i ${p.county}` : ""}${p.metric != null ? ` – ${fmtMetric(p)}` : ""}.`,
           difficulty: difficultyToRating(p.prominence) + 30,
         };
       },
     });
   }
+}
+
+// ---- Roads: trace the whole route on the map (line geometry) --------------
+GENERATORS.push({
+  key: "veier-kart",
+  cats: ["veier"],
+  pool: veier.filter((v) => v.line),
+  build: (v) => {
+    if (!v.line) return null;
+    const d = nameDistractors(veier, v, 3);
+    if (d.length < 3) return null;
+    const { choices, answerIndex } = assemble(v.name, d.map((x) => x.name));
+    return {
+      uid: uid("veier-kart"),
+      genKey: "veier-kart",
+      cat: "veier",
+      subject: v,
+      prompt: { kind: "map", text: "Hvilken veg er markert på kartet?", line: v.line },
+      choices,
+      choiceInfo: infoFor([v, ...d], metricInfo, choices),
+      answerIndex,
+      answerKey: v.name,
+      explanation: `Den markerte vegen er ${v.name}${v.from && v.to ? ` (${v.from}–${v.to})` : ""}${v.metric != null ? ` – ${fmtMetric(v)}` : ""}.`,
+      difficulty: difficultyToRating(v.prominence) + 40,
+    };
+  },
+});
+
+// ---- Distrikter & landsdeler (fakta only) ---------------------------------
+const landsdelNames = landsdeler.map((l) => l.name);
+// Which landsdel a district belongs to (tag = landsdel).
+GENERATORS.push({
+  key: "distrikt-landsdel",
+  cats: ["distrikter"],
+  pool: distrikter.filter((d) => d.tag),
+  build: (dist) => {
+    if (!dist.tag) return null;
+    const { choices, answerIndex } = assemble(dist.tag, sampleN(landsdelNames.filter((l) => l !== dist.tag), 3));
+    return {
+      uid: uid("distrikt-landsdel"),
+      genKey: "distrikt-landsdel",
+      cat: "distrikter",
+      subject: dist,
+      prompt: { kind: "text", text: `Hvilken landsdel hører distriktet ${dist.name} til?` },
+      choices,
+      answerIndex,
+      answerKey: dist.tag,
+      explanation: `${dist.name} ligger i landsdelen ${dist.tag}.`,
+      difficulty: difficultyToRating(dist.prominence) + 40,
+    };
+  },
+});
+// Largest town of a district / region (admin = largestCity).
+for (const [cat, list] of [["distrikter", distrikter], ["landsdeler", landsdeler]] as const) {
+  GENERATORS.push({
+    key: cat === "distrikter" ? "distrikt-by" : "landsdel-by",
+    cats: [cat],
+    pool: list.filter((d) => d.admin),
+    build: (d) => {
+      if (!d.admin) return null;
+      const others = [...new Set(list.filter((x) => x.admin && x.admin !== d.admin).map((x) => x.admin!))];
+      if (others.length < 3) return null;
+      const { choices, answerIndex } = assemble(d.admin, sampleN(others, 3));
+      return {
+        uid: uid(`${cat}-by`),
+        genKey: cat === "distrikter" ? "distrikt-by" : "landsdel-by",
+        cat,
+        subject: d,
+        prompt: { kind: "text", text: `Hva er den største byen i ${d.name}?` },
+        choices,
+        answerIndex,
+        answerKey: d.admin,
+        explanation: `${d.admin} er den største byen i ${d.name}.`,
+        difficulty: difficultyToRating(d.prominence) + 40,
+      };
+    },
+  });
 }
 
 // ---- Picker ---------------------------------------------------------------
@@ -910,6 +1060,21 @@ const WRITABLE = new Set([
   "lufthavner-kart",
   "by-fylke",
   "lufthavn-fylke",
+  // Added categories — photo/map name-recall (determinate answers).
+  "stavkirker-foto", "stavkirker-kart",
+  "verdensarv-foto", "verdensarv-kart",
+  "nasjonalparker-foto", "nasjonalparker-kart",
+  "alpinanlegg-foto", "alpinanlegg-kart",
+  "fyr-foto", "fyr-kart",
+  "dnthytter-foto", "dnthytter-kart",
+  "vidder-foto", "vidder-kart",
+  "forsvar-foto", "forsvar-kart",
+  "universiteter-foto", "universiteter-kart",
+  "turistveger-foto", "turistveger-kart",
+  "flagg-foto",
+  "dyr-foto",
+  "veier-foto", "veier-kart",
+  "distrikt-landsdel", "distrikt-by", "landsdel-by",
 ]);
 
 // Which question types actually have questions for the chosen categories
@@ -1029,6 +1194,11 @@ const ORDER_SOURCES: { cat: Category; list: Place[]; prompt: string; unit: strin
   { cat: "befolkning", list: kommuner, prompt: "Sorter kommunene fra flest til færrest innbyggere", unit: "innb." },
   { cat: "byer", list: byer, prompt: "Sorter byene fra flest til færrest innbyggere", unit: "innb." },
   { cat: "baner", list: baner, prompt: "Sorter banene fra lengst til kortest", unit: "km" },
+  { cat: "nasjonalparker", list: nasjonalparker, prompt: "Sorter nasjonalparkene fra størst til minst", unit: "km²" },
+  { cat: "turistveger", list: turistveger, prompt: "Sorter turistvegene fra lengst til kortest", unit: "km" },
+  { cat: "veier", list: veier, prompt: "Sorter vegene fra lengst til kortest", unit: "km" },
+  { cat: "distrikter", list: distrikter, prompt: "Sorter distriktene fra flest til færrest innbyggere", unit: "innb." },
+  { cat: "landsdeler", list: landsdeler, prompt: "Sorter landsdelene fra flest til færrest innbyggere", unit: "innb." },
 ];
 
 export function nextOrderRound(selected: Set<Category>): OrderRound {
