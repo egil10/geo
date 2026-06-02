@@ -177,6 +177,7 @@ export const LISTS: ListDef[] = [
   { key: "ekstremer", title: "Geografiske ekstremer", blurb: "Norges aller største, lengste og høyeste", rows: EXTREMES },
   { key: "ytterpunkter", title: "Norges ytterpunkter", blurb: "Nord, sør, øst, vest – fastland & kongerike", rows: YTTERPUNKTER },
   { key: "fjell10", title: "Topp 10 høyeste fjell", blurb: "Norges takterrasse", rows: topRows(fjell, 10) },
+  { key: "fjell2000", title: "Fjelltopper over 2000 moh", blurb: "Alle toppene over 2000 meter", rows: thresholdRows(fjell, 2000) },
   { key: "fjell2300", title: "Fjell over 2300 moh", blurb: "De aller høyeste toppene", rows: thresholdRows(fjell, 2300) },
   { key: "elver10", title: "Topp 10 lengste elver", blurb: "De lengste vassdragene", rows: topRows(elver, 10) },
   { key: "innsjoer10", title: "Topp 10 største innsjøer", blurb: "De største vannene", rows: topRows(innsjoer, 10) },
@@ -208,6 +209,7 @@ export const LISTS: ListDef[] = [
 // (cross-category, e.g. the extremes) and show only when no filter is active.
 const LIST_CATS: Record<string, Category[]> = {
   fjell10: ["fjell"],
+  fjell2000: ["fjell"],
   fjell2300: ["fjell"],
   elver10: ["elver"],
   innsjoer10: ["innsjoer"],

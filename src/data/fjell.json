@@ -90,6 +90,12 @@
     "county": "Vestland"
   },
   {
+    "id": "fjell-gjertvasstind",
+    "name": "Gjertvasstind",
+    "elevation": 2351,
+    "county": "Vestland"
+  },
+  {
     "id": "Q634331",
     "name": "Sentraltind",
     "elevation": 2348,
@@ -113,6 +119,12 @@
     "elevation": 2344.8,
     "lat": 61.63029,
     "lon": 8.29406,
+    "county": "Innlandet"
+  },
+  {
+    "id": "fjell-store-knutsholstinden",
+    "name": "Store Knutsholstinden",
+    "elevation": 2341,
     "county": "Innlandet"
   },
   {
@@ -192,6 +204,11 @@
     "county": "Innlandet"
   },
   {
+    "id": "fjell-trollsteineggi",
+    "name": "Trollsteineggi",
+    "elevation": 2296
+  },
+  {
     "id": "Q7845296",
     "name": "Trollsteineggje",
     "elevation": 2295.7,
@@ -245,6 +262,12 @@
     "county": "Innlandet"
   },
   {
+    "id": "fjell-beerenberg",
+    "name": "Beerenberg",
+    "elevation": 2277,
+    "county": "Jan Mayen"
+  },
+  {
     "id": "Q120496240",
     "name": "Svellnose",
     "elevation": 2272,
@@ -277,6 +300,12 @@
     "county": "Innlandet"
   },
   {
+    "id": "fjell-besshoi",
+    "name": "Besshøi",
+    "elevation": 2258,
+    "county": "Innlandet"
+  },
+  {
     "id": "Q4573297",
     "name": "Besshøe",
     "elevation": 2257.5,
@@ -300,6 +329,12 @@
     "elevation": 2255.5,
     "lat": 61.538333055556,
     "lon": 8.43,
+    "county": "Innlandet"
+  },
+  {
+    "id": "fjell-fremste-storgrovhoe",
+    "name": "Fremste Storgrovhøe",
+    "elevation": 2253,
     "county": "Innlandet"
   },
   {
@@ -334,6 +369,12 @@
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Visbretinden%20sett%20fra%20Midtre%20H%C3%B8gvaggltindane.JPG?width=1024",
     "lat": 61.530178888889,
     "lon": 8.3354786111111,
+    "county": "Innlandet"
+  },
+  {
+    "id": "fjell-visbretinden",
+    "name": "Visbretinden",
+    "elevation": 2234,
     "county": "Innlandet"
   },
   {
@@ -403,12 +444,24 @@
     "county": "Innlandet"
   },
   {
+    "id": "fjell-store-bukkeholstinden",
+    "name": "Store Bukkeholstinden",
+    "elevation": 2213,
+    "county": "Innlandet"
+  },
+  {
     "id": "Q4579480",
     "name": "Bukkeholstindan",
     "elevation": 2212.3,
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Store%20Bukkeholstinden%20sett%20fra%20Midtre%20Tverrbottentindan.JPG?width=1024",
     "lat": 61.5875,
     "lon": 8.3127777777778,
+    "county": "Innlandet"
+  },
+  {
+    "id": "fjell-skarvflytindene",
+    "name": "Søndre Skarvflytind",
+    "elevation": 2210,
     "county": "Innlandet"
   },
   {
@@ -506,6 +559,12 @@
     "county": "Innlandet"
   },
   {
+    "id": "fjell-saksi",
+    "name": "Saksi",
+    "elevation": 2189,
+    "county": "Innlandet"
+  },
+  {
     "id": "Q3445542",
     "name": "Søndre Hellstugutinden",
     "elevation": 2188.4,
@@ -541,6 +600,12 @@
     "county": "Innlandet"
   },
   {
+    "id": "fjell-veobrehesten",
+    "name": "Veobrehesten",
+    "elevation": 2185,
+    "county": "Innlandet"
+  },
+  {
     "id": "Q3443342",
     "name": "Veobretinden",
     "elevation": 2182.5,
@@ -564,6 +629,12 @@
     "elevation": 2173.2,
     "lat": 61.627222222222,
     "lon": 8.7952777777778,
+    "county": "Innlandet"
+  },
+  {
+    "id": "fjell-hestbreapiggan",
+    "name": "Nørdre Hestbreapiggen",
+    "elevation": 2172,
     "county": "Innlandet"
   },
   {
@@ -610,6 +681,12 @@
     "county": "Vestland"
   },
   {
+    "id": "fjell-nordre-styggehobreatinden",
+    "name": "Nørdre Styggehøbreatinden",
+    "elevation": 2168,
+    "county": "Innlandet"
+  },
+  {
     "id": "Q11236103",
     "name": "Nordre Skagastølstindene",
     "elevation": 2167,
@@ -631,6 +708,12 @@
     "elevation": 2161,
     "lat": 61.643611111111,
     "lon": 8.2669444444444,
+    "county": "Innlandet"
+  },
+  {
+    "id": "fjell-tverrbottindan",
+    "name": "Store Tverrbottinden",
+    "elevation": 2161,
     "county": "Innlandet"
   },
   {
@@ -658,6 +741,12 @@
     "lat": 61.61,
     "lon": 8.1136111111111,
     "county": "Innlandet"
+  },
+  {
+    "id": "fjell-urdanostinden",
+    "name": "Urdanostinden",
+    "elevation": 2157,
+    "county": "Vestland"
   },
   {
     "id": "Q11236144",
@@ -691,12 +780,24 @@
     "county": "Innlandet"
   },
   {
+    "id": "fjell-skarvflytindene",
+    "name": "Midtre Skarvflytind",
+    "elevation": 2154,
+    "county": "Innlandet"
+  },
+  {
     "id": "Q3443080",
     "name": "Skarddalseggje",
     "elevation": 2151.6,
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B8gvagltj%C3%B8nnen%2C%20Elves%C3%A6ter%2C%20Lom.jpg?width=1024",
     "lat": 61.485125,
     "lon": 8.3390138888889,
+    "county": "Innlandet"
+  },
+  {
+    "id": "fjell-tverrbottindan",
+    "name": "Nord Midtre Tverrbottindan",
+    "elevation": 2151,
     "county": "Innlandet"
   },
   {
@@ -733,6 +834,12 @@
     "county": "Innlandet"
   },
   {
+    "id": "fjell-tjornholsoksle",
+    "name": "Tjørnholsoksle",
+    "elevation": 2145,
+    "county": "Innlandet"
+  },
+  {
     "id": "Q3443377",
     "name": "Ryggjehøe",
     "elevation": 2142.3,
@@ -748,6 +855,12 @@
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sn%C3%B8holstinden%20seen%20from%20Olavsbu%20in%20Jotunheimen.jpg?width=1024",
     "lat": 61.442113055556,
     "lon": 8.3097063888889,
+    "county": "Innlandet"
+  },
+  {
+    "id": "fjell-snoholtinden",
+    "name": "Snøholtinden",
+    "elevation": 2141,
     "county": "Innlandet"
   },
   {
@@ -812,11 +925,23 @@
     "county": "Innlandet"
   },
   {
+    "id": "fjell-oystre-torfinnstinden",
+    "name": "Øystre Torfinnstinden",
+    "elevation": 2120,
+    "county": "Innlandet"
+  },
+  {
     "id": "Q11236223",
     "name": "Skeie",
     "elevation": 2118,
     "lat": 61.556388888889,
     "lon": 8.115,
+    "county": "Innlandet"
+  },
+  {
+    "id": "fjell-skeii",
+    "name": "Skeii",
+    "elevation": 2118,
     "county": "Innlandet"
   },
   {
@@ -826,6 +951,12 @@
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Torfinnstind-2.jpg?width=1024",
     "lat": 61.372222222222,
     "lon": 8.5805555555556,
+    "county": "Innlandet"
+  },
+  {
+    "id": "fjell-urdadalstindene",
+    "name": "Store Urdadalstinden",
+    "elevation": 2116,
     "county": "Innlandet"
   },
   {
@@ -864,11 +995,35 @@
     "county": "Innlandet"
   },
   {
+    "id": "fjell-tverrbottindan",
+    "name": "Vestre Tverrbottinden",
+    "elevation": 2113,
+    "county": "Innlandet"
+  },
+  {
+    "id": "fjell-midtre-torfinnstinden",
+    "name": "Midtre Torfinnstinden",
+    "elevation": 2112,
+    "county": "Innlandet"
+  },
+  {
     "id": "Q3443319",
     "name": "Larstinden",
     "elevation": 2106.8,
     "lat": 62.320555555556,
     "lon": 9.2216666666667,
+    "county": "Innlandet"
+  },
+  {
+    "id": "fjell-tverrbottindan",
+    "name": "Sør Midtre Tverrbottinden",
+    "elevation": 2106,
+    "county": "Innlandet"
+  },
+  {
+    "id": "fjell-rasletind",
+    "name": "Rasletind",
+    "elevation": 2105,
     "county": "Innlandet"
   },
   {
@@ -879,6 +1034,12 @@
     "lat": 61.395277777778,
     "lon": 8.6977777777778,
     "county": "Innlandet"
+  },
+  {
+    "id": "fjell-austanbottstindane",
+    "name": "Søre Austanbottstind",
+    "elevation": 2103,
+    "county": "Vestland"
   },
   {
     "id": "Q3442972",
@@ -932,6 +1093,12 @@
     "county": "Innlandet"
   },
   {
+    "id": "fjell-nautgardsoksle",
+    "name": "Nautgardsoksle",
+    "elevation": 2089,
+    "county": "Innlandet"
+  },
+  {
     "id": "Q1770130",
     "name": "Tverrådalskyrkja",
     "elevation": 2088,
@@ -949,6 +1116,12 @@
     "county": "Innlandet"
   },
   {
+    "id": "fjell-store-soleibotntinden",
+    "name": "Store Soleibotntinden",
+    "elevation": 2083,
+    "county": "Vestland"
+  },
+  {
     "id": "Q1026479",
     "name": "Lodalskåpa",
     "elevation": 2082.9,
@@ -964,6 +1137,12 @@
     "lat": 61.4473,
     "lon": 7.7864,
     "county": "Vestland"
+  },
+  {
+    "id": "fjell-leirungskampen",
+    "name": "Leirungskampen",
+    "elevation": 2079,
+    "county": "Innlandet"
   },
   {
     "id": "Q1844375",
@@ -1000,6 +1179,12 @@
     "county": "Innlandet"
   },
   {
+    "id": "fjell-fannaraken",
+    "name": "Fannaråken",
+    "elevation": 2068,
+    "county": "Vestland"
+  },
+  {
     "id": "Q2525968",
     "name": "Fannaråki",
     "elevation": 2067,
@@ -1007,6 +1192,12 @@
     "lat": 61.516388888889,
     "lon": 7.9080555555556,
     "county": "Vestland"
+  },
+  {
+    "id": "fjell-svartholshoi",
+    "name": "Svartholshøi",
+    "elevation": 2067,
+    "county": "Innlandet"
   },
   {
     "id": "Q11235606",
@@ -1073,9 +1264,21 @@
     "county": "Innlandet"
   },
   {
+    "id": "fjell-urdadalstindene",
+    "name": "Midtre Urdadalstinden",
+    "elevation": 2060,
+    "county": "Innlandet"
+  },
+  {
     "id": "Q22004906",
     "name": "Store Midtmaradalstindene",
     "elevation": 2056
+  },
+  {
+    "id": "fjell-midtmaradalstindane",
+    "name": "Store Midtmaradalstinden",
+    "elevation": 2056,
+    "county": "Vestland"
   },
   {
     "id": "Q11235063",
@@ -1084,6 +1287,12 @@
     "lat": 61.443377777778,
     "lon": 8.1813388888889,
     "county": "Vestland"
+  },
+  {
+    "id": "fjell-midtre-holatinden",
+    "name": "Midtre Holåtinden",
+    "elevation": 2047,
+    "county": "Innlandet"
   },
   {
     "id": "Q3443291",
@@ -1111,6 +1320,12 @@
     "county": "Innlandet"
   },
   {
+    "id": "fjell-austre-holatinden",
+    "name": "Austre Holåtinden",
+    "elevation": 2043,
+    "county": "Innlandet"
+  },
+  {
     "id": "Q3443264",
     "name": "Eggen",
     "elevation": 2041,
@@ -1125,6 +1340,30 @@
     "lat": 61.446388888889,
     "lon": 8.1552777777778,
     "county": "Vestland"
+  },
+  {
+    "id": "fjell-vestre-holatinden",
+    "name": "Vestre Holåtinden",
+    "elevation": 2039,
+    "county": "Vestland"
+  },
+  {
+    "id": "fjell-spiterhoi",
+    "name": "Spiterhøi",
+    "elevation": 2033,
+    "county": "Innlandet"
+  },
+  {
+    "id": "fjell-sore-tverradalskyrkja",
+    "name": "Søre Tverrådalskyrkja",
+    "elevation": 2033,
+    "county": "Vestland"
+  },
+  {
+    "id": "fjell-slettmarkkampen",
+    "name": "Slettmarkkampen",
+    "elevation": 2032,
+    "county": "Innlandet"
   },
   {
     "id": "Q847916",
@@ -1230,6 +1469,12 @@
     "elevation": 2018
   },
   {
+    "id": "fjell-grjotbrehesten",
+    "name": "Grjotbrehesten",
+    "elevation": 2018,
+    "county": "Innlandet"
+  },
+  {
     "id": "Q938083",
     "name": "Stetinden",
     "elevation": 2017.8,
@@ -1290,6 +1535,12 @@
     "county": "Innlandet"
   },
   {
+    "id": "fjell-laven",
+    "name": "Låven",
+    "elevation": 2012,
+    "county": "Innlandet"
+  },
+  {
     "id": "Q3443241",
     "name": "Storsmeden",
     "elevation": 2007.8,
@@ -1304,6 +1555,12 @@
     "elevation": 2004,
     "lat": 62.258083333333,
     "lon": 9.1978611111111,
+    "county": "Innlandet"
+  },
+  {
+    "id": "fjell-nordre-svanatinden",
+    "name": "Nørdre Svånåtinden",
+    "elevation": 2004,
     "county": "Innlandet"
   },
   {
