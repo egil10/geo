@@ -172,8 +172,9 @@ export default function Lists({
         ))}
       </div>
 
-      {/* Header card */}
-      <div className="glass-strong flex flex-col gap-3 rounded-[28px] p-5">
+      {/* Header card — sticks to the top while scrolling the rows, so the input
+          and progress stay reachable through a long board. */}
+      <div className="glass-strong sticky top-2 z-20 flex flex-col gap-3 rounded-[28px] p-5">
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
             <h1 className="font-display text-xl font-bold tracking-tight sm:text-2xl">{list.title}</h1>
