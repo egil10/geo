@@ -1,0 +1,286 @@
+[
+  {
+    "id": "forsvar-evenes-flystasjon",
+    "name": "Evenes flystasjon",
+    "branch": "Luftforsvaret",
+    "county": "Nordland",
+    "municipality": "Evenes",
+    "lat": 68.482222,
+    "lon": 16.694722,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Harstad%2C%20Troms%20fylke%2C%20Nord%20Norge%20%2812267584645%29.jpg?width=1024",
+    "usAccess": true
+  },
+  {
+    "id": "forsvar-orland-flystasjon",
+    "name": "Ørland flystasjon",
+    "branch": "Luftforsvaret",
+    "county": "Trøndelag",
+    "municipality": "Ørland",
+    "lat": 63.698908,
+    "lon": 9.604003,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Shelter%20from%20the%20Cold%20%2810977864644%29.jpg?width=1024"
+  },
+  {
+    "id": "forsvar-andoya-flystasjon",
+    "name": "Andøya flystasjon",
+    "branch": "Luftforsvaret",
+    "county": "Nordland",
+    "municipality": "Andøy",
+    "lat": 69.2925,
+    "lon": 16.144167,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/US%20Navy%20110831-N-IZ292-050%20Vice%20Adm.%20Harry%20B.%20Harris%20Jr.%2C%20commander%20of%20U.S.%206th%20Fleet%2C%20inspects%20a%20Royal%20Norwegian%20Air%20Force%20P-3C%20Orion%20at%20Andoya%20Ai.jpg?width=1024"
+  },
+  {
+    "id": "forsvar-bardufoss-flystasjon",
+    "name": "Bardufoss flystasjon",
+    "branch": "Luftforsvaret",
+    "county": "Troms",
+    "municipality": "Bardu",
+    "lat": 69.056111,
+    "lon": 18.540278,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/C-141B%20Starlifter%20at%20Bardufoss.JPEG?width=1024"
+  },
+  {
+    "id": "forsvar-banak-flystasjon",
+    "name": "Banak flystasjon",
+    "branch": "Luftforsvaret",
+    "county": "Finnmark",
+    "municipality": "Porsanger",
+    "lat": 70.066667,
+    "lon": 24.973889,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lakselv%20Airport%2C%20Banak%20overview%201.jpg?width=1024"
+  },
+  {
+    "id": "forsvar-gardermoen-flystasjon",
+    "name": "Gardermoen flystasjon",
+    "branch": "Luftforsvaret",
+    "county": "Akershus",
+    "municipality": "Ullensaker",
+    "lat": 60.193889,
+    "lon": 11.100556,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/5699%20Lockheed%20L.100%20Hercules%20%28%20C.130J%20%29%20Royal%20Norwegian%20Air%20Force%20%289541415346%29.jpg?width=1024"
+  },
+  {
+    "id": "forsvar-sorreisa-stasjon",
+    "name": "Luftforsvarets stasjon Sørreisa",
+    "branch": "Luftforsvaret",
+    "county": "Troms",
+    "municipality": "Sørreisa",
+    "lat": 69.09194,
+    "lon": 18.19361
+  },
+  {
+    "id": "forsvar-kjevik-skoler",
+    "name": "Luftforsvarets skoler Kjevik",
+    "branch": "Luftforsvaret",
+    "county": "Agder",
+    "municipality": "Kristiansand",
+    "lat": 58.20389,
+    "lon": 8.085
+  },
+  {
+    "id": "forsvar-haakonsvern",
+    "name": "Haakonsvern orlogsstasjon",
+    "branch": "Sjøforsvaret",
+    "county": "Vestland",
+    "municipality": "Bergen",
+    "lat": 60.338056,
+    "lon": 5.222778,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/KNM%20Otto%20Sverdrup-2009-04-10-Haakonsvern.jpg?width=1024"
+  },
+  {
+    "id": "forsvar-ramsund",
+    "name": "Ramsund orlogsstasjon",
+    "branch": "Sjøforsvaret",
+    "county": "Nordland",
+    "municipality": "Tjeldsund",
+    "lat": 68.493333,
+    "lon": 16.5125,
+    "usAccess": true
+  },
+  {
+    "id": "forsvar-sortland-kystvakt",
+    "name": "Sortland (Kystvaktens hovedbase)",
+    "branch": "Sjøforsvaret",
+    "county": "Nordland",
+    "municipality": "Sortland",
+    "lat": 68.695833,
+    "lon": 15.413056
+  },
+  {
+    "id": "forsvar-bardufoss-leir",
+    "name": "Bardufoss leir",
+    "branch": "Hæren",
+    "county": "Troms",
+    "municipality": "Bardu",
+    "lat": 69.06441,
+    "lon": 18.51159
+  },
+  {
+    "id": "forsvar-rena-leir",
+    "name": "Rena leir",
+    "branch": "Hæren",
+    "county": "Innlandet",
+    "municipality": "Åmot",
+    "lat": 61.149,
+    "lon": 11.387
+  },
+  {
+    "id": "forsvar-sessvollmoen-leir",
+    "name": "Sessvollmoen leir",
+    "branch": "Hæren",
+    "county": "Akershus",
+    "municipality": "Ullensaker",
+    "lat": 60.237,
+    "lon": 11.143
+  },
+  {
+    "id": "forsvar-gsv-kirkenes",
+    "name": "Garnisonen i Sør-Varanger",
+    "branch": "Hæren",
+    "county": "Finnmark",
+    "municipality": "Sør-Varanger",
+    "lat": 69.726,
+    "lon": 29.891,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Garnisonen%20i%20S%C3%B8r-Varanger%20at%20Elvenes.jpg?width=1024"
+  },
+  {
+    "id": "forsvar-rygge-flystasjon",
+    "name": "Rygge flystasjon",
+    "branch": "Hæren",
+    "county": "Østfold",
+    "municipality": "Moss",
+    "lat": 59.379,
+    "lon": 10.786,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rygge%20Air%20Station%20control%20tower.jpg?width=1024",
+    "usAccess": true
+  },
+  {
+    "id": "forsvar-sola-flystasjon",
+    "name": "Sola flystasjon",
+    "branch": "Hæren",
+    "county": "Rogaland",
+    "municipality": "Stavanger",
+    "lat": 58.877,
+    "lon": 5.638,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/KC-135R%20at%20Sola%20Air%20Station%204.jpg?width=1024",
+    "usAccess": true
+  },
+  {
+    "id": "forsvar-luftambulanse-arendal",
+    "name": "Luftambulansebase Arendal",
+    "branch": "Luftambulanse",
+    "county": "Agder",
+    "municipality": "Arendal",
+    "lat": 58.47,
+    "lon": 8.77
+  },
+  {
+    "id": "forsvar-luftambulanse-lorenskog",
+    "name": "Luftambulansebase Lørenskog",
+    "branch": "Luftambulanse",
+    "county": "Akershus",
+    "municipality": "Lørenskog",
+    "lat": 59.9,
+    "lon": 10.96
+  },
+  {
+    "id": "forsvar-luftambulanse-al",
+    "name": "Luftambulansebase Ål",
+    "branch": "Luftambulanse",
+    "county": "Viken",
+    "municipality": "Ål",
+    "lat": 60.67556,
+    "lon": 8.57694
+  },
+  {
+    "id": "forsvar-luftambulanse-dombas",
+    "name": "Luftambulansebase Dombås",
+    "branch": "Luftambulanse",
+    "county": "Innlandet",
+    "municipality": "Dovre",
+    "lat": 62.07554,
+    "lon": 9.12785
+  },
+  {
+    "id": "forsvar-luftambulanse-stavanger",
+    "name": "Luftambulansebase Stavanger",
+    "branch": "Luftambulanse",
+    "county": "Rogaland",
+    "municipality": "Stavanger",
+    "lat": 58.97,
+    "lon": 5.73
+  },
+  {
+    "id": "forsvar-luftambulanse-bergen",
+    "name": "Luftambulansebase Bergen",
+    "branch": "Luftambulanse",
+    "county": "Vestland",
+    "municipality": "Bergen",
+    "lat": 60.39,
+    "lon": 5.32
+  },
+  {
+    "id": "forsvar-luftambulanse-forde",
+    "name": "Luftambulansebase Førde",
+    "branch": "Luftambulanse",
+    "county": "Vestland",
+    "municipality": "Sunnfjord",
+    "lat": 61.4519,
+    "lon": 5.85694
+  },
+  {
+    "id": "forsvar-luftambulanse-alesund",
+    "name": "Luftambulansebase Ålesund",
+    "branch": "Luftambulanse",
+    "county": "Møre og Romsdal",
+    "municipality": "Ålesund",
+    "lat": 62.47,
+    "lon": 6.15
+  },
+  {
+    "id": "forsvar-luftambulanse-trondheim",
+    "name": "Luftambulansebase Trondheim",
+    "branch": "Luftambulanse",
+    "county": "Trøndelag",
+    "municipality": "Trondheim",
+    "lat": 63.44,
+    "lon": 10.4
+  },
+  {
+    "id": "forsvar-luftambulanse-bronnøysund",
+    "name": "Luftambulansebase Brønnøysund",
+    "branch": "Luftambulanse",
+    "county": "Nordland",
+    "municipality": "Brønnøy",
+    "lat": 65.47,
+    "lon": 12.21
+  },
+  {
+    "id": "forsvar-luftambulanse-bodo",
+    "name": "Luftambulansebase Bodø",
+    "branch": "Luftambulanse",
+    "county": "Nordland",
+    "municipality": "Bodø",
+    "lat": 67.28,
+    "lon": 14.38
+  },
+  {
+    "id": "forsvar-luftambulanse-tromso",
+    "name": "Luftambulansebase Tromsø",
+    "branch": "Luftambulanse",
+    "county": "Troms",
+    "municipality": "Tromsø",
+    "lat": 69.65,
+    "lon": 18.96
+  },
+  {
+    "id": "forsvar-luftambulanse-kirkenes",
+    "name": "Luftambulansebase Kirkenes",
+    "branch": "Luftambulanse",
+    "county": "Finnmark",
+    "municipality": "Sør-Varanger",
+    "lat": 69.73,
+    "lon": 30.05
+  }
+]
