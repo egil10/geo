@@ -476,10 +476,10 @@ function PromptCard({ round, quality }: { round: Round; quality: Quality }) {
             <div className="relative flex-1">
               {round.prompt.variant === "coa" ? (
                 <div className="absolute inset-3 overflow-hidden rounded-2xl bg-white">
-                  <QImage idKey={round.uid} {...heroProps(round.prompt.src, "coa", quality)} alt={round.prompt.alt} variant="coa" />
+                  <QImage idKey={round.uid} {...heroProps(round.prompt.src, "coa", quality)} alt={round.prompt.alt} />
                 </div>
               ) : (
-                <QImage idKey={round.uid} {...heroProps(round.prompt.src, "photo", quality)} alt={round.prompt.alt} variant="photo" />
+                <QImage idKey={round.uid} {...heroProps(round.prompt.src, "photo", quality)} alt={round.prompt.alt} />
               )}
             </div>
           </>

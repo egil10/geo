@@ -12,34 +12,26 @@ export default function QImage({
   srcSet,
   sizes,
   alt,
-  variant,
 }: {
   idKey: string;
   src: string;
   srcSet?: string;
   sizes?: string;
   alt: string;
-  variant: "coa" | "photo";
 }) {
   const [loadedId, setLoadedId] = useState<string | null>(null);
   const ready = loadedId === idKey;
-  const isPhoto = variant === "photo";
 
   return (
     <div className="relative h-full w-full overflow-hidden">
-      {/* Photos: a blurred cover backdrop fills the whole card so portrait /
-          odd-ratio photos don't float in empty margins. Coats of arms keep a
-          clean (contain) placeholder that fades out — no blurry shield behind.
-          Either way the sharp image on top is contained, so nothing is cropped. */}
+      {/* A tiny blurred copy fades out once the sharp image loads (blur-up). Both
+          are contained, so the whole image always shows and the leftover space
+          stays the card colour — no cropping, no blurry cover backdrop. */}
       <img
         aria-hidden
         src={tiny(src)}
         alt=""
-        className={
-          isPhoto
-            ? "absolute inset-0 h-full w-full scale-110 object-cover blur-2xl"
-            : `absolute inset-0 h-full w-full scale-110 object-contain blur-2xl transition-opacity duration-500 ${ready ? "opacity-0" : "opacity-100"}`
-        }
+        className={`absolute inset-0 h-full w-full scale-110 object-contain blur-2xl transition-opacity duration-500 ${ready ? "opacity-0" : "opacity-100"}`}
       />
       <img
         key={idKey}
