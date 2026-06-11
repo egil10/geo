@@ -48,6 +48,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="nb" suppressHydrationWarning>
       <head>
+        {/* Every quiz image is served straight from upload.wikimedia.org —
+            warm the connection before the first round asks for one. */}
+        <link rel="preconnect" href="https://upload.wikimedia.org" />
+        <link rel="dns-prefetch" href="https://commons.wikimedia.org" />
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
       </head>
       <body className={`min-h-dvh antialiased font-sans ${display.variable}`}>{children}</body>

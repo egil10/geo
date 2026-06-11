@@ -39,11 +39,42 @@ and sanity caps guard the ranking questions.
 
 ```
 scripts/fetch-data.mjs     # Wikidata SPARQL -> src/data/*.json  (npm run fetch:data [category])
+scripts/curate-*.mjs       # Wikipedia-curated merges — run AFTER fetch-data (fjell, fossefall,
+                           # extra patches in isbreer/tunneler/Sognefjorden, …)
+scripts/enrich-images.mjs  # Commons imageinfo -> src/data/img-meta.json (npm run enrich:images)
+scripts/validate-data.mjs  # ship gate: ids, count floors, meta coverage, live URL samples (npm run validate)
 src/data/ssb-*.json        # authoritative SSB admin data
 src/lib/data.ts            # merges + cleans + derives "prominence" (difficulty)
 src/lib/questions.ts       # category/generator engine + recency-aware picker
 scripts/test-engine.ts     # validates thousands of generated rounds (npx tsx)
 ```
+
+**Pipeline order matters:** `fetch:data` → `curate-fjell`/`curate-fossefall`/`curate-extra` →
+`enrich:images` → `validate`. The curate scripts merge Wikipedia-only entries (2000 m peaks,
+ranked waterfalls, Sognefjorden's length) that a bare re-fetch silently loses.
+
+## Images — Wikimedia URL scheme (hard-won, verified 2026-06)
+
+Image refs in the data are Commons `Special:FilePath/<name>?width=` URLs (canonical, stable),
+but they are **never served to the browser**. Reasons, all measured:
+
+- `Special:FilePath` costs **two redirect hops** per request, and the server snaps `width=` to
+  hidden buckets that break srcset math (`width=320` actually serves 330 px, `1024` serves 1280 px).
+- `upload.wikimedia.org` only **renders** thumbs at widths `{20, 40, 60, 120, 250, 330, 500, 960}` —
+  any other width is HTTP 400 (previously-cached odd sizes may still 200, don't be fooled).
+- Raster thumbs must be requested **below the original width**; SVGs render at any bucket as PNG
+  (`…/<w>px-Name.svg.png`). `.tif` thumbs become `lossy-page1-<w>px-Name.tif.jpg`; over-long
+  filenames thumb to `<w>px-thumbnail.jpg`. Don't derive these — `scripts/enrich-images.mjs`
+  records the exact pattern from the API and verifies it byte-for-byte.
+- A `?width=` param on an `upload.wikimedia.org` *original* URL is **silently ignored** — the
+  full multi-MB file is served.
+- Commons API titles must be NFC UTF-8; the API reports renames (`redirects`) and deletions
+  (`missing`), which `enrich-images.mjs` applies back to the data (liveness pass).
+
+`src/lib/images.ts` resolves every ref through `src/data/img-meta.json`
+(`name -> [origW, origH, shardPath, flag]`) to a direct, zero-redirect thumb URL with true
+srcset descriptors, clamped below the original size; unknown files fall back to `Special:FilePath`.
+Expect 429s when testing in bursts — per-IP throttling, not breakage.
 
 ## Tech
 
@@ -60,6 +91,8 @@ npm run dev            # http://localhost:3000
 npm run build          # production build
 npm run typecheck      # tsc --noEmit
 npm run fetch:data     # re-pull all data from Wikidata (or: npm run fetch:data kommuner)
+npm run enrich:images  # refresh img-meta.json + drop dead/renamed Commons refs
+npm run validate       # dataset ship gate (run before committing data changes)
 npx tsx scripts/test-engine.ts   # engine invariants
 ```
 

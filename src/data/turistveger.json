@@ -6,7 +6,7 @@
     "length": 160,
     "maxElevation": 125,
     "lat": 70.38,
-    "lon": 29.0,
+    "lon": 29,
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hamningberg.jpg?width=1024",
     "blurb": "Arktisk kystlandskap på Varangerhalvøya med rik fuglefauna og samisk kulturhistorie."
   },
@@ -60,7 +60,7 @@
     "county": "Nordland",
     "length": 433,
     "maxElevation": 346,
-    "lat": 66.0,
+    "lat": 66,
     "lon": 12.8,
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Helgelandskysten.jpg?width=1024",
     "blurb": "Norges lengste turistveg langs Helgelandskysten – skjærgård, fjell og fergestrekninger."
@@ -117,7 +117,6 @@
     "maxElevation": 1434,
     "lat": 61.57,
     "lon": 8.03,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sognefjell_road.jpg?width=1024",
     "blurb": "Europas høyeste fjellovergang over Jotunheimen, åpen kun om sommeren."
   },
   {

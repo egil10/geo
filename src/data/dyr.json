@@ -504,8 +504,7 @@
     "latin": "Mustela vison",
     "family": "Målfamilien",
     "order": "Rovpattedyr",
-    "status": "Tallrik",
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Neovison%20vison%20USFWS.jpg?width=1024"
+    "status": "Tallrik"
   },
   {
     "id": "dyr-ilder",
@@ -737,8 +736,7 @@
     "latin": "Rattus rattus",
     "family": "Musefamilien",
     "order": "Gnagere",
-    "status": "Utryddet i Norge",
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/20191212%20Szczury%20w%20%C5%9Awi%C4%85tyni.jpg?width=1024"
+    "status": "Utryddet i Norge"
   },
   {
     "id": "dyr-skoglemen",
@@ -809,8 +807,7 @@
     "latin": "Microtus agrestis",
     "family": "Hamsterfamilien",
     "order": "Gnagere",
-    "status": "Tallrik",
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Microtus%20agrestis%2001.jpg?width=1024"
+    "status": "Tallrik"
   },
   {
     "id": "dyr-ostmarkmus",
@@ -818,8 +815,7 @@
     "latin": "Microtus rossiaemeridionalis",
     "family": "Hamsterfamilien",
     "order": "Gnagere",
-    "status": "Vanlig",
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Microtus%20levis%20from%20Luhanshchyna.jpg?width=1024"
+    "status": "Vanlig"
   },
   {
     "id": "dyr-fjellmarkmus",
@@ -827,7 +823,6 @@
     "latin": "Microtus oeconomus",
     "family": "Hamsterfamilien",
     "order": "Gnagere",
-    "status": "Tallrik",
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/VOLE%2C%20TUNDRA.jpg?width=1024"
+    "status": "Tallrik"
   }
 ]

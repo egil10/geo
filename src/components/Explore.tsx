@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { Search, LayoutGrid, Table2, ArrowUp, ArrowDown, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
 import TopBar from "./TopBar";
 import { EloState } from "@/lib/elo";
@@ -55,6 +55,18 @@ const GROUPS: Group[] = [
 // Pills are shown alphabetically (nb locale); the order above only drives the default.
 const SORTED_GROUPS = [...GROUPS].sort((a, b) => a.label.localeCompare(b.label, "nb"));
 
+// Per-group search index, built once on first use instead of re-normalizing
+// every row's fields on every keystroke. Aligned by index with group.list.
+const searchIndex = new Map<string, string[]>();
+function searchableOf(g: Group): string[] {
+  let s = searchIndex.get(g.key);
+  if (!s) {
+    s = g.list.map((p) => normalize(p.name) + "\n" + (p.county ? normalize(p.county) : ""));
+    searchIndex.set(g.key, s);
+  }
+  return s;
+}
+
 const cell = (p: Place, k: keyof Place): string => {
   const v = p[k];
   if (v == null) return "–";
@@ -101,6 +113,8 @@ export default function Explore({
 }) {
   const [groupKey, setGroupKey] = useState(GROUPS[0].key);
   const [query, setQuery] = useState("");
+  // Keep the input snappy: the (heavier) filtered table may lag a keystroke.
+  const deferredQuery = useDeferredValue(query);
   const [view, setView] = useState<"tabell" | "galleri">("tabell");
   const [sortKey, setSortKey] = useState<keyof Place>("population");
   const [sortDir, setSortDir] = useState<"asc" | "desc">("desc");
@@ -144,9 +158,10 @@ export default function Explore({
   };
 
   const rows = useMemo(() => {
-    const q = normalize(query);
+    const q = normalize(deferredQuery);
     const col = group.cols.find((c) => c.k === sortKey);
-    const filtered = group.list.filter((p) => !q || normalize(p.name).includes(q) || (p.county && normalize(p.county).includes(q)));
+    const searchable = searchableOf(group);
+    const filtered = group.list.filter((_, i) => !q || searchable[i].includes(q));
     filtered.sort((a, b) => {
       const av = a[sortKey];
       const bv = b[sortKey];
@@ -156,7 +171,7 @@ export default function Explore({
       return sortDir === "asc" ? r : -r;
     });
     return filtered;
-  }, [group, query, sortKey, sortDir]);
+  }, [group, deferredQuery, sortKey, sortDir]);
 
   return (
     <div className="mx-auto flex w-full max-w-4xl flex-col gap-3 px-3 pb-12 pt-3 sm:px-5">

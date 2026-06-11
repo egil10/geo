@@ -3,7 +3,7 @@
     "id": "Q212209",
     "name": "Mjøsa",
     "area": 369.322128,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vintermj%C3%B8sa%2002.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mj%C3%B8sa%201.jpg?width=1024",
     "lat": 60.666666666667,
     "lon": 11,
     "county": "Innlandet"
@@ -12,7 +12,7 @@
     "id": "Q1352298",
     "name": "Røssvatnet",
     "area": 218.048869,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Innsj%C3%B8%20R%C3%B8ssvatnet%20-%20panoramio.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8ssvatnet%20with%20D%C3%A5rtindan%20%26%20Lukttinden%2C%202011%20June.jpg?width=1024",
     "lat": 65.776111111111,
     "lon": 14.0325,
     "county": "Nordland"
@@ -30,7 +30,7 @@
     "id": "Q1324437",
     "name": "Femunden",
     "area": 203.3964,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/95%20D%2029%20Femunden%20-%20no-nb%20digifoto%2020150729%2000361%20bldsa%20PK28084.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Engerdal%20Femunden.jpg?width=1024",
     "lat": 62.183333333333,
     "lon": 11.9,
     "county": "Innlandet"
@@ -39,7 +39,7 @@
     "id": "Q545033",
     "name": "Randsfjorden",
     "area": 140.6867,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hov%20Kirke%20Church%20%281781%29%2C%20S%C3%B8ndre%20Land%20Municipality%2C%20Oppland%20County%2C%20Norway.%20Springtime%2C%20cemetery%2C%20graveyard%2C%20Randsfjorden%20lake%2C%20etc.%20Distorted%20panorama%202017-03-27%20IMG%202075.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Grimsrud%2C%20Randsfjorden.jpg?width=1024",
     "lat": 60.390277777778,
     "lon": 10.394166666667,
     "county": "Innlandet"
@@ -48,7 +48,7 @@
     "id": "Q696445",
     "name": "Tyrifjorden",
     "area": 138.56,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tyrifjorden.%20-%20no-nb%20digifoto%2020160511%2000230%20NB%20NKF%20P%2004%2001%20012.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Holsfjorden%2C%20Hole.jpg?width=1024",
     "lat": 60.033333333333,
     "lon": 10.133333333333,
     "county": "Buskerud"
@@ -57,7 +57,7 @@
     "id": "Q126109",
     "name": "Store Le",
     "area": 136.1,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/I12%20109%20Ed%2C%20Stora%20Le.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bucht%20von%20N%C3%B6ssemark.jpg?width=1024",
     "lat": 59.161666666667,
     "lon": 11.879166666667,
     "county": "Østfold"
@@ -66,7 +66,7 @@
     "id": "Q1777782",
     "name": "Snåsavatnet",
     "area": 122.107516,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norwegen%201998%20%28501%29%20Sn%C3%A5savatnet%20%2849473402956%29.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/SnasavattenNorway.jpg?width=1024",
     "lat": 64.1874,
     "lon": 12.0249,
     "county": "Trøndelag"
@@ -92,7 +92,7 @@
     "id": "Q19384217",
     "name": "Nærevannet",
     "area": 82.94765,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/N%C3%A6revannet%20om%20v%C3%A5ren.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/N%C3%A6revannet%20tidlig%20v%C3%A5r.jpg?width=1024",
     "lat": 59.726111111111,
     "lon": 10.901111111111,
     "county": "Akershus"
@@ -101,7 +101,7 @@
     "id": "Q1958265",
     "name": "Møsvatn",
     "area": 79.09716,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%B8svatnet%20panorama.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storfjorden%20p%C3%A5%20M%C3%B8svatn.jpg?width=1024",
     "lat": 59.866666666667,
     "lon": 8.0833333333333,
     "county": "Telemark"
@@ -110,7 +110,7 @@
     "id": "Q1633266",
     "name": "Nisser",
     "area": 76.468828,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vr%C3%A5dal%2C%20Nisservann%20-%20no-nb%20digifoto%2020151116%2000171%20NB%20MIT%20FNR%2012930.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nisser.jpg?width=1024",
     "lat": 59.166666666667,
     "lon": 8.5,
     "county": "Telemark"
@@ -127,7 +127,7 @@
     "id": "Q317277",
     "name": "Øyeren",
     "area": 73.092709,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordre%20%C3%98yeren%20Naturreservat%20-%20R%C3%A6lingen%2C%20Norway%202021-10-22%20%2811%29.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oyern1.jpg?width=1024",
     "lat": 59.857222222222,
     "lon": 11.163333333333,
     "county": "Østfold"
@@ -154,7 +154,7 @@
     "id": "Q175674",
     "name": "Norsjø",
     "area": 55.116159,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nes%20kirke%20mot%20Norsj%C3%B8.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norsjo%20seen%20from%20Nes%20kirke.JPG?width=1024",
     "lat": 59.3,
     "lon": 9.3333333333333,
     "county": "Telemark"
@@ -163,7 +163,7 @@
     "id": "Q1170078",
     "name": "Selbusjøen",
     "area": 52.18,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Selbusj%C3%B8en%20I.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Selbusjoen.jpg?width=1024",
     "lat": 63.2312,
     "lon": 10.9484,
     "county": "Trøndelag"
@@ -172,7 +172,7 @@
     "id": "Q861703",
     "name": "Tinnsjå",
     "area": 51.561448,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tinnsj%C3%A5%202024.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tinnsjo%20-%20Norway.jpg?width=1024",
     "lat": 59.9,
     "lon": 8.9166666666667,
     "county": "Telemark"
@@ -181,7 +181,7 @@
     "id": "Q200003",
     "name": "Hornindalsvatnet",
     "area": 50.7558,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hornindalsvatnet%20from%20Fureneset%2C%20Stad%2C%20Vestland%2C%20Norway%2C%202025%20May.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hornindalsvatnet%20map.png?width=1024",
     "lat": 61.933333333333,
     "lon": 6.35,
     "county": "Vestland"
@@ -190,7 +190,7 @@
     "id": "Q654083",
     "name": "Fyresvatnet",
     "area": 49.794811,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fyresvatnet%20mot%20V%C3%A5mur.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fyresvatn.JPG?width=1024",
     "lat": 59.11709,
     "lon": 8.12191,
     "county": "Telemark"
@@ -199,7 +199,7 @@
     "id": "Q943484",
     "name": "Storsjøen",
     "area": 48.0958,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/11452%20Parti%20ved%20Storsj%C3%B8en%20-%20no-nb%20digifoto%2020150804%2000089%20bldsa%20PK28956.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storsj%C3%B8en.jpg?width=1024",
     "lat": 61.45222222,
     "lon": 11.30972222,
     "county": "Innlandet"
@@ -208,7 +208,7 @@
     "id": "Q5096953",
     "name": "Storglomvatnet",
     "area": 47.3023,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Svartisen%20og%20Storglomvatnet%20i%20slutten%20av%201800-tallet.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storglomvatnet%20from%20Holmvassdammen.JPG?width=1024",
     "lat": 66.75386,
     "lon": 14.19624,
     "county": "Nordland"
@@ -217,7 +217,7 @@
     "id": "Q777416",
     "name": "Aursunden",
     "area": 46.401785,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aursunden%20UBT-TO-074812%2001%201.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aursunden%20covered%20in%20snow.jpg?width=1024",
     "lat": 62.6678,
     "lon": 11.6448,
     "county": "Trøndelag"
@@ -234,7 +234,7 @@
     "id": "Q1636385",
     "name": "Krøderen",
     "area": 43.906009,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norwegen%201998%20%28019%29%20Kr%C3%B8deren%20%2833659076365%29.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kr%C3%B6dsherad%20IMG%203363%20kr%C3%B6dsherad%20kirkested%20rk%2084845.JPG?width=1024",
     "lat": 60.15301,
     "lon": 9.74162,
     "county": "Buskerud"
@@ -251,7 +251,7 @@
     "id": "Q1144469",
     "name": "Osensjøen",
     "area": 43.63513,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Osensj%C3%B8en-Norway%20%28cropped%29.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Osensj%C3%B8en-Norway.jpg?width=1024",
     "lat": 61.252777777778,
     "lon": 11.845833333333,
     "county": "Innlandet"
@@ -260,7 +260,7 @@
     "id": "Q4493280",
     "name": "Storsjøen",
     "area": 42.726257,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storsjoen%20aerial.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Storsjoen%20Odal.jpg?width=1024",
     "lat": 60.3725,
     "lon": 11.625,
     "county": "Innlandet"
@@ -295,7 +295,7 @@
     "id": "Q1018512",
     "name": "Bygdin",
     "area": 40.033922,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bygdin%20-%20no-nb%20digifoto%2020150213%2000117%20NB%20MIT%20FNR%2007570%20B.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Boat%20on%20Bygdin.jpg?width=1024",
     "lat": 61.348475,
     "lon": 8.518661,
     "county": "Innlandet"
@@ -304,7 +304,6 @@
     "id": "Q4562672",
     "name": "Namsvatnet",
     "area": 39.4409,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Garnheng%20og%20dubbel%2C%20fiskegarnet%20henger%20til%20t%C3%B8rk.%20Eies%20av%20Anna%20D%C3%A6rga.%20Namsvatnet%20august%201956%20-%20Norsk%20folkemuseum%20-%20NF.05535-289.jpg?width=1024",
     "lat": 64.9974,
     "lon": 13.5759,
     "county": "Trøndelag"
@@ -313,7 +312,7 @@
     "id": "Q1715675",
     "name": "Jølstravatnet",
     "area": 39.24401,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fylkesvei%20451%20J%C3%B8lstravatnet%202015-05-06%20panorama.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/J%C3%B8lstravatnet.JPG?width=1024",
     "lat": 61.495833333333,
     "lon": 6.1316666666667,
     "county": "Vestland"
@@ -322,7 +321,7 @@
     "id": "Q1708169",
     "name": "Sperillen",
     "area": 37.323252,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sperillen%202024.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sperillen%2C%20Ringerike%202.jpg?width=1024",
     "lat": 60.466666666667,
     "lon": 10.05,
     "county": "Buskerud"
@@ -331,7 +330,7 @@
     "id": "Q2301965",
     "name": "Totak",
     "area": 37.264218,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Midgaren%20med%20Totakvand%2C%20Rauland%20i%20Telemarken%20-%20no-nb%20digifoto%2020160329%2000150%20bldsa%20NGU0126.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/P1000737Totak.JPG?width=1024",
     "lat": 59.725292,
     "lon": 7.850074,
     "county": "Telemark"
@@ -340,7 +339,7 @@
     "id": "Q1637472",
     "name": "Rogen",
     "area": 35.606289,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rogen%20%2821327730044%29.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rogen.jpg?width=1024",
     "lat": 62.316666666667,
     "lon": 12.383333333333,
     "county": "Innlandet"
@@ -349,7 +348,7 @@
     "id": "Q3356657",
     "name": "Vansjø",
     "area": 35.598368,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lang%C3%B8yaVansj%C3%B8.PNG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20soe%2C%20near%20Mos%20%28JW%20Edy%20plate%2069%29.jpg?width=1024",
     "lat": 59.413055555556,
     "lon": 10.711944444444,
     "county": "Østfold"
@@ -385,7 +384,7 @@
     "id": "Q945079",
     "name": "Hurdalssjøen",
     "area": 33.210074,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hurdalssj%C3%B8en%20Lima%20Limaspillet%20scenografi%20historisk%20utend%C3%B8rsteater%20Norway%202017-08-26%20cropped%20panorama.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hurdalssj%C3%B8en.jpg?width=1024",
     "lat": 60.31,
     "lon": 11.104444444444,
     "county": "Akershus"
@@ -419,7 +418,7 @@
     "id": "Q1519876",
     "name": "Rosskreppfjorden",
     "area": 29.7529,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rosskreppfjorden%20south%20of%20main%20dam.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rosskreppfjord.jpg?width=1024",
     "lat": 59.096669444444,
     "lon": 7.165,
     "county": "Agder"
@@ -428,7 +427,7 @@
     "id": "Q915075",
     "name": "Isteren",
     "area": 28.9516,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/3187%20Engerdal%20-%20Trysil%2C%20Isteren%20fra%20Gl%C3%B8tberget%20med%20S%C3%B8len%20i%20bakgr%20-%20no-nb%20digifoto%2020150729%2000356%20bldsa%20PK28076.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Isteren-2007.JPG?width=1024",
     "lat": 62.01777778,
     "lon": 11.77055556,
     "county": "Innlandet"
@@ -437,7 +436,7 @@
     "id": "Q1785536",
     "name": "Suldalsvatnet",
     "area": 28.8754,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Suldalsvatnet%2C%202025.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Suldalsvatnet.jpg?width=1024",
     "lat": 59.495833333333,
     "lon": 6.5377777777778,
     "county": "Rogaland"
@@ -454,7 +453,7 @@
     "id": "Q1477804",
     "name": "Vinstre",
     "area": 28.186775,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vinstre%20002.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jotunheimen%201.jpg?width=1024",
     "lat": 61.316666666667,
     "lon": 8.9666666666667,
     "county": "Innlandet"
@@ -463,7 +462,7 @@
     "id": "Q1144478",
     "name": "Eikeren",
     "area": 27.719256,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eikeren%202024.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eikeren-vvsm.jpg?width=1024",
     "lat": 59.66638889,
     "lon": 9.91222222,
     "county": "Buskerud"
@@ -481,7 +480,7 @@
     "id": "Q806255",
     "name": "Bandak",
     "area": 26.769669,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Parti%20Bandaksvandet%20fra%20Dalen%20-%20NB%20MS%20G4%200201.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bandak%20fraa%20Riksveg%2045.jpg?width=1024",
     "lat": 59.43865,
     "lon": 8.03582,
     "county": "Telemark"
@@ -490,7 +489,7 @@
     "id": "Q1772671",
     "name": "Gresvatnet",
     "area": 26.57,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gressvatnet2009.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gr%C3%A4svattnet%20-%20KMB%20-%2016001000039524.jpg?width=1024",
     "lat": 66.05951,
     "lon": 14.45709,
     "county": "Nordland"
@@ -523,7 +522,7 @@
     "id": "Q6486963",
     "name": "Langvatnet",
     "area": 23.6702,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Langvatnet%20north%20Pano.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Langvatnet.JPG?width=1024",
     "lat": 66.36861111,
     "lon": 14.0825,
     "county": "Nordland"
@@ -532,7 +531,7 @@
     "id": "Q1303816",
     "name": "Eikesdalsvatnet",
     "area": 23.15,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Styggev%C3%A6rshaugen%2C%20Kvitfjellet%2C%20Nonshaugen%20and%20Kaurbotn%20over%20Eikesdalsvatnet%2C%20Molde%2C%20M%C3%B8re%20og%20Romsdal%2C%20Norway%2C%202025%20May.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eikesdalsvatnet.jpg?width=1024",
     "lat": 62.543055555556,
     "lon": 8.1702777777778,
     "county": "Møre og Romsdal"
@@ -541,7 +540,7 @@
     "id": "Q1477849",
     "name": "Oppstrynsvatnet",
     "area": 22.922606,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama%20of%20Oppstrynsvatnet.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oppstrynsvatnet%202010-08-06.jpg?width=1024",
     "lat": 61.935,
     "lon": 6.922222,
     "county": "Vestland"
@@ -550,7 +549,7 @@
     "id": "Q905632",
     "name": "Breimsvatnet",
     "area": 22.662948,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama%20Breimsvatnet%20E39%20Gloppen%20.Sogn%20og%20Fjordane%20Norway%202015-04-21JPG.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2012-04%20Breimsvann%20-%20Skjorta02.jpg?width=1024",
     "lat": 61.683333333333,
     "lon": 6.3833333333333,
     "county": "Vestland"
@@ -559,7 +558,7 @@
     "id": "Q6514515",
     "name": "Sølensjøen",
     "area": 22.5453,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8lensj%C3%B8en%20juli%202005.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8lensj%C3%B8en.jpg?width=1024",
     "lat": 61.9417,
     "lon": 11.5733,
     "county": "Innlandet"
@@ -576,8 +575,8 @@
     "id": "Q1772778",
     "name": "Rengen",
     "area": 21.6559,
-    "lat": 64.103611,
-    "lon": 14.057222,
+    "lat": 64.0932,
+    "lon": 13.9962,
     "county": "Trøndelag"
   },
   {
@@ -593,10 +592,10 @@
     "id": "Q3356675",
     "name": "Farris",
     "area": 21.13714,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Farrisfossen%20-%20no-nb%20digifoto%2020160309%2000145%20bldsa%20fFA00106.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Farrisvannet2.jpg?width=1024",
     "lat": 59.166388888889,
     "lon": 9.8766666666667,
-    "county": "Vestfold"
+    "county": "Telemark"
   },
   {
     "id": "Q8011404",
@@ -604,13 +603,13 @@
     "area": 20.512774,
     "lat": 60.123011,
     "lon": 8.228817,
-    "county": "Buskerud"
+    "county": "Telemark"
   },
   {
     "id": "Q1434743",
     "name": "Flåvatn",
     "area": 19.599203,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fl%C3%A5vatn3.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fl%C3%A5vatn.jpg?width=1024",
     "lat": 59.305006,
     "lon": 8.798256,
     "county": "Telemark"
@@ -619,7 +618,6 @@
     "id": "Q15277947",
     "name": "Sirdalsvatnet",
     "area": 19.4715,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Siraaen%20med%20mor%C3%A6ne%20foran%20Sirdalsvand.%20-%20no-nb%20digifoto%2020160329%2000161%20bldsa%20NGU0094.jpg?width=1024",
     "lat": 58.4675,
     "lon": 6.67638889,
     "county": "Agder"
@@ -660,7 +658,7 @@
     "id": "Q6514724",
     "name": "Vangsmjøse",
     "area": 18.448,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama%20of%20the%20western%20part%20of%20Vangsmj%C3%B8se.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vangsmj%C3%B6si-utsikt%20fr%C3%A5n%20v%C3%A4st%20%C3%B6ver%20Vang.JPG?width=1024",
     "lat": 61.162777777778,
     "lon": 8.4416666666667,
     "county": "Innlandet"
@@ -678,7 +676,7 @@
     "id": "Q1478768",
     "name": "Vegår",
     "area": 17.7,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Floating%20wood%20dock%20in%20Veg%C3%A5r%2C%20Veg%C3%A5rshei.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Veg%C3%A5r.jpg?width=1024",
     "lat": 58.8075,
     "lon": 8.8580555555556,
     "county": "Agder"
@@ -687,7 +685,7 @@
     "id": "Q11230257",
     "name": "Veitastrondsvatnet",
     "area": 17.4597,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Veitastrondsvatnet%2C%202020.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/View%20from%20Veitastrondavatnet%20to%20Jostedalsbreen%20%2818304415692%29.jpg?width=1024",
     "lat": 61.4,
     "lon": 7.088,
     "county": "Vestland"
@@ -698,7 +696,7 @@
     "area": 17.238705,
     "lat": 58.98361111,
     "lon": 8.06055556,
-    "county": "Agder"
+    "county": "Telemark"
   },
   {
     "id": "Q59326947",
@@ -736,7 +734,7 @@
     "id": "Q942502",
     "name": "Seljordsvatn",
     "area": 16.613292,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Seljordsvatnet%2C%20Seljord%2C%20Telemark%2C%20Norway%20-%20panoramio%20%281%29.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Seljord%20lake.JPG?width=1024",
     "lat": 59.43611111,
     "lon": 8.84888889,
     "county": "Telemark"
@@ -762,7 +760,7 @@
     "id": "Q1772826",
     "name": "Rødenessjøen",
     "area": 15.9245,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8denessj%C3%B8en.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8dnessj%C3%B8en%202007-10-07.jpg?width=1024",
     "lat": 59.487777777778,
     "lon": 11.645833333333,
     "county": "Østfold"
@@ -771,7 +769,7 @@
     "id": "Q732070",
     "name": "Kviteseidvatnet",
     "area": 15.765148,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kviteseidvatnet%20Brandalsfjell.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kviteseid%20IMG%202544%20kvitseidvatnet%20from%20west%20Bukk%C3%B6y%20island.JPG?width=1024",
     "lat": 59.35,
     "lon": 8.57,
     "county": "Telemark"
@@ -796,7 +794,7 @@
     "id": "Q585209",
     "name": "Gjende",
     "area": 15.638177,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gjendesheim%20Gjende%20panorama2.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gjende%20-%20panoramio%20%281%29.jpg?width=1024",
     "lat": 61.489444444444,
     "lon": 8.68,
     "county": "Innlandet"
@@ -822,7 +820,7 @@
     "id": "Q1510337",
     "name": "Savalen",
     "area": 15.2913,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Savalen%20608-0553.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tronfjell.JPG?width=1024",
     "lat": 62.241111111111,
     "lon": 10.482222222222,
     "county": "Innlandet"
@@ -831,7 +829,7 @@
     "id": "Q6516171",
     "name": "Takvatnet",
     "area": 15.19,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Takvatnet%20night.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Takvatnet%20%281%29.jpg?width=1024",
     "lat": 69.115,
     "lon": 19.08833333,
     "county": "Troms"
@@ -848,7 +846,7 @@
     "id": "Q2535126",
     "name": "Vråvatn",
     "area": 14.958951,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vr%C3%A5vatn%20%281%29%202022.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vr%C3%A5vatn.JPG?width=1024",
     "lat": 59.34222222,
     "lon": 8.31333333,
     "county": "Telemark"
@@ -866,7 +864,7 @@
     "id": "Q6275920",
     "name": "Jonsvatnet",
     "area": 14.26,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Furuodden%20ved%20Jonsvatnet%20%281966%29%20%284310667357%29.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Trondheim%20Jonsvatnet%20IMG%204564.JPG?width=1024",
     "lat": 63.3655,
     "lon": 10.582,
     "county": "Trøndelag"
@@ -875,7 +873,7 @@
     "id": "Q1772539",
     "name": "Øymarksjøen",
     "area": 14.1253,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98ymarksj%C3%B8en%2020.07.2013%2019-04-16.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98ymarksj%C3%B8en%20Marker%20Norway.JPG?width=1024",
     "lat": 59.372222222222,
     "lon": 11.659722222222,
     "county": "Østfold"
@@ -884,7 +882,7 @@
     "id": "Q2003154",
     "name": "Vågåvatnet",
     "area": 14.046563,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/CountyRoad51Norway-VagavatnetLake.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A5g%C3%A5vatnet%20%282%29.JPG?width=1024",
     "lat": 61.85,
     "lon": 8.85,
     "county": "Innlandet"
@@ -893,7 +891,7 @@
     "id": "Q1772708",
     "name": "Einavatnet",
     "area": 13.7885,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Einavatnet%20med%20veien%20Einastranda%20i%20bakgrunnen%2C%20Vestre%20Toten%20kommune%20%282%29.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Einavannet.jpg?width=1024",
     "lat": 60.579722222222,
     "lon": 10.634444444444,
     "county": "Innlandet"
@@ -905,13 +903,13 @@
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8msj%C3%B8en.JPG?width=1024",
     "lat": 59.707777777778,
     "lon": 11.8475,
-    "county": "Østfold"
+    "county": "Akershus"
   },
   {
     "id": "Q1772728",
     "name": "Skogsfjordvatnet",
     "area": 13.62,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skogsfjordvatnet%20devant%20Nonsdagstinden.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skogsfjordvatn.jpg?width=1024",
     "lat": 69.93449,
     "lon": 19.17764,
     "county": "Troms"
@@ -920,7 +918,7 @@
     "id": "Q6515045",
     "name": "Strondafjorden",
     "area": 13.416,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Strondafjorden%3F%20-%20no-nb%20digifoto%2020150226%2000173%20NB%20MIT%20FNR%2000168.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Strondafjorden.JPG?width=1024",
     "lat": 60.976388888889,
     "lon": 9.1372222222222,
     "county": "Innlandet"
@@ -956,7 +954,7 @@
     "id": "Q6516096",
     "name": "Øgderen",
     "area": 12.657139,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hemnessj%C3%B8en%2C%20sett%20fra%20Langstranda..jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98gderen.jpg?width=1024",
     "lat": 59.696111111111,
     "lon": 11.431111111111,
     "county": "Østfold"
@@ -990,7 +988,7 @@
     "id": "Q6514268",
     "name": "Setten",
     "area": 11.6281,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Setten%20%282025%29.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Setten.JPG?width=1024",
     "lat": 59.83444444,
     "lon": 11.67555556,
     "county": "Akershus"
@@ -999,7 +997,7 @@
     "id": "Q1772746",
     "name": "Åraksfjorden",
     "area": 11.452373,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bygland%20Aaraksb%C3%B6%20IMG%207441%20sandnes%20kirke%20rk%2085389.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85raksb%C3%B82.jpg?width=1024",
     "lat": 58.925555555556,
     "lon": 7.7116666666667,
     "county": "Agder"
@@ -1027,21 +1025,21 @@
     "area": 10.816591,
     "lat": 59.682777777778,
     "lon": 7.1675,
-    "county": "Rogaland"
+    "county": "Telemark"
   },
   {
     "id": "Q35707135",
     "name": "Store Hestvatnet",
     "area": 10.8,
-    "lat": 69.435,
-    "lon": 17.54,
+    "lat": 69.43658,
+    "lon": 17.53008,
     "county": "Troms"
   },
   {
     "id": "Q3356686",
     "name": "Femsjøen",
     "area": 10.6618,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Femsjoen%20aerial%20%28improved%29.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Femsj%C3%B8en%20ved%20Tistedal.jpg?width=1024",
     "lat": 59.134444444444,
     "lon": 11.461388888889,
     "county": "Østfold"
@@ -1050,7 +1048,7 @@
     "id": "Q271122",
     "name": "Ånøya",
     "area": 10.57,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85n%C3%B8ya%20in%20the%20winter%20%2801%29.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85n%C3%B8ya%20sett%20fra%20Ramberget%20%2801%29.jpg?width=1024",
     "lat": 63.21472222,
     "lon": 10.15277778,
     "county": "Trøndelag"
@@ -1059,7 +1057,7 @@
     "id": "Q1772509",
     "name": "Sysenvatnet",
     "area": 10.465631,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norwegen%201998%20%28051%29%20Sysenvatnet%20%2833113501854%29.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sysendammen.jpg?width=1024",
     "lat": 60.423333333333,
     "lon": 7.4147222222222,
     "county": "Vestland"
@@ -1126,7 +1124,7 @@
     "id": "Q1772654",
     "name": "Dokkfløyvatnet",
     "area": 9.4216,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dokkfl%C3%B8yvatnet%20i%20Torpa.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dokkfl%C3%B8yvatnet%20Torpa.JPG?width=1024",
     "lat": 61.136,
     "lon": 9.972,
     "county": "Innlandet"
@@ -1251,7 +1249,7 @@
     "id": "Q6513598",
     "name": "Rauddalsvatnet",
     "area": 7.481,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rauddalsvatnet%20i%20Skj%C3%A5k%20kommune%20i%20Oppland.JPG?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rauddalsvatnet%20in%20Oppland.JPG?width=1024",
     "lat": 61.905,
     "lon": 7.6669444444444,
     "county": "Innlandet"
@@ -1269,7 +1267,7 @@
     "id": "Q12011567",
     "name": "Årdalsvatnet",
     "area": 7.453206,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85rdalsvatnet%202024.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%85rdalsvatnet%20seen%20from%20Bl%C3%A5berg%20-%202015-06-17.jpg?width=1024",
     "lat": 61.283333333333,
     "lon": 7.75,
     "county": "Vestland"
@@ -1303,9 +1301,1008 @@
     "id": "Q6515124",
     "name": "Vuolep Sårjåsjávrre",
     "area": 7.27,
-    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%A5rj%C3%A5sj%C3%A1vrre-09337-Pano-XL.jpg?width=1024",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%A5rj%C3%A5sj%C3%A1vrre.JPG?width=1024",
     "lat": 67.22357,
     "lon": 16.3602,
     "county": "Nordland"
+  },
+  {
+    "id": "Q6515195",
+    "name": "Nedre Heimdalsvatnet",
+    "area": 7.2543,
+    "lat": 61.433333333333,
+    "lon": 9.0333333333333,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q59326946",
+    "name": "Øvre Toke",
+    "area": 7.179054,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Drangedal%20Prestestranda%201.JPG?width=1024",
+    "lat": 59.064333,
+    "lon": 9.097897,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q3358692",
+    "name": "Čárajávri",
+    "area": 7.03,
+    "lat": 69.41994,
+    "lon": 22.87947,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q1519842",
+    "name": "Røldalsvatnet",
+    "area": 6.99,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B8ldalsvatnet%2C%202011%20August.jpg?width=1024",
+    "lat": 59.795,
+    "lon": 6.7752777777778,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q3420203",
+    "name": "Langesjå",
+    "area": 6.985568,
+    "lat": 59.93586,
+    "lon": 8.30063,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q6515466",
+    "name": "Sør-Mesna",
+    "area": 6.9303,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8r-Mesna.jpg?width=1024",
+    "lat": 61.09083,
+    "lon": 10.70472,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q1773089",
+    "name": "Breiddalsvatnet",
+    "area": 6.8993,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Breiddalsvatnet.jpg?width=1024",
+    "lat": 62.014722222222,
+    "lon": 7.5833333333333,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q11219617",
+    "name": "Mjermen",
+    "area": 6.8704,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mjermen.JPG?width=1024",
+    "lat": 59.721111,
+    "lon": 11.602778,
+    "county": "Akershus"
+  },
+  {
+    "id": "Q11233360",
+    "name": "Andsvatnet",
+    "area": 6.75,
+    "lat": 69.070278,
+    "lon": 18.3875,
+    "county": "Troms"
+  },
+  {
+    "id": "Q4571911",
+    "name": "Øyangen",
+    "area": 6.6436,
+    "lat": 61.2083,
+    "lon": 8.89139,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q1338006",
+    "name": "Lossivatnet",
+    "area": 6.64,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lossivatnet%20south%20view.JPG?width=1024",
+    "lat": 68.2094,
+    "lon": 17.69237,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q4560408",
+    "name": "Sjåvatn",
+    "area": 6.600729,
+    "lat": 59.801944,
+    "lon": 8.859722,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q1773103",
+    "name": "Aspern",
+    "area": 6.5917,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tripper%C3%B8dbukta%20ved%20Aspern%20I.jpg?width=1024",
+    "lat": 59.16722222,
+    "lon": 11.70638889,
+    "county": "Østfold"
+  },
+  {
+    "id": "Q6035713",
+    "name": "Innerdalsvatnet",
+    "area": 6.5296,
+    "lat": 62.576111111111,
+    "lon": 10.1275,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q11223295",
+    "name": "Varaldsjøen",
+    "area": 6.5021,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Varaldsj%C3%B8en.jpg?width=1024",
+    "lat": 60.126111111111,
+    "lon": 12.456388888889,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q11224164",
+    "name": "Ståvatn",
+    "area": 6.490119,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Staavatn0001.jpg?width=1024",
+    "lat": 59.83306,
+    "lon": 7.15972,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q11226212",
+    "name": "Soneren",
+    "area": 6.449021,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andersnatten%2CSigdal%2CNorway%20-%20panoramio.jpg?width=1024",
+    "lat": 60.061667,
+    "lon": 9.544444,
+    "county": "Buskerud"
+  },
+  {
+    "id": "Q1773274",
+    "name": "Šuoikkátjávri",
+    "area": 6.44,
+    "lat": 69.55079,
+    "lon": 22.36838,
+    "county": "Troms"
+  },
+  {
+    "id": "Q1772991",
+    "name": "Ørsjøen",
+    "area": 6.4104,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98rsj%C3%B8en%20ved%20Prestebakke.JPG?width=1024",
+    "lat": 58.998611111111,
+    "lon": 11.539722222222,
+    "county": "Østfold"
+  },
+  {
+    "id": "Q1772920",
+    "name": "Isesjøen",
+    "area": 6.3522,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarpsborg%20Isesj%C3%B6en%20from%20north%20IMG%209667.JPG?width=1024",
+    "lat": 59.2775,
+    "lon": 11.224166666667,
+    "county": "Østfold"
+  },
+  {
+    "id": "Q1773264",
+    "name": "Fiskevatn",
+    "area": 6.3252,
+    "lat": 69.84117,
+    "lon": 28.37391,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q1773251",
+    "name": "Bajášjávri",
+    "area": 6.3,
+    "lat": 68.76255,
+    "lon": 23.67281,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q4592099",
+    "name": "Tordsvatnet",
+    "area": 6.2856,
+    "lat": 62.148888888889,
+    "lon": 7.8230555555556,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q11222331",
+    "name": "Langsjøen",
+    "area": 6.2801,
+    "lat": 62.166666666667,
+    "lon": 11.5875,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q3358565",
+    "name": "Guolehis Suolojávri",
+    "area": 6.12,
+    "lat": 68.8185,
+    "lon": 23.3519,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q6514173",
+    "name": "Syndle",
+    "area": 6.084386,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Syndle%20I.jpg?width=1024",
+    "lat": 58.3625,
+    "lon": 8.4663888888889,
+    "county": "Agder"
+  },
+  {
+    "id": "Q11233279",
+    "name": "Store Buevannet",
+    "area": 6.0644,
+    "lat": 70.568175,
+    "lon": 28.998711,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q10952225",
+    "name": "Nordre Kornsjø",
+    "area": 5.93,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tullstation%20Sundet%20-%20KMB%20-%2016000300030509.jpg?width=1024",
+    "lat": 58.93462,
+    "lon": 11.6677,
+    "county": "Østfold"
+  },
+  {
+    "id": "Q11220613",
+    "name": "Fullsenn",
+    "area": 5.8993,
+    "lat": 61.183889,
+    "lon": 9.4725,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q4589543",
+    "name": "Gednjevannet",
+    "area": 5.7868,
+    "lat": 70.51282,
+    "lon": 29.09911,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q2292979",
+    "name": "Skredvatn",
+    "area": 5.747636,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Skredvatn.JPG?width=1024",
+    "lat": 59.335,
+    "lon": 8.11694444,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q817806",
+    "name": "Benna",
+    "area": 5.73,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Benna%20in%20the%20winter.jpg?width=1024",
+    "lat": 63.17583333,
+    "lon": 10.225,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q4591150",
+    "name": "Sommervannet",
+    "area": 5.7269,
+    "lat": 70.29735,
+    "lon": 27.74448,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q11237063",
+    "name": "Oksfjordvatnet",
+    "area": 5.68,
+    "lat": 69.891111,
+    "lon": 21.380556,
+    "county": "Troms"
+  },
+  {
+    "id": "Q6514036",
+    "name": "Skjervangen",
+    "area": 5.626,
+    "lat": 59.907222222222,
+    "lon": 11.889444444444,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q11230105",
+    "name": "Bitdalsvatn",
+    "area": 5.594375,
+    "lat": 59.79577,
+    "lon": 7.85982,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q6514807",
+    "name": "Sundvannet",
+    "area": 5.5705,
+    "lat": 70.452775,
+    "lon": 28.130439,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q6516182",
+    "name": "Ráisjávri",
+    "area": 5.44,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Part%20of%20R%C3%A1isj%C3%A1vri.JPG?width=1024",
+    "lat": 69.196667,
+    "lon": 22.438333,
+    "county": "Troms"
+  },
+  {
+    "id": "Q1773233",
+    "name": "Virdnejávri",
+    "area": 5.39,
+    "lat": 69.6287,
+    "lon": 23.7784,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q1773278",
+    "name": "Biggejávri",
+    "area": 5.33,
+    "lat": 69.3367,
+    "lon": 23.4646,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q10960214",
+    "name": "Langeidvatn",
+    "area": 5.308628,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Langeidvatn.jpg?width=1024",
+    "lat": 59.688611,
+    "lon": 7.571667,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q11233223",
+    "name": "Reinoksvannan",
+    "area": 5.2951,
+    "lat": 70.715172,
+    "lon": 27.448356,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q4559956",
+    "name": "Kjelavatn",
+    "area": 5.282832,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kjelavatn%20i%20Vinje.jpg?width=1024",
+    "lat": 59.79293,
+    "lon": 7.22458,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q11220635",
+    "name": "Furusjøen",
+    "area": 5.2732,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Furusj%C3%B8en%20sett%20fra%20Bl%C3%B8yvangen.jpg?width=1024",
+    "lat": 61.7775,
+    "lon": 9.724722,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q11221294",
+    "name": "Storevatnet",
+    "area": 5.2109,
+    "lat": 61.61181,
+    "lon": 7.95824,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q1773247",
+    "name": "Kjæsvannet",
+    "area": 5.2043,
+    "lat": 70.592683,
+    "lon": 26.146806,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q1773221",
+    "name": "Stuora Galbajávri",
+    "area": 5.18,
+    "lat": 69.1695,
+    "lon": 24.1258,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q4589591",
+    "name": "Litlumvatnet",
+    "area": 5.12,
+    "lat": 66.15,
+    "lon": 15.003055555556,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q10959686",
+    "name": "Gjuvsjåen",
+    "area": 5.110199,
+    "lat": 60.07162,
+    "lon": 7.83567,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q3702106",
+    "name": "Kobbvatnet",
+    "area": 5.07,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/DSC06924-Pano-2.jpg?width=1024",
+    "lat": 67.6219,
+    "lon": 15.9691,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q3356649",
+    "name": "Kilefjorden",
+    "area": 5.054475,
+    "lat": 58.434166666667,
+    "lon": 7.8086111111111,
+    "county": "Agder"
+  },
+  {
+    "id": "Q11223227",
+    "name": "Vonsjøen",
+    "area": 5.0416,
+    "lat": 62.25442,
+    "lon": 12.32874,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q19387228",
+    "name": "Rødungen",
+    "area": 5.039001,
+    "lat": 60.706944444444,
+    "lon": 8.23,
+    "county": "Buskerud"
+  },
+  {
+    "id": "Q2597072",
+    "name": "Kvennsjøen",
+    "area": 5.036584,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vidda.jpg?width=1024",
+    "lat": 60.070833333333,
+    "lon": 7.1997222222222,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q4590319",
+    "name": "Vurrusjøen",
+    "area": 5.0353,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/5%20D%2029%20Drevsj%C3%B8%20-%20no-nb%20digifoto%2020150729%2000358%20bldsa%20PK28080.jpg?width=1024",
+    "lat": 61.875277777778,
+    "lon": 12.11,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q1773065",
+    "name": "Atnsjøen",
+    "area": 5.0051,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Atnsj%C3%B8en%20og%20Rondane%2001.JPG?width=1024",
+    "lat": 61.875277777778,
+    "lon": 10.176944444444,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q10959574",
+    "name": "Kilevann",
+    "area": 4.963073,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kilevann%20I.jpg?width=1024",
+    "lat": 59.1386,
+    "lon": 9.4067,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q11222540",
+    "name": "Rotbergsjøen",
+    "area": 4.9368,
+    "lat": 60.48938,
+    "lon": 12.54826,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q4592414",
+    "name": "Store Spurvvatnet",
+    "area": 4.9351,
+    "lat": 69.34318,
+    "lon": 29.20586,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q11223402",
+    "name": "Tannsjøen",
+    "area": 4.9296,
+    "lat": 59.88174,
+    "lon": 11.91754,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q11226451",
+    "name": "Lufsjå",
+    "area": 4.91155,
+    "lat": 60.160278,
+    "lon": 8.787778,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q1773218",
+    "name": "Geašjávri",
+    "area": 4.85,
+    "lat": 69.2474,
+    "lon": 23.0075,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q1772934",
+    "name": "Kingen",
+    "area": 4.81,
+    "lat": 64.0269,
+    "lon": 13.9749,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q841972",
+    "name": "Byrtevatn",
+    "area": 4.807347,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Byrtevatn.jpg?width=1024",
+    "lat": 59.4975,
+    "lon": 7.83638889,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q668788",
+    "name": "Øvre Sjodalsvatnet",
+    "area": 4.7757,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/P1000136%C3%98vre%20Sjodalsvatnet.JPG?width=1024",
+    "lat": 61.528333333333,
+    "lon": 8.8880555555556,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q4592252",
+    "name": "Stuorra Jerestanjávri",
+    "area": 4.7702,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stuorra%20Jeristanjavre%20-%20panoramio.jpg?width=1024",
+    "lat": 69.8279,
+    "lon": 29.4757,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q3358560",
+    "name": "Geađgejávri",
+    "area": 4.76,
+    "lat": 68.6811,
+    "lon": 23.2981,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q10960030",
+    "name": "Vindsjåen",
+    "area": 4.726522,
+    "lat": 59.785833,
+    "lon": 8.511667,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q3358616",
+    "name": "Gahččanjávri",
+    "area": 4.71,
+    "lat": 69.5931,
+    "lon": 23.1308,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q179707",
+    "name": "Bessvatnet",
+    "area": 4.696689,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bessvatnet%20cropped.jpg?width=1024",
+    "lat": 61.523055555556,
+    "lon": 8.7755555555556,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q4590268",
+    "name": "Stortissvatnet",
+    "area": 4.63,
+    "lat": 64.3915,
+    "lon": 13.4632,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q4590285",
+    "name": "Russvatnet",
+    "area": 4.6221,
+    "lat": 61.550472222222,
+    "lon": 8.6759166666667,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q11220532",
+    "name": "Nørdre Syndin",
+    "area": 4.5756,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordre%20syndin.jpg?width=1024",
+    "lat": 61.096667,
+    "lon": 8.696667,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q1773260",
+    "name": "Sálganjávri",
+    "area": 4.55,
+    "lat": 69.5429,
+    "lon": 23.3587,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q4590485",
+    "name": "Åbjørvatnet",
+    "area": 4.54,
+    "lat": 65.0208,
+    "lon": 12.6782,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q1773256",
+    "name": "Hasetjønna",
+    "area": 4.5179,
+    "lat": 69.33247,
+    "lon": 29.45406,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q11984164",
+    "name": "Linnévatnet",
+    "area": 4.5,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordenski%C3%B6ld%20Land%20IMG%203286%20Linn%C3%A9vatnet.JPG?width=1024",
+    "lat": 78.046,
+    "lon": 13.8
+  },
+  {
+    "id": "Q10959382",
+    "name": "Langesæ",
+    "area": 4.470198,
+    "lat": 59.708056,
+    "lon": 7.274444,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q11967913",
+    "name": "Espedalsvatnet",
+    "area": 4.45,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Espedalen%20Mountain%20Church%20Graveyard.jpg?width=1024",
+    "lat": 61.40075,
+    "lon": 9.5686666666667,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q11227400",
+    "name": "Fjellvannet",
+    "area": 4.441999,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fjellvannet%2C%20Luksefjell.jpg?width=1024",
+    "lat": 59.362222,
+    "lon": 9.5525,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q1775570",
+    "name": "Rágesjávri",
+    "area": 4.38,
+    "lat": 69.5411,
+    "lon": 24.171,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q11223939",
+    "name": "Skjesvatn",
+    "area": 4.33888,
+    "lat": 59.681667,
+    "lon": 8.508333,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q1820743",
+    "name": "Lesjaskogsvatnet",
+    "area": 4.336242,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lesjaskogsvatnet.JPG?width=1024",
+    "lat": 62.233333333333,
+    "lon": 8.4166666666667,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q4590298",
+    "name": "Store Erte",
+    "area": 4.2813,
+    "lat": 59.115,
+    "lon": 11.568333333333,
+    "county": "Østfold"
+  },
+  {
+    "id": "Q1772611",
+    "name": "Mingevannet",
+    "area": 4.257,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mingevannet.jpg?width=1024",
+    "lat": 59.3775,
+    "lon": 11.119444444444,
+    "county": "Østfold"
+  },
+  {
+    "id": "Q3358569",
+    "name": "Dátkojávri",
+    "area": 4.22,
+    "lat": 69.2874,
+    "lon": 23.2584,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q4590385",
+    "name": "Øyangen",
+    "area": 4.2187,
+    "lat": 61.4183,
+    "lon": 9.21667,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q4589877",
+    "name": "Mangen",
+    "area": 4.1286,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mangen.JPG?width=1024",
+    "lat": 59.960277777778,
+    "lon": 11.785,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q1772840",
+    "name": "Prestesteinsvatnet",
+    "area": 4.1096,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fannar%C3%A5ki%20%26%20Fannar%C3%A5kbreen%20from%20the%20northeast%2C%202011%20August.jpg?width=1024",
+    "lat": 61.542222,
+    "lon": 7.946389,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q1773308",
+    "name": "Granvinsvatnet",
+    "area": 4.05,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Granvinsvatnet%20-%20Where%20Road%20572%20meets%20Hiway%2013%2C%20Norway%20-%20June%2015%2C%201989.jpg?width=1024",
+    "lat": 60.556388888889,
+    "lon": 6.7197222222222,
+    "county": "Vestland"
+  },
+  {
+    "id": "Q4591221",
+    "name": "Øyangen",
+    "area": 4.0348,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98yangen%20i%20Hurdal.jpg?width=1024",
+    "lat": 60.3703,
+    "lon": 10.8983,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q11226583",
+    "name": "Lognvikvatn",
+    "area": 4.032678,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Summer%20landscape%20Telemark%20%282690578882%29%20-%20cropped.jpg?width=1024",
+    "lat": 59.673594,
+    "lon": 8.144131,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q3671741",
+    "name": "Røyrvatnet",
+    "area": 4.03,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Flurries%20of%20snow%20above%20Nevervatnet%2C%20R%C3%B8yrvatnet%20and%20Straumvatnet.jpg?width=1024",
+    "lat": 67.3028,
+    "lon": 15.6376,
+    "county": "Nordland"
+  },
+  {
+    "id": "Q1775672",
+    "name": "Soagŋojávri",
+    "area": 4.02,
+    "lat": 69.4633,
+    "lon": 23.145,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q11222356",
+    "name": "Helgesjøen",
+    "area": 4.0013,
+    "lat": 59.88876,
+    "lon": 12.03432,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q4589857",
+    "name": "Čorotjávri",
+    "area": 4,
+    "lat": 69.50433,
+    "lon": 24.40675,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q1773341",
+    "name": "Akksjøen",
+    "area": 3.99,
+    "lat": 60.784444444444,
+    "lon": 9.9261111111111,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q1775659",
+    "name": "Latnetjávri",
+    "area": 3.95,
+    "lat": 69.52834,
+    "lon": 23.70806,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q11220491",
+    "name": "Volbufjorden",
+    "area": 3.9372,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Volbufjorden.jpg?width=1024",
+    "lat": 61.1,
+    "lon": 9.0875,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q10959680",
+    "name": "Flåte",
+    "area": 3.933,
+    "lat": 59.061389,
+    "lon": 9.46,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q4590021",
+    "name": "Norefjorden",
+    "area": 3.92,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordefjord%20bro%202.jpg?width=1024",
+    "lat": 60.198888888889,
+    "lon": 9.0172222222222,
+    "county": "Buskerud"
+  },
+  {
+    "id": "Q281492",
+    "name": "Birtevatn",
+    "area": 3.91792,
+    "lat": 59.04772,
+    "lon": 7.94993,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q1775708",
+    "name": "Gavdnjajávri",
+    "area": 3.9096,
+    "lat": 68.74441,
+    "lon": 24.5729,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q1247626",
+    "name": "Maridalsvannet",
+    "area": 3.899,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Maridalsvannet%2C%20Oslo.jpg?width=1024",
+    "lat": 59.98444444,
+    "lon": 10.77833333,
+    "county": "Oslo"
+  },
+  {
+    "id": "Q4592320",
+    "name": "Store Kobbholmsvatnet",
+    "area": 3.8857,
+    "lat": 69.73324,
+    "lon": 30.71779,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q4592284",
+    "name": "Čearrehanjávri",
+    "area": 3.8851,
+    "lat": 69.855994,
+    "lon": 29.585653,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q11220242",
+    "name": "Reinsvatnet",
+    "area": 3.8809,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Reinsvatnet%20fra%20Nevelfjell.jpg?width=1024",
+    "lat": 61.215833,
+    "lon": 10.615833,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q11222967",
+    "name": "Sandungen (store og vesle)",
+    "area": 3.8546,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sandungen.JPG?width=1024",
+    "lat": 60.116,
+    "lon": 10.621,
+    "county": "Oslo"
+  },
+  {
+    "id": "Q1773401",
+    "name": "Almåsgrønningen",
+    "area": 3.813,
+    "lat": 64.6821,
+    "lon": 12.2144,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q11220397",
+    "name": "Strøen",
+    "area": 3.805,
+    "lat": 60.611111,
+    "lon": 9.413056,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q1862773",
+    "name": "Forollsjøen",
+    "area": 3.7651,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Forollsj%C3%B8en.jpg?width=1024",
+    "lat": 62.6875,
+    "lon": 10.822222222222,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q11983480",
+    "name": "Løvsjøen",
+    "area": 3.753963,
+    "lat": 64.379444,
+    "lon": 13.683056,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q11239140",
+    "name": "Bjørkvatnet",
+    "area": 3.74,
+    "lat": 64.08053,
+    "lon": 13.29406,
+    "county": "Trøndelag"
+  },
+  {
+    "id": "Q1773543",
+    "name": "Kravikfjorden",
+    "area": 3.7,
+    "lat": 60.10328,
+    "lon": 9.05723,
+    "county": "Buskerud"
+  },
+  {
+    "id": "Q4591259",
+    "name": "Lemonsjøen",
+    "area": 3.625,
+    "lat": 61.7775,
+    "lon": 9.07,
+    "county": "Innlandet"
+  },
+  {
+    "id": "Q4592353",
+    "name": "Store Valvatnet",
+    "area": 3.6038,
+    "lat": 69.68928,
+    "lon": 30.64855,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q1775613",
+    "name": "Stuorajávri",
+    "area": 3.58,
+    "lat": 69.7805,
+    "lon": 23.8126,
+    "county": "Finnmark"
+  },
+  {
+    "id": "Q10959518",
+    "name": "Kovvatnet",
+    "area": 3.572169,
+    "lat": 59.725833,
+    "lon": 8.630833,
+    "county": "Telemark"
+  },
+  {
+    "id": "Q11969044",
+    "name": "Fiskumvannet",
+    "area": 3.566858,
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%98vreEiker%20landskap%20b.JPG?width=1024",
+    "lat": 59.7,
+    "lon": 9.83,
+    "county": "Buskerud"
   }
 ]

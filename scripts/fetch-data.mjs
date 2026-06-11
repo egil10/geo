@@ -188,12 +188,12 @@ async function main() {
   const tasks = [
     ["kommuner", municipalities],
     ["fylker", counties],
-    ["fjell", () => features({ type: "Q8502", attr: "P2044", attrName: "elevation", min: 1400, max: 2470, limit: 300 })],
-    ["elver", () => features({ type: "Q4022", attr: "P2043", attrName: "length", min: 30, max: 650, limit: 200 })],
-    ["innsjoer", () => features({ type: "Q23397", attr: "P2046", attrName: "area", min: 5, max: 400, limit: 200 })],
-    ["fjorder", () => features({ type: "Q45776", attr: "P2043", attrName: "length", min: 5, max: 220, limit: 200 })],
-    ["oyer", () => features({ type: "Q23442", attr: "P2046", attrName: "area", min: 5, max: 40000, limit: 200 })],
-    ["fossefall", () => features({ type: "Q34038", attr: "P2048", attrName: "height", min: 40, max: 900, limit: 150 })],
+    ["fjell", () => features({ type: "Q8502", attr: "P2044", attrName: "elevation", min: 1000, max: 2470, limit: 500 })],
+    ["elver", () => features({ type: "Q4022", attr: "P2043", attrName: "length", min: 10, max: 650, limit: 350 })],
+    ["innsjoer", () => features({ type: "Q23397", attr: "P2046", attrName: "area", min: 1.5, max: 400, limit: 350 })],
+    ["fjorder", () => features({ type: "Q45776", attr: "P2043", attrName: "length", min: 2, max: 220, limit: 300 })],
+    ["oyer", () => features({ type: "Q23442", attr: "P2046", attrName: "area", min: 1.5, max: 40000, limit: 350 })],
+    ["fossefall", () => features({ type: "Q34038", attr: "P2048", attrName: "height", min: 20, max: 900, limit: 250 })],
     // Glaciers + tunnels are NOT fetched here — Wikidata covers them badly
     // (Svalbard-only glaciers; wrong tunnel entity type). They are curated from
     // Wikipedia in scripts/curate-extra.mjs, which also patches in Sognefjorden.
